@@ -172,6 +172,17 @@ body {
     --tw-ring-color: #C79639;
   }
 
+  /* Logo specific - no borders */
+  .logo-no-border,
+  .logo-no-border:focus,
+  .logo-no-border:focus-visible,
+  .logo-no-border * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    ring: none !important;
+  }
+
   /* Custom scrollbar styling */
   ::-webkit-scrollbar {
     width: 8px;

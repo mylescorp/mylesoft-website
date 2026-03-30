@@ -12,9 +12,9 @@ interface LogoProps {
 
 export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: LogoProps) {
   const sizeClasses = {
-    sm: 'w-12 h-12',
-    md: 'w-16 h-16', 
-    lg: 'w-20 h-20'
+    sm: 'w-16 h-16',
+    md: 'w-20 h-20', 
+    lg: 'w-28 h-28'
   }
 
   const fallbackSizeClasses = {
@@ -29,14 +29,19 @@ export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: Lo
   }
 
   return (
-    <Link href="/" className={`${sizeClasses[size]} ${className} flex-shrink-0 rounded-none`}>
+    <Link href="/" className={`${sizeClasses[size]} ${className} flex-shrink-0 rounded-none border-0 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 logo-no-border`}>
       <Image
         src="/logo.png"
         alt="MylesCorp Technologies Ltd"
         width={140}
         height={108}
         priority
-        className="h-16 w-auto object-contain rounded-none"
+        className="h-24 w-auto object-contain rounded-none border-0 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0"
+        style={{
+          border: 'none !important',
+          outline: 'none !important',
+          boxShadow: 'none !important'
+        }}
         onError={(e) => {
           const target = e.currentTarget;
           target.style.display = 'none';
