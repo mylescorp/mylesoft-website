@@ -129,7 +129,10 @@ export function Footer() {
               Software Development
             </Link>
             <Link href="/services/website-development" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
-              Website & Hosting
+              Website Development
+            </Link>
+            <Link href="/services/web-hosting" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+              Web Hosting
             </Link>
             <Link href="/services/it-consulting" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               IT Consulting

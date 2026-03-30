@@ -39,7 +39,12 @@ import {
   Mail,
   Package,
   CheckSquare,
-  MessageCircle
+  MessageCircle,
+  Server,
+  Globe,
+  Database,
+  Cloud,
+  Monitor
 } from 'lucide-react'
 
 interface IconProps {
@@ -94,6 +99,11 @@ const iconMap = {
   'package': Package,
   'check-square': CheckSquare,
   'message-circle': MessageCircle,
+  'server': Server,
+  'globe': Globe,
+  'database': Database,
+  'cloud': Cloud,
+  'monitor': Monitor,
 }
 
 export function Icon({ name, size = 48, className = '' }: IconProps) {

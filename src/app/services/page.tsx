@@ -21,7 +21,8 @@ import {
   CheckCircle,
   ArrowRight,
   Heart,
-  Monitor
+  Monitor,
+  Server
 } from 'lucide-react'
 
 const SERVICES_DATA = {
@@ -36,7 +37,7 @@ const SERVICES_DATA = {
     stats: [
       { number: '200+', label: 'Projects Delivered' },
       { number: '50+', label: 'Happy Clients' },
-      { number: '6', label: 'Service Categories' },
+      { number: '7', label: 'Service Categories' },
       { number: '4', label: 'East Africa Countries' }
     ]
   },
@@ -203,6 +204,26 @@ const services = [
     duration: '1-2 months',
     price: 'Starting from KES 100,000',
     href: '/services/it-consulting'
+  },
+  {
+    name: 'Web Hosting',
+    description: 'Reliable, secure, and high-performance web hosting solutions for businesses of all sizes.',
+    icon: <Icon name="server" className="text-gold-400" size={48} />,
+    features: [
+      'Shared Hosting Plans',
+      'VPS & Dedicated Servers',
+      'Cloud Hosting Solutions',
+      'SSL Certificates',
+      'Domain Registration',
+      '24/7 Technical Support',
+      'Automated Backups',
+      'DDoS Protection',
+      'Email Hosting',
+      'Website Migration'
+    ],
+    duration: 'Instant Setup',
+    price: 'Starting from KES 2,999/month',
+    href: '/services/web-hosting'
   }
 ]
 
