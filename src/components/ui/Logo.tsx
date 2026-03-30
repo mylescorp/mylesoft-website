@@ -12,9 +12,9 @@ interface LogoProps {
 
 export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: LogoProps) {
   const sizeClasses = {
-    sm: 'w-16 h-16',
-    md: 'w-20 h-20', 
-    lg: 'w-32 h-32'
+    sm: 'w-12 h-12',
+    md: 'w-16 h-16', 
+    lg: 'w-20 h-20'
   }
 
   const fallbackSizeClasses = {
@@ -29,14 +29,14 @@ export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: Lo
   }
 
   return (
-    <Link href="/" className={`${sizeClasses[size]} ${className} flex-shrink-0`}>
+    <Link href="/" className={`${sizeClasses[size]} ${className} flex-shrink-0 rounded-none`}>
       <Image
         src="/logo.png"
         alt="MylesCorp Technologies Ltd"
         width={140}
         height={108}
         priority
-        className="h-24 w-auto object-contain"
+        className="h-16 w-auto object-contain rounded-none"
         onError={(e) => {
           const target = e.currentTarget;
           target.style.display = 'none';
@@ -47,10 +47,10 @@ export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: Lo
         }}
       />
       <div 
-        className={`w-full h-full bg-gradient-to-br ${fallbackBgClasses[fallbackColor]} rounded-xl flex items-center justify-center`}
+        className={`w-full h-full flex items-center justify-center rounded-none`}
         style={{display: 'none'}}
       >
-        <span className={`text-white font-bold ${fallbackSizeClasses[size]}`}>M</span>
+        <span className={`text-gold font-bold ${fallbackSizeClasses[size]}`}>M</span>
       </div>
     </Link>
   )

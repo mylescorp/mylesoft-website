@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { SOCIAL_LINKS } from '@/lib/constants/social'
 
 export function Footer() {
@@ -27,9 +28,15 @@ export function Footer() {
         
         {/* Brand Column */}
         <div>
-          <div className="flex items-center gap-2.5 mb-4.5">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1A395B] to-[#0f1f35] border-[1.5px] border-[#C79639] flex items-center justify-center flex-shrink-0">
-              <span className="text-[19px] font-bold text-[#C79639] font-['Playfair_Display']">M</span>
+          <div className="flex items-center gap-3 mb-4.5">
+            <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+              <Image
+                src="/logo.png"
+                alt="MylesCorp"
+                width={56}
+                height={56}
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <div className="text-[17px] font-bold text-white font-['Playfair_Display'] leading-tight">MylesCorp</div>

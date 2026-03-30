@@ -84,7 +84,7 @@ export function Header() {
           : 'bg-navy-deep border-b border-gold/15'
       }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24 w-full">
+        <div className="flex items-center justify-between h-16 w-full">
           {/* Logo */}
           <div className="flex items-center group">
             <Logo size="lg" className="group-hover:scale-110 transition-transform duration-300" />

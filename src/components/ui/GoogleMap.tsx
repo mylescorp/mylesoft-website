@@ -81,12 +81,7 @@ export function GoogleMap({
           title: "MylesCorp Technologies",
           animation: google.maps.Animation.DROP,
           icon: {
-            url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
-              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="18" fill="#1A395B" stroke="#C79639" stroke-width="2"/>
-                <text x="20" y="26" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#C79639">M</text>
-              </svg>
-            `),
+            url: "/favicon-32x32.png?v=4",
             scaledSize: new google.maps.Size(40, 40),
             anchor: new google.maps.Point(20, 20)
           }
