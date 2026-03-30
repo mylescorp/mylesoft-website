@@ -1,12 +1,20 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import posthog from 'posthog-js'
 import ReactGA from 'react-ga4'
 
 export function AnalyticsProvider() {
+  const [isClient, setIsClient] = useState(false)
+
   useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isClient) return
+
     // Initialize Google Analytics 4
     if (process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID) {
       ReactGA.initialize(process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID)
@@ -22,10 +30,12 @@ export function AnalyticsProvider() {
         }
       })
     }
-  }, [])
+  }, [isClient])
 
   // Track page views
   useEffect(() => {
+    if (!isClient) return
+
     const handleRouteChange = () => {
       // Google Analytics page view
       if (process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID) {
@@ -48,7 +58,11 @@ export function AnalyticsProvider() {
         window.removeEventListener('popstate', handleRouteChange)
       }
     }
-  }, [])
+  }, [isClient])
+
+  if (!isClient) {
+    return null
+  }
 
   return <Analytics />
 }

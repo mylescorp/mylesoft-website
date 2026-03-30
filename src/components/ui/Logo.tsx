@@ -12,9 +12,9 @@ interface LogoProps {
 
 export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: LogoProps) {
   const sizeClasses = {
-    sm: 'w-8 h-8',
-    md: 'w-10 h-10', 
-    lg: 'w-16 h-16'
+    sm: 'w-16 h-16',
+    md: 'w-20 h-20', 
+    lg: 'w-32 h-32'
   }
 
   const fallbackSizeClasses = {
@@ -36,7 +36,7 @@ export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: Lo
         width={140}
         height={108}
         priority
-        className="h-9 w-auto object-contain"
+        className="h-24 w-auto object-contain"
         onError={(e) => {
           const target = e.currentTarget;
           target.style.display = 'none';

@@ -35,8 +35,8 @@ const dmMono = DM_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'MylesCorp Technologies Ltd',
-    template: '%s | MylesCorp Technologies Ltd',
+    default: 'MylesCorp',
+    template: '%s | MylesCorp',
   },
   description:
     'East Africa\'s leading AI-powered software company delivering ' +
@@ -56,10 +56,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.mylescorp.co.ke'),
   icons: {
     icon: [
-      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-64.png', sizes: '64x64', type: 'image/png' },
+      { url: '/favicon-16x16.png?v=4', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png?v=4', sizes: '32x32', type: 'image/png' },
     ],
-    apple: '/logo-mark.png',
+    apple: '/apple-touch-icon.png',
   },
   formatDetection: {
     email: false,
@@ -70,16 +70,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'MylesCorp Technologies Ltd',
+    title: 'MylesCorp',
     description: 'Transforming Industries, Empowering Generations.',
     url: 'https://www.mylescorp.co.ke',
-    siteName: 'MylesCorp Technologies Ltd',
+    siteName: 'MylesCorp',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MylesCorp Technologies Ltd',
+    title: 'MylesCorp',
     description: 'Transforming Industries, Empowering Generations.',
     images: ['/og-image.png'],
   },
@@ -111,10 +111,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://vercel.live" />
         
         {/* Favicon */}
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png?v=4" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png?v=4" sizes="32x32" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-        <link rel="shortcut icon" href="/favicon-32x32.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="192x192" />
+        <link rel="shortcut icon" href="/favicon-32x32.png?v=4" />
         
         {/* SEO */}
         <link rel="canonical" href="https://mylescorp.co.ke" />
@@ -127,7 +128,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "MylesCorp Technologies",
+              "name": "MylesCorp",
               "url": "https://mylescorp.co.ke",
               "logo": "https://mylescorp.co.ke/logo.png",
               "description": "East Africa's leading AI-powered software company building innovative solutions for Education, Healthcare, Agriculture, and Business.",

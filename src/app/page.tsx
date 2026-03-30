@@ -15,7 +15,7 @@ import {
 } from 'lucide-react'
 
 export const metadata = {
-  title: 'MylesCorp Technologies Ltd — AI-Powered Software Solutions for East Africa',
+  title: 'MylesCorp',
   description: 'East Africa\'s leading AI-powered software company. EduMyles, MylesCare, AgriMyles, MylesCRM — transforming Education, Healthcare, Agriculture, and Business across Kenya, Uganda, Tanzania.',
   alternates: {
     canonical: 'https://www.mylescorp.co.ke/',
