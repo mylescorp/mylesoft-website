@@ -88,10 +88,6 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center group">
             <Logo size="lg" className="group-hover:scale-110 transition-transform duration-300" />
-            <div className="ml-3 flex flex-col">
-              <span className="text-[14px] font-body font-bold text-white group-hover:text-gold transition-colors duration-300">MylesCorp</span>
-              <span className="text-[10px] font-body text-gold uppercase tracking-[1.5px]">Technologies</span>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
