@@ -1,34 +1,23 @@
 import { Layout } from '@/components/layout/Layout'
-import { Button } from '@/components/ui/Button'
 import { FeaturesSection } from '@/components/ui/FeaturesSection'
 import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { CTASection } from '@/components/ui/CTASection'
 import { OverviewSection } from '@/components/ui/OverviewSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
-import Link from 'next/link'
 import { 
   Mail, 
   Phone, 
   MapPin, 
   Clock,
-  Send,
-  Users,
-  Building,
-  FileText,
-  MessageCircle,
-  Globe,
-  Headphones,
-  Calendar,
-  Award
 } from 'lucide-react'
 import { ContactForm } from '@/components/ui/ContactForm'
 
 export const metadata = {
-  title: 'Contact Us — MylesCorp Technologies',
-  description: 'Contact MylesCorp Technologies in Nairobi, Kenya. Call +254 743 993 715, email info@mylescorp.co.ke, or WhatsApp us. We respond within 2 business hours.',
+  title: 'Contact MylesCorp, AI Software Company in Nairobi, Kenya',
+  description: 'Contact MylesCorp, Nairobi-based AI software company. Call, email, or book a consultation for your school, clinic, farm, or business.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/contact',
+    canonical: 'https://www.mylescorptech.com/contact',
   },
 }
 
@@ -120,29 +109,29 @@ export default function ContactPage() {
     {
       name: 'general',
       title: 'General Inquiries',
-      email: 'info@mylescorp.co.ke',
+      email: 'info@mylescorptech.com',
       phone: '+254 743 993 715',
       description: 'For general questions and information about our services.'
     },
     {
       name: 'sales',
       title: 'Sales & Partnerships',
-      email: 'sales@mylescorp.co.ke',
-      phone: '+254 743 993 715',
+      email: 'sales@mylescorptech.com',
+      phone: '+254 714 660 729',
       description: 'Interested in our products or partnership opportunities?'
     },
     {
       name: 'support',
       title: 'Technical Support',
-      email: 'support@mylescorp.co.ke',
-      phone: '+254 743 993 715',
+      email: 'support@mylescorptech.com',
+      phone: '+254 759 233 322',
       description: 'Need help with existing products or technical assistance.'
     },
     {
       name: 'careers',
       title: 'Human Resources',
-      email: 'careers@mylescorp.co.ke',
-      phone: '+254 743 993 715',
+      email: 'careers@mylescorptech.com',
+      phone: '+254 714 660 729',
       description: 'Questions about job opportunities and working at MylesCorp.'
     },
   ]
@@ -152,7 +141,7 @@ export default function ContactPage() {
       city: 'Nairobi',
       address: 'Westlands, Nairobi, Kenya',
       phone: '+254 743 993 715',
-      email: 'nairobi@mylescorp.co.ke',
+      email: 'nairobi@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 6:00 PM',
       isHeadquarters: true
     },
@@ -160,7 +149,7 @@ export default function ContactPage() {
       city: 'Mombasa',
       address: 'Mombasa CBD, Mombasa, Kenya',
       phone: '+254 743 993 715',
-      email: 'mombasa@mylescorp.co.ke',
+      email: 'mombasa@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
       isHeadquarters: false
     },
@@ -168,7 +157,7 @@ export default function ContactPage() {
       city: 'Kampala',
       address: 'Kampala Central, Uganda',
       phone: '+256 743 993 715',
-      email: 'kampala@mylescorp.co.ke',
+      email: 'kampala@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
       isHeadquarters: false
     },
@@ -176,7 +165,7 @@ export default function ContactPage() {
       city: 'Dar es Salaam',
       address: 'Dar es Salaam CBD, Tanzania',
       phone: '+255 743 993 715',
-      email: 'dar@mylescorp.co.ke',
+      email: 'dar@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
       isHeadquarters: false
     },
@@ -221,7 +210,7 @@ export default function ContactPage() {
               </span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {CONTACT_DATA.overview.description[0]}
             </p>
             
@@ -230,7 +219,7 @@ export default function ContactPage() {
               {CONTACT_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-gold mb-2">{stat.number}</div>
-                  <div className="text-sm text-light-blue font-body">{stat.label}</div>
+                  <div className="text-sm md:text-[0.95rem] text-light-blue font-body">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -258,40 +247,40 @@ export default function ContactPage() {
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
                 Get in Touch
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto leading-[1.7]">
-                We're here to help. Reach out through any of the channels below and we'll respond within 2 hours.
+              <p className="font-body text-medium-grey text-lg md:text-xl max-w-2xl mx-auto leading-8">
+                We&apos;re here to help. Reach out through any of the channels below and we&apos;ll respond within 2 hours.
               </p>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
               <div>
-                <h3 className="font-display font-bold text-navy text-2xl mb-6">Send Us a Message</h3>
+                <h3 className="font-display font-bold text-navy text-2xl md:text-3xl mb-6">Send Us a Message</h3>
                 <ContactForm />
               </div>
 
               {/* Contact Information */}
               <div>
-                <h3 className="font-display font-bold text-navy text-2xl mb-6">Contact Information</h3>
+                <h3 className="font-display font-bold text-navy text-2xl md:text-3xl mb-6">Contact Information</h3>
                 
                 {/* Departments */}
                 <div className="mb-12">
                   <h4 className="font-body font-semibold text-navy text-lg mb-4">Departments</h4>
                   <div className="space-y-4">
                     {departments.map((dept) => (
-                      <div key={dept.name} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+                      <div key={dept.name} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-gold/35">
                         <h5 className="font-display font-bold text-navy text-xl mb-2">{dept.title}</h5>
-                        <p className="font-body text-light-blue text-sm mb-4">{dept.description}</p>
+                        <p className="font-body text-medium-grey text-[0.98rem] leading-7 mb-4">{dept.description}</p>
                         <div className="space-y-2">
                           <div className="flex items-center text-sm">
                             <Mail size={16} className="text-gold mr-2" />
-                            <a href={`mailto:${dept.email}`} className="text-gold hover:text-gold-light font-body">
+                            <a href={`mailto:${dept.email}`} className="font-body text-navy hover:text-gold transition-colors">
                               {dept.email}
                             </a>
                           </div>
                           <div className="flex items-center text-sm">
                             <Phone size={16} className="text-gold mr-2" />
-                            <a href={`tel:${dept.phone}`} className="text-gold hover:text-gold-light font-body">
+                            <a href={`tel:${dept.phone}`} className="font-body text-navy hover:text-gold transition-colors">
                               {dept.phone}
                             </a>
                           </div>
@@ -302,13 +291,13 @@ export default function ContactPage() {
                 </div>
 
                 {/* Quick Contact */}
-                <div className="bg-navy-deep rounded-xl p-6 text-white">
+                <div className="rounded-[1.6rem] border border-gold/15 bg-navy-deep p-7 text-white shadow-card">
                   <h4 className="font-display font-bold text-white text-xl mb-4">Quick Contact</h4>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Phone size={20} className="text-gold mr-3" />
                       <div>
-                        <div className="font-semibold">Main Line</div>
+                        <div className="font-body font-semibold text-white">Main Line</div>
                         <a href="tel:+254743993715" className="text-gold hover:text-gold-light">
                           +254 743 993 715
                         </a>
@@ -317,18 +306,18 @@ export default function ContactPage() {
                     <div className="flex items-center">
                       <Mail size={20} className="text-gold mr-3" />
                       <div>
-                        <div className="font-semibold">Email</div>
-                        <a href="mailto:info@mylescorp.co.ke" className="text-gold hover:text-gold-light">
-                          info@mylescorp.co.ke
+                        <div className="font-body font-semibold text-white">Email</div>
+                        <a href="mailto:info@mylescorptech.com" className="text-gold hover:text-gold-light">
+                          info@mylescorptech.com
                         </a>
                       </div>
                     </div>
                     <div className="flex items-center">
                       <Clock size={20} className="text-gold mr-3" />
                       <div>
-                        <div className="font-semibold">Business Hours</div>
-                        <div className="text-light-blue">Monday - Friday: 8:00 AM - 6:00 PM</div>
-                        <div className="text-light-blue">Saturday: 9:00 AM - 1:00 PM</div>
+                        <div className="font-body font-semibold text-white">Business Hours</div>
+                        <div className="font-body text-light-blue">Monday - Friday: 8:00 AM - 6:00 PM</div>
+                        <div className="font-body text-light-blue">Saturday: 9:00 AM - 1:00 PM</div>
                       </div>
                     </div>
                   </div>
@@ -381,14 +370,14 @@ export default function ContactPage() {
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
                 Visit Us Across East Africa
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto leading-[1.7]">
+              <p className="font-body text-medium-grey text-lg md:text-xl max-w-2xl mx-auto leading-8">
                 Find us in major cities across East Africa. Visit our headquarters or connect with our regional offices.
               </p>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {offices.map((office, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+                <div key={index} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-gold/35">
                   {office.isHeadquarters && (
                     <div className="inline-block bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-semibold mb-4 font-body">
                       Headquarters
@@ -398,23 +387,23 @@ export default function ContactPage() {
                   <div className="space-y-3">
                     <div className="flex items-start">
                       <MapPin size={16} className="text-gold mr-2 mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-700 font-body">{office.address}</span>
+                      <span className="text-sm md:text-[0.95rem] leading-6 text-medium-grey font-body">{office.address}</span>
                     </div>
                     <div className="flex items-center">
                       <Phone size={16} className="text-gold mr-2" />
-                      <a href={`tel:${office.phone}`} className="text-gold hover:text-gold-light font-body">
+                      <a href={`tel:${office.phone}`} className="text-navy hover:text-gold font-body transition-colors">
                         {office.phone}
                       </a>
                     </div>
                     <div className="flex items-center">
                       <Mail size={16} className="text-gold mr-2" />
-                      <a href={`mailto:${office.email}`} className="text-gold hover:text-gold-light font-body">
+                      <a href={`mailto:${office.email}`} className="text-navy hover:text-gold font-body transition-colors">
                         {office.email}
                       </a>
                     </div>
                     <div className="flex items-start">
                       <Clock size={16} className="text-gold mr-2 mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-700 font-body">{office.hours}</span>
+                      <span className="text-sm md:text-[0.95rem] leading-6 text-medium-grey font-body">{office.hours}</span>
                     </div>
                   </div>
                 </div>
@@ -435,7 +424,7 @@ export default function ContactPage() {
                 <div className="w-8 h-0.5 bg-gold" />
               </div>
               <h2 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">24/7 Emergency Support</h2>
-              <p className="font-body text-light-blue text-xl max-w-2xl mx-auto leading-[1.7] mb-8">
+              <p className="font-body text-light-blue text-xl md:text-2xl max-w-2xl mx-auto leading-9 mb-8">
                 For urgent technical support or critical issues, we&apos;re available round the clock to help you.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -447,8 +436,8 @@ export default function ContactPage() {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                   <div className="text-2xl font-bold text-gold mb-2">Email Support</div>
-                  <a href="mailto:emergency@mylescorp.co.ke" className="text-xl text-white hover:text-gold transition-colors">
-                    emergency@mylescorp.co.ke
+                  <a href="mailto:emergency@mylescorptech.com" className="text-xl text-white hover:text-gold transition-colors">
+                    emergency@mylescorptech.com
                   </a>
                 </div>
               </div>

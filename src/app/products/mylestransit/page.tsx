@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesTransit - Transportation Management Software | MylesCorp Technologies',
   description: 'Comprehensive transportation management solution for logistics companies, schools, and public transport. Optimize routes and manage fleets efficiently.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylestransit',
+    canonical: 'https://www.mylescorptech.com/products/mylestransit',
   },
 }
 

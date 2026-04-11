@@ -1,19 +1,19 @@
 export const SOCIAL_LINKS = {
-  linkedin:  'https://www.linkedin.com/company/mylescorp',
-  facebook:  'https://www.facebook.com/mylescorp',
-  twitter:   'https://www.twitter.com/mylescorp_',
-  github:    'https://github.com/Mylesoft-Technologies',
-  youtube:   'https://www.youtube.com/@mylescorp_tech',
-  instagram: 'https://www.instagram.com/mylescorp_',
-  tiktok:    'https://www.tiktok.com/@mylesoft',
+  linkedin:  'https://www.linkedin.com/company/mylescorptech',
+  facebook:  'https://www.facebook.com/mylescorptech',
+  twitter:   'https://www.twitter.com/mylescorptech',
+  github:    'https://github.com/mylescorp',
+  youtube:   'https://www.youtube.com/@mylescorptech',
+  instagram: 'https://www.instagram.com/mylescorptech',
+  tiktok:    'https://www.tiktok.com/@edumyles_',
 } as const
 
 export const SOCIAL_META = {
-  linkedin:  { label: 'LinkedIn',   handle: '@mylescorp',       color: '#0A66C2' },
-  facebook:  { label: 'Facebook',   handle: '@mylescorp',       color: '#1877F2' },
-  twitter:   { label: 'Twitter / X', handle: '@mylescorp_',     color: '#000000' },
-  github:    { label: 'GitHub',     handle: 'Mylesoft-Technologies', color: '#24292e' },
-  youtube:   { label: 'YouTube',    handle: '@mylescorp_tech',  color: '#FF0000' },
-  instagram: { label: 'Instagram',  handle: '@mylescorp_',      color: '#E4405F' },
-  tiktok:    { label: 'TikTok',     handle: '@mylesoft',        color: '#000000' },
+  linkedin:  { label: 'LinkedIn',   handle: '@mylescorptech', color: '#0A66C2' },
+  facebook:  { label: 'Facebook',   handle: '@mylescorptech', color: '#1877F2' },
+  twitter:   { label: 'Twitter / X', handle: '@mylescorptech', color: '#000000' },
+  github:    { label: 'GitHub',     handle: 'mylescorptech', color: '#24292e' },
+  youtube:   { label: 'YouTube',    handle: '@mylescorptech', color: '#FF0000' },
+  instagram: { label: 'Instagram',  handle: '@mylescorptech', color: '#E4405F' },
+  tiktok:    { label: 'TikTok',     handle: '@edumyles_', color: '#000000' },
 } as const

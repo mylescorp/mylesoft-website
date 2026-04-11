@@ -173,7 +173,7 @@ export default function BlogPage() {
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={0.6}>
-              <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
                 Thought leadership, product updates, and industry insights from the MylesCorp team.
               </p>
             </ScrollReveal>

@@ -10,10 +10,10 @@ import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
-  title: 'MylesCare — Healthcare Management System Kenya',
-  description: 'AI-powered hospital and clinic management system with M-Pesa billing, SHA insurance integration, electronic patient records, and pharmacy management for East African health facilities.',
+  title: 'MylesCare, Healthcare Management Software Kenya | MylesCorp',
+  description: 'MylesCare helps hospitals and clinics in Kenya manage patient records, appointments & billing with AI. Reduce wait times by up to 60%.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylescare',
+    canonical: 'https://www.mylescorptech.com/products/mylescare',
   },
 }
 

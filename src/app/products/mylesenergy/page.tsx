@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesEnergy - Energy Management Software | MylesCorp Technologies',
   description: 'Smart energy monitoring and management solution. Track consumption, optimize usage, and reduce costs with AI-powered analytics.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesenergy',
+    canonical: 'https://www.mylescorptech.com/products/mylesenergy',
   },
 }
 

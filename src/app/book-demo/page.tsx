@@ -2,14 +2,14 @@ import { Layout } from '@/components/layout/Layout'
 import { CalComBooking } from '@/components/integrations/CalComBooking'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
-import { Calendar, Clock, Users, Check, Star, Download } from 'lucide-react'
+import { Calendar, Users, Check, Star, Download } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Book a Demo — MylesCorp Technologies',
-  description: 'Book a free live demo of any MylesCorp product. Our team will walk you through EduMyles, MylesCare, AgriMyles, or MylesCRM tailored to your needs.',
+  title: 'Book a Free Demo, MylesCorp Technologies Kenya',
+  description: 'Book a free demo with MylesCorp and see how our AI-powered software can transform your school, clinic, farm or business in East Africa.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/book-demo',
+    canonical: 'https://www.mylescorptech.com/book-demo',
   },
 }
 
@@ -67,9 +67,9 @@ export default function BookDemoPage() {
             </h1>
 
             {/* Subtitle */}
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               Experience our AI-powered solutions firsthand with a personalized demo 
-              tailored to your organisation's needs.
+              tailored to your organisation&apos;s needs.
             </p>
 
             {/* CTA button */}

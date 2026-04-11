@@ -1,13 +1,11 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Plus_Jakarta_Sans, DM_Mono } 
   from 'next/font/google'
-import { Layout } from '@/components/layout/Layout'
 import { AnalyticsProvider } from '@/components/analytics/Analytics'
 import { CookieConsent } from '@/components/ui/CookieConsent'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { LiveChat } from '@/components/ui/LiveChat'
 import { ScrollProgress } from '@/components/ui/ScrollProgress'
-import { DarkModeToggle } from '@/components/ui/DarkModeToggle'
 import { SOCIAL_LINKS } from '@/lib/constants/social'
 import './globals.css'
 
@@ -35,13 +33,11 @@ const dmMono = DM_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'MylesCorp',
+    default: 'MylesCorp Technologies',
     template: '%s | MylesCorp',
   },
   description:
-    'East Africa\'s leading AI-powered software company delivering ' +
-    'innovative solutions for Education, Healthcare, Agriculture, ' +
-    'and Business across East Africa and beyond.',
+    'East Africa\'s leading AI software company. Solutions for schools, hospitals, farms, and businesses in Kenya, Uganda, and Tanzania.',
   keywords: [
     'MylesCorp', 'MylesCorp Technologies',
     'School Management System Kenya',
@@ -53,7 +49,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'MylesCorp' }],
   creator: 'MylesCorp',
   publisher: 'MylesCorp',
-  metadataBase: new URL('https://www.mylescorp.co.ke'),
+  metadataBase: new URL('https://www.mylescorptech.com'),
   icons: {
     icon: [
       { url: '/favicon-16x16.png?v=4', sizes: '16x16', type: 'image/png' },
@@ -70,17 +66,17 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'MylesCorp',
-    description: 'Transforming Industries, Empowering Generations.',
-    url: 'https://www.mylescorp.co.ke',
-    siteName: 'MylesCorp',
+    title: 'MylesCorp Technologies, AI Software for East Africa',
+    description: 'AI-powered solutions for schools, hospitals, farms & businesses across Kenya, Uganda & Tanzania.',
+    url: 'https://www.mylescorptech.com',
+    siteName: 'MylesCorp Technologies',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MylesCorp',
-    description: 'Transforming Industries, Empowering Generations.',
+    title: 'MylesCorp Technologies, AI Software for East Africa',
+    description: 'AI-powered solutions for schools, hospitals, farms & businesses across Kenya, Uganda & Tanzania.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -103,7 +99,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${jakarta.variable} ${dmMono.variable} overflow-x-hidden`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${playfair.variable} ${jakarta.variable} ${dmMono.variable} overflow-x-hidden`}
+    >
       <head>
         {/* Resource Hints */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -118,20 +118,20 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon-32x32.png?v=4" />
         
         {/* SEO */}
-        <link rel="canonical" href="https://mylescorp.co.ke" />
-        <link rel="alternate" hrefLang="en" href="https://mylescorp.co.ke" />
-        <link rel="alternate" hrefLang="x" href="https://mylescorp.co.ke" />
-        <link rel="alternate" type="application/rss+xml" title="MylesCorp Technologies Blog RSS Feed" href="https://mylescorp.co.ke/rss.xml" />
+        <link rel="canonical" href="https://www.mylescorptech.com" />
+        <link rel="alternate" hrefLang="en" href="https://www.mylescorptech.com" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.mylescorptech.com" />
+        <link rel="alternate" type="application/rss+xml" title="MylesCorp Technologies Blog RSS Feed" href="https://www.mylescorptech.com/rss.xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "MylesCorp",
-              "url": "https://mylescorp.co.ke",
-              "logo": "https://mylescorp.co.ke/logo.png",
-              "description": "East Africa's leading AI-powered software company building innovative solutions for Education, Healthcare, Agriculture, and Business.",
+              "name": "MylesCorp Technologies",
+              "url": "https://www.mylescorptech.com",
+              "logo": "https://www.mylescorptech.com/logo.png",
+              "description": "AI-powered software solutions for education, healthcare, agriculture and business in East Africa.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Wester Heights, Westlands",
@@ -159,7 +159,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-white text-gray-900 antialiased font-body">
+      <body suppressHydrationWarning className="min-h-screen bg-white text-gray-900 antialiased font-body">
         <ScrollProgress />
         {/* Skip to main content link */}
         <a 
@@ -179,7 +179,6 @@ export default function RootLayout({
         <WhatsAppButton />
         <LiveChat />
         <AnalyticsProvider />
-        <DarkModeToggle />
       </body>
     </html>
   )

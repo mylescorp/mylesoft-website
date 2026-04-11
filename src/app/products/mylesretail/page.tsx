@@ -13,7 +13,7 @@ export const metadata = {
   title: 'MylesRetail — POS & Retail Management Kenya',
   description: 'Complete retail management solution for Kenyan businesses. Point of sale, inventory management, customer loyalty, sales analytics. Built for East African retail sector.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesretail',
+    canonical: 'https://www.mylescorptech.com/products/mylesretail',
   },
 }
 

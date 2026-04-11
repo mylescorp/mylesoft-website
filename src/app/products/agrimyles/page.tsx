@@ -10,10 +10,10 @@ import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
-  title: 'AgriMyles — Agricultural Technology Platform Kenya',
-  description: 'Smart agritech platform connecting farmers, cooperatives, and agribusinesses with AI crop advisory, market prices, and supply chain tools across all 47 counties in Kenya.',
+  title: 'AgriMyles, Smart Agricultural Software for East Africa',
+  description: 'AgriMyles gives Kenyan farmers AI-powered crop monitoring, weather alerts & market insights. Join 1,000+ farmers already growing smarter.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/agrimyles',
+    canonical: 'https://www.mylescorptech.com/products/agrimyles',
   },
 }
 

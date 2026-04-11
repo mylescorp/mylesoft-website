@@ -26,7 +26,7 @@ export const metadata = {
   title: 'Web & App Design Kenya | MylesCorp Technologies',
   description: 'Premium UI/UX design and responsive website design for businesses across East Africa. Accessible, conversion-focused, mobile-first.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/services/web-app-design',
+    canonical: 'https://www.mylescorptech.com/services/web-app-design',
   },
 }
 
@@ -82,7 +82,7 @@ export default function WebAppDesignPage() {
             </h1>
 
             {/* Subtitle */}
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               Stunning, user-friendly websites and applications centred on UX, accessibility, and conversion-focused design.
             </p>
 
@@ -474,7 +474,7 @@ export default function WebAppDesignPage() {
               </a>
             </div>
             <div className="text-light-blue text-sm">
-              <p>Email: info@mylesoft.com | Phone: +254 743 993 715</p>
+              <p>Email: info@mylescorptech.com | Phone: +254 743 993 715</p>
             </div>
           </div>
         </section>

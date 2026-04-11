@@ -61,7 +61,7 @@ export default function DocsPage() {
             </h1>
 
             {/* Subtitle */}
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               Comprehensive guides, API references, and tutorials to help you get the most 
               out of MylesCorp products.
             </p>

@@ -31,7 +31,7 @@ export const metadata = {
   title: 'Careers — Join MylesCorp Technologies',
   description: 'Join East Africa\'s leading AI-powered software company. Explore open positions in engineering, design, sales, and customer success at MylesCorp Technologies in Nairobi, Kenya.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/careers',
+    canonical: 'https://www.mylescorptech.com/careers',
   },
 }
 
@@ -302,7 +302,7 @@ export default function CareersPage() {
               </span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {CAREERS_DATA.overview.description[0]}
             </p>
 
@@ -323,7 +323,7 @@ export default function CareersPage() {
               {CAREERS_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-gold mb-2">{stat.number}</div>
-                  <div className="text-sm text-light-blue font-body">{stat.label}</div>
+                  <div className="text-sm md:text-[0.95rem] text-light-blue font-body">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -359,18 +359,18 @@ export default function CareersPage() {
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
                 Current Opportunities
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto leading-[1.7]">
+              <p className="font-body text-medium-grey text-lg md:text-xl max-w-2xl mx-auto leading-8">
                 We're always looking for talented individuals to join our mission. Find your opportunity below.
               </p>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {openPositions.map((position, index) => (
-                <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+                <div key={index} className="bg-white rounded-[1.5rem] p-8 shadow-card border border-slate-200 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300">
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="font-display font-bold text-navy text-2xl mb-2">{position.title}</h3>
-                      <div className="flex items-center text-sm text-gray-500 mb-4">
+                      <div className="flex items-center text-sm text-medium-grey mb-4">
                         <MapPin size={16} className="mr-2" />
                         <span>{position.location}</span>
                         <span className="mx-2">•</span>
@@ -384,7 +384,7 @@ export default function CareersPage() {
                     </div>
                   </div>
                   
-                  <p className="font-body text-gray-600 leading-relaxed mb-6">{position.description}</p>
+                  <p className="font-body text-medium-grey leading-8 mb-6">{position.description}</p>
                   
                   <div className="mb-6">
                     <h4 className="font-body font-semibold text-navy mb-3">Requirements:</h4>
@@ -392,7 +392,7 @@ export default function CareersPage() {
                       {position.requirements.map((req, reqIndex) => (
                         <li key={reqIndex} className="flex items-start text-sm">
                           <CheckCircle size={16} className="text-gold mr-3 mt-0.5 flex-shrink-0" />
-                          <span className="font-body text-gray-600">{req}</span>
+                          <span className="font-body text-medium-grey">{req}</span>
                         </li>
                       ))}
                     </ul>
@@ -404,14 +404,14 @@ export default function CareersPage() {
                       {position.benefits.map((benefit, benefitIndex) => (
                         <li key={benefitIndex} className="flex items-start text-sm">
                           <Star size={16} className="text-gold mr-3 mt-0.5 flex-shrink-0" />
-                          <span className="font-body text-gray-600">{benefit}</span>
+                          <span className="font-body text-medium-grey">{benefit}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   
                   <div className="flex items-center justify-between">
-                    <div className="text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-medium-grey">
                       <Clock size={16} className="mr-2" />
                       Posted {position.posted}
                     </div>
@@ -447,27 +447,27 @@ export default function CareersPage() {
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
                 Meet Our Departments
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto leading-[1.7]">
+              <p className="font-body text-medium-grey text-lg md:text-xl max-w-2xl mx-auto leading-8">
                 Meet the departments driving our mission forward. Each team plays a crucial role in transforming African industries.
               </p>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {departments.map((dept, index) => (
-                <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-gold/30 transition-all duration-300 text-center">
-                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div key={index} className="bg-white rounded-[1.5rem] p-8 shadow-card border border-slate-200 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300 text-center">
+                  <div className="w-16 h-16 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Brain className="text-gold w-8 h-8" />
                   </div>
                   <h3 className="font-display font-bold text-navy text-2xl mb-3">{dept.name}</h3>
-                  <p className="font-body text-gray-600 mb-4">{dept.description}</p>
+                  <p className="font-body text-medium-grey leading-7 mb-4">{dept.description}</p>
                   <div className="space-y-2">
                     <div className="text-sm">
                       <span className="font-semibold text-navy">Team Size:</span>
-                      <span className="text-gray-500 ml-2">{dept.teamSize}</span>
+                      <span className="text-medium-grey ml-2">{dept.teamSize}</span>
                     </div>
                     <div className="text-sm">
                       <span className="font-semibold text-navy">Focus Areas:</span>
-                      <span className="text-gray-500 ml-2">{dept.focusAreas.join(', ')}</span>
+                      <span className="text-medium-grey ml-2">{dept.focusAreas.join(', ')}</span>
                     </div>
                   </div>
                   <div className="mt-6">

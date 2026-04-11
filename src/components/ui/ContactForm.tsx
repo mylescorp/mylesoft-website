@@ -33,57 +33,57 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <form onSubmit={handleSubmit} className="space-y-6 rounded-[1.75rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-card">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label className="block text-sm font-bold text-navy mb-2 font-body">
+          <label className="block text-sm font-bold text-navy mb-2 font-body tracking-[0.02em]">
             Full Name *
           </label>
           <input
             name="name" type="text" required
             placeholder="John Mwangi"
-            className="w-full px-4 py-3 rounded-lg border border-navy/20 font-body text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all duration-200"
+            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
         <div>
-          <label className="block text-sm font-bold text-navy mb-2 font-body">
+          <label className="block text-sm font-bold text-navy mb-2 font-body tracking-[0.02em]">
             Email Address *
           </label>
           <input
             name="email" type="email" required
-            placeholder="john@company.co.ke"
-            className="w-full px-4 py-3 rounded-lg border border-navy/20 font-body text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all duration-200"
+            placeholder="john@company.com"
+            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
         <div>
-          <label className="block text-sm font-bold text-navy mb-2 font-body">
+          <label className="block text-sm font-bold text-navy mb-2 font-body tracking-[0.02em]">
             Phone Number
           </label>
           <input
             name="phone" type="tel"
             placeholder="+254 7XX XXX XXX"
-            className="w-full px-4 py-3 rounded-lg border border-navy/20 font-body text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all duration-200"
+            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
         <div>
-          <label className="block text-sm font-bold text-navy mb-2 font-body">
+          <label className="block text-sm font-bold text-navy mb-2 font-body tracking-[0.02em]">
             Organisation
           </label>
           <input
             name="organisation" type="text"
             placeholder="Your school, company, or clinic"
-            className="w-full px-4 py-3 rounded-lg border border-navy/20 font-body text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all duration-200"
+            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
       </div>
 
       <div>
-        <label className="block text-sm font-bold text-navy mb-2 font-body">
+        <label className="block text-sm font-bold text-navy mb-2 font-body tracking-[0.02em]">
           Subject *
         </label>
         <select
           name="subject" required
-          className="w-full px-4 py-3 rounded-lg border border-navy/20 font-body text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all duration-200"
+          className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
         >
           <option value="">Select a subject</option>
           <option value="Product Demo Request">
@@ -106,27 +106,27 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-bold text-navy mb-2 font-body">
+        <label className="block text-sm font-bold text-navy mb-2 font-body tracking-[0.02em]">
           Message *
         </label>
         <textarea
           name="message" required rows={5}
           placeholder="Tell us how we can help you..."
-          className="w-full px-4 py-3 rounded-lg border border-navy/20 font-body text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-all duration-200 resize-none"
+          className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200 resize-none"
         />
       </div>
 
       {status === 'success' && (
-        <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-          <p className="text-green-700 text-sm font-body">
+        <div className="rounded-2xl border border-green-200 bg-green-50 p-4">
+          <p className="font-body text-sm md:text-[0.95rem] leading-6 text-green-700">
             Message sent successfully! We will get back to you within 2 business hours. Check your email for a confirmation.
           </p>
         </div>
       )}
 
       {status === 'error' && (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-          <p className="text-red-700 text-sm font-body">
+        <div className="rounded-2xl border border-red-200 bg-red-50 p-4">
+          <p className="font-body text-sm md:text-[0.95rem] leading-6 text-red-700">
             {errorMsg}
           </p>
         </div>
@@ -135,7 +135,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="w-full py-4 bg-gold text-navy font-body font-bold text-[15px] rounded-lg tracking-[0.4px] hover:bg-gold-light hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200"
+        className="w-full rounded-xl bg-gold py-4 font-body font-bold text-[15px] tracking-[0.4px] text-navy shadow-gold hover:-translate-y-0.5 hover:bg-gold-light disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200"
       >
         {status === 'loading'
           ? 'Sending...'

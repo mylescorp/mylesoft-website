@@ -56,14 +56,14 @@ export function CookieConsent({ onAccept, onReject }: CookieConsentProps) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-navy text-white z-50 shadow-gold border-t border-gold/20">
       <div className="container">
-        <div className="flex items-center justify-between p-4">
-          <div className="flex items-center space-x-3">
+        <div className="flex flex-col gap-4 p-4 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-start space-x-3">
             <Cookie size={24} className="text-gold-400" />
             <div className="flex-1">
-              <p className="text-sm font-medium mb-1">
+              <p className="mb-1 text-[0.98rem] font-semibold text-white">
                 We use cookies to enhance your experience and analyze our traffic.
               </p>
-              <p className="text-xs text-navy-200">
+              <p className="text-[0.92rem] leading-6 text-light-blue">
                 By clicking &ldquo;Accept All&rdquo;, you consent to our use of cookies.
                 <button 
                   onClick={() => setShowDetails(!showDetails)}
@@ -75,7 +75,7 @@ export function CookieConsent({ onAccept, onReject }: CookieConsentProps) {
             </div>
           </div>
           
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 self-end md:self-auto">
             <Button 
               variant="secondary" 
               size="sm"
@@ -200,7 +200,7 @@ function CookieOption({ name, description, disabled = false, checked = false, on
           {name}
           {disabled && <span className="ml-1 text-xs">(Required)</span>}
         </label>
-        <p className="text-xs text-navy-200">{description}</p>
+        <p className="text-xs leading-5 text-light-blue">{description}</p>
       </div>
     </div>
   )

@@ -21,6 +21,13 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 
+const STATUS_LABELS: Record<string, string> = {
+  live: 'Live Product',
+  beta: 'Beta Access',
+  development: 'In Development',
+  'coming-soon': 'Coming Soon',
+}
+
 // Mock product data - in production, this would come from a CMS
 const products = {
   'edumyles': {
@@ -191,7 +198,7 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
     demoUrl: '/book-demo?product=edumyles',
     trialAvailable: true,
     support: {
-      email: 'support@mylescorp.co.ke',
+      email: 'support@mylescorptech.com',
       phone: '+254 743 993 715',
       documentation: '/docs/edumyles',
       training: '/training/edumyles'
@@ -345,7 +352,7 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
     demoUrl: '/book-demo?product=mylescare',
     trialAvailable: true,
     support: {
-      email: 'healthcare@mylescorp.co.ke',
+      email: 'healthcare@mylescorptech.com',
       phone: '+254 743 993 715',
       documentation: '/docs/mylescare',
       training: '/training/mylescare'
@@ -384,42 +391,42 @@ export default function ProductPage({ params }: ProductPageProps) {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-500">
+        <section className="section bg-navy-deep">
           <div className="section-padding">
             <div className="max-w-6xl mx-auto">
               <div className="text-white">
                 {/* Breadcrumb */}
-                <nav className="flex items-center space-x-2 text-sm text-navy-200 mb-8">
-                  <Link href="/" className="hover:text-gold-400 transition-colors">Home</Link>
+                <nav className="flex items-center space-x-2 text-sm text-light-blue/80 mb-8">
+                  <Link href="/" className="hover:text-gold transition-colors">Home</Link>
                   <span>/</span>
-                  <Link href="/products" className="hover:text-gold-400 transition-colors">Products</Link>
+                  <Link href="/products" className="hover:text-gold transition-colors">Products</Link>
                   <span>/</span>
-                  <span className="text-gold-400">{product.name}</span>
+                  <span className="text-gold">{product.name}</span>
                 </nav>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div>
                     {/* Status Badge */}
-                    <div className="inline-flex items-center space-x-2 bg-success-green/20 text-success-green px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                      <div className="w-2 h-2 bg-success-green rounded-full animate-pulse" />
-                      <span>Live Product</span>
+                    <div className="inline-flex items-center space-x-2 rounded-full border border-gold/20 bg-gold/10 px-4 py-2 text-sm font-semibold text-gold mb-6">
+                      <div className="w-2 h-2 bg-gold rounded-full animate-pulse" />
+                      <span>{STATUS_LABELS[product.status] ?? 'Available Product'}</span>
                     </div>
 
                     {/* Product Name */}
                     <h1 className="heading-1 mb-4">{product.name}</h1>
                     
                     {/* Tagline */}
-                    <p className="text-2xl text-gold-400 mb-6">{product.tagline}</p>
+                    <p className="text-2xl text-gold mb-6">{product.tagline}</p>
                     
                     {/* Description */}
-                    <p className="text-xl text-navy-100 mb-8">{product.description}</p>
+                    <p className="text-xl leading-8 text-light-blue mb-8">{product.description}</p>
                     
                     {/* Key Features */}
                     <div className="space-y-3 mb-8">
                       {product.features.slice(0, 3).map((feature, index) => (
                         <div key={index} className="flex items-center space-x-3">
-                          <Check className="text-gold-400 flex-shrink-0" size={20} />
-                          <span className="text-navy-100">{feature}</span>
+                          <Check className="text-gold flex-shrink-0" size={20} />
+                          <span className="text-light-blue">{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -442,18 +449,18 @@ export default function ProductPage({ params }: ProductPageProps) {
 
                   <div className="relative">
                     {/* Product Image */}
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                      <div className="aspect-square bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center">
-                        <Icon name={product.icon} size={120} className="text-gold-400" />
+                    <div className="rounded-[1.75rem] border border-white/10 bg-white/6 backdrop-blur-sm p-8 shadow-card">
+                      <div className="aspect-square rounded-[1.4rem] border border-gold/20 bg-gradient-to-br from-gold/15 to-gold/5 flex items-center justify-center">
+                        <Icon name={product.icon} size={120} className="text-gold" />
                       </div>
                     </div>
                     
                     {/* Stats */}
                     <div className="grid grid-cols-2 gap-4 mt-8">
                       {Object.entries(product.stats).map(([key, value]) => (
-                        <div key={key} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                          <div className="text-2xl font-bold text-gold-400">{value}</div>
-                          <div className="text-sm text-navy-200 capitalize">{key}</div>
+                        <div key={key} className="rounded-[1.2rem] border border-white/10 bg-white/6 backdrop-blur-sm p-4 text-center shadow-soft">
+                          <div className="text-2xl font-display font-bold text-gold">{value}</div>
+                          <div className="text-sm text-light-blue capitalize">{key}</div>
                         </div>
                       ))}
                     </div>
@@ -490,12 +497,12 @@ export default function ProductPage({ params }: ProductPageProps) {
                 {Object.values(product.pricing).map((plan, index) => (
                   <div
                     key={index}
-                    className={`bg-white rounded-2xl p-8 shadow-medium hover-lift ${
+                    className={`bg-white rounded-[1.6rem] border border-slate-200 p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-gold/30 ${
                       'popular' in plan && plan.popular ? 'ring-2 ring-gold-400 relative' : ''
                     }`}
                   >
                     {'popular' in plan && plan.popular && (
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold-400 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-navy px-4 py-1 rounded-full text-sm font-semibold">
                         Most Popular
                       </div>
                     )}
@@ -506,10 +513,10 @@ export default function ProductPage({ params }: ProductPageProps) {
                         {plan.price === 'Custom' ? (
                           <div className="text-4xl font-bold text-navy-500">Custom</div>
                         ) : (
-                          <div className="text-4xl font-bold text-navy-500">
-                            KES {plan.price}
-                            <span className="text-lg font-normal text-medium-grey">/{plan.period}</span>
-                          </div>
+                            <div className="text-4xl font-display font-bold text-navy">
+                              KES {plan.price}
+                              <span className="text-lg font-normal text-medium-grey">/{plan.period}</span>
+                            </div>
                         )}
                       </div>
                       <p className="body-text text-sm">{plan.description}</p>
@@ -552,17 +559,17 @@ export default function ProductPage({ params }: ProductPageProps) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {product.testimonials.map((testimonial, index) => (
-                  <div key={index} className="bg-off-white rounded-xl p-6">
+                  <div key={index} className="bg-off-white rounded-[1.4rem] border border-light-grey p-6 shadow-soft">
                     <div className="flex items-center mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="text-gold-400 fill-current" size={16} />
+                        <Star key={i} className="text-gold fill-current" size={16} />
                       ))}
                     </div>
                     <blockquote className="body-text mb-4 italic">
                       "{testimonial.content}"
                     </blockquote>
                     <div>
-                      <div className="font-semibold text-navy-500">{testimonial.name}</div>
+                      <div className="font-display font-semibold text-navy">{testimonial.name}</div>
                       <div className="text-sm text-medium-grey">{testimonial.role}</div>
                     </div>
                   </div>
@@ -573,43 +580,43 @@ export default function ProductPage({ params }: ProductPageProps) {
         </section>
 
         {/* Support Section */}
-        <section className="section bg-navy-500">
+        <section className="section bg-navy-deep">
           <div className="section-padding">
             <div className="max-w-4xl mx-auto text-center text-white">
               <h2 className="heading-2 mb-4">Need Help?</h2>
-              <p className="text-xl text-navy-100 mb-8">
+              <p className="text-xl leading-8 text-light-blue mb-8">
                 Our support team is here to help you get the most out of {product.name}.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Mail className="text-gold-400" size={24} />
+                  <div className="w-16 h-16 bg-gold/10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Mail className="text-gold" size={24} />
                   </div>
                   <h3 className="heading-3 mb-2">Email Support</h3>
-                  <p className="text-navy-200 mb-4">Get help via email</p>
-                  <a href={`mailto:${product.support.email}`} className="text-gold-400 hover:text-gold-300">
+                  <p className="text-light-blue mb-4">Get help via email</p>
+                  <a href={`mailto:${product.support.email}`} className="text-gold hover:text-gold-light">
                     {product.support.email}
                   </a>
                 </div>
 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Phone className="text-gold-400" size={24} />
+                  <div className="w-16 h-16 bg-gold/10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Phone className="text-gold" size={24} />
                   </div>
                   <h3 className="heading-3 mb-2">Phone Support</h3>
-                  <p className="text-navy-200 mb-4">Call us directly</p>
-                  <a href={`tel:${product.support.phone}`} className="text-gold-400 hover:text-gold-300">
+                  <p className="text-light-blue mb-4">Call us directly</p>
+                  <a href={`tel:${product.support.phone}`} className="text-gold hover:text-gold-light">
                     {product.support.phone}
                   </a>
                 </div>
 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MessageCircle className="text-gold-400" size={24} />
+                  <div className="w-16 h-16 bg-gold/10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MessageCircle className="text-gold" size={24} />
                   </div>
                   <h3 className="heading-3 mb-2">Live Chat</h3>
-                  <p className="text-navy-200 mb-4">Chat with our team</p>
+                  <p className="text-light-blue mb-4">Chat with our team</p>
                   <Button variant="secondary" size="sm">Start Chat</Button>
                 </div>
               </div>

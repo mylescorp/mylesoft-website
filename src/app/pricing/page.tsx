@@ -15,7 +15,7 @@ export const metadata = {
   title: 'Pricing — Affordable Plans for All MylesCorp Products & Services',
   description: 'Complete pricing for all 9 MylesCorp products and services. EduMyles, MylesCare, MylesLegal, MylesEnergy, MylesNonProfit, MylesConstruction, MylesHospitality, MylesManufacturing, MylesMedia, MylesTransit. No hidden fees. 14-day free trial.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/pricing',
+    canonical: 'https://www.mylescorptech.com/pricing',
   },
 }
 
@@ -559,7 +559,7 @@ export default function PricingPage() {
               </span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-[1.7]">
+            <p className="font-body text-ice text-lg md:text-2xl max-w-3xl mx-auto mb-8 leading-9">
               {PRICING_DATA.overview.description[0]}
             </p>
             
@@ -588,7 +588,7 @@ export default function PricingPage() {
               {PRICING_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-gold mb-2">{stat.number}</div>
-                  <div className="text-sm text-light-blue font-body">{stat.label}</div>
+                  <div className="text-sm md:text-[0.95rem] text-light-blue font-body">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -638,7 +638,7 @@ export default function PricingPage() {
               {pricingPlans.map((plan, index) => (
                 <div 
                   key={index} 
-                  className={`relative bg-white rounded-2xl shadow-medium p-8 hover:shadow-large transition-all duration-300 h-full flex flex-col ${
+                  className={`relative bg-white rounded-[1.6rem] shadow-card p-8 transition-all duration-300 h-full flex flex-col ${
                     plan.popular ? 'ring-2 ring-gold-400 ring-offset-4' : ''
                   }`}
                 >
@@ -651,9 +651,9 @@ export default function PricingPage() {
                   )}
                   
                   <div className="text-center mb-8 flex-shrink-0">
-                    <h3 className="text-2xl font-bold text-navy-500 mb-2">{plan.name}</h3>
+                    <h3 className="text-2xl font-display font-bold text-navy mb-2">{plan.name}</h3>
                     <div className="mb-6">
-                      <div className="text-4xl font-bold text-gold-400 mb-1">{plan.price}</div>
+                      <div className="text-4xl font-display font-bold text-gold mb-1">{plan.price}</div>
                       <div className="text-medium-grey text-sm">{plan.period}</div>
                     </div>
                   </div>
@@ -664,13 +664,13 @@ export default function PricingPage() {
                         {plan.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center">
                             <Check size={16} className="text-green-500 mr-3 flex-shrink-0" />
-                            <span className="text-sm">{feature}</span>
+                            <span className="text-sm text-dark-grey">{feature}</span>
                           </div>
                         ))}
                         {plan.notIncluded.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center opacity-60">
                             <X size={16} className="text-medium-grey mr-3 flex-shrink-0" />
-                            <span className="text-sm">{feature}</span>
+                            <span className="text-sm text-medium-grey">{feature}</span>
                           </div>
                         ))}
                       </div>
@@ -704,10 +704,10 @@ export default function PricingPage() {
                   <h3 className="heading-3 mb-6 text-center">{category.category}</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {category.products.map((product, productIndex) => (
-                      <div key={productIndex} className="bg-white rounded-lg shadow-medium p-6">
-                        <h4 className="font-semibold text-navy-500 mb-2">{product.name}</h4>
+                      <div key={productIndex} className="bg-white rounded-[1.4rem] shadow-card p-6 border border-slate-200">
+                        <h4 className="font-display font-semibold text-navy mb-2">{product.name}</h4>
                         <div className="mb-4">
-                          <span className="text-2xl font-bold text-gold-400">{product.price}</span>
+                          <span className="text-2xl font-display font-bold text-gold">{product.price}</span>
                           <span className="text-medium-grey text-sm">{product.period}</span>
                         </div>
                         <ul className="space-y-2">
@@ -743,10 +743,10 @@ export default function PricingPage() {
                   <h3 className="heading-3 mb-6 text-center">{category.category}</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {category.services.map((service, serviceIndex) => (
-                      <div key={serviceIndex} className="bg-white rounded-lg shadow-medium p-6">
-                        <h4 className="font-semibold text-navy-500 mb-2">{service.name}</h4>
+                      <div key={serviceIndex} className="bg-white rounded-[1.4rem] shadow-card p-6 border border-slate-200">
+                        <h4 className="font-display font-semibold text-navy mb-2">{service.name}</h4>
                         <div className="mb-4">
-                          <span className="text-2xl font-bold text-gold-400">{service.price}</span>
+                          <span className="text-2xl font-display font-bold text-gold">{service.price}</span>
                           <span className="text-medium-grey text-sm">{service.period}</span>
                         </div>
                         <ul className="space-y-2">
@@ -779,8 +779,8 @@ export default function PricingPage() {
             <div className="max-w-3xl mx-auto">
               <div className="space-y-6">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="bg-white rounded-lg shadow-medium p-6">
-                    <h3 className="font-semibold text-navy-500 mb-3">{faq.question}</h3>
+                  <div key={index} className="bg-white rounded-[1.4rem] shadow-card p-6 border border-slate-200">
+                    <h3 className="font-display font-semibold text-navy mb-3">{faq.question}</h3>
                     <p className="body-text">{faq.answer}</p>
                   </div>
                 ))}

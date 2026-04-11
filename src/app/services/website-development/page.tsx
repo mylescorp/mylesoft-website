@@ -22,7 +22,7 @@ export const metadata = {
   title: 'Website Development & Hosting Kenya | MylesCorp',
   description: 'Professional websites built on Next.js and hosted on Vercel for businesses, schools, and organisations across Kenya. Mobile-first, SEO-optimised, SSL. From KES 25,000.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/services/website-development',
+    canonical: 'https://www.mylescorptech.com/services/website-development',
   },
 }
 
@@ -78,7 +78,7 @@ export default function WebsiteDevelopmentPage() {
             </h1>
 
             {/* Subtitle */}
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               Professional websites for businesses, schools, hospitals, NGOs, and government institutions — built on Next.js and hosted on Vercel.
             </p>
 
@@ -527,7 +527,7 @@ export default function WebsiteDevelopmentPage() {
               </a>
             </div>
             <div className="text-light-blue text-sm">
-              <p>Email: info@mylesoft.com | Phone: +254 743 993 715</p>
+              <p>Email: info@mylescorptech.com | Phone: +254 743 993 715</p>
             </div>
           </div>
         </section>

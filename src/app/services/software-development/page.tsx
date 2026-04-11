@@ -23,7 +23,7 @@ export const metadata = {
   title: 'Custom Software Development Kenya | MylesCorp',
   description: 'Custom web applications, mobile apps, ERP systems, and API development for East African businesses. Built by MylesCorp Technologies in Nairobi.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/services/software-development',
+    canonical: 'https://www.mylescorptech.com/services/software-development',
   },
 }
 
@@ -79,7 +79,7 @@ export default function SoftwareDevelopmentPage() {
             </h1>
 
             {/* Subtitle */}
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               We design and build custom software solutions from the ground up — agile, scalable, and built to grow with your business across East Africa.
             </p>
 
@@ -472,7 +472,7 @@ export default function SoftwareDevelopmentPage() {
               </a>
             </div>
             <div className="text-light-blue text-sm">
-              <p>Email: info@mylesoft.com | Phone: +254 743 993 715</p>
+              <p>Email: info@mylescorptech.com | Phone: +254 743 993 715</p>
             </div>
           </div>
         </section>

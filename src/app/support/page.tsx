@@ -134,7 +134,7 @@ export default function SupportPage() {
               </span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {SUPPORT_DATA.overview.description[0]}
             </p>
             

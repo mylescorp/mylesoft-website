@@ -54,7 +54,7 @@ const offices: Office[] = [
     coordinates: { lat: -1.2921, lng: 36.8219 },
     address: 'Westlands, Nairobi, Kenya',
     phone: '+254 743 993 715',
-    email: 'nairobi@mylescorp.co.ke',
+    email: 'nairobi@mylescorptech.com',
     type: 'headquarters',
     employees: 45
   },
@@ -65,7 +65,7 @@ const offices: Office[] = [
     coordinates: { lat: -4.0435, lng: 39.6682 },
     address: 'Mombasa CBD, Mombasa, Kenya',
     phone: '+254 743 993 715',
-    email: 'mombasa@mylescorp.co.ke',
+    email: 'mombasa@mylescorptech.com',
     type: 'branch',
     employees: 12
   },
@@ -76,7 +76,7 @@ const offices: Office[] = [
     coordinates: { lat: 0.3476, lng: 32.5825 },
     address: 'Kampala Central, Uganda',
     phone: '+256 743 993 715',
-    email: 'kampala@mylescorp.co.ke',
+    email: 'kampala@mylescorptech.com',
     type: 'branch',
     employees: 8
   },
@@ -87,7 +87,7 @@ const offices: Office[] = [
     coordinates: { lat: -6.7924, lng: 39.2083 },
     address: 'Dar es Salaam CBD, Tanzania',
     phone: '+255 743 993 715',
-    email: 'dar@mylescorp.co.ke',
+    email: 'dar@mylescorptech.com',
     type: 'branch',
     employees: 6
   },
@@ -98,7 +98,7 @@ const offices: Office[] = [
     coordinates: { lat: -1.9403, lng: 30.1044 },
     address: 'Kigali Central, Rwanda',
     phone: '+250 743 993 715',
-    email: 'kigali@mylescorp.co.ke',
+    email: 'kigali@mylescorptech.com',
     type: 'branch',
     employees: 5
   }

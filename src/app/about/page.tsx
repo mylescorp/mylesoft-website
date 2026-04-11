@@ -29,7 +29,7 @@ export const metadata = {
   title: 'About Us — Our Story & Team',
   description: 'Learn about MylesCorp Technologies — our story, mission, vision, M.Y.L.E.S. values, and the team transforming East Africa with AI-powered technology.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/about',
+    canonical: 'https://www.mylescorptech.com/about',
   },
 }
 
@@ -155,7 +155,7 @@ export default function AboutPage() {
               </span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {ABOUT_DATA.overview.description[0]}
             </p>
             
@@ -164,7 +164,7 @@ export default function AboutPage() {
               {ABOUT_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-gold mb-2">{stat.number}</div>
-                  <div className="text-sm text-light-blue font-body">{stat.label}</div>
+                  <div className="text-sm md:text-[0.95rem] text-light-blue font-body">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -224,9 +224,7 @@ export default function AboutPage() {
                   Our Name
                 </em>
               </h2>
-              <p className="font-body font-light max-w-2xl mx-auto
-                    text-lg leading-relaxed"
-                 style={{ color: '#C7D7EF' }}>
+              <p className="font-body max-w-2xl mx-auto text-lg md:text-xl leading-8 text-light-blue">
                 MylesCorp Technologies Ltd is a name built on ancient 
                 foundations — two words, two languages, one powerful identity 
                 rooted in over 2,000 years of meaning.
@@ -237,10 +235,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
 
               {/* MYLES */}
-              <div className="bg-gradient-to-br from-navy to-navy-dark
-                      border border-gold/20 rounded-2xl p-8
-                      hover:border-gold/50 hover:-translate-y-1
-                      transition-all duration-300">
+              <div className="bg-gradient-to-br from-navy to-navy-dark border border-gold/20 rounded-[1.6rem] p-8 shadow-card hover:border-gold/50 hover:-translate-y-1 transition-all duration-300">
                 <div style={{
                   color: '#C79639', fontSize: '10px', fontWeight: 700,
                   letterSpacing: '2px', textTransform: 'uppercase',
@@ -291,10 +286,7 @@ export default function AboutPage() {
               </div>
 
               {/* CORP */}
-              <div className="bg-gradient-to-br from-navy to-navy-dark
-                      border border-gold/20 rounded-2xl p-8
-                      hover:border-gold/50 hover:-translate-y-1
-                      transition-all duration-300">
+              <div className="bg-gradient-to-br from-navy to-navy-dark border border-gold/20 rounded-[1.6rem] p-8 shadow-card hover:border-gold/50 hover:-translate-y-1 transition-all duration-300">
                 <div style={{
                   color: '#C79639', fontSize: '10px', fontWeight: 700,
                   letterSpacing: '2px', textTransform: 'uppercase',
@@ -346,9 +338,7 @@ export default function AboutPage() {
             </div>
 
             {/* Combined meaning quote */}
-            <div className="bg-gradient-to-br from-navy to-navy-dark
-                    border border-gold/20 rounded-2xl p-10
-                    text-center relative overflow-hidden">
+            <div className="bg-gradient-to-br from-navy to-navy-dark border border-gold/20 rounded-[1.6rem] p-10 text-center relative overflow-hidden shadow-card">
               <div className="absolute top-0 left-0 right-0 h-[3px]"
                    style={{ background: '#C79639' }} />
               <p className="text-[10px] font-bold tracking-[2.5px]
@@ -418,8 +408,7 @@ export default function AboutPage() {
               </div>
 
               {/* Right — stats visual */}
-              <div className="bg-gradient-to-br from-navy to-navy-dark
-                      rounded-2xl p-10 border border-gold/20">
+              <div className="bg-gradient-to-br from-navy to-navy-dark rounded-[1.6rem] p-10 border border-gold/20 shadow-card">
                 <div className="grid grid-cols-2 gap-5">
                   {[
                     { num: '2020',  label: 'Year Founded'      },
@@ -481,10 +470,10 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
               {/* Mission */}
-              <div className="bg-white border border-navy/10
-                      rounded-2xl p-10 flex flex-col
+              <div className="bg-white border border-slate-200
+                      rounded-[1.6rem] p-10 flex flex-col shadow-card
                       hover:border-gold hover:-translate-y-1
-                      hover:shadow-xl transition-all
+                      transition-all
                       duration-300 group">
                 <div className="w-14 h-14 bg-gold/10 border
                         border-gold/20 rounded-xl flex
@@ -508,10 +497,10 @@ export default function AboutPage() {
               </div>
 
               {/* Vision */}
-              <div className="bg-white border border-navy/10
-                      rounded-2xl p-10 flex flex-col
+              <div className="bg-white border border-slate-200
+                      rounded-[1.6rem] p-10 flex flex-col shadow-card
                       hover:border-gold hover:-translate-y-1
-                      hover:shadow-xl transition-all
+                      transition-all
                       duration-300 group">
                 <div className="w-14 h-14 bg-gold/10 border
                         border-gold/20 rounded-xl flex
@@ -561,9 +550,7 @@ export default function AboutPage() {
                   Team
                 </span>
               </h2>
-              <p className="font-body font-light max-w-2xl mx-auto
-                    text-lg leading-relaxed"
-                 style={{ color: '#545454' }}>
+              <p className="font-body max-w-2xl mx-auto text-lg md:text-xl leading-8 text-medium-grey">
                 The visionaries driving MylesCorp's mission to transform 
                 African technology through innovation and excellence.
               </p>
@@ -573,9 +560,9 @@ export default function AboutPage() {
               {TEAM_MEMBERS.map((member, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-navy/10 rounded-2xl p-8
+                  className="bg-white border border-slate-200 rounded-[1.5rem] p-8 shadow-card
                          hover:border-gold hover:-translate-y-1
-                         hover:shadow-xl transition-all duration-300"
+                         transition-all duration-300"
                 >
                   <div className="flex flex-col items-center text-center">
                     <div className="w-24 h-24 bg-gradient-to-br from-gold/20 to-gold/10
@@ -691,9 +678,7 @@ export default function AboutPage() {
                   Numbers
                 </em>
               </h2>
-              <p className="font-body font-light max-w-2xl mx-auto
-                    text-lg leading-relaxed"
-                 style={{ color: '#C7D7EF' }}>
+              <p className="font-body max-w-2xl mx-auto text-lg md:text-xl leading-8 text-light-blue">
                 Measuring our impact across East Africa through 
                 transformative technology solutions.
               </p>

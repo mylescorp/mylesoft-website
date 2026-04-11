@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesManufacturing - Manufacturing Management Software | MylesCorp Technologies',
   description: 'Comprehensive manufacturing management solution. Streamline production, manage inventory, and optimize operations with intelligent automation.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesmanufacturing',
+    canonical: 'https://www.mylescorptech.com/products/mylesmanufacturing',
   },
 }
 

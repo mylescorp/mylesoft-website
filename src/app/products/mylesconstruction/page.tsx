@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesConstruction - Construction Project Management Software | MylesCorp Technologies',
   description: 'Intelligent project management for construction companies. Track projects, manage resources, and monitor progress in real-time.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesconstruction',
+    canonical: 'https://www.mylescorptech.com/products/mylesconstruction',
   },
 }
 

@@ -7,8 +7,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'http', hostname: 'localhost' },
-      { protocol: 'https', hostname: 'www.mylesoft.com' },
-      { protocol: 'https', hostname: 'mylesoft.com' },
+      { protocol: 'https', hostname: 'www.mylescorptech.com' },
+      { protocol: 'https', hostname: 'mylescorptech.com' },
     ],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],

@@ -42,7 +42,7 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
         <div className="p-8">
           <div className="mb-6">
             <h2 className="font-display text-xl font-semibold text-white mb-3">
-              We're sorry for the inconvenience
+              We&apos;re sorry for the inconvenience
             </h2>
             <p className="font-body text-light-blue leading-relaxed">
               An unexpected error occurred while loading this page. Our team has been notified 
@@ -99,14 +99,14 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
           <div className="bg-navy-dark/50 border border-gold/10 rounded-lg p-6 text-center">
             <h3 className="font-display font-semibold text-white mb-2">Need Help?</h3>
             <p className="font-body text-sm text-muted-blue mb-4">
-              If this problem continues, please don't hesitate to reach out to our support team.
+              If this problem continues, please don&apos;t hesitate to reach out to our support team.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center text-sm font-body">
               <a 
-                href="mailto:support@MylesCorp.com" 
+                href="mailto:support@mylescorptech.com" 
                 className="text-gold hover:text-gold-light font-medium"
               >
-                support@MylesCorp.com
+                support@mylescorptech.com
               </a>
               <span className="text-muted-blue">•</span>
               <a 

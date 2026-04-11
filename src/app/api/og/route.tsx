@@ -85,7 +85,7 @@ export async function GET(request: Request) {
               opacity: 0.7,
             }}
           >
-            <span>🇰🇪 Nairobi, Kenya • MylesCorp.com</span>
+            <span>Nairobi, Kenya • mylescorptech.com</span>
           </div>
         </div>
       ),

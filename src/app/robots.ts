@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.mylescorp.co.ke/sitemap.xml',
+    sitemap: 'https://www.mylescorptech.com/sitemap.xml',
+    host: 'https://www.mylescorptech.com',
   }
 }

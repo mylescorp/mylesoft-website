@@ -91,9 +91,9 @@ export default function TermsOfService() {
             Terms of <em className="text-[#C79639] italic">Service</em>
           </h1>
           <div className="flex gap-5 flex-wrap text-[12px] text-[#95A9CC]">
-            <span>📅 Effective: 1 January 2026</span>
-            <span>🔄 Updated: 21 March 2026</span>
-            <span>🏢 MylesCorp Technologies Ltd</span>
+            <span>Effective: 1 January 2026</span>
+            <span>Updated: 21 March 2026</span>
+            <span>MylesCorp Technologies Ltd</span>
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@ export default function TermsOfService() {
                 These Terms of Service (&ldquo;Terms&rdquo;) constitute a legally binding agreement between you (&ldquo;User&rdquo;, &ldquo;Client&rdquo;, or &ldquo;you&rdquo;) and MylesCorp Technologies Ltd (&ldquo;MylesCorp&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), a company registered in Kenya with its principal office at Westlands, Nairobi, Kenya.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                By accessing our website at <a href="https://www.mylescorp.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorp.co.ke</a>, subscribing to any MylesCorp product, or engaging our services, you confirm that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.
+                By accessing our website at <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a>, subscribing to any MylesCorp product, or engaging our services, you confirm that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 If you are entering into these Terms on behalf of an organisation, you represent that you have authority to bind that organisation to these Terms.
@@ -186,7 +186,7 @@ export default function TermsOfService() {
               <ul className="pl-[18px] mb-3 space-y-1.5">
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">Maintaining confidentiality of your account credentials</li>
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">All activities that occur under your account</li>
-                <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">Notifying us immediately of any unauthorised use of your account at <a href="mailto:security@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">security@mylescorp.co.ke</a></li>
+                <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">Notifying us immediately of any unauthorised use of your account at <a href="mailto:security@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">security@mylescorptech.com</a></li>
               </ul>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 We reserve right to suspend or terminate accounts that violate these Terms or that we reasonably believe are being used fraudulently.
@@ -352,7 +352,7 @@ export default function TermsOfService() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Termination</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                <strong className="text-white font-semibold">By you:</strong> You may terminate your subscription at any time by providing 14 days' written notice to <a href="mailto:accounts@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">accounts@mylescorp.co.ke</a>. No refunds are provided for unused subscription periods unless otherwise agreed.
+                <strong className="text-white font-semibold">By you:</strong> You may terminate your subscription at any time by providing 14 days' written notice to <a href="mailto:accounts@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">accounts@mylescorptech.com</a>. No refunds are provided for unused subscription periods unless otherwise agreed.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 <strong className="text-white font-semibold">By MylesCorp:</strong> We may suspend or terminate your access immediately if you breach these Terms, fail to make payment, or if we are required to do so by law. We may also terminate with 30 days' notice for any business reason.
@@ -406,10 +406,10 @@ export default function TermsOfService() {
               <div className="bg-[#0d1929] border border-[rgba(199,150,57,0.15)] rounded-[12px] p-5.5 mt-7">
                 <h4 className="font-['Playfair_Display'] text-[15px] font-bold text-white mb-2.5">Legal Team — MylesCorp Technologies Ltd</h4>
                 <p className="text-[13px] text-[#95A9CC] leading-[1.8]">
-                  📧 <a href="mailto:legal@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">legal@mylescorp.co.ke</a><br/>
-                  📞 <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
-                  📍 Westlands, Nairobi, Kenya<br/>
-                  🌐 <a href="https://www.mylescorp.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorp.co.ke</a>
+                  Email: <a href="mailto:legal@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">legal@mylescorptech.com</a><br/>
+                  Phone: <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
+                  Address: Westlands, Nairobi, Kenya<br/>
+                  Website: <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a>
                 </p>
               </div>
             </div>

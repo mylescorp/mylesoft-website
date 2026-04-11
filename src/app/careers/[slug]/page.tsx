@@ -169,7 +169,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
       'Offer and onboarding process'
     ],
     contact: {
-      email: 'careers@mylescorp.co.ke',
+      email: 'careers@mylescorptech.com',
       phone: '+254 743 993 715',
       location: 'Wester Heights, Westlands, Nairobi, Kenya'
     }
@@ -274,7 +274,7 @@ As Product Manager at MylesCorp Technologies, you will work at the intersection 
       'Offer and onboarding'
     ],
     contact: {
-      email: 'careers@mylescorp.co.ke',
+      email: 'careers@mylescorptech.com',
       phone: '+254 743 993 715',
       location: 'Wester Heights, Westlands, Nairobi, Kenya'
     }

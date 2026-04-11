@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesLegal - Law Practice Management Software | MylesCorp Technologies',
   description: 'Comprehensive practice management solution for law firms. Case management, document management, time tracking, and billing system in one platform.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/myleslegal',
+    canonical: 'https://www.mylescorptech.com/products/myleslegal',
   },
 }
 

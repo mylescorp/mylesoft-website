@@ -3,14 +3,13 @@ import { Button } from '@/components/ui/Button'
 import { ProductCard } from '@/components/ui/ProductCard'
 import { Icon } from '@/components/ui/Icon'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { StaggerReveal } from '@/components/ui/ScrollReveal'
 
 export const metadata = {
-  title: 'Our Products — AI-Powered Solutions',
-  description: 'Explore MylesCorp\'s suite of AI-powered products: EduMyles (school management), MylesCare (healthcare), AgriMyles (agriculture), MylesCRM (business) — built for East Africa.',
+  title: 'All Products, AI-Powered Software Solutions | MylesCorp',
+  description: 'Explore AI-powered software solutions from MylesCorp for schools, hospitals, farms, logistics teams, and businesses across East Africa.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products',
+    canonical: 'https://www.mylescorptech.com/products',
   },
 }
 

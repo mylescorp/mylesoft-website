@@ -80,9 +80,9 @@ export function LiveChat() {
     } else if (input.includes('demo') || input.includes('trial')) {
       return 'Great! I can help you book a demo. Our team will walk you through our solutions and answer all your questions. Click the "Book a Demo" button or I can connect you with our sales team.'
     } else if (input.includes('support') || input.includes('help')) {
-      return 'I\'m here to help! For technical support, you can reach our team at support@mylescorp.co.ke or call +254 743 993 715. What specific issue are you experiencing?'
+      return 'I\'m here to help! For technical support, you can reach our team at support@mylescorptech.com or call +254 743 993 715. What specific issue are you experiencing?'
     } else if (input.includes('contact') || input.includes('phone') || input.includes('email')) {
-      return 'You can reach us at:\n📧 Email: info@mylescorp.co.ke\n📞 Phone: +254 743 993 715\n📍 Location: Wester Heights, Westlands, Nairobi\nWould you like me to connect you with a specific team member?'
+      return 'You can reach us at:\nEmail: info@mylescorptech.com\nPhone: +254 743 993 715\nLocation: Wester Heights, Westlands, Nairobi\nWould you like me to connect you with a specific team member?'
     } else if (input.includes('career') || input.includes('job') || input.includes('work')) {
       return 'We\'re always looking for talented individuals! Check our careers page at /careers for current openings. What type of role are you interested in?'
     } else {

@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesHospitality - Hospitality Management Software | MylesCorp Technologies',
   description: 'Complete hospitality management solution for hotels, restaurants, and tourism businesses. Streamline operations and enhance guest experiences.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/myles-hospitality',
+    canonical: 'https://www.mylescorptech.com/products/myles-hospitality',
   },
 }
 

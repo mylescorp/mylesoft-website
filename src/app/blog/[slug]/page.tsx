@@ -14,6 +14,14 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 
+const formatPublishedDate = (date: string) =>
+  new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(date))
+
 // Mock blog post data - in production, this would come from a CMS
 const blogPosts = {
   'transforming-education-ai-kenya': {
@@ -200,21 +208,21 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-500">
+        <section className="section bg-navy-deep">
           <div className="section-padding">
             <div className="max-w-4xl mx-auto">
               <div className="text-white">
                 {/* Breadcrumb */}
-                <nav className="flex items-center space-x-2 text-sm text-navy-200 mb-8">
-                  <Link href="/" className="hover:text-gold-400 transition-colors">Home</Link>
+                <nav className="flex items-center space-x-2 text-sm text-light-blue/80 mb-8">
+                  <Link href="/" className="hover:text-gold transition-colors">Home</Link>
                   <span>/</span>
-                  <Link href="/blog" className="hover:text-gold-400 transition-colors">Blog</Link>
+                  <Link href="/blog" className="hover:text-gold transition-colors">Blog</Link>
                   <span>/</span>
-                  <span className="text-gold-400">{post.category}</span>
+                  <span className="text-gold">{post.category}</span>
                 </nav>
 
                 {/* Category Badge */}
-                <div className="inline-block bg-gold-100 text-gold-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <div className="inline-block rounded-full border border-gold/25 bg-gold/10 px-4 py-2 text-sm font-semibold text-gold mb-6">
                   {post.category}
                 </div>
 
@@ -222,23 +230,19 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 <h1 className="heading-1 mb-6">{post.title}</h1>
 
                 {/* Excerpt */}
-                <p className="text-xl text-navy-100 mb-8 max-w-3xl">
+                <p className="text-xl leading-8 text-light-blue mb-8 max-w-3xl">
                   {post.excerpt}
                 </p>
 
                 {/* Meta Information */}
-                <div className="flex flex-wrap items-center gap-6 text-navy-200">
+                <div className="flex flex-wrap items-center gap-6 text-light-blue/85">
                   <div className="flex items-center space-x-2">
                     <User size={20} />
                     <span>{post.author.name}</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Calendar size={20} />
-                    <span>{new Date(post.publishedAt).toLocaleDateString('en-US', { 
-                      year: 'numeric', 
-                      month: 'long', 
-                      day: 'numeric' 
-                    })}</span>
+                    <span>{formatPublishedDate(post.publishedAt)}</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Clock size={20} />
@@ -255,14 +259,14 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="section-padding">
             <div className="max-w-4xl mx-auto">
               {/* Author Bio */}
-              <div className="bg-off-white rounded-xl p-6 mb-12 flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center">
-                  <span className="text-gold-600 font-bold text-xl">
+              <div className="bg-off-white rounded-[1.5rem] border border-light-grey shadow-soft p-6 mb-12 flex items-center space-x-4">
+                <div className="w-16 h-16 bg-gold/10 border border-gold/20 rounded-full flex items-center justify-center">
+                  <span className="text-gold font-bold text-xl">
                     {post.author.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy-500">{post.author.name}</h3>
+                  <h3 className="font-display font-semibold text-navy">{post.author.name}</h3>
                   <p className="text-medium-grey text-sm">{post.author.role}</p>
                 </div>
               </div>
@@ -277,7 +281,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-gold-50 text-gold-600 px-3 py-1 rounded-full text-sm"
+                    className="rounded-full border border-gold/20 bg-gold/10 px-3 py-1 text-sm text-gold"
                   >
                     #{tag}
                   </span>
@@ -320,8 +324,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   if (!relatedPost) return null
                   
                   return (
-                    <div key={relatedSlug} className="bg-white rounded-xl shadow-medium p-6 hover-lift">
-                      <div className="bg-gold-100 text-gold-600 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
+                    <div key={relatedSlug} className="bg-white rounded-[1.5rem] border border-slate-200 shadow-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-gold/30">
+                      <div className="bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
                         {relatedPost.category}
                       </div>
                       <h3 className="heading-3 mb-3">{relatedPost.title}</h3>
@@ -346,9 +350,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <section className="section">
           <div className="section-padding">
             <div className="max-w-4xl mx-auto">
-              <div className="bg-navy-500 rounded-2xl p-8 text-center text-white">
+              <div className="bg-navy-deep rounded-[1.75rem] border border-gold/15 p-8 text-center text-white shadow-card">
                 <h2 className="heading-2 mb-4">Stay Updated with AI Insights</h2>
-                <p className="text-xl text-navy-100 mb-8">
+                <p className="text-xl leading-8 text-light-blue mb-8">
                   Get the latest articles on AI technology and digital transformation in East Africa delivered to your inbox.
                 </p>
                 <Link href="#newsletter">

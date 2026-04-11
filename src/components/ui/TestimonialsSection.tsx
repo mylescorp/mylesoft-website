@@ -17,96 +17,54 @@ interface TestimonialsSectionProps {
 
 export function TestimonialsSection({ title, testimonials, centerHeader = false }: TestimonialsSectionProps) {
   return (
-    <section style={{ background: 'var(--navy-deep)', padding: '80px 5%' }}>
-      <div className="max-w-[1200px] mx-auto">
-        {/* Header */}
+    <section className="py-20 bg-navy-deep">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={centerHeader ? 'text-center' : ''}>
-          {/* Eyebrow */}
-          <div className={`flex items-center gap-2.5 mb-3 ${centerHeader ? 'justify-center' : ''}`}>
-            <div className="w-7 h-0.5" style={{ background: 'var(--gold)' }} />
-            <span style={{
-              color: 'var(--gold)',
-              fontSize: '11px',
-              fontWeight: 700,
-              letterSpacing: '2.5px',
-              textTransform: 'uppercase',
-            }}>
+          <div className={`flex items-center gap-3 mb-4 ${centerHeader ? 'justify-center' : ''}`}>
+            <div className="w-8 h-0.5 bg-gold" />
+            <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
               Testimonials
             </span>
-            <div className="w-7 h-0.5" style={{ background: 'var(--gold)' }} />
+            <div className="w-8 h-0.5 bg-gold" />
           </div>
 
-          {/* Title */}
-          <h2 
-            className="font-bold leading-[1.2] mb-12"
-            style={{
-              fontFamily: 'Playfair Display, serif',
-              fontSize: 'clamp(26px,3.5vw,42px)',
-              color: 'var(--white)',
-            }}
-          >
+          <h2 className="font-display font-bold text-white text-4xl md:text-5xl leading-tight mb-12">
             {title}
           </h2>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div 
+            <article
               key={index}
-              className="rounded-xl p-7"
-              style={{
-                background: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(199,150,57,0.15)',
-              }}
+              className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-7 shadow-card backdrop-blur-sm"
             >
-              {/* Stars */}
-              <div className="flex gap-0.75 mb-3.5">
+              <div className="flex gap-1.5 mb-5">
                 {[...Array(5)].map((_, i) => (
-                  <div 
+                  <div
                     key={i}
-                    className="w-[13px] h-[13px]"
+                    className="h-4 w-4 bg-gold"
                     style={{
-                      background: 'var(--gold)',
                       clipPath: 'polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)',
                     }}
                   />
                 ))}
               </div>
 
-              {/* Quote */}
-              <p 
-                className="italic leading-[1.8] mb-4.5"
-                style={{
-                  fontSize: '13px',
-                  color: 'var(--light-blue)',
-                }}
-              >
+              <p className="font-body text-[1rem] leading-8 italic text-light-blue mb-6">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
-              {/* Author */}
-              <div 
-                className="font-bold"
-                style={{
-                  fontSize: '13px',
-                  color: 'var(--white)',
-                }}
-              >
-                {testimonial.author}
+              <div className="border-t border-white/10 pt-5">
+                <div className="font-display font-bold text-white text-lg">
+                  {testimonial.author}
+                </div>
+
+                <div className="mt-1 font-body text-sm md:text-[0.95rem] leading-6 text-muted">
+                  {testimonial.role}, {testimonial.organization}
+                </div>
               </div>
-              
-              {/* Role */}
-              <div 
-                className="mt-0.5"
-                style={{
-                  fontSize: '11px',
-                  color: 'var(--muted)',
-                }}
-              >
-                {testimonial.role}, {testimonial.organization}
-              </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -92,9 +92,9 @@ export default function Compliance() {
             Compliance <em className="text-[#C79639] italic">Standards</em>
           </h1>
           <div className="flex gap-5 flex-wrap text-[12px] text-[#95A9CC]">
-            <span>📅 Reviewed: March 2026</span>
-            <span>🏅 ISO 9001:2015 Certified</span>
-            <span>🔒 GDPR & DPA Compliant</span>
+            <span>Reviewed: March 2026</span>
+            <span>ISO 9001:2015 Certified</span>
+            <span>GDPR & DPA Compliant</span>
           </div>
         </div>
       </div>
@@ -245,7 +245,7 @@ export default function Compliance() {
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]"><strong className="text-white font-semibold">Data Protection Impact Assessments (DPIAs):</strong> Conducted for all high-risk processing activities</li>
               </ul>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                To request a Data Processing Agreement, contact <a href="mailto:legal@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">legal@mylescorp.co.ke</a>.
+                To request a Data Processing Agreement, contact <a href="mailto:legal@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">legal@mylescorptech.com</a>.
               </p>
             </div>
           </div>
@@ -360,7 +360,7 @@ export default function Compliance() {
               </p>
               <div className="bg-[rgba(220,38,38,0.05)] border border-[rgba(220,38,38,0.2)] rounded-[10px] p-[15px_18px] my-3.5">
                 <p className="text-[13px] text-[#fca5a5] leading-[1.7] m-0">
-                  <strong className="text-white">To report a data breach or security incident urgently:</strong> Email <a href="mailto:security@mylescorp.co.ke" className="text-[#fca5a5]" style={{ color: '#fca5a5' }}>security@mylescorp.co.ke</a> or call +254 743 993 715. We respond to security incidents within 4 hours.
+                  <strong className="text-white">To report a data breach or security incident urgently:</strong> Email <a href="mailto:security@mylescorptech.com" className="text-[#fca5a5]" style={{ color: '#fca5a5' }}>security@mylescorptech.com</a> or call +254 743 993 715. We respond to security incidents within 4 hours.
                 </p>
               </div>
             </div>
@@ -373,13 +373,13 @@ export default function Compliance() {
               <div className="bg-[#0d1929] border border-[rgba(199,150,57,0.15)] rounded-[12px] p-5.5 mt-7">
                 <h4 className="font-['Playfair_Display'] text-[15px] font-bold text-white mb-2.5">Compliance & Legal Team — MylesCorp Technologies Ltd</h4>
                 <p className="text-[13px] text-[#95A9CC] leading-[1.8]">
-                  📧 General compliance: <a href="mailto:compliance@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">compliance@mylescorp.co.ke</a><br/>
-                  📧 Data protection: <a href="mailto:privacy@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">privacy@mylescorp.co.ke</a><br/>
-                  📧 Legal enquiries: <a href="mailto:legal@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">legal@mylescorp.co.ke</a><br/>
-                  📧 Security incidents: <a href="mailto:security@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">security@mylescorp.co.ke</a><br/>
-                  📞 <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
-                  📍 Westlands, Nairobi, Kenya<br/>
-                  🌐 <a href="https://www.mylescorp.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorp.co.ke</a>
+                  General compliance: <a href="mailto:compliance@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">compliance@mylescorptech.com</a><br/>
+                  Data protection: <a href="mailto:privacy@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">privacy@mylescorptech.com</a><br/>
+                  Legal enquiries: <a href="mailto:legal@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">legal@mylescorptech.com</a><br/>
+                  Security incidents: <a href="mailto:security@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">security@mylescorptech.com</a><br/>
+                  Phone: <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
+                  Address: Westlands, Nairobi, Kenya<br/>
+                  Website: <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a>
                 </p>
               </div>
             </div>

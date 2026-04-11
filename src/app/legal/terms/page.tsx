@@ -1,16 +1,18 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 
+const LAST_UPDATED = 'April 11, 2026'
+
 export default function TermsOfService() {
   return (
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-500">
+        <section className="section bg-navy-deep">
           <div className="section-padding">
             <div className="text-center text-white">
               <h1 className="heading-1 mb-6">Terms of Service</h1>
-              <p className="text-xl max-w-3xl mx-auto text-navy-100 leading-relaxed">
+              <p className="text-xl max-w-3xl mx-auto text-light-blue leading-8">
                 Terms and conditions governing your use of MylesCorp Technologies' website and services.
               </p>
             </div>
@@ -164,8 +166,8 @@ export default function TermsOfService() {
                     <p>
                       If you have any questions about these Terms of Service, please contact us:
                     </p>
-                    <div className="bg-off-white p-6 rounded-xl">
-                      <p><strong>Email:</strong> legal@MylesCorp.com</p>
+                    <div className="bg-off-white p-6 rounded-[1.4rem] border border-light-grey shadow-soft">
+                      <p><strong>Email:</strong> legal@mylescorptech.com</p>
                       <p><strong>Phone:</strong> +254 743 993 715</p>
                       <p><strong>Address:</strong> Wester Heights, Westlands, Nairobi, Kenya</p>
                     </div>
@@ -175,7 +177,7 @@ export default function TermsOfService() {
 
               <div className="mt-12 pt-8 border-t border-light-grey">
                 <p className="small-text text-medium-grey">
-                  Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  Last updated: {LAST_UPDATED}
                 </p>
               </div>
             </div>

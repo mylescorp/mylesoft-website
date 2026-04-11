@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesNonProfit - NGO Management Software | MylesCorp Technologies',
   description: 'Comprehensive donor and volunteer management solution for NGOs. Track donations, manage volunteers, and report impact with ease.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesnonprofit',
+    canonical: 'https://www.mylescorptech.com/products/mylesnonprofit',
   },
 }
 

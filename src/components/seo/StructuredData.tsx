@@ -16,7 +16,7 @@ export function StructuredData({
   type = 'all',
   title,
   description,
-  url = 'https://mylescorp.co.ke',
+  url = 'https://www.mylescorptech.com',
   image = '/og-image.png',
   datePublished,
   dateModified,
@@ -55,7 +55,7 @@ export function StructuredData({
         name: 'MylesCorp Technologies',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://mylescorp.co.ke/icon.png',
+          url: 'https://www.mylescorptech.com/icon.png',
         },
       },
       url: url,

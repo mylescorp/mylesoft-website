@@ -69,9 +69,8 @@ export function MYLESValues() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {MYLES_VALUES.map((item, i) => (
-            <>
+            <motion.div key={item.letter} className="contents">
               <div
-                key={item.letter}
                 className="w-14 h-14 rounded-xl flex items-center justify-center font-display font-bold text-2xl text-gold border border-gold/25 bg-gold/8 hover:bg-gold/18 hover:border-gold hover:-translate-y-1 transition-all duration-200"
               >
                 {item.letter}
@@ -82,7 +81,7 @@ export function MYLESValues() {
                   className="w-2 h-2 rounded-full bg-gold/30"
                 />
               )}
-            </>
+            </motion.div>
           ))}
         </motion.div>
 

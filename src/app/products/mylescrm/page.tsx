@@ -10,10 +10,10 @@ import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
-  title: 'MylesCRM — Business CRM & Solutions Kenya',
-  description: 'Complete CRM and business management platform with M-Pesa invoicing, sales pipeline management, SMS marketing, and AI business insights for East African businesses.',
+  title: 'MylesCRM, Business Management & CRM Software Kenya',
+  description: 'MylesCRM is a complete business management system for Kenyan SMEs, CRM, inventory, invoicing & financial tracking. Start from KES 15,000/mo.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylescrm',
+    canonical: 'https://www.mylescorptech.com/products/mylescrm',
   },
 }
 

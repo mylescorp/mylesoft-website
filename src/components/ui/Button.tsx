@@ -22,14 +22,14 @@ export function Button({
   children,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-navy-deep disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group'
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-navy-deep disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group'
   
   const variants = {
     // Primary CTA Button - Gold on Navy
     primary: 'bg-gold text-navy hover:bg-gold-light hover:-translate-y-2 hover:shadow-gold focus:ring-gold active:scale-98 font-body font-bold tracking-[0.4px] btn-shine',
     
     // Secondary Button - Navy background
-    secondary: 'bg-navy text-white hover:bg-navy-dark focus:ring-navy shadow-card hover:shadow-card-hover transform hover:-translate-y-1',
+    secondary: 'bg-navy text-white hover:bg-navy-dark focus:ring-navy shadow-card shadow-card-hover transform hover:-translate-y-1',
     
     // Outline Button - Transparent with white border
     outline: 'bg-transparent border border-white/20 text-white hover:border-gold hover:text-gold focus:ring-gold',
@@ -50,7 +50,7 @@ export function Button({
     md: 'px-9 py-4 text-[14px]', // Primary CTA: 16px 36px
     lg: 'px-8 py-4 text-lg',
     xl: 'px-10 py-5 text-xl',
-    nav: 'px-5.5 py-2.5 text-[13px]' // Nav CTA: 10px 22px, 13px
+    nav: 'px-5 py-3 text-[13px]'
   }
 
   const iconSizes = {

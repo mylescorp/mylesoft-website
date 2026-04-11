@@ -92,9 +92,9 @@ export default function PrivacyPolicy() {
             Privacy <em className="text-[#C79639] italic">Policy</em>
           </h1>
           <div className="flex gap-5 flex-wrap text-[12px] text-[#95A9CC]">
-            <span>📅 Effective: 1 January 2026</span>
-            <span>🔄 Updated: 21 March 2026</span>
-            <span>🏢 MylesCorp Technologies Ltd</span>
+            <span>Effective: 1 January 2026</span>
+            <span>Updated: 21 March 2026</span>
+            <span>MylesCorp Technologies Ltd</span>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@ export default function PrivacyPolicy() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Introduction</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                MylesCorp Technologies Ltd ("MylesCorp", "we", "us", or "our") is a private limited company registered in Kenya, with its principal place of business at Westlands, Nairobi, Kenya. We operate website <a href="https://www.mylescorp.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorp.co.ke</a> and provide AI-powered software products including EduMyles, EduRyde, MylesCare, AgriMyles, and MylesCRM.
+                MylesCorp Technologies Ltd ("MylesCorp", "we", "us", or "our") is a private limited company registered in Kenya, with its principal place of business at Westlands, Nairobi, Kenya. We operate website <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a> and provide AI-powered software products including EduMyles, EduRyde, MylesCare, AgriMyles, and MylesCRM.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website, use our products, or engage with our services. By using our website or services, you agree to practices described herein.
@@ -289,7 +289,7 @@ export default function PrivacyPolicy() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Your Rights</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                Under Kenya Data Protection Act, 2019, you have the right to: access your data, request rectification, request erasure, data portability, object to processing, and withdraw consent at any time. To exercise any right, contact us at <a href="mailto:privacy@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">privacy@mylescorp.co.ke</a>. We will respond within 30 days.
+                Under Kenya Data Protection Act, 2019, you have the right to: access your data, request rectification, request erasure, data portability, object to processing, and withdraw consent at any time. To exercise any right, contact us at <a href="mailto:privacy@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">privacy@mylescorptech.com</a>. We will respond within 30 days.
               </p>
             </div>
           </div>
@@ -319,7 +319,7 @@ export default function PrivacyPolicy() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Children's Privacy</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                Our website is not directed at children under 18. For school-related products (EduMyles, EduRyde), student data is collected and managed by school as data controller — we act as a data processor. If you believe we have inadvertently collected information from a minor, contact us immediately at <a href="mailto:privacy@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">privacy@mylescorp.co.ke</a>.
+                Our website is not directed at children under 18. For school-related products (EduMyles, EduRyde), student data is collected and managed by school as data controller — we act as a data processor. If you believe we have inadvertently collected information from a minor, contact us immediately at <a href="mailto:privacy@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">privacy@mylescorptech.com</a>.
               </p>
             </div>
           </div>
@@ -344,11 +344,11 @@ export default function PrivacyPolicy() {
               <div className="bg-[#0d1929] border border-[rgba(199,150,57,0.15)] rounded-[12px] p-5.5 mt-7">
                 <h4 className="font-['Playfair_Display'] text-[15px] font-bold text-white mb-2.5">Data Protection Officer — MylesCorp Technologies Ltd</h4>
                 <p className="text-[13px] text-[#95A9CC] leading-[1.8]">
-                  📧 <a href="mailto:privacy@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">privacy@mylescorp.co.ke</a><br/>
-                  📞 <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
-                  📍 Westlands, Nairobi, Kenya<br/>
-                  🌐 <a href="https://www.mylescorp.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorp.co.ke</a><br/>
-                  🕐 Response time: Within 30 days
+                  Email: <a href="mailto:privacy@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">privacy@mylescorptech.com</a><br/>
+                  Phone: <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
+                  Address: Westlands, Nairobi, Kenya<br/>
+                  Website: <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a><br/>
+                  Response time: Within 30 days
                 </p>
               </div>
             </div>

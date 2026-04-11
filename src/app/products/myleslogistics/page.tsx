@@ -13,7 +13,7 @@ export const metadata = {
   title: 'MylesLogistics — Supply Chain & Fleet Management Kenya',
   description: 'Complete logistics management solution for Kenyan businesses. Fleet tracking, route optimization, delivery management, warehouse automation. Built for East African supply chains.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/myleslogistics',
+    canonical: 'https://www.mylescorptech.com/products/myleslogistics',
   },
 }
 

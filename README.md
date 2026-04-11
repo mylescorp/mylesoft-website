@@ -3,14 +3,14 @@
 <img src="https://raw.githubusercontent.com/MylesCorp-Technologies/.github/main/assets/mylesoft-logo.png" width="200"/>
 
 # Mylesoft Website
-### Official Company Website — www.mylescorp.co.ke
+### Official Company Website — www.mylescorptech.com
 
-[![Status](https://img.shields.io/badge/Status-In%20Development-C4972A?style=for-the-badge)](https://www.mylescorp.co.ke)
+[![Status](https://img.shields.io/badge/Status-In%20Development-C4972A?style=for-the-badge)](https://www.mylescorptech.com)
 [![License](https://img.shields.io/badge/License-Proprietary-C4972A?style=for-the-badge)](LICENSE)
 
 **The official marketing and company website for MylesCorp Technologies Limited.**
 
-[Live Site](https://www.mylescorp.co.ke) · [Report Bug](https://github.com/MylesCorp-Technologies/mylesoft-website/issues/new?template=bug_report.md) · [Request Feature](https://github.com/MylesCorp-Technologies/mylesoft-website/issues/new?template=feature_request.md)
+[Live Site](https://www.mylescorptech.com) · [Report Bug](https://github.com/MylesCorp-Technologies/mylesoft-website/issues/new?template=bug_report.md) · [Request Feature](https://github.com/MylesCorp-Technologies/mylesoft-website/issues/new?template=feature_request.md)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ## 🌍 About
 
-This repository contains the source code for the official MylesCorp Technologies Limited website at [www.mylescorp.co.ke](https://www.mylescorp.co.ke).
+This repository contains the source code for the official MylesCorp Technologies Limited website at [www.mylescorptech.com](https://www.mylescorptech.com).
 
 The website serves as the primary marketing and information hub for MylesCorp, showcasing our products, services, team, company story, and contact information to prospective clients, partners, and investors across East Africa and beyond.
 
@@ -82,7 +82,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ### Environment Variables
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://www.mylescorp.co.ke
+NEXT_PUBLIC_SITE_URL=https://www.mylescorptech.com
 RESEND_API_KEY=
 CAL_API_KEY=
 NEXT_PUBLIC_GA_ID=
@@ -93,7 +93,7 @@ NEXT_PUBLIC_GA_ID=
 ## 🌿 Branch Structure
 
 ```
-main       ← Production (auto-deploys to www.mylescorp.co.ke)
+main       ← Production (auto-deploys to www.mylescorptech.com)
 develop    ← Staging
 feature/*  ← New pages and features
 fix/*      ← Bug fixes
@@ -111,8 +111,8 @@ Please read our [Contributing Guide](https://github.com/Mylesoft-Technologies/.g
 
 | | |
 |--|--|
-| 🌐 Website | [www.mylescorp.co.ke](https://www.mylescorp.co.ke) |
-| 📧 General | [info@mylescorp.co.ke](mailto:info@mylescorp.co.ke) |
+| 🌐 Website | [www.mylescorptech.com](https://www.mylescorptech.com) |
+| 📧 General | [info@mylescorptech.com](mailto:info@mylescorptech.com) |
 | 📍 Location | Westlands, Nairobi, Kenya |
 | 📞 Phone | +254 743 993 715 |
 

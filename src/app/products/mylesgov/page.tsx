@@ -13,7 +13,7 @@ export const metadata = {
   title: 'MylesGov — Digital Governance Platform Kenya',
   description: 'Complete digital governance solution for Kenyan public sector. Citizen services, document management, workflow automation, public records. Built for East African governments.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesgov',
+    canonical: 'https://www.mylescorptech.com/products/mylesgov',
   },
 }
 

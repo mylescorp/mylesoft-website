@@ -10,87 +10,44 @@ interface OverviewSectionProps {
 
 export function OverviewSection({ title, description, stats }: OverviewSectionProps) {
   return (
-    <section style={{ background: 'var(--white)', padding: '80px 5%' }}>
-      <div className="max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-2 gap-16 items-center">
+    <section className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-16 items-center">
           <div>
-            {/* Eyebrow */}
-            <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-7 h-0.5" style={{ background: 'var(--gold)' }} />
-              <span style={{
-                color: 'var(--gold)',
-                fontSize: '11px',
-                fontWeight: 700,
-                letterSpacing: '2.5px',
-                textTransform: 'uppercase',
-              }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-0.5 bg-gold" />
+              <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
                 What Is {title}
               </span>
             </div>
 
-            {/* Title */}
-            <h2 
-              className="font-bold leading-[1.2] mb-4"
-              style={{
-                fontFamily: 'Playfair Display, serif',
-                fontSize: 'clamp(26px,3.5vw,42px)',
-                color: 'var(--navy)',
-              }}
-            >
+            <h2 className="font-display font-bold text-navy text-4xl md:text-5xl leading-tight mb-5">
               {title}
             </h2>
 
-            {/* Description */}
-            {description.map((paragraph, index) => (
-              <p 
-                key={index}
-                className="mb-4"
-                style={{
-                  fontSize: '15px',
-                  color: 'var(--med)',
-                  lineHeight: '1.9',
-                }}
-              >
-                {paragraph}
-              </p>
-            ))}
+            <div className="space-y-4">
+              {description.map((paragraph, index) => (
+                <p
+                  key={index}
+                  className="font-body text-[1.02rem] md:text-lg leading-8 text-medium-grey"
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
 
-          {/* Visual Stats */}
-          <div 
-            className="rounded-2xl p-10"
-            style={{
-              background: 'linear-gradient(135deg,var(--navy),var(--navy-dark))',
-              border: '1px solid rgba(199,150,57,0.2)',
-            }}
-          >
-            <div className="grid grid-cols-2 gap-3.5">
+          <div className="rounded-[1.75rem] border border-gold/20 bg-navy-deep p-6 sm:p-8 shadow-card">
+            <div className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
-                <div 
+                <div
                   key={index}
-                  className="rounded-xl p-4.5"
-                  style={{
-                    background: 'rgba(8,14,24,0.5)',
-                    border: '1px solid rgba(255,255,255,0.06)',
-                  }}
+                  className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-inner"
                 >
-                  <div 
-                    className="font-bold"
-                    style={{
-                      fontFamily: 'Playfair Display, serif',
-                      fontSize: '28px',
-                      color: 'var(--gold)',
-                    }}
-                  >
+                  <div className="font-display font-bold text-3xl md:text-4xl text-gold">
                     {stat.number}
                   </div>
-                  <div 
-                    className="mt-1"
-                    style={{
-                      fontSize: '11px',
-                      color: 'var(--muted)',
-                    }}
-                  >
+                  <div className="mt-2 font-body text-sm md:text-[0.95rem] leading-6 text-light-blue">
                     {stat.label}
                   </div>
                 </div>

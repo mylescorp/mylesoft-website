@@ -13,7 +13,7 @@ export const metadata = {
   title: 'EduRyde — School Transport Management System',
   description: 'Real-time GPS school bus tracking, instant parent notifications, and route optimisation. Keep every student safe from door to door across East Africa.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/eduryde',
+    canonical: 'https://www.mylescorptech.com/products/eduryde',
   },
 }
 

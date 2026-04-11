@@ -17,8 +17,8 @@ export async function subscribeToNewsletter(
   try {
     // Notify admin of new subscriber
     await resend.emails.send({
-      from: 'MylesCorp Website <noreply@mylescorp.co.ke>',
-      to: ['info@mylescorp.co.ke'],
+      from: 'MylesCorp Website <noreply@mylescorptech.com>',
+      to: ['info@mylescorptech.com'],
       subject: 'New Newsletter Subscriber',
       html: `
         <p>New newsletter subscription:</p>
@@ -29,7 +29,7 @@ export async function subscribeToNewsletter(
 
     // Send welcome email to subscriber
     await resend.emails.send({
-      from: 'MylesCorp Technologies <info@mylescorp.co.ke>',
+      from: 'MylesCorp Technologies <info@mylescorptech.com>',
       to: [email],
       subject: 'Welcome to MylesCorp Technologies Updates!',
       html: `
@@ -50,9 +50,9 @@ export async function subscribeToNewsletter(
             </p>
             <p style="color:#212121;line-height:1.7;">
               Explore our products at 
-              <a href="https://www.mylescorp.co.ke/products"
+              <a href="https://www.mylescorptech.com/products"
                  style="color:#C79639;">
-                www.mylescorp.co.ke/products
+                www.mylescorptech.com/products
               </a>
             </p>
           </div>

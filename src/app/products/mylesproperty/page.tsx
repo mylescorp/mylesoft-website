@@ -13,7 +13,7 @@ export const metadata = {
   title: 'MylesProperty — Real Estate Management Kenya',
   description: 'Complete property management system for Kenyan real estate professionals. Property listings, tenant management, rent collection, maintenance tracking. Built for East African property market.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesproperty',
+    canonical: 'https://www.mylescorptech.com/products/mylesproperty',
   },
 }
 

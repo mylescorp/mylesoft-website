@@ -92,9 +92,9 @@ export default function CookiePolicy() {
             Cookie <em className="text-[#C79639] italic">Policy</em>
           </h1>
           <div className="flex gap-5 flex-wrap text-[12px] text-[#95A9CC]">
-            <span>📅 Effective: 1 January 2026</span>
-            <span>🔄 Updated: 21 March 2026</span>
-            <span>🏢 MylesCorp Technologies Ltd</span>
+            <span>Effective: 1 January 2026</span>
+            <span>Updated: 21 March 2026</span>
+            <span>MylesCorp Technologies Ltd</span>
           </div>
         </div>
       </div>
@@ -383,10 +383,10 @@ export default function CookiePolicy() {
               <div className="bg-[#0d1929] border border-[rgba(199,150,57,0.15)] rounded-[12px] p-5.5 mt-7">
                 <h4 className="font-['Playfair_Display'] text-[15px] font-bold text-white mb-2.5">MylesCorp Technologies Ltd — Cookie Enquiries</h4>
                 <p className="text-[13px] text-[#95A9CC] leading-[1.8]">
-                  📧 <a href="mailto:privacy@mylescorp.co.ke" className="text-[#C79639] no-underline hover:underline">privacy@mylescorp.co.ke</a><br/>
-                  📞 <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
-                  📍 Westlands, Nairobi, Kenya<br/>
-                  🌐 <a href="https://www.mylescorp.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorp.co.ke</a>
+                  Email: <a href="mailto:privacy@mylescorptech.com" className="text-[#C79639] no-underline hover:underline">privacy@mylescorptech.com</a><br/>
+                  Phone: <a href="tel:+254743993715" className="text-[#C79639] no-underline hover:underline">+254 743 993 715</a><br/>
+                  Address: Westlands, Nairobi, Kenya<br/>
+                  Website: <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a>
                 </p>
               </div>
             </div>

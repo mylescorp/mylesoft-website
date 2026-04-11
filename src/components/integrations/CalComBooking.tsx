@@ -57,7 +57,7 @@ const generateTimeSlots = (): TimeSlot[] => {
       const timeSlot: TimeSlot = {
         id: `${day}-${hour}`,
         time: `${hour.toString().padStart(2, '0')}:00`,
-        available: Math.random() > 0.3 // Random availability for demo
+        available: ![11, 15].includes(hour)
       }
       slots.push(timeSlot)
     }
@@ -75,16 +75,15 @@ export function CalComBooking() {
   const [company, setCompany] = useState<string>('')
   const [phone, setPhone] = useState<string>('')
   const [message, setMessage] = useState<string>('')
+  const [submitted, setSubmitted] = useState(false)
 
   const timeSlots = generateTimeSlots()
   const selectedMeetingType = meetingTypes.find(type => type.id === selectedType)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    
-    // Here you would integrate with Cal.com API
-    // Redirect to Cal.com or show confirmation
-    alert('Booking request submitted! We will contact you shortly to confirm your appointment.')
+
+    setSubmitted(true)
   }
 
   return (
@@ -240,6 +239,12 @@ export function CalComBooking() {
             <Calendar size={20} className="mr-2" />
             Book Meeting
           </Button>
+
+          {submitted && (
+            <p className="text-sm text-green-600">
+              Booking request received. Our team will confirm your preferred slot shortly.
+            </p>
+          )}
         </form>
       )}
 
@@ -289,8 +294,8 @@ export function CalComBooking() {
             </div>
             <div className="text-center">
               <div className="text-sm text-medium-grey mb-1">Email</div>
-              <a href="mailto:sales@mylescorp.co.ke" className="text-lg text-gold-600 hover:text-gold-500 font-semibold">
-                sales@mylescorp.co.ke
+              <a href="mailto:sales@mylescorptech.com" className="text-lg text-gold-600 hover:text-gold-500 font-semibold">
+                sales@mylescorptech.com
               </a>
             </div>
           </div>

@@ -15,7 +15,7 @@ export const metadata = {
   title: 'MylesMedia - Media Management Software | MylesCorp Technologies',
   description: 'Comprehensive media management solution for content creators, broadcasters, and media companies. Streamline content production and distribution.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylesmedia',
+    canonical: 'https://www.mylescorptech.com/products/mylesmedia',
   },
 }
 

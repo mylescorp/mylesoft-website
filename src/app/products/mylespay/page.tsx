@@ -13,7 +13,7 @@ export const metadata = {
   title: 'MylesPay — Digital Payment Solution Kenya',
   description: 'Secure digital payment platform for Kenyan businesses. Mobile money integration, multi-currency support, instant settlements, payment analytics. Built for East African markets.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/mylespay',
+    canonical: 'https://www.mylescorptech.com/products/mylespay',
   },
 }
 

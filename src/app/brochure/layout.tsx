@@ -4,10 +4,11 @@ export default function BrochureLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body style={{ margin: 0, padding: 0 }}>
-        {children}
-      </body>
-    </html>
+    <div
+      suppressHydrationWarning
+      style={{ margin: 0, padding: 0, minHeight: '100vh' }}
+    >
+      {children}
+    </div>
   )
 }

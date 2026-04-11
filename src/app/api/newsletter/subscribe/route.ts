@@ -155,17 +155,17 @@ export async function POST(request: NextRequest) {
               <div class="container">
                 <div class="header">
                   <div class="logo">MylesCorp Technologies</div>
-                  <h1>Welcome to Our Newsletter! 🎉</h1>
+                  <h1>Welcome to Our Newsletter</h1>
                   <p>Thank you for subscribing to stay updated with AI technology and digital transformation in East Africa.</p>
                 </div>
                 <div class="content">
                   <h2>What to Expect</h2>
                   <ul>
-                    <li>📊 Latest insights on AI technology trends</li>
-                    <li>🌍 Digital transformation success stories from East Africa</li>
-                    <li>🚀 Product updates and new feature announcements</li>
-                    <li>🎓 Educational content and best practices</li>
-                    <li>📈 Industry news and market analysis</li>
+                    <li>Latest insights on AI technology trends</li>
+                    <li>Digital transformation success stories from East Africa</li>
+                    <li>Product updates and new feature announcements</li>
+                    <li>Educational content and best practices</li>
+                    <li>Industry news and market analysis</li>
                   </ul>
                   
                   <p>You'll receive our newsletter every week with curated content designed to help you leverage technology for growth.</p>

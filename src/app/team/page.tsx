@@ -16,7 +16,7 @@ export const metadata = {
   title: 'Our Team — Leadership at MylesCorp Technologies',
   description: 'Meet the leadership team behind MylesCorp Technologies — the brilliant minds transforming Education, Healthcare, Agriculture, and Business across East Africa.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/team',
+    canonical: 'https://www.mylescorptech.com/team',
   },
 }
 
@@ -140,7 +140,7 @@ export default function TeamPage() {
               </span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {TEAM_DATA.overview.description[0]}
             </p>
             
@@ -149,7 +149,7 @@ export default function TeamPage() {
               {TEAM_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-gold mb-2">{stat.number}</div>
-                  <div className="text-sm text-light-blue font-body">{stat.label}</div>
+                  <div className="text-sm md:text-[0.95rem] text-light-blue font-body">{stat.label}</div>
                 </div>
               ))}
             </div>

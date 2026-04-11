@@ -188,7 +188,7 @@ export function MegaMenu() {
         {
           name: 'MylesHospitality',
           description: 'Hotel and restaurant management system',
-          href: '/products/myleshospitality',
+          href: '/products/myles-hospitality',
           icon: <Heart className="w-5 h-5" />,
           features: ['Reservation Management', 'Room Service', 'Restaurant POS', 'Guest Services']
         }
@@ -323,7 +323,7 @@ export function MegaMenu() {
           aria-expanded={isOpen}
           aria-haspopup="true"
         >
-          <span>Mega Menu</span>
+          <span>Solutions</span>
           <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
           <span className="absolute bottom-[-2px] left-0 w-0 h-[1.5px] bg-gold group-hover:w-full transition-all duration-300"></span>
         </button>
@@ -333,7 +333,7 @@ export function MegaMenu() {
           <div className="absolute top-full left-0 w-screen max-w-7xl bg-white border border-gold/20 rounded-2xl shadow-2xl mt-2 z-50 overflow-hidden">
             <div className="flex">
               {/* Categories Sidebar */}
-              <div className="w-80 bg-gray-50 border-r border-gold/20 p-6 overflow-y-auto max-h-[600px]">
+              <div className="w-80 bg-off-white border-r border-gold/20 p-6 overflow-y-auto max-h-[600px]">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-xl font-display font-bold text-navy mb-4">Our Solutions</h3>
                   <button
@@ -349,9 +349,9 @@ export function MegaMenu() {
                   href="/products"
                   onClick={closeMenu}
                   className={`w-full text-left p-3 rounded-lg transition-colors mb-4 block ${
-                    activeCategory === 'all'
-                      ? 'bg-white text-navy border-l-4 border-gold'
-                      : 'hover:bg-white text-gray-600'
+                      activeCategory === 'all'
+                        ? 'bg-white text-navy border-l-4 border-gold'
+                        : 'hover:bg-white text-medium-grey'
                   }`}
                   onMouseEnter={() => setActiveCategory('all')}
                 >
@@ -361,7 +361,7 @@ export function MegaMenu() {
                     </div>
                     <div>
                       <h4 className="font-semibold font-body">All Products</h4>
-                      <p className="text-sm text-gray-500 mt-1 font-body">
+                      <p className="text-sm text-medium-grey mt-1 font-body">
                         View all 18 MylesCorp solutions
                       </p>
                     </div>
@@ -375,12 +375,12 @@ export function MegaMenu() {
                       className={`w-full text-left p-3 rounded-lg transition-colors ${
                         activeCategory === category.title
                           ? 'bg-white text-navy border-l-4 border-gold'
-                          : 'hover:bg-white text-gray-600'
+                          : 'hover:bg-white text-medium-grey'
                       }`}
                       onMouseEnter={() => handleCategoryHover(category.title)}
                     >
                       <h4 className="font-semibold font-body">{category.title}</h4>
-                      <p className="text-sm text-gray-500 mt-1 font-body">
+                      <p className="text-sm text-medium-grey mt-1 font-body">
                         {category.description}
                       </p>
                     </button>
@@ -412,7 +412,7 @@ export function MegaMenu() {
                       <div className="w-2 h-2 bg-gold rounded-full mt-1.5 flex-shrink-0"></div>
                       <div>
                         <h5 className="font-medium text-navy text-sm font-body">East African Focus</h5>
-                        <p className="text-xs text-gray-600 font-body">Solutions designed for African markets and challenges</p>
+                        <p className="text-xs text-medium-grey font-body">Solutions designed for African markets and challenges</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">

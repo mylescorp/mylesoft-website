@@ -1,16 +1,18 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 
+const LAST_UPDATED = 'April 11, 2026'
+
 export default function CookiePolicy() {
   return (
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-500">
+        <section className="section bg-navy-deep">
           <div className="section-padding">
             <div className="text-center text-white">
               <h1 className="heading-1 mb-6">Cookie Policy</h1>
-              <p className="text-xl max-w-3xl mx-auto text-navy-100 leading-relaxed">
+              <p className="text-xl max-w-3xl mx-auto text-light-blue leading-8">
                 How we use cookies and similar tracking technologies on our website.
               </p>
             </div>
@@ -53,7 +55,7 @@ export default function CookiePolicy() {
                 <div>
                   <h2 className="heading-2 mb-4">3. Types of Cookies We Use</h2>
                   <div className="space-y-4">
-                    <div className="bg-off-white p-6 rounded-xl">
+                    <div className="bg-off-white p-6 rounded-[1.4rem] border border-light-grey shadow-soft">
                       <h3 className="heading-3 mb-3">Essential Cookies</h3>
                       <p className="body-text mb-2">
                         These cookies are necessary for the website to function and cannot be switched off in our systems.
@@ -65,7 +67,7 @@ export default function CookiePolicy() {
                       </ul>
                     </div>
 
-                    <div className="bg-off-white p-6 rounded-xl">
+                    <div className="bg-off-white p-6 rounded-[1.4rem] border border-light-grey shadow-soft">
                       <h3 className="heading-3 mb-3">Performance Cookies</h3>
                       <p className="body-text mb-2">
                         These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.
@@ -77,7 +79,7 @@ export default function CookiePolicy() {
                       </ul>
                     </div>
 
-                    <div className="bg-off-white p-6 rounded-xl">
+                    <div className="bg-off-white p-6 rounded-[1.4rem] border border-light-grey shadow-soft">
                       <h3 className="heading-3 mb-3">Functional Cookies</h3>
                       <p className="body-text mb-2">
                         These cookies enable the website to provide enhanced functionality and personalization.
@@ -89,7 +91,7 @@ export default function CookiePolicy() {
                       </ul>
                     </div>
 
-                    <div className="bg-off-white p-6 rounded-xl">
+                    <div className="bg-off-white p-6 rounded-[1.4rem] border border-light-grey shadow-soft">
                       <h3 className="heading-3 mb-3">Marketing Cookies</h3>
                       <p className="body-text mb-2">
                         These cookies may be set through our site by our advertising partners.
@@ -110,7 +112,7 @@ export default function CookiePolicy() {
                       You can control and/or delete cookies as you wish. You can delete all cookies that are 
                       already on your device and you can set most browsers to prevent them from being placed.
                     </p>
-                    <div className="bg-gold-50 p-6 rounded-xl border border-gold-200">
+                    <div className="bg-gold-50 p-6 rounded-[1.4rem] border border-gold-200 shadow-soft">
                       <p className="font-semibold text-gold-600 mb-2">To manage cookies:</p>
                       <ul className="list-disc pl-6 space-y-1 text-sm">
                         <li><strong>Chrome:</strong> Settings → Privacy and security → Cookies and other site data</li>
@@ -176,8 +178,8 @@ export default function CookiePolicy() {
                     <p>
                       If you have any questions about this Cookie Policy, please contact us:
                     </p>
-                    <div className="bg-off-white p-6 rounded-xl">
-                      <p><strong>Email:</strong> privacy@MylesCorp.com</p>
+                    <div className="bg-off-white p-6 rounded-[1.4rem] border border-light-grey shadow-soft">
+                      <p><strong>Email:</strong> privacy@mylescorptech.com</p>
                       <p><strong>Phone:</strong> +254 743 993 715</p>
                       <p><strong>Address:</strong> Wester Heights, Westlands, Nairobi, Kenya</p>
                     </div>
@@ -187,7 +189,7 @@ export default function CookiePolicy() {
 
               <div className="mt-12 pt-8 border-t border-light-grey">
                 <p className="small-text text-medium-grey">
-                  Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  Last updated: {LAST_UPDATED}
                 </p>
               </div>
             </div>

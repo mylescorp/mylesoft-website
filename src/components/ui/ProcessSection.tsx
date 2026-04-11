@@ -17,105 +17,50 @@ interface ProcessSectionProps {
 
 export function ProcessSection({ title, description, steps, centerHeader = false }: ProcessSectionProps) {
   return (
-    <section style={{ background: 'var(--navy-deep)', padding: '80px 5%' }}>
-      <div className="max-w-[1200px] mx-auto">
-        {/* Header */}
+    <section className="py-20 bg-navy-deep">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={centerHeader ? 'text-center' : ''}>
-          {/* Eyebrow */}
-          <div className={`flex items-center gap-2.5 mb-3 ${centerHeader ? 'justify-center' : ''}`}>
-            <div className="w-7 h-0.5" style={{ background: 'var(--gold)' }} />
-            <span style={{
-              color: 'var(--gold)',
-              fontSize: '11px',
-              fontWeight: 700,
-              letterSpacing: '2.5px',
-              textTransform: 'uppercase',
-            }}>
+          <div className={`flex items-center gap-3 mb-4 ${centerHeader ? 'justify-center' : ''}`}>
+            <div className="w-8 h-0.5 bg-gold" />
+            <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
               How It Works
             </span>
-            <div className="w-7 h-0.5" style={{ background: 'var(--gold)' }} />
+            <div className="w-8 h-0.5 bg-gold" />
           </div>
 
-          {/* Title */}
-          <h2 
-            className="font-bold leading-[1.2] mb-4"
-            style={{
-              fontFamily: 'Playfair Display, serif',
-              fontSize: 'clamp(26px,3.5vw,42px)',
-              color: 'var(--white)',
-            }}
-          >
+          <h2 className="font-display font-bold text-white text-4xl md:text-5xl leading-tight mb-4">
             {title}
           </h2>
 
-          {/* Description */}
-          <p 
-            className="font-light leading-[1.8] max-w-[600px] mb-12"
-            style={{
-              fontSize: '17px',
-              color: 'var(--light-blue)',
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
-            }}
-          >
+          <p className={`font-body text-lg md:text-xl leading-8 text-light-blue mb-12 ${centerHeader ? 'max-w-2xl mx-auto' : 'max-w-2xl'}`}>
             {description}
           </p>
         </div>
 
-        {/* Process Steps */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0 relative">
-          {/* Connecting Line */}
-          <div 
-            className="absolute top-7 left-[10%] right-[10%] h-0.5"
-            style={{
-              background: 'linear-gradient(90deg,var(--gold),rgba(199,150,57,0.2))',
-            }}
-          />
-
+        <div className="relative">
+          <div className="hidden lg:block absolute top-8 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center text-center px-2.5 relative z-1">
-              {/* Step Number */}
-              <div 
-                className="w-[54px] h-[54px] rounded-full flex items-center justify-center mb-3.5"
-                style={{
-                  background: 'var(--navy-deep)',
-                  border: '2px solid var(--gold)',
-                }}
-              >
-                <span 
-                  className="font-bold"
-                  style={{
-                    fontFamily: 'Playfair Display, serif',
-                    fontSize: '20px',
-                    color: 'var(--gold)',
-                  }}
-                >
+            <div
+              key={index}
+              className="relative rounded-[1.5rem] border border-white/10 bg-white/5 p-6 text-center shadow-card backdrop-blur-sm"
+            >
+              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-gold bg-navy text-gold shadow-gold">
+                <span className="font-display font-bold text-2xl">
                   {step.step}
                 </span>
               </div>
 
-              {/* Title */}
-              <h4 
-                className="font-bold mb-1.5"
-                style={{
-                  fontSize: '13px',
-                  color: 'var(--white)',
-                }}
-              >
+              <h4 className="font-display font-bold text-white text-xl mb-3">
                 {step.title}
               </h4>
 
-              {/* Description */}
-              <p 
-                className="leading-[1.6]"
-                style={{
-                  fontSize: '11px',
-                  color: 'var(--muted)',
-                }}
-              >
+              <p className="font-body text-[0.98rem] leading-7 text-light-blue">
                 {step.description}
               </p>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>

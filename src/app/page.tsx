@@ -6,19 +6,17 @@ import { Footer } from '@/components/layout/Footer'
 import { FeaturesSection } from '@/components/ui/FeaturesSection'
 import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { CTASection } from '@/components/ui/CTASection'
-import { OverviewSection } from '@/components/ui/OverviewSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
 import { PricingSection } from '@/components/ui/PricingSection'
-import {
-  Zap, MapPin, Shield, Users, TrendingUp, Award, Crown, Star, CheckCircle, Globe, Rocket, Heart
-} from 'lucide-react'
+import { ProductCard } from '@/components/ui/ProductCard'
+import { Icon } from '@/components/ui/Icon'
 
 export const metadata = {
-  title: 'MylesCorp',
-  description: 'East Africa\'s leading AI-powered software company. EduMyles, MylesCare, AgriMyles, MylesCRM — transforming Education, Healthcare, Agriculture, and Business across Kenya, Uganda, Tanzania.',
+  title: 'MylesCorp Technologies, AI Software Solutions for East Africa',
+  description: 'East Africa\'s leading AI software company. Solutions for schools, hospitals, farms & businesses in Kenya, Uganda & Tanzania. Book a free demo today.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/',
+    canonical: 'https://www.mylescorptech.com/',
   },
 }
 
@@ -27,10 +25,10 @@ const HOMEPAGE_DATA = {
     title: 'MylesCorp Technologies',
     tagline: 'Transforming Industries, Empowering Generations',
     description: [
-      'East Africa\'s leading AI-powered software company delivering innovative solutions.',
-      'Transforming businesses and empowering communities across the continent with cutting-edge technology.'
+      'AI-powered software solutions for schools, hospitals, businesses, and farms across Kenya and East Africa.',
+      'From school management systems in Kenya to healthcare management software, agricultural software, and AI business software in Nairobi, we build practical tools that help organisations run smarter.'
     ],
-    image: '/api/og/product?name=MylesCorp&category=Company',
+    image: '/api/og?title=MylesCorp%20Technologies&description=AI-Powered%20Software%20Solutions%20for%20East%20Africa',
     stats: [
       { number: '500+', label: 'Schools Managed' },
       { number: '50K+', label: 'Patients Served' },
@@ -40,32 +38,32 @@ const HOMEPAGE_DATA = {
   },
   features: [
     {
-      icon: '🤖',
+      icon: 'brain',
       title: 'AI-Powered Intelligence',
       description: 'Advanced machine learning algorithms provide smart insights and automation for your business.'
     },
     {
-      icon: '🎯',
+      icon: 'target',
       title: 'Industry-Specific Solutions',
       description: 'Purpose-built solutions for education, healthcare, agriculture, and business sectors.'
     },
     {
-      icon: '🌍',
+      icon: 'globe',
       title: 'East African Focus',
       description: 'Designed specifically for African markets with local expertise and understanding.'
     },
     {
-      icon: '👑',
+      icon: 'crown',
       title: 'Premium Support',
       description: 'Dedicated team available round the clock for assistance and guidance.'
     },
     {
-      icon: '🚀',
+      icon: 'rocket',
       title: 'Scalable Technology',
       description: 'Grow from startup to enterprise with solutions that scale with your business.'
     },
     {
-      icon: '❤️',
+      icon: 'heart',
       title: 'Community Impact',
       description: 'Empowering local communities and contributing to sustainable development.'
     }
@@ -153,10 +151,10 @@ export default function HomePage() {
             }}
           />
           
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             {/* Company Name */}
-            <div className="mb-12">
-              <h2 className="font-display font-bold text-gold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] break-words text-balance">
+            <div className="mb-8">
+              <h2 className="font-display font-semibold text-gold text-2xl sm:text-3xl md:text-[2.6rem] lg:text-[3.2rem] leading-[1.08] tracking-[-0.02em]">
                 {HOMEPAGE_DATA.overview.title}
               </h2>
             </div>
@@ -170,14 +168,17 @@ export default function HomePage() {
               <div className="w-8 h-0.5 bg-gold" />
             </div>
             
-            <h1 className="font-display font-bold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] mb-6 break-words text-balance">
-              {HOMEPAGE_DATA.overview.tagline.split(',')[0]}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
-                {HOMEPAGE_DATA.overview.tagline.split(',')[1]}
-              </span>
+            <h1 className="font-display font-bold text-white text-[2.5rem] sm:text-[3.1rem] md:text-[3.8rem] lg:text-[4.4rem] xl:text-[4.85rem] leading-[0.96] tracking-[-0.045em] mb-6 max-w-6xl mx-auto">
+              <span className="block">AI-Powered Software Solutions</span>
+              <span className="block">for Schools, Hospitals &amp;</span>
+              <span className="block">Businesses in Kenya</span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-base sm:text-lg md:text-xl max-w-xs sm:max-w-md md:max-w-2xl mx-auto mb-10">
+            <p className="font-body text-light-blue text-[1rem] sm:text-[1.05rem] md:text-[1.12rem] max-w-2xl mx-auto mb-3 leading-8">
+              {HOMEPAGE_DATA.overview.tagline}
+            </p>
+
+            <p className="font-body text-light-blue/95 text-[1rem] sm:text-[1.05rem] md:text-[1.14rem] leading-8 max-w-3xl mx-auto mb-10">
               {HOMEPAGE_DATA.overview.description[0]}
             </p>
             
@@ -237,104 +238,51 @@ export default function HomePage() {
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
                 Industry-Specific Solutions
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto leading-[1.7]">
+              <p className="font-body text-medium-grey text-[1.08rem] md:text-lg max-w-2xl mx-auto leading-8">
                 Transforming industries across East Africa with AI-powered software solutions designed for your specific needs.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
               {[
                 {
                   name: 'EduMyles',
                   category: 'Education',
-                  description: 'Complete school management system with student tracking, grade management, and parent communication.',
-                  icon: '🎓',
-                  color: 'blue',
+                  description: 'A complete school management system Kenya schools can use for CBC grading, student tracking, and parent communication.',
+                  icon: 'graduation-cap',
                   features: ['Student Management', 'Grade Tracking', 'Parent Portal', 'Attendance System'],
-                  href: '/products/edumyles'
+                  href: '/products/edumyles',
+                  status: 'live' as const
                 },
                 {
                   name: 'MylesCare',
                   category: 'Healthcare',
-                  description: 'Healthcare management platform for patient records, appointments, and medical billing.',
-                  icon: '🏥',
-                  color: 'green',
+                  description: 'Healthcare management software Kenya clinics and hospitals use for patient records, appointments, and billing.',
+                  icon: 'stethoscope',
                   features: ['Patient Records', 'Appointment Scheduling', 'Medical Billing', 'Telemedicine'],
-                  href: '/products/mylescare'
+                  href: '/products/mylescare',
+                  status: 'live' as const
                 },
                 {
                   name: 'AgriMyles',
                   category: 'Agriculture',
-                  description: 'Smart agricultural solutions with crop monitoring, weather alerts, and market insights.',
-                  icon: '🌾',
-                  color: 'yellow',
+                  description: 'Agricultural software East Africa farmers use for crop monitoring, weather alerts, and market insights.',
+                  icon: 'sprout',
                   features: ['Crop Monitoring', 'Weather Alerts', 'Market Insights', 'Farm Management'],
-                  href: '/products/agrimyles'
+                  href: '/products/agrimyles',
+                  status: 'live' as const
                 },
                 {
                   name: 'MylesCRM',
                   category: 'Business',
-                  description: 'Comprehensive business management system with CRM, inventory, and financial tracking.',
-                  icon: '💼',
-                  color: 'purple',
+                  description: 'AI business software Nairobi teams use for CRM, inventory, invoicing, and financial tracking.',
+                  icon: 'briefcase',
                   features: ['CRM System', 'Inventory Management', 'Financial Tracking', 'Analytics'],
-                  href: '/products/mylescrm'
+                  href: '/products/mylescrm',
+                  status: 'live' as const
                 }
               ].map((product, index) => (
-                <Link 
-                  key={index}
-                  href={product.href}
-                  className="group block"
-                >
-                  <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:border-gold/30 transition-all duration-300 h-full overflow-hidden">
-                    {/* Product Header */}
-                    <div className={`h-2 bg-gradient-to-r ${
-                      product.color === 'blue' ? 'from-blue-500 to-blue-600' :
-                      product.color === 'green' ? 'from-green-500 to-green-600' :
-                      product.color === 'yellow' ? 'from-yellow-500 to-yellow-600' :
-                      'from-purple-500 to-purple-600'
-                    }`} />
-                    
-                    <div className="p-6">
-                      {/* Category Badge */}
-                      <div className="inline-flex items-center px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-semibold mb-4">
-                        {product.category}
-                      </div>
-                      
-                      {/* Icon */}
-                      <div className="w-16 h-16 bg-navy-deep/5 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                        <span className="text-3xl">{product.icon}</span>
-                      </div>
-                      
-                      {/* Product Name */}
-                      <h3 className="font-display font-bold text-navy text-xl mb-2 text-center">
-                        {product.name}
-                      </h3>
-                      
-                      {/* Description */}
-                      <p className="font-body text-light-blue text-sm leading-[1.6] mb-4 text-center">
-                        {product.description}
-                      </p>
-                      
-                      {/* Key Features */}
-                      <div className="space-y-2 mb-4">
-                        {product.features.slice(0, 2).map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-center text-xs text-gray-600">
-                            <div className="w-1 h-1 bg-gold rounded-full mr-2" />
-                            {feature}
-                          </div>
-                        ))}
-                      </div>
-                      
-                      {/* Learn More */}
-                      <div className="text-center">
-                        <span className="text-gold font-semibold text-sm group-hover:text-gold-light transition-colors">
-                          Learn More →
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+                <ProductCard key={index} {...product} />
               ))}
             </div>
             
@@ -343,12 +291,12 @@ export default function HomePage() {
               <h3 className="font-display font-bold text-navy text-2xl mb-4">
                 More Solutions Available
               </h3>
-              <p className="font-body text-light-blue mb-8">
+              <p className="font-body text-medium-grey text-[1rem] leading-8 mb-8 max-w-3xl mx-auto">
                 We offer specialized solutions for Legal, Energy, NonProfit, Construction, Hospitality, Manufacturing, Media, and Transportation industries.
               </p>
               <div className="flex flex-wrap justify-center gap-3 mb-8">
                 {['Legal', 'Energy', 'NonProfit', 'Construction', 'Hospitality', 'Manufacturing', 'Media', 'Transportation'].map((industry, index) => (
-                  <span key={index} className="px-3 py-1 bg-navy-deep/5 text-navy text-sm rounded-full">
+                  <span key={index} className="px-4 py-1.5 bg-navy-deep/5 text-navy text-[0.95rem] rounded-full border border-navy/10">
                     {industry}
                   </span>
                 ))}
@@ -380,24 +328,24 @@ export default function HomePage() {
               <h2 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">
                 Impact & Reach
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto leading-[1.7]">
+              <p className="font-body text-light-blue text-lg md:text-xl max-w-2xl mx-auto leading-8">
                 Empowering thousands of users in Kenya, Uganda, Tanzania, and beyond with innovative AI-powered solutions.
               </p>
             </div>
             
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { number: '500+', label: 'Schools Managed', icon: '🎓' },
-                { number: '50K+', label: 'Patients Served', icon: '🏥' },
-                { number: '1,000+', label: 'Farmers Helped', icon: '🌾' },
-                { number: '200+', label: 'Businesses Transformed', icon: '💼' }
+                { number: '500+', label: 'Schools Managed', icon: 'graduation-cap' },
+                { number: '50K+', label: 'Patients Served', icon: 'stethoscope' },
+                { number: '1,000+', label: 'Farmers Helped', icon: 'sprout' },
+                { number: '200+', label: 'Businesses Transformed', icon: 'briefcase' }
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-4xl md:text-5xl font-display font-bold text-gold mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-light-blue text-sm font-body">
-                    <span className="mr-2">{stat.icon}</span>
+                  <div className="text-light-blue text-sm font-body inline-flex items-center justify-center gap-2">
+                    <Icon name={stat.icon} size={16} className="text-gold" />
                     {stat.label}
                   </div>
                 </div>

@@ -39,27 +39,27 @@ export function Footer() {
               />
             </div>
             <div>
-              <div className="text-[17px] font-bold text-white font-['Playfair_Display'] leading-tight">MylesCorp</div>
-              <div className="text-[9px] font-bold text-[#C79639] tracking-[1.5px] uppercase">Technologies</div>
+              <div className="text-[19px] font-bold text-white font-['Playfair_Display'] leading-tight">MylesCorp</div>
+              <div className="text-[10.5px] font-bold text-[#C79639] tracking-[1.7px] uppercase">Technologies</div>
             </div>
           </div>
-          <p className="text-[12.5px] text-[#95A9CC] leading-relaxed max-w-[280px] mb-5.5">
+          <p className="text-[14px] text-[#C7D7EF] leading-7 max-w-[320px] mb-5.5">
             East Africa&apos;s leading AI-powered software company. Building intelligent solutions that transform Education, Healthcare, Agriculture, and Business across Kenya and beyond.
           </p>
           <div className="flex flex-col gap-2.5">
             <a 
-              href="mailto:info@mylescorp.co.ke" 
-              className="flex items-center gap-2.5 text-[12px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-[#C79639]"
+              href="mailto:info@mylescorptech.com" 
+              className="flex items-center gap-2.5 text-[13.5px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-[#C79639]"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-[15px] h-[15px] stroke-[#C79639] fill-none flex-shrink-0">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
-              info@mylescorp.co.ke
+              info@mylescorptech.com
             </a>
             <a 
               href="tel:+254743993715" 
-              className="flex items-center gap-2.5 text-[12px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-[#C79639]"
+              className="flex items-center gap-2.5 text-[13.5px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-[#C79639]"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-[15px] h-[15px] stroke-[#C79639] fill-none flex-shrink-0">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 2 3.18 2 2 0 0 1 4 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
@@ -70,7 +70,7 @@ export function Footer() {
               href="https://maps.google.com/?q=Westlands,Nairobi" 
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2.5 text-[12px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-[#C79639]"
+              className="flex items-center gap-2.5 text-[13.5px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-[#C79639]"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-[15px] h-[15px] stroke-[#C79639] fill-none flex-shrink-0">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -79,68 +79,68 @@ export function Footer() {
               Westlands, Nairobi, Kenya
             </a>
             <a 
-              href="https://www.mylescorp.co.ke" 
+              href="https://www.mylescorptech.com" 
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2.5 text-[12px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-[#C79639]"
+              className="flex items-center gap-2.5 text-[13.5px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-[#C79639]"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-[15px] h-[15px] stroke-[#C79639] fill-none flex-shrink-0">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="2" y1="12" x2="22" y2="12"/>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
-              www.mylescorp.co.ke
+              www.mylescorptech.com
             </a>
           </div>
         </div>
 
         {/* Products Column */}
         <div>
-          <h4 className="text-[10px] font-bold text-[#C79639] tracking-[2px] uppercase pb-2 border-b border-[rgba(199,150,57,0.15)] mb-4.5">Products</h4>
+          <h4 className="text-[11px] font-bold text-[#C79639] tracking-[2px] uppercase pb-2 border-b border-[rgba(199,150,57,0.15)] mb-4.5">Products</h4>
           <div className="space-y-2.5">
-            <Link href="/products/edumyles" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/products/edumyles" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               EduMyles
-              <span className="text-[10px] text-[rgba(149,169,204,0.5)] block mt-0.5">School Management</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">School Management</span>
             </Link>
-            <Link href="/products/eduryde" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/products/eduryde" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               EduRyde
-              <span className="text-[10px] text-[rgba(149,169,204,0.5)] block mt-0.5">School Transport</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">School Transport</span>
             </Link>
-            <Link href="/products/mylescare" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/products/mylescare" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               MylesCare
-              <span className="text-[10px] text-[rgba(149,169,204,0.5)] block mt-0.5">Healthcare Solutions</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Healthcare Solutions</span>
             </Link>
-            <Link href="/products/agrimyles" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/products/agrimyles" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               AgriMyles
-              <span className="text-[10px] text-[rgba(149,169,204,0.5)] block mt-0.5">Agricultural Tech</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Agricultural Tech</span>
             </Link>
-            <Link href="/products/mylescrm" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/products/mylescrm" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               MylesCRM
-              <span className="text-[10px] text-[rgba(149,169,204,0.5)] block mt-0.5">Business Solutions</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Business Solutions</span>
             </Link>
           </div>
         </div>
 
         {/* Services Column */}
         <div>
-          <h4 className="text-[10px] font-bold text-[#C79639] tracking-[2px] uppercase pb-2 border-b border-[rgba(199,150,57,0.15)] mb-4.5">Services</h4>
+          <h4 className="text-[11px] font-bold text-[#C79639] tracking-[2px] uppercase pb-2 border-b border-[rgba(199,150,57,0.15)] mb-4.5">Services</h4>
           <div className="space-y-2.5">
-            <Link href="/services/software-development" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/services/software-development" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Software Development
             </Link>
-            <Link href="/services/website-development" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/services/website-development" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Website Development
             </Link>
-            <Link href="/services/web-hosting" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/services/web-hosting" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Web Hosting
             </Link>
-            <Link href="/services/it-consulting" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/services/it-consulting" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               IT Consulting
             </Link>
-            <Link href="/services/cloud-solutions" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/services/cloud-solutions" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Cloud Solutions
             </Link>
-            <Link href="/services/ui-ux-design" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/services/ui-ux-design" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               UI/UX Design
             </Link>
           </div>
@@ -148,30 +148,33 @@ export function Footer() {
 
         {/* Company Column */}
         <div>
-          <h4 className="text-[10px] font-bold text-[#C79639] tracking-[2px] uppercase pb-2 border-b border-[rgba(199,150,57,0.15)] mb-4.5">Company</h4>
+          <h4 className="text-[11px] font-bold text-[#C79639] tracking-[2px] uppercase pb-2 border-b border-[rgba(199,150,57,0.15)] mb-4.5">Company</h4>
           <div className="space-y-2.5">
-            <Link href="/about" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/about" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               About Us
             </Link>
-            <Link href="/team" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/team" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Our Team
             </Link>
-            <Link href="/pricing" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/pricing" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Pricing
             </Link>
-            <Link href="/blog" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/portforlio" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+              Portfolio
+            </Link>
+            <Link href="/blog" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Blog
             </Link>
-            <Link href="/careers" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/careers" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Careers
             </Link>
-            <Link href="/partners" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/partners" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Partners
             </Link>
-            <Link href="/brochure" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/brochure" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Brochure
             </Link>
-            <Link href="/contact" className="block text-[12.5px] text-[#95A9CC] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/contact" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Contact
             </Link>
           </div>
@@ -181,35 +184,39 @@ export function Footer() {
       {/* STAY CONNECTED */}
       <div className="border-t border-[rgba(255,255,255,0.06)] max-w-[1200px] mx-auto px-10 py-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h4 className="text-[16px] font-bold text-white mb-1.5">Stay Connected</h4>
-          <p className="text-[12.5px] text-[#95A9CC] leading-relaxed mb-4">
+          <h4 className="text-[18px] font-bold text-white mb-1.5">Stay Connected</h4>
+          <p className="text-[14px] text-[#C7D7EF] leading-7 mb-4">
             Get the latest updates on our innovative solutions and industry insights delivered to your inbox.
           </p>
         </div>
         <div>
-          <div className="flex gap-2 mb-4">
+          <div className="flex gap-2 mb-4" suppressHydrationWarning>
             <input
+              name="newsletter-email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
-              className="flex-1 h-[42px] px-4 bg-white/5 border border-[#C79639]/20 rounded-lg text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#C79639] transition-colors duration-200"
+              autoComplete="off"
+              data-lpignore="true"
+              data-form-type="other"
+              className="flex-1 h-[46px] px-4 bg-white/5 border border-[#C79639]/20 rounded-lg text-white placeholder-white/35 text-[14px] focus:outline-none focus:border-[#C79639] transition-colors duration-200"
             />
             <button
               onClick={handleSubscribe}
-              className="h-[42px] px-5 bg-[#C79639] text-[#1A395B] font-bold text-[13px] rounded-lg whitespace-nowrap hover:bg-[#e0b055] hover:-translate-y-0.5 transition-all duration-200 flex-shrink-0"
+              className="h-[46px] px-5 bg-[#C79639] text-[#1A395B] font-bold text-[14px] rounded-lg whitespace-nowrap hover:bg-[#e0b055] hover:-translate-y-0.5 transition-all duration-200 flex-shrink-0"
             >
               Subscribe
             </button>
           </div>
           
           {subscribed && (
-            <div className="text-[#22c55e] text-[12px] mt-2">
+            <div className="text-[#22c55e] text-[13px] mt-2">
               ✓ Subscribed! Welcome to MylesCorp community.
             </div>
           )}
           
-          <div className="text-[10px] font-bold text-[#95A9CC] tracking-[1.5px] uppercase mb-2.5">Follow us on social media</div>
+          <div className="text-[11px] font-bold text-[#C7D7EF] tracking-[1.5px] uppercase mb-2.5">Follow us on social media</div>
           <div className="flex gap-2 flex-wrap">
             {/* LinkedIn */}
             <a
@@ -217,7 +224,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on LinkedIn"
-              title="LinkedIn — @mylescorp"
+              title="LinkedIn — @mylescorptech"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
@@ -233,7 +240,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on Facebook"
-              title="Facebook — @mylescorp"
+              title="Facebook — @mylescorptech"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
@@ -247,7 +254,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on Instagram"
-              title="Instagram — @mylescorp_"
+              title="Instagram — @mylescorptech"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
@@ -263,7 +270,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on Twitter"
-              title="Twitter / X — @mylescorp_"
+              title="Twitter / X — @mylescorptech"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
@@ -277,7 +284,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on YouTube"
-              title="YouTube — @mylescorp_tech"
+              title="YouTube — @mylescorptech"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
@@ -292,7 +299,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on TikTok"
-              title="TikTok — @mylesoft"
+              title="TikTok — @edumyles_"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
@@ -306,7 +313,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on GitHub"
-              title="GitHub — Mylesoft-Technologie"
+              title="GitHub — mylescorptech"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
@@ -319,10 +326,10 @@ export function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="border-t border-[rgba(255,255,255,0.06)] max-w-[1200px] mx-auto px-5 py-4.5 flex flex-wrap items-center justify-between gap-4">
-        <div className="text-[11.5px] text-[#95A9CC]">
-          © 2026 <Link href="/" className="text-[#C79639] hover:underline">MylesCorp Technologies Ltd.</Link> All rights reserved.
+        <div className="text-[13px] text-[#C7D7EF]">
+          © 2026 <Link href="/" className="text-[#C79639] hover:underline">MylesCorp Technologies.</Link> All rights reserved.
         </div>
-        <div className="flex gap-5 text-[11.5px] text-[#95A9CC]">
+        <div className="flex gap-5 text-[13px] text-[#C7D7EF]">
           <Link href="/privacy-policy" className="hover:text-[#C79639] transition-colors duration-200">Privacy Policy</Link>
           <Link href="/terms-of-service" className="hover:text-[#C79639] transition-colors duration-200">Terms of Service</Link>
           <Link href="/cookie-policy" className="hover:text-[#C79639] transition-colors duration-200">Cookie Policy</Link>
@@ -343,7 +350,7 @@ export function Footer() {
       {/* TAGLINE ROW */}
       <div className="border-t border-[rgba(255,255,255,0.04)] text-center px-10 py-4 bg-[rgba(0,0,0,0.15)]">
         <div className="text-[14px] italic text-[#C79639] font-['Playfair_Display'] mb-1">Transforming Industries, Empowering Generations.</div>
-        <div className="text-[11px] text-[rgba(149,169,204,0.5)]">Innovation • Excellence • Impact — The MylesCorp Promise</div>
+        <div className="text-[12px] text-[rgba(199,215,239,0.62)]">Innovation • Excellence • Impact — The MylesCorp Promise</div>
       </div>
     </footer>
   )

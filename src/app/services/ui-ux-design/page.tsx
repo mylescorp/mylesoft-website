@@ -7,7 +7,7 @@ export const metadata = {
   title: 'UI/UX Design Services | MylesCorp Technologies',
   description: 'Professional UI/UX design services creating beautiful, intuitive, and user-centered digital experiences that drive engagement and conversion.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/services/ui-ux-design',
+    canonical: 'https://www.mylescorptech.com/services/ui-ux-design',
   },
 }
 
@@ -176,7 +176,7 @@ export default function UIUXDesignPage() {
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
                 Our Design Services
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto">
+              <p className="font-body text-light-blue text-lg md:text-xl max-w-2xl mx-auto leading-8">
                 Comprehensive design services from research to final implementation.
               </p>
             </div>
@@ -202,7 +202,7 @@ export default function UIUXDesignPage() {
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
                 Our Design Process
               </h2>
-              <p className="font-body text-light-blue text-lg max-w-2xl mx-auto">
+              <p className="font-body text-light-blue text-lg md:text-xl max-w-2xl mx-auto leading-8">
                 A systematic approach to creating exceptional user experiences.
               </p>
             </div>

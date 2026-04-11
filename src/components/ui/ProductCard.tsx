@@ -1,14 +1,16 @@
 'use client'
 
 import React from 'react'
-import { Button } from '@/components/ui/Button'
+import Link from 'next/link'
 import { ArrowRight, Star, Zap, Shield, Wrench } from 'lucide-react'
 import { Skeleton } from '@/components/ui/Skeleton'
+import { Icon } from '@/components/ui/Icon'
 
 interface ProductCardProps {
   name: string
+  category?: string
   description: string
-  icon: React.ReactNode
+  icon: React.ReactNode | string
   features: string[]
   status: 'live' | 'beta' | 'coming-soon' | 'development'
   href: string
@@ -18,6 +20,7 @@ interface ProductCardProps {
 
 export function ProductCard({ 
   name, 
+  category,
   description, 
   icon, 
   features, 
@@ -45,90 +48,74 @@ export function ProductCard({
   }
 
   return (
-    <div
-      className={`w-full h-full flex flex-col min-h-[380px] bg-white rounded-2xl border border-gray-100 hover:border-gold hover:shadow-xl transition-all duration-300 overflow-hidden p-6 cursor-pointer ${className}`}
-      onClick={() => window.location.href = href}
+    <Link
+      href={href}
+      className={`group relative flex h-full min-h-[360px] w-full flex-col overflow-hidden rounded-[1.6rem] border border-slate-200 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-gold/35 ${className}`}
     >
-      {/* Header */}
-      <div className="flex items-start justify-between mb-6">
-        <div className="flex items-center space-x-4">
-          <div className="w-16 h-16 bg-gradient-to-br from-gold-100 to-gold-200 rounded-xl flex items-center justify-center text-gold-600 group-hover:from-gold-200 group-hover:to-gold-300 transition-all duration-300">
-            <div className="text-2xl">{icon}</div>
-          </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold text-navy-500 group-hover:text-gold-500 transition-all duration-300 mb-1">
+      <div className="h-1.5 w-full bg-gradient-to-r from-gold via-gold-light to-gold/70" />
+
+      <div className="flex h-full flex-col p-6 md:p-7">
+        <div className="mb-5 flex items-start justify-between gap-4">
+          <div className="flex-1 min-w-0">
+            {category && (
+              <div className="badge badge-gold mb-4">
+                {category}
+              </div>
+            )}
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/15 bg-gold/8 text-3xl shadow-sm transition-transform duration-300 group-hover:scale-105">
+              {typeof icon === 'string'
+                ? <Icon name={icon} size={28} className="text-gold" />
+                : icon}
+            </div>
+            <h3 className="font-display text-[1.85rem] md:text-[2rem] font-bold leading-[1.05] text-navy transition-colors duration-300 group-hover:text-gold">
               {name}
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
+            <p className="mt-3 text-[0.98rem] leading-7 text-medium-grey line-clamp-4">
+              {description}
+            </p>
+          </div>
+
+          <div className={`mt-1 flex shrink-0 items-center space-x-1 rounded-full px-3 py-1 text-[11px] font-semibold shadow-sm ${statusColors[status]}`}>
+            {statusIcons[status]}
+            <span className="uppercase tracking-[0.14em]">{status}</span>
           </div>
         </div>
-        
-        <div 
-          className={`flex items-center space-x-1 px-3 py-1 rounded-full text-xs font-semibold ${statusColors[status]}`}
-        >
-          {statusIcons[status]}
-          <span className="uppercase tracking-wider">{status}</span>
+
+        <div className="mb-6 flex-grow space-y-3 border-t border-slate-200/80 pt-5">
+          {features.slice(0, 2).map((feature, index) => (
+            <div key={index} className="flex items-start space-x-3">
+              <div className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-gold" />
+              <span className="text-[0.96rem] leading-7 text-dark-grey">
+                {feature}
+              </span>
+            </div>
+          ))}
+          {features.length > 2 && (
+            <div className="pl-5 text-[0.9rem] italic text-medium-grey">
+              +{features.length - 2} more features
+            </div>
+          )}
+        </div>
+
+        <div className="mt-auto flex items-center justify-between border-t border-slate-200/80 pt-4">
+          <div className="flex items-center space-x-2 text-[0.96rem] font-semibold text-gold transition-colors duration-200 group-hover:text-gold-light">
+            <span>Learn more</span>
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </div>
+
+          <div className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[0.8rem] font-semibold text-navy">
+            Details
+          </div>
         </div>
       </div>
-
-      {/* Features */}
-      <div className="space-y-3 mb-6 flex-grow">
-        {features.slice(0, 3).map((feature, index) => (
-          <div 
-            key={index} 
-            className="flex items-center space-x-3 group/item"
-          >
-            <div 
-              className="w-2 h-2 bg-gradient-to-r from-gold-400 to-gold-500 rounded-full flex-shrink-0"
-            />
-            <span className="text-gray-600 text-sm group-hover/item:text-navy-500 transition-colors duration-200">
-              {feature}
-            </span>
-          </div>
-        ))}
-        {features.length > 3 && (
-          <div className="text-sm text-gray-500 italic">
-            +{features.length - 3} more features
-          </div>
-        )}
-      </div>
-
-      {/* Action Button */}
-      <div 
-        className="flex items-center justify-between pt-4 border-t border-gray-200 mt-auto"
-      >
-        <div className="flex items-center space-x-2">
-          <span className="text-gold-500 text-sm font-medium group-hover:text-gold-600 transition-colors duration-200">
-            Learn more
-          </span>
-          <div
-            className="translate-x-0 transition-transform duration-300"
-          >
-            <ArrowRight className="w-4 h-4 text-gold-500" />
-          </div>
-        </div>
-        
-        <Button 
-          size="sm" 
-          className="shadow-lg hover:shadow-xl"
-          onClick={() => window.location.href = href}
-        >
-          View Details
-        </Button>
-      </div>
-
-      {/* Hover Effect Overlay */}
-      <div 
-        className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-transparent rounded-2xl pointer-events-none"
-      />
-    </div>
+    </Link>
   )
 }
 
 // Product Card Skeleton Component
 function ProductCardSkeleton({ className = '' }: { className?: string }) {
   return (
-    <div className={`bg-white p-6 rounded-2xl h-full flex flex-col ${className}`}>
+    <div className={`product-card p-6 h-full flex flex-col ${className}`}>
       <div className="space-y-4 flex-grow">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -148,7 +135,7 @@ function ProductCardSkeleton({ className = '' }: { className?: string }) {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+        <div className="flex items-center justify-between pt-4 border-t border-slate-200/80">
           <Skeleton variant="rectangular" width={80} height={20} />
           <Skeleton variant="rectangular" width={100} height={32} className="rounded-lg" />
         </div>

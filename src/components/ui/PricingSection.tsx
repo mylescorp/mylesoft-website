@@ -21,165 +21,69 @@ interface PricingSectionProps {
 
 export function PricingSection({ title, description, plans, centerHeader = false }: PricingSectionProps) {
   return (
-    <section style={{ background: 'var(--off)', padding: '80px 5%' }}>
-      <div className="max-w-[1200px] mx-auto">
-        {/* Header */}
+    <section className="py-20 bg-off-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={centerHeader ? 'text-center' : ''}>
-          {/* Eyebrow */}
-          <div className={`flex items-center gap-2.5 mb-3 ${centerHeader ? 'justify-center' : ''}`}>
-            <div className="w-7 h-0.5" style={{ background: 'var(--gold)' }} />
-            <span style={{
-              color: 'var(--gold)',
-              fontSize: '11px',
-              fontWeight: 700,
-              letterSpacing: '2.5px',
-              textTransform: 'uppercase',
-            }}>
+          <div className={`flex items-center gap-3 mb-4 ${centerHeader ? 'justify-center' : ''}`}>
+            <div className="w-8 h-0.5 bg-gold" />
+            <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
               Pricing
             </span>
-            <div className="w-7 h-0.5" style={{ background: 'var(--gold)' }} />
+            <div className="w-8 h-0.5 bg-gold" />
           </div>
 
-          {/* Title */}
-          <h2 
-            className="font-bold leading-[1.2] mb-4"
-            style={{
-              fontFamily: 'Playfair Display, serif',
-              fontSize: 'clamp(26px,3.5vw,42px)',
-              color: 'var(--navy)',
-            }}
-          >
+          <h2 className="font-display font-bold text-navy text-4xl md:text-5xl leading-tight mb-4">
             {title}
           </h2>
 
-          {/* Description */}
-          <p 
-            className="font-light leading-[1.8] max-w-[600px] mb-12"
-            style={{
-              fontSize: '17px',
-              color: 'var(--med)',
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
-            }}
-          >
+          <p className={`font-body text-lg md:text-xl leading-8 text-medium-grey mb-12 ${centerHeader ? 'max-w-2xl mx-auto' : 'max-w-2xl'}`}>
             {description}
           </p>
         </div>
 
-        {/* Pricing Grid */}
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {plans.map((plan, index) => (
-            <div 
+            <div
               key={index}
-              className="rounded-2xl overflow-hidden flex flex-col"
-              style={{
-                border: plan.featured ? '2px solid var(--gold)' : '1px solid rgba(26,57,91,0.12)',
-                background: 'var(--white)',
-              }}
+              className={`overflow-hidden rounded-[1.6rem] border bg-white shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 ${
+                plan.featured ? 'border-gold ring-1 ring-gold/30' : 'border-slate-200'
+              }`}
             >
-              {/* Top Section */}
-              <div 
-                className="p-6"
-                style={{
-                  background: plan.featured 
-                    ? 'linear-gradient(135deg,var(--navy),#254a78)' 
-                    : 'var(--navy)',
-                }}
-              >
+              <div className={`p-6 ${plan.featured ? 'bg-gradient-to-br from-navy-deep via-navy to-[#254a78]' : 'bg-navy-deep'}`}>
                 {plan.featured && (
-                  <div className="inline-block px-2.5 py-0.5 mb-2.5 rounded-full">
-                    <span style={{
-                      background: 'var(--gold)',
-                      color: 'var(--navy)',
-                      fontSize: '9px',
-                      fontWeight: 700,
-                      letterSpacing: '1px',
-                      textTransform: 'uppercase',
-                    }}>
+                  <div className="mb-3 inline-flex rounded-full bg-gold px-3 py-1">
+                    <span className="font-body text-[10px] font-bold uppercase tracking-[1.4px] text-navy">
                       Most Popular
                     </span>
                   </div>
                 )}
-                
-                <h3 
-                  className="font-bold mb-1"
-                  style={{
-                    fontFamily: 'Playfair Display, serif',
-                    fontSize: '20px',
-                    color: 'var(--white)',
-                  }}
-                >
+
+                <h3 className="font-display font-bold text-white text-2xl mb-2">
                   {plan.name}
                 </h3>
-                
-                <p 
-                  className="font-light"
-                  style={{
-                    fontSize: '12px',
-                    color: 'var(--light-blue)',
-                  }}
-                >
+
+                <p className="font-body text-[0.98rem] leading-7 text-light-blue">
                   {plan.description}
                 </p>
               </div>
 
-              {/* Price Section */}
-              <div 
-                className="p-[18px_24px]"
-                style={{
-                  background: 'var(--ice)',
-                  borderBottom: '1px solid rgba(26,57,91,0.08)',
-                }}
-              >
-                <div 
-                  className="font-bold"
-                  style={{
-                    fontFamily: 'Playfair Display, serif',
-                    fontSize: '28px',
-                    color: 'var(--navy)',
-                  }}
-                >
+              <div className="border-b border-slate-200 bg-ice px-6 py-5">
+                <div className="font-display font-bold text-3xl text-navy">
                   {plan.price}
                 </div>
-                <div 
-                  className="mt-0.5"
-                  style={{
-                    fontSize: '11px',
-                    color: 'var(--med)',
-                  }}
-                >
+                <div className="mt-1 font-body text-sm leading-6 text-medium-grey">
                   {plan.period}
                 </div>
               </div>
 
-              {/* Features */}
-              <div className="p-5 flex-grow">
+              <div className="p-6 flex-grow">
                 <ul className="flex flex-col gap-2">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-2">
-                      <div 
-                        className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                        style={{
-                          background: 'rgba(199,150,57,0.15)',
-                        }}
-                      >
-                        <div 
-                          className="w-1 h-1.5"
-                          style={{
-                            border: '1.5px solid var(--gold)',
-                            borderLeft: 'none',
-                            borderTop: 'none',
-                            transform: 'rotate(45deg)',
-                            marginBottom: '2px',
-                          }}
-                        />
+                      <div className="mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold">
+                        <div className="mb-0.5 h-1.5 w-1.5 rotate-45 border-b-2 border-r-2 border-gold" />
                       </div>
-                      <span 
-                        className="leading-[1.5]"
-                        style={{
-                          fontSize: '13px',
-                          color: 'var(--dark)',
-                        }}
-                      >
+                      <span className="font-body text-[0.98rem] leading-7 text-dark-grey">
                         {feature}
                       </span>
                     </li>
@@ -187,36 +91,16 @@ export function PricingSection({ title, description, plans, centerHeader = false
                 </ul>
               </div>
 
-              {/* CTA */}
-              <div 
-                className="p-4"
-                style={{
-                  borderTop: '1px solid rgba(26,57,91,0.08)',
-                }}
-              >
-                <Link href="/book-demo">
-                  <button 
-                    className="w-full py-3 rounded-md font-bold text-[13px] transition-all"
-                    style={{
-                      background: plan.featured ? 'var(--gold)' : 'transparent',
-                      color: plan.featured ? 'var(--navy)' : 'var(--navy)',
-                      border: plan.featured ? 'none' : '1.5px solid rgba(26,57,91,0.2)',
-                    }}
-                    onMouseEnter={(e) => {
-                      if (!plan.featured) {
-                        e.currentTarget.style.borderColor = 'var(--gold)'
-                        e.currentTarget.style.color = 'var(--gold)'
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!plan.featured) {
-                        e.currentTarget.style.borderColor = 'rgba(26,57,91,0.2)'
-                        e.currentTarget.style.color = 'var(--navy)'
-                      }
-                    }}
-                  >
-                    Get Started
-                  </button>
+              <div className="border-t border-slate-200 p-4">
+                <Link
+                  href="/book-demo"
+                  className={`flex w-full items-center justify-center rounded-xl px-5 py-3.5 font-body text-sm font-bold tracking-[0.04em] transition-all duration-200 ${
+                    plan.featured
+                      ? 'bg-gold text-navy shadow-gold hover:-translate-y-0.5 hover:bg-gold-light'
+                      : 'border border-navy/15 text-navy hover:border-gold hover:text-gold'
+                  }`}
+                >
+                  Get Started
                 </Link>
               </div>
             </div>

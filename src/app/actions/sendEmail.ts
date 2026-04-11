@@ -18,8 +18,8 @@ export async function sendContactEmail(
 ) {
   try {
     const { error } = await resend.emails.send({
-      from: 'MylesCorp Website <noreply@mylescorp.co.ke>',
-      to: ['info@mylescorp.co.ke'],
+      from: 'MylesCorp Website <noreply@mylescorptech.com>',
+      to: ['info@mylescorptech.com'],
       replyTo: data.email,
       subject: `New Enquiry: ${data.subject}`,
       html: `
@@ -103,7 +103,7 @@ export async function sendContactEmail(
             <p style="color:#C7D7EF;font-size:12px;
                       margin:0;">
               MylesCorp Technologies Ltd · 
-              info@mylescorp.co.ke · 
+              info@mylescorptech.com · 
               +254 743 993 715
             </p>
           </div>
@@ -117,7 +117,7 @@ export async function sendContactEmail(
 
     // Send auto-reply to the person who contacted
     await resend.emails.send({
-      from: 'MylesCorp Technologies <info@mylescorp.co.ke>',
+      from: 'MylesCorp Technologies <info@mylescorptech.com>',
       to: [data.email],
       subject: 'Thank you for contacting MylesCorp Technologies',
       html: `
@@ -142,9 +142,9 @@ export async function sendContactEmail(
               In the meantime, you can WhatsApp us directly 
               at <strong>+254 743 993 715</strong> or 
               explore our products at 
-              <a href="https://www.mylescorp.co.ke/products"
+              <a href="https://www.mylescorptech.com/products"
                  style="color:#C79639;">
-                www.mylescorp.co.ke
+                www.mylescorptech.com
               </a>.
             </p>
           </div>

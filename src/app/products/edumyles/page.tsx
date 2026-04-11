@@ -11,10 +11,10 @@ import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
-  title: 'EduMyles — School Management System Kenya',
-  description: 'Complete AI-powered school management system for Kenyan schools. CBC & 8-4-4 support, M-Pesa fee collection, parent portal, exam management. Used by 500+ schools.',
+  title: 'EduMyles, School Management System Kenya | MylesCorp',
+  description: 'EduMyles is a complete school management system for Kenyan schools, student tracking, CBC grading, parent communication & more. Try it free.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/products/edumyles',
+    canonical: 'https://www.mylescorptech.com/products/edumyles',
   },
 }
 

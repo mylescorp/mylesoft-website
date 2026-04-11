@@ -265,7 +265,7 @@ export default function ServicesPage() {
               </span>
             </h1>
             
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {SERVICES_DATA.overview.description[0]}
             </p>
             
@@ -274,7 +274,7 @@ export default function ServicesPage() {
               {SERVICES_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-gold mb-2">{stat.number}</div>
-                  <div className="text-sm text-light-blue font-body">{stat.label}</div>
+                  <div className="text-sm md:text-[0.95rem] text-light-blue font-body">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -296,19 +296,19 @@ export default function ServicesPage() {
               <h2 className="text-4xl md:text-5xl font-display font-bold text-navy mb-4">
                 Services We Offer
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto font-body">
+              <p className="font-body text-lg md:text-xl leading-8 text-medium-grey max-w-2xl mx-auto">
                 Comprehensive technology solutions designed to transform your business operations.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl hover:border-gold/30 transition-all duration-300">
-                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+                <div key={index} className="bg-white rounded-[1.5rem] p-7 shadow-card border border-slate-200 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300">
+                  <div className="w-16 h-16 bg-gold/10 rounded-2xl border border-gold/20 flex items-center justify-center mb-6">
                     {service.icon}
                   </div>
                   <h3 className="text-2xl font-display font-bold text-navy mb-3">{service.name}</h3>
-                  <p className="text-gray-600 mb-4 font-body">{service.description}</p>
+                  <p className="text-medium-grey mb-4 font-body leading-7">{service.description}</p>
                   
                   <div className="mb-6">
                     <h4 className="font-semibold text-navy mb-2 font-body">Key Features:</h4>
@@ -316,7 +316,7 @@ export default function ServicesPage() {
                       {service.features.slice(0, 3).map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-sm">
                           <CheckCircle size={16} className="text-gold mr-2" />
-                          <span className="text-gray-600 font-body">{feature}</span>
+                          <span className="text-medium-grey font-body">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -324,7 +324,7 @@ export default function ServicesPage() {
                   
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <div className="text-sm text-gray-500 font-body">{service.duration}</div>
+                      <div className="text-sm text-medium-grey font-body">{service.duration}</div>
                       <div className="text-gold font-semibold">{service.price}</div>
                     </div>
                     <Link href={service.href}>

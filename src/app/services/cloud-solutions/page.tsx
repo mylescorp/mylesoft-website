@@ -26,7 +26,7 @@ export const metadata = {
   title: 'Cloud Solutions & Infrastructure | MylesCorp',
   description: 'Cloud migration, AWS/Azure/GCP setup, and 24/7 infrastructure management for East African businesses. Cut costs by up to 50% with the cloud.',
   alternates: {
-    canonical: 'https://www.mylescorp.co.ke/services/cloud-solutions',
+    canonical: 'https://www.mylescorptech.com/services/cloud-solutions',
   },
 }
 
@@ -82,7 +82,7 @@ export default function CloudSolutionsPage() {
             </h1>
 
             {/* Subtitle */}
-            <p className="font-body font-light text-light-blue text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               We help businesses migrate to, manage, and optimise cloud environments — enabling greater flexibility, security, and cost efficiency.
             </p>
 
@@ -478,7 +478,7 @@ export default function CloudSolutionsPage() {
               </a>
             </div>
             <div className="text-light-blue text-sm">
-              <p>Email: info@mylesoft.com | Phone: +254 743 993 715</p>
+              <p>Email: info@mylescorptech.com | Phone: +254 743 993 715</p>
             </div>
           </div>
         </section>

@@ -463,7 +463,7 @@ export default function WebHostingPage() {
                   Call +254 743 993 715
                 </Button>
               </Link>
-              <Link href="mailto:info@mylescorp.co.ke">
+              <Link href="mailto:info@mylescorptech.com">
                 <Button variant="outline" className="border-gold text-gold hover:bg-gold/10 hover:text-navy md:text-base">
                   <Mail className="w-4 h-4 mr-2" />
                   Contact Sales
