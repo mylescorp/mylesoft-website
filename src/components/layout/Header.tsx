@@ -52,7 +52,7 @@ export function Header() {
     { name: 'Products', href: '/products' },
     { name: 'Services', href: '/services' },
     { name: 'Pricing', href: '/pricing' },
-    { name: 'Portfolio', href: '/portforlio' },
+    { name: 'Portfolio', href: '/portfolio' },
     { name: 'About', href: '/about' },
     { name: 'Team', href: '/team' },
     { name: 'Coverage', href: '/coverage' },

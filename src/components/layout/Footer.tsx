@@ -159,7 +159,7 @@ export function Footer() {
             <Link href="/pricing" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Pricing
             </Link>
-            <Link href="/portforlio" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+            <Link href="/portfolio" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Portfolio
             </Link>
             <Link href="/blog" className="block text-[14px] text-[#C7D7EF] no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
@@ -299,11 +299,12 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on TikTok"
-              title="TikTok — @edumyles_"
+              title="TikTok — @mylescorptech"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+                <path d="M14 3v11a4 4 0 1 1-4-4"/>
+                <path d="M14 3c1 3 3 5 6 5"/>
               </svg>
             </a>
             
@@ -313,7 +314,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="MylesCorp on GitHub"
-              title="GitHub — mylescorptech"
+              title="GitHub — mylesco"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">

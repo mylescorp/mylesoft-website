@@ -25,7 +25,7 @@ export function MegaMenu() {
   const [isOpen, setIsOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
   const menuRef = useRef<HTMLDivElement>(null)
-  const timeoutRef = useRef<NodeJS.Timeout>()
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const categories: Category[] = [
     {
