@@ -4,6 +4,14 @@ import { Button } from '@/components/ui/Button'
 import InteractiveMap from '@/components/ui/InteractiveMap'
 import { MapPin, Phone, Mail, Users, Globe, ArrowRight } from 'lucide-react'
 
+export const metadata = {
+  title: 'Regional Coverage — MylesCorp Technologies in East Africa',
+  description: 'See MylesCorp Technologies regional presence, office coverage, and client reach across Kenya and East Africa.',
+  alternates: {
+    canonical: 'https://www.mylescorptech.com/coverage',
+  },
+}
+
 const quickStats = [
   {
     icon: <MapPin className="w-8 h-8" />,
@@ -61,7 +69,7 @@ export default function CoveragePage() {
           
           <ScrollReveal direction="up" delay={0.4}>
             <h1 className="text-5xl md:text-6xl font-display font-bold text-white leading-tight mb-6">
-              Serving East Africa
+              Serving East Africa{' '}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
                 With Pride
               </span>
@@ -217,9 +225,9 @@ export default function CoveragePage() {
       <section className="py-20 bg-gradient-to-r from-gold to-gold-light">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal direction="up" delay={0.2}>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-              Ready to Transform Your Organization?
-            </h2>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+                Ready to Transform Your Organization?
+              </h2>
             <p className="text-xl text-white/90 mb-8 font-body">
               Join hundreds of organizations across East Africa already using our solutions. 
               Find out how we can help you achieve your digital transformation goals.

@@ -17,6 +17,14 @@ import {
   ArrowLeft
 } from 'lucide-react'
 
+export const metadata = {
+  title: 'Web Hosting Services — MylesCorp Technologies',
+  description: 'Reliable, secure, and high-performance web hosting from MylesCorp Technologies with SSL, backups, email hosting, domain support, and technical support.',
+  alternates: {
+    canonical: 'https://www.mylescorptech.com/services/web-hosting',
+  },
+}
+
 const WEB_HOSTING_DATA = {
   features: [
     {

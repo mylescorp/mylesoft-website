@@ -60,7 +60,7 @@ export default function BookDemoPage() {
 
             {/* Main heading */}
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-              Book a
+              Book a{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
                 Demo
               </span>

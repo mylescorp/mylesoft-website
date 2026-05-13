@@ -2,7 +2,7 @@ import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { Card, CardIcon, CardHeader, CardContent } from '@/components/ui/Card'
 import { ScrollReveal, StaggerReveal } from '@/components/ui/ScrollReveal'
-import { 
+import {
   Calendar, 
   User, 
   Clock, 
@@ -14,6 +14,14 @@ import {
   TrendingUp,
   BookOpen
 } from 'lucide-react'
+
+export const metadata = {
+  title: 'MylesCorp Blog — AI, Software & Digital Transformation Insights',
+  description: 'Read MylesCorp insights on AI, education technology, healthcare systems, agriculture platforms, and digital transformation across East Africa.',
+  alternates: {
+    canonical: 'https://www.mylescorptech.com/blog',
+  },
+}
 
 const blogPosts = [
   {
@@ -165,7 +173,7 @@ export default function BlogPage() {
             
             <ScrollReveal direction="up" delay={0.4}>
               <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-                Our
+                Our{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
                   Blog
                 </span>

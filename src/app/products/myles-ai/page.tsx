@@ -4,6 +4,14 @@ import { Icon } from '@/components/ui/Icon'
 import { Zap, Brain, ArrowRight, CheckCircle, Code, Database, Globe, Cpu } from 'lucide-react'
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'Myles AI — Custom AI Development & Machine Learning Solutions',
+  description: 'Myles AI delivers custom machine learning, NLP, computer vision, and AI consulting solutions for African businesses and institutions.',
+  alternates: {
+    canonical: 'https://www.mylescorptech.com/products/myles-ai',
+  },
+}
+
 export default function MylesAIPage() {
   return (
     <Layout>

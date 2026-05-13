@@ -33,7 +33,7 @@ EduMyles leverages AI to automate routine administrative tasks, freeing up valua
     publishedAt: '2024-03-15T10:00:00Z',
     category: 'Education',
     tags: ['AI in Education', 'EduMyles', 'Digital Transformation', 'Kenya Schools'],
-    image: 'https://MylesCorp.com/images/blog/education-ai-kenya.jpg'
+    image: 'https://www.mylescorptech.com/images/blog/education-ai-kenya.jpg'
   },
   {
     title: 'The Future of Healthcare in Africa: AI-Powered Medical Solutions',
@@ -50,7 +50,7 @@ African healthcare systems are at a pivotal moment, with artificial intelligence
     publishedAt: '2024-03-10T14:30:00Z',
     category: 'Healthcare',
     tags: ['Healthcare AI', 'MylesCare', 'Medical Technology', 'Africa Health'],
-    image: 'https://MylesCorp.com/images/blog/healthcare-ai-africa.jpg'
+    image: 'https://www.mylescorptech.com/images/blog/healthcare-ai-africa.jpg'
   },
   {
     title: 'Agricultural Technology: Transforming Kenyan Farming with AI',

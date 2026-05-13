@@ -19,6 +19,30 @@ const nextConfig = {
     prefetchInlining: true,
   },
   serverExternalPackages: ['algoliasearch'],
+  async redirects() {
+    return [
+      {
+        source: '/legal/privacy',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/legal/terms',
+        destination: '/terms-of-service',
+        permanent: true,
+      },
+      {
+        source: '/legal/cookies',
+        destination: '/cookie-policy',
+        permanent: true,
+      },
+      {
+        source: '/legal/compliance',
+        destination: '/compliance',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {

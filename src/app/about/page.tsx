@@ -1,33 +1,19 @@
 import { Layout } from '@/components/layout/Layout'
-import { Button } from '@/components/ui/Button'
 import { FeaturesSection } from '@/components/ui/FeaturesSection'
 import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { CTASection } from '@/components/ui/CTASection'
 import { OverviewSection } from '@/components/ui/OverviewSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
-import { Icon } from '@/components/ui/Icon'
-import { TEAM_MEMBERS } from '@/lib/constants/team'
-import Image from 'next/image'
-import Link from 'next/link'
 import { MYLESValues } from '@/components/sections/MYLESValues'
 import { 
   Target, 
   Eye, 
-  Heart, 
-  Users, 
-  Award, 
-  Globe,
-  Lightbulb,
-  Zap,
-  Mail,
-  Linkedin,
-  Twitter
 } from 'lucide-react'
 
 export const metadata = {
-  title: 'About Us — Our Story & Team',
-  description: 'Learn about MylesCorp Technologies — our story, mission, vision, M.Y.L.E.S. values, and the team transforming East Africa with AI-powered technology.',
+  title: 'About MylesCorp Technologies — Our Story, Mission & Values',
+  description: 'Learn about MylesCorp Technologies, our story, mission, vision, M.Y.L.E.S. values, and the work behind our AI-powered software for East Africa.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/about',
   },
@@ -149,7 +135,7 @@ export default function AboutPage() {
             </div>
             
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-              Transforming Africa
+              Transforming Africa{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
                 Through Innovation
               </span>
@@ -529,105 +515,6 @@ export default function AboutPage() {
 
         {/* MYLES Values Section */}
         <MYLESValues />
-
-        {/* Leadership Team Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="w-8 h-0.5 bg-gold" />
-                <span className="text-gold text-[11px] font-bold
-                         tracking-[2.5px] uppercase font-body">
-                  Leadership
-                </span>
-                <div className="w-8 h-0.5 bg-gold" />
-              </div>
-              <h2 className="font-display font-bold text-navy
-                     text-4xl md:text-5xl mb-4">
-                Meet Our{' '}
-                <span className="text-transparent bg-clip-text
-                  bg-gradient-to-r from-gold to-gold-light italic">
-                  Team
-                </span>
-              </h2>
-              <p className="font-body max-w-2xl mx-auto text-lg md:text-xl leading-8 text-medium-grey">
-                The visionaries driving MylesCorp's mission to transform 
-                African technology through innovation and excellence.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {TEAM_MEMBERS.map((member, index) => (
-                <div
-                  key={index}
-                  className="bg-white border border-slate-200 rounded-[1.5rem] p-8 shadow-card
-                         hover:border-gold hover:-translate-y-1
-                         transition-all duration-300"
-                >
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-24 h-24 bg-gradient-to-br from-gold/20 to-gold/10
-                           rounded-full flex items-center justify-center mb-6
-                           border-2 border-gold/20">
-                      {member.image ? (
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          width={96}
-                          height={96}
-                          className="rounded-full object-cover"
-                        />
-                      ) : (
-                        <div className="text-gold text-2xl font-display font-bold">
-                          {member.name.split(' ').map(n => n[0]).join('')}
-                        </div>
-                      )}
-                    </div>
-                    <h3 className="font-display font-bold text-navy text-xl mb-2">
-                      {member.name}
-                    </h3>
-                    <p className="text-gold font-body font-medium text-sm mb-4">
-                      {member.role}
-                    </p>
-                    <p className="font-body font-light text-sm leading-relaxed mb-6"
-                       style={{ color: '#545454' }}>
-                      {member.bio}
-                    </p>
-                    <div className="flex items-center justify-center gap-4">
-                      {member.email && (
-                        <a
-                          href={`mailto:${member.email}`}
-                          className="text-navy hover:text-gold transition-colors"
-                        >
-                          <Mail className="w-5 h-5" />
-                        </a>
-                      )}
-                      {member.social?.linkedin && (
-                        <a
-                          href={member.social.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-navy hover:text-gold transition-colors"
-                        >
-                          <Linkedin className="w-5 h-5" />
-                        </a>
-                      )}
-                      {member.social?.twitter && (
-                        <a
-                          href={member.social.twitter}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-navy hover:text-gold transition-colors"
-                        >
-                          <Twitter className="w-5 h-5" />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Company Stats Section */}
         <section className="py-20" style={{ background: '#080e18' }}>

@@ -130,7 +130,7 @@ export async function POST(request: NextRequest) {
       // Send welcome email
       try {
         await resend.emails.send({
-          from: 'MylesCorp Technologies <noreply@MylesCorp.com>',
+          from: 'MylesCorp Technologies <noreply@mylescorptech.com>',
           to: [email],
           subject: 'Welcome to MylesCorp Technologies Newsletter!',
           html: `
@@ -171,18 +171,18 @@ export async function POST(request: NextRequest) {
                   <p>You'll receive our newsletter every week with curated content designed to help you leverage technology for growth.</p>
                   
                   <div style="text-align: center;">
-                    <a href="https://MylesCorp.com" class="button">Explore Our Solutions</a>
+                    <a href="https://www.mylescorptech.com" class="button">Explore Our Solutions</a>
                   </div>
                   
-                  <p>Have questions? Simply reply to this email or contact our team at <a href="mailto:info@MylesCorp.com">info@MylesCorp.com</a>.</p>
+                  <p>Have questions? Simply reply to this email or contact our team at <a href="mailto:info@mylescorptech.com">info@mylescorptech.com</a>.</p>
                   
                   <p><span class="gold">Transforming Industries, Empowering Generations.</span></p>
                 </div>
                 <div class="footer">
                   <p>You received this email because you subscribed to our newsletter.</p>
                   <p>
-                    <a href="https://MylesCorp.com/legal/privacy">Privacy Policy</a> | 
-                    <a href="https://MylesCorp.com/legal/terms">Terms of Service</a>
+                    <a href="https://www.mylescorptech.com/privacy-policy">Privacy Policy</a> |
+                    <a href="https://www.mylescorptech.com/terms-of-service">Terms of Service</a>
                   </p>
                   <p>© 2026 MylesCorp Technologies Limited. All rights reserved.</p>
                   <p>Wester Heights, Westlands, Nairobi, Kenya</p>

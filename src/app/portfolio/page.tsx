@@ -27,14 +27,14 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Portfolio | MylesCorp Technologies',
   description:
-    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, SIFA School Siaya, and sector-focused digital platforms for education, transport, healthcare, agriculture, business, and AI automation.',
+    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, MylesCRM, SIFA School Siaya, and sector-focused platforms for education, transport, sales, healthcare, agriculture, business, and AI automation.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/portfolio',
   },
   openGraph: {
     title: 'Portfolio | MylesCorp Technologies',
     description:
-      'Live websites, SaaS products, and institution-ready digital platforms built by MylesCorp Technologies.',
+      'Live websites, SaaS products, CRM platforms, and institution-ready digital experiences built by MylesCorp Technologies.',
     url: 'https://www.mylescorptech.com/portfolio',
     siteName: 'MylesCorp Technologies',
     type: 'website',
@@ -63,7 +63,7 @@ const liveProjects: PortfolioProject[] = [
     href: 'https://edumyles.com/',
     icon: GraduationCap,
     status: 'Live product',
-    previewSrc: '/portfolio/edumyles-home.png',
+    previewSrc: '/portfolio/edumyles-home.webp',
     previewAlt: 'EduMyles homepage preview',
     summary:
       'An all-in-one school management system built for African schools, covering admissions, fees, attendance, exams, parent communication, and school operations from one platform.',
@@ -85,7 +85,7 @@ const liveProjects: PortfolioProject[] = [
     href: 'https://eduryde.mylescorptech.com/',
     icon: BusFront,
     status: 'Live product',
-    previewSrc: '/portfolio/eduryde-home.png',
+    previewSrc: '/portfolio/eduryde-home.webp',
     previewAlt: 'EduRyde homepage preview',
     summary:
       'A real-time school transport management platform for Kenyan schools and transport operators, combining GPS tracking, digital boarding records, parent notifications, and M-Pesa collection.',
@@ -107,7 +107,7 @@ const liveProjects: PortfolioProject[] = [
     href: 'https://sifaschool.mylescorptech.com/',
     icon: UsersRound,
     status: 'Live website',
-    previewSrc: '/portfolio/sifa-school-home.png',
+    previewSrc: '/portfolio/sifa-school-home.webp',
     previewAlt: 'SIFA School Siaya homepage preview',
     summary:
       'A public school website for SIFA School Siaya, presenting ECDE, kindergarten, and early primary admissions with programs, facilities, school story, contact paths, and parent-facing enrollment flow.',
@@ -120,6 +120,28 @@ const liveProjects: PortfolioProject[] = [
       'Makes the school easier for parents to evaluate',
       'Supports direct enrollment inquiries',
       'Turns a local institution into a credible digital brand',
+    ],
+  },
+  {
+    name: 'MylesCRM',
+    category: 'AI-Powered CRM SaaS',
+    sector: 'Sales and Business Operations',
+    href: 'https://mylescrm.mylescorptech.com/',
+    icon: BriefcaseBusiness,
+    status: 'Live product',
+    previewSrc: '/portfolio/mylescrm-home.webp',
+    previewAlt: 'MylesCRM homepage preview',
+    summary:
+      'A modern CRM platform for sales teams, combining contact management, deal pipelines, AI lead scoring, pipeline insights, revenue forecasting, and automated email workflows.',
+    evidence: [
+      'AI chat assistant for pipeline questions and sales recommendations',
+      'Lead scoring, contact intelligence, and kanban deal management',
+      'Revenue forecasting, email sequences, and tiered SaaS pricing',
+    ],
+    outcomes: [
+      'Presents MylesCRM as a credible SaaS product',
+      'Gives sales teams a clear trial and sign-in journey',
+      'Connects CRM operations with AI-assisted decision support',
     ],
   },
 ]
@@ -142,12 +164,12 @@ const capabilityProjects = [
       'Agricultural intelligence for crop monitoring, weather awareness, market insight, and better operational planning.',
   },
   {
-    name: 'MylesCRM',
-    category: 'Business Operations',
+    name: 'MylesPay',
+    category: 'Payments Platform',
     icon: BriefcaseBusiness,
-    href: '/products/mylescrm',
+    href: '/products/mylespay',
     summary:
-      'CRM, invoicing, inventory visibility, sales workflows, and commercial reporting for growing businesses.',
+      'Digital payment workflows for invoicing, collections, transaction visibility, and financial operations.',
   },
   {
     name: 'Myles AI',
@@ -160,9 +182,9 @@ const capabilityProjects = [
 ]
 
 const proofPoints = [
-  { value: '3', label: 'Researched live properties' },
-  { value: '7+', label: 'Portfolio and product assets' },
-  { value: 'Education-first', label: 'Current strongest vertical' },
+  { value: '4', label: 'Live properties showcased' },
+  { value: '8+', label: 'Product and platform assets' },
+  { value: 'SaaS + Institutions', label: 'Core delivery focus' },
   { value: 'East Africa', label: 'Primary market focus' },
 ]
 
@@ -231,7 +253,7 @@ export default function PortfolioPage() {
                   Live digital products and institution-ready platforms built for trust, clarity, and growth.
                 </h1>
                 <p className="mt-6 max-w-2xl font-body text-[1rem] leading-8 text-light-blue sm:text-[1.08rem]">
-                  This portfolio highlights researched live work across school management, school transport, and education websites, alongside the wider MylesCorp product ecosystem.
+                  This portfolio highlights live product and institutional work across school management, school transport, CRM, and education websites, alongside the wider MylesCorp product ecosystem.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -259,7 +281,7 @@ export default function PortfolioPage() {
                       Research Summary
                     </div>
                     <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-white">
-                      Three live education-focused properties now anchor the portfolio.
+                      Live SaaS products and institutional websites anchor the portfolio.
                     </h2>
                   </div>
                   <BadgeCheck className="h-8 w-8 flex-shrink-0 text-gold" />
@@ -308,15 +330,15 @@ export default function PortfolioPage() {
               <div>
                 <SectionLabel>Live Work</SectionLabel>
                 <h2 className="font-display text-4xl font-bold leading-tight text-navy md:text-5xl">
-                  Verified live projects, added as requested.
+                  Public work with clear positioning, preview, and live access.
                 </h2>
               </div>
               <p className="font-body text-lg leading-8 text-medium-grey">
-                Each entry links to the live property and focuses on what the site or product actually presents: product capabilities, institutional value, and buyer or parent actions.
+                Each entry is grounded in the live experience: product capabilities, buyer value, audience actions, and the operational story a prospect needs to understand quickly.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-7 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-7 lg:grid-cols-2">
               {liveProjects.map((project) => {
                 const Icon = project.icon
                 return (
@@ -433,7 +455,7 @@ export default function PortfolioPage() {
                 More sector platforms in the MylesCorp portfolio.
               </h2>
               <p className="mt-4 font-body text-lg leading-8 text-medium-grey">
-                Beyond the live researched properties, MylesCorp is building reusable product thinking across healthcare, agriculture, business operations, and AI automation.
+                Beyond the featured live properties, MylesCorp is building reusable product thinking across healthcare, agriculture, payments, business operations, and AI automation.
               </p>
             </div>
 

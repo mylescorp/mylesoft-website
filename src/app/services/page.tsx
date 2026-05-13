@@ -8,7 +8,7 @@ import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
 import { Icon } from '@/components/ui/Icon'
 import Link from 'next/link'
-import { 
+import {
   Users, 
   Settings, 
   Brain, 
@@ -24,6 +24,14 @@ import {
   Monitor,
   Server
 } from 'lucide-react'
+
+export const metadata = {
+  title: 'Technology Services — MylesCorp Technologies',
+  description: 'Explore MylesCorp technology services including software development, website development, cloud solutions, IT consulting, UI/UX design, and web hosting for African businesses.',
+  alternates: {
+    canonical: 'https://www.mylescorptech.com/services',
+  },
+}
 
 const SERVICES_DATA = {
   overview: {
@@ -259,7 +267,7 @@ export default function ServicesPage() {
             </div>
             
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-              Expert Solutions
+              Expert Solutions{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
                 For African Businesses
               </span>
