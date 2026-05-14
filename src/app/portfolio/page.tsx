@@ -4,20 +4,16 @@ import {
   ArrowRight,
   BadgeCheck,
   BarChart3,
-  Bot,
   BriefcaseBusiness,
   BusFront,
   CheckCircle2,
   ClipboardCheck,
   ExternalLink,
   GraduationCap,
-  HeartPulse,
   Layers3,
   MapPin,
   MonitorSmartphone,
   ShieldCheck,
-  Sprout,
-  UsersRound,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
@@ -27,14 +23,14 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Portfolio | MylesCorp Technologies',
   description:
-    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, MylesCRM, SIFA School Siaya, and sector-focused platforms for education, transport, sales, healthcare, agriculture, business, and AI automation.',
+    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, MylesCRM, and SIFA School Siaya.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/portfolio',
   },
   openGraph: {
     title: 'Portfolio | MylesCorp Technologies',
     description:
-      'Live websites, SaaS products, CRM platforms, and institution-ready digital experiences built by MylesCorp Technologies.',
+      'Live SaaS products and institution-ready websites built by MylesCorp Technologies.',
     url: 'https://www.mylescorptech.com/portfolio',
     siteName: 'MylesCorp Technologies',
     type: 'website',
@@ -101,28 +97,6 @@ const liveProjects: PortfolioProject[] = [
     ],
   },
   {
-    name: 'SIFA School Siaya',
-    category: 'Institution Website',
-    sector: 'Early Childhood Education',
-    href: 'https://sifaschool.mylescorptech.com/',
-    icon: UsersRound,
-    status: 'Live website',
-    previewSrc: '/portfolio/sifa-school-home.webp',
-    previewAlt: 'SIFA School Siaya homepage preview',
-    summary:
-      'A public school website for SIFA School Siaya, presenting ECDE, kindergarten, and early primary admissions with programs, facilities, school story, contact paths, and parent-facing enrollment flow.',
-    evidence: [
-      'Admissions, program, gallery, FAQ, and contact pages',
-      'ECDE, kindergarten, and primary classes inquiry flow',
-      'Facilities messaging for classrooms, swimming, creative arts, and safe play',
-    ],
-    outcomes: [
-      'Makes the school easier for parents to evaluate',
-      'Supports direct enrollment inquiries',
-      'Turns a local institution into a credible digital brand',
-    ],
-  },
-  {
     name: 'MylesCRM',
     category: 'AI-Powered CRM SaaS',
     sector: 'Sales and Business Operations',
@@ -144,47 +118,34 @@ const liveProjects: PortfolioProject[] = [
       'Connects CRM operations with AI-assisted decision support',
     ],
   },
-]
-
-const capabilityProjects = [
   {
-    name: 'MylesCare',
-    category: 'Healthcare Platform',
-    icon: HeartPulse,
-    href: '/products/mylescare',
+    name: 'SIFA School Siaya',
+    category: 'Institution Website',
+    sector: 'Early Childhood Education',
+    href: 'https://sifaschool.mylescorptech.com/',
+    icon: GraduationCap,
+    status: 'Live website',
+    previewSrc: '/portfolio/sifa-school-home.webp',
+    previewAlt: 'SIFA School Siaya homepage preview',
     summary:
-      'A healthcare operations platform for patient records, appointments, billing, and modern clinic workflow management.',
-  },
-  {
-    name: 'AgriMyles',
-    category: 'AgriTech Product',
-    icon: Sprout,
-    href: '/products/agrimyles',
-    summary:
-      'Agricultural intelligence for crop monitoring, weather awareness, market insight, and better operational planning.',
-  },
-  {
-    name: 'MylesPay',
-    category: 'Payments Platform',
-    icon: BriefcaseBusiness,
-    href: '/products/mylespay',
-    summary:
-      'Digital payment workflows for invoicing, collections, transaction visibility, and financial operations.',
-  },
-  {
-    name: 'Myles AI',
-    category: 'AI Automation',
-    icon: Bot,
-    href: '/products/myles-ai',
-    summary:
-      'Applied AI workflows that help organisations automate work, unlock insight, and add intelligence to daily operations.',
-  },
+      'A public school website for SIFA School Siaya, presenting ECDE, kindergarten, and early primary admissions with programs, facilities, school story, contact paths, and parent-facing enrollment flow.',
+    evidence: [
+      'Admissions, program, gallery, FAQ, and contact pages',
+      'ECDE, kindergarten, and primary classes inquiry flow',
+      'Facilities messaging for classrooms, swimming, creative arts, and safe play',
+    ],
+    outcomes: [
+      'Makes the school easier for parents to evaluate',
+      'Supports direct enrollment inquiries',
+      'Turns a local institution into a credible digital brand',
+    ],
+  }
 ]
 
 const proofPoints = [
   { value: '4', label: 'Live properties showcased' },
-  { value: '8+', label: 'Product and platform assets' },
   { value: 'SaaS + Institutions', label: 'Core delivery focus' },
+  { value: '100%', label: 'Active product portfolio' },
   { value: 'East Africa', label: 'Primary market focus' },
 ]
 
@@ -213,8 +174,7 @@ const processPoints = [
 
 const engagementModels = [
   'SaaS product strategy, UI, and public launch websites',
-  'School, clinic, business, and public-sector platform design',
-  'Institutional websites with admissions, inquiry, and credibility flows',
+  'School, transport, business, and institutional website design',
   'Custom web applications for operational teams',
   'Product refreshes for stronger positioning and buyer trust',
 ]
@@ -234,7 +194,7 @@ export default function PortfolioPage() {
   return (
     <Layout>
       <main className="min-h-screen bg-white">
-        <section className="relative overflow-hidden bg-navy-deep py-24 md:py-28">
+        <section className="relative overflow-hidden bg-navy py-24 md:py-28">
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -253,7 +213,7 @@ export default function PortfolioPage() {
                   Live digital products and institution-ready platforms built for trust, clarity, and growth.
                 </h1>
                 <p className="mt-6 max-w-2xl font-body text-[1rem] leading-8 text-light-blue sm:text-[1.08rem]">
-                  This portfolio highlights live product and institutional work across school management, school transport, CRM, and education websites, alongside the wider MylesCorp product ecosystem.
+                  This portfolio highlights live MylesCorp work across school management, school transport, CRM, and institution-ready school websites.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -281,7 +241,7 @@ export default function PortfolioPage() {
                       Research Summary
                     </div>
                     <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-white">
-                      Live SaaS products and institutional websites anchor the portfolio.
+                      EduMyles, EduRyde, MylesCRM, and SIFA School Siaya anchor the portfolio.
                     </h2>
                   </div>
                   <BadgeCheck className="h-8 w-8 flex-shrink-0 text-gold" />
@@ -330,11 +290,11 @@ export default function PortfolioPage() {
               <div>
                 <SectionLabel>Live Work</SectionLabel>
                 <h2 className="font-display text-4xl font-bold leading-tight text-navy md:text-5xl">
-                  Public work with clear positioning, preview, and live access.
+                  Active products with clear positioning, preview, and live access.
                 </h2>
               </div>
               <p className="font-body text-lg leading-8 text-medium-grey">
-                Each entry is grounded in the live experience: product capabilities, buyer value, audience actions, and the operational story a prospect needs to understand quickly.
+                Each entry is grounded in the live experience: product capabilities, institutional value, audience actions, and the operational story a prospect or parent needs to understand quickly.
               </p>
             </div>
 
@@ -395,7 +355,7 @@ export default function PortfolioPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={`Open ${project.name}`}
-                          className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors duration-200 hover:border-gold hover:text-gold"
+                          className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors duration-200 hover:border-navy hover:text-navy"
                         >
                           <ExternalLink className="h-4 w-4" />
                         </a>
@@ -447,48 +407,6 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        <section className="bg-off-white py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-12 max-w-3xl">
-              <SectionLabel>Product Ecosystem</SectionLabel>
-              <h2 className="font-display text-4xl font-bold leading-tight text-navy md:text-5xl">
-                More sector platforms in the MylesCorp portfolio.
-              </h2>
-              <p className="mt-4 font-body text-lg leading-8 text-medium-grey">
-                Beyond the featured live properties, MylesCorp is building reusable product thinking across healthcare, agriculture, payments, business operations, and AI automation.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {capabilityProjects.map((project) => {
-                const Icon = project.icon
-                return (
-                  <Link
-                    key={project.name}
-                    href={project.href}
-                    className="group flex min-h-[300px] flex-col rounded-[1.3rem] border border-slate-200 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-gold/35"
-                  >
-                    <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/20 bg-gold/10">
-                      <Icon className="h-6 w-6 text-gold" />
-                    </div>
-                    <div className="mb-3 text-xs font-bold uppercase tracking-[1.5px] text-gold">
-                      {project.category}
-                    </div>
-                    <h3 className="font-display text-2xl font-bold text-navy group-hover:text-gold">
-                      {project.name}
-                    </h3>
-                    <p className="mt-4 font-body text-sm leading-7 text-medium-grey">{project.summary}</p>
-                    <div className="mt-auto flex items-center justify-between pt-6 font-body text-sm font-semibold text-gold">
-                      <span>Explore product</span>
-                      <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-                    </div>
-                  </Link>
-                )
-              })}
-            </div>
-          </div>
-        </section>
-
         <section className="bg-white py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -520,16 +438,16 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        <section className="bg-navy-deep py-20">
+        <section className="bg-navy py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div>
                 <SectionLabel>Engagement Models</SectionLabel>
                 <h2 className="font-display text-4xl font-bold leading-tight text-white md:text-5xl">
-                  Build the next live product or institutional website with MylesCorp.
+                  Build the next live product experience with MylesCorp.
                 </h2>
                 <p className="mt-5 font-body text-lg leading-8 text-light-blue">
-                  We support organisations that need a polished product presence, a real operating platform, or a public-facing digital experience that is ready for customers, parents, staff, and partners.
+                  We support organisations that need a polished product presence, a real operating platform, or a customer-facing experience that is ready for schools, parents, sales teams, and partners.
                 </p>
               </div>
 
