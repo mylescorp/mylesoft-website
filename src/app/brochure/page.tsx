@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
-import { Download, ArrowRight, CheckCircle2, Building2, HeartPulse, Sprout, BriefcaseBusiness } from 'lucide-react'
+import { Download, ArrowRight, CheckCircle2, Building2, Bus, BriefcaseBusiness, FileText } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
@@ -13,34 +13,31 @@ export const metadata = {
 
 const brochureHighlights = [
   {
-    title: 'Education',
+    title: 'EduMyles',
     icon: Building2,
-    body: 'EduMyles and EduRyde help schools manage academics, transport, communication, and reporting with less admin overhead.',
+    body: 'School management for admissions, student records, CBC and 8-4-4 reporting, M-Pesa fees, attendance, parent communication, timetables, and compliance reporting.',
   },
   {
-    title: 'Healthcare',
-    icon: HeartPulse,
-    body: 'MylesCare streamlines patient records, appointments, billing, and healthcare operations with practical AI support.',
+    title: 'EduRyde',
+    icon: Bus,
+    body: 'School transport management with live GPS tracking, route planning, driver oversight, boarding records, vehicle compliance, and parent alerts.',
   },
   {
-    title: 'Agriculture',
-    icon: Sprout,
-    body: 'AgriMyles gives farmers and agribusinesses better visibility into crops, weather, and market decisions.',
-  },
-  {
-    title: 'Business',
+    title: 'MylesCRM',
     icon: BriefcaseBusiness,
-    body: 'MylesCRM and our wider product suite help East African businesses improve sales, operations, and growth.',
+    body: 'CRM and business management for leads, contacts, pipelines, invoices, payments, customer service, campaigns, inventory, tasks, and reporting.',
   },
 ]
 
 const brochureSections = [
   'Company story, mission, and market focus',
-  'Core products across education, healthcare, agriculture, and business',
-  'Service capabilities including software development, hosting, and consulting',
-  'Regional footprint, impact metrics, and support model',
-  'Booking and contact information for demos and partnerships',
+  'Full product overview for EduMyles, EduRyde, and MylesCRM',
+  'Published product plan options and pricing summary',
+  'Professional services for implementation, websites, cloud, hosting, and consulting',
+  'Delivery approach, support model, and contact information',
 ]
+
+const brochurePdf = '/brochures/mylescorp-technologies-brochure.pdf'
 
 export default function BrochurePage() {
   return (
@@ -78,14 +75,15 @@ export default function BrochurePage() {
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Link href="/contact">
                 <Button size="lg" className="min-w-[210px]">
-                  Book a Demo
+                  Request a Proposal
                 </Button>
               </Link>
-              <Link href="/products">
+              <a href={brochurePdf} download>
                 <Button variant="outline" size="lg" className="min-w-[210px] border-white text-white hover:border-white hover:bg-white/10">
-                  Explore Products
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Brochure
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -98,7 +96,7 @@ export default function BrochurePage() {
                   What&apos;s Inside
                 </h2>
                 <p className="mb-8 max-w-2xl font-body text-lg leading-8 text-medium-grey">
-                  This brochure page replaces the missing static brochure asset with a reliable in-app overview you can share right away.
+                  Download the professional MylesCorp brochure with products, services, plan options, implementation approach, and contact information in one PDF.
                 </p>
 
                 <div className="space-y-4">
@@ -119,7 +117,7 @@ export default function BrochurePage() {
                   {brochureHighlights.map((item) => {
                     const Icon = item.icon
                     return (
-                      <div key={item.title} className="rounded-[1.4rem] border border-white/10 bg-white/[0.06] p-5">
+                    <div key={item.title} className="rounded-[1.4rem] border border-white/10 bg-white/[0.06] p-5">
                         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-gold/20 bg-gold/10">
                           <Icon className="h-6 w-6 text-gold" />
                         </div>
@@ -149,26 +147,55 @@ export default function BrochurePage() {
                     Need a Downloadable PDF Version?
                   </h2>
                   <p className="font-body text-lg leading-8 text-medium-grey">
-                    The old static brochure file is not currently present in the repository. If you provide the final PDF or HTML brochure asset, I can wire in a proper download button and branded viewer immediately.
+                    The downloadable PDF includes our focused product suite, professional services, pricing summary, delivery process, support model, and contact details for decision makers.
                   </p>
                 </div>
 
                 <div className="flex flex-col gap-4 sm:flex-row">
-                  <Link href="/contact">
+                  <a href={brochurePdf} download>
                     <Button size="lg" className="min-w-[210px]">
-                      Request Brochure
+                      <Download className="mr-2 h-5 w-5" />
+                      Download PDF
+                    </Button>
+                  </a>
+                  <Link href="/book-demo">
+                    <Button variant="secondary" size="lg" className="min-w-[210px]">
+                      Book a Demo
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
-                  <button
-                    type="button"
-                    disabled
-                    className="inline-flex min-w-[210px] items-center justify-center rounded-xl border border-navy/15 bg-slate-100 px-6 py-4 font-body text-sm font-semibold text-navy/45"
-                  >
-                    <Download className="mr-2 h-5 w-5" />
-                    PDF Pending Asset
-                  </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white py-20">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+              <div className="rounded-[1.5rem] border border-slate-200 bg-off-white p-8">
+                <FileText className="mb-5 h-12 w-12 text-gold" />
+                <h2 className="font-display text-3xl font-bold text-navy">
+                  What the PDF Covers
+                </h2>
+                <p className="mt-4 font-body text-[1rem] leading-8 text-medium-grey">
+                  Use it for internal review, procurement discussions, school board conversations, partner introductions, and proposal preparation.
+                </p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  'Product features and ideal users',
+                  'Plan options and published pricing',
+                  'Implementation and onboarding services',
+                  'Cloud, hosting, website, and consulting services',
+                  'Delivery process from discovery to launch',
+                  'Email, phone, location, and website contacts',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-gold" />
+                    <span className="font-body text-[0.95rem] leading-7 text-dark-grey">{item}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
