@@ -11,7 +11,7 @@ export function DarkModeToggle() {
     const prefersDark = window.matchMedia(
       '(prefers-color-scheme: dark)'
     ).matches
-    const isDark = saved === 'dark' || 
+    const isDark = saved === 'dark' ||
                   (!saved && prefersDark)
     setDark(isDark)
     document.documentElement.classList.toggle(

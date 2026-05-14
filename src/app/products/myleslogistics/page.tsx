@@ -106,7 +106,7 @@ const MYLESLOGISTICS_DATA = {
   pricing: [
     {
       name: 'Basic',
-      price: 'KES 9,999',
+      price: 'KSh 9,999',
       period: 'per month',
       description: 'Perfect for small fleets with basic tracking needs.',
       features: [
@@ -120,7 +120,7 @@ const MYLESLOGISTICS_DATA = {
     },
     {
       name: 'Professional',
-      price: 'KES 24,999',
+      price: 'KSh 24,999',
       period: 'per month',
       description: 'Ideal for growing businesses with advanced logistics needs.',
       features: [
@@ -178,7 +178,7 @@ export default function MylesLogisticsPage() {
         <StatsSection stats={MYLESLOGISTICS_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="MylesLogistics"
           description={MYLESLOGISTICS_DATA.overview.description.split('\n\n')}
           stats={[
@@ -222,7 +222,7 @@ export default function MylesLogisticsPage() {
         {/* Pricing */}
         <PricingSection
           title="Simple, Transparent Pricing"
-          description="All plans include free setup, training, and ongoing support. No hidden fees."
+          description="Current plan details are maintained on the pricing page and confirmed during consultation."
           plans={MYLESLOGISTICS_DATA.pricing.map(p => ({
             ...p,
             price: p.price.split('/')[0],

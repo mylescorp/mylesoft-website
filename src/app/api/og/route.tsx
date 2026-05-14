@@ -5,7 +5,7 @@ export const runtime = 'edge'
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
-    
+
     const title = searchParams.get('title') || 'MylesCorp Technologies'
     const description = searchParams.get('description') || 'AI-Powered Solutions for East African Businesses'
 
@@ -58,7 +58,7 @@ export async function GET(request: Request) {
           >
             {title}
           </h1>
-          
+
           {/* Description */}
           <p
             style={{

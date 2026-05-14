@@ -9,7 +9,7 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error('Application error:', error)
-    
+
     // You could also send to a service like Sentry, LogRocket, etc.
     // errorReportingService.captureException(error)
   }, [error])
@@ -27,7 +27,7 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
   }
 
   return (
-    <div className="min-h-screen bg-navy-deep flex items-center justify-center p-4">
+    <div className="min-h-screen bg-navy flex items-center justify-center p-4">
       <div className="max-w-lg w-full bg-navy-dark border border-gold/20 rounded-2xl shadow-card overflow-hidden">
         {/* Error Header */}
         <div className="bg-navy border-b border-gold/20 p-6 text-white text-center">
@@ -45,8 +45,8 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
               We&apos;re sorry for the inconvenience
             </h2>
             <p className="font-body text-light-blue leading-relaxed">
-              An unexpected error occurred while loading this page. Our team has been notified 
-              and is working to resolve the issue. You can try refreshing the page or go back 
+              An unexpected error occurred while loading this page. Our team has been notified
+              and is working to resolve the issue. You can try refreshing the page or go back
               to the homepage.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
           {/* Error Details (Development Only) */}
           {process.env.NODE_ENV === 'development' && (
             <details className="mb-6">
-              <summary className="cursor-pointer text-sm font-medium text-navy-500 mb-2 hover:text-gold-500">
+              <summary className="cursor-pointer text-sm font-medium text-navy-500 mb-2 hover:text-gold">
                 Error Details (Development )
               </summary>
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mt-2">
@@ -75,7 +75,7 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
               <RefreshCw className="w-4 h-4 mr-2" />
               Try Again
             </Button>
-            
+
             <Button
               variant="outline"
               onClick={handleReload}
@@ -84,7 +84,7 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
               <Bug className="w-4 h-4 mr-2" />
               Reload Page
             </Button>
-            
+
             <Button
               variant="outline"
               onClick={handleGoHome}
@@ -102,15 +102,15 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
               If this problem continues, please don&apos;t hesitate to reach out to our support team.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center text-sm font-body">
-              <a 
-                href="mailto:support@mylescorptech.com" 
+              <a
+                href="mailto:support@mylescorptech.com"
                 className="text-gold hover:text-gold-light font-medium"
               >
                 support@mylescorptech.com
               </a>
               <span className="text-muted-blue">•</span>
-              <a 
-                href="tel:+254743993715" 
+              <a
+                href="tel:+254743993715"
                 className="text-gold hover:text-gold-light font-medium"
               >
                 +254 743 993 715
@@ -120,7 +120,7 @@ export default function Error({ error, unstable_retry }: ErrorInfo) {
         </div>
 
         {/* Error Footer */}
-        <div className="bg-navy-deep border-t border-gold/10 px-8 py-4 text-center">
+        <div className="bg-navy border-t border-gold/10 px-8 py-4 text-center">
           <p className="font-mono text-xs text-muted-blue">
             Error ID: {Date.now()} | Reference: {error.name || 'Unknown'}
           </p>

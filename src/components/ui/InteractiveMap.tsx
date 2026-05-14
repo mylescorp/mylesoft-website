@@ -177,9 +177,9 @@ export default function InteractiveMap() {
       // Initialize map after Leaflet loads
       if (typeof window !== 'undefined' && window.L) {
         const L = window.L
-        
+
         const map = L.map('map').setView([mapCenter.lat, mapCenter.lng], mapZoom)
-        
+
         // Add tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '© OpenStreetMap contributors',
@@ -206,7 +206,7 @@ export default function InteractiveMap() {
               </div>
             </div>
           `
-          
+
           const icon = L.divIcon({
             html: markerHtml,
             className: 'custom-marker',
@@ -323,12 +323,12 @@ export default function InteractiveMap() {
       <div className="flex flex-col lg:flex-row min-h-[600px]">
         {/* Map Container */}
         <div className="flex-1 relative">
-          <div 
-            id="map" 
+          <div
+            id="map"
             className="w-full h-[600px] lg:h-full"
             style={{ minHeight: '600px' }}
           />
-          
+
           {/* Map Legend */}
           <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 z-[1000]">
             <h3 className="font-semibold text-navy mb-3">Legend</h3>
@@ -395,7 +395,7 @@ export default function InteractiveMap() {
                       className={`p-4 rounded-lg border-2 cursor-pointer transition-all duration-300 ${
                         selectedOffice?.id === office.id
                           ? 'border-gold bg-gold/10'
-                          : 'border-gray-200 hover:border-gold/50 hover:bg-gray-50'
+                          : 'border-gray-200 hover:border-gold/50 hover:bg-ice'
                       }`}
                     >
                       <div className="flex items-start justify-between mb-2">
@@ -409,7 +409,7 @@ export default function InteractiveMap() {
                           </span>
                         )}
                       </div>
-                      
+
                       <div className="space-y-2 text-sm">
                         <div className="flex items-center text-gray-600">
                           <MapPin className="w-4 h-4 mr-2 text-gold" />
@@ -443,7 +443,7 @@ export default function InteractiveMap() {
                       className={`p-4 rounded-lg border-2 cursor-pointer transition-all duration-300 ${
                         selectedCoverage?.id === coverage.id
                           ? 'border-gold bg-gold/10'
-                          : 'border-gray-200 hover:border-gold/50 hover:bg-gray-50'
+                          : 'border-gray-200 hover:border-gold/50 hover:bg-ice'
                       }`}
                     >
                       <div className="flex items-start justify-between mb-2">
@@ -457,7 +457,7 @@ export default function InteractiveMap() {
                           </span>
                         )}
                       </div>
-                      
+
                       <div className="space-y-2 text-sm">
                         <div className="flex items-center text-gray-600">
                           <Users className="w-4 h-4 mr-2 text-gold" />

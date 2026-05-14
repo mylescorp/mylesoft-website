@@ -46,7 +46,7 @@ export default function BrochurePage() {
   return (
     <Layout>
       <div className="min-h-screen">
-        <section className="relative overflow-hidden bg-navy-deep py-24 md:py-28">
+        <section className="relative overflow-hidden bg-navy py-24 md:py-28">
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -82,7 +82,7 @@ export default function BrochurePage() {
                 </Button>
               </Link>
               <Link href="/products">
-                <Button variant="outline" size="lg" className="min-w-[210px] border-gold/40 text-gold hover:border-gold hover:bg-gold hover:text-navy">
+                <Button variant="outline" size="lg" className="min-w-[210px] border-white text-white hover:border-white hover:bg-white/10">
                   Explore Products
                 </Button>
               </Link>
@@ -111,7 +111,7 @@ export default function BrochurePage() {
                 </div>
               </div>
 
-              <div className="rounded-[1.8rem] border border-gold/20 bg-navy-deep p-8 shadow-card">
+              <div className="rounded-[1.8rem] border border-gold/20 bg-navy p-8 shadow-card">
                 <div className="mb-6 inline-flex rounded-full border border-gold/20 bg-gold/10 px-4 py-2 text-xs font-bold uppercase tracking-[1.8px] text-gold">
                   Use Cases
                 </div>

@@ -18,7 +18,7 @@ interface FeaturesSectionProps {
 
 export function FeaturesSection({ title, description, features, centerHeader = false }: FeaturesSectionProps) {
   return (
-    <section className="py-20 bg-off-white">
+    <section className="py-20 bg-ice">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={centerHeader ? 'text-center' : ''}>
           <div className={`flex items-center gap-3 mb-4 ${centerHeader ? 'justify-center' : ''}`}>
@@ -42,7 +42,7 @@ export function FeaturesSection({ title, description, features, centerHeader = f
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white p-7 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-gold/40"
+              className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white p-7 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-gold/40"
             >
               <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold via-gold-light to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 

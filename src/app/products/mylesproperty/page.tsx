@@ -32,7 +32,7 @@ const MYLESPROPERTY_DATA = {
       { number: "500+", label: "Properties Managed" },
       { number: "95%", label: "Occupancy Rate" },
       { number: "24/7", label: "Tenant Support" },
-      { number: "KES 50M", label: "Monthly Rent Processed" }
+      { number: "KSh 50M", label: "Monthly Rent Processed" }
     ],
     description: "MylesProperty streamlines every aspect of property management from tenant acquisition to maintenance coordination. Our platform provides real-time insights, automated rent collection, and comprehensive reporting to maximize your property investment returns."
   },
@@ -106,7 +106,7 @@ const MYLESPROPERTY_DATA = {
   pricing: [
     {
       name: 'Starter',
-      price: 'KES 4,999',
+      price: 'KSh 4,999',
       period: 'per month',
       description: 'Perfect for individual landlords with small portfolios.',
       features: [
@@ -120,7 +120,7 @@ const MYLESPROPERTY_DATA = {
     },
     {
       name: 'Professional',
-      price: 'KES 14,999',
+      price: 'KSh 14,999',
       period: 'per month',
       description: 'Ideal for property managers with growing portfolios.',
       features: [
@@ -178,7 +178,7 @@ export default function MylesPropertyPage() {
         <StatsSection stats={MYLESPROPERTY_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="MylesProperty"
           description={MYLESPROPERTY_DATA.overview.description.split('\n\n')}
           stats={[
@@ -222,7 +222,7 @@ export default function MylesPropertyPage() {
         {/* Pricing */}
         <PricingSection
           title="Simple, Transparent Pricing"
-          description="All plans include free setup, training, and ongoing support. No hidden fees."
+          description="Current plan details are maintained on the pricing page and confirmed during consultation."
           plans={MYLESPROPERTY_DATA.pricing.map(p => ({
             ...p,
             price: p.price.split('/')[0],

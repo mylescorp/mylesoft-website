@@ -13,10 +13,10 @@ interface ScrollRevealProps {
   once?: boolean
 }
 
-export function ScrollReveal({ 
-  children, 
-  className = '', 
-  delay = 0, 
+export function ScrollReveal({
+  children,
+  className = '',
+  delay = 0,
   duration = 0.6,
   direction = 'up',
   distance = 50,
@@ -40,7 +40,7 @@ export function ScrollReveal({
   const getFinalPosition = () => {
     switch (direction) {
       case 'up':
-      case 'down': 
+      case 'down':
         return { y: 0, opacity: 1 }
       case 'left':
       case 'right':
@@ -84,7 +84,7 @@ export function Parallax({ children, className = '', speed = 0.5, offset = 0 }: 
     target: ref,
     offset: ["start end", "end start"]
   })
-  
+
   const y = useTransform(scrollYProgress, [0, 1], [offset, -speed * 100])
 
   return (
@@ -103,9 +103,9 @@ interface StaggerRevealProps {
   distance?: number
 }
 
-export function StaggerReveal({ 
-  children, 
-  className = '', 
+export function StaggerReveal({
+  children,
+  className = '',
   staggerDelay = 0.1,
   itemDelay = 0,
   direction = 'up',
@@ -129,7 +129,7 @@ export function StaggerReveal({
   const getFinalPosition = () => {
     switch (direction) {
       case 'up':
-      case 'down': 
+      case 'down':
         return { y: 0, opacity: 1 }
       case 'left':
       case 'right':
@@ -171,8 +171,8 @@ interface ProgressLineProps {
   delay?: number
 }
 
-export function ProgressLine({ 
-  className = '', 
+export function ProgressLine({
+  className = '',
   color = 'bg-gold',
   height = 2,
   duration = 1,
@@ -207,10 +207,10 @@ interface CounterProps {
   suffix?: string
 }
 
-export function Counter({ 
-  end, 
-  duration = 2, 
-  delay = 0, 
+export function Counter({
+  end,
+  duration = 2,
+  delay = 0,
   className = '',
   prefix = '',
   suffix = ''

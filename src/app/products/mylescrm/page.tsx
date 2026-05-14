@@ -11,7 +11,7 @@ import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
   title: 'MylesCRM, Business Management & CRM Software Kenya',
-  description: 'MylesCRM is a complete business management system for Kenyan SMEs, CRM, inventory, invoicing & financial tracking. Start from KES 15,000/mo.',
+  description: 'MylesCRM is a complete business management system for Kenyan SMEs, covering CRM, inventory, invoicing, financial tracking, and clear plan options.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products/mylescrm',
   },
@@ -28,7 +28,7 @@ export default function MylesCRMPage() {
         <StatsSection stats={MYLESCRM_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="MylesCRM"
           description={MYLESCRM_DATA.overview.description.split('\n\n')}
           stats={[
@@ -40,12 +40,12 @@ export default function MylesCRMPage() {
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Everything to Grow Your Business"
           description="8 powerful business tools in one integrated platform designed for East African businesses."
           features={MYLESCRM_DATA.features.map(f => ({
             ...f,
-            icon: f.icon === 'users' ? '👥' : 
+            icon: f.icon === 'users' ? '👥' :
                    f.icon === 'trending-up' ? '📈' :
                    f.icon === 'file-text' ? '💳' :
                    f.icon === 'headset' ? '🎧' :
@@ -58,7 +58,7 @@ export default function MylesCRMPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Set Up and Selling in 5 Steps"
           description="From configuration to scaling revenue in 5 simple steps."
           steps={MYLESCRM_DATA.process}
@@ -66,7 +66,7 @@ export default function MylesCRMPage() {
         />
 
         {/* Pricing */}
-        <PricingSection 
+        <PricingSection
           title="Plans for Every Business"
           description="Flexible pricing designed to grow with your business."
           plans={MYLESCRM_DATA.pricing.map(p => ({
@@ -79,14 +79,14 @@ export default function MylesCRMPage() {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Businesses Growing with MylesCRM"
           testimonials={MYLESCRM_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* CTA */}
-        <CTASection 
+        <CTASection
           title="Ready to Grow Your Business?"
           tagline="Transforming Industries, Empowering Generations."
           description="Join businesses across East Africa using MylesCRM to sell smarter and grow faster."

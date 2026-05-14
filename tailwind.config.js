@@ -10,7 +10,7 @@ module.exports = {
       ringColor: {
         gold: {
           DEFAULT: '#C79639',
-          light: '#e0b055',
+          light: '#A67C2E',
         },
         navy: {
           DEFAULT: '#1A395B',
@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       colors: {
-        // Mylesoft Brand Colors - Corrected
+        // MylesCorp brand colour system
         navy: {
           DEFAULT: '#1A395B',
           dark: '#0f1f35',
@@ -26,7 +26,7 @@ module.exports = {
         },
         gold: {
           DEFAULT: '#C79639',
-          light: '#e0b055',
+          light: '#A67C2E',
           pale: '#f5e4b8'
         },
         ice: '#EEF2F8',
@@ -34,7 +34,7 @@ module.exports = {
         'muted-blue': '#95A9CC',
         // Supporting Colors
         white: '#ffffff',
-        'off-white': '#f8f6f2',
+        'off-white': '#EEF2F8',
         'light-grey': '#E8EDF4',
         'dark-grey': '#212121',
         'med-grey': '#545454',
@@ -42,7 +42,7 @@ module.exports = {
         // Semantic Colors
         success: '#2EA44F',
         warning: '#F59E0B',
-        error: '#DC2626',
+        error: '#D32F2F',
       },
       fontFamily: {
         display: ['var(--font-display)'],

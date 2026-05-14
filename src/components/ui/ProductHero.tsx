@@ -25,9 +25,9 @@ export function ProductHero({
   productName
 }: ProductHeroProps) {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden" style={{ background: 'var(--navy-deep)' }}>
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden" style={{ background: 'var(--navy)' }}>
       {/* Grid Background */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: `linear-gradient(rgba(199,150,57,0.04)1px,transparent 1px),linear-gradient(90deg,rgba(199,150,57,0.04)1px,transparent 1px)`,
@@ -36,13 +36,13 @@ export function ProductHero({
       />
 
       {/* Glow Effects */}
-      <div 
+      <div
         className="absolute top-[-100px] right-[-100px] w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
           background: 'radial-gradient(circle,rgba(26,57,91,0.55)0%,transparent 65%)',
         }}
       />
-      <div 
+      <div
         className="absolute bottom-[-100px] left-[-100px] w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
           background: 'radial-gradient(circle,rgba(199,150,57,0.07)0%,transparent 65%)',
@@ -50,7 +50,7 @@ export function ProductHero({
       />
 
       {/* Top Rule */}
-      <div 
+      <div
         className="absolute top-0 left-0 right-0 h-[3px]"
         style={{
           background: 'linear-gradient(90deg,transparent,var(--gold),transparent)',
@@ -76,15 +76,15 @@ export function ProductHero({
 
         {/* Badge */}
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 mb-6 rounded-full" style={{
-          background: 'rgba(39,174,96,0.1)',
-          border: '1px solid rgba(39,174,96,0.3)',
+          background: 'rgba(238,242,248,0.1)',
+          border: '1px solid rgba(199,150,57,0.35)',
         }}>
           <div className="w-1.5 h-1.5 rounded-full" style={{
-            background: '#27ae60',
+            background: 'var(--gold)',
             animation: 'pulse 2s infinite',
           }} />
           <span style={{
-            color: '#27ae60',
+            color: 'var(--white)',
             fontSize: '11px',
             fontWeight: 700,
             letterSpacing: '1px',
@@ -95,7 +95,7 @@ export function ProductHero({
         </div>
 
         {/* Heading */}
-        <h1 
+        <h1
           className="font-bold leading-[1.05] mb-5"
           style={{
             fontFamily: 'Playfair Display, serif',
@@ -106,7 +106,7 @@ export function ProductHero({
           {heading}{' '}
           <em style={{
             fontStyle: 'italic',
-            color: 'var(--gold)',
+            color: 'var(--white)',
           }}>
             {goldWord}
           </em>
@@ -114,7 +114,7 @@ export function ProductHero({
 
         {/* Product Name */}
         {productName && (
-          <div 
+          <div
             className="text-center mb-4"
             style={{
               fontFamily: 'Playfair Display, serif',
@@ -129,7 +129,7 @@ export function ProductHero({
         )}
 
         {/* Subtitle */}
-        <p 
+        <p
           className="font-light leading-[1.8] max-w-[600px] mx-auto mb-9"
           style={{
             fontSize: '18px',
@@ -142,7 +142,7 @@ export function ProductHero({
 
         {/* CTAs */}
         <div className="flex gap-4 justify-center flex-wrap">
-          <Link 
+          <Link
             href={primaryCta.href}
             className="inline-flex items-center justify-center px-9 py-3.5 rounded-md font-bold text-[14px] transition-all hover:translate-y-[-2px]"
             style={{
@@ -153,7 +153,7 @@ export function ProductHero({
           >
             {primaryCta.text}
           </Link>
-          <Link 
+          <Link
             href={secondaryCta.href}
             className="inline-flex items-center justify-center px-9 py-3.5 rounded-md font-semibold text-[14px] transition-all"
             style={{
@@ -163,7 +163,7 @@ export function ProductHero({
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderColor = 'var(--gold)'
-              e.currentTarget.style.color = 'var(--gold)'
+              e.currentTarget.style.color = 'var(--white)'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'

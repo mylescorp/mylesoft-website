@@ -19,7 +19,7 @@ export default function CookiePolicy() {
     // Intersection Observer for active section
     const sections = document.querySelectorAll('.sec')
     const links = document.querySelectorAll('.toc a[href^="#"]')
-    
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -43,15 +43,15 @@ export default function CookiePolicy() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#080e18]">
+      <div className="min-h-screen bg-navy">
       {/* Scroll Progress Bar */}
-      <div 
-        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#C79639] to-[#e0b055] z-50 transition-all duration-150"
+      <div
+        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#C79639] to-[#A67C2E] z-50 transition-all duration-150"
         style={{ width: `${scrollProgress}%` }}
       />
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-[100] bg-[#080e18] border-b border-[rgba(199,150,57,0.15)] px-10 h-[60px] flex items-center justify-between">
+      <nav className="sticky top-0 z-[100] bg-navy border-b border-[rgba(199,150,57,0.15)] px-10 h-[60px] flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 no-underline">
           <div className="w-[34px] h-[34px] rounded-[7px] bg-gradient-to-br from-[#1A395B] to-[#0f1f35] border-[1.5px] border-[#C79639] flex items-center justify-center font-['Playfair_Display'] text-[16px] font-bold text-[#C79639]">
             M
@@ -61,7 +61,7 @@ export default function CookiePolicy() {
             <div className="text-[8px] text-[#C79639] tracking-[1.5px] uppercase">Legal Documents</div>
           </div>
         </Link>
-        
+
         <div className="flex gap-1.5 flex-wrap">
           <Link href="/privacy-policy" className="px-3 py-1.5 bg-white/4 border border-white/8 rounded-[6px] text-[#95A9CC] text-[11px] font-bold no-underline transition-all duration-180 hover:bg-[rgba(199,150,57,0.08)] hover:border-[rgba(199,150,57,0.3)] hover:text-[#C79639]">
             Privacy Policy
@@ -76,14 +76,14 @@ export default function CookiePolicy() {
             Compliance
           </Link>
         </div>
-        
+
         <Link href="/" className="px-4 py-2 bg-[rgba(199,150,57,0.1)] border border-[rgba(199,150,57,0.3)] rounded-[7px] text-[#C79639] text-[12px] font-bold no-underline transition-all duration-200 hover:bg-[#C79639] hover:text-[#1A395B]">
           ← Website
         </Link>
       </nav>
 
       {/* Hero Section */}
-      <div className="bg-[#080e18] px-10 py-16 relative overflow-hidden border-b border-[rgba(199,150,57,0.1)]">
+      <div className="bg-navy px-10 py-16 relative overflow-hidden border-b border-[rgba(199,150,57,0.1)]">
         <div className="max-w-[860px] mx-auto relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-[rgba(199,150,57,0.3)] bg-[rgba(199,150,57,0.1)] rounded-full text-[10px] font-bold tracking-[2px] uppercase text-[#C79639] mb-5">
             Legal · Cookies & Tracking
@@ -101,7 +101,7 @@ export default function CookiePolicy() {
 
       {/* Main Content */}
       <div className="max-w-[1100px] mx-auto px-10 py-13 grid grid-cols-[230px_1fr] gap-12 items-start">
-        
+
         {/* Table of Contents */}
         <aside>
           <div className="sticky top-[76px] bg-[rgba(255,255,255,0.12)] border border-[rgba(199,150,57,0.15)] rounded-[14px] p-5.5 overflow-hidden">
@@ -118,7 +118,7 @@ export default function CookiePolicy() {
             <a href="#s8" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Do Not Track</a>
             <a href="#s9" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Updates to This Policy</a>
             <a href="#s10" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Contact Us</a>
-            
+
             <div className="h-[1px] bg-[rgba(199,150,57,0.08)] my-2.5" />
             <div className="mt-1.5">
               <div className="text-[9px] font-bold text-[rgba(149,169,204,0.4)] tracking-[1.5px] uppercase mb-1.5 pl-2.5">Other Legal</div>
@@ -176,17 +176,17 @@ export default function CookiePolicy() {
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 These cookies are essential for the website to function. They cannot be disabled. They are typically set in response to actions you take such as logging in, setting privacy preferences, or filling in forms.
               </p>
-              
+
               <h4 className="text-[14px] font-bold text-white my-4 mb-2">Performance & Analytics Cookies</h4>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 These cookies collect information about how visitors use our website — which pages are most visited, where visitors come from, and any error messages. All information is aggregated and anonymous. We use this to improve the performance of our website.
               </p>
-              
+
               <h4 className="text-[14px] font-bold text-white my-4 mb-2">Functional Cookies</h4>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 These cookies allow the website to remember choices you make (such as your preferred language or region) and provide enhanced, personalised features. They may be set by us or by third-party providers whose services we have added to our pages.
               </p>
-              
+
               <h4 className="text-[14px] font-bold text-white my-4 mb-2">Targeting & Marketing Cookies</h4>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 These cookies are used to deliver advertisements that are more relevant to you and your interests. They are also used to limit the number of times you see an advertisement and help measure the effectiveness of campaigns. We only deploy these with your explicit consent.
@@ -335,17 +335,17 @@ export default function CookiePolicy() {
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 You have several options for managing cookies:
               </p>
-              
+
               <h4 className="text-[14px] font-bold text-white my-4 mb-2">Browser Settings</h4>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 Most browsers allow you to control cookies through their settings. You can set your browser to refuse all cookies, accept only certain cookies, or delete existing cookies. Note that disabling essential cookies may affect the functionality of our website and products.
               </p>
-              
+
               <h4 className="text-[14px] font-bold text-white my-4 mb-2">Our Cookie Banner</h4>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 When you first visit our website, a cookie consent banner will appear. You can accept all cookies, reject non-essential cookies, or customise your preferences. You can change these preferences at any time by clicking "Cookie Settings" in our website footer.
               </p>
-              
+
               <h4 className="text-[14px] font-bold text-white my-4 mb-2">Opt-Out Links</h4>
               <ul className="pl-[18px] mb-0 space-y-1.5">
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">Google Analytics Opt-out</a></li>

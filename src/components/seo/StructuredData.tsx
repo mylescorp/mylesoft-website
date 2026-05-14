@@ -12,7 +12,7 @@ interface StructuredDataProps {
   author?: string
 }
 
-export function StructuredData({ 
+export function StructuredData({
   type = 'all',
   title,
   description,

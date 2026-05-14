@@ -58,33 +58,33 @@ export function CookieConsent({ onAccept, onReject }: CookieConsentProps) {
       <div className="container">
         <div className="flex flex-col gap-4 p-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-start space-x-3">
-            <Cookie size={24} className="text-gold-400" />
+            <Cookie size={24} className="text-gold" />
             <div className="flex-1">
               <p className="mb-1 text-[0.98rem] font-semibold text-white">
                 We use cookies to enhance your experience and analyze our traffic.
               </p>
               <p className="text-[0.92rem] leading-6 text-light-blue">
                 By clicking &ldquo;Accept All&rdquo;, you consent to our use of cookies.
-                <button 
+                <button
                   onClick={() => setShowDetails(!showDetails)}
-                  className="underline ml-1 hover:text-gold-400 transition-colors"
+                  className="underline ml-1 hover:text-gold transition-colors"
                 >
                   {showDetails ? 'Hide' : 'Show'} details
                 </button>
               </p>
             </div>
           </div>
-          
+
           <div className="flex items-center space-x-2 self-end md:self-auto">
-            <Button 
-              variant="secondary" 
+            <Button
+              variant="secondary"
               size="sm"
               onClick={handleReject}
               className="bg-transparent border-white text-white hover:bg-white hover:text-navy-500"
             >
               Reject
             </Button>
-            <Button 
+            <Button
               size="sm"
               onClick={handleAccept}
             >
@@ -121,17 +121,17 @@ export function CookieConsent({ onAccept, onReject }: CookieConsentProps) {
                 onSave={handleSavePreferences}
               />
             </div>
-            
+
             <div className="flex justify-end space-x-2">
-              <Button 
-                variant="secondary" 
+              <Button
+                variant="secondary"
                 size="sm"
                 onClick={() => setShowDetails(false)}
                 className="bg-transparent border-white text-white hover:bg-white hover:text-navy-500"
               >
                 Cancel
               </Button>
-              <Button 
+              <Button
                 size="sm"
                 onClick={() => {
                   const preferences = {
@@ -166,10 +166,10 @@ function CookieOption({ name, description, disabled = false, checked = false, on
 
   const handleChange = () => {
     if (disabled) return
-    
+
     const newChecked = !isChecked
     setIsChecked(newChecked)
-    
+
     // Save preferences immediately
     if (onSave) {
       const preferences = {
@@ -193,7 +193,7 @@ function CookieOption({ name, description, disabled = false, checked = false, on
         className="mt-1 w-4 h-4 text-gold bg-white border-gold/30 rounded focus:ring-gold focus:ring-2 focus:ring-offset-2 focus:ring-offset-navy"
       />
       <div className="flex-1">
-        <label 
+        <label
           htmlFor={`cookie-${name.toLowerCase()}`}
           className={`text-sm font-medium ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
         >

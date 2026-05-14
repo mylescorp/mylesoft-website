@@ -7,12 +7,12 @@ import { OverviewSection } from '@/components/ui/OverviewSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
 import Link from 'next/link'
-import { 
-  MapPin, 
-  Clock, 
-  Users, 
-  Brain, 
-  Heart, 
+import {
+  MapPin,
+  Clock,
+  Users,
+  Brain,
+  Heart,
   Shield,
   TrendingUp,
   Target,
@@ -127,32 +127,32 @@ const departments = [
 
 const benefits = [
   {
-    icon: <DollarSign size={24} className="text-gold-400" />,
+    icon: <DollarSign size={24} className="text-gold" />,
     title: 'Competitive Compensation',
     description: 'Market-aligned salaries with performance-based bonuses and equity options for key roles.'
   },
   {
-    icon: <Heart size={24} className="text-gold-400" />,
+    icon: <Heart size={24} className="text-gold" />,
     title: 'Health & Wellness',
     description: 'Comprehensive health insurance, wellness programs, and mental health support for all team members.'
   },
   {
-    icon: <Briefcase size={24} className="text-gold-400" />,
+    icon: <Briefcase size={24} className="text-gold" />,
     title: 'Professional Growth',
     description: 'Continuous learning opportunities, training budgets, conference attendance, and clear career progression paths.'
   },
   {
-    icon: <Users size={24} className="text-gold-400" />,
+    icon: <Users size={24} className="text-gold" />,
     title: 'Great Team',
     description: 'Work with talented, passionate colleagues who are transforming Africa through technology.'
   },
   {
-    icon: <Target size={24} className="text-gold-400" />,
+    icon: <Target size={24} className="text-gold" />,
     title: 'Impactful Work',
     description: 'Join a mission-driven company making real difference in education, healthcare, and agriculture.'
   },
   {
-    icon: <TrendingUp size={24} className="text-gold-400" />,
+    icon: <TrendingUp size={24} className="text-gold" />,
     title: 'Flexible Work',
     description: 'Hybrid work options, flexible hours, and focus on results rather than face time.'
   }
@@ -269,7 +269,7 @@ export default function CareersPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -284,7 +284,7 @@ export default function CareersPage() {
               background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow Label */}
             <div className="flex items-center justify-center gap-3 mb-5">
@@ -294,22 +294,22 @@ export default function CareersPage() {
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
-            
+
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Build the Future
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+              <span className="text-white italic">
                 With Us
               </span>
             </h1>
-            
+
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {CAREERS_DATA.overview.description[0]}
             </p>
 
             {/* CTA button */}
             <Link href="#open-positions">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="primary"
                 className="px-8 py-4 shadow-lg hover:shadow-xl"
               >
@@ -317,7 +317,7 @@ export default function CareersPage() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto mt-16">
               {CAREERS_DATA.overview.stats.map((stat, index) => (
@@ -331,14 +331,14 @@ export default function CareersPage() {
         </section>
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title={CAREERS_DATA.overview.title}
           description={CAREERS_DATA.overview.description}
           stats={CAREERS_DATA.overview.stats}
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Why Join MylesCorp?"
           description="We offer more than just a job – we offer a career with purpose, growth, and impact."
           features={CAREERS_DATA.features}
@@ -363,7 +363,7 @@ export default function CareersPage() {
                 We're always looking for talented individuals to join our mission. Find your opportunity below.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {openPositions.map((position, index) => (
                 <div key={index} className="bg-white rounded-[1.5rem] p-8 shadow-card border border-slate-200 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300">
@@ -379,13 +379,13 @@ export default function CareersPage() {
                         <span>{position.experience}</span>
                       </div>
                     </div>
-                    <div className="bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-semibold font-body">
+                    <div className="bg-ice text-navy px-3 py-1 rounded-full text-sm font-semibold font-body">
                       {position.category}
                     </div>
                   </div>
-                  
+
                   <p className="font-body text-medium-grey leading-8 mb-6">{position.description}</p>
-                  
+
                   <div className="mb-6">
                     <h4 className="font-body font-semibold text-navy mb-3">Requirements:</h4>
                     <ul className="space-y-2">
@@ -397,7 +397,7 @@ export default function CareersPage() {
                       ))}
                     </ul>
                   </div>
-                  
+
                   <div className="mb-6">
                     <h4 className="font-body font-semibold text-navy mb-3">Benefits:</h4>
                     <ul className="space-y-2">
@@ -409,7 +409,7 @@ export default function CareersPage() {
                       ))}
                     </ul>
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
                     <div className="flex items-center text-sm text-medium-grey">
                       <Clock size={16} className="mr-2" />
@@ -426,7 +426,7 @@ export default function CareersPage() {
         </section>
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Our Hiring Process"
           description="From application to onboarding — we ensure a smooth and professional experience for all candidates."
           steps={CAREERS_DATA.process}
@@ -451,7 +451,7 @@ export default function CareersPage() {
                 Meet the departments driving our mission forward. Each team plays a crucial role in transforming African industries.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {departments.map((dept, index) => (
                 <div key={index} className="bg-white rounded-[1.5rem] p-8 shadow-card border border-slate-200 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300 text-center">
@@ -484,20 +484,20 @@ export default function CareersPage() {
         </section>
 
         {/* Targets */}
-        <TargetsSection 
+        <TargetsSection
           title="Who We're Looking For"
           targets={CAREERS_DATA.targets}
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Life at MylesCorp"
           testimonials={CAREERS_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* Final CTA */}
-        <CTASection 
+        <CTASection
           title="Ready to Join Our Team?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Take the next step in your career journey. Join ${CAREERS_DATA.overview.stats[0].number} talented professionals making a difference across Africa.`}

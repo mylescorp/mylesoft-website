@@ -57,7 +57,7 @@ export default function TeamPage() {
   return (
     <Layout>
       <main className="min-h-screen bg-white">
-        <section className="relative overflow-hidden bg-navy-deep py-24 md:py-32">
+        <section className="relative overflow-hidden bg-navy py-24 md:py-32">
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -78,7 +78,7 @@ export default function TeamPage() {
 
             <h1 className="mb-6 font-display text-5xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
               The Team Behind{' '}
-              <span className="block bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">
+              <span className="block bg-gold bg-clip-text text-transparent">
                 MylesCorp Technologies
               </span>
             </h1>
@@ -154,7 +154,7 @@ export default function TeamPage() {
                         {member.email && (
                           <a
                             href={`mailto:${member.email}`}
-                            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors hover:border-gold hover:text-gold"
+                            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors hover:border-navy hover:text-navy"
                             aria-label={`Email ${member.name}`}
                           >
                             <Mail className="h-4 w-4" />
@@ -165,7 +165,7 @@ export default function TeamPage() {
                             href={member.social.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors hover:border-gold hover:text-gold"
+                            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors hover:border-navy hover:text-navy"
                             aria-label={`${member.name} on LinkedIn`}
                           >
                             <Linkedin className="h-4 w-4" />
@@ -176,7 +176,7 @@ export default function TeamPage() {
                             href={member.social.twitter}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors hover:border-gold hover:text-gold"
+                            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-navy transition-colors hover:border-navy hover:text-navy"
                             aria-label={`${member.name} on X`}
                           >
                             <Twitter className="h-4 w-4" />
@@ -216,7 +216,7 @@ export default function TeamPage() {
                 const DepartmentIcon = department.icon
                 return (
                   <div key={department.title} className="rounded-[1.25rem] border border-slate-200 bg-white p-7 shadow-soft">
-                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-gold/20 bg-gold/10 text-gold">
+                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-gold/20 bg-ice text-navy">
                       <DepartmentIcon className="h-6 w-6" />
                     </div>
                     <h3 className="mb-3 font-display text-xl font-bold text-navy">{department.title}</h3>
@@ -228,7 +228,7 @@ export default function TeamPage() {
           </div>
         </section>
 
-        <section className="bg-navy-deep py-20">
+        <section className="bg-navy py-20">
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_auto] lg:px-8">
             <div>
               <div className="mb-4 flex items-center gap-3">

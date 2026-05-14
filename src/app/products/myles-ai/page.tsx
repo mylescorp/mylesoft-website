@@ -85,7 +85,7 @@ export default function MylesAIPage() {
               </div>
               <div className="relative">
                 <div className="aspect-square bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-gold/30">
-                  <Icon name="brain" className="text-gold-400" size={96} />
+                  <Icon name="brain" className="text-gold" size={96} />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-gold text-navy px-4 py-2 rounded-full font-body font-semibold text-sm">
                   AI Innovation
@@ -104,7 +104,7 @@ export default function MylesAIPage() {
                 Comprehensive AI solutions for modern business challenges
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
@@ -129,7 +129,7 @@ export default function MylesAIPage() {
                 }
               ].map((feature, index) => (
                 <div key={index} className="text-center group">
-                  <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold-200 transition-colors">
+                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
                     {feature.icon}
                   </div>
                   <h3 className="heading-3 mb-3">{feature.title}</h3>
@@ -171,8 +171,8 @@ export default function MylesAIPage() {
                 </div>
               </div>
               <div className="relative">
-                <div className="aspect-square bg-gold-100 rounded-2xl flex items-center justify-center">
-                  <Icon name="zap" className="text-gold-400" size={96} />
+                <div className="aspect-square bg-gold/10 rounded-2xl flex items-center justify-center">
+                  <Icon name="zap" className="text-gold" size={96} />
                 </div>
               </div>
             </div>

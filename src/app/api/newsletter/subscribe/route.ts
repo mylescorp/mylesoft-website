@@ -31,40 +31,40 @@ setInterval(cleanupExpiredEntries, 5 * 60 * 1000)
 function getClientIP(request: NextRequest): string {
   const forwarded = request.headers.get('x-forwarded-for')
   const realIP = request.headers.get('x-real-ip')
-  
+
   if (forwarded) {
     return forwarded.split(',')[0].trim()
   }
-  
+
   if (realIP) {
     return realIP
   }
-  
+
   return 'unknown'
 }
 
 function checkRateLimit(ip: string): { allowed: boolean; remaining: number; resetTime: number } {
   const now = Date.now()
   const entry = rateLimitStore.get(ip)
-  
+
   if (!entry) {
     // First request from this IP
     rateLimitStore.set(ip, { count: 1, timestamp: now })
     return { allowed: true, remaining: MAX_REQUESTS - 1, resetTime: now + RATE_LIMIT_WINDOW }
   }
-  
+
   // Check if window has expired
   if (now - entry.timestamp > RATE_LIMIT_WINDOW) {
     // Reset the window
     rateLimitStore.set(ip, { count: 1, timestamp: now })
     return { allowed: true, remaining: MAX_REQUESTS - 1, resetTime: now + RATE_LIMIT_WINDOW }
   }
-  
+
   // Window still active
   if (entry.count >= MAX_REQUESTS) {
     return { allowed: false, remaining: 0, resetTime: entry.timestamp + RATE_LIMIT_WINDOW }
   }
-  
+
   // Increment count
   entry.count++
   return { allowed: true, remaining: MAX_REQUESTS - entry.count, resetTime: entry.timestamp + RATE_LIMIT_WINDOW }
@@ -74,20 +74,20 @@ export async function POST(request: NextRequest) {
   try {
     // Get client IP
     const clientIP = getClientIP(request)
-    
+
     // Check rate limit
     const rateLimit = checkRateLimit(clientIP)
-    
+
     // Set rate limit headers
     const headers = new Headers()
     headers.set('X-RateLimit-Limit', MAX_REQUESTS.toString())
     headers.set('X-RateLimit-Remaining', Math.max(0, rateLimit.remaining).toString())
     headers.set('X-RateLimit-Reset', new Date(rateLimit.resetTime).toISOString())
-    
+
     if (!rateLimit.allowed) {
       return NextResponse.json(
         { error: "Too many requests. Please try again later." },
-        { 
+        {
           status: 429,
           headers
         }
@@ -167,15 +167,15 @@ export async function POST(request: NextRequest) {
                     <li>Educational content and best practices</li>
                     <li>Industry news and market analysis</li>
                   </ul>
-                  
+
                   <p>You'll receive our newsletter every week with curated content designed to help you leverage technology for growth.</p>
-                  
+
                   <div style="text-align: center;">
                     <a href="https://www.mylescorptech.com" class="button">Explore Our Solutions</a>
                   </div>
-                  
+
                   <p>Have questions? Simply reply to this email or contact our team at <a href="mailto:info@mylescorptech.com">info@mylescorptech.com</a>.</p>
-                  
+
                   <p><span class="gold">Transforming Industries, Empowering Generations.</span></p>
                 </div>
                 <div class="footer">

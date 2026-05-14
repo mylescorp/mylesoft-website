@@ -101,7 +101,7 @@ export default function SupportPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -116,7 +116,7 @@ export default function SupportPage() {
               background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow Label */}
             <div className="flex items-center justify-center gap-3 mb-5">
@@ -126,18 +126,18 @@ export default function SupportPage() {
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
-            
+
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Dedicated Support
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
+              <span className="text-white">
                 For Your Success
               </span>
             </h1>
-            
+
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {SUPPORT_DATA.overview.description[0]}
             </p>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               {SUPPORT_DATA.overview.stats.map((stat, index) => (
@@ -151,14 +151,14 @@ export default function SupportPage() {
         </section>
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title={SUPPORT_DATA.overview.title}
           description={SUPPORT_DATA.overview.description}
           stats={SUPPORT_DATA.overview.stats}
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Why Choose Our Support"
           description="We provide comprehensive support services to ensure your success with our products."
           features={SUPPORT_DATA.features}
@@ -166,7 +166,7 @@ export default function SupportPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Our Support Process"
           description="From contact to resolution — we ensure a smooth and efficient support experience."
           steps={SUPPORT_DATA.process}
@@ -174,20 +174,20 @@ export default function SupportPage() {
         />
 
         {/* Targets */}
-        <TargetsSection 
+        <TargetsSection
           title="Who We Support"
           targets={SUPPORT_DATA.targets}
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Customer Success Stories"
           testimonials={SUPPORT_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* Final CTA */}
-        <CTASection 
+        <CTASection
           title="Need Help? We're Here for You"
           tagline="Expert Support, Every Time."
           description="Contact our support team and get the help you need to succeed with our products."

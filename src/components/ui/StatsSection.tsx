@@ -12,7 +12,7 @@ export function StatsSection({ stats }: StatsSectionProps) {
       <div className="grid grid-cols-4 gap-6 max-w-[900px] mx-auto">
         {stats.map((stat, index) => (
           <div key={index} className="text-center">
-            <div 
+            <div
               className="font-bold leading-[1]"
               style={{
                 fontFamily: 'Playfair Display, serif',
@@ -22,7 +22,7 @@ export function StatsSection({ stats }: StatsSectionProps) {
             >
               {stat.number}
             </div>
-            <div 
+            <div
               className="font-medium mt-1.5"
               style={{
                 fontSize: '13px',

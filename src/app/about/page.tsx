@@ -6,9 +6,9 @@ import { OverviewSection } from '@/components/ui/OverviewSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
 import { MYLESValues } from '@/components/sections/MYLESValues'
-import { 
-  Target, 
-  Eye, 
+import {
+  Target,
+  Eye,
 } from 'lucide-react'
 
 export const metadata = {
@@ -107,7 +107,7 @@ export default function AboutPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -133,18 +133,18 @@ export default function AboutPage() {
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
-            
+
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Transforming Africa{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+              <span className="text-white italic">
                 Through Innovation
               </span>
             </h1>
-            
+
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {ABOUT_DATA.overview.description[0]}
             </p>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               {ABOUT_DATA.overview.stats.map((stat, index) => (
@@ -160,7 +160,7 @@ export default function AboutPage() {
         {/* Name Meaning Section */}
         <section
           className="relative py-20 overflow-hidden"
-          style={{ background: '#080e18' }}
+          style={{ background: '#1A395B' }}
         >
           <div
             className="absolute inset-0 pointer-events-none"
@@ -203,7 +203,7 @@ export default function AboutPage() {
                 The Story Behind{' '}
                 <em style={{
                   fontStyle: 'italic',
-                  background: 'linear-gradient(135deg,#C79639,#e0b055)',
+                  background: 'linear-gradient(135deg,#C79639,#A67C2E)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                 }}>
@@ -211,8 +211,8 @@ export default function AboutPage() {
                 </em>
               </h2>
               <p className="font-body max-w-2xl mx-auto text-lg md:text-xl leading-8 text-light-blue">
-                MylesCorp Technologies Ltd is a name built on ancient 
-                foundations — two words, two languages, one powerful identity 
+                MylesCorp Technologies Ltd is a name built on ancient
+                foundations — two words, two languages, one powerful identity
                 rooted in over 2,000 years of meaning.
               </p>
             </div>
@@ -365,29 +365,29 @@ export default function AboutPage() {
                   <p className="font-body text-base leading-relaxed
                         font-light"
                      style={{ color: '#545454' }}>
-                    Founded in 2020, MylesCorp Technologies emerged 
-                    from a simple yet powerful vision: to harness the 
-                    power of artificial intelligence to solve Africa's 
-                    most pressing challenges. What started as a small 
-                    team of passionate developers has grown into East 
+                    Founded in 2020, MylesCorp Technologies emerged
+                    from a simple yet powerful vision: to harness the
+                    power of artificial intelligence to solve Africa's
+                    most pressing challenges. What started as a small
+                    team of passionate developers has grown into East
                     Africa's leading AI-powered software company.
                   </p>
                   <p className="font-body text-base leading-relaxed
                         font-light"
                      style={{ color: '#545454' }}>
-                    Our journey began with EduMyles, our flagship 
-                    school management system that transformed how 
-                    educational institutions across Kenya operate. 
-                    Today we power 500+ schools serving more than 
+                    Our journey began with EduMyles, our flagship
+                    school management system that transformed how
+                    educational institutions across Kenya operate.
+                    Today we power 500+ schools serving more than
                     50,000 students with cutting-edge technology.
                   </p>
                   <p className="font-body text-base leading-relaxed
                         font-light"
                      style={{ color: '#545454' }}>
-                    From healthcare to agriculture, from CRM to 
-                    transport management, our solutions touch every 
-                    aspect of life in East Africa. We are not just 
-                    building software — we are building the future 
+                    From healthcare to agriculture, from CRM to
+                    transport management, our solutions touch every
+                    aspect of life in East Africa. We are not just
+                    building software — we are building the future
                     of African innovation.
                   </p>
                 </div>
@@ -429,7 +429,7 @@ export default function AboutPage() {
         </section>
 
         {/* Mission & Vision Section */}
-        <section className="py-20" style={{ background: '#f8f6f2' }}>
+        <section className="py-20" style={{ background: '#EEF2F8' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             {/* Section header */}
@@ -446,8 +446,7 @@ export default function AboutPage() {
               <h2 className="font-display font-bold text-navy
                      text-4xl md:text-5xl">
                 Our Purpose &{' '}
-                <span className="text-transparent bg-clip-text
-                  bg-gradient-to-r from-gold to-gold-light italic">
+                <span className="text-navy italic">
                   Direction
                 </span>
               </h2>
@@ -475,9 +474,9 @@ export default function AboutPage() {
                 <p className="font-body font-light text-base
                       leading-relaxed flex-grow"
                    style={{ color: '#545454' }}>
-                  To transform African industries through innovative 
-                  AI-powered software solutions that drive efficiency, 
-                  accessibility, and sustainable growth across East 
+                  To transform African industries through innovative
+                  AI-powered software solutions that drive efficiency,
+                  accessibility, and sustainable growth across East
                   Africa and beyond.
                 </p>
               </div>
@@ -502,9 +501,9 @@ export default function AboutPage() {
                 <p className="font-body font-light text-base
                       leading-relaxed flex-grow"
                    style={{ color: '#545454' }}>
-                  To become Africa's most trusted technology partner, 
-                  empowering organizations with intelligent solutions 
-                  that bridge the digital divide and unlock human 
+                  To become Africa's most trusted technology partner,
+                  empowering organizations with intelligent solutions
+                  that bridge the digital divide and unlock human
                   potential across the continent.
                 </p>
               </div>
@@ -517,7 +516,7 @@ export default function AboutPage() {
         <MYLESValues />
 
         {/* Company Stats Section */}
-        <section className="py-20" style={{ background: '#080e18' }}>
+        <section className="py-20" style={{ background: '#1A395B' }}>
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -558,7 +557,7 @@ export default function AboutPage() {
                 Our{' '}
                 <em style={{
                   fontStyle: 'italic',
-                  background: 'linear-gradient(135deg,#C79639,#e0b055)',
+                  background: 'linear-gradient(135deg,#C79639,#A67C2E)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                 }}>
@@ -566,7 +565,7 @@ export default function AboutPage() {
                 </em>
               </h2>
               <p className="font-body max-w-2xl mx-auto text-lg md:text-xl leading-8 text-light-blue">
-                Measuring our impact across East Africa through 
+                Measuring our impact across East Africa through
                 transformative technology solutions.
               </p>
             </div>
@@ -601,14 +600,14 @@ export default function AboutPage() {
         </section>
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title={ABOUT_DATA.overview.title}
           description={ABOUT_DATA.overview.description}
           stats={ABOUT_DATA.overview.stats}
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Why Choose MylesCorp?"
           description="We combine cutting-edge technology with deep African market understanding to deliver solutions that make a real difference."
           features={ABOUT_DATA.features}
@@ -616,7 +615,7 @@ export default function AboutPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Our Approach"
           description="From discovery to impact — we follow a proven process to ensure successful outcomes."
           steps={ABOUT_DATA.process}
@@ -624,20 +623,20 @@ export default function AboutPage() {
         />
 
         {/* Targets */}
-        <TargetsSection 
+        <TargetsSection
           title="Who We Serve"
           targets={ABOUT_DATA.targets}
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="What Our Partners Say"
           testimonials={ABOUT_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* Final CTA */}
-        <CTASection 
+        <CTASection
           title="Join Our Journey"
           tagline="Transforming Industries, Empowering Generations."
           description="Whether you're looking to transform your organization with our solutions or join our growing team, we'd love to hear from you."

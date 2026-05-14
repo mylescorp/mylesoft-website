@@ -19,7 +19,7 @@ export default function Compliance() {
     // Intersection Observer for active section
     const sections = document.querySelectorAll('.sec')
     const links = document.querySelectorAll('.toc a[href^="#"]')
-    
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -43,15 +43,15 @@ export default function Compliance() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#080e18]">
+      <div className="min-h-screen bg-navy">
       {/* Scroll Progress Bar */}
-      <div 
-        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#C79639] to-[#e0b055] z-50 transition-all duration-150"
+      <div
+        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#C79639] to-[#A67C2E] z-50 transition-all duration-150"
         style={{ width: `${scrollProgress}%` }}
       />
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-[100] bg-[#080e18] border-b border-[rgba(199,150,57,0.15)] px-10 h-[60px] flex items-center justify-between">
+      <nav className="sticky top-0 z-[100] bg-navy border-b border-[rgba(199,150,57,0.15)] px-10 h-[60px] flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 no-underline">
           <div className="w-[34px] h-[34px] rounded-[7px] bg-gradient-to-br from-[#1A395B] to-[#0f1f35] border-[1.5px] border-[#C79639] flex items-center justify-center font-['Playfair_Display'] text-[16px] font-bold text-[#C79639]">
             M
@@ -61,7 +61,7 @@ export default function Compliance() {
             <div className="text-[8px] text-[#C79639] tracking-[1.5px] uppercase">Legal Documents</div>
           </div>
         </Link>
-        
+
         <div className="flex gap-1.5 flex-wrap">
           <Link href="/privacy-policy" className="px-3 py-1.5 bg-white/4 border border-white/8 rounded-[6px] text-[#95A9CC] text-[11px] font-bold no-underline transition-all duration-180 hover:bg-[rgba(199,150,57,0.08)] hover:border-[rgba(199,150,57,0.3)] hover:text-[#C79639]">
             Privacy Policy
@@ -76,14 +76,14 @@ export default function Compliance() {
             Compliance
           </Link>
         </div>
-        
+
         <Link href="/" className="px-4 py-2 bg-[rgba(199,150,57,0.1)] border border-[rgba(199,150,57,0.3)] rounded-[7px] text-[#C79639] text-[12px] font-bold no-underline transition-all duration-200 hover:bg-[#C79639] hover:text-[#1A395B]">
           ← Website
         </Link>
       </nav>
 
       {/* Hero Section */}
-      <div className="bg-[#080e18] px-10 py-16 relative overflow-hidden border-b border-[rgba(199,150,57,0.1)]">
+      <div className="bg-navy px-10 py-16 relative overflow-hidden border-b border-[rgba(199,150,57,0.1)]">
         <div className="max-w-[860px] mx-auto relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-[rgba(199,150,57,0.3)] bg-[rgba(199,150,57,0.1)] rounded-full text-[10px] font-bold tracking-[2px] uppercase text-[#C79639] mb-5">
             Legal · Regulatory Compliance
@@ -101,7 +101,7 @@ export default function Compliance() {
 
       {/* Main Content */}
       <div className="max-w-[1100px] mx-auto px-10 py-13 grid grid-cols-[230px_1fr] gap-12 items-start">
-        
+
         {/* Table of Contents */}
         <aside>
           <div className="sticky top-[76px] bg-[rgba(255,255,255,0.12)] border border-[rgba(199,150,57,0.15)] rounded-[14px] p-5.5 overflow-hidden">
@@ -119,7 +119,7 @@ export default function Compliance() {
             <a href="#s9" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Security Standards</a>
             <a href="#s10" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Reporting a Concern</a>
             <a href="#s11" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Compliance Contacts</a>
-            
+
             <div className="h-[1px] bg-[rgba(199,150,57,0.08)] my-2.5" />
             <div className="mt-1.5">
               <div className="text-[9px] font-bold text-[rgba(149,169,204,0.4)] tracking-[1.5px] uppercase mb-1.5 pl-2.5">Other Legal</div>

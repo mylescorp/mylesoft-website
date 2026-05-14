@@ -67,7 +67,7 @@ export function ProductPageLayout({
         {/* Hero Section */}
         <section
           className="relative min-h-[60vh] flex items-center justify-center overflow-hidden"
-          style={{ background: '#080e18' }}
+          style={{ background: '#1A395B' }}
         >
           {/* Grid texture */}
           <div
@@ -146,9 +146,7 @@ export function ProductPageLayout({
               {hero.heading}{' '}
               <em style={{
                 fontStyle: 'italic',
-                background: 'linear-gradient(135deg, #C79639, #e0b055)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
+                color: '#FFFFFF',
               }}>
                 {hero.goldWord}
               </em>
@@ -168,7 +166,7 @@ export function ProductPageLayout({
                 </Button>
               </Link>
               <Link href={hero.secondaryCta.href}>
-                <Button variant="outline" size="lg" className="border-white text-white hover:border-gold hover:text-gold">
+                <Button variant="outline" size="lg" className="border-white text-white hover:border-white hover:bg-white/10">
                   {hero.secondaryCta.text}
                 </Button>
               </Link>
@@ -191,7 +189,7 @@ export function ProductPageLayout({
                 </div>
               ))}
             </div>
-            
+
             <ScrollReveal>
               <div className="max-w-4xl mx-auto">
                 <p className="font-body text-lg leading-8 text-medium-grey">
@@ -222,7 +220,7 @@ export function ProductPageLayout({
             >
               {features.map((feature, index) => (
                 <div key={index} className="rounded-[1.5rem] border border-slate-200 bg-white p-8 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-gold/40">
-                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/20 bg-gold/10 text-gold">
+                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/20 bg-ice text-navy">
                     <Icon name={feature.icon} className="w-8 h-8" />
                   </div>
                   <h3 className="font-display font-bold text-2xl mb-4 text-navy">
@@ -238,7 +236,7 @@ export function ProductPageLayout({
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-[#080e18]">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center mb-16">
               <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white">
@@ -293,64 +291,42 @@ export function ProductPageLayout({
           </div>
         </section>
 
-        {/* Pricing Section */}
-        <section id="pricing" className="py-20 bg-off-white">
+        {/* Pricing Source Section */}
+        <section id="plans" className="py-20 bg-off-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center mb-16">
+            <ScrollReveal className="mx-auto max-w-4xl rounded-[1.5rem] border border-slate-200 bg-white p-8 text-center shadow-card md:p-10">
+              <div className="mx-auto mb-5 flex items-center justify-center gap-3">
+                <div className="h-0.5 w-8 bg-gold" />
+                <span className="font-body text-[11px] font-bold uppercase tracking-[2.5px] text-gold">
+                  Plan Options
+                </span>
+                <div className="h-0.5 w-8 bg-gold" />
+              </div>
               <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-navy">
-                Pricing Plans
+                Choose the Right Plan with Our Team
               </h2>
-              <p className="font-body text-xl leading-8 text-medium-grey max-w-2xl mx-auto">
-                Choose the perfect plan for your needs
+              <p className="font-body text-xl leading-8 text-medium-grey max-w-3xl mx-auto">
+                We keep package details and billing periods in one place so every quote stays accurate. Review the plan options, then book a consultation for fit, onboarding, and implementation scope.
               </p>
-            </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {pricing.map((plan, index) => (
-                <ScrollReveal key={index} delay={index * 0.1}>
-                  <div className={`rounded-[1.5rem] border border-slate-200 bg-white p-8 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 ${
-                    plan.features.includes('Most Popular') ? 'ring-2 ring-gold' : ''
-                  }`}>
-                    {plan.features.includes('Most Popular') && (
-                      <div className="mb-4">
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-gold-400 to-gold-500">
-                          Most Popular
-                        </span>
-                      </div>
-                    )}
-                    <h3 className="font-display font-bold text-2xl mb-2 text-navy">
-                      {plan.name}
-                    </h3>
-                    <div className="mb-4">
-                      <div className="font-display font-bold text-3xl text-gold">
-                        {plan.price}
-                      </div>
-                      <div className="font-body text-medium-grey">
-                        {plan.description}
-                      </div>
-                    </div>
-                    <ul className="space-y-3 mb-8">
-                      {plan.features.filter(f => f !== 'Most Popular').map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-start">
-                          <CheckCircle className="w-5 h-5 text-gold mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="font-body text-dark-grey leading-7">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Link href="/book-demo">
-                      <Button className="w-full">
-                        Get Started
-                      </Button>
-                    </Link>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
+              <p className="mt-5 font-body text-sm font-bold uppercase tracking-[1.4px] text-gold">
+                Available options: {pricing.map((plan) => plan.name).join(', ')}
+              </p>
+
+              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <Link href="/pricing">
+                  <Button size="lg">Review Plan Options</Button>
+                </Link>
+                <Link href="/book-demo">
+                  <Button variant="secondary" size="lg">Book a Consultation</Button>
+                </Link>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 bg-[#080e18]">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center mb-16">
               <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 text-white">
@@ -371,7 +347,7 @@ export function ProductPageLayout({
                 <div key={index} className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-card backdrop-blur-sm">
                   <div className="flex mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-gold-400 fill-current" />
+                      <Star key={i} className="w-5 h-5 text-gold fill-current" />
                     ))}
                   </div>
                   <p className="font-body text-light-blue mb-6 italic leading-8">

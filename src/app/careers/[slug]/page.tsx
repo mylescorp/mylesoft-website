@@ -1,11 +1,11 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
-import { 
-  MapPin, 
-  Clock, 
-  DollarSign, 
-  Users, 
+import {
+  MapPin,
+  Clock,
+  DollarSign,
+  Users,
   Calendar,
   Briefcase,
   GraduationCap,
@@ -29,7 +29,7 @@ const jobs = {
     location: 'Nairobi, Kenya',
     type: 'Full-time',
     experience: '5+ years',
-    salary: 'KES 150,000 - 250,000',
+    salary: 'KSh 150,000 - 250,000',
     posted: '2024-03-10',
     deadline: '2024-04-10',
     description: `
@@ -120,7 +120,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
       'Passion for technology and innovation in Africa'
     ],
     benefits: [
-      'Competitive salary (KES 150,000 - 250,000)',
+      'Competitive salary (KSh 150,000 - 250,000)',
       'Performance bonuses and stock options',
       'Comprehensive health insurance package',
       'Flexible work arrangements and remote options',
@@ -180,7 +180,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
     location: 'Nairobi, Kenya',
     type: 'Full-time',
     experience: '3+ years',
-    salary: 'KES 120,000 - 200,000',
+    salary: 'KSh 120,000 - 200,000',
     posted: '2024-03-08',
     deadline: '2024-04-08',
     description: `
@@ -235,7 +235,7 @@ As Product Manager at MylesCorp Technologies, you will work at the intersection 
       'Ability to work cross-functionally with engineering and design teams'
     ],
     benefits: [
-      'Competitive salary (KES 120,000 - 200,000)',
+      'Competitive salary (KSh 120,000 - 200,000)',
       'Performance bonuses and stock options',
       'Comprehensive health insurance package',
       'Flexible work arrangements',
@@ -318,11 +318,11 @@ export default function JobPage({ params }: JobPageProps) {
               <div className="text-white">
                 {/* Breadcrumb */}
                 <nav className="flex items-center space-x-2 text-sm text-navy-200 mb-8">
-                  <Link href="/" className="hover:text-gold-400 transition-colors">Home</Link>
+                  <Link href="/" className="hover:text-gold transition-colors">Home</Link>
                   <span>/</span>
-                  <Link href="/careers" className="hover:text-gold-400 transition-colors">Careers</Link>
+                  <Link href="/careers" className="hover:text-gold transition-colors">Careers</Link>
                   <span>/</span>
-                  <span className="text-gold-400">{job.title}</span>
+                  <span className="text-gold">{job.title}</span>
                 </nav>
 
                 <div className="mb-8">
@@ -335,28 +335,28 @@ export default function JobPage({ params }: JobPageProps) {
                 {/* Job Meta Information */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div className="flex items-center space-x-3">
-                    <Building className="text-gold-400" size={20} />
+                    <Building className="text-gold" size={20} />
                     <div>
                       <div className="text-sm text-navy-200">Department</div>
                       <div className="font-semibold">{job.department}</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <MapPin className="text-gold-400" size={20} />
+                    <MapPin className="text-gold" size={20} />
                     <div>
                       <div className="text-sm text-navy-200">Location</div>
                       <div className="font-semibold">{job.location}</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Clock className="text-gold-400" size={20} />
+                    <Clock className="text-gold" size={20} />
                     <div>
                       <div className="text-sm text-navy-200">Type</div>
                       <div className="font-semibold">{job.type}</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Briefcase className="text-gold-400" size={20} />
+                    <Briefcase className="text-gold" size={20} />
                     <div>
                       <div className="text-sm text-navy-200">Experience</div>
                       <div className="font-semibold">{job.experience}</div>
@@ -389,7 +389,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <div className="space-y-3">
                       {job.requirements.map((requirement, index) => (
                         <div key={index} className="flex items-start space-x-3">
-                          <CheckCircle className="text-gold-400 flex-shrink-0 mt-1" size={20} />
+                          <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                           <span className="body-text">{requirement}</span>
                         </div>
                       ))}
@@ -404,7 +404,7 @@ export default function JobPage({ params }: JobPageProps) {
                         <h3 className="heading-3 mb-4">Required Skills</h3>
                         <div className="flex flex-wrap gap-2">
                           {job.skills.required.map((skill, index) => (
-                            <span key={index} className="bg-gold-100 text-gold-600 px-3 py-1 rounded-full text-sm font-medium">
+                            <span key={index} className="bg-gold/10 text-navy px-3 py-1 rounded-full text-sm font-medium">
                               {skill}
                             </span>
                           ))}
@@ -429,7 +429,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <div className="space-y-4">
                       {job.applicationProcess.map((step, index) => (
                         <div key={index} className="flex items-start space-x-3">
-                          <div className="w-8 h-8 bg-gold-400 text-white rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">
+                          <div className="w-8 h-8 bg-gold text-navy rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">
                             {index + 1}
                           </div>
                           <span className="body-text">{step}</span>
@@ -466,7 +466,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <div className="space-y-3">
                       {job.benefits.slice(0, 5).map((benefit, index) => (
                         <div key={index} className="flex items-start space-x-2">
-                          <Heart className="text-gold-400 flex-shrink-0 mt-1" size={16} />
+                          <Heart className="text-gold flex-shrink-0 mt-1" size={16} />
                           <span className="text-sm">{benefit}</span>
                         </div>
                       ))}
@@ -482,7 +482,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <div className="space-y-3">
                       {job.culture.values.map((value, index) => (
                         <div key={index} className="flex items-center space-x-2">
-                          <Target className="text-gold-400" size={16} />
+                          <Target className="text-gold" size={16} />
                           <span className="text-sm">{value}</span>
                         </div>
                       ))}
@@ -526,7 +526,7 @@ export default function JobPage({ params }: JobPageProps) {
                       <input
                         type="text"
                         required
-                        className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                        className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                         placeholder="John"
                       />
                     </div>
@@ -537,7 +537,7 @@ export default function JobPage({ params }: JobPageProps) {
                       <input
                         type="text"
                         required
-                        className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                        className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                         placeholder="Doe"
                       />
                     </div>
@@ -550,7 +550,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <input
                       type="email"
                       required
-                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                       placeholder="john.doe@example.com"
                     />
                   </div>
@@ -562,7 +562,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <input
                       type="tel"
                       required
-                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                       placeholder="+254 7XX XXX XXX"
                     />
                   </div>
@@ -573,7 +573,7 @@ export default function JobPage({ params }: JobPageProps) {
                     </label>
                     <input
                       type="url"
-                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                       placeholder="https://linkedin.com/in/johndoe"
                     />
                   </div>
@@ -583,8 +583,8 @@ export default function JobPage({ params }: JobPageProps) {
                       Resume/CV *
                     </label>
                     <div className="border-2 border-dashed border-light-grey rounded-lg p-6 text-center">
-                      <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Globe className="text-gold-400" size={24} />
+                      <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Globe className="text-gold" size={24} />
                       </div>
                       <p className="text-sm text-medium-grey mb-2">
                         Drag and drop your resume here, or click to browse
@@ -602,7 +602,7 @@ export default function JobPage({ params }: JobPageProps) {
                     </label>
                     <textarea
                       rows={4}
-                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none resize-none"
+                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none resize-none"
                       placeholder="Tell us why you're interested in this position..."
                     />
                   </div>
@@ -613,7 +613,7 @@ export default function JobPage({ params }: JobPageProps) {
                     </label>
                     <input
                       type="url"
-                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                      className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                       placeholder="https://github.com/johndoe"
                     />
                   </div>
@@ -622,7 +622,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <input type="checkbox" id="terms" className="mt-1" required />
                     <label htmlFor="terms" className="text-sm text-medium-grey">
                       I agree to the processing of my personal data for recruitment purposes as outlined in the{' '}
-                      <a href="/legal/privacy" className="text-gold-600 hover:text-gold-500 underline">
+                      <a href="/legal/privacy" className="text-navy hover:text-gold underline">
                         Privacy Policy
                       </a>
                     </label>
@@ -645,37 +645,37 @@ export default function JobPage({ params }: JobPageProps) {
               <p className="text-xl text-navy-100 mb-8">
                 Our team is here to help you learn more about this opportunity and our company culture.
               </p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Send className="text-gold-400" size={24} />
+                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Send className="text-gold" size={24} />
                   </div>
                   <h3 className="heading-3 mb-2">Email Us</h3>
                   <p className="text-navy-200 mb-4">Get in touch via email</p>
-                  <a href={`mailto:${job.contact.email}`} className="text-gold-400 hover:text-gold-300">
+                  <a href={`mailto:${job.contact.email}`} className="text-gold hover:text-gold-light">
                     {job.contact.email}
                   </a>
                 </div>
 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Phone className="text-gold-400" size={24} />
+                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Phone className="text-gold" size={24} />
                   </div>
                   <h3 className="heading-3 mb-2">Call Us</h3>
                   <p className="text-navy-200 mb-4">Speak with our team</p>
-                  <a href={`tel:${job.contact.phone}`} className="text-gold-400 hover:text-gold-300">
+                  <a href={`tel:${job.contact.phone}`} className="text-gold hover:text-gold-light">
                     {job.contact.phone}
                   </a>
                 </div>
 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MapPin className="text-gold-400" size={24} />
+                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MapPin className="text-gold" size={24} />
                   </div>
                   <h3 className="heading-3 mb-2">Visit Us</h3>
                   <p className="text-navy-200 mb-4">Our office location</p>
-                  <p className="text-gold-400">{job.contact.location}</p>
+                  <p className="text-gold">{job.contact.location}</p>
                 </div>
               </div>
             </div>

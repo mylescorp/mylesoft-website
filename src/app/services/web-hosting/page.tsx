@@ -5,11 +5,11 @@ import { TestimonialsSection } from '@/components/ui/TestimonialsSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
 import Link from 'next/link'
-import { 
-  Server, 
-  Shield, 
-  Zap, 
-  CheckCircle, 
+import {
+  Server,
+  Shield,
+  Zap,
+  CheckCircle,
   Phone,
   Mail,
   MapPin,
@@ -116,7 +116,7 @@ const WEB_HOSTING_DATA = {
   pricing: [
     {
       name: 'Starter',
-      price: 'KES 2,999',
+      price: 'KSh 2,999',
       period: '/month',
       description: 'Perfect for personal websites, blogs, and small businesses',
       features: [
@@ -136,7 +136,7 @@ const WEB_HOSTING_DATA = {
     },
     {
       name: 'Professional',
-      price: 'KES 5,999',
+      price: 'KSh 5,999',
       period: '/month',
       description: 'Ideal for growing businesses and multiple websites',
       features: [
@@ -160,7 +160,7 @@ const WEB_HOSTING_DATA = {
     },
     {
       name: 'Business',
-      price: 'KES 9,999',
+      price: 'KSh 9,999',
       period: '/month',
       description: 'For established businesses with high traffic needs',
       features: [
@@ -223,7 +223,7 @@ export default function WebHostingPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Comprehensive Web Hosting & Domain Overview */}
-        <section className="py-12 md:py-20 bg-navy-deep">
+        <section className="py-12 md:py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 font-['Playfair_Display'] leading-tight">
@@ -234,8 +234,8 @@ export default function WebHostingPage() {
               </p>
               <div className="max-w-4xl mx-auto px-4">
                 <p className="text-base sm:text-lg text-light-blue leading-relaxed">
-                  MylesCorp provides comprehensive web hosting and domain registration services designed specifically for the African market. 
-                  Our enterprise-grade infrastructure ensures your website performs optimally for visitors across Kenya and beyond. 
+                  MylesCorp provides comprehensive web hosting and domain registration services designed specifically for the African market.
+                  Our enterprise-grade infrastructure ensures your website performs optimally for visitors across Kenya and beyond.
                   From personal blogs to enterprise applications, we have the perfect hosting solution for your needs.
                 </p>
               </div>
@@ -266,19 +266,21 @@ export default function WebHostingPage() {
                 Domain Registration Services
               </h2>
               <p className="text-gray-600 text-center mb-6 md:mb-8 max-w-3xl mx-auto px-4 text-sm md:text-base leading-relaxed">
-                Secure your online identity with professional domain registration. Choose from 500+ domain extensions 
+                Secure your online identity with professional domain registration. Choose from 500+ domain extensions
                 including .com, .co.ke, .ke, .africa, and many more. Get free privacy protection and easy management tools.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 {[
-                  { ext: '.com', price: 'KES 1,199/year', popular: true },
-                  { ext: '.co.ke', price: 'KES 2,499/year', popular: true },
-                  { ext: '.ke', price: 'KES 2,999/year', popular: false },
-                  { ext: '.africa', price: 'KES 1,799/year', popular: false }
+                  { ext: '.com', popular: true },
+                  { ext: '.co.ke', popular: true },
+                  { ext: '.ke', popular: false },
+                  { ext: '.africa', popular: false }
                 ].map((domain, index) => (
                   <div key={index} className={`border rounded-lg p-3 md:p-4 text-center transition-all duration-300 hover:shadow-md ${domain.popular ? 'border-gold bg-gold/5 hover:bg-gold/10' : 'border-gray-200 hover:border-gray-300'}`}>
                     <div className="text-base md:text-lg font-bold text-navy mb-1">{domain.ext}</div>
-                    <div className="text-sm md:text-base text-gold font-semibold">{domain.price}</div>
+                    <Link href="/pricing" className="text-sm md:text-base text-gold font-semibold hover:text-gold-light">
+                      Review plan options
+                    </Link>
                     {domain.popular && <div className="text-xs text-gold mt-1 font-semibold">POPULAR</div>}
                   </div>
                 ))}
@@ -303,66 +305,44 @@ export default function WebHostingPage() {
         </section>
 
         {/* Features Section */}
-        <FeaturesSection 
+        <FeaturesSection
           features={WEB_HOSTING_DATA.features}
           title="Why Choose Our Web Hosting?"
           description="We provide enterprise-grade hosting infrastructure with features designed for performance, security, and reliability."
         />
 
         {/* Process Section */}
-        <ProcessSection 
+        <ProcessSection
           steps={WEB_HOSTING_DATA.process}
           title="Simple Setup Process"
           description="Get your website online in minutes with our streamlined hosting setup process."
         />
 
         {/* Targets Section */}
-        <TargetsSection 
+        <TargetsSection
           targets={WEB_HOSTING_DATA.targets}
           title="Perfect for Every Business Size"
         />
 
-        {/* PACKAGES / PRICING */}
+        {/* PRICING SOURCE */}
         <section className="py-16 md:py-20 bg-off-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 md:mb-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-lg md:p-10">
+              <div className="mb-4 text-[11px] font-bold uppercase tracking-[2.5px] text-gold">Hosting Proposal</div>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-navy mb-4">
-                Hosting Plans & Pricing
+                Choose the Right Hosting Setup
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto px-4 text-sm md:text-base">
-                Flexible hosting plans to suit businesses of all sizes. No hidden fees, transparent pricing.
+              <p className="text-gray-600 max-w-2xl mx-auto px-4 text-sm md:text-base leading-8">
+                Hosting needs vary by traffic, storage, domains, SSL, email, and support coverage. Review the plan options, then confirm the best setup with our team.
               </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
-              {WEB_HOSTING_DATA.pricing.map((plan, index) => (
-                <div key={index} className={`bg-white rounded-2xl p-6 md:p-8 shadow-lg relative transition-all duration-300 hover:shadow-xl ${plan.popular ? 'ring-2 ring-gold transform scale-105 md:scale-105' : ''}`}>
-                  {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gold text-navy px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-bold z-10">
-                      Most Popular
-                    </div>
-                  )}
-                  <div className="text-center mb-6">
-                    <h3 className="text-xl md:text-2xl font-bold text-navy mb-2">{plan.name}</h3>
-                    <div className="text-2xl md:text-3xl font-bold text-gold mb-1">{plan.price}</div>
-                    <div className="text-gray-500 text-sm md:text-base">{plan.period}</div>
-                  </div>
-                  <p className="text-gray-600 mb-6 text-sm md:text-base text-center">{plan.description}</p>
-                  <ul className="space-y-2 md:space-3 mb-6 md:mb-8 max-h-64 md:max-h-80 overflow-y-auto">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2">
-                        <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700 text-xs md:text-sm leading-tight">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link href="#contact">
-                    <Button className={`w-full text-sm md:text-base py-2 md:py-3 ${plan.popular ? 'bg-gold text-navy' : 'bg-navy text-white'} hover:opacity-90 transition-opacity`}>
-                      {plan.price === 'Custom' ? 'Contact Sales' : 'Get Started'}
-                    </Button>
-                  </Link>
-                </div>
-              ))}
+              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <Link href="/pricing">
+                  <Button>Review Plan Options</Button>
+                </Link>
+                <Link href="/book-demo">
+                  <Button variant="secondary">Book a Consultation</Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -450,13 +430,13 @@ export default function WebHostingPage() {
         </section>
 
         {/* Testimonials Section */}
-        <TestimonialsSection 
+        <TestimonialsSection
           testimonials={WEB_HOSTING_DATA.testimonials}
           title="What Our Clients Say"
         />
 
         {/* CTA Section */}
-        <section id="contact" className="py-12 md:py-20 bg-navy-deep">
+        <section id="contact" className="py-12 md:py-20 bg-navy">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 font-['Playfair_Display']">
               Ready to Get Started?

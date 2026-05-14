@@ -24,36 +24,36 @@ const meetingTypes: MeetingType[] = [
     name: 'Product Demo',
     description: 'Comprehensive demonstration of our solutions tailored to your needs.',
     duration: '45 minutes',
-    icon: <Video size={24} className="text-gold-400" />
+    icon: <Video size={24} className="text-gold" />
   },
   {
     id: 'consultation',
     name: 'Consultation',
     description: 'Strategic discussion about your digital transformation needs.',
     duration: '60 minutes',
-    icon: <User size={24} className="text-gold-400" />
+    icon: <User size={24} className="text-gold" />
   },
   {
     id: 'technical-support',
     name: 'Technical Support',
     description: 'Get help with existing products or technical questions.',
     duration: '30 minutes',
-    icon: <Check size={24} className="text-gold-400" />
+    icon: <Check size={24} className="text-gold" />
   }
 ]
 
 const generateTimeSlots = (): TimeSlot[] => {
   const slots: TimeSlot[] = []
   const today = new Date()
-  
+
   for (let day = 0; day < 7; day++) {
     const currentDate = new Date(today)
     currentDate.setDate(today.getDate() + day)
-    
+
     // Generate slots for business hours (9 AM - 6 PM)
     for (let hour = 9; hour <= 17; hour++) {
       if (hour >= 12 && hour <= 13) continue // Lunch break
-      
+
       const timeSlot: TimeSlot = {
         id: `${day}-${hour}`,
         time: `${hour.toString().padStart(2, '0')}:00`,
@@ -62,7 +62,7 @@ const generateTimeSlots = (): TimeSlot[] => {
       slots.push(timeSlot)
     }
   }
-  
+
   return slots
 }
 
@@ -105,8 +105,8 @@ export function CalComBooking() {
               onClick={() => setSelectedType(type.id)}
               className={`p-4 rounded-lg border text-left transition-colors hover-lift ${
                 selectedType === type.id
-                  ? 'border-gold-400 bg-gold-50 text-gold-600'
-                  : 'border-light-grey hover:border-gold-400 hover:bg-gold-50'
+                  ? 'border-gold bg-ice text-navy'
+                  : 'border-light-grey hover:border-gold hover:bg-ice'
               }`}
             >
               <div className="flex items-center mb-2">
@@ -114,7 +114,7 @@ export function CalComBooking() {
                 <span className="ml-3 font-medium">{type.name}</span>
               </div>
               <div className="text-sm text-medium-grey">{type.description}</div>
-              <div className="text-xs text-gold-600 font-medium mt-2">{type.duration}</div>
+              <div className="text-xs text-navy font-medium mt-2">{type.duration}</div>
             </button>
           ))}
         </div>
@@ -202,7 +202,7 @@ export function CalComBooking() {
                 id="company"
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                 placeholder="Company Name"
               />
             </div>
@@ -215,7 +215,7 @@ export function CalComBooking() {
                 id="phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none"
+                className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
                 placeholder="+254 7XX XXX XXX"
               />
             </div>
@@ -230,7 +230,7 @@ export function CalComBooking() {
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold-400 focus:border-transparent outline-none resize-none"
+              className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none resize-none"
               placeholder="Tell us about your specific needs or questions..."
             />
           </div>
@@ -288,13 +288,13 @@ export function CalComBooking() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="text-center">
               <div className="text-sm text-medium-grey mb-1">Sales</div>
-              <a href="tel:+254743993716" className="text-lg text-gold-600 hover:text-gold-500 font-semibold">
+              <a href="tel:+254743993716" className="text-lg text-navy hover:text-gold font-semibold">
                 +254 743 993 716
               </a>
             </div>
             <div className="text-center">
               <div className="text-sm text-medium-grey mb-1">Email</div>
-              <a href="mailto:sales@mylescorptech.com" className="text-lg text-gold-600 hover:text-gold-500 font-semibold">
+              <a href="mailto:sales@mylescorptech.com" className="text-lg text-navy hover:text-gold font-semibold">
                 sales@mylescorptech.com
               </a>
             </div>

@@ -28,7 +28,7 @@ export default function MylesCarePage() {
         <StatsSection stats={MYLESCARE_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="MylesCare"
           description={MYLESCARE_DATA.overview.description.split('\n\n')}
           stats={[
@@ -40,12 +40,12 @@ export default function MylesCarePage() {
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Complete Healthcare Platform"
           description="8 integrated modules covering every aspect of healthcare facility management."
           features={MYLESCARE_DATA.features.map(f => ({
             ...f,
-            icon: f.icon === 'file-text' ? '📋' : 
+            icon: f.icon === 'file-text' ? '📋' :
                    f.icon === 'calendar' ? '📅' :
                    f.icon === 'credit-card' ? '💳' :
                    f.icon === 'pill' ? '💊' :
@@ -58,7 +58,7 @@ export default function MylesCarePage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Go Digital in 5 Steps"
           description="From setup to managing patients digitally in 5 simple steps."
           steps={MYLESCARE_DATA.process}
@@ -66,7 +66,7 @@ export default function MylesCarePage() {
         />
 
         {/* Pricing */}
-        <PricingSection 
+        <PricingSection
           title="Flexible Healthcare Plans"
           description="Plans designed for healthcare facilities of all sizes."
           plans={MYLESCARE_DATA.pricing.map(p => ({
@@ -79,14 +79,14 @@ export default function MylesCarePage() {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Trusted by Healthcare Facilities"
           testimonials={MYLESCARE_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* CTA */}
-        <CTASection 
+        <CTASection
           title="Modernise Your Healthcare Facility"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESCARE_DATA.overview.stats[0].number} healthcare facilities across East Africa using MylesCare to deliver better patient care.`}

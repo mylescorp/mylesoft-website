@@ -72,9 +72,9 @@ export function LiveChat() {
 
   const getBotResponse = (userInput: string): string => {
     const input = userInput.toLowerCase()
-    
+
     if (input.includes('product') || input.includes('solution')) {
-      return 'I can help you learn about our AI-powered solutions! We offer EduMyles for education, MylesCare for healthcare, AgriMyles for agriculture, and MylesCRM for business. Which product interests you most?'
+      return 'I can help you learn about our AI-powered solutions! We offer EduMyles for school management, EduRyde for school transport, and MylesCRM for business. Which product interests you most?'
     } else if (input.includes('pricing') || input.includes('cost') || input.includes('price')) {
       return 'Our pricing varies by product and organization size. I\'d recommend booking a demo with our team to get a customized quote. Would you like me to arrange that for you?'
     } else if (input.includes('demo') || input.includes('trial')) {
@@ -160,7 +160,7 @@ export function LiveChat() {
           </div>
 
           {/* Messages */}
-          <div className="h-96 overflow-y-auto p-4 space-y-4 bg-gray-50">
+          <div className="h-96 overflow-y-auto p-4 space-y-4 bg-ice">
             {messages.map((message) => (
               <div
                 key={message.id}
@@ -195,7 +195,7 @@ export function LiveChat() {
                 )}
               </div>
             ))}
-            
+
             {isTyping && (
               <div className="flex items-start space-x-2 justify-start">
                 <div className="w-8 h-8 bg-[#C79639]/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -227,7 +227,7 @@ export function LiveChat() {
               <button
                 onClick={handleSendMessage}
                 disabled={!inputValue.trim() || isTyping}
-                className="p-2 bg-[#C79639] text-[#1A395B] rounded-lg hover:bg-[#e0b055] disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+                className="p-2 bg-[#C79639] text-[#1A395B] rounded-lg hover:bg-[#A67C2E] disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
               >
                 <Send size={18} />
               </button>
@@ -254,14 +254,14 @@ export function LiveChat() {
           <div className="flex items-center space-x-2">
             <button
               onClick={() => setIsMinimized(false)}
-              className="p-1 hover:bg-gray-50 rounded transition-colors"
+              className="p-1 hover:bg-ice rounded transition-colors"
               aria-label="Expand chat"
             >
               <Maximize2 size={16} />
             </button>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-1 hover:bg-gray-50 rounded transition-colors"
+              className="p-1 hover:bg-ice rounded transition-colors"
               aria-label="Close chat"
             >
               <X size={16} />
@@ -290,7 +290,7 @@ export function useLiveChat() {
       minute: '2-digit',
       hour12: false
     })
-    
+
     return currentTime >= businessHours.start && currentTime <= businessHours.end
   }
 

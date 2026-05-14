@@ -22,7 +22,7 @@ const quickStats = [
   {
     icon: <Globe className="w-8 h-8" />,
     number: "6+",
-    label: "Countries Served", 
+    label: "Countries Served",
     description: "Growing presence across the region"
   },
   {
@@ -50,11 +50,11 @@ export default function CoveragePage() {
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
           }}></div>
         </div>
-        
+
         {/* Floating Elements */}
         <div className="absolute top-20 left-20 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-gold/5 rounded-full blur-3xl animate-pulse delay-1000" />
-        
+
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <ScrollReveal direction="up" delay={0.2}>
             {/* Eyebrow Label */}
@@ -66,19 +66,19 @@ export default function CoveragePage() {
               <div className="w-8 h-0.5 bg-gold" />
             </div>
           </ScrollReveal>
-          
+
           <ScrollReveal direction="up" delay={0.4}>
             <h1 className="text-5xl md:text-6xl font-display font-bold text-white leading-tight mb-6">
               Serving East Africa{' '}
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
+              <span className="block text-white">
                 With Pride
               </span>
             </h1>
           </ScrollReveal>
-          
+
           <ScrollReveal direction="up" delay={0.6}>
             <p className="text-xl text-light-blue leading-relaxed max-w-3xl mx-auto font-body">
-              From our headquarters in Nairobi to branch offices across the region, 
+              From our headquarters in Nairobi to branch offices across the region,
               we're bringing AI-powered solutions to organizations throughout East Africa.
             </p>
           </ScrollReveal>
@@ -98,12 +98,12 @@ export default function CoveragePage() {
               </p>
             </div>
           </ScrollReveal>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {quickStats.map((stat, index) => (
               <ScrollReveal key={index} direction="up" delay={0.4 + index * 0.1}>
                 <div className="text-center group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-gold to-gold-light rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="w-20 h-20 bg-gold rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <div className="text-white">{stat.icon}</div>
                   </div>
                   <div className="text-4xl font-bold text-navy mb-2 group-hover:text-gold transition-colors duration-300">
@@ -119,7 +119,7 @@ export default function CoveragePage() {
       </section>
 
       {/* Interactive Map */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-ice">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal direction="up" delay={0.2}>
             <div className="text-center mb-16">
@@ -127,12 +127,12 @@ export default function CoveragePage() {
                 Interactive Coverage Map
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto font-body">
-                Explore our office locations and client coverage across East Africa. 
+                Explore our office locations and client coverage across East Africa.
                 Click on markers to learn more about each location.
               </p>
             </div>
           </ScrollReveal>
-          
+
           <ScrollReveal direction="up" delay={0.4}>
             <InteractiveMap />
           </ScrollReveal>
@@ -152,7 +152,7 @@ export default function CoveragePage() {
               </p>
             </div>
           </ScrollReveal>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -162,21 +162,21 @@ export default function CoveragePage() {
                 description: "Our largest market with comprehensive sector coverage"
               },
               {
-                country: "Uganda", 
+                country: "Uganda",
                 clients: "120+",
                 sectors: ["Education", "Healthcare", "Agriculture"],
                 description: "Rapidly growing presence with strong education focus"
               },
               {
                 country: "Tanzania",
-                clients: "85+", 
+                clients: "85+",
                 sectors: ["Education", "Agriculture", "Business"],
                 description: "Strategic focus on agricultural and business solutions"
               },
               {
                 country: "Rwanda",
                 clients: "65+",
-                sectors: ["Education", "Healthcare"], 
+                sectors: ["Education", "Healthcare"],
                 description: "Emerging market with technology adoption leadership"
               },
               {
@@ -187,7 +187,7 @@ export default function CoveragePage() {
               },
               {
                 country: "South Sudan",
-                clients: "15+", 
+                clients: "15+",
                 sectors: ["Healthcare"],
                 description: "Healthcare solutions in challenging environments"
               }
@@ -199,19 +199,19 @@ export default function CoveragePage() {
                     <div className="text-3xl font-bold text-gold mb-1">{region.clients}</div>
                     <div className="text-sm text-gray-600">Active Clients</div>
                   </div>
-                  
+
                   <div className="flex-grow">
                     <div className="mb-4">
                       <h4 className="font-semibold text-navy mb-2">Key Sectors:</h4>
                       <div className="flex flex-wrap gap-2">
                         {region.sectors.map((sector, sectorIndex) => (
-                          <span key={sectorIndex} className="bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-medium">
+                          <span key={sectorIndex} className="bg-ice text-navy px-3 py-1 rounded-full text-sm font-medium">
                             {sector}
                           </span>
                         ))}
                       </div>
                     </div>
-                    
+
                     <p className="text-gray-600 text-sm">{region.description}</p>
                   </div>
                 </div>
@@ -222,14 +222,14 @@ export default function CoveragePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-gold to-gold-light">
+      <section className="py-20 bg-gold">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal direction="up" delay={0.2}>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
                 Ready to Transform Your Organization?
               </h2>
             <p className="text-xl text-white/90 mb-8 font-body">
-              Join hundreds of organizations across East Africa already using our solutions. 
+              Join hundreds of organizations across East Africa already using our solutions.
               Find out how we can help you achieve your digital transformation goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

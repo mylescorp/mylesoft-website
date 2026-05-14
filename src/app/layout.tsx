@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Plus_Jakarta_Sans, DM_Mono } 
+import { Playfair_Display, Plus_Jakarta_Sans, DM_Mono }
   from 'next/font/google'
 import { AnalyticsProvider } from '@/components/analytics/Analytics'
 import { CookieConsent } from '@/components/ui/CookieConsent'
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     template: '%s | MylesCorp',
   },
   description:
-    'East Africa\'s leading AI software company. Solutions for schools, hospitals, farms, and businesses in Kenya, Uganda, and Tanzania.',
+    'Africa-focused AI software company building solutions for schools, hospitals, transport teams, and businesses.',
   keywords: [
     'MylesCorp', 'MylesCorp Technologies',
     'School Management System Kenya',
-    'Healthcare Software Kenya',
-    'EduMyles', 'MylesCare', 'AgriMyles', 'MylesCRM',
-    'AI Software East Africa',
+    'School Transport Tracking Kenya',
+    'EduMyles', 'EduRyde', 'MylesCRM',
+    'AI Software Africa',
     'EdTech Kenya', 'HealthTech Kenya',
   ],
   authors: [{ name: 'MylesCorp' }],
@@ -109,14 +109,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://vercel.live" />
-        
+
         {/* Favicon */}
         <link rel="icon" type="image/png" href="/favicon-16x16.png?v=4" sizes="16x16" />
         <link rel="icon" type="image/png" href="/favicon-32x32.png?v=4" sizes="32x32" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="192x192" />
         <link rel="shortcut icon" href="/favicon-32x32.png?v=4" />
-        
+
         {/* SEO */}
         <link rel="canonical" href="https://www.mylescorptech.com" />
         <link rel="alternate" hrefLang="en" href="https://www.mylescorptech.com" />
@@ -130,8 +130,8 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "MylesCorp Technologies",
               "url": "https://www.mylescorptech.com",
-              "logo": "https://www.mylescorptech.com/logo.png",
-              "description": "AI-powered software solutions for education, healthcare, agriculture and business in East Africa.",
+              "logo": "https://www.mylescorptech.com/mylescorp-logo.png",
+              "description": "AI-powered software solutions for schools, school transport, and businesses in East Africa.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Wester Heights, Westlands",
@@ -162,19 +162,19 @@ export default function RootLayout({
       <body suppressHydrationWarning className="min-h-screen bg-white text-gray-900 antialiased font-body">
         <ScrollProgress />
         {/* Skip to main content link */}
-        <a 
-          href="#main-content" 
+        <a
+          href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-gold focus:text-navy focus:rounded-md font-body font-semibold transition-all duration-300"
         >
           Skip to main content
         </a>
-        
+
         <div className="min-h-screen flex flex-col">
           <main id="main-content" className="flex-1 relative">
             {children}
           </main>
         </div>
-        
+
         <CookieConsent />
         <WhatsAppButton />
         <LiveChat />

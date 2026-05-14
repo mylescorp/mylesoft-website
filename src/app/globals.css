@@ -3,42 +3,43 @@
 @tailwind utilities;
 
 /* Global Mobile Responsiveness Fixes */
-html { 
-  scroll-behavior: smooth; 
+html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
-* { 
-  box-sizing: border-box; 
+* {
+  box-sizing: border-box;
 }
-img, video { 
-  max-width: 100%; 
-  height: auto; 
+img, video {
+  max-width: 100%;
+  height: auto;
 }
-body { 
-  overflow-x: hidden; 
+body {
+  overflow-x: hidden;
 }
 
-/* CSS Custom Properties - Exact Brand Tokens from HTML Design */
+/* CSS Custom Properties - MylesCorp Brand Colour System */
 :root {
   /* ── Primary Brand ── */
   --navy: #1A395B;
   --navy-dark: #0f1f35;
   --navy-deep: #080e18;
   --gold: #C79639;
-  --gold-light: #e0b055;
+  --gold-light: #A67C2E;
   --gold-pale: #f5e4b8;
 
   /* ── Supporting ── */
   --white: #fff;
-  --off: #f8f6f2;
+  --off: #EEF2F8;
   --ice: #EEF2F8;
   --light-blue: #C7D7EF;
   --muted: #95A9CC;
   --dark: #212121;
   --med: #545454;
+  --error: #D32F2F;
 
   /* ── Semantic UI ── */
-  --color-bg-primary: var(--navy-deep);
+  --color-bg-primary: var(--navy);
   --color-bg-card: #0d1929;
   --color-bg-surface: var(--navy-dark);
   --color-text-primary: var(--white);
@@ -319,7 +320,7 @@ body {
 @layer components {
   /* Professional Button Styles */
   .btn-primary {
-    @apply bg-gold text-navy font-semibold rounded-full px-8 py-3 
+    @apply bg-gold text-navy font-semibold rounded-full px-8 py-3
            hover:bg-gold-light hover:shadow-gold hover:-translate-y-0.5
            active:scale-95 active:shadow-medium
            transition-all duration-300 ease-out;
@@ -327,16 +328,16 @@ body {
   }
 
   .btn-secondary {
-    @apply bg-transparent text-navy border-2 border-navy 
-           font-semibold rounded-full px-8 py-3 
+    @apply bg-transparent text-navy border-2 border-navy
+           font-semibold rounded-full px-8 py-3
            hover:bg-navy hover:text-white hover:shadow-navy hover:-translate-y-0.5
            active:scale-95 active:shadow-medium
            transition-all duration-300 ease-out;
   }
 
   .btn-outline {
-    @apply bg-transparent text-gold border-2 border-gold 
-           font-semibold rounded-full px-8 py-3 
+    @apply bg-transparent text-gold border-2 border-gold
+           font-semibold rounded-full px-8 py-3
            hover:bg-gold-pale hover:text-gold-light hover:shadow-gold hover:-translate-y-0.5
            active:scale-95 active:shadow-medium
            transition-all duration-300 ease-out;
@@ -344,7 +345,7 @@ body {
 
   /* Professional Card Styles */
   .card {
-    @apply bg-white rounded-[1.4rem] border border-slate-200/80 shadow-soft 
+    @apply bg-white rounded-[1.4rem] border border-slate-200/80 shadow-soft
            transition-all duration-300 ease-out;
   }
 
@@ -362,7 +363,7 @@ body {
 
   /* Professional Navigation */
   .nav-link {
-    @apply text-navy font-medium text-nav hover:text-gold 
+    @apply text-navy font-medium text-nav hover:text-gold
            transition-colors duration-200 ease-out;
     position: relative;
   }
@@ -453,7 +454,7 @@ body {
 
   /* Professional Blog Card Styles */
   .blog-card {
-    @apply bg-white rounded-[1.4rem] overflow-hidden shadow-soft 
+    @apply bg-white rounded-[1.4rem] overflow-hidden shadow-soft
            hover:shadow-medium transition-all duration-300 ease-out;
   }
 
@@ -529,40 +530,40 @@ body {
   }
 
   @keyframes slideUp {
-    from { 
+    from {
       opacity: 0;
       transform: translateY(20px);
     }
-    to { 
+    to {
       opacity: 1;
       transform: translateY(0);
     }
   }
 
   @keyframes scaleIn {
-    from { 
+    from {
       opacity: 0;
       transform: scale(0.9);
     }
-    to { 
+    to {
       opacity: 1;
       transform: scale(1);
     }
   }
 
   @keyframes bounceIn {
-    0% { 
+    0% {
       opacity: 0;
       transform: scale(0.3);
     }
-    50% { 
+    50% {
       opacity: 1;
       transform: scale(1.05);
     }
-    70% { 
+    70% {
       transform: scale(0.95);
     }
-    100% { 
+    100% {
       transform: scale(1);
     }
   }
@@ -616,7 +617,7 @@ body {
     @apply bg-white/80 backdrop-blur-sm border border-white/20;
   }
 
-  
+
   /* Professional Scrollbar Styles */
   .scrollbar-thin {
     scrollbar-width: thin;
@@ -678,25 +679,25 @@ body {
 @layer components {
   /* Buttons */
   .btn-primary {
-    @apply bg-gold text-navy font-semibold rounded-full px-8 py-3 
-           hover:bg-gold-light hover:shadow-medium 
-           active:scale-95 
+    @apply bg-gold text-navy font-semibold rounded-full px-8 py-3
+           hover:bg-gold-light hover:shadow-medium
+           active:scale-95
            transition-all duration-150 ease;
   }
 
   .btn-secondary {
-    @apply bg-transparent text-navy border-2 border-navy 
-           font-semibold rounded-full px-8 py-3 
-           hover:bg-navy hover:text-white hover:shadow-medium 
-           active:scale-95 
+    @apply bg-transparent text-navy border-2 border-navy
+           font-semibold rounded-full px-8 py-3
+           hover:bg-navy hover:text-white hover:shadow-medium
+           active:scale-95
            transition-all duration-150 ease;
   }
 
   .btn-outline {
-    @apply bg-transparent text-gold border-2 border-gold 
-           font-semibold rounded-full px-8 py-3 
-           hover:bg-gold-pale hover:text-gold-light 
-           active:scale-95 
+    @apply bg-transparent text-gold border-2 border-gold
+           font-semibold rounded-full px-8 py-3
+           hover:bg-gold-pale hover:text-gold-light
+           active:scale-95
            transition-all duration-150 ease;
   }
 
@@ -939,64 +940,64 @@ body {
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-glow {
     animation: glow 2s ease-in-out infinite alternate;
   }
-  
+
   .animate-shimmer {
     animation: shimmer 2s linear infinite;
   }
-  
+
   .animate-slide-up-premium {
     animation: slideUpPremium 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   }
-  
+
   .animate-fade-in-premium {
     animation: fadeInPremium 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   }
-  
+
   .animate-scale-in-premium {
     animation: scaleInPremium 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
   }
-  
+
   .animate-rotate-3d {
     animation: rotate3d 8s linear infinite;
   }
-  
+
   .animate-pulse-gold {
     animation: pulseGold 3s ease-in-out infinite;
   }
-  
+
   .animate-bounce-premium {
     animation: bouncePremium 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
   }
-  
+
   .animate-gradient-shift {
     animation: gradientShift 3s ease-in-out infinite;
     background-size: 200% 200%;
   }
-  
+
   /* Premium Hover Effects */
   .hover-lift-premium {
     transition: all var(--duration-normal) var(--ease-smooth);
   }
-  
+
   .hover-lift-premium:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: var(--shadow-floating);
   }
-  
+
   .hover-glow-premium:hover {
     box-shadow: var(--shadow-glow);
     transition: all var(--duration-normal) var(--ease-smooth);
   }
-  
+
   .hover-rotate-3d:hover {
     transform: rotateY(10deg) rotateX(-5deg);
     transition: all var(--duration-normal) var(--ease-smooth);
   }
-  
+
   /* Premium Glass Effects */
   .glass-morphism {
     background: var(--gradient-glass);
@@ -1005,7 +1006,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: var(--shadow-premium-lg);
   }
-  
+
   .glass-morphism-dark {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
@@ -1013,30 +1014,30 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: var(--shadow-premium-lg);
   }
-  
+
   /* Premium Gradients */
   .gradient-premium-1 {
     background: var(--gradient-premium-1);
   }
-  
+
   .gradient-premium-2 {
     background: var(--gradient-premium-2);
   }
-  
+
   .gradient-premium-3 {
     background: var(--gradient-premium-3);
   }
-  
+
   .gradient-premium-4 {
     background: var(--gradient-premium-4);
   }
-  
+
   .gradient-gold-animated {
     background: linear-gradient(135deg, #C79639, #A67C2A, #C79639, #D4AF37, #C79639);
     background-size: 300% 300%;
     animation: gradientShift 4s ease-in-out infinite;
   }
-  
+
   /* Premium Text Effects */
   .text-gold-gradient {
     background: linear-gradient(135deg, #C79639, #D4AF37, #A67C2A);
@@ -1044,7 +1045,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .text-shimmer {
     background: var(--gradient-shimmer);
     background-size: 200% 100%;
@@ -1053,20 +1054,20 @@ body {
     background-clip: text;
     animation: shimmer 2s linear infinite;
   }
-  
+
   /* Premium Shadows */
   .shadow-premium-gold {
     box-shadow: var(--shadow-gold);
   }
-  
+
   .shadow-premium-glow {
     box-shadow: var(--shadow-glow);
   }
-  
+
   .shadow-premium-card {
     box-shadow: var(--shadow-card);
   }
-  
+
   .shadow-premium-floating {
     box-shadow: var(--shadow-floating);
   }
@@ -1276,24 +1277,24 @@ body {
 }
 
 @keyframes slideUpPremium {
-  0% { 
-    opacity: 0; 
-    transform: translateY(60px) scale(0.95); 
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
   }
-  100% { 
-    opacity: 1; 
-    transform: translateY(0) scale(1); 
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
 @keyframes fadeInPremium {
-  0% { 
-    opacity: 0; 
-    filter: blur(10px); 
+  0% {
+    opacity: 0;
+    filter: blur(10px);
   }
-  100% { 
-    opacity: 1; 
-    filter: blur(0); 
+  100% {
+    opacity: 1;
+    filter: blur(0);
   }
 }
 
@@ -1308,11 +1309,11 @@ body {
 .dark {
   --background: #080e18;
   --foreground: #EEF2F8;
-  
+
   /* Cards */
   --card-bg: #0d1929;
   --card-border: rgba(199,150,57,0.2);
-  
+
   /* Text */
   --text-primary: #EEF2F8;
   --text-secondary: #C7D7EF;
@@ -1322,23 +1323,23 @@ body {
 .light {
   --background: #ffffff;
   --foreground: #212121;
-  
+
   --card-bg: #ffffff;
   --card-border: rgba(26,57,91,0.1);
-  
+
   --text-primary: #212121;
   --text-secondary: #545454;
   --text-muted: #95A9CC;
 }
 
 @keyframes scaleInPremium {
-  0% { 
-    opacity: 0; 
-    transform: scale(0.8) rotate(-5deg); 
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
   }
-  100% { 
-    opacity: 1; 
-    transform: scale(1) rotate(0deg); 
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
   }
 }
 
@@ -1351,11 +1352,11 @@ body {
 }
 
 @keyframes pulseGold {
-  0%, 100% { 
+  0%, 100% {
     box-shadow: 0 0 0 0 rgba(199, 150, 57, 0.4);
     transform: scale(1);
   }
-  50% { 
+  50% {
     box-shadow: 0 0 0 20px rgba(199, 150, 57, 0);
     transform: scale(1.05);
   }

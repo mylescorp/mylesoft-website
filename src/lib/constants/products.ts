@@ -10,16 +10,16 @@ export const EDUMYLES_DATA = {
     subtitle: "The complete AI-powered school management system built for Kenyan schools — managing students, fees, exams, timetables, and parent communication all in one platform.",
     badge: "LIVE",
     primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
-    secondaryCta: { text: "View Pricing", href: "#pricing" }
+    secondaryCta: { text: "Discuss Plans", href: "/pricing" }
   },
   overview: {
     stats: [
-      { number: "500+", label: "Schools" },
-      { number: "50,000+", label: "Students Managed" },
-      { number: "CBC & 8-4-4", label: "Supported" },
-      { number: "M-Pesa", label: "Integrated" }
+      { number: "15+", label: "School Modules" },
+      { number: "CBC & 8-4-4", label: "Curricula" },
+      { number: "M-Pesa", label: "Payments" },
+      { number: "Parent App", label: "Communication" }
     ],
-    description: "EduMyles is MylesCorp's flagship AI-powered school management system designed specifically for Kenyan educational institutions. From CBC primary schools to secondary schools, EduMyles digitises every aspect of school administration — eliminating paperwork, reducing errors, and giving administrators, teachers, and parents real-time visibility into school operations.\n\nBuilt with deep knowledge of the Kenyan education system, EduMyles supports all local curricula including CBC, 8-4-4, and IGCSE, and integrates natively with M-Pesa and major Kenyan banks for seamless fee collection and financial management."
+    description: "EduMyles is MylesCorp's flagship school management system for Kenyan educational institutions. It brings admissions, student records, fees, examinations, attendance, communication, HR, payroll, transport, inventory, library, reports, and analytics into one secure platform.\n\nBuilt for local school operations, EduMyles supports CBC and 8-4-4 workflows, M-Pesa fee collection, SMS and email communication, parent portal access, mobile apps, backups, and role-based access for administrators, teachers, parents, and students."
   },
   features: [
     {
@@ -29,12 +29,12 @@ export const EDUMYLES_DATA = {
     },
     {
       title: "Fee Management & M-Pesa Integration",
-      description: "Automated fee collection via M-Pesa, Airtel Money, and major banks. Generate invoices, track payments, send automated fee reminders to parents, and produce financial reports in seconds.",
+      description: "Automated fee collection via M-Pesa with invoices, receipts, balances, reminders, and financial reports for faster reconciliation.",
       icon: "credit-card"
     },
     {
       title: "Exam & Results Management",
-      description: "Create exam schedules, record marks online or offline, auto-generate report cards in multiple formats, and publish results to parents via the parent portal. Supports CBC and 8-4-4 grading.",
+      description: "Manage assessments, marks, grading, report cards, transcripts, and analysis for CBC and 8-4-4 learning workflows.",
       icon: "file-text"
     },
     {
@@ -44,13 +44,18 @@ export const EDUMYLES_DATA = {
     },
     {
       title: "Parent & Communication Portal",
-      description: "Dedicated parent portal and mobile app for viewing fees, results, attendance, and school announcements. Two-way communication between parents and teachers.",
+      description: "Parent portal and mobile access for fees, results, attendance, announcements, SMS, email, and school updates.",
       icon: "message-circle"
     },
     {
       title: "Timetable & Class Management",
       description: "Automated timetable generation with conflict detection. Manage classes, subjects, streams, and teacher allocations across all levels.",
       icon: "calendar"
+    },
+    {
+      title: "Transport, Library & Inventory",
+      description: "Support daily operations beyond academics with transport records, library management, hostel support, stock, and asset tracking.",
+      icon: "truck"
     },
     {
       title: "HR & Payroll Management",
@@ -72,7 +77,7 @@ export const EDUMYLES_DATA = {
   ],
   targets: [
     "Primary Schools",
-    "Secondary Schools", 
+    "Secondary Schools",
     "ECDE Centres",
     "Private Schools",
     "Public Schools",
@@ -81,21 +86,21 @@ export const EDUMYLES_DATA = {
   pricing: [
     {
       name: "Starter",
-      price: "KES 5,000/month",
-      description: "up to 200 students",
-      features: ["Core school management", "Student records", "Basic reporting", "Email support"]
+      price: "KSh 12,900/month",
+      description: "small schools getting started",
+      features: ["Core school management", "Student records", "Fee tracking", "Basic reports", "Email support"]
     },
     {
       name: "Professional",
-      price: "KES 12,000/month",
-      description: "up to 800 students",
-      features: ["Everything in Starter", "Parent portal", "Advanced analytics", "M-Pesa integration", "Priority support", "Most Popular"]
+      price: "KSh 38,900/month",
+      description: "established schools needing full operations",
+      features: ["Everything in Starter", "Parent portal", "Advanced reports", "M-Pesa integration", "SMS communication", "Most Popular"]
     },
     {
       name: "Enterprise",
-      price: "KES 25,000/month",
-      description: "unlimited students + multi-campus support",
-      features: ["Everything in Professional", "Multi-campus management", "Custom integrations", "Dedicated support", "Advanced AI features"]
+      price: "Custom",
+      description: "multi-campus or custom school groups",
+      features: ["Everything in Professional", "Multi-campus management", "Custom integrations", "Dedicated onboarding", "Advanced support"]
     }
   ],
   testimonials: [
@@ -191,19 +196,19 @@ export const EDURYDE_DATA = {
   pricing: [
     {
       name: "Starter",
-      price: "KES 3,000/month",
+      price: "KSh 3,000/month",
       description: "up to 2 buses",
       features: ["Basic GPS tracking", "Parent notifications", "Route management", "Email support"]
     },
     {
       name: "Professional",
-      price: "KES 7,000/month",
+      price: "KSh 7,000/month",
       description: "up to 8 buses",
       features: ["Everything in Starter", "Advanced analytics", "Driver management", "Priority support", "Most Popular"]
     },
     {
       name: "Enterprise",
-      price: "KES 15,000/month",
+      price: "KSh 15,000/month",
       description: "unlimited fleet",
       features: ["Everything in Professional", "Unlimited buses", "Custom integrations", "Dedicated support", "Advanced reporting"]
     }
@@ -242,7 +247,7 @@ export const MYLESCARE_DATA = {
     subtitle: "The complete AI-powered healthcare management system for hospitals, clinics, and health centres — streamlining patient care, billing, pharmacy, and laboratory management.",
     badge: "LIVE",
     primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
-    secondaryCta: { text: "View Pricing", href: "#pricing" }
+    secondaryCta: { text: "Discuss Plans", href: "/pricing" }
   },
   overview: {
     stats: [
@@ -313,19 +318,19 @@ export const MYLESCARE_DATA = {
   pricing: [
     {
       name: "Clinic",
-      price: "KES 8,000/month",
+      price: "KSh 8,000/month",
       description: "clinic or small facility",
       features: ["Patient records", "Appointment booking", "Basic billing", "Email support"]
     },
     {
       name: "Hospital",
-      price: "KES 20,000/month",
+      price: "KSh 20,000/month",
       description: "full hospital deployment",
       features: ["Everything in Clinic", "Inpatient management", "Pharmacy module", "Lab integration", "Priority support", "Most Popular"]
     },
     {
       name: "Enterprise",
-      price: "KES 45,000/month",
+      price: "KSh 45,000/month",
       description: "multi-branch + advanced AI",
       features: ["Everything in Hospital", "Multi-branch support", "Advanced AI diagnostics", "Dedicated support", "Custom integrations"]
     }
@@ -430,13 +435,13 @@ export const AGRIMYLES_DATA = {
     },
     {
       name: "Cooperative",
-      price: "KES 5,000/month",
+      price: "KSh 5,000/month",
       description: "cooperative management",
       features: ["Everything in Farmer", "Member management", "Supply chain tools", "Financial services", "Most Popular"]
     },
     {
       name: "Enterprise",
-      price: "KES 20,000/month",
+      price: "KSh 20,000/month",
       description: "full agribusiness suite",
       features: ["Everything in Cooperative", "Advanced analytics", "Custom integrations", "Dedicated support", "Multi-location management"]
     }
@@ -475,7 +480,7 @@ export const MYLESCRM_DATA = {
     subtitle: "The complete CRM and business management platform for East African businesses — managing leads, sales pipelines, customers, invoicing, and business reporting in one powerful system.",
     badge: "LIVE",
     primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
-    secondaryCta: { text: "View Pricing", href: "#pricing" }
+    secondaryCta: { text: "Discuss Plans", href: "/pricing" }
   },
   overview: {
     stats: [
@@ -546,19 +551,19 @@ export const MYLESCRM_DATA = {
   pricing: [
     {
       name: "Starter",
-      price: "KES 3,500/month",
+      price: "KSh 3,500/month",
       description: "up to 3 users",
       features: ["Lead management", "Basic pipeline", "Email support", "Mobile app"]
     },
     {
       name: "Professional",
-      price: "KES 10,000/month",
+      price: "KSh 10,000/month",
       description: "up to 15 users",
       features: ["Everything in Starter", "Advanced analytics", "M-Pesa invoicing", "Priority support", "Most Popular"]
     },
     {
       name: "Enterprise",
-      price: "KES 25,000/month",
+      price: "KSh 25,000/month",
       description: "unlimited users + AI",
       features: ["Everything in Professional", "Unlimited users", "AI sales insights", "Dedicated support", "Custom integrations"]
     }
@@ -584,3 +589,39 @@ export const MYLESCRM_DATA = {
     }
   ]
 }
+
+export const CORE_PRODUCTS = [
+  {
+    name: 'EduMyles',
+    category: 'Education',
+    sector: 'Education',
+    description: 'A complete school management system for CBC grading, student records, fees, attendance, and parent communication.',
+    icon: 'graduation-cap',
+    features: ['Admissions & Student Records', 'CBC & Exam Reports', 'M-Pesa Fee Collection', 'Parent Portal & SMS'],
+    href: '/products/edumyles',
+    status: 'live' as const,
+    pricing: EDUMYLES_DATA.pricing
+  },
+  {
+    name: 'EduRyde',
+    category: 'School Transport',
+    sector: 'Education',
+    description: 'School transport management with live GPS tracking, route planning, driver tools, and parent safety alerts.',
+    icon: 'bus',
+    features: ['Live GPS Tracking', 'Route Planning', 'Parent Notifications', 'Driver Management'],
+    href: '/products/eduryde',
+    status: 'live' as const,
+    pricing: EDURYDE_DATA.pricing
+  },
+  {
+    name: 'MylesCRM',
+    category: 'Business',
+    sector: 'Business',
+    description: 'CRM and business management for leads, sales pipelines, customer service, invoicing, and M-Pesa payments.',
+    icon: 'users',
+    features: ['Lead Management', 'Sales Pipeline', 'M-Pesa Invoicing', 'Business Analytics'],
+    href: '/products/mylescrm',
+    status: 'live' as const,
+    pricing: MYLESCRM_DATA.pricing
+  }
+]

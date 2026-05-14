@@ -15,11 +15,11 @@ export default function CompliancePage() {
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
             }}></div>
           </div>
-          
+
           {/* Floating Elements */}
           <div className="absolute top-20 left-20 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-gold/5 rounded-full blur-3xl animate-pulse delay-1000" />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             <ScrollReveal direction="up" delay={0.2}>
               {/* Eyebrow Label */}
@@ -31,13 +31,13 @@ export default function CompliancePage() {
                 <div className="w-8 h-0.5 bg-gold" />
               </div>
             </ScrollReveal>
-            
+
             <ScrollReveal direction="up" delay={0.4}>
               <h1 className="text-5xl md:text-6xl font-display font-bold text-white leading-tight mb-6">
                 Compliance & Security
               </h1>
             </ScrollReveal>
-            
+
             <ScrollReveal direction="up" delay={0.6}>
               <p className="text-xl text-light-blue max-w-3xl mx-auto leading-relaxed font-body">
                 Our commitment to maintaining the highest standards of data protection, privacy, and regulatory compliance across all our operations.
@@ -67,10 +67,10 @@ export default function CompliancePage() {
                 </p>
               </div>
             </ScrollReveal>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <ScrollReveal direction="up" delay={0.3}>
-                <div className="bg-gray-50 p-8 rounded-xl border border-gold/20">
+                <div className="bg-ice p-8 rounded-xl border border-gold/20">
                   <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
                     <Award className="w-8 h-8 text-gold" />
                   </div>
@@ -80,9 +80,9 @@ export default function CompliancePage() {
                   </p>
                 </div>
               </ScrollReveal>
-              
+
               <ScrollReveal direction="up" delay={0.4}>
-                <div className="bg-gray-50 p-8 rounded-xl border border-gold/20">
+                <div className="bg-ice p-8 rounded-xl border border-gold/20">
                   <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
                     <Shield className="w-8 h-8 text-gold" />
                   </div>
@@ -92,9 +92,9 @@ export default function CompliancePage() {
                   </p>
                 </div>
               </ScrollReveal>
-              
+
               <ScrollReveal direction="up" delay={0.5}>
-                <div className="bg-gray-50 p-8 rounded-xl border border-gold/20">
+                <div className="bg-ice p-8 rounded-xl border border-gold/20">
                   <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
                     <FileText className="w-8 h-8 text-gold" />
                   </div>
@@ -129,7 +129,7 @@ export default function CompliancePage() {
                 </p>
               </div>
             </ScrollReveal>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <ScrollReveal direction="up" delay={0.3}>
                 <div className="space-y-6">
@@ -144,7 +144,7 @@ export default function CompliancePage() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
                       <Eye className="w-6 h-6 text-gold" />
@@ -156,7 +156,7 @@ export default function CompliancePage() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
                       <Users className="w-6 h-6 text-gold" />
@@ -170,7 +170,7 @@ export default function CompliancePage() {
                   </div>
                 </div>
               </ScrollReveal>
-              
+
               <ScrollReveal direction="up" delay={0.4}>
                 <div className="bg-navy text-white p-8 rounded-xl">
                   <h3 className="text-2xl font-display font-bold text-white mb-6">Security Certifications</h3>

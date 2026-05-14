@@ -106,7 +106,7 @@ const MYLESGOV_DATA = {
   pricing: [
     {
       name: 'Basic',
-      price: 'KES 99,999',
+      price: 'KSh 99,999',
       period: 'per month',
       description: 'Perfect for small government bodies and departments.',
       features: [
@@ -120,7 +120,7 @@ const MYLESGOV_DATA = {
     },
     {
       name: 'Professional',
-      price: 'KES 299,999',
+      price: 'KSh 299,999',
       period: 'per month',
       description: 'Ideal for medium-sized government institutions.',
       features: [
@@ -178,7 +178,7 @@ export default function MylesGovPage() {
         <StatsSection stats={MYLESGOV_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="MylesGov"
           description={MYLESGOV_DATA.overview.description.split('\n\n')}
           stats={[

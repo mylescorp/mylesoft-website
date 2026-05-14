@@ -45,7 +45,7 @@ const MYLESPAY_DATA = {
     {
       icon: 'credit-card',
       title: 'Multi-Currency Support',
-      description: 'Process payments in multiple currencies including KES, USD, EUR, and more with automatic conversion.'
+      description: 'Process payments with KSh as the default settlement currency, with optional multi-currency support where configured.'
     },
     {
       icon: 'zap',
@@ -106,11 +106,11 @@ const MYLESPAY_DATA = {
   pricing: [
     {
       name: 'Starter',
-      price: 'KES 2,999',
+      price: 'KSh 2,999',
       period: 'per month',
       description: 'Perfect for small businesses getting started with digital payments.',
       features: [
-        'Up to KES 500,000 monthly volume',
+        'Up to KSh 500,000 monthly volume',
         '2.5% transaction fee',
         'Mobile money & card payments',
         'Basic analytics',
@@ -120,11 +120,11 @@ const MYLESPAY_DATA = {
     },
     {
       name: 'Business',
-      price: 'KES 7,999',
+      price: 'KSh 7,999',
       period: 'per month',
       description: 'Ideal for growing businesses with higher transaction volumes.',
       features: [
-        'Up to KES 2,000,000 monthly volume',
+        'Up to KSh 2,000,000 monthly volume',
         '2.0% transaction fee',
         'All payment methods',
         'Advanced analytics',
@@ -178,7 +178,7 @@ export default function MylesPayPage() {
         <StatsSection stats={MYLESPAY_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="MylesPay"
           description={MYLESPAY_DATA.overview.description.split('\n\n')}
           stats={[
@@ -222,7 +222,7 @@ export default function MylesPayPage() {
         {/* Pricing */}
         <PricingSection
           title="Simple, Transparent Pricing"
-          description="All plans include free setup, integration support, and ongoing assistance. No hidden fees."
+          description="Current plan details are maintained on the pricing page and confirmed during consultation."
           plans={MYLESPAY_DATA.pricing.map(p => ({
             ...p,
             price: p.price.split('/')[0],
@@ -244,7 +244,7 @@ export default function MylesPayPage() {
           title="Ready to Transform Your Payments?"
           tagline="Powering Digital Transactions Across East Africa."
           description="Join thousands of businesses already using MylesPay for secure, fast, and reliable payment processing. Start accepting payments today."
-          primaryCta={{ text: "Start Free Trial", href: "/book-demo" }}
+          primaryCta={{ text: "Book a Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />
       </div>

@@ -83,14 +83,14 @@ const MYLESCONSTRUCTION_DATA = {
   pricing: [
     {
       name: 'Basic',
-      price: 'KES 5,000/month',
+      price: 'KSh 5,000/month',
       description: 'Perfect for small contractors',
       features: ['Up to 10 projects', 'Basic project tracking', 'Resource management', 'Mobile app', 'Email support'],
       popular: false
     },
     {
       name: 'Professional',
-      price: 'KES 20,000/month',
+      price: 'KSh 20,000/month',
       description: 'Ideal for medium construction companies',
       features: ['Up to 50 projects', 'Advanced tracking', 'Budget control', 'Quality management', 'Priority support', 'API access', 'Most Popular'],
       popular: true
@@ -124,14 +124,14 @@ export default function MylesConstructionPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           <div className="absolute inset-0 pointer-events-none"
             style={{
               backgroundImage: `linear-gradient(rgba(199,150,57,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(199,150,57,0.04) 1px, transparent 1px)`,
               backgroundSize: '64px 64px',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-5">
               <div className="w-8 h-0.5 bg-gold" />
@@ -140,35 +140,35 @@ export default function MylesConstructionPage() {
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
-            
+
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               {MYLESCONSTRUCTION_DATA.overview.title}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic block mt-2">
+              <span className="text-white italic block mt-2">
                 {MYLESCONSTRUCTION_DATA.overview.tagline}
               </span>
             </h1>
-            
+
             <p className="font-body font-light text-light-blue text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-[1.7]">
               {MYLESCONSTRUCTION_DATA.overview.description}
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="primary"
                 className="px-8 py-4 text-sm font-semibold shadow-lg hover:shadow-xl"
               >
                 Book Free Demo
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
-                className="px-8 py-4 text-sm font-semibold border-gold/50 text-gold hover:border-gold hover:bg-gold hover:text-navy"
+                className="px-8 py-4 text-sm font-semibold border-white text-white hover:border-white hover:bg-white/10"
               >
                 View Pricing
               </Button>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               {MYLESCONSTRUCTION_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
@@ -181,14 +181,14 @@ export default function MylesConstructionPage() {
         </section>
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title={MYLESCONSTRUCTION_DATA.overview.title}
           description={MYLESCONSTRUCTION_DATA.overview.description}
           stats={MYLESCONSTRUCTION_DATA.overview.stats}
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Powerful Construction Management Features"
           description="Everything you need to manage construction projects efficiently and effectively."
           features={MYLESCONSTRUCTION_DATA.features}
@@ -196,7 +196,7 @@ export default function MylesConstructionPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Implementation in 5 Steps"
           description="From assessment to optimization — a clear path to construction project excellence."
           steps={MYLESCONSTRUCTION_DATA.process}
@@ -204,13 +204,13 @@ export default function MylesConstructionPage() {
         />
 
         {/* Targets */}
-        <TargetsSection 
+        <TargetsSection
           title="Built for Every Construction Sector"
           targets={MYLESCONSTRUCTION_DATA.targets}
         />
 
         {/* Pricing */}
-        <PricingSection 
+        <PricingSection
           title="Simple, Transparent Pricing"
           description="Choose the perfect plan for your construction company. All plans include free setup and support."
           plans={MYLESCONSTRUCTION_DATA.pricing.map(p => ({
@@ -223,14 +223,14 @@ export default function MylesConstructionPage() {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Success Stories"
           testimonials={MYLESCONSTRUCTION_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* CTA */}
-        <CTASection 
+        <CTASection
           title="Ready to Transform Your Construction Projects?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESCONSTRUCTION_DATA.overview.stats[0].number} construction companies across Africa already building with MylesConstruction.`}

@@ -1,12 +1,12 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
-import { 
-  Calendar, 
-  Clock, 
-  User, 
-  Tag, 
-  Share2, 
+import {
+  Calendar,
+  Clock,
+  User,
+  Tag,
+  Share2,
   Heart,
   Bookmark,
   ArrowLeft,
@@ -208,7 +208,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-deep">
+        <section className="section bg-navy">
           <div className="section-padding">
             <div className="max-w-4xl mx-auto">
               <div className="text-white">
@@ -322,10 +322,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 {post.relatedPosts.map((relatedSlug) => {
                   const relatedPost = blogPosts[relatedSlug as keyof typeof blogPosts]
                   if (!relatedPost) return null
-                  
+
                   return (
                     <div key={relatedSlug} className="bg-white rounded-[1.5rem] border border-slate-200 shadow-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-gold/30">
-                      <div className="bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
+                      <div className="bg-ice text-navy px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
                         {relatedPost.category}
                       </div>
                       <h3 className="heading-3 mb-3">{relatedPost.title}</h3>
@@ -350,7 +350,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <section className="section">
           <div className="section-padding">
             <div className="max-w-4xl mx-auto">
-              <div className="bg-navy-deep rounded-[1.75rem] border border-gold/15 p-8 text-center text-white shadow-card">
+              <div className="bg-navy rounded-[1.75rem] border border-gold/15 p-8 text-center text-white shadow-card">
                 <h2 className="heading-2 mb-4">Stay Updated with AI Insights</h2>
                 <p className="text-xl leading-8 text-light-blue mb-8">
                   Get the latest articles on AI technology and digital transformation in East Africa delivered to your inbox.

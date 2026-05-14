@@ -1,10 +1,10 @@
 import React from 'react'
-import { 
-  GraduationCap, 
-  Stethoscope, 
-  Sprout, 
-  Briefcase, 
-  CreditCard, 
+import {
+  GraduationCap,
+  Stethoscope,
+  Sprout,
+  Briefcase,
+  CreditCard,
   Truck,
   Bus,
   Building,
@@ -223,7 +223,7 @@ const iconAliases: Record<string, string> = {
 export function Icon({ name, size = 48, className = '' }: IconProps) {
   const resolvedName = iconAliases[name] || name
   const IconComponent = iconMap[resolvedName as keyof typeof iconMap]
-  
+
   if (!IconComponent) {
     return null
   }

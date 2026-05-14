@@ -2,11 +2,11 @@ import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import Link from 'next/link'
-import { 
-  Users, 
-  Settings, 
-  Brain, 
-  Shield, 
+import {
+  Users,
+  Settings,
+  Brain,
+  Shield,
   TrendingUp,
   Clock,
   CheckCircle,
@@ -34,7 +34,7 @@ export default function ITConsultingPage() {
     <Layout>
       <div className="min-h-screen">
         {/* PAGE HERO */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -61,7 +61,7 @@ export default function ITConsultingPage() {
               background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow label */}
             <div className="flex items-center justify-center gap-3 mb-5">
@@ -75,7 +75,7 @@ export default function ITConsultingPage() {
             {/* Main heading */}
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Technology Strategy
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+              <span className="text-white italic">
                 That Works
               </span>
             </h1>
@@ -87,15 +87,15 @@ export default function ITConsultingPage() {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href="/book-demo">
                 <Button className="bg-gold text-navy font-body font-bold text-[15px] tracking-[0.4px] px-9 py-4 rounded-md hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(199,150,57,0.3)] active:scale-[0.98] transition-all duration-200">
-                  Book a Free Consultation
+                  Book a Discovery Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <Link href="/book-demo">
-                <Button className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/20 hover:border-gold hover:text-gold transition-all duration-200">
-                  Book a Demo
+              <Link href="/contact">
+                <Button className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200">
+                  Request a Proposal
                 </Button>
               </Link>
             </div>
@@ -110,7 +110,7 @@ export default function ITConsultingPage() {
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-6">
                   What We Offer
                 </h2>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-medium-grey leading-relaxed mb-6">
                   Our expert consultants provide strategic guidance to help you leverage technology effectively. We focus on ROI-driven solutions that align with your business objectives.
                 </p>
                 <div className="space-y-4">
@@ -118,42 +118,42 @@ export default function ITConsultingPage() {
                     <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                     <div>
                       <h4 className="font-semibold text-navy">Strategic Planning</h4>
-                      <p className="text-gray-600">Long-term technology roadmaps</p>
+                      <p className="text-medium-grey">Long-term technology roadmaps</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                     <div>
                       <h4 className="font-semibold text-navy">Digital Transformation</h4>
-                      <p className="text-gray-600">Modernizing legacy systems</p>
+                      <p className="text-medium-grey">Modernizing legacy systems</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                     <div>
                       <h4 className="font-semibold text-navy">ROI-Focused Strategy</h4>
-                      <p className="text-gray-600">Measurable business impact</p>
+                      <p className="text-medium-grey">Measurable business impact</p>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                   <div className="text-3xl font-bold text-gold mb-2">100+</div>
-                  <div className="text-sm text-gray-600">Organisations Advised</div>
+                  <div className="text-sm text-medium-grey">Organisations Advised</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                   <div className="text-3xl font-bold text-gold mb-2">18</div>
-                  <div className="text-sm text-gray-600">Sectors Covered</div>
+                  <div className="text-sm text-medium-grey">Sectors Covered</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                   <div className="text-3xl font-bold text-gold mb-2">Digital</div>
-                  <div className="text-sm text-gray-600">Transformation</div>
+                  <div className="text-sm text-medium-grey">Transformation</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                   <div className="text-3xl font-bold text-gold mb-2">ROI</div>
-                  <div className="text-sm text-gray-600">Focused Strategy</div>
+                  <div className="text-sm text-medium-grey">Focused Strategy</div>
                 </div>
               </div>
             </div>
@@ -167,11 +167,11 @@ export default function ITConsultingPage() {
               <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-4">
                 What's Included
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-medium-grey max-w-2xl mx-auto">
                 Comprehensive consulting services for digital transformation.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
@@ -215,12 +215,12 @@ export default function ITConsultingPage() {
                   description: "Training programs to build internal capabilities."
                 }
               ].map((feature, index) => (
-                <div key={index} className="bg-gray-50 rounded-xl p-8 hover:bg-gold/5 hover:shadow-lg transition-all duration-300 group">
+                <div key={index} className="bg-ice rounded-xl p-8 hover:bg-gold/5 hover:shadow-lg transition-all duration-300 group">
                   <div className="mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-medium-grey leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -230,7 +230,7 @@ export default function ITConsultingPage() {
         </section>
 
         {/* OUR PROCESS */}
-        <section className="py-20 bg-navy-deep">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
@@ -240,7 +240,7 @@ export default function ITConsultingPage() {
                 A systematic approach to technology consulting.
               </p>
             </div>
-            
+
             <div className="relative">
               <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gold/30 transform -translate-y-1/2"></div>
               <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
@@ -264,141 +264,31 @@ export default function ITConsultingPage() {
           </div>
         </section>
 
-        {/* PACKAGES / PRICING */}
+        {/* PRICING SOURCE */}
         <section className="py-20 bg-off-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-lg md:p-10">
+              <div className="mb-4 text-[11px] font-bold uppercase tracking-[2.5px] text-gold">Tailored Proposal</div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-4">
-                Packages & Pricing
+                Get a Practical Consulting Plan
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Flexible consulting packages for different organizational needs.
+              <p className="text-medium-grey max-w-2xl mx-auto leading-8">
+                Consulting scope depends on your systems, team capacity, security posture, and transformation goals. We assess the need first, then prepare a clear plan for the engagement.
               </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Starter",
-                  price: "KES 50,000",
-                  description: "One-off audit & report",
-                  features: [
-                    "Technology audit",
-                    "Gap analysis report",
-                    "Basic recommendations",
-                    "1-week engagement",
-                    "Executive summary"
-                  ],
-                  popular: false
-                },
-                {
-                  name: "Professional",
-                  price: "KES 150,000",
-                  description: "3-month advisory retainer",
-                  features: [
-                    "Comprehensive audit",
-                    "Strategic roadmap",
-                    "Monthly advisory sessions",
-                    "Implementation guidance",
-                    "Progress reports",
-                    "Priority support"
-                  ],
-                  popular: true
-                },
-                {
-                  name: "Enterprise",
-                  price: "KES 400,000+",
-                  description: "Full transformation programme",
-                  features: [
-                    "Complete transformation strategy",
-                    "6-12 month engagement",
-                    "On-site consulting",
-                    "Change management",
-                    "Staff training programs",
-                    "Vendor management",
-                    "Ongoing optimization"
-                  ],
-                  popular: false
-                }
-              ].map((plan, index) => (
-                <div key={index} className={`bg-white rounded-2xl p-8 shadow-lg relative ${plan.popular ? 'ring-2 ring-gold transform scale-105' : ''}`}>
-                  {plan.popular && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold text-navy px-4 py-1 rounded-full text-sm font-bold">
-                      Most Popular
-                    </div>
-                  )}
-                  <h3 className="text-2xl font-bold text-navy mb-2">{plan.name}</h3>
-                  <div className="text-3xl font-bold text-gold mb-2">{plan.price}</div>
-                  <p className="text-gray-600 mb-6">{plan.description}</p>
-                  <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-600 text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link href="/contact">
-                    <Button className={`w-full ${plan.popular ? 'bg-gold text-navy' : 'bg-navy text-white'} hover:opacity-90 transition-opacity`}>
-                      Get Started
-                    </Button>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* WHY MYLESCORP */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-4">
-                Why Choose MylesCorp
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Compare our consulting approach with alternatives.
-              </p>
-            </div>
-            
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-navy text-white">
-                    <th className="text-left p-4">Feature</th>
-                    <th className="text-center p-4">MylesCorp</th>
-                    <th className="text-center p-4">Big Consulting Firms</th>
-                    <th className="text-center p-4">IT Resellers</th>
-                    <th className="text-center p-4">In-house Teams</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { feature: "East African Context", mylescorp: "✓", big: "✗", reseller: "?", inhouse: "?" },
-                    { feature: "Affordable Pricing", mylescorp: "✓", big: "✗", reseller: "✓", inhouse: "✗" },
-                    { feature: "Practical Solutions", mylescorp: "✓", big: "?", reseller: "✓", inhouse: "?" },
-                    { feature: "Quick Engagement", mylescorp: "✓", big: "✗", reseller: "✓", inhouse: "✗" },
-                    { feature: "Vendor Agnostic", mylescorp: "✓", big: "✗", reseller: "✗", inhouse: "✓" },
-                    { feature: "Local Support", mylescorp: "✓", big: "?", reseller: "✓", inhouse: "✓" },
-                    { feature: "Industry Expertise", mylescorp: "✓", big: "✓", reseller: "?", inhouse: "?" },
-                    { feature: "ROI Focus", mylescorp: "✓", big: "?", reseller: "✗", inhouse: "?" }
-                  ].map((row, index) => (
-                    <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                      <td className="p-4 font-medium">{row.feature}</td>
-                      <td className="p-4 text-center text-gold font-bold">{row.mylescorp}</td>
-                      <td className="p-4 text-center">{row.big}</td>
-                      <td className="p-4 text-center">{row.reseller}</td>
-                      <td className="p-4 text-center">{row.inhouse}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <Link href="/pricing">
+                  <Button>Review Plan Options</Button>
+                </Link>
+                <Link href="/book-demo">
+                  <Button variant="secondary">Book a Consultation</Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
         {/* TESTIMONIALS */}
-        <section className="py-20 bg-navy-deep">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
@@ -408,7 +298,7 @@ export default function ITConsultingPage() {
                 Hear what our clients say about our consulting services.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
@@ -449,7 +339,7 @@ export default function ITConsultingPage() {
         </section>
 
         {/* CTA SECTION */}
-        <section className="py-20 bg-navy-deep">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
               Ready to Transform Your Technology Strategy?
@@ -458,17 +348,17 @@ export default function ITConsultingPage() {
               Transforming Industries, Empowering Generations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/book-demo">
                 <Button className="bg-gold text-navy font-body font-bold text-[15px] tracking-[0.4px] px-9 py-4 rounded-md hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(199,150,57,0.3)] active:scale-[0.98] transition-all duration-200">
-                  Book Free Consultation
+                  Book a Discovery Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <a 
+              <a
                 href="https://wa.me/254743993715?text=Hi%20MylesCorp!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/20 hover:border-gold hover:text-gold transition-all duration-200 inline-flex items-center"
+                className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200 inline-flex items-center"
               >
                 WhatsApp Us
               </a>

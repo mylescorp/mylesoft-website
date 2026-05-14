@@ -106,7 +106,7 @@ const MYLESRETAIL_DATA = {
   pricing: [
     {
       name: 'Basic',
-      price: 'KES 5,999',
+      price: 'KSh 5,999',
       period: 'per month',
       description: 'Perfect for small retail shops with single locations.',
       features: [
@@ -120,7 +120,7 @@ const MYLESRETAIL_DATA = {
     },
     {
       name: 'Professional',
-      price: 'KES 15,999',
+      price: 'KSh 15,999',
       period: 'per month',
       description: 'Ideal for growing retail businesses with multiple locations.',
       features: [
@@ -178,7 +178,7 @@ export default function MylesRetailPage() {
         <StatsSection stats={MYLESRETAIL_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="MylesRetail"
           description={MYLESRETAIL_DATA.overview.description.split('\n\n')}
           stats={[
@@ -222,7 +222,7 @@ export default function MylesRetailPage() {
         {/* Pricing */}
         <PricingSection
           title="Simple, Transparent Pricing"
-          description="All plans include free setup, training, and ongoing support. No hidden fees."
+          description="Current plan details are maintained on the pricing page and confirmed during consultation."
           plans={MYLESRETAIL_DATA.pricing.map(p => ({
             ...p,
             price: p.price.split('/')[0],

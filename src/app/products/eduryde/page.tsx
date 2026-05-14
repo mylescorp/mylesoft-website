@@ -28,7 +28,7 @@ export default function EduRydePage() {
         <StatsSection stats={EDURYDE_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="EduRyde"
           description={EDURYDE_DATA.overview.description.split('\n\n')}
           stats={[
@@ -40,12 +40,12 @@ export default function EduRydePage() {
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Complete Transport Safety Suite"
           description="Everything you need to manage school transport safely and efficiently."
           features={EDURYDE_DATA.features.map(f => ({
             ...f,
-            icon: f.icon === 'map-pin' ? '📍' : 
+            icon: f.icon === 'map-pin' ? '📍' :
                    f.icon === 'smartphone' ? '🔔' :
                    f.icon === 'route' ? '🗺️' :
                    f.icon === 'users' ? '✅' :
@@ -56,7 +56,7 @@ export default function EduRydePage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Simple Setup, Immediate Safety"
           description="From route creation to real-time parent tracking in 5 simple steps."
           steps={EDURYDE_DATA.process}
@@ -64,7 +64,7 @@ export default function EduRydePage() {
         />
 
         {/* Pricing */}
-        <PricingSection 
+        <PricingSection
           title="Affordable Fleet Management"
           description="Flexible pricing based on your fleet size. All plans include setup and support."
           plans={EDURYDE_DATA.pricing.map(p => ({
@@ -77,14 +77,14 @@ export default function EduRydePage() {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Trusted by Schools Across Kenya"
           testimonials={EDURYDE_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* CTA */}
-        <CTASection 
+        <CTASection
           title="Keep Every Student Safe"
           tagline="Transforming Industries, Empowering Generations."
           description="Join schools across East Africa using EduRyde to protect their students every day."

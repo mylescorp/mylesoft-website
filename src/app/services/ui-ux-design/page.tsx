@@ -72,14 +72,14 @@ const UI_UX_DATA = {
   pricing: [
     {
       name: 'Startup Package',
-      price: 'KES 50,000',
+      price: 'KSh 50,000',
       description: 'Perfect for startups and small businesses',
       features: ['User research', 'Wireframing', 'UI mockups', 'Basic prototype', 'Style guide', '2 revisions'],
       popular: false
     },
     {
       name: 'Professional Package',
-      price: 'KES 150,000',
+      price: 'KSh 150,000',
       description: 'Ideal for growing businesses',
       features: ['Comprehensive research', 'Full UI/UX design', 'Interactive prototype', 'Design system', 'User testing', '3 revisions', 'Priority support'],
       popular: true
@@ -113,14 +113,14 @@ export default function UIUXDesignPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           <div className="absolute inset-0 pointer-events-none"
             style={{
               backgroundImage: `linear-gradient(rgba(199,150,57,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(199,150,57,0.04) 1px, transparent 1px)`,
               backgroundSize: '64px 64px',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-5">
               <div className="w-8 h-0.5 bg-gold" />
@@ -129,35 +129,35 @@ export default function UIUXDesignPage() {
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
-            
+
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               {UI_UX_DATA.overview.title}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic block mt-2">
+              <span className="text-white italic block mt-2">
                 {UI_UX_DATA.overview.tagline}
               </span>
             </h1>
-            
+
             <p className="font-body font-light text-light-blue text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-[1.7]">
               {UI_UX_DATA.overview.description}
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="primary"
                 className="px-8 py-4 text-sm font-semibold shadow-lg hover:shadow-xl"
               >
                 Start Your Project
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
-                className="px-8 py-4 text-sm font-semibold border-gold/50 text-gold hover:border-gold hover:bg-gold hover:text-navy"
+                className="px-8 py-4 text-sm font-semibold border-white text-white hover:border-white hover:bg-white/10"
               >
                 View Portfolio
               </Button>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               {UI_UX_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
@@ -180,10 +180,10 @@ export default function UIUXDesignPage() {
                 Comprehensive design services from research to final implementation.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {UI_UX_DATA.services.map((service, index) => (
-                <div key={index} className="bg-navy-deep/5 rounded-2xl p-8 border border-navy-deep/10 hover:border-gold/30 transition-all duration-300">
+                <div key={index} className="bg-navy/5 rounded-2xl p-8 border border-navy-deep/10 hover:border-gold/30 transition-all duration-300">
                   <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-6">
                     <Icon name={service.icon} size={24} className="text-gold" />
                   </div>
@@ -196,7 +196,7 @@ export default function UIUXDesignPage() {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-navy-deep/5">
+        <section className="py-20 bg-navy/5">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
@@ -206,7 +206,7 @@ export default function UIUXDesignPage() {
                 A systematic approach to creating exceptional user experiences.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-5 gap-6">
               {UI_UX_DATA.process.map((step, index) => (
                 <div key={index} className="text-center">
@@ -222,7 +222,7 @@ export default function UIUXDesignPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-navy-deep text-center">
+        <section className="py-20 bg-navy text-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">
               Ready to Transform Your User Experience?
@@ -231,17 +231,17 @@ export default function UIUXDesignPage() {
               Let's create something amazing together. Contact us for a free design consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="primary"
                 className="px-8 py-4 text-sm font-semibold"
               >
                 Start Your Project
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
-                className="px-8 py-4 text-sm font-semibold border-white/20 text-white hover:border-gold hover:text-gold"
+                className="px-8 py-4 text-sm font-semibold border-white/80 text-white hover:border-white hover:bg-white/10"
               >
                 WhatsApp Us
               </Button>

@@ -8,9 +8,9 @@ export async function subscribeToNewsletter(
   email: string
 ) {
   if (!email || !email.includes('@')) {
-    return { 
-      success: false, 
-      error: 'Please enter a valid email address.' 
+    return {
+      success: false,
+      error: 'Please enter a valid email address.'
     }
   }
 
@@ -42,14 +42,14 @@ export async function subscribeToNewsletter(
               Welcome to MylesCorp!
             </h1>
           </div>
-          <div style="padding:32px;background:#f8f6f2;">
+          <div style="padding:32px;background:#EEF2F8;">
             <p style="color:#212121;line-height:1.7;">
-              Thank you for subscribing to our newsletter. 
-              You will receive our latest product updates, 
+              Thank you for subscribing to our newsletter.
+              You will receive our latest product updates,
               tech insights, and industry news.
             </p>
             <p style="color:#212121;line-height:1.7;">
-              Explore our products at 
+              Explore our products at
               <a href="https://www.mylescorptech.com/products"
                  style="color:#C79639;">
                 www.mylescorptech.com/products
@@ -63,7 +63,7 @@ export async function subscribeToNewsletter(
               Transforming Industries, Empowering Generations.
             </p>
             <p style="color:#C7D7EF;font-size:12px;margin:0;">
-              MylesCorp Technologies Ltd · Westlands, 
+              MylesCorp Technologies Ltd · Westlands,
               Nairobi, Kenya
             </p>
           </div>

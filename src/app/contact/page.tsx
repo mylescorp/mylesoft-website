@@ -5,10 +5,10 @@ import { CTASection } from '@/components/ui/CTASection'
 import { OverviewSection } from '@/components/ui/OverviewSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
   Clock,
 } from 'lucide-react'
 import { ContactForm } from '@/components/ui/ContactForm'
@@ -124,7 +124,7 @@ export default function ContactPage() {
       name: 'support',
       title: 'Technical Support',
       email: 'support@mylescorptech.com',
-      phone: '+254 759 233 322',
+      phone: '+254 743 993 715',
       description: 'Need help with existing products or technical assistance.'
     },
     {
@@ -141,7 +141,7 @@ export default function ContactPage() {
       city: 'Nairobi',
       address: 'Westlands, Nairobi, Kenya',
       phone: '+254 743 993 715',
-      email: 'nairobi@mylescorptech.com',
+      email: 'info@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 6:00 PM',
       isHeadquarters: true
     },
@@ -149,23 +149,23 @@ export default function ContactPage() {
       city: 'Mombasa',
       address: 'Mombasa CBD, Mombasa, Kenya',
       phone: '+254 743 993 715',
-      email: 'mombasa@mylescorptech.com',
+      email: 'info@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
-      isHeadquarters: false
+      isHeadquarters:  false
     },
     {
       city: 'Kampala',
       address: 'Kampala Central, Uganda',
-      phone: '+256 743 993 715',
-      email: 'kampala@mylescorptech.com',
+      phone: '+254 743 993 715',
+      email: 'info@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
       isHeadquarters: false
     },
     {
       city: 'Dar es Salaam',
       address: 'Dar es Salaam CBD, Tanzania',
-      phone: '+255 743 993 715',
-      email: 'dar@mylescorptech.com',
+      phone: '+254 743 993 715',
+      email: 'info@mylescorptech.com',
       hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
       isHeadquarters: false
     },
@@ -175,9 +175,9 @@ export default function ContactPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay */}
-          <div 
+          <div
             className="absolute inset-0 pointer-events-none"
             style={{
               backgroundImage: `linear-gradient(rgba(199,150,57,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(199,150,57,0.04) 1px, transparent 1px)`,
@@ -186,13 +186,13 @@ export default function ContactPage() {
           />
 
           {/* Gold top accent line */}
-          <div 
+          <div
             className="absolute top-0 left-0 right-0 h-[3px]"
             style={{
               background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow Label */}
             <div className="flex items-center justify-center gap-3 mb-5">
@@ -202,18 +202,18 @@ export default function ContactPage() {
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
-            
+
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Let&apos;s
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+              <span className="text-white italic">
                 Talk
               </span>
             </h1>
-            
+
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
               {CONTACT_DATA.overview.description[0]}
             </p>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               {CONTACT_DATA.overview.stats.map((stat, index) => (
@@ -227,7 +227,7 @@ export default function ContactPage() {
         </section>
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title={CONTACT_DATA.overview.title}
           description={CONTACT_DATA.overview.description}
           stats={CONTACT_DATA.overview.stats}
@@ -251,7 +251,7 @@ export default function ContactPage() {
                 We&apos;re here to help. Reach out through any of the channels below and we&apos;ll respond within 2 hours.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
               <div>
@@ -262,7 +262,7 @@ export default function ContactPage() {
               {/* Contact Information */}
               <div>
                 <h3 className="font-display font-bold text-navy text-2xl md:text-3xl mb-6">Contact Information</h3>
-                
+
                 {/* Departments */}
                 <div className="mb-12">
                   <h4 className="font-body font-semibold text-navy text-lg mb-4">Departments</h4>
@@ -291,7 +291,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Quick Contact */}
-                <div className="rounded-[1.6rem] border border-gold/15 bg-navy-deep p-7 text-white shadow-card">
+                <div className="rounded-[1.6rem] border border-gold/15 bg-navy p-7 text-white shadow-card">
                   <h4 className="font-display font-bold text-white text-xl mb-4">Quick Contact</h4>
                   <div className="space-y-4">
                     <div className="flex items-center">
@@ -328,7 +328,7 @@ export default function ContactPage() {
         </section>
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Why Contact MylesCorp?"
           description="We make it easy to connect with us and get the support you need for your digital transformation journey."
           features={CONTACT_DATA.features}
@@ -336,7 +336,7 @@ export default function ContactPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Our Contact Process"
           description="From first contact to successful implementation — we ensure a smooth and professional experience."
           steps={CONTACT_DATA.process}
@@ -344,13 +344,13 @@ export default function ContactPage() {
         />
 
         {/* Targets */}
-        <TargetsSection 
+        <TargetsSection
           title="Who We Help"
           targets={CONTACT_DATA.targets}
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="What Our Customers Say"
           testimonials={CONTACT_DATA.testimonials}
           centerHeader={true}
@@ -374,12 +374,12 @@ export default function ContactPage() {
                 Find us in major cities across East Africa. Visit our headquarters or connect with our regional offices.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {offices.map((office, index) => (
                 <div key={index} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-gold/35">
                   {office.isHeadquarters && (
-                    <div className="inline-block bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-semibold mb-4 font-body">
+                    <div className="inline-block bg-ice text-navy px-3 py-1 rounded-full text-sm font-semibold mb-4 font-body">
                       Headquarters
                     </div>
                   )}
@@ -413,7 +413,7 @@ export default function ContactPage() {
         </section>
 
         {/* Emergency Contact */}
-        <section className="py-20 bg-navy-deep">
+        <section className="py-20 bg-navy">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center text-white">
               <div className="flex items-center justify-center gap-3 mb-5">
@@ -446,7 +446,7 @@ export default function ContactPage() {
         </section>
 
         {/* Final CTA */}
-        <CTASection 
+        <CTASection
           title="Ready to Transform Your Business?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Contact us today and join ${CONTACT_DATA.overview.stats[3].number} satisfied customers across East Africa.`}

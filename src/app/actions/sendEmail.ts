@@ -32,7 +32,7 @@ export async function sendContactEmail(
               New Contact Form Submission
             </h1>
           </div>
-          <div style="padding:32px;background:#f8f6f2;">
+          <div style="padding:32px;background:#EEF2F8;">
             <table style="width:100%;
                           border-collapse:collapse;">
               <tr>
@@ -102,8 +102,8 @@ export async function sendContactEmail(
                       text-align:center;">
             <p style="color:#C7D7EF;font-size:12px;
                       margin:0;">
-              MylesCorp Technologies Ltd · 
-              info@mylescorptech.com · 
+              MylesCorp Technologies Ltd ·
+              info@mylescorptech.com ·
               +254 743 993 715
             </p>
           </div>
@@ -130,18 +130,18 @@ export async function sendContactEmail(
               Thank you, ${data.name.split(' ')[0]}!
             </h1>
           </div>
-          <div style="padding:32px;background:#f8f6f2;">
+          <div style="padding:32px;background:#EEF2F8;">
             <p style="color:#212121;line-height:1.7;
                       font-size:15px;">
-              We have received your message and will get 
-              back to you within <strong>2 business 
+              We have received your message and will get
+              back to you within <strong>2 business
               hours</strong>.
             </p>
             <p style="color:#212121;line-height:1.7;
                       font-size:15px;">
-              In the meantime, you can WhatsApp us directly 
-              at <strong>+254 743 993 715</strong> or 
-              explore our products at 
+              In the meantime, you can WhatsApp us directly
+              at <strong>+254 743 993 715</strong> or
+              explore our products at
               <a href="https://www.mylescorptech.com/products"
                  style="color:#C79639;">
                 www.mylescorptech.com
@@ -155,7 +155,7 @@ export async function sendContactEmail(
               Transforming Industries, Empowering Generations.
             </p>
             <p style="color:#C7D7EF;font-size:12px;margin:0;">
-              MylesCorp Technologies Ltd · Westlands, 
+              MylesCorp Technologies Ltd · Westlands,
               Nairobi, Kenya
             </p>
           </div>

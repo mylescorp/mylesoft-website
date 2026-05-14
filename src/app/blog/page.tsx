@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/Button'
 import { Card, CardIcon, CardHeader, CardContent } from '@/components/ui/Card'
 import { ScrollReveal, StaggerReveal } from '@/components/ui/ScrollReveal'
 import {
-  Calendar, 
-  User, 
-  Clock, 
-  Tag, 
+  Calendar,
+  User,
+  Clock,
+  Tag,
   Search,
   ChevronRight,
   ArrowRight,
@@ -129,7 +129,7 @@ export default function BlogPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay — always present on dark sections */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -158,7 +158,7 @@ export default function BlogPage() {
               background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             <ScrollReveal direction="up" delay={0.2}>
               {/* Eyebrow Label */}
@@ -170,16 +170,16 @@ export default function BlogPage() {
                 <div className="w-8 h-0.5 bg-gold" />
               </div>
             </ScrollReveal>
-            
+
             <ScrollReveal direction="up" delay={0.4}>
               <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
                 Our{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+                <span className="text-white italic">
                   Blog
                 </span>
               </h1>
             </ScrollReveal>
-            
+
             <ScrollReveal direction="up" delay={0.6}>
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
                 Thought leadership, product updates, and industry insights from the MylesCorp team.
@@ -208,7 +208,7 @@ export default function BlogPage() {
                   </p>
                 </div>
               </ScrollReveal>
-              
+
               <StaggerReveal staggerDelay={0.2} itemDelay={0.4} direction="up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
                   {featuredPosts.map((post, index) => (
                     <Card variant="light" key={index} className="overflow-hidden group h-full flex flex-col">
@@ -218,7 +218,7 @@ export default function BlogPage() {
                       <div className="p-6 flex-1 flex flex-col">
                         <div className="flex items-center mb-4">
                           <div className="flex-1">
-                            <span className="inline-block bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold mb-2 font-body">
+                            <span className="inline-block bg-ice text-navy px-3 py-1 rounded-full text-xs font-semibold mb-2 font-body">
                               {post.category}
                             </span>
                             <h3 className="text-2xl font-display font-bold text-navy mb-2">{post.title}</h3>
@@ -272,7 +272,7 @@ export default function BlogPage() {
                 </p>
               </div>
             </ScrollReveal>
-            
+
             <StaggerReveal staggerDelay={0.2} itemDelay={0.4} direction="up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {recentPosts.map((post, index) => (
                   <Card variant="light" key={index} className="overflow-hidden group h-full flex flex-col">
@@ -282,7 +282,7 @@ export default function BlogPage() {
                     <div className="p-6 flex-1 flex flex-col">
                       <div className="flex items-center mb-4">
                         <div className="flex-1">
-                          <span className="inline-block bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold mb-2 font-body">
+                          <span className="inline-block bg-ice text-navy px-3 py-1 rounded-full text-xs font-semibold mb-2 font-body">
                             {post.category}
                           </span>
                           <h3 className="text-xl font-display font-bold text-navy mb-2">{post.title}</h3>
@@ -333,7 +333,7 @@ export default function BlogPage() {
                 </p>
               </div>
             </ScrollReveal>
-            
+
             <StaggerReveal staggerDelay={0.1} itemDelay={0.3} direction="up" className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 {categories.map((category, index) => (
                   <Card variant="light" key={index} className="text-center h-full flex flex-col">

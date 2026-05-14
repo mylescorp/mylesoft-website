@@ -18,7 +18,7 @@ export default function TermsOfService() {
     // Intersection Observer for active section
     const sections = document.querySelectorAll('.sec')
     const links = document.querySelectorAll('.toc a[href^="#"]')
-    
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -42,15 +42,15 @@ export default function TermsOfService() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#080e18]">
+      <div className="min-h-screen bg-navy">
       {/* Scroll Progress Bar */}
-      <div 
-        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#C79639] to-[#e0b055] z-50 transition-all duration-150"
+      <div
+        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#C79639] to-[#A67C2E] z-50 transition-all duration-150"
         style={{ width: `${scrollProgress}%` }}
       />
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-[100] bg-[#080e18] border-b border-[rgba(199,150,57,0.15)] px-10 h-[60px] flex items-center justify-between">
+      <nav className="sticky top-0 z-[100] bg-navy border-b border-[rgba(199,150,57,0.15)] px-10 h-[60px] flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 no-underline">
           <div className="w-[34px] h-[34px] rounded-[7px] bg-gradient-to-br from-[#1A395B] to-[#0f1f35] border-[1.5px] border-[#C79639] flex items-center justify-center font-['Playfair_Display'] text-[16px] font-bold text-[#C79639]">
             M
@@ -60,7 +60,7 @@ export default function TermsOfService() {
             <div className="text-[8px] text-[#C79639] tracking-[1.5px] uppercase">Legal Documents</div>
           </div>
         </Link>
-        
+
         <div className="flex gap-1.5 flex-wrap">
           <Link href="/privacy-policy" className="px-3 py-1.5 bg-white/4 border border-white/8 rounded-[6px] text-[#95A9CC] text-[11px] font-bold no-underline transition-all duration-180 hover:bg-[rgba(199,150,57,0.08)] hover:border-[rgba(199,150,57,0.3)] hover:text-[#C79639]">
             Privacy Policy
@@ -75,14 +75,14 @@ export default function TermsOfService() {
             Compliance
           </Link>
         </div>
-        
+
         <Link href="/" className="px-4 py-2 bg-[rgba(199,150,57,0.1)] border border-[rgba(199,150,57,0.3)] rounded-[7px] text-[#C79639] text-[12px] font-bold no-underline transition-all duration-200 hover:bg-[#C79639] hover:text-[#1A395B]">
           ← Website
         </Link>
       </nav>
 
       {/* Hero Section */}
-      <div className="bg-[#080e18] px-10 py-16 relative overflow-hidden border-b border-[rgba(199,150,57,0.1)]">
+      <div className="bg-navy px-10 py-16 relative overflow-hidden border-b border-[rgba(199,150,57,0.1)]">
         <div className="max-w-[860px] mx-auto relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-[rgba(199,150,57,0.3)] bg-[rgba(199,150,57,0.1)] rounded-full text-[10px] font-bold tracking-[2px] uppercase text-[#C79639] mb-5">
             Legal · User Agreement
@@ -100,7 +100,7 @@ export default function TermsOfService() {
 
       {/* Main Content */}
       <div className="max-w-[1100px] mx-auto px-10 py-13 grid grid-cols-[230px_1fr] gap-12 items-start">
-        
+
         {/* Table of Contents */}
         <aside>
           <div className="sticky top-[76px] bg-[rgba(255,255,255,0.12)] border border-[rgba(199,150,57,0.15)] rounded-[14px] p-5.5 overflow-hidden">
@@ -122,7 +122,7 @@ export default function TermsOfService() {
             <a href="#s13" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Dispute Resolution</a>
             <a href="#s14" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Changes to Terms</a>
             <a href="#s15" className="block text-[11.5px] text-[#95A9CC] no-underline py-1.5 pl-2.5 border-l-2 border-transparent transition-all duration-150 leading-[1.4] hover:text-[#C79639] hover:border-[#C79639]">Contact Us</a>
-            
+
             <div className="h-[1px] bg-[rgba(199,150,57,0.08)] my-2.5" />
             <div className="mt-1.5">
               <div className="text-[9px] font-bold text-[rgba(149,169,204,0.4)] tracking-[1.5px] uppercase mb-1.5 pl-2.5">Other Legal</div>
@@ -199,48 +199,10 @@ export default function TermsOfService() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Products & Subscriptions</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                MylesCorp products are offered on a subscription basis. Subscription plans, pricing, and features are as described on our website and in your signed agreement. Current pricing:
+                MylesCorp products are offered on a subscription basis. Current product and service pricing is published on the <Link href="/pricing" className="text-[#C79639] no-underline hover:underline">pricing page</Link> and confirmed in your signed agreement.
               </p>
-              <div className="overflow-x-auto my-3.5">
-                <table className="w-full border-collapse text-[13px]">
-                  <thead>
-                    <tr>
-                      <th className="bg-[#1A395B] text-white font-bold px-3.5 py-2.5 text-left text-[11px] tracking-[0.5px] border-t-[2px] border-[#C79639]">Product</th>
-                      <th className="bg-[#1A395B] text-white font-bold px-3.5 py-2.5 text-left text-[11px] tracking-[0.5px] border-t-[2px] border-[#C79639]">Starting Price</th>
-                      <th className="bg-[#1A395B] text-white font-bold px-3.5 py-2.5 text-left text-[11px] tracking-[0.5px] border-t-[2px] border-[#C79639]">Billing</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="hover:bg-white/2 transition-colors">
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">EduMyles</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">KES 5,000/month</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Monthly or Annual</td>
-                    </tr>
-                    <tr className="hover:bg-white/2 transition-colors">
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">EduRyde</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">KES 3,000/month</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Monthly or Annual</td>
-                    </tr>
-                    <tr className="hover:bg-white/2 transition-colors">
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">MylesCare</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">KES 8,000/month</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Monthly or Annual</td>
-                    </tr>
-                    <tr className="hover:bg-white/2 transition-colors">
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">AgriMyles</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Free – KES 20,000/month</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Monthly or Annual</td>
-                    </tr>
-                    <tr className="hover:bg-white/2 transition-colors">
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">MylesCRM</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">KES 3,500/month</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Monthly or Annual</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                MylesCorp reserves right to modify pricing with 30 days' written notice to existing subscribers.
+                The signed order form, proposal, or subscription agreement controls the final commercial terms for your account. MylesCorp reserves the right to modify pricing with 30 days' written notice to existing subscribers.
               </p>
             </div>
           </div>
@@ -250,7 +212,7 @@ export default function TermsOfService() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Payment Terms</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                <strong className="text-white font-semibold">Payment methods:</strong> M-Pesa (Paybill), bank transfer, or cheque. All prices are in Kenya Shillings (KES) inclusive of VAT at 16%.
+                <strong className="text-white font-semibold">Payment methods:</strong> M-Pesa (Paybill), bank transfer, or cheque. Kenya Shillings (KSh) is the default website currency, and applicable taxes are confirmed in the final invoice.
               </p>
               <ul className="pl-[18px] mb-0 space-y-1.5">
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]"><strong className="text-white font-semibold">Subscription payments</strong> are due on the first day of each billing cycle</li>

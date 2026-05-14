@@ -11,13 +11,13 @@ interface SkeletonProps {
   animated?: boolean
 }
 
-export function Skeleton({ 
-  className = '', 
-  variant = 'text', 
-  width, 
-  height, 
+export function Skeleton({
+  className = '',
+  variant = 'text',
+  width,
+  height,
   lines = 1,
-  animated = true 
+  animated = true
 }: SkeletonProps) {
   const baseClasses = 'bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 bg-[length:200%_100%]'
   const animationClass = animated ? 'animate-shimmer' : ''
@@ -126,7 +126,7 @@ export function ProductCardSkeleton({ className = '' }: { className?: string }) 
     <div className={`glass-morphism p-6 rounded-2xl hover-lift-premium ${className}`}>
       <div className="space-y-4">
         <div className="flex items-center space-x-4">
-          <div className="w-16 h-16 bg-gradient-to-br from-gold-100 to-gold-200 rounded-xl shimmer animate-pulse-gold" />
+          <div className="w-16 h-16 bg-gradient-to-br from-gold/10 to-gold/20 rounded-xl shimmer animate-pulse-gold" />
           <div className="flex-1 space-y-2">
             <Skeleton variant="text" height={20} width="60%" />
             <Skeleton variant="text" height={16} width="80%" />
@@ -175,7 +175,7 @@ export function StatsSkeleton({ className = '' }: { className?: string }) {
     <div className={`grid grid-cols-2 md:grid-cols-4 gap-8 ${className}`}>
       {[1, 2, 3, 4].map((i) => (
         <div key={i} className="text-center space-y-3">
-          <div className="w-16 h-16 mx-auto bg-gradient-to-br from-gold-100 to-gold-200 rounded-2xl shimmer animate-pulse-gold" />
+          <div className="w-16 h-16 mx-auto bg-gradient-to-br from-gold/10 to-gold/20 rounded-2xl shimmer animate-pulse-gold" />
           <Skeleton variant="text" height={32} width={80} className="mx-auto" />
           <Skeleton variant="text" height={16} width={100} className="mx-auto" />
         </div>

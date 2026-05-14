@@ -17,7 +17,7 @@ interface TestimonialsSectionProps {
 
 export function TestimonialsSection({ title, testimonials, centerHeader = false }: TestimonialsSectionProps) {
   return (
-    <section className="py-20 bg-navy-deep">
+    <section className="py-20 bg-navy">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={centerHeader ? 'text-center' : ''}>
           <div className={`flex items-center gap-3 mb-4 ${centerHeader ? 'justify-center' : ''}`}>
@@ -37,7 +37,7 @@ export function TestimonialsSection({ title, testimonials, centerHeader = false 
           {testimonials.map((testimonial, index) => (
             <article
               key={index}
-              className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-7 shadow-card backdrop-blur-sm"
+              className="rounded-lg border border-white/10 bg-white/[0.06] p-7 shadow-card backdrop-blur-sm"
             >
               <div className="flex gap-1.5 mb-5">
                 {[...Array(5)].map((_, i) => (
@@ -60,7 +60,7 @@ export function TestimonialsSection({ title, testimonials, centerHeader = false 
                   {testimonial.author}
                 </div>
 
-                <div className="mt-1 font-body text-sm md:text-[0.95rem] leading-6 text-muted">
+                <div className="mt-1 font-body text-sm md:text-[0.95rem] leading-6 text-light-blue">
                   {testimonial.role}, {testimonial.organization}
                 </div>
               </div>

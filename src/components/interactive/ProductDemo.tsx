@@ -27,13 +27,13 @@ interface ProductDemoProps {
   className?: string
 }
 
-export function ProductDemo({ 
-  productName, 
-  productIcon, 
-  steps, 
-  features, 
+export function ProductDemo({
+  productName,
+  productIcon,
+  steps,
+  features,
   stats,
-  className = '' 
+  className = ''
 }: ProductDemoProps) {
   const [currentStep, setCurrentStep] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
@@ -91,7 +91,7 @@ export function ProductDemo({
       <div className="bg-gradient-to-r from-navy-600 to-navy-700 p-6 text-white">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-gold-400 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-gold rounded-lg flex items-center justify-center">
               {productIcon}
             </div>
             <div>
@@ -99,7 +99,7 @@ export function ProductDemo({
               <p className="text-navy-200">Interactive Product Tour</p>
             </div>
           </div>
-          <Badge variant="gold" className="bg-gold-400 text-white">
+          <Badge variant="gold" className="bg-gold text-navy">
             {steps.length} Steps
           </Badge>
         </div>
@@ -109,7 +109,7 @@ export function ProductDemo({
           {stats.users && (
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-1">
-                <Users className="w-4 h-4 text-gold-400" />
+                <Users className="w-4 h-4 text-gold" />
                 <span className="text-lg font-bold">{stats.users}</span>
               </div>
               <p className="text-xs text-navy-200">Active Users</p>
@@ -118,7 +118,7 @@ export function ProductDemo({
           {stats.growth && (
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-1">
-                <TrendingUp className="w-4 h-4 text-gold-400" />
+                <TrendingUp className="w-4 h-4 text-gold" />
                 <span className="text-lg font-bold">{stats.growth}</span>
               </div>
               <p className="text-xs text-navy-200">Growth Rate</p>
@@ -127,7 +127,7 @@ export function ProductDemo({
           {stats.reliability && (
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-1">
-                <Shield className="w-4 h-4 text-gold-400" />
+                <Shield className="w-4 h-4 text-gold" />
                 <span className="text-lg font-bold">{stats.reliability}</span>
               </div>
               <p className="text-xs text-navy-200">Reliability</p>
@@ -145,8 +145,8 @@ export function ProductDemo({
             <span>{Math.round(progress)}%</span>
           </div>
           <div className="w-full bg-light-grey rounded-full h-2">
-            <div 
-              className="bg-gradient-to-r from-gold-400 to-gold-500 h-2 rounded-full transition-all duration-300"
+            <div
+              className="bg-gold h-2 rounded-full transition-all duration-300"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -235,8 +235,8 @@ export function ProductDemo({
                 setIsPlaying(false)
               }}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentStep 
-                  ? 'bg-gold-400 w-8' 
+                index === currentStep
+                  ? 'bg-gold w-8'
                   : 'bg-light-grey hover:bg-medium-grey'
               }`}
               aria-label={`Go to step ${index + 1}`}
@@ -251,7 +251,7 @@ export function ProductDemo({
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {features.map((feature, index) => (
             <div key={index} className="flex items-center space-x-2">
-              <Star className="w-4 h-4 text-gold-400 flex-shrink-0" />
+              <Star className="w-4 h-4 text-gold flex-shrink-0" />
               <span className="text-sm text-medium-grey">{feature}</span>
             </div>
           ))}

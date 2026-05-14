@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-deep">
+        <section className="section bg-navy">
           <div className="section-padding">
             <div className="text-center text-white">
               <h1 className="heading-1 mb-6">Privacy Policy</h1>
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
                   <h2 className="heading-2 mb-4">3. Information Sharing</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, 
+                      We do not sell, trade, or otherwise transfer your personal information to third parties without your consent,
                       except as described in this policy:
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
                   <h2 className="heading-2 mb-4">4. Data Security</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      We implement appropriate technical and organizational measures to protect your personal information 
+                      We implement appropriate technical and organizational measures to protect your personal information
                       against unauthorized access, alteration, disclosure, or destruction. These include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
                   <h2 className="heading-2 mb-4">6. Cookies and Tracking</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      We use cookies and similar tracking technologies to enhance your experience on our website. 
+                      We use cookies and similar tracking technologies to enhance your experience on our website.
                       You can control cookies through your browser settings.
                     </p>
                   </div>
@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
                   <h2 className="heading-2 mb-4">7. International Data Transfers</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      Your personal information may be transferred to and processed in countries other than Kenya. 
+                      Your personal information may be transferred to and processed in countries other than Kenya.
                       We ensure appropriate safeguards are in place for such transfers.
                     </p>
                   </div>
@@ -126,7 +126,7 @@ export default function PrivacyPolicy() {
                   <h2 className="heading-2 mb-4">8. Children's Privacy</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      Our services are not intended for children under 18. We do not knowingly collect personal 
+                      Our services are not intended for children under 18. We do not knowingly collect personal
                       information from children under 18.
                     </p>
                   </div>
@@ -136,7 +136,7 @@ export default function PrivacyPolicy() {
                   <h2 className="heading-2 mb-4">9. Changes to This Policy</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      We may update this privacy policy from time to time. We will notify you of any changes 
+                      We may update this privacy policy from time to time. We will notify you of any changes
                       by posting the new policy on this page and updating the "Last updated" date.
                     </p>
                   </div>

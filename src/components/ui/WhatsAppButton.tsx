@@ -12,7 +12,7 @@ export function WhatsAppButton() {
                  bg-[#C79639] text-[#1A395B]
                  pl-4 pr-5 py-3 rounded-full font-bold
                  shadow-[0_8px_32px_rgba(199,150,57,0.4)]
-                 hover:bg-[#e0b055] hover:-translate-y-1
+                 hover:bg-[#A67C2E] hover:-translate-y-1
                  hover:shadow-[0_12px_40px_rgba(199,150,57,0.5)]
                  transition-all duration-200 ease-out"
     >

@@ -18,26 +18,26 @@ interface ProductCardProps {
   loading?: boolean
 }
 
-export function ProductCard({ 
-  name, 
+export function ProductCard({
+  name,
   category,
-  description, 
-  icon, 
-  features, 
-  status, 
-  href, 
+  description,
+  icon,
+  features,
+  status,
+  href,
   className = '',
-  loading = false 
+  loading = false
 }: ProductCardProps) {
   if (loading) {
     return <ProductCardSkeleton className={className} />
   }
 
   const statusColors = {
-    live: 'bg-gradient-to-r from-green-500 to-emerald-600 text-white',
-    beta: 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white',
-    'coming-soon': 'bg-gradient-to-r from-gray-500 to-gray-600 text-white',
-    development: 'bg-gradient-to-r from-amber-500 to-orange-600 text-white'
+    live: 'bg-ice text-navy border border-navy/10',
+    beta: 'bg-navy text-white border border-gold/20',
+    'coming-soon': 'bg-muted-blue text-navy',
+    development: 'bg-gold text-navy border border-gold/20'
   }
 
   const statusIcons = {
@@ -50,7 +50,7 @@ export function ProductCard({
   return (
     <Link
       href={href}
-      className={`group relative flex h-full min-h-[360px] w-full flex-col overflow-hidden rounded-[1.6rem] border border-slate-200 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-gold/35 ${className}`}
+      className={`group relative flex h-full min-h-[360px] w-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-gold/35 ${className}`}
     >
       <div className="h-1.5 w-full bg-gradient-to-r from-gold via-gold-light to-gold/70" />
 
@@ -103,7 +103,7 @@ export function ProductCard({
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </div>
 
-          <div className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[0.8rem] font-semibold text-navy">
+          <div className="rounded-full border border-slate-200 bg-ice px-3 py-1 text-[0.8rem] font-semibold text-navy">
             Details
           </div>
         </div>
@@ -119,7 +119,7 @@ function ProductCardSkeleton({ className = '' }: { className?: string }) {
       <div className="space-y-4 flex-grow">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-gold-100 to-gold-200 rounded-xl" />
+            <div className="w-16 h-16 bg-gradient-to-br from-gold/10 to-gold/20 rounded-xl" />
             <div className="flex-1 space-y-2">
               <Skeleton variant="text" height={24} width="60%" />
               <Skeleton variant="text" height={16} width="80%" />
@@ -130,7 +130,7 @@ function ProductCardSkeleton({ className = '' }: { className?: string }) {
         <div className="space-y-2">
           {Array.from({ length: 3 }, (_, i) => (
             <div key={i} className="flex items-center space-x-3">
-              <div className="w-2 h-2 bg-gray-300 rounded-full" />
+              <div className="w-2 h-2 bg-muted-blue rounded-full" />
               <Skeleton variant="text" height={14} width="90%" />
             </div>
           ))}

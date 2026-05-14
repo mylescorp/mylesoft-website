@@ -2,13 +2,13 @@ import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { ProductCard } from '@/components/ui/ProductCard'
 import { Icon } from '@/components/ui/Icon'
-import { 
-  Check, 
-  X, 
-  Star, 
-  Users, 
-  Shield, 
-  Zap, 
+import {
+  Check,
+  X,
+  Star,
+  Users,
+  Shield,
+  Zap,
   Clock,
   Award,
   ArrowLeft,
@@ -391,7 +391,7 @@ export default function ProductPage({ params }: ProductPageProps) {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-deep">
+        <section className="section bg-navy">
           <div className="section-padding">
             <div className="max-w-6xl mx-auto">
               <div className="text-white">
@@ -414,13 +414,13 @@ export default function ProductPage({ params }: ProductPageProps) {
 
                     {/* Product Name */}
                     <h1 className="heading-1 mb-4">{product.name}</h1>
-                    
+
                     {/* Tagline */}
                     <p className="text-2xl text-gold mb-6">{product.tagline}</p>
-                    
+
                     {/* Description */}
                     <p className="text-xl leading-8 text-light-blue mb-8">{product.description}</p>
-                    
+
                     {/* Key Features */}
                     <div className="space-y-3 mb-8">
                       {product.features.slice(0, 3).map((feature, index) => (
@@ -439,9 +439,9 @@ export default function ProductPage({ params }: ProductPageProps) {
                           Book a Demo
                         </Button>
                       </Link>
-                      <Link href="#pricing">
+                      <Link href="/pricing">
                         <Button variant="secondary" size="lg">
-                          View Pricing
+                          Review Plan Options
                         </Button>
                       </Link>
                     </div>
@@ -454,7 +454,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                         <Icon name={product.icon} size={120} className="text-gold" />
                       </div>
                     </div>
-                    
+
                     {/* Stats */}
                     <div className="grid grid-cols-2 gap-4 mt-8">
                       {Object.entries(product.stats).map(([key, value]) => (
@@ -482,65 +482,26 @@ export default function ProductPage({ params }: ProductPageProps) {
           </div>
         </section>
 
-        {/* Pricing Section */}
-        <section id="pricing" className="section bg-off-white">
+        {/* Pricing Source Section */}
+        <section id="plans" className="section bg-off-white">
           <div className="section-padding">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
+            <div className="max-w-4xl mx-auto">
+              <div className="rounded-[1.5rem] border border-slate-200 bg-white p-8 text-center shadow-card md:p-10">
                 <h2 className="heading-2 mb-4">Choose Your Plan</h2>
                 <p className="body-text max-w-2xl mx-auto">
-                  Flexible pricing options designed to fit organizations of all sizes. Start with a plan that matches your needs and scale as you grow.
+                  Plan options are maintained on the pricing page so package details, billing periods, and implementation notes stay consistent across the website.
                 </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {Object.values(product.pricing).map((plan, index) => (
-                  <div
-                    key={index}
-                    className={`bg-white rounded-[1.6rem] border border-slate-200 p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-gold/30 ${
-                      'popular' in plan && plan.popular ? 'ring-2 ring-gold-400 relative' : ''
-                    }`}
-                  >
-                    {'popular' in plan && plan.popular && (
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-navy px-4 py-1 rounded-full text-sm font-semibold">
-                        Most Popular
-                      </div>
-                    )}
-
-                    <div className="text-center mb-8">
-                      <h3 className="heading-3 mb-2">{plan.name}</h3>
-                      <div className="mb-4">
-                        {plan.price === 'Custom' ? (
-                          <div className="text-4xl font-bold text-navy-500">Custom</div>
-                        ) : (
-                            <div className="text-4xl font-display font-bold text-navy">
-                              KES {plan.price}
-                              <span className="text-lg font-normal text-medium-grey">/{plan.period}</span>
-                            </div>
-                        )}
-                      </div>
-                      <p className="body-text text-sm">{plan.description}</p>
-                    </div>
-
-                    <ul className="space-y-3 mb-8">
-                      {plan.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-start space-x-3">
-                          <Check className="text-gold-400 flex-shrink-0 mt-1" size={16} />
-                          <span className="text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <Link href={plan.price === 'Custom' ? '/contact' : '/book-demo'}>
-                      <Button 
-                        className="w-full" 
-                        variant={'popular' in plan && plan.popular ? 'primary' : 'secondary'}
-                      >
-                        {plan.price === 'Custom' ? 'Contact Sales' : 'Get Started'}
-                      </Button>
-                    </Link>
-                  </div>
-                ))}
+                <p className="mt-5 text-sm font-bold uppercase tracking-[1.4px] text-gold">
+                  Available options: {Object.values(product.pricing).map((plan) => plan.name).join(', ')}
+                </p>
+                <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                  <Link href="/pricing">
+                    <Button size="lg">Review Plan Options</Button>
+                  </Link>
+                  <Link href={product.demoUrl}>
+                    <Button variant="secondary" size="lg">Book a Demo</Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -580,14 +541,14 @@ export default function ProductPage({ params }: ProductPageProps) {
         </section>
 
         {/* Support Section */}
-        <section className="section bg-navy-deep">
+        <section className="section bg-navy">
           <div className="section-padding">
             <div className="max-w-4xl mx-auto text-center text-white">
               <h2 className="heading-2 mb-4">Need Help?</h2>
               <p className="text-xl leading-8 text-light-blue mb-8">
                 Our support team is here to help you get the most out of {product.name}.
               </p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gold/10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">

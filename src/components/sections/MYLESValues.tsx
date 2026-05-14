@@ -5,7 +5,7 @@ import { MYLES_VALUES } from '@/lib/constants/values'
 
 export function MYLESValues() {
   return (
-    <section className="relative py-20 bg-navy-deep overflow-hidden">
+    <section className="relative py-20 bg-navy overflow-hidden">
 
       {/* Grid texture */}
       <div className="absolute inset-0 pointer-events-none"
@@ -50,7 +50,7 @@ export function MYLESValues() {
           </div>
           <h2 className="font-display font-bold text-white text-4xl md:text-5xl mb-6">
             The{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+            <span className="text-white italic">
               M.Y.L.E.S.
             </span>{' '}
             Principle
@@ -144,7 +144,7 @@ export function MYLESValues() {
                   {item.keywords.map((kw) => (
                     <span
                       key={kw}
-                      className="px-2.5 py-1 bg-gold/8 border border-gold/20 rounded-full text-gold text-[10px] font-bold tracking-[0.3px]"
+                      className="px-2.5 py-1 bg-ice border border-navy/10 rounded-full text-navy text-[10px] font-bold tracking-[0.3px]"
                     >
                       {kw}
                     </span>

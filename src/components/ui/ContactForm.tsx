@@ -42,7 +42,7 @@ export function ContactForm() {
           <input
             name="name" type="text" required
             placeholder="John Mwangi"
-            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
+            className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
         <div>
@@ -52,7 +52,7 @@ export function ContactForm() {
           <input
             name="email" type="email" required
             placeholder="john@company.com"
-            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
+            className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
         <div>
@@ -62,7 +62,7 @@ export function ContactForm() {
           <input
             name="phone" type="tel"
             placeholder="+254 7XX XXX XXX"
-            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
+            className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
         <div>
@@ -72,7 +72,7 @@ export function ContactForm() {
           <input
             name="organisation" type="text"
             placeholder="Your school, company, or clinic"
-            className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
+            className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
       </div>
@@ -83,7 +83,7 @@ export function ContactForm() {
         </label>
         <select
           name="subject" required
-          className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
+          className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
         >
           <option value="">Select a subject</option>
           <option value="Product Demo Request">
@@ -112,7 +112,7 @@ export function ContactForm() {
         <textarea
           name="message" required rows={5}
           placeholder="Tell us how we can help you..."
-          className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200 resize-none"
+          className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200 resize-none"
         />
       </div>
 

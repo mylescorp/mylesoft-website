@@ -22,6 +22,8 @@ This repository contains the source code for the official MylesCorp Technologies
 
 The website serves as the primary marketing and information hub for MylesCorp, showcasing our products, services, team, company story, and contact information to prospective clients, partners, and investors across East Africa and beyond.
 
+Brand colour guidance lives in [docs/brand-colour-guidelines.md](docs/brand-colour-guidelines.md) for future landing page and SaaS UI work.
+
 ---
 
 ## 📄 Pages

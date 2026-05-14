@@ -18,7 +18,7 @@ export default function BookDemoPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay — always present on dark sections */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -47,7 +47,7 @@ export default function BookDemoPage() {
               background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow label */}
             <div className="flex items-center justify-center gap-3 mb-5">
@@ -61,14 +61,14 @@ export default function BookDemoPage() {
             {/* Main heading */}
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Book a{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+              <span className="text-white italic">
                 Demo
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Experience our AI-powered solutions firsthand with a personalized demo 
+              Experience our AI-powered solutions firsthand with a personalized demo
               tailored to your organisation&apos;s needs.
             </p>
 
@@ -89,12 +89,12 @@ export default function BookDemoPage() {
                 We offer different demo formats to meet your specific needs and interests.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Product Demo */}
               <div className="bg-white rounded-xl shadow-medium p-8 text-center hover:shadow-large transition-shadow">
-                <div className="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="brain" className="text-gold-400" size={40} />
+                <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="brain" className="text-gold" size={40} />
                 </div>
                 <h3 className="heading-3 mb-4">Product Demo</h3>
                 <p className="body-text mb-6">
@@ -118,8 +118,8 @@ export default function BookDemoPage() {
 
               {/* Consultation */}
               <div className="bg-white rounded-xl shadow-medium p-8 text-center hover:shadow-large transition-shadow">
-                <div className="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="users" className="text-gold-400" size={40} />
+                <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="users" className="text-gold" size={40} />
                 </div>
                 <h3 className="heading-3 mb-4">Strategic Consultation</h3>
                 <p className="body-text mb-6">
@@ -143,8 +143,8 @@ export default function BookDemoPage() {
 
               {/* Technical Support */}
               <div className="bg-white rounded-xl shadow-medium p-8 text-center hover:shadow-large transition-shadow">
-                <div className="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="settings" className="text-gold-400" size={40} />
+                <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="settings" className="text-gold" size={40} />
                 </div>
                 <h3 className="heading-3 mb-4">Technical Support</h3>
                 <p className="body-text mb-6">
@@ -184,8 +184,8 @@ export default function BookDemoPage() {
                 <h2 className="heading-2 mb-6">What to Expect</h2>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                      <Calendar size={24} className="text-gold-400" />
+                    <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Calendar size={24} className="text-gold" />
                     </div>
                     <div>
                       <h3 className="heading-3 mb-2">Pre-Demo Preparation</h3>
@@ -196,8 +196,8 @@ export default function BookDemoPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                      <Users size={24} className="text-gold-400" />
+                    <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Users size={24} className="text-gold" />
                     </div>
                     <div>
                       <h3 className="heading-3 mb-2">Live Demonstration</h3>
@@ -208,8 +208,8 @@ export default function BookDemoPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                      <Check size={24} className="text-gold-400" />
+                    <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Check size={24} className="text-gold" />
                     </div>
                     <div>
                       <h3 className="heading-3 mb-2">Q&A and Discussion</h3>
@@ -220,8 +220,8 @@ export default function BookDemoPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                      <Star size={24} className="text-gold-400" />
+                    <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Star size={24} className="text-gold" />
                     </div>
                     <div>
                       <h3 className="heading-3 mb-2">Follow-up Support</h3>
@@ -245,7 +245,7 @@ export default function BookDemoPage() {
                 Join 500+ organizations across East Africa who have transformed their operations with MylesCorp solutions.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
                 { number: '500+', label: 'Educational Institutions' },
@@ -258,7 +258,7 @@ export default function BookDemoPage() {
                 { number: '15+', label: 'Years Experience' }
               ].map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-3xl font-bold text-gold-400 mb-2">{stat.number}</div>
+                  <div className="text-3xl font-bold text-gold mb-2">{stat.number}</div>
                   <div className="text-navy-100">{stat.label}</div>
                 </div>
               ))}

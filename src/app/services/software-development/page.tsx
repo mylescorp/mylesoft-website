@@ -2,11 +2,11 @@ import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import Link from 'next/link'
-import { 
-  Users, 
-  Settings, 
-  Brain, 
-  Shield, 
+import {
+  Users,
+  Settings,
+  Brain,
+  Shield,
   TrendingUp,
   Clock,
   CheckCircle,
@@ -32,7 +32,7 @@ export default function SoftwareDevelopmentPage() {
     <Layout>
       <div className="min-h-screen">
         {/* PAGE HERO */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -59,7 +59,7 @@ export default function SoftwareDevelopmentPage() {
               background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow label */}
             <div className="flex items-center justify-center gap-3 mb-5">
@@ -73,7 +73,7 @@ export default function SoftwareDevelopmentPage() {
             {/* Main heading */}
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Software Built for
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+              <span className="text-white italic">
                 Your Business
               </span>
             </h1>
@@ -85,15 +85,15 @@ export default function SoftwareDevelopmentPage() {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href="/book-demo">
                 <Button className="bg-gold text-navy font-body font-bold text-[15px] tracking-[0.4px] px-9 py-4 rounded-md hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(199,150,57,0.3)] active:scale-[0.98] transition-all duration-200">
-                  Book a Free Consultation
+                  Book a Discovery Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <Link href="/book-demo">
-                <Button className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/20 hover:border-gold hover:text-gold transition-all duration-200">
-                  Book a Demo
+              <Link href="/contact">
+                <Button className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200">
+                  Request a Proposal
                 </Button>
               </Link>
             </div>
@@ -135,7 +135,7 @@ export default function SoftwareDevelopmentPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                   <div className="text-3xl font-bold text-gold mb-2">50+</div>
@@ -169,7 +169,7 @@ export default function SoftwareDevelopmentPage() {
                 Comprehensive software development services covering every aspect of your project.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
@@ -213,7 +213,7 @@ export default function SoftwareDevelopmentPage() {
                   description: "Detailed documentation for maintenance and knowledge transfer."
                 }
               ].map((feature, index) => (
-                <div key={index} className="bg-gray-50 rounded-xl p-8 hover:bg-gold/5 hover:shadow-lg transition-all duration-300 group">
+                <div key={index} className="bg-ice rounded-xl p-8 hover:bg-gold/5 hover:shadow-lg transition-all duration-300 group">
                   <div className="mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors">
                     {feature.title}
@@ -228,7 +228,7 @@ export default function SoftwareDevelopmentPage() {
         </section>
 
         {/* OUR PROCESS */}
-        <section className="py-20 bg-navy-deep">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
@@ -238,7 +238,7 @@ export default function SoftwareDevelopmentPage() {
                 A structured approach to ensure successful project delivery.
               </p>
             </div>
-            
+
             <div className="relative">
               <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gold/30 transform -translate-y-1/2"></div>
               <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
@@ -262,141 +262,31 @@ export default function SoftwareDevelopmentPage() {
           </div>
         </section>
 
-        {/* PACKAGES / PRICING */}
+        {/* PRICING SOURCE */}
         <section className="py-20 bg-off-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-lg md:p-10">
+              <div className="mb-4 text-[11px] font-bold uppercase tracking-[2.5px] text-gold">Tailored Proposal</div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-4">
-                Packages & Pricing
+                Scope the Right Development Plan
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Flexible pricing options to suit businesses of all sizes.
+              <p className="text-gray-600 max-w-2xl mx-auto leading-8">
+                Software projects vary by workflow, integrations, data model, and launch support. We review your requirements first, then prepare a clear proposal with the right delivery plan.
               </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Starter",
-                  price: "KES 80,000",
-                  description: "Simple web/mobile app",
-                  features: [
-                    "Basic web application",
-                    "Mobile-responsive design",
-                    "Core functionality",
-                    "3 months support",
-                    "Basic documentation"
-                  ],
-                  popular: false
-                },
-                {
-                  name: "Professional",
-                  price: "KES 250,000",
-                  description: "Multi-feature platform",
-                  features: [
-                    "Advanced web application",
-                    "Mobile app development",
-                    "API integrations",
-                    "6 months support",
-                    "Full documentation",
-                    "Performance optimization"
-                  ],
-                  popular: true
-                },
-                {
-                  name: "Enterprise",
-                  price: "KES 500,000+",
-                  description: "Full enterprise system",
-                  features: [
-                    "Custom enterprise solution",
-                    "Multi-platform support",
-                    "Advanced integrations",
-                    "12 months support",
-                    "Comprehensive documentation",
-                    "Training & onboarding",
-                    "Custom infrastructure"
-                  ],
-                  popular: false
-                }
-              ].map((plan, index) => (
-                <div key={index} className={`bg-white rounded-2xl p-8 shadow-lg relative ${plan.popular ? 'ring-2 ring-gold transform scale-105' : ''}`}>
-                  {plan.popular && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold text-navy px-4 py-1 rounded-full text-sm font-bold">
-                      Most Popular
-                    </div>
-                  )}
-                  <h3 className="text-2xl font-bold text-navy mb-2">{plan.name}</h3>
-                  <div className="text-3xl font-bold text-gold mb-2">{plan.price}</div>
-                  <p className="text-gray-600 mb-6">{plan.description}</p>
-                  <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-600 text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link href="/contact">
-                    <Button className={`w-full ${plan.popular ? 'bg-gold text-navy' : 'bg-navy text-white'} hover:opacity-90 transition-opacity`}>
-                      Get Started
-                    </Button>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* WHY MYLESCORP */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-4">
-                Why Choose MylesCorp
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Compare our approach with alternatives.
-              </p>
-            </div>
-            
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-navy text-white">
-                    <th className="text-left p-4">Feature</th>
-                    <th className="text-center p-4">MylesCorp</th>
-                    <th className="text-center p-4">WordPress Plugins</th>
-                    <th className="text-center p-4">Offshore Developers</th>
-                    <th className="text-center p-4">Local Freelancers</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { feature: "Custom Solutions", mylescorp: "✓", wordpress: "✗", offshore: "✓", freelancer: "✓" },
-                    { feature: "Local Support", mylescorp: "✓", wordpress: "✗", offshore: "✗", freelancer: "✓" },
-                    { feature: "Quality Assurance", mylescorp: "✓", wordpress: "✗", offshore: "?", freelancer: "?" },
-                    { feature: "Scalable Architecture", mylescorp: "✓", wordpress: "✗", offshore: "?", freelancer: "?" },
-                    { feature: "Documentation", mylescorp: "✓", wordpress: "✗", offshore: "✗", freelancer: "✗" },
-                    { feature: "Ongoing Support", mylescorp: "✓", wordpress: "?", offshore: "✗", freelancer: "✗" },
-                    { feature: "East African Context", mylescorp: "✓", wordpress: "✗", offshore: "✗", freelancer: "✓" },
-                    { feature: "Fixed Timeline", mylescorp: "✓", wordpress: "?", offshore: "✗", freelancer: "?" }
-                  ].map((row, index) => (
-                    <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                      <td className="p-4 font-medium">{row.feature}</td>
-                      <td className="p-4 text-center text-gold font-bold">{row.mylescorp}</td>
-                      <td className="p-4 text-center">{row.wordpress}</td>
-                      <td className="p-4 text-center">{row.offshore}</td>
-                      <td className="p-4 text-center">{row.freelancer}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <Link href="/pricing">
+                  <Button>Review Plan Options</Button>
+                </Link>
+                <Link href="/book-demo">
+                  <Button variant="secondary">Book a Consultation</Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
         {/* TESTIMONIALS */}
-        <section className="py-20 bg-navy-deep">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
@@ -406,7 +296,7 @@ export default function SoftwareDevelopmentPage() {
                 Hear what our clients say about working with us.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
@@ -447,7 +337,7 @@ export default function SoftwareDevelopmentPage() {
         </section>
 
         {/* CTA SECTION */}
-        <section className="py-20 bg-navy-deep">
+        <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
               Ready to Transform Your Business?
@@ -456,17 +346,17 @@ export default function SoftwareDevelopmentPage() {
               Transforming Industries, Empowering Generations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/contact">
+              <Link href="/book-demo">
                 <Button className="bg-gold text-navy font-body font-bold text-[15px] tracking-[0.4px] px-9 py-4 rounded-md hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(199,150,57,0.3)] active:scale-[0.98] transition-all duration-200">
-                  Book Free Consultation
+                  Book a Discovery Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <a 
+              <a
                 href="https://wa.me/254743993715?text=Hi%20MylesCorp!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/20 hover:border-gold hover:text-gold transition-all duration-200 inline-flex items-center"
+                className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200 inline-flex items-center"
               >
                 WhatsApp Us
               </a>

@@ -36,7 +36,7 @@ export function ScrollProgress() {
           height: '100%',
           width: `${progress}%`,
           background:
-            'linear-gradient(90deg, #C79639, #e0b055)',
+            'linear-gradient(90deg, #C79639, #A67C2E)',
           transition: 'width 0.05s linear',
         }}
       />

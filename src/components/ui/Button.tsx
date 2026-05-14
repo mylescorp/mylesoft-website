@@ -23,27 +23,27 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-navy-deep disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group'
-  
+
   const variants = {
     // Primary CTA Button - Gold on Navy
     primary: 'bg-gold text-navy hover:bg-gold-light hover:-translate-y-2 hover:shadow-gold focus:ring-gold active:scale-98 font-body font-bold tracking-[0.4px] btn-shine',
-    
+
     // Secondary Button - Navy background
     secondary: 'bg-navy text-white hover:bg-navy-dark focus:ring-navy shadow-card shadow-card-hover transform hover:-translate-y-1',
-    
+
     // Outline Button - Transparent with white border
-    outline: 'bg-transparent border border-white/20 text-white hover:border-gold hover:text-gold focus:ring-gold',
-    
+    outline: 'bg-transparent border border-white text-white hover:bg-white/10 hover:border-white focus:ring-gold',
+
     // Ghost Button
     ghost: 'text-light-blue hover:text-gold hover:bg-navy-dark/30 focus:ring-gold',
-    
+
     // Destructive Button
-    destructive: 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-500',
-    
+    destructive: 'bg-error text-white hover:bg-red-700 focus:ring-error',
+
     // Link Button
     link: 'text-gold hover:text-gold-light underline-offset-4 hover:underline focus:ring-gold p-0'
   }
-  
+
   const sizes = {
     xs: 'px-3 py-1.5 text-xs',
     sm: 'px-4 py-2 text-sm',

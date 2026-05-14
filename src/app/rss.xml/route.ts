@@ -76,7 +76,7 @@ export async function GET() {
   const currentDate = new Date().toISOString()
 
   const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" 
+<rss version="2.0"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:atom="http://www.w3.org/2005/Atom">
@@ -90,7 +90,7 @@ export async function GET() {
   <lastBuildDate>${currentDate}</lastBuildDate>
   <generator>MylesCorp Technologies RSS Generator</generator>
   <image>
-    <url>${siteUrl}/logo.png</url>
+    <url>${siteUrl}/mylescorp-logo.png</url>
     <title>MylesCorp Technologies</title>
     <link>${siteUrl}</link>
     <width>144</width>
@@ -111,10 +111,10 @@ export async function GET() {
         <img src="${post.image}" alt="${post.title}" style="max-width: 100%; height: auto;">
         <p><strong>Category:</strong> ${post.category}</p>
         <div>${post.content}</div>
-        <p><em>By ${post.author} | Published: ${new Date(post.publishedAt).toLocaleDateString('en-US', { 
-          year: 'numeric', 
-          month: 'long', 
-          day: 'numeric' 
+        <p><em>By ${post.author} | Published: ${new Date(post.publishedAt).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
         })}</em></p>
         <p><a href="${siteUrl}/blog/${post.slug}">Read the full article on MylesCorp Technologies</a></p>
       </div>

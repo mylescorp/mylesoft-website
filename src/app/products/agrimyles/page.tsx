@@ -28,7 +28,7 @@ export default function AgriMylesPage() {
         <StatsSection stats={AGRIMYLES_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="AgriMyles"
           description={AGRIMYLES_DATA.overview.description.split('\n\n')}
           stats={[
@@ -40,12 +40,12 @@ export default function AgriMylesPage() {
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Smart Farming Tools"
           description="6 powerful tools connecting farmers to knowledge, markets, and financial services."
           features={AGRIMYLES_DATA.features.map(f => ({
             ...f,
-            icon: f.icon === 'sprout' ? '🌱' : 
+            icon: f.icon === 'sprout' ? '🌱' :
                    f.icon === 'clipboard' ? '📊' :
                    f.icon === 'trending-up' ? '💰' :
                    f.icon === 'truck' ? '🚚' :
@@ -56,7 +56,7 @@ export default function AgriMylesPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Farm to Market in 5 Steps"
           description="From registration to getting paid in 5 simple steps."
           steps={AGRIMYLES_DATA.process}
@@ -64,7 +64,7 @@ export default function AgriMylesPage() {
         />
 
         {/* Pricing */}
-        <PricingSection 
+        <PricingSection
           title="Free for Farmers"
           description="Flexible pricing with free access for individual farmers."
           plans={AGRIMYLES_DATA.pricing.map(p => ({
@@ -77,14 +77,14 @@ export default function AgriMylesPage() {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Farmers Love AgriMyles"
           testimonials={AGRIMYLES_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* CTA */}
-        <CTASection 
+        <CTASection
           title="Transform Your Farm Today"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${AGRIMYLES_DATA.overview.stats[0].number} farmers across all 47 counties already using AgriMyles to grow smarter.`}

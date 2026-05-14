@@ -63,14 +63,14 @@ export function Search({ isOpen, onClose }: SearchProps) {
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-start justify-center pt-20">
-      <div 
+      <div
         ref={searchRef}
         className="w-full max-w-4xl mx-4 bg-white rounded-2xl shadow-2xl overflow-hidden fade-in"
       >
         {/* Search Header */}
         <div className="p-6 border-b border-light-grey">
           <div className="flex items-center space-x-4">
-            <SearchIcon className="text-gold-400" size={24} />
+            <SearchIcon className="text-gold" size={24} />
             <input
               type="text"
               value={query}
@@ -112,34 +112,34 @@ export function Search({ isOpen, onClose }: SearchProps) {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <Link
                 href="/products"
-                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-gold-50 transition-colors"
+                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-ice transition-colors"
                 onClick={onClose}
               >
-                <Briefcase className="text-gold-400 mb-2" size={24} />
+                <Briefcase className="text-gold mb-2" size={24} />
                 <span className="text-sm font-medium">Products</span>
               </Link>
               <Link
                 href="/blog"
-                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-gold-50 transition-colors"
+                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-ice transition-colors"
                 onClick={onClose}
               >
-                <FileText className="text-gold-400 mb-2" size={24} />
+                <FileText className="text-gold mb-2" size={24} />
                 <span className="text-sm font-medium">Blog</span>
               </Link>
               <Link
                 href="/careers"
-                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-gold-50 transition-colors"
+                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-ice transition-colors"
                 onClick={onClose}
               >
-                <Users className="text-gold-400 mb-2" size={24} />
+                <Users className="text-gold mb-2" size={24} />
                 <span className="text-sm font-medium">Careers</span>
               </Link>
               <Link
                 href="/contact"
-                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-gold-50 transition-colors"
+                className="flex flex-col items-center p-4 bg-off-white rounded-lg hover:bg-ice transition-colors"
                 onClick={onClose}
               >
-                <ArrowRight className="text-gold-400 mb-2" size={24} />
+                <ArrowRight className="text-gold mb-2" size={24} />
                 <span className="text-sm font-medium">Contact</span>
               </Link>
             </div>
@@ -155,13 +155,13 @@ function CustomHit({ hit }: { hit: any }) {
   const getCategoryIcon = (category: string) => {
     switch (category) {
       case 'product':
-        return <Briefcase size={16} className="text-gold-400" />
+        return <Briefcase size={16} className="text-gold" />
       case 'blog':
-        return <FileText size={16} className="text-gold-400" />
+        return <FileText size={16} className="text-gold" />
       case 'career':
-        return <Users size={16} className="text-gold-400" />
+        return <Users size={16} className="text-gold" />
       default:
-        return <SearchIcon size={16} className="text-gold-400" />
+        return <SearchIcon size={16} className="text-gold" />
     }
   }
 
@@ -209,7 +209,7 @@ function CustomHit({ hit }: { hit: any }) {
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center space-x-2 mb-1">
-            <span className="text-xs font-medium text-gold-600 uppercase tracking-wide">
+            <span className="text-xs font-medium text-navy uppercase tracking-wide">
               {getCategoryLabel(hit.category)}
             </span>
             {hit.tags && hit.tags.slice(0, 2).map((tag: string, index: number) => (

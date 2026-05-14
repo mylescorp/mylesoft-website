@@ -12,7 +12,7 @@ export function NewsletterSignup() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     if (!email) {
       setStatus('error')
       setMessage('Please enter your email address')
@@ -53,8 +53,8 @@ export function NewsletterSignup() {
   return (
     <div className="bg-navy-500 text-white rounded-2xl p-8">
       <div className="text-center mb-6">
-        <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <Mail className="text-gold-400" size={32} />
+        <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Mail className="text-gold" size={32} />
         </div>
         <h3 className="heading-3 mb-3">Stay Updated</h3>
         <p className="text-navy-200">
@@ -69,7 +69,7 @@ export function NewsletterSignup() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="w-full px-4 py-3 bg-white/10 border border-navy-400 rounded-lg text-white placeholder-navy-300 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent"
+            className="w-full px-4 py-3 bg-white/10 border border-navy-400 rounded-lg text-white placeholder-navy-300 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
             disabled={isSubmitting}
           />
           <Mail className="absolute right-3 top-1/2 -translate-y-1/2 text-navy-300" size={20} />
@@ -102,11 +102,11 @@ export function NewsletterSignup() {
       <div className="mt-6 pt-6 border-t border-navy-400">
         <p className="text-xs text-navy-300 text-center">
           By subscribing, you agree to our{' '}
-          <a href="/legal/privacy" className="text-gold-400 hover:text-gold-300 underline">
+          <a href="/legal/privacy" className="text-gold hover:text-gold-light underline">
             Privacy Policy
           </a>{' '}
           and{' '}
-          <a href="/legal/terms" className="text-gold-400 hover:text-gold-300 underline">
+          <a href="/legal/terms" className="text-gold hover:text-gold-light underline">
             Terms of Service
           </a>
           . Unsubscribe at any time.

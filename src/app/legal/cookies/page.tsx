@@ -8,7 +8,7 @@ export default function CookiePolicy() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="section bg-navy-deep">
+        <section className="section bg-navy">
           <div className="section-padding">
             <div className="text-center text-white">
               <h1 className="heading-1 mb-6">Cookie Policy</h1>
@@ -28,11 +28,11 @@ export default function CookiePolicy() {
                   <h2 className="heading-2 mb-4">1. What Are Cookies</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      Cookies are small text files that are stored on your device (computer, tablet, or mobile) 
+                      Cookies are small text files that are stored on your device (computer, tablet, or mobile)
                       when you visit a website. They help the website remember information about your visit.
                     </p>
                     <p>
-                      Cookies are widely used to make websites work more efficiently and to provide information 
+                      Cookies are widely used to make websites work more efficiently and to provide information
                       to website owners.
                     </p>
                   </div>
@@ -109,11 +109,11 @@ export default function CookiePolicy() {
                   <h2 className="heading-2 mb-4">4. Managing Your Cookie Preferences</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      You can control and/or delete cookies as you wish. You can delete all cookies that are 
+                      You can control and/or delete cookies as you wish. You can delete all cookies that are
                       already on your device and you can set most browsers to prevent them from being placed.
                     </p>
-                    <div className="bg-gold-50 p-6 rounded-[1.4rem] border border-gold-200 shadow-soft">
-                      <p className="font-semibold text-gold-600 mb-2">To manage cookies:</p>
+                    <div className="bg-ice p-6 rounded-[1.4rem] border border-gold-200 shadow-soft">
+                      <p className="font-semibold text-navy mb-2">To manage cookies:</p>
                       <ul className="list-disc pl-6 space-y-1 text-sm">
                         <li><strong>Chrome:</strong> Settings → Privacy and security → Cookies and other site data</li>
                         <li><strong>Firefox:</strong> Options → Privacy & Security → Cookies and Site Data</li>
@@ -128,7 +128,7 @@ export default function CookiePolicy() {
                   <h2 className="heading-2 mb-4">5. Third-Party Cookies</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      In some special cases we also use cookies provided by trusted third parties. The following 
+                      In some special cases we also use cookies provided by trusted third parties. The following
                       third-party cookies may be used on our website:
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
@@ -144,7 +144,7 @@ export default function CookiePolicy() {
                   <h2 className="heading-2 mb-4">6. Cookie Consent</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      When you first visit our website, you will see a cookie consent banner. This banner allows 
+                      When you first visit our website, you will see a cookie consent banner. This banner allows
                       you to:
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
@@ -163,7 +163,7 @@ export default function CookiePolicy() {
                   <h2 className="heading-2 mb-4">7. Updates to This Policy</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      We may update this Cookie Policy from time to time to reflect changes in our use of cookies 
+                      We may update this Cookie Policy from time to time to reflect changes in our use of cookies
                       or for other operational, legal, or regulatory reasons.
                     </p>
                     <p>

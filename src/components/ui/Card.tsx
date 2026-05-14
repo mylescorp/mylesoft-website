@@ -22,11 +22,11 @@ interface CardIconProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 // Main Card Component
-export function Card({ 
-  className, 
-  variant = 'dark', 
-  children, 
-  ...props 
+export function Card({
+  className,
+  variant = 'dark',
+  children,
+  ...props
 }: CardProps) {
   const variants = {
     dark: 'bg-navy-dark border border-gold/20 rounded-xl p-8 relative overflow-hidden hover:-translate-y-6 hover:border-gold/50 hover:shadow-xl transition-all duration-300 group',
@@ -34,7 +34,7 @@ export function Card({
   }
 
   return (
-    <div 
+    <div
       className={cn(variants[variant], className)}
       {...props}
     >
@@ -48,13 +48,13 @@ export function Card({
 }
 
 // Card Header
-export function CardHeader({ 
-  className, 
-  children, 
-  ...props 
+export function CardHeader({
+  className,
+  children,
+  ...props
 }: CardHeaderProps) {
   return (
-    <div 
+    <div
       className={cn('mb-6', className)}
       {...props}
     >
@@ -64,13 +64,13 @@ export function CardHeader({
 }
 
 // Card Content
-export function CardContent({ 
-  className, 
-  children, 
-  ...props 
+export function CardContent({
+  className,
+  children,
+  ...props
 }: CardContentProps) {
   return (
-    <div 
+    <div
       className={cn('', className)}
       {...props}
     >
@@ -80,11 +80,11 @@ export function CardContent({
 }
 
 // Card Icon Block
-export function CardIcon({ 
-  className, 
-  children, 
+export function CardIcon({
+  className,
+  children,
   size = 'md',
-  ...props 
+  ...props
 }: CardIconProps) {
   const sizes = {
     sm: 'w-12 h-12 text-xl',
@@ -93,7 +93,7 @@ export function CardIcon({
   }
 
   return (
-    <div 
+    <div
       className={cn(
         'flex items-center justify-center rounded-xl bg-gold/10 border border-gold/20 text-gold mb-6',
         sizes[size],

@@ -1,5 +1,5 @@
-// MylesCorp Technologies Design System v4 - rn Professional UI
-// Enhanced design tokens for rn, professional appearance
+// MylesCorp Technologies Design System v4
+// Brand colour system: 60% navy, 30% white/ice, 10% gold.
 
 export const colors = {
   // Brand Colors - Enhanced palette
@@ -21,13 +21,13 @@ export const colors = {
     200: '#FDE68A',
     300: '#FCD34D',
     400: '#C79639',  // Gold (Primary)
-    500: '#A67C2A',  // Gold (Hover)
+    500: '#A67C2E',  // Gold (Hover)
     600: '#92400E',
     700: '#78350F',
     800: '#451A03',
     900: '#1C0F00',
   },
-  
+
   // rn semantic colors
   white: '#FFFFFF',
   black: '#000000',
@@ -43,7 +43,7 @@ export const colors = {
     800: '#1F2937',
     900: '#111827',
   },
-  
+
   // Status colors
   success: {
     50: '#F0FDF4',
@@ -75,8 +75,8 @@ export const colors = {
     200: '#FECACA',
     300: '#FCA5A5',
     400: '#F87171',
-    500: '#EF4444',
-    600: '#DC2626',
+    500: '#D32F2F',
+    600: '#B71C1C',
     700: '#B91C1C',
     800: '#991B1B',
     900: '#7F1D1D',
@@ -93,21 +93,21 @@ export const colors = {
     800: '#075985',
     900: '#0C4A6E',
   },
-  
+
   // Legacy color mappings for compatibility
   'light-blue': '#C7D7EF',
-  'off-white': '#F8FAFC',
+  'off-white': '#EEF2F8',
   'dark-grey': '#212121',
   'medium-grey': '#545454',
   'light-grey': '#E8EDF4',
   'success-green': '#2EA44F',
   'warning-amber': '#F59E0B',
-  
+
   // Semantic tokens
   'navy-500': '#1A395B',
   'navy-100': '#C7D7EF',
   'gold-400': '#C79639',
-  'gold-500': '#A67C2A',
+  'gold-500': '#A67C2E',
   'gold-100': '#FEF3C7',
 } as const
 
@@ -117,7 +117,7 @@ export const typography = {
     'inter': '"Inter", system-ui, sans-serif',
     'jetbrains-mono': '"JetBrains Mono", monospace',
   },
-  
+
   // Exact typography specifications from design system
   sizes: {
     h1: '48px',        // H1 Page Title - 48–64px
@@ -132,7 +132,7 @@ export const typography = {
     nav: '15px',       // Navigation - 15px
     code: '14px',      // Code - 14px
   },
-  
+
   weights: {
     h1: '800',         // H1 Page Title - 800 ExtraBold
     h2: '700',         // H2 Section Title - 700 Bold
@@ -143,7 +143,7 @@ export const typography = {
     nav: '500',        // Navigation - 500 Medium
     code: '400',       // Code - 400 Regular
   },
-  
+
   lineHeights: {
     tight: '1.25',
     normal: '1.5',
@@ -186,7 +186,7 @@ export const animations = {
     normal: '300ms',
     slow: '500ms',
   },
-  
+
   easings: {
     ease: 'cubic-bezier(0.4, 0, 0.2, 1)',
     easeIn: 'cubic-bezier(0, 0, 0.2, 1)',
@@ -208,7 +208,7 @@ export const components = {
   button: {
     primary: {
       background: colors.gold[400],
-      text: colors.white,
+      text: colors.navy[500],
       hover: colors.gold[500],
       padding: '0.75rem 2rem', // px-8 py-3 = 12px 32px
       borderRadius: borderRadius.full,
@@ -228,7 +228,7 @@ export const components = {
       transition: 'all 150ms ease',
     },
   },
-  
+
   card: {
     product: {
       background: colors.white,
@@ -260,7 +260,7 @@ export const components = {
       name: colors.navy[500], // navy name
     },
   },
-  
+
   navigation: {
     sticky: 'sticky top-0',
     background: colors.white,
@@ -273,22 +273,22 @@ export const components = {
     },
     transition: 'all 150ms ease',
   },
-  
+
   form: {
     input: {
       borderRadius: borderRadius['2xl'], // rounded-xl
       focus: {
-        ring: `2px solid ${colors.navy[500]}`, // navy focus ring
+        ring: `2px solid ${colors.gold[400]}`, // gold focus ring
       },
       border: `1px solid ${colors.gray[200]}`,
       padding: '0.75rem 1rem',
     },
     submit: {
       background: colors.gold[400], // gold submit
-      color: colors.white,
+      color: colors.navy[500],
     },
   },
-  
+
   stats: {
     counter: {
       number: {

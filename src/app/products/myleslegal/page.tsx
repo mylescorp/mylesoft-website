@@ -83,14 +83,14 @@ const MYLESLEGAL_DATA = {
   pricing: [
     {
       name: 'Starter',
-      price: 'KES 5,000/month',
+      price: 'KSh 5,000/month',
       description: 'Perfect for solo practitioners',
       features: ['Up to 3 users', 'Basic case management', 'Document storage (5GB)', 'Email support', 'Mobile app access'],
       popular: false
     },
     {
       name: 'Professional',
-      price: 'KES 15,000/month',
+      price: 'KSh 15,000/month',
       description: 'Ideal for growing firms',
       features: ['Up to 15 users', 'Advanced case management', 'Document storage (50GB)', 'Priority support', 'Client portal', 'Time tracking', 'Basic reporting', 'Most Popular'],
       popular: true
@@ -124,14 +124,14 @@ export default function MylesLegalPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+        <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
           <div className="absolute inset-0 pointer-events-none"
             style={{
               backgroundImage: `linear-gradient(rgba(199,150,57,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(199,150,57,0.04) 1px, transparent 1px)`,
               backgroundSize: '64px 64px',
             }}
           />
-          
+
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-5">
               <div className="w-8 h-0.5 bg-gold" />
@@ -140,22 +140,22 @@ export default function MylesLegalPage() {
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
-            
+
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               {MYLESLEGAL_DATA.overview.title}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic block mt-2">
+              <span className="text-white italic block mt-2">
                 {MYLESLEGAL_DATA.overview.tagline}
               </span>
             </h1>
-            
+
             <p className="font-body font-light text-light-blue text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-[1.7]">
               {MYLESLEGAL_DATA.overview.description}
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link href="/book-demo">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   variant="primary"
                   className="px-8 py-4 text-sm font-semibold shadow-lg hover:shadow-xl"
                 >
@@ -163,16 +163,16 @@ export default function MylesLegalPage() {
                 </Button>
               </Link>
               <Link href="/pricing">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   variant="outline"
-                  className="px-8 py-4 text-sm font-semibold border-gold/50 text-gold hover:border-gold hover:bg-gold hover:text-navy"
+                  className="px-8 py-4 text-sm font-semibold border-white text-white hover:border-white hover:bg-white/10"
                 >
                   View Pricing
                 </Button>
               </Link>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               {MYLESLEGAL_DATA.overview.stats.map((stat, index) => (
                 <div key={index} className="text-center">
@@ -185,14 +185,14 @@ export default function MylesLegalPage() {
         </section>
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title={MYLESLEGAL_DATA.overview.title}
           description={MYLESLEGAL_DATA.overview.description}
           stats={MYLESLEGAL_DATA.overview.stats}
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Powerful Features for Modern Law Firms"
           description="Everything you need to manage your practice efficiently and grow your client base."
           features={MYLESLEGAL_DATA.features}
@@ -200,7 +200,7 @@ export default function MylesLegalPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Up and Running in 5 Steps"
           description="From sign-up to managing your law firm digitally — a clear and simple onboarding process."
           steps={MYLESLEGAL_DATA.process}
@@ -208,13 +208,13 @@ export default function MylesLegalPage() {
         />
 
         {/* Targets */}
-        <TargetsSection 
+        <TargetsSection
           title="Built for Every Law Firm"
           targets={MYLESLEGAL_DATA.targets}
         />
 
         {/* Pricing */}
-        <PricingSection 
+        <PricingSection
           title="Simple, Transparent Pricing"
           description="Choose the perfect plan for your law firm. All plans include free setup and support."
           plans={MYLESLEGAL_DATA.pricing.map(p => ({
@@ -227,14 +227,14 @@ export default function MylesLegalPage() {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="Success Stories"
           testimonials={MYLESLEGAL_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* CTA */}
-        <CTASection 
+        <CTASection
           title="Ready to Transform Your Law Practice?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESLEGAL_DATA.overview.stats[0].number} law firms across East Africa already using MylesLegal.`}

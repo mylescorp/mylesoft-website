@@ -29,7 +29,7 @@ export default function EduMylesPage() {
         <StatsSection stats={EDUMYLES_DATA.overview.stats} />
 
         {/* Overview */}
-        <OverviewSection 
+        <OverviewSection
           title="EduMyles"
           description={EDUMYLES_DATA.overview.description.split('\n\n')}
           stats={[
@@ -43,12 +43,12 @@ export default function EduMylesPage() {
         />
 
         {/* Features */}
-        <FeaturesSection 
+        <FeaturesSection
           title="Everything Your School Needs"
           description="8 powerful modules covering every aspect of school administration — all in one platform."
           features={EDUMYLES_DATA.features.map(f => ({
             ...f,
-            icon: f.icon === 'users' ? '👥' : 
+            icon: f.icon === 'users' ? '👥' :
                    f.icon === 'credit-card' ? '💳' :
                    f.icon === 'file-text' ? '📝' :
                    f.icon === 'check-circle' ? '✅' :
@@ -61,7 +61,7 @@ export default function EduMylesPage() {
         />
 
         {/* Process */}
-        <ProcessSection 
+        <ProcessSection
           title="Up and Running in 5 Steps"
           description="From sign-up to managing your school digitally — a clear and simple onboarding process."
           steps={EDUMYLES_DATA.process}
@@ -69,15 +69,15 @@ export default function EduMylesPage() {
         />
 
         {/* Targets */}
-        <TargetsSection 
+        <TargetsSection
           title="Built for Every School"
           targets={EDUMYLES_DATA.targets}
         />
 
         {/* Pricing */}
-        <PricingSection 
+        <PricingSection
           title="Simple, Transparent Pricing"
-          description="All plans include free setup, training, and ongoing support. No hidden fees."
+          description="Current plan details are maintained on the pricing page and confirmed during consultation."
           plans={EDUMYLES_DATA.pricing.map(p => ({
             ...p,
             price: p.price.split('/')[0],
@@ -88,14 +88,14 @@ export default function EduMylesPage() {
         />
 
         {/* Testimonials */}
-        <TestimonialsSection 
+        <TestimonialsSection
           title="What Schools Say"
           testimonials={EDUMYLES_DATA.testimonials}
           centerHeader={true}
         />
 
         {/* CTA */}
-        <CTASection 
+        <CTASection
           title="Ready to Transform Your School?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${EDUMYLES_DATA.overview.stats[0].number} schools across East Africa already using EduMyles. Book a free demo today.`}

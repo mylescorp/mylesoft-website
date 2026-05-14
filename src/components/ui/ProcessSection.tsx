@@ -17,7 +17,7 @@ interface ProcessSectionProps {
 
 export function ProcessSection({ title, description, steps, centerHeader = false }: ProcessSectionProps) {
   return (
-    <section className="py-20 bg-navy-deep">
+    <section className="py-20 bg-navy">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={centerHeader ? 'text-center' : ''}>
           <div className={`flex items-center gap-3 mb-4 ${centerHeader ? 'justify-center' : ''}`}>
@@ -43,7 +43,7 @@ export function ProcessSection({ title, description, steps, centerHeader = false
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative rounded-[1.5rem] border border-white/10 bg-white/5 p-6 text-center shadow-card backdrop-blur-sm"
+              className="relative rounded-lg border border-white/10 bg-white/5 p-6 text-center shadow-card backdrop-blur-sm"
             >
               <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-gold bg-navy text-gold shadow-gold">
                 <span className="font-display font-bold text-2xl">

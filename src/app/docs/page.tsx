@@ -11,7 +11,7 @@ export const metadata = {
 export default function DocsPage() {
   return (
     <Layout>
-      <section className="relative py-24 md:py-32 overflow-hidden bg-navy-deep">
+      <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
         {/* Grid texture overlay — always present on dark sections */}
         <div className="absolute inset-0 pointer-events-none"
           style={{
@@ -40,7 +40,7 @@ export default function DocsPage() {
             background: 'linear-gradient(90deg, transparent, #C79639, transparent)',
           }}
         />
-        
+
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <SimpleReveal delay={0.2}>
             {/* Eyebrow label */}
@@ -55,14 +55,14 @@ export default function DocsPage() {
             {/* Main heading */}
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
               Developer{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">
+              <span className="text-white italic">
                 Docs
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Comprehensive guides, API references, and tutorials to help you get the most 
+              Comprehensive guides, API references, and tutorials to help you get the most
               out of MylesCorp products.
             </p>
 
@@ -73,14 +73,14 @@ export default function DocsPage() {
                 Browse Documentation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
-              <button className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/20 hover:border-gold hover:text-gold transition-all duration-200">
+              <button className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200">
                 API Reference
               </button>
             </div>
           </SimpleReveal>
         </div>
       </section>
-      
+
       <SimpleReveal delay={0.4}>
         <div className="mt-16 text-center">
           <p className="font-body text-muted-blue text-sm">

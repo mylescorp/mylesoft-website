@@ -7,14 +7,15 @@ import Link from 'next/link'
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg'
   className?: string
-  fallbackColor?: 'navy' | 'gold'
 }
 
-export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: LogoProps) {
+const LOGO_SRC = '/mylescorp-logo.png'
+
+export function Logo({ size = 'md', className = '' }: LogoProps) {
   const sizeClasses = {
-    sm: 'w-16 h-16',
-    md: 'w-20 h-20', 
-    lg: 'w-28 h-28'
+    sm: 'w-12 h-12',
+    md: 'w-14 h-14',
+    lg: 'w-16 h-16'
   }
 
   const fallbackSizeClasses = {
@@ -23,20 +24,19 @@ export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: Lo
     lg: 'text-2xl'
   }
 
-  const fallbackBgClasses = {
-    navy: 'from-navy-500 to-navy-600',
-    gold: 'from-gold-400 to-gold-500'
-  }
-
   return (
-    <Link href="/" className={`${sizeClasses[size]} ${className} flex-shrink-0 rounded-none border-0 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 logo-no-border`}>
+    <Link
+      href="/"
+      aria-label="MylesCorp Technologies home"
+      className={`${sizeClasses[size]} ${className} flex-shrink-0 rounded-none border-0 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 logo-no-border`}
+    >
       <Image
-        src="/logo.png"
+        src={LOGO_SRC}
         alt="MylesCorp Technologies Ltd"
-        width={140}
-        height={108}
+        width={96}
+        height={96}
         priority
-        className="h-24 w-auto object-contain rounded-none border-0 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0"
+        className="h-full w-full object-contain rounded-none border-0 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0"
         style={{
           border: 'none !important',
           outline: 'none !important',
@@ -51,7 +51,7 @@ export function Logo({ size = 'md', className = '', fallbackColor = 'navy' }: Lo
           }
         }}
       />
-      <div 
+      <div
         className={`w-full h-full flex items-center justify-center rounded-none`}
         style={{display: 'none'}}
       >

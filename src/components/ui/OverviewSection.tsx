@@ -37,7 +37,7 @@ export function OverviewSection({ title, description, stats }: OverviewSectionPr
             </div>
           </div>
 
-          <div className="rounded-[1.75rem] border border-gold/20 bg-navy-deep p-6 sm:p-8 shadow-card">
+          <div className="rounded-[1.75rem] border border-gold/20 bg-navy p-6 sm:p-8 shadow-card">
             <div className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
                 <div
