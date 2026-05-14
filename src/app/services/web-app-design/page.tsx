@@ -355,14 +355,9 @@ export default function WebAppDesignPage() {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <a
-                href="https://wa.me/254743993715?text=Hi%20MylesCorp!%20I%20found%20you%20on%20your%20website%20and%20would%20like%20to%20learn%20more%20about%20your%20products."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200 inline-flex items-center"
-              >
-                WhatsApp Us
-              </a>
+              <Link href="/contact" className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200 inline-flex items-center justify-center">
+                Request a Proposal
+              </Link>
             </div>
             <div className="text-light-blue text-sm">
               <p>Email: info@mylescorptech.com | Phone: +254 743 993 715</p>

@@ -2,6 +2,7 @@ import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import { Palette, Smartphone, Users, Zap, Target, Check } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'UI/UX Design Services | MylesCorp Technologies',
@@ -142,20 +143,24 @@ export default function UIUXDesignPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button
-                size="lg"
-                variant="primary"
-                className="px-8 py-4 text-sm font-semibold shadow-lg hover:shadow-xl"
-              >
-                Start Your Project
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="px-8 py-4 text-sm font-semibold border-white text-white hover:border-white hover:bg-white/10"
-              >
-                View Portfolio
-              </Button>
+              <Link href="/book-demo">
+                <Button
+                  size="lg"
+                  variant="primary"
+                  className="px-8 py-4 text-sm font-semibold shadow-lg hover:shadow-xl"
+                >
+                  Book a Discovery Call
+                </Button>
+              </Link>
+              <Link href="/portfolio">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8 py-4 text-sm font-semibold border-white text-white hover:border-white hover:bg-white/10"
+                >
+                  View Portfolio
+                </Button>
+              </Link>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
@@ -231,20 +236,24 @@ export default function UIUXDesignPage() {
               Let's create something amazing together. Contact us for a free design consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                variant="primary"
-                className="px-8 py-4 text-sm font-semibold"
-              >
-                Start Your Project
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="px-8 py-4 text-sm font-semibold border-white/80 text-white hover:border-white hover:bg-white/10"
-              >
-                WhatsApp Us
-              </Button>
+              <Link href="/book-demo">
+                <Button
+                  size="lg"
+                  variant="primary"
+                  className="px-8 py-4 text-sm font-semibold"
+                >
+                  Book a Discovery Call
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8 py-4 text-sm font-semibold border-white/80 text-white hover:border-white hover:bg-white/10"
+                >
+                  Request a Proposal
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

@@ -340,7 +340,7 @@ export default function WebHostingPage() {
                   <Button>Review Plan Options</Button>
                 </Link>
                 <Link href="/book-demo">
-                  <Button variant="secondary">Book a Consultation</Button>
+                  <Button variant="secondary">Book a Discovery Call</Button>
                 </Link>
               </div>
             </div>
