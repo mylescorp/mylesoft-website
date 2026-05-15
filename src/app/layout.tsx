@@ -52,10 +52,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.mylescorptech.com'),
   icons: {
     icon: [
-      { url: '/favicon-16x16.png?v=4', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png?v=4', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png?v=5', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png?v=5', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-192x192.png?v=5', sizes: '192x192', type: 'image/png' },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: '/apple-touch-icon.png?v=5',
   },
   formatDetection: {
     email: false,
@@ -111,11 +112,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://vercel.live" />
 
         {/* Favicon */}
-        <link rel="icon" type="image/png" href="/favicon-16x16.png?v=4" sizes="16x16" />
-        <link rel="icon" type="image/png" href="/favicon-32x32.png?v=4" sizes="32x32" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="192x192" />
-        <link rel="shortcut icon" href="/favicon-32x32.png?v=4" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png?v=5" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png?v=5" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-192x192.png?v=5" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5" sizes="180x180" />
+        <link rel="shortcut icon" href="/favicon-32x32.png?v=5" />
 
         {/* SEO */}
         <link rel="canonical" href="https://www.mylescorptech.com" />
