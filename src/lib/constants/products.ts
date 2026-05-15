@@ -623,5 +623,16 @@ export const CORE_PRODUCTS = [
     href: '/products/mylescrm',
     status: 'live' as const,
     pricing: MYLESCRM_DATA.pricing
+  },
+  {
+    name: 'AgriMyles',
+    category: 'Agriculture',
+    sector: 'Agriculture',
+    description: 'Agritech platform for farmers, cooperatives, and agribusiness teams with AI crop advisory, market access, supply chain tools, and M-Pesa payments.',
+    icon: 'sprout',
+    features: ['AI Crop Advisory', 'Market Price Linkage', 'Cooperative Management', 'M-Pesa Payments'],
+    href: '/products/agrimyles',
+    status: 'live' as const,
+    pricing: AGRIMYLES_DATA.pricing
   }
 ]

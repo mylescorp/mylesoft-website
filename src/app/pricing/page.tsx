@@ -12,7 +12,7 @@ import { Check } from 'lucide-react'
 
 export const metadata = {
   title: 'Pricing — Products & Services | MylesCorp',
-  description: 'Current MylesCorp KSh pricing for EduMyles, EduRyde, MylesCRM, websites, software development, cloud solutions, hosting, UI/UX, and IT consulting.',
+  description: 'Current MylesCorp KSh pricing for EduMyles, EduRyde, MylesCRM, AgriMyles, websites, software development, cloud solutions, hosting, UI/UX, and IT consulting.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/pricing',
   },
@@ -26,7 +26,7 @@ const PRICING_DATA = {
       'Product and service pricing is shared with the matching page, so sales conversations, service pages, and pricing tables stay aligned.'
     ],
     stats: [
-      { number: '3', label: 'Core Products' },
+      { number: '4', label: 'Core Products' },
       { number: '7', label: 'Professional Services' },
       { number: '30+', label: 'Published Plans' },
       { number: '20%', label: 'Annual Discount' },
@@ -60,6 +60,7 @@ const PRICING_DATA = {
     'Schools - EduMyles for administration, academics, fees, and parent communication',
     'School Transport Teams - EduRyde for tracking, routes, and parent notifications',
     'Growing Businesses - MylesCRM for leads, customers, invoicing, and sales visibility',
+    'Agricultural Teams - AgriMyles for crop advisory, market access, cooperatives, and supply chains',
     'Organisations - websites, software, cloud, hosting, design, and consulting services'
   ]
 }

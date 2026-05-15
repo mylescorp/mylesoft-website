@@ -3,63 +3,19 @@ import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { ProductCard } from '@/components/ui/ProductCard'
 import { StaggerReveal } from '@/components/ui/ScrollReveal'
+import { CORE_PRODUCTS } from '@/lib/constants/products'
 
 export const metadata = {
-  title: 'Products, EduMyles EduRyde and MylesCRM | MylesCorp',
-  description: 'Explore the MylesCorp product portfolio: EduMyles for school management, EduRyde for school transport, and MylesCRM for business customer management.',
+  title: 'Products, EduMyles EduRyde MylesCRM and AgriMyles | MylesCorp',
+  description: 'Explore the MylesCorp product portfolio: EduMyles for school management, EduRyde for school transport, MylesCRM for business customer management, and AgriMyles for agricultural technology.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products',
   },
 }
 
-const portfolioProducts = [
-  {
-    name: 'EduMyles',
-    category: 'School Management',
-    description: 'A complete school management system for admissions, academics, fees, reporting, parent communication, and daily operations.',
-    icon: 'graduation-cap',
-    features: [
-      'Student information and admissions',
-      'CBC-ready academics and reports',
-      'Fees, invoicing, and parent portal',
-      'Attendance and performance analytics',
-    ],
-    status: 'live' as const,
-    href: '/products/edumyles',
-  },
-  {
-    name: 'EduRyde',
-    category: 'School Transport',
-    description: 'A modern transport management platform for school buses, live tracking, routes, driver oversight, and parent safety updates.',
-    icon: 'bus',
-    features: [
-      'Real-time GPS tracking',
-      'Route planning and optimization',
-      'Parent notifications and trip alerts',
-      'Driver and vehicle management',
-    ],
-    status: 'live' as const,
-    href: '/products/eduryde',
-  },
-  {
-    name: 'MylesCRM',
-    category: 'Business CRM',
-    description: 'A practical CRM for African businesses managing leads, sales pipelines, customer follow-ups, automation, and performance reporting.',
-    icon: 'users',
-    features: [
-      'Lead and contact management',
-      'Sales pipeline tracking',
-      'Customer follow-up workflows',
-      'Dashboards and business reports',
-    ],
-    status: 'live' as const,
-    href: '/products/mylescrm',
-  },
-]
-
 const stats = [
-  { value: '3', label: 'Active products' },
-  { value: '2', label: 'Core markets' },
+  { value: '4', label: 'Active products' },
+  { value: '3', label: 'Core markets' },
   { value: '24/7', label: 'Support coverage' },
 ]
 
@@ -74,10 +30,10 @@ export default function ProductsPage() {
               Product Portfolio
             </p>
             <h1 className="font-display text-[clamp(2.7rem,6vw,5.5rem)] font-bold leading-[0.95] text-white">
-              Three focused products for serious growth.
+              Four focused products for serious growth.
             </h1>
             <p className="mt-6 max-w-2xl text-[1.05rem] leading-8 text-light-blue">
-              EduMyles, EduRyde, and MylesCRM bring MylesCorp&apos;s AI-powered thinking into the workflows schools and businesses use every day.
+              EduMyles, EduRyde, MylesCRM, and AgriMyles bring MylesCorp&apos;s AI-powered thinking into the workflows schools, businesses, and agricultural teams use every day.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link href="/book-demo">
@@ -114,15 +70,15 @@ export default function ProductsPage() {
               Current Portfolio
             </p>
             <h2 className="font-display text-[clamp(2.1rem,4vw,3.5rem)] font-bold leading-tight text-navy">
-              Built around education, transport, and customer operations.
+              Built around education, transport, agriculture, and customer operations.
             </h2>
             <p className="mt-5 text-[1rem] leading-8 text-dark-grey">
               Each product has its own page with details, capabilities, and a direct path to start a conversation.
             </p>
           </div>
 
-          <StaggerReveal className="grid gap-6 lg:grid-cols-3">
-            {portfolioProducts.map((product) => (
+          <StaggerReveal className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {CORE_PRODUCTS.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
           </StaggerReveal>
@@ -140,7 +96,7 @@ export default function ProductsPage() {
                 See the right product in context.
               </h2>
               <p className="mt-3 max-w-2xl text-[1rem] leading-7 text-light-blue">
-                Tell us your workflow and we will show how EduMyles, EduRyde, or MylesCRM fits your team.
+                Tell us your workflow and we will show how the right MylesCorp product fits your team.
               </p>
             </div>
             <Link href="/book-demo">

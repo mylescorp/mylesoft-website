@@ -14,6 +14,7 @@ import {
   MapPin,
   MonitorSmartphone,
   ShieldCheck,
+  Sprout,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
@@ -23,14 +24,14 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Portfolio | MylesCorp Technologies',
   description:
-    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, MylesCRM, and SIFA School Siaya.',
+    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, MylesCRM, AgriMyles, and SIFA School Siaya.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/portfolio',
   },
   openGraph: {
     title: 'Portfolio | MylesCorp Technologies',
     description:
-      'Live SaaS products and institution-ready websites built by MylesCorp Technologies.',
+      'Live SaaS products, agricultural technology, and institution-ready websites built by MylesCorp Technologies.',
     url: 'https://www.mylescorptech.com/portfolio',
     siteName: 'MylesCorp Technologies',
     type: 'website',
@@ -119,6 +120,28 @@ const liveProjects: PortfolioProject[] = [
     ],
   },
   {
+    name: 'AgriMyles',
+    category: 'Agricultural Technology SaaS',
+    sector: 'Agriculture and Market Access',
+    href: 'https://agrimyles.mylescorptech.com/',
+    icon: Sprout,
+    status: 'Live product',
+    previewSrc: '/portfolio/agrimyles-home.webp',
+    previewAlt: 'AgriMyles homepage preview',
+    summary:
+      'A smart agritech platform for farmers, cooperatives, and agribusinesses, combining AI crop advisory, digital farm records, market price visibility, supply chain management, and M-Pesa-ready payments.',
+    evidence: [
+      'AI crop advisory for planting, fertilisation, pest control, and harvesting',
+      'Farm records, market prices, buyer linkages, and cooperative management',
+      'Designed for Kenyan agriculture with mobile, SMS, and low-bandwidth realities in mind',
+    ],
+    outcomes: [
+      'Positions AgriMyles as a focused agricultural SaaS product',
+      'Supports farmers, cooperatives, agribusinesses, counties, and development partners',
+      'Extends the MylesCorp product portfolio into food systems and rural operations',
+    ],
+  },
+  {
     name: 'SIFA School Siaya',
     category: 'Institution Website',
     sector: 'Early Childhood Education',
@@ -143,7 +166,7 @@ const liveProjects: PortfolioProject[] = [
 ]
 
 const proofPoints = [
-  { value: '4', label: 'Live properties showcased' },
+  { value: '5', label: 'Live properties showcased' },
   { value: 'SaaS + Institutions', label: 'Core delivery focus' },
   { value: '100%', label: 'Active product portfolio' },
   { value: 'East Africa', label: 'Primary market focus' },
@@ -163,7 +186,7 @@ const processPoints = [
   {
     title: 'Operational Depth',
     icon: Layers3,
-    text: 'The work goes beyond visuals into workflows such as admissions, fee collection, reporting, route visibility, and communication.',
+    text: 'The work goes beyond visuals into workflows such as admissions, fee collection, reporting, route visibility, market access, and communication.',
   },
   {
     title: 'Trust and Conversion',
@@ -174,7 +197,7 @@ const processPoints = [
 
 const engagementModels = [
   'SaaS product strategy, UI, and public launch websites',
-  'School, transport, business, and institutional website design',
+  'School, transport, agriculture, business, and institutional website design',
   'Custom web applications for operational teams',
   'Product refreshes for stronger positioning and buyer trust',
 ]
@@ -213,7 +236,7 @@ export default function PortfolioPage() {
                   Live digital products and institution-ready platforms built for trust, clarity, and growth.
                 </h1>
                 <p className="mt-6 max-w-2xl font-body text-[1rem] leading-8 text-light-blue sm:text-[1.08rem]">
-                  This portfolio highlights live MylesCorp work across school management, school transport, CRM, and institution-ready school websites.
+                  This portfolio highlights MylesCorp work across school management, school transport, CRM, agricultural technology, and institution-ready school websites.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -241,7 +264,7 @@ export default function PortfolioPage() {
                       Research Summary
                     </div>
                     <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-white">
-                      EduMyles, EduRyde, MylesCRM, and SIFA School Siaya anchor the portfolio.
+                      EduMyles, EduRyde, MylesCRM, AgriMyles, and SIFA School Siaya anchor the portfolio.
                     </h2>
                   </div>
                   <BadgeCheck className="h-8 w-8 flex-shrink-0 text-gold" />
@@ -294,7 +317,7 @@ export default function PortfolioPage() {
                 </h2>
               </div>
               <p className="font-body text-lg leading-8 text-medium-grey">
-                Each entry is grounded in the live experience: product capabilities, institutional value, audience actions, and the operational story a prospect or parent needs to understand quickly.
+                Each entry presents the product capabilities, institutional value, audience actions, and operational story a prospect or parent needs to understand quickly.
               </p>
             </div>
 
@@ -447,7 +470,7 @@ export default function PortfolioPage() {
                   Build the next live product experience with MylesCorp.
                 </h2>
                 <p className="mt-5 font-body text-lg leading-8 text-light-blue">
-                  We support organisations that need a polished product presence, a real operating platform, or a customer-facing experience that is ready for schools, parents, sales teams, and partners.
+                  We support organisations that need a polished product presence, a real operating platform, or a customer-facing experience that is ready for schools, parents, sales teams, agricultural teams, and partners.
                 </p>
               </div>
 

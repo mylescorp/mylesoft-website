@@ -74,7 +74,7 @@ export function LiveChat() {
     const input = userInput.toLowerCase()
 
     if (input.includes('product') || input.includes('solution')) {
-      return 'I can help you learn about our AI-powered solutions! We offer EduMyles for school management, EduRyde for school transport, and MylesCRM for business. Which product interests you most?'
+      return 'I can help you learn about our AI-powered solutions! We offer EduMyles for school management, EduRyde for school transport, MylesCRM for business, and AgriMyles for agriculture. Which product interests you most?'
     } else if (input.includes('pricing') || input.includes('cost') || input.includes('price')) {
       return 'Our pricing varies by product and organization size. I\'d recommend booking a demo with our team to get a customized quote. Would you like me to arrange that for you?'
     } else if (input.includes('demo') || input.includes('trial')) {

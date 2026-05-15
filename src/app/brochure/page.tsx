@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
-import { Download, ArrowRight, CheckCircle2, Building2, Bus, BriefcaseBusiness, FileText } from 'lucide-react'
+import { Download, ArrowRight, CheckCircle2, Building2, Bus, BriefcaseBusiness, FileText, Sprout } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
@@ -27,11 +27,16 @@ const brochureHighlights = [
     icon: BriefcaseBusiness,
     body: 'CRM and business management for leads, contacts, pipelines, invoices, payments, customer service, campaigns, inventory, tasks, and reporting.',
   },
+  {
+    title: 'AgriMyles',
+    icon: Sprout,
+    body: 'Agricultural technology for farmers, cooperatives, and agribusinesses with AI crop advisory, farm records, market access, supply chain tools, and M-Pesa-ready workflows.',
+  },
 ]
 
 const brochureSections = [
   'Company story, mission, and market focus',
-  'Full product overview for EduMyles, EduRyde, and MylesCRM',
+  'Full product overview for EduMyles, EduRyde, MylesCRM, and AgriMyles',
   'Published product plan options and pricing summary',
   'Professional services for implementation, websites, cloud, hosting, and consulting',
   'Delivery approach, support model, and contact information',

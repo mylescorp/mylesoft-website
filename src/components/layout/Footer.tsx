@@ -44,7 +44,7 @@ export function Footer() {
             </div>
           </div>
           <p className="text-[14px] text-light-blue leading-7 max-w-[320px] mb-5.5">
-            East Africa&apos;s AI-powered software company behind EduMyles, EduRyde, and MylesCRM for schools, transport teams, and growing businesses.
+            East Africa&apos;s AI-powered software company behind EduMyles, EduRyde, MylesCRM, and AgriMyles for schools, transport teams, businesses, and agriculture.
           </p>
           <div className="flex flex-col gap-2.5">
             <a
@@ -110,6 +110,10 @@ export function Footer() {
               MylesCRM
               <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Business CRM</span>
             </Link>
+            <Link href="/products/agrimyles" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+              AgriMyles
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Agricultural Technology</span>
+            </Link>
           </div>
         </div>
 
@@ -119,11 +123,11 @@ export function Footer() {
           <div className="space-y-2.5">
             <Link href="/services" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Implementation & Onboarding
-              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">For EduMyles, EduRyde, and MylesCRM</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">For EduMyles, EduRyde, MylesCRM, and AgriMyles</span>
             </Link>
             <Link href="/book-demo" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Product Demos
-              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Compare the three products</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Compare the product portfolio</span>
             </Link>
             <Link href="/support" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Customer Support
