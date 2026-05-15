@@ -14,8 +14,8 @@ import { Icon } from '@/components/ui/Icon'
 import { CORE_PRODUCTS } from '@/lib/constants/products'
 
 export const metadata = {
-  title: 'MylesCorp Technologies, AI Software for Schools Transport Agriculture & Business',
-  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCRM, and AgriMyles for African schools, school transport teams, agricultural teams, and growing businesses.',
+  title: 'MylesCorp Technologies, AI Software for Schools Healthcare Transport Agriculture & Business',
+  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles for African schools, healthcare facilities, school transport teams, agricultural teams, and growing businesses.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/',
   },
@@ -26,14 +26,14 @@ const HOMEPAGE_DATA = {
     title: 'MylesCorp Technologies',
     tagline: 'Transforming Industries, Empowering Generations',
     description: [
-      'Focused software for school administration, school transport safety, agricultural operations, and business growth across Africa.',
-      'EduMyles, EduRyde, MylesCRM, and AgriMyles help teams replace spreadsheets, WhatsApp follow-ups, manual reports, and disconnected workflows with reliable digital operations.'
+      'Focused software for school administration, school transport safety, healthcare delivery, agricultural operations, and business growth across Africa.',
+      'EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles help teams replace spreadsheets, WhatsApp follow-ups, manual reports, and disconnected workflows with reliable digital operations.'
     ],
     image: '/api/og?title=MylesCorp%20Technologies&description=AI-Powered%20Software%20Solutions%20for%20Africa',
     stats: [
       { number: '500+', label: 'Schools Managed' },
       { number: '24/7', label: 'Bus Visibility' },
-      { number: '4', label: 'Core Products' },
+      { number: '5', label: 'Core Products' },
       { number: '200+', label: 'Businesses Transformed' }
     ]
   },
@@ -46,7 +46,7 @@ const HOMEPAGE_DATA = {
     {
       icon: 'target',
       title: 'Industry-Specific Solutions',
-      description: 'Purpose-built solutions for education, school transport, agriculture, and business teams.'
+      description: 'Purpose-built solutions for education, school transport, healthcare, agriculture, and business teams.'
     },
     {
       icon: 'globe',
@@ -79,6 +79,7 @@ const HOMEPAGE_DATA = {
   targets: [
     'Educational Institutions - Schools seeking digital administration and reporting',
     'School Transport Teams - Administrators and bus operators needing route visibility',
+    'Healthcare Facilities - Clinics, hospitals, pharmacies, and labs needing digital patient and billing workflows',
     'Agricultural Teams - Farmers, cooperatives, and agribusinesses needing advisory, records, markets, and supply chain visibility',
     'Business Enterprises - SMEs and sales teams looking for customer and revenue clarity'
   ],
@@ -171,6 +172,19 @@ const PRODUCT_DETAIL_SECTIONS = [
     ],
   },
   {
+    name: 'MylesCare',
+    href: '/products/mylescare',
+    eyebrow: 'Healthcare Management',
+    summary:
+      'MylesCare supports hospitals, clinics, pharmacies, diagnostic labs, and medical chains with electronic patient records, appointments, queue management, billing, M-Pesa payments, pharmacy, laboratory workflows, SHA claims, and healthcare reporting.',
+    highlights: [
+      'Electronic patient records and clinical history',
+      'Appointments, queues, billing, and M-Pesa collections',
+      'Pharmacy, laboratory, ward, and inpatient workflows',
+      'SHA, insurance, analytics, and reporting support',
+    ],
+  },
+  {
     name: 'AgriMyles',
     href: '/products/agrimyles',
     eyebrow: 'Agricultural Technology',
@@ -226,8 +240,8 @@ export default function HomePage() {
 
             <h1 className="font-display font-bold text-white text-[2.25rem] sm:text-[2.8rem] md:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.25rem] leading-[1.04] mb-6 max-w-6xl mx-auto">
               <span className="block">AI-Powered Software Solutions</span>
-              <span className="block">for Schools, Transport,</span>
-              <span className="block">Agriculture &amp; Business</span>
+              <span className="block">for Schools, Healthcare,</span>
+              <span className="block">Transport, Agriculture &amp; Business</span>
             </h1>
 
             <p className="font-body text-light-blue text-[1rem] sm:text-[1.05rem] md:text-[1.12rem] max-w-2xl mx-auto mb-3 leading-8">
@@ -295,11 +309,11 @@ export default function HomePage() {
                 Industry-Specific Solutions
               </h2>
             <p className="font-body text-medium-grey text-[1.08rem] md:text-lg max-w-2xl mx-auto leading-8">
-                Four focused products with clear workflows, practical onboarding, and support for African operating realities.
+                Five focused products with clear workflows, practical onboarding, and support for African operating realities.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
               {CORE_PRODUCTS.map((product) => (
                 <ProductCard key={product.name} {...product} />
               ))}
@@ -324,7 +338,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               {PRODUCT_DETAIL_SECTIONS.map((product) => (
                 <div key={product.name} className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-7 shadow-card">
                   <div className="mb-4 text-[11px] font-bold uppercase tracking-[2.2px] text-gold">
@@ -368,7 +382,7 @@ export default function HomePage() {
                 Impact & Reach
               </h2>
               <p className="font-body text-light-blue text-lg md:text-xl max-w-2xl mx-auto leading-8">
-                Empowering schools, transport teams, agricultural teams, and businesses in Kenya, Uganda, Tanzania, and beyond with focused AI-powered solutions.
+                Empowering schools, healthcare facilities, transport teams, agricultural teams, and businesses in Kenya, Uganda, Tanzania, and beyond with focused AI-powered solutions.
               </p>
             </div>
 
@@ -376,7 +390,7 @@ export default function HomePage() {
               {[
                 { number: '500+', label: 'Schools Managed', icon: 'graduation-cap' },
                 { number: '24/7', label: 'Transport Visibility', icon: 'bus' },
-                { number: '4', label: 'Focused Products', icon: 'target' },
+                { number: '5', label: 'Focused Products', icon: 'target' },
                 { number: '200+', label: 'Businesses Transformed', icon: 'briefcase' }
               ].map((stat, index) => (
                 <div key={index} className="text-center">

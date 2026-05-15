@@ -65,12 +65,12 @@ export default function AgriMylesPage() {
 
         {/* Pricing */}
         <PricingSection
-          title="Free for Farmers"
-          description="Flexible pricing with free access for individual farmers."
+          title="Professional AgriMyles Pricing"
+          description="Planning anchors from the live AgriMyles pricing page. Final proposals depend on acreage, users, data migration, integrations, and reporting scope."
           plans={AGRIMYLES_DATA.pricing.map(p => ({
             ...p,
-            price: p.price === 'Free' ? 'FREE' : p.price.split('/')[0],
-            period: p.price === 'Free' ? 'always free for farmers' : p.price.split('/')[1] || 'per month',
+            price: p.price.toLowerCase() === 'custom' ? 'Custom' : p.price.split('/')[0],
+            period: p.price.toLowerCase() === 'custom' ? 'commercial proposal' : p.price.split('/')[1] || 'per month',
             featured: p.features.includes('Most Popular')
           }))}
           centerHeader={true}

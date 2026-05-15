@@ -6,16 +6,16 @@ import { StaggerReveal } from '@/components/ui/ScrollReveal'
 import { CORE_PRODUCTS } from '@/lib/constants/products'
 
 export const metadata = {
-  title: 'Products, EduMyles EduRyde MylesCRM and AgriMyles | MylesCorp',
-  description: 'Explore the MylesCorp product portfolio: EduMyles for school management, EduRyde for school transport, MylesCRM for business customer management, and AgriMyles for agricultural technology.',
+  title: 'Products, EduMyles EduRyde MylesCare MylesCRM and AgriMyles | MylesCorp',
+  description: 'Explore the MylesCorp product portfolio: EduMyles for school management, EduRyde for school transport, MylesCare for healthcare, MylesCRM for business customer management, and AgriMyles for agricultural technology.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products',
   },
 }
 
 const stats = [
-  { value: '4', label: 'Active products' },
-  { value: '3', label: 'Core markets' },
+  { value: '5', label: 'Active products' },
+  { value: '4', label: 'Core markets' },
   { value: '24/7', label: 'Support coverage' },
 ]
 
@@ -30,10 +30,10 @@ export default function ProductsPage() {
               Product Portfolio
             </p>
             <h1 className="font-display text-[clamp(2.7rem,6vw,5.5rem)] font-bold leading-[0.95] text-white">
-              Four focused products for serious growth.
+              Five focused products for serious growth.
             </h1>
             <p className="mt-6 max-w-2xl text-[1.05rem] leading-8 text-light-blue">
-              EduMyles, EduRyde, MylesCRM, and AgriMyles bring MylesCorp&apos;s AI-powered thinking into the workflows schools, businesses, and agricultural teams use every day.
+              EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles bring MylesCorp&apos;s AI-powered thinking into the workflows schools, healthcare facilities, businesses, and agricultural teams use every day.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link href="/book-demo">
@@ -70,14 +70,14 @@ export default function ProductsPage() {
               Current Portfolio
             </p>
             <h2 className="font-display text-[clamp(2.1rem,4vw,3.5rem)] font-bold leading-tight text-navy">
-              Built around education, transport, agriculture, and customer operations.
+              Built around education, transport, healthcare, agriculture, and customer operations.
             </h2>
             <p className="mt-5 text-[1rem] leading-8 text-dark-grey">
               Each product has its own page with details, capabilities, and a direct path to start a conversation.
             </p>
           </div>
 
-          <StaggerReveal className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <StaggerReveal className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {CORE_PRODUCTS.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}

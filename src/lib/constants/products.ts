@@ -428,22 +428,22 @@ export const AGRIMYLES_DATA = {
   ],
   pricing: [
     {
-      name: "Farmer",
-      price: "Free",
-      description: "individual farmer access",
-      features: ["Basic crop advisory", "Market prices", "SMS alerts", "Community access"]
+      name: "Farm Starter",
+      price: "KSh 12,500/month",
+      description: "single farms, pilots, and early digitization projects",
+      features: ["1 farm profile with up to 10 mapped fields", "Crop calendar, task logs, and scouting records", "Input store, usage, and basic expense tracking", "Implementation from KSh 35,000"]
     },
     {
-      name: "Cooperative",
-      price: "KSh 5,000/month",
-      description: "cooperative management",
-      features: ["Everything in Farmer", "Member management", "Supply chain tools", "Financial services", "Most Popular"]
+      name: "Farm Growth",
+      price: "KSh 38,000/month",
+      description: "commercial farms, cooperatives, and multi-team operations",
+      features: ["Multiple farms, blocks, users, and role-based workflows", "Field officer mobile workflows and task accountability", "Dashboard reporting for crop, finance, and operations", "Implementation from KSh 95,000", "Most Popular"]
     },
     {
-      name: "Enterprise",
-      price: "KSh 20,000/month",
-      description: "full agribusiness suite",
-      features: ["Everything in Cooperative", "Advanced analytics", "Custom integrations", "Dedicated support", "Multi-location management"]
+      name: "Agri Enterprise",
+      price: "Custom",
+      description: "agribusinesses, NGOs, counties, exporters, and outgrower programs",
+      features: ["Bulk farmer, member, and plot onboarding", "Custom workflows for advisory, aggregation, or compliance", "Integrations, custom dashboards, and advanced exports", "Dedicated implementation manager and success reviews"]
     }
   ],
   testimonials: [
@@ -614,6 +614,17 @@ export const CORE_PRODUCTS = [
     pricing: EDURYDE_DATA.pricing
   },
   {
+    name: 'MylesCare',
+    category: 'Healthcare',
+    sector: 'Healthcare',
+    description: 'Healthcare management platform for hospitals, clinics, pharmacies, and diagnostic labs with patient records, billing, pharmacy, lab, M-Pesa, and SHA workflows.',
+    icon: 'stethoscope',
+    features: ['Patient Records', 'Billing & M-Pesa', 'Pharmacy & Lab', 'SHA Integration'],
+    href: '/products/mylescare',
+    status: 'live' as const,
+    pricing: MYLESCARE_DATA.pricing
+  },
+  {
     name: 'MylesCRM',
     category: 'Business',
     sector: 'Business',
@@ -628,9 +639,9 @@ export const CORE_PRODUCTS = [
     name: 'AgriMyles',
     category: 'Agriculture',
     sector: 'Agriculture',
-    description: 'Agritech platform for farmers, cooperatives, and agribusiness teams with AI crop advisory, market access, supply chain tools, and M-Pesa payments.',
+    description: 'Agritech platform for farms, cooperatives, and agribusiness teams with crop calendars, field records, input tracking, dashboards, and field-team workflows.',
     icon: 'sprout',
-    features: ['AI Crop Advisory', 'Market Price Linkage', 'Cooperative Management', 'M-Pesa Payments'],
+    features: ['Crop Calendars', 'Field Records', 'Input Tracking', 'Operational Dashboards'],
     href: '/products/agrimyles',
     status: 'live' as const,
     pricing: AGRIMYLES_DATA.pricing

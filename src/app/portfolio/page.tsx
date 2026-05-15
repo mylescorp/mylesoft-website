@@ -15,6 +15,7 @@ import {
   MonitorSmartphone,
   ShieldCheck,
   Sprout,
+  Stethoscope,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
@@ -24,14 +25,14 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Portfolio | MylesCorp Technologies',
   description:
-    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, MylesCRM, AgriMyles, and SIFA School Siaya.',
+    'Explore live MylesCorp Technologies work including EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and SIFA School Siaya.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/portfolio',
   },
   openGraph: {
     title: 'Portfolio | MylesCorp Technologies',
     description:
-      'Live SaaS products, agricultural technology, and institution-ready websites built by MylesCorp Technologies.',
+      'Live SaaS products, healthcare technology, agricultural technology, and institution-ready websites built by MylesCorp Technologies.',
     url: 'https://www.mylescorptech.com/portfolio',
     siteName: 'MylesCorp Technologies',
     type: 'website',
@@ -120,6 +121,28 @@ const liveProjects: PortfolioProject[] = [
     ],
   },
   {
+    name: 'MylesCare',
+    category: 'Healthcare Management SaaS',
+    sector: 'Healthcare Technology',
+    href: 'https://mylescare.mylescorptech.com/',
+    icon: Stethoscope,
+    status: 'Live product',
+    previewSrc: '/portfolio/mylescare-home.webp',
+    previewAlt: 'MylesCare homepage preview',
+    summary:
+      'A healthcare management platform for hospitals, clinics, health centres, pharmacies, and diagnostic labs, combining patient records, appointments, billing, M-Pesa, pharmacy, lab, SHA, insurance, and reporting workflows.',
+    evidence: [
+      'Electronic patient records, appointments, queue management, and billing',
+      'Pharmacy, laboratory, inpatient, ward, SHA, and insurance workflows',
+      'Built around East African healthcare operations and payment realities',
+    ],
+    outcomes: [
+      'Restores MylesCare as a public live product',
+      'Gives healthcare facilities a direct product page and demo path',
+      'Extends the portfolio into clinical and healthcare administration workflows',
+    ],
+  },
+  {
     name: 'AgriMyles',
     category: 'Agricultural Technology SaaS',
     sector: 'Agriculture and Market Access',
@@ -129,11 +152,11 @@ const liveProjects: PortfolioProject[] = [
     previewSrc: '/portfolio/agrimyles-home.webp',
     previewAlt: 'AgriMyles homepage preview',
     summary:
-      'A smart agritech platform for farmers, cooperatives, and agribusinesses, combining AI crop advisory, digital farm records, market price visibility, supply chain management, and M-Pesa-ready payments.',
+      'A professional farm management platform for farms, cooperatives, agribusinesses, NGOs, counties, exporters, and outgrower programs, combining crop calendars, mapped fields, task logs, input tracking, dashboards, and field-team accountability.',
     evidence: [
-      'AI crop advisory for planting, fertilisation, pest control, and harvesting',
-      'Farm records, market prices, buyer linkages, and cooperative management',
-      'Designed for Kenyan agriculture with mobile, SMS, and low-bandwidth realities in mind',
+      'Farm Starter begins from KSh 12,500/month with implementation from KSh 35,000',
+      'Farm Growth begins from KSh 38,000/month with implementation from KSh 95,000',
+      'Agri Enterprise is scoped for agribusinesses, NGOs, counties, exporters, and outgrower programs',
     ],
     outcomes: [
       'Positions AgriMyles as a focused agricultural SaaS product',
@@ -166,7 +189,7 @@ const liveProjects: PortfolioProject[] = [
 ]
 
 const proofPoints = [
-  { value: '5', label: 'Live properties showcased' },
+  { value: '6', label: 'Live properties showcased' },
   { value: 'SaaS + Institutions', label: 'Core delivery focus' },
   { value: '100%', label: 'Active product portfolio' },
   { value: 'East Africa', label: 'Primary market focus' },
@@ -186,7 +209,7 @@ const processPoints = [
   {
     title: 'Operational Depth',
     icon: Layers3,
-    text: 'The work goes beyond visuals into workflows such as admissions, fee collection, reporting, route visibility, market access, and communication.',
+    text: 'The work goes beyond visuals into workflows such as admissions, fee collection, reporting, route visibility, patient records, market access, and communication.',
   },
   {
     title: 'Trust and Conversion',
@@ -197,7 +220,7 @@ const processPoints = [
 
 const engagementModels = [
   'SaaS product strategy, UI, and public launch websites',
-  'School, transport, agriculture, business, and institutional website design',
+  'School, transport, healthcare, agriculture, business, and institutional website design',
   'Custom web applications for operational teams',
   'Product refreshes for stronger positioning and buyer trust',
 ]
@@ -236,7 +259,7 @@ export default function PortfolioPage() {
                   Live digital products and institution-ready platforms built for trust, clarity, and growth.
                 </h1>
                 <p className="mt-6 max-w-2xl font-body text-[1rem] leading-8 text-light-blue sm:text-[1.08rem]">
-                  This portfolio highlights MylesCorp work across school management, school transport, CRM, agricultural technology, and institution-ready school websites.
+                  This portfolio highlights MylesCorp work across school management, school transport, healthcare, CRM, agricultural technology, and institution-ready school websites.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -264,7 +287,7 @@ export default function PortfolioPage() {
                       Research Summary
                     </div>
                     <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-white">
-                      EduMyles, EduRyde, MylesCRM, AgriMyles, and SIFA School Siaya anchor the portfolio.
+                      EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and SIFA School Siaya anchor the portfolio.
                     </h2>
                   </div>
                   <BadgeCheck className="h-8 w-8 flex-shrink-0 text-gold" />
@@ -470,7 +493,7 @@ export default function PortfolioPage() {
                   Build the next live product experience with MylesCorp.
                 </h2>
                 <p className="mt-5 font-body text-lg leading-8 text-light-blue">
-                  We support organisations that need a polished product presence, a real operating platform, or a customer-facing experience that is ready for schools, parents, sales teams, agricultural teams, and partners.
+                  We support organisations that need a polished product presence, a real operating platform, or a customer-facing experience that is ready for schools, parents, healthcare teams, sales teams, agricultural teams, and partners.
                 </p>
               </div>
 

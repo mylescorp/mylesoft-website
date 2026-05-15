@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
-import { Download, ArrowRight, CheckCircle2, Building2, Bus, BriefcaseBusiness, FileText, Sprout } from 'lucide-react'
+import { Download, ArrowRight, CheckCircle2, Building2, Bus, BriefcaseBusiness, FileText, Sprout, Stethoscope } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
@@ -23,6 +23,11 @@ const brochureHighlights = [
     body: 'School transport management with live GPS tracking, route planning, driver oversight, boarding records, vehicle compliance, and parent alerts.',
   },
   {
+    title: 'MylesCare',
+    icon: Stethoscope,
+    body: 'Healthcare management for hospitals, clinics, pharmacies, and diagnostic labs with electronic patient records, appointments, billing, M-Pesa, pharmacy, lab, SHA, insurance, and reporting workflows.',
+  },
+  {
     title: 'MylesCRM',
     icon: BriefcaseBusiness,
     body: 'CRM and business management for leads, contacts, pipelines, invoices, payments, customer service, campaigns, inventory, tasks, and reporting.',
@@ -30,14 +35,14 @@ const brochureHighlights = [
   {
     title: 'AgriMyles',
     icon: Sprout,
-    body: 'Agricultural technology for farmers, cooperatives, and agribusinesses with AI crop advisory, farm records, market access, supply chain tools, and M-Pesa-ready workflows.',
+    body: 'Agricultural technology for farms, cooperatives, and agribusinesses with crop calendars, field records, input tracking, dashboards, and field-team workflows. Current live pricing starts at KSh 12,500/month for Farm Starter and KSh 38,000/month for Farm Growth, with Agri Enterprise scoped as a custom commercial proposal.',
   },
 ]
 
 const brochureSections = [
   'Company story, mission, and market focus',
-  'Full product overview for EduMyles, EduRyde, MylesCRM, and AgriMyles',
-  'Published product plan options and pricing summary',
+  'Full product overview for EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles',
+  'Published product plan options including current live AgriMyles pricing',
   'Professional services for implementation, websites, cloud, hosting, and consulting',
   'Delivery approach, support model, and contact information',
 ]
@@ -190,7 +195,9 @@ export default function BrochurePage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
                   'Product features and ideal users',
-                  'Plan options and published pricing',
+                  'Plan options and published KSh pricing',
+                  'MylesCare product details for healthcare operations',
+                  'AgriMyles live product details and current agritech pricing',
                   'Implementation and onboarding services',
                   'Cloud, hosting, website, and consulting services',
                   'Delivery process from discovery to launch',
