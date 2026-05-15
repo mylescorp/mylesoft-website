@@ -309,16 +309,21 @@ export function ProductPageLayout({
                 We keep package details and billing periods in one place so every quote stays accurate. Review the plan options, then book a consultation for fit, onboarding, and implementation scope.
               </p>
 
-              <p className="mt-5 font-body text-sm font-bold uppercase tracking-[1.4px] text-gold">
-                Available options: {pricing.map((plan) => plan.name).join(', ')}
-              </p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                {pricing.map((plan) => (
+                  <div key={plan.name} className="rounded-xl border border-slate-200 bg-ice px-4 py-3 text-left">
+                    <div className="font-body text-sm font-bold text-navy">{plan.name}</div>
+                    <div className="mt-1 font-body text-xs leading-5 text-medium-grey">{plan.description}</div>
+                  </div>
+                ))}
+              </div>
 
               <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                 <Link href="/pricing">
-                  <Button size="lg">Review Plan Options</Button>
+                  <Button size="lg">Compare Product Plans</Button>
                 </Link>
                 <Link href="/book-demo">
-                  <Button variant="secondary" size="lg">Book a Consultation</Button>
+                  <Button variant="secondary" size="lg">Book a Discovery Call</Button>
                 </Link>
               </div>
             </ScrollReveal>

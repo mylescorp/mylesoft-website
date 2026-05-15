@@ -1,6 +1,8 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
+import { ServicePricingSection } from '@/components/ui/ServicePricingSection'
+import { servicePricingBySlug } from '@/lib/constants/service-pricing'
 import { Palette, Smartphone, Users, Zap, Target, Check } from 'lucide-react'
 import Link from 'next/link'
 
@@ -69,29 +71,6 @@ const UI_UX_DATA = {
     { title: 'SaaS', description: 'Software as a service applications' },
     { title: 'Mobile Apps', description: 'iOS and Android applications' },
     { title: 'Web Applications', description: 'Complex web-based software' }
-  ],
-  pricing: [
-    {
-      name: 'Startup Package',
-      price: 'KSh 50,000',
-      description: 'Perfect for startups and small businesses',
-      features: ['User research', 'Wireframing', 'UI mockups', 'Basic prototype', 'Style guide', '2 revisions'],
-      popular: false
-    },
-    {
-      name: 'Professional Package',
-      price: 'KSh 150,000',
-      description: 'Ideal for growing businesses',
-      features: ['Comprehensive research', 'Full UI/UX design', 'Interactive prototype', 'Design system', 'User testing', '3 revisions', 'Priority support'],
-      popular: true
-    },
-    {
-      name: 'Enterprise Package',
-      price: 'Custom',
-      description: 'For large organizations',
-      features: ['Full research program', 'Complete design system', 'Multi-platform design', 'Advanced prototyping', 'Extensive testing', 'Unlimited revisions', 'Dedicated team', 'Ongoing support'],
-      popular: false
-    }
   ],
   testimonials: [
     {
@@ -225,6 +204,8 @@ export default function UIUXDesignPage() {
             </div>
           </div>
         </section>
+
+        <ServicePricingSection service={servicePricingBySlug['ui-ux-design']} />
 
         {/* CTA Section */}
         <section className="py-20 bg-navy text-center">

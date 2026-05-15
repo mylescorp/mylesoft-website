@@ -76,8 +76,8 @@ export default function EduMylesPage() {
 
         {/* Pricing */}
         <PricingSection
-          title="Simple, Transparent Pricing"
-          description="Current plan details are maintained on the pricing page and confirmed during consultation."
+          title="EduMyles Plans for Different School Sizes"
+          description="Start with the plan that matches your school, then confirm modules, student volume, onboarding, communication, and payment needs with our team."
           plans={EDUMYLES_DATA.pricing.map(p => ({
             ...p,
             price: p.price.split('/')[0],

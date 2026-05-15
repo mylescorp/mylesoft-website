@@ -1,5 +1,7 @@
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
+import { ServicePricingSection } from '@/components/ui/ServicePricingSection'
+import { servicePricingBySlug } from '@/lib/constants/service-pricing'
 import { Icon } from '@/components/ui/Icon'
 import Link from 'next/link'
 import {
@@ -265,28 +267,7 @@ export default function CloudSolutionsPage() {
           </div>
         </section>
 
-        {/* CONSULTATION SECTION */}
-        <section className="py-20 bg-off-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-lg md:p-10">
-              <div className="mb-4 text-[11px] font-bold uppercase tracking-[2.5px] text-gold">Tailored Proposal</div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-4">
-                Get a Cloud Plan That Fits Your Infrastructure
-              </h2>
-              <p className="text-medium-grey max-w-2xl mx-auto leading-8">
-                Cloud scope depends on your current systems, migration needs, compliance requirements, and support expectations. We review those details first, then prepare a clear proposal with the right implementation path.
-              </p>
-              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                <Link href="/pricing">
-                  <Button>Review Plan Options</Button>
-                </Link>
-                <Link href="/book-demo">
-                  <Button variant="secondary">Book a Consultation</Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ServicePricingSection service={servicePricingBySlug['cloud-solutions']} />
 
         {/* TESTIMONIALS */}
         <section className="py-20 bg-navy">

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
+import { SERVICE_PRICING } from '@/lib/constants/service-pricing'
 
 export const metadata = {
   title: 'Professional Technology Services | MylesCorp',
@@ -81,6 +82,10 @@ const services = [
     deliverables: ['Technology assessment', 'Digital roadmap', 'Security and process review', 'Implementation advisory'],
   },
 ]
+
+const serviceStartingPrices = Object.fromEntries(
+  SERVICE_PRICING.map((service) => [service.href, service.plans[0]?.price ?? 'Custom'])
+)
 
 const principles = [
   'Clear scope before build',
@@ -211,6 +216,10 @@ export default function ServicesPage() {
                     <p className="mt-3 text-[0.98rem] leading-8 text-dark-grey">
                       {service.summary}
                     </p>
+
+                    <div className="mt-5 inline-flex w-fit rounded-full border border-gold/25 bg-gold/10 px-4 py-2 text-sm font-bold text-gold">
+                      From {serviceStartingPrices[service.href]}
+                    </div>
 
                     <div className="mt-5 border-l-4 border-gold bg-ice px-4 py-3">
                       <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-navy">

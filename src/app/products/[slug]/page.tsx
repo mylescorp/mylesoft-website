@@ -441,7 +441,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                       </Link>
                       <Link href="/pricing">
                         <Button variant="secondary" size="lg">
-                          Review Plan Options
+                          Compare Product Plans
                         </Button>
                       </Link>
                     </div>
@@ -482,21 +482,26 @@ export default function ProductPage({ params }: ProductPageProps) {
           </div>
         </section>
 
-        {/* Pricing Source Section */}
+        {/* Plan Guidance Section */}
         <section id="plans" className="section bg-off-white">
           <div className="section-padding">
             <div className="max-w-4xl mx-auto">
               <div className="rounded-[1.5rem] border border-slate-200 bg-white p-8 text-center shadow-card md:p-10">
-                <h2 className="heading-2 mb-4">Choose Your Plan</h2>
+                <h2 className="heading-2 mb-4">Choose the Right Product Plan</h2>
                 <p className="body-text max-w-2xl mx-auto">
-                  Plan options are maintained on the pricing page so package details, billing periods, and implementation notes stay consistent across the website.
+                  Compare the plan structure, then speak with our team about users, modules, onboarding, integrations, and support before finalising scope.
                 </p>
-                <p className="mt-5 text-sm font-bold uppercase tracking-[1.4px] text-gold">
-                  Available options: {Object.values(product.pricing).map((plan) => plan.name).join(', ')}
-                </p>
+                <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                  {Object.values(product.pricing).map((plan) => (
+                    <div key={plan.name} className="rounded-xl border border-slate-200 bg-ice px-4 py-3 text-left">
+                      <div className="font-body text-sm font-bold text-navy">{plan.name}</div>
+                      <div className="mt-1 font-body text-xs leading-5 text-medium-grey">{plan.description}</div>
+                    </div>
+                  ))}
+                </div>
                 <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                   <Link href="/pricing">
-                    <Button size="lg">Review Plan Options</Button>
+                    <Button size="lg">Compare Product Plans</Button>
                   </Link>
                   <Link href={product.demoUrl}>
                     <Button variant="secondary" size="lg">Book a Demo</Button>

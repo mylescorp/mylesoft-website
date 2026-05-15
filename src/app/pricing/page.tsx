@@ -6,12 +6,13 @@ import { OverviewSection } from '@/components/ui/OverviewSection'
 import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
 import { CORE_PRODUCTS } from '@/lib/constants/products'
+import { SERVICE_PRICING } from '@/lib/constants/service-pricing'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 
 export const metadata = {
-  title: 'Pricing — EduMyles, EduRyde, and MylesCRM | MylesCorp',
-  description: 'Current MylesCorp pricing for EduMyles, EduRyde, and MylesCRM. Pricing is pulled from each product page for consistency.',
+  title: 'Pricing — Products & Services | MylesCorp',
+  description: 'Current MylesCorp KSh pricing for EduMyles, EduRyde, MylesCRM, websites, software development, cloud solutions, hosting, UI/UX, and IT consulting.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/pricing',
   },
@@ -21,21 +22,21 @@ const PRICING_DATA = {
   overview: {
     title: 'Pricing',
     description: [
-      'Clear plan options for EduMyles, EduRyde, and MylesCRM.',
-      'Each pricing table uses the same plan data shown on the matching product page, so sales conversations and product pages stay aligned.'
+      'Clear KSh plan options for MylesCorp products and professional services.',
+      'Product and service pricing is shared with the matching page, so sales conversations, service pages, and pricing tables stay aligned.'
     ],
     stats: [
       { number: '3', label: 'Core Products' },
-      { number: '9', label: 'Published Plans' },
+      { number: '7', label: 'Professional Services' },
+      { number: '30+', label: 'Published Plans' },
       { number: '20%', label: 'Annual Discount' },
-      { number: '24/7', label: 'Support Available' }
     ]
   },
   features: [
     {
       icon: '👑',
       title: 'One Source of Truth',
-      description: 'Pricing is shared with each product page to prevent conflicting package tables.'
+      description: 'Pricing is shared with each product and service page to prevent conflicting package tables.'
     },
     {
       icon: '📈',
@@ -49,7 +50,7 @@ const PRICING_DATA = {
     }
   ],
   process: [
-    { step: 1, title: 'Pick a Product', description: 'Choose EduMyles, EduRyde, or MylesCRM based on your workflow' },
+    { step: 1, title: 'Pick a Product or Service', description: 'Choose the product, service, or implementation path that matches your workflow' },
     { step: 2, title: 'Choose a Plan', description: 'Select the plan that matches your size and operational needs' },
     { step: 3, title: 'Book a Demo', description: 'Walk through the product with your actual use case' },
     { step: 4, title: 'Set Up', description: 'Configure users, records, integrations, and reporting' },
@@ -58,7 +59,8 @@ const PRICING_DATA = {
   targets: [
     'Schools - EduMyles for administration, academics, fees, and parent communication',
     'School Transport Teams - EduRyde for tracking, routes, and parent notifications',
-    'Growing Businesses - MylesCRM for leads, customers, invoicing, and sales visibility'
+    'Growing Businesses - MylesCRM for leads, customers, invoicing, and sales visibility',
+    'Organisations - websites, software, cloud, hosting, design, and consulting services'
   ]
 }
 
@@ -138,7 +140,7 @@ export default function PricingPage() {
 
         <FeaturesSection
           title="Why This Pricing Stays Consistent"
-          description="The public pricing page is now generated from the same plan data used by each product page."
+          description="The public pricing page now uses the same plan data shown on each product and service page."
           features={PRICING_DATA.features}
           centerHeader={true}
         />
@@ -211,6 +213,73 @@ export default function PricingPage() {
           </div>
         </section>
 
+        <section className="section bg-white">
+          <div className="section-padding">
+            <div className="text-center mb-12">
+              <h2 className="heading-2 mb-4">Professional Service Pricing</h2>
+              <p className="body-text max-w-2xl mx-auto">
+                Compare the current KSh plan options for websites, custom software, cloud, hosting, design, and consulting services.
+              </p>
+            </div>
+
+            <div className="space-y-14">
+              {SERVICE_PRICING.map((service) => (
+                <div key={service.slug}>
+                  <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                    <div>
+                      <div className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body mb-2">
+                        {service.category}
+                      </div>
+                      <h3 className="heading-3">{service.name}</h3>
+                      <p className="body-text max-w-2xl mt-2">{service.summary}</p>
+                    </div>
+                    <Link href={service.href}>
+                      <Button variant="outline" className="border-gold text-gold hover:bg-gold hover:text-navy">
+                        View Service
+                      </Button>
+                    </Link>
+                  </div>
+
+                  <div className={`grid grid-cols-1 gap-6 ${service.plans.length === 4 ? 'md:grid-cols-2 xl:grid-cols-4' : 'md:grid-cols-3'}`}>
+                    {service.plans.map((plan) => {
+                      const price = splitPrice(`${plan.price}${plan.period ?? ''}`)
+
+                      return (
+                        <div
+                          key={`${service.slug}-${plan.name}`}
+                          className={`relative bg-off-white rounded-lg shadow-card p-6 border h-full ${
+                            plan.featured ? 'border-gold ring-2 ring-gold/20' : 'border-slate-200'
+                          }`}
+                        >
+                          {plan.featured && (
+                            <span className="absolute -top-3 left-6 bg-gold text-navy px-3 py-1 rounded-full text-xs font-semibold">
+                              Popular
+                            </span>
+                          )}
+                          <h4 className="font-display font-semibold text-navy text-xl mb-2">{plan.name}</h4>
+                          <p className="text-medium-grey text-sm mb-4">{plan.description}</p>
+                          <div className="mb-5">
+                            <span className="text-3xl font-display font-bold text-gold">{price.amount}</span>
+                            {price.period && <span className="text-medium-grey text-sm">{price.period}</span>}
+                          </div>
+                          <ul className="space-y-2">
+                            {plan.features.map((feature) => (
+                              <li key={feature} className="flex items-start text-sm text-dark-grey">
+                                <Check size={14} className="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                                <span>{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <ProcessSection
           title="Get Started in 5 Simple Steps"
           description="From product selection to launch, pricing and onboarding stay straightforward."
@@ -226,7 +295,7 @@ export default function PricingPage() {
         <CTASection
           title="Ready to Choose a Plan?"
           tagline="Focused Products. Clear Pricing."
-          description="Book a demo and we will confirm the best EduMyles, EduRyde, or MylesCRM plan for your team."
+          description="Book a demo and we will confirm the best product or service plan for your team."
           primaryCta={{ text: "Book a Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales Team", href: "/contact" }}
         />

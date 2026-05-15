@@ -20,7 +20,7 @@ interface PricingSectionProps {
 }
 
 export function PricingSection({ title, description, plans, centerHeader = false }: PricingSectionProps) {
-  const planNames = plans.map((plan) => plan.name).join(', ')
+  const planSummaries = plans.map((plan) => `${plan.name}: ${plan.price}${plan.period ? `/${plan.period.replace(/^\/?/, '')}` : ''}`)
 
   return (
     <section className="py-20 bg-ice">
@@ -47,15 +47,19 @@ export function PricingSection({ title, description, plans, centerHeader = false
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div>
               <h3 className="font-display text-2xl font-bold text-navy md:text-3xl">
-                Plan guidance is maintained in one trusted place
+                Choose with confidence before you commit
               </h3>
               <p className="mt-3 font-body text-[1rem] leading-8 text-medium-grey">
-                To keep every product page accurate, package options are reviewed from the pricing page and finalized during consultation.
+                Every plan conversation starts with your users, modules, onboarding needs, integrations, and support expectations. We help you compare the right product path, then confirm the final scope in a clean proposal.
               </p>
-              {planNames && (
-                <p className="mt-4 font-body text-sm font-semibold uppercase tracking-[1.4px] text-gold">
-                  Available options: {planNames}
-                </p>
+              {planSummaries.length > 0 && (
+                <div className="mt-5 grid gap-2">
+                  {planSummaries.map((summary) => (
+                    <div key={summary} className="rounded-lg border border-slate-200 bg-ice px-4 py-3 font-body text-sm font-semibold text-navy">
+                      {summary}
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
 
@@ -64,13 +68,13 @@ export function PricingSection({ title, description, plans, centerHeader = false
                 href="/pricing"
                 className="flex w-full items-center justify-center rounded-xl bg-gold px-5 py-3.5 font-body text-sm font-bold tracking-[0.04em] text-navy transition-all duration-200 hover:-translate-y-0.5 hover:bg-gold-light"
               >
-                Review Plan Options
+                Compare Product Plans
               </Link>
               <Link
                 href="/book-demo"
                 className="flex w-full items-center justify-center rounded-xl border border-navy/15 px-5 py-3.5 font-body text-sm font-bold tracking-[0.04em] text-navy transition-all duration-200 hover:border-navy"
               >
-                Book a Consultation
+                Book a Discovery Call
               </Link>
             </div>
           </div>

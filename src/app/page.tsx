@@ -413,8 +413,8 @@ export default function HomePage() {
 
         {/* Pricing Section */}
         <PricingSection
-          title="Simple, Transparent Pricing"
-          description="Compare the current plans for EduMyles, EduRyde, and MylesCRM from the central pricing page."
+          title="Product Plans Matched to Your Operation"
+          description="See the entry point for each product, then speak with our team to confirm users, modules, onboarding, data migration, integrations, and support."
           plans={CORE_PRODUCTS.map((product) => ({
             name: product.name,
             price: product.pricing[0].price,
