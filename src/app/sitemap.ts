@@ -27,7 +27,7 @@ const routes = [
   { path: '/products/myles-ai', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/products/mylespay', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/products/myleslogistics', changeFrequency: 'monthly', priority: 0.7 },
-  { path: '/products/mylesproperty', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/products/mylesprop', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/products/mylesretail', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/products/mylesgov', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/products/myleslegal', changeFrequency: 'monthly', priority: 0.7 },
