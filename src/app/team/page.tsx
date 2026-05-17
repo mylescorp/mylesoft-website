@@ -36,7 +36,7 @@ const departments = [
   {
     icon: GraduationCap,
     title: 'Domain Experts',
-    description: 'Education, healthcare, agriculture, transport, and business specialists shaping products around local operating realities.',
+    description: 'Education, healthcare, agriculture, transport, real estate, and business specialists shaping products around local operating realities.',
   },
   {
     icon: ShieldCheck,

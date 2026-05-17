@@ -12,7 +12,7 @@ import { Check } from 'lucide-react'
 
 export const metadata = {
   title: 'Pricing — Products & Services | MylesCorp',
-  description: 'Current MylesCorp KSh pricing for EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, websites, software development, cloud solutions, hosting, UI/UX, and IT consulting.',
+  description: 'Current MylesCorp KSh pricing for EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, MylesProp, websites, software development, cloud solutions, hosting, UI/UX, and IT consulting.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/pricing',
   },
@@ -26,7 +26,7 @@ const PRICING_DATA = {
       'Product and service pricing is shared with the matching page, so sales conversations, service pages, and pricing tables stay aligned.'
     ],
     stats: [
-      { number: '5', label: 'Core Products' },
+      { number: '6', label: 'Core Products' },
       { number: '7', label: 'Professional Services' },
       { number: '30+', label: 'Published Plans' },
       { number: '20%', label: 'Annual Discount' },
@@ -62,6 +62,7 @@ const PRICING_DATA = {
     'Healthcare Facilities - MylesCare for patient records, billing, pharmacy, lab, and SHA workflows',
     'Growing Businesses - MylesCRM for leads, customers, invoicing, and sales visibility',
     'Agricultural Teams - AgriMyles for crop advisory, market access, cooperatives, and supply chains',
+    'Real Estate Teams - MylesProp for properties, tenants, rent collection, maintenance, documents, and reporting',
     'Organisations - websites, software, cloud, hosting, design, and consulting services'
   ]
 }

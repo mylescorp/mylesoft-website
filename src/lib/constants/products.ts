@@ -590,6 +590,112 @@ export const MYLESCRM_DATA = {
   ]
 }
 
+export const MYLESPROP_DATA = {
+  metadata: {
+    title: 'MylesProp — Real Estate Management Kenya | MylesCorp',
+    description: 'Property management system for landlords, property managers, real estate agencies, and developers across East Africa.',
+  },
+  hero: {
+    eyebrow: "REAL ESTATE TECHNOLOGY",
+    heading: "Smart Property",
+    goldWord: "Management.",
+    subtitle: "A complete real estate management platform for property listings, tenant records, rent collection, maintenance tracking, document storage, and financial reporting.",
+    badge: "DEVELOPMENT",
+    primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
+    secondaryCta: { text: "Discuss Plans", href: "/pricing" }
+  },
+  overview: {
+    stats: [
+      { number: "500+", label: "Properties Managed" },
+      { number: "95%", label: "Occupancy Rate" },
+      { number: "M-Pesa", label: "Rent Collection" },
+      { number: "24/7", label: "Tenant Support" }
+    ],
+    description: "MylesProp streamlines property operations for landlords, property managers, real estate agencies, and developers. The platform brings property listings, tenant onboarding, lease documents, rent collection, maintenance requests, vendor coordination, and owner reporting into one operating system.\n\nBuilt for East African real estate teams, MylesProp supports practical workflows for rent reminders, payment visibility, inspection records, service requests, and portfolio performance reporting."
+  },
+  features: [
+    {
+      title: "Property Portfolio Management",
+      description: "Manage units, buildings, listings, occupancy status, media, documents, and owner records from one dashboard.",
+      icon: "building"
+    },
+    {
+      title: "Tenant & Lease Management",
+      description: "Track tenant profiles, applications, lease terms, move-ins, renewals, move-outs, and communication history.",
+      icon: "users"
+    },
+    {
+      title: "Rent Collection & Statements",
+      description: "Automate rent reminders, payment tracking, receipts, arrears visibility, and monthly landlord statements.",
+      icon: "credit-card"
+    },
+    {
+      title: "Maintenance Requests",
+      description: "Capture tenant issues, assign vendors, track job status, record costs, and maintain property service histories.",
+      icon: "settings"
+    },
+    {
+      title: "Document Management",
+      description: "Store leases, IDs, inspection reports, invoices, compliance documents, and property files securely.",
+      icon: "file-text"
+    },
+    {
+      title: "Financial Reporting",
+      description: "Monitor occupancy, collections, expenses, arrears, owner payouts, and portfolio performance.",
+      icon: "bar-chart"
+    }
+  ],
+  process: [
+    { step: 1, title: "Map Properties", description: "Register buildings, units, landlords, tenants, and lease records" },
+    { step: 2, title: "Configure Payments", description: "Set rent schedules, payment channels, reminders, and statement rules" },
+    { step: 3, title: "Import Documents", description: "Organise leases, IDs, invoices, inspection records, and compliance files" },
+    { step: 4, title: "Launch Workflows", description: "Start rent tracking, maintenance requests, and reporting routines" },
+    { step: 5, title: "Optimise Portfolio", description: "Use dashboards to improve collections, occupancy, and service response" }
+  ],
+  targets: [
+    "Landlords",
+    "Property Managers",
+    "Real Estate Agencies",
+    "Property Developers",
+    "Facility Managers",
+    "Estate Administrators"
+  ],
+  pricing: [
+    {
+      name: "Starter",
+      price: "KSh 4,999/month",
+      description: "individual landlords and small portfolios",
+      features: ["Up to 10 properties", "Tenant records", "Rent collection tracking", "Maintenance requests", "Email support"]
+    },
+    {
+      name: "Professional",
+      price: "KSh 14,999/month",
+      description: "property managers and growing portfolios",
+      features: ["Up to 50 properties", "Lease and document management", "Financial reporting", "Maintenance workflows", "Priority support", "Most Popular"]
+    },
+    {
+      name: "Enterprise",
+      price: "Custom",
+      description: "large agencies, developers, and managed estates",
+      features: ["Unlimited properties", "Custom workflows", "Owner reporting", "Integrations", "Dedicated onboarding", "Advanced support"]
+    }
+  ],
+  testimonials: [
+    {
+      quote: "MylesProp has transformed how we manage our 50+ property portfolio. Rent collection is now automated and follow-up is much easier.",
+      author: "Michael Kamau",
+      role: "Property Manager",
+      organization: "Nairobi Properties"
+    },
+    {
+      quote: "The maintenance tracking workflow helps us respond faster and gives tenants confidence that issues are being handled.",
+      author: "Susan Wanjiru",
+      role: "Landlord",
+      organization: "Prime Properties"
+    }
+  ]
+}
+
 export const CORE_PRODUCTS = [
   {
     name: 'EduMyles',
@@ -645,5 +751,16 @@ export const CORE_PRODUCTS = [
     href: '/products/agrimyles',
     status: 'live' as const,
     pricing: AGRIMYLES_DATA.pricing
+  },
+  {
+    name: 'MylesProp',
+    category: 'Real Estate',
+    sector: 'Real Estate',
+    description: 'Property management for landlords, property managers, agencies, and developers with tenants, rent, maintenance, documents, and reporting in one platform.',
+    icon: 'building-2',
+    features: ['Property Portfolio', 'Tenant & Lease Records', 'Rent Collection', 'Maintenance Tracking'],
+    href: '/products/mylesprop',
+    status: 'development' as const,
+    pricing: MYLESPROP_DATA.pricing
   }
 ]

@@ -33,6 +33,11 @@ const brochureHighlights = [
     body: 'CRM and business management for leads, contacts, pipelines, invoices, payments, customer service, campaigns, inventory, tasks, and reporting.',
   },
   {
+    title: 'MylesProp',
+    icon: Building2,
+    body: 'Real estate management for landlords, property managers, agencies, and developers with property records, tenant and lease management, rent collection tracking, maintenance requests, document storage, and portfolio reporting.',
+  },
+  {
     title: 'AgriMyles',
     icon: Sprout,
     body: 'Agricultural technology for farms, cooperatives, and agribusinesses with crop calendars, field records, input tracking, dashboards, and field-team workflows. Current live pricing starts at KSh 12,500/month for Farm Starter and KSh 38,000/month for Farm Growth, with Agri Enterprise scoped as a custom commercial proposal.',
@@ -41,8 +46,8 @@ const brochureHighlights = [
 
 const brochureSections = [
   'Company story, mission, and market focus',
-  'Full product overview for EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles',
-  'Published product plan options including current live AgriMyles pricing',
+  'Full product overview for EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, and AgriMyles',
+  'Published product plan options including MylesProp and current live AgriMyles pricing',
   'Professional services for implementation, websites, cloud, hosting, and consulting',
   'Delivery approach, support model, and contact information',
 ]
@@ -197,6 +202,7 @@ export default function BrochurePage() {
                   'Product features and ideal users',
                   'Plan options and published KSh pricing',
                   'MylesCare product details for healthcare operations',
+                  'MylesProp product details for real estate operations',
                   'AgriMyles live product details and current agritech pricing',
                   'Implementation and onboarding services',
                   'Cloud, hosting, website, and consulting services',

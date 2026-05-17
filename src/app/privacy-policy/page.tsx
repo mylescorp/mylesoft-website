@@ -145,7 +145,7 @@ export default function PrivacyPolicy() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Introduction</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                MylesCorp Technologies Ltd ("MylesCorp", "we", "us", or "our") is a private limited company registered in Kenya, with its principal place of business at Westlands, Nairobi, Kenya. We operate website <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a> and provide AI-powered software products including EduMyles, EduRyde, MylesCare, AgriMyles, and MylesCRM.
+                MylesCorp Technologies Ltd ("MylesCorp", "we", "us", or "our") is a private limited company registered in Kenya, with its principal place of business at Westlands, Nairobi, Kenya. We operate website <a href="https://www.mylescorptech.com" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">www.mylescorptech.com</a> and provide AI-powered software products including EduMyles, EduRyde, MylesCare, AgriMyles, MylesCRM, and MylesProp.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website, use our products, or engage with our services. By using our website or services, you agree to practices described herein.
@@ -185,6 +185,7 @@ export default function PrivacyPolicy() {
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">MylesCare: Patient records entered by healthcare facilities</li>
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">AgriMyles: Farmer profiles, crop data, and location data</li>
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">MylesCRM: Business contacts, sales data, and transaction records</li>
+                <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">MylesProp: Property, tenant, lease, rent collection, maintenance, and document records</li>
               </ul>
             </div>
           </div>

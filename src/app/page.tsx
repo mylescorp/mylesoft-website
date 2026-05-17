@@ -15,7 +15,7 @@ import { CORE_PRODUCTS } from '@/lib/constants/products'
 
 export const metadata = {
   title: 'MylesCorp Technologies, AI Software for Schools Healthcare Transport Agriculture & Business',
-  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles for African schools, healthcare facilities, school transport teams, agricultural teams, and growing businesses.',
+  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for African schools, healthcare facilities, transport teams, agricultural teams, real estate teams, and growing businesses.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/',
   },
@@ -26,14 +26,14 @@ const HOMEPAGE_DATA = {
     title: 'MylesCorp Technologies',
     tagline: 'Transforming Industries, Empowering Generations',
     description: [
-      'Focused software for school administration, school transport safety, healthcare delivery, agricultural operations, and business growth across Africa.',
-      'EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles help teams replace spreadsheets, WhatsApp follow-ups, manual reports, and disconnected workflows with reliable digital operations.'
+      'Focused software for school administration, school transport safety, healthcare delivery, agricultural operations, real estate management, and business growth across Africa.',
+      'EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp help teams replace spreadsheets, WhatsApp follow-ups, manual reports, and disconnected workflows with reliable digital operations.'
     ],
     image: '/api/og?title=MylesCorp%20Technologies&description=AI-Powered%20Software%20Solutions%20for%20Africa',
     stats: [
       { number: '500+', label: 'Schools Managed' },
       { number: '24/7', label: 'Bus Visibility' },
-      { number: '5', label: 'Core Products' },
+      { number: '6', label: 'Core Products' },
       { number: '200+', label: 'Businesses Transformed' }
     ]
   },
@@ -81,6 +81,7 @@ const HOMEPAGE_DATA = {
     'School Transport Teams - Administrators and bus operators needing route visibility',
     'Healthcare Facilities - Clinics, hospitals, pharmacies, and labs needing digital patient and billing workflows',
     'Agricultural Teams - Farmers, cooperatives, and agribusinesses needing advisory, records, markets, and supply chain visibility',
+    'Real Estate Teams - Landlords, property managers, and agencies needing tenant, rent, maintenance, and reporting workflows',
     'Business Enterprises - SMEs and sales teams looking for customer and revenue clarity'
   ],
   testimonials: [
@@ -197,6 +198,19 @@ const PRODUCT_DETAIL_SECTIONS = [
       'Mobile, SMS, low-bandwidth, English, Swahili, and M-Pesa-ready operations',
     ],
   },
+  {
+    name: 'MylesProp',
+    href: '/products/mylesprop',
+    eyebrow: 'Real Estate Management',
+    summary:
+      'MylesProp helps landlords, property managers, real estate agencies, and developers manage properties, tenants, leases, rent collection, maintenance requests, documents, and portfolio reporting from one operating system.',
+    highlights: [
+      'Property, unit, landlord, tenant, and lease records',
+      'Rent reminders, payment tracking, arrears visibility, and statements',
+      'Maintenance requests, vendor coordination, and service history',
+      'Document storage, inspection records, and portfolio reports',
+    ],
+  },
 ]
 
 export default function HomePage() {
@@ -309,11 +323,11 @@ export default function HomePage() {
                 Industry-Specific Solutions
               </h2>
             <p className="font-body text-medium-grey text-[1.08rem] md:text-lg max-w-2xl mx-auto leading-8">
-                Five focused products with clear workflows, practical onboarding, and support for African operating realities.
+                Six focused products with clear workflows, practical onboarding, and support for African operating realities.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {CORE_PRODUCTS.map((product) => (
                 <ProductCard key={product.name} {...product} />
               ))}
@@ -338,7 +352,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {PRODUCT_DETAIL_SECTIONS.map((product) => (
                 <div key={product.name} className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-7 shadow-card">
                   <div className="mb-4 text-[11px] font-bold uppercase tracking-[2.2px] text-gold">
@@ -390,7 +404,7 @@ export default function HomePage() {
               {[
                 { number: '500+', label: 'Schools Managed', icon: 'graduation-cap' },
                 { number: '24/7', label: 'Transport Visibility', icon: 'bus' },
-                { number: '5', label: 'Focused Products', icon: 'target' },
+                { number: '6', label: 'Focused Products', icon: 'target' },
                 { number: '200+', label: 'Businesses Transformed', icon: 'briefcase' }
               ].map((stat, index) => (
                 <div key={index} className="text-center">

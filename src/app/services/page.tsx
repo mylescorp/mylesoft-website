@@ -98,7 +98,7 @@ const engagementPaths = [
   {
     title: 'Product Implementation',
     description:
-      'For schools, transport teams, and businesses adopting EduMyles, EduRyde, or MylesCRM. We configure workflows, import data, train teams, and support go-live.',
+      'For schools, transport teams, healthcare facilities, businesses, farms, and real estate teams adopting EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, or MylesProp. We configure workflows, import data, train teams, and support go-live.',
     href: '/products',
     cta: 'Explore Products',
   },

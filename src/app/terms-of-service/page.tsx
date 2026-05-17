@@ -162,7 +162,7 @@ export default function TermsOfService() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Use of Our Services</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                MylesCorp provides AI-powered software solutions including EduMyles (school management), EduRyde (school transport tracking), MylesCare (healthcare management), AgriMyles (agricultural platform), and MylesCRM (business CRM), as well as custom software development, website development, IT consulting, cloud solutions, and UI/UX design services.
+                MylesCorp provides AI-powered software solutions including EduMyles (school management), EduRyde (school transport tracking), MylesCare (healthcare management), AgriMyles (agricultural platform), MylesCRM (business CRM), and MylesProp (real estate management), as well as custom software development, website development, IT consulting, cloud solutions, and UI/UX design services.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 You may use our services only for lawful purposes and in accordance with these Terms. You agree not to use our services:
@@ -229,7 +229,7 @@ export default function TermsOfService() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Intellectual Property</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                <strong className="text-white font-semibold">MylesCorp's IP:</strong> All MylesCorp products, including EduMyles, EduRyde, MylesCare, AgriMyles, MylesCRM, and all associated software, documentation, designs, and brand assets are the exclusive intellectual property of MylesCorp Technologies Ltd.
+                <strong className="text-white font-semibold">MylesCorp's IP:</strong> All MylesCorp products, including EduMyles, EduRyde, MylesCare, AgriMyles, MylesCRM, MylesProp, and all associated software, documentation, designs, and brand assets are the exclusive intellectual property of MylesCorp Technologies Ltd.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 <strong className="text-white font-semibold">Custom development:</strong> For bespoke software projects, intellectual property ownership is as specified in the signed project agreement. Unless explicitly agreed otherwise in writing, MylesCorp retains all IP in the underlying technology; clients receive a perpetual licence to use deliverables.

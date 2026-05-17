@@ -44,7 +44,7 @@ export function Footer() {
             </div>
           </div>
           <p className="text-[14px] text-light-blue leading-7 max-w-[320px] mb-5.5">
-            East Africa&apos;s AI-powered software company behind EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles for schools, transport teams, healthcare, businesses, and agriculture.
+            East Africa&apos;s AI-powered software company behind EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for schools, transport teams, healthcare, businesses, agriculture, and real estate.
           </p>
           <div className="flex flex-col gap-2.5">
             <a
@@ -118,6 +118,10 @@ export function Footer() {
               AgriMyles
               <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Agricultural Technology</span>
             </Link>
+            <Link href="/products/mylesprop" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+              MylesProp
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Real Estate Management</span>
+            </Link>
           </div>
         </div>
 
@@ -127,7 +131,7 @@ export function Footer() {
           <div className="space-y-2.5">
             <Link href="/services" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Implementation & Onboarding
-              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">For EduMyles, EduRyde, MylesCare, MylesCRM, and AgriMyles</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">For EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp</span>
             </Link>
             <Link href="/book-demo" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Product Demos
