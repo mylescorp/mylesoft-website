@@ -84,14 +84,14 @@ const MYLESHOSPITALITY_DATA = {
     {
       name: 'Basic',
       price: 'KSh 8,000/month',
-      description: 'Perfect for small hotels and restaurants',
+      description: 'For small hotels and restaurants',
       features: ['Up to 50 rooms', 'Basic booking system', 'Guest management', 'Mobile app', 'Email support'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 25,000/month',
-      description: 'Ideal for medium-sized hospitality businesses',
+      description: 'For medium-sized hospitality businesses',
       features: ['Up to 200 rooms', 'Advanced booking engine', 'Revenue management', 'Review management', 'Priority support', 'API access', 'Most Popular'],
       popular: true
     },
@@ -105,7 +105,7 @@ const MYLESHOSPITALITY_DATA = {
   ],
   testimonials: [
     {
-      quote: 'MylesHospitality transformed our operations. We saw a 40% increase in efficiency and guest satisfaction improved dramatically.',
+      quote: 'MylesHospitality improved our operations. We saw a 40% increase in efficiency and guest satisfaction improved dramatically.',
       author: 'Sarah Kamau',
       role: 'General Manager',
       organization: 'Serenity Hotels Nairobi'
@@ -235,8 +235,8 @@ export default function MylesHospitalityPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Hospitality Business?"
-          tagline="Transforming Industries, Empowering Generations."
+          title="Ready to Modernise Your Hospitality Operations?"
+          tagline="Software for African institutions."
           description={`Join ${MYLESHOSPITALITY_DATA.overview.stats[0].number} hospitality businesses across Africa already thriving with MylesHospitality.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

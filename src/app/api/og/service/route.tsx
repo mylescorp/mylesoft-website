@@ -60,7 +60,7 @@ export async function GET(request: Request) {
             opacity: 0.92,
           }}
         >
-          Digital transformation services for growing organisations
+          Systems planning services for growing organisations
         </p>
       </div>
     ),

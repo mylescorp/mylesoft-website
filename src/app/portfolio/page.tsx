@@ -175,7 +175,7 @@ const liveProjects: PortfolioProject[] = [
     previewSrc: '/portfolio/agrimyles-home.webp',
     previewAlt: 'AgriMyles homepage preview',
     summary:
-      'A professional farm management platform for farms, cooperatives, agribusinesses, NGOs, counties, exporters, and outgrower programs, combining crop calendars, mapped fields, task logs, input tracking, dashboards, and field-team accountability.',
+      'A farm management platform for farms, cooperatives, agribusinesses, NGOs, counties, exporters, and outgrower programs, combining crop calendars, mapped fields, task logs, input tracking, dashboards, and field-team accountability.',
     evidence: [
       'Farm Starter begins from KSh 12,500/month with implementation from KSh 35,000',
       'Farm Growth begins from KSh 38,000/month with implementation from KSh 95,000',
@@ -482,7 +482,7 @@ export default function PortfolioPage() {
               <div>
                 <SectionLabel>How We Deliver</SectionLabel>
                 <h2 className="font-display text-4xl font-bold leading-tight text-navy md:text-5xl">
-                  Professional execution from positioning to launch.
+                  Growth execution from positioning to launch.
                 </h2>
                 <p className="mt-5 font-body text-lg leading-8 text-medium-grey">
                   The strongest portfolio work is not just attractive. It explains the offer, handles objections, supports real operations, and gives prospects a clear next step.

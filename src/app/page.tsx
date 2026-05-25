@@ -88,7 +88,7 @@ const HOMEPAGE_DATA = {
   ],
   testimonials: [
     {
-      quote: 'MylesCorp transformed our school operations. We\'ve seen a 40% improvement in efficiency and student engagement.',
+      quote: 'MylesCorp gave our school clearer daily operations. We\'ve seen a 40% improvement in efficiency and student engagement.',
       author: 'Sarah Johnson',
       role: 'Principal',
       organization: 'Nairobi Academy'
@@ -111,15 +111,15 @@ const HOMEPAGE_DATA = {
       name: 'Starter',
       price: 'KSh 15,000',
       period: '/month',
-      description: 'Perfect for small organizations getting started',
+      description: 'For small organizations getting started',
       features: ['Up to 50 users', 'Basic features', 'Email support', 'Standard security'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 45,000',
       period: '/month',
-      description: 'Ideal for growing organizations',
+      description: 'For growing organizations',
       features: ['Up to 200 users', 'Advanced features', 'Priority support', 'Enhanced security', 'API access', 'Most Popular'],
       popular: true
     },
@@ -332,7 +332,7 @@ export default function HomePage() {
                 Sector-Specific Products
               </h2>
             <p className="font-body text-medium-grey text-[1.08rem] md:text-lg max-w-2xl mx-auto leading-8">
-                Six focused products with clear workflows, practical onboarding, and support for African operating realities.
+                Six focused products for serious growth.
               </p>
             </div>
 

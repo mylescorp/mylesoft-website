@@ -1,13 +1,13 @@
 export const EDUMYLES_DATA = {
   metadata: {
     title: 'EduMyles — School Management System | MylesCorp',
-    description: 'Complete AI-powered school management system transforming schools across East Africa. Manage students, fees, exams, timetables, and parent communication in one platform.',
+    description: 'Complete school management system for East African schools. Manage students, fees, exams, timetables, and parent communication in one platform.',
   },
   hero: {
     eyebrow: "EDUCATION TECHNOLOGY",
     heading: "Transforming Schools,",
     goldWord: "One Mile at a Time.",
-    subtitle: "The complete AI-powered school management system built for Kenyan schools — managing students, fees, exams, timetables, and parent communication all in one platform.",
+    subtitle: "The complete school management system built for Kenyan schools — managing students, fees, exams, timetables, and parent communication all in one platform.",
     badge: "LIVE",
     primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
     secondaryCta: { text: "Discuss Plans", href: "/pricing" }
@@ -91,7 +91,7 @@ export const EDUMYLES_DATA = {
       features: ["Core school management", "Student records", "Fee tracking", "Basic reports", "Email support"]
     },
     {
-      name: "Professional",
+      name: "Growth",
       price: "KSh 38,900/month",
       description: "established schools needing full operations",
       features: ["Everything in Starter", "Parent portal", "Advanced reports", "M-Pesa integration", "SMS communication", "Most Popular"]
@@ -100,7 +100,7 @@ export const EDUMYLES_DATA = {
       name: "Enterprise",
       price: "Custom",
       description: "multi-campus or custom school groups",
-      features: ["Everything in Professional", "Multi-campus management", "Custom integrations", "Dedicated onboarding", "Advanced support"]
+      features: ["Everything in Growth", "Multi-campus management", "Custom integrations", "Dedicated onboarding", "Advanced support"]
     }
   ],
   testimonials: [
@@ -201,7 +201,7 @@ export const EDURYDE_DATA = {
       features: ["Basic GPS tracking", "Parent notifications", "Route management", "Email support"]
     },
     {
-      name: "Professional",
+      name: "Growth",
       price: "KSh 7,000/month",
       description: "up to 8 buses",
       features: ["Everything in Starter", "Advanced analytics", "Driver management", "Priority support", "Most Popular"]
@@ -210,7 +210,7 @@ export const EDURYDE_DATA = {
       name: "Enterprise",
       price: "KSh 15,000/month",
       description: "unlimited fleet",
-      features: ["Everything in Professional", "Unlimited buses", "Custom integrations", "Dedicated support", "Advanced reporting"]
+      features: ["Everything in Growth", "Unlimited buses", "Custom integrations", "Dedicated support", "Advanced reporting"]
     }
   ],
   testimonials: [
@@ -238,13 +238,13 @@ export const EDURYDE_DATA = {
 export const MYLESCARE_DATA = {
   metadata: {
     title: 'MylesCare — Healthcare Management System | MylesCorp',
-    description: 'AI-powered hospital and clinic management system for East Africa. Patient records, appointments, billing, pharmacy, lab, and M-Pesa payments in one platform.',
+    description: 'Hospital and clinic management system for East Africa. Patient records, appointments, billing, pharmacy, lab, and M-Pesa payments in one platform.',
   },
   hero: {
     eyebrow: "HEALTHCARE TECHNOLOGY",
     heading: "Better Care,",
     goldWord: "Smarter Systems.",
-    subtitle: "The complete AI-powered healthcare management system for hospitals, clinics, and health centres — streamlining patient care, billing, pharmacy, and laboratory management.",
+    subtitle: "The complete healthcare management system for hospitals, clinics, and health centres — streamlining patient care, billing, pharmacy, and laboratory management.",
     badge: "LIVE",
     primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
     secondaryCta: { text: "Discuss Plans", href: "/pricing" }
@@ -256,7 +256,7 @@ export const MYLESCARE_DATA = {
       { number: "M-Pesa & SHA", label: "Integrated" },
       { number: "24/7 System", label: "Uptime" }
     ],
-    description: "MylesCare is an AI-powered hospital and clinic management system built for East African healthcare facilities. From small clinics to multi-branch hospitals, MylesCare digitises every aspect of healthcare administration — from patient registration and appointment scheduling to billing, pharmacy management, and laboratory information.\n\nMylesCare integrates with M-Pesa, major Kenyan banks, and the Social Health Authority (SHA) for seamless insurance claims processing — making it the most locally-integrated healthcare solution in Kenya."
+    description: "MylesCare is a hospital and clinic management system built for East African healthcare facilities. From small clinics to multi-branch hospitals, MylesCare digitises every aspect of healthcare administration — from patient registration and appointment scheduling to billing, pharmacy management, and laboratory information.\n\nMylesCare integrates with M-Pesa, major Kenyan banks, and the Social Health Authority (SHA) for structured insurance claims processing — making it the most locally-integrated healthcare solution in Kenya."
   },
   features: [
     {
@@ -378,12 +378,12 @@ export const AGRIMYLES_DATA = {
       { number: "M-Pesa", label: "Payments" },
       { number: "AI Crop", label: "Advisory" }
     ],
-    description: "AgriMyles is a comprehensive agricultural technology platform designed to modernise farming across East Africa. By connecting smallholder farmers, cooperatives, and large agribusinesses on a single digital platform, AgriMyles delivers AI-powered crop advisory, market price information, supply chain tools, and direct market linkages — all accessible via smartphone or basic feature phone.\n\nBuilt for the realities of Kenyan agriculture, AgriMyles supports M-Pesa payments, works in low-bandwidth environments, and is available in English and Swahili."
+    description: "AgriMyles is a agricultural technology platform designed to modernise farming across East Africa. By connecting smallholder farmers, cooperatives, and large agribusinesses on a single digital platform, AgriMyles delivers crop advisory automation, market price information, supply chain tools, and direct market linkages — all accessible via smartphone or basic feature phone.\n\nBuilt for the realities of Kenyan agriculture, AgriMyles supports M-Pesa payments, works in low-bandwidth environments, and is available in English and Swahili."
   },
   features: [
     {
       title: "AI Crop Advisory",
-      description: "AI-powered recommendations for planting, fertilisation, pest control, and harvesting based on location, weather, and crop type. Delivered via SMS and app.",
+      description: "Data-backed recommendations for planting, fertilisation, pest control, and harvesting based on location, weather, and crop type. Delivered via SMS and app.",
       icon: "brain"
     },
     {
@@ -477,7 +477,7 @@ export const MYLESCRM_DATA = {
     eyebrow: "BUSINESS SOLUTIONS",
     heading: "Grow Your Business",
     goldWord: "Intelligently.",
-    subtitle: "The complete CRM and business management platform for East African businesses — managing leads, sales pipelines, customers, invoicing, and business reporting in one powerful system.",
+    subtitle: "The complete CRM and business management platform for East African businesses — managing leads, sales pipelines, customers, invoicing, and business reporting in one connected system.",
     badge: "LIVE",
     primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
     secondaryCta: { text: "Discuss Plans", href: "/pricing" }
@@ -489,7 +489,7 @@ export const MYLESCRM_DATA = {
       { number: "Sales Pipeline", label: "Management" },
       { number: "AI Business", label: "Insights" }
     ],
-    description: "MylesCRM is a comprehensive customer relationship management and business solutions platform built for East African businesses. From managing your first sales lead to tracking invoices, monitoring customer relationships, and analysing business performance — MylesCRM puts every business tool in one integrated platform.\n\nBuilt for African business realities, MylesCRM integrates with M-Pesa for instant payment collection, supports Kenyan tax compliance, and works seamlessly on mobile devices — even in low-connectivity environments."
+    description: "MylesCRM is a customer relationship management and business operations platform built for East African businesses. From managing your first sales lead to tracking invoices, monitoring customer relationships, and analysing business performance — MylesCRM puts every business tool in one integrated platform.\n\nBuilt for African business realities, MylesCRM integrates with M-Pesa for instant payment collection, supports Kenyan tax compliance, and works well on mobile devices — even in low-connectivity environments."
   },
   features: [
     {
@@ -504,7 +504,7 @@ export const MYLESCRM_DATA = {
     },
     {
       title: "Invoicing & M-Pesa Payments",
-      description: "Create professional invoices, send payment links, receive M-Pesa payments automatically, and track payment status in real-time.",
+      description: "Create branded invoices, send payment links, receive M-Pesa payments automatically, and track payment status in real-time.",
       icon: "file-text"
     },
     {
@@ -556,7 +556,7 @@ export const MYLESCRM_DATA = {
       features: ["Lead management", "Basic pipeline", "Email support", "Mobile app"]
     },
     {
-      name: "Professional",
+      name: "Growth",
       price: "KSh 10,000/month",
       description: "up to 15 users",
       features: ["Everything in Starter", "Advanced analytics", "M-Pesa invoicing", "Priority support", "Most Popular"]
@@ -565,7 +565,7 @@ export const MYLESCRM_DATA = {
       name: "Enterprise",
       price: "KSh 25,000/month",
       description: "unlimited users + AI",
-      features: ["Everything in Professional", "Unlimited users", "AI sales insights", "Dedicated support", "Custom integrations"]
+      features: ["Everything in Growth", "Unlimited users", "AI sales insights", "Dedicated support", "Custom integrations"]
     }
   ],
   testimonials: [
@@ -668,7 +668,7 @@ export const MYLESPROP_DATA = {
       features: ["Up to 10 properties", "Tenant records", "Rent collection tracking", "Maintenance requests", "Email support"]
     },
     {
-      name: "Professional",
+      name: "Growth",
       price: "KSh 14,999/month",
       description: "property managers and growing portfolios",
       features: ["Up to 50 properties", "Lease and document management", "Financial reporting", "Maintenance workflows", "Priority support", "Most Popular"]
@@ -682,7 +682,7 @@ export const MYLESPROP_DATA = {
   ],
   testimonials: [
     {
-      quote: "MylesProp has transformed how we manage our 50+ property portfolio. Rent collection is now automated and follow-up is much easier.",
+      quote: "MylesProp has improved how we manage our 50+ property portfolio. Rent collection is now automated and follow-up is much easier.",
       author: "Michael Kamau",
       role: "Property Manager",
       organization: "Nairobi Properties"

@@ -11,7 +11,7 @@ import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
   title: 'MylesProp — Real Estate Management Kenya',
-  description: 'Complete property management system for Kenyan real estate professionals. Property listings, tenant management, rent collection, maintenance tracking. Built for East African property market.',
+  description: 'Complete property management system for Kenyan real estate teams. Property listings, tenant management, rent collection, maintenance tracking. Built for East African property market.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products/mylesprop',
   },
@@ -22,7 +22,7 @@ const MYLESPROP_DATA = {
     eyebrow: 'REAL ESTATE',
     heading: 'Smart Property',
     goldWord: 'Management',
-    subtitle: 'Comprehensive real estate management solution for property professionals and landlords across East Africa.',
+    subtitle: 'Comprehensive real estate management solution for property teams and landlords across East Africa.',
     badge: 'DEVELOPMENT',
     primaryCta: { text: 'Get Started', href: '/book-demo' },
     secondaryCta: { text: 'Learn More', href: '/contact' }
@@ -34,7 +34,7 @@ const MYLESPROP_DATA = {
       { number: "24/7", label: "Tenant Support" },
       { number: "KSh 50M", label: "Monthly Rent Processed" }
     ],
-    description: "MylesProp streamlines every aspect of property management from tenant acquisition to maintenance coordination. Our platform provides real-time insights, automated rent collection, and comprehensive reporting to maximize your property investment returns."
+    description: "MylesProp streamlines every aspect of property management from tenant acquisition to maintenance coordination. Our platform provides real-time insights, automated rent collection, and structured reporting to maximize your property investment returns."
   },
   features: [
     {
@@ -108,7 +108,7 @@ const MYLESPROP_DATA = {
       name: 'Starter',
       price: 'KSh 4,999',
       period: 'per month',
-      description: 'Perfect for individual landlords with small portfolios.',
+      description: 'For individual landlords with small portfolios.',
       features: [
         'Up to 10 properties',
         'Basic tenant management',
@@ -119,10 +119,10 @@ const MYLESPROP_DATA = {
       featured: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 14,999',
       period: 'per month',
-      description: 'Ideal for property managers with growing portfolios.',
+      description: 'For property managers with growing portfolios.',
       features: [
         'Up to 50 properties',
         'Advanced tenant management',
@@ -137,7 +137,7 @@ const MYLESPROP_DATA = {
       name: 'Enterprise',
       price: 'Custom',
       period: 'pricing',
-      description: 'Tailored solutions for large property management companies.',
+      description: 'Custom plans for large property management companies.',
       features: [
         'Unlimited properties',
         'White-label solution',
@@ -151,7 +151,7 @@ const MYLESPROP_DATA = {
   ],
   testimonials: [
     {
-      quote: "MylesProp has transformed how we manage our 50+ property portfolio. Rent collection is now automated and hassle-free.",
+      quote: "MylesProp has improved how we manage our 50+ property portfolio. Rent collection is now automated and hassle-free.",
       author: "Michael Kamau",
       role: "Property Manager, Nairobi Properties",
       organization: "Nairobi Properties",
@@ -192,7 +192,7 @@ export default function MylesPropPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything Your Property Needs"
-          description="6 powerful features covering every aspect of property management — all in one platform."
+          description="6 property management workflows in one platform."
           features={MYLESPROP_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'building' ? '🏢' :
@@ -215,7 +215,7 @@ export default function MylesPropPage() {
 
         {/* Targets */}
         <TargetsSection
-          title="Built for Every Professional"
+          title="Built for Every Growth"
           targets={MYLESPROP_DATA.targets}
         />
 
@@ -241,9 +241,9 @@ export default function MylesPropPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Property Management?"
+          title="Ready to Modernise Your Property Management?"
           tagline="Modernizing Real Estate Across East Africa."
-          description="Join hundreds of property professionals already using MylesProp for efficient management and maximized returns. Start your transformation today."
+          description="Join hundreds of property teams already using MylesProp for efficient management and maximized returns. Start your modernisation plan today."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

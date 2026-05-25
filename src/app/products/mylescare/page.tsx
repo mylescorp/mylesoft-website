@@ -88,7 +88,7 @@ export default function MylesCarePage() {
         {/* CTA */}
         <CTASection
           title="Modernise Your Healthcare Facility"
-          tagline="Transforming Industries, Empowering Generations."
+          tagline="Software for African institutions."
           description={`Join ${MYLESCARE_DATA.overview.stats[0].number} healthcare facilities across East Africa using MylesCare to deliver better patient care.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

@@ -42,7 +42,7 @@ export default function MylesCRMPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything to Grow Your Business"
-          description="8 powerful business tools in one integrated platform designed for East African businesses."
+          description="8 business tools in one integrated platform for East African businesses."
           features={MYLESCRM_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'users' ? '👥' :
@@ -88,7 +88,7 @@ export default function MylesCRMPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Grow Your Business?"
-          tagline="Transforming Industries, Empowering Generations."
+          tagline="Software for African institutions."
           description="Join businesses across East Africa using MylesCRM to sell smarter and grow faster."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

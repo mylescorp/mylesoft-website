@@ -22,14 +22,14 @@ const meetingTypes: MeetingType[] = [
   {
     id: 'product-demo',
     name: 'Product Demo',
-    description: 'Comprehensive demonstration of our solutions tailored to your needs.',
+    description: 'Guided demonstration mapped to your team and workflows.',
     duration: '45 minutes',
     icon: <Video size={24} className="text-gold" />
   },
   {
     id: 'consultation',
     name: 'Consultation',
-    description: 'Strategic discussion about your digital transformation needs.',
+    description: 'Strategic discussion about your systems modernisation needs.',
     duration: '60 minutes',
     icon: <User size={24} className="text-gold" />
   },

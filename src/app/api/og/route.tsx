@@ -7,7 +7,7 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url)
 
     const title = searchParams.get('title') || 'MylesCorp Technologies'
-    const description = searchParams.get('description') || 'AI-Powered Solutions for East African Businesses'
+    const description = searchParams.get('description') || 'Software Products for East African Businesses'
 
     return new ImageResponse(
       (

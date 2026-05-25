@@ -29,13 +29,13 @@ const quickStats = [
     icon: <Users className="w-8 h-8" />,
     number: "800+",
     label: "Active Clients",
-    description: "Organizations transforming with our solutions"
+    description: "Organizations running clearer systems with MylesCorp"
   },
   {
     icon: <Users className="w-8 h-8" />,
     number: "75+",
     label: "Team Members",
-    description: "Dedicated professionals across the region"
+    description: "Dedicated team members across the region"
   }
 ]
 
@@ -79,7 +79,7 @@ export default function CoveragePage() {
           <ScrollReveal direction="up" delay={0.6}>
             <p className="text-xl text-light-blue leading-relaxed max-w-3xl mx-auto font-body">
               From our headquarters in Nairobi to branch offices across the region,
-              we're bringing AI-powered solutions to organizations throughout East Africa.
+              we're bringing software products to organizations throughout East Africa.
             </p>
           </ScrollReveal>
         </div>
@@ -94,7 +94,7 @@ export default function CoveragePage() {
                 Our Regional Impact
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto font-body">
-                Numbers that reflect our commitment to East African transformation
+                Numbers that reflect our work across East African operations
               </p>
             </div>
           </ScrollReveal>
@@ -159,7 +159,7 @@ export default function CoveragePage() {
                 country: "Kenya",
                 clients: "500+",
                 sectors: ["Education", "Healthcare", "Agriculture", "Business", "Government"],
-                description: "Our largest market with comprehensive sector coverage"
+                description: "Our largest market with broad sector coverage"
               },
               {
                 country: "Uganda",
@@ -183,7 +183,7 @@ export default function CoveragePage() {
                 country: "Burundi",
                 clients: "25+",
                 sectors: ["Education"],
-                description: "Specialized education sector transformation"
+                description: "Specialised education sector systems"
               },
               {
                 country: "South Sudan",
@@ -226,11 +226,11 @@ export default function CoveragePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal direction="up" delay={0.2}>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                Ready to Transform Your Organization?
+                Ready to Modernise Your Operation?
               </h2>
             <p className="text-xl text-white/90 mb-8 font-body">
               Join hundreds of organizations across East Africa already using our solutions.
-              Find out how we can help you achieve your digital transformation goals.
+              Find out how we can help you plan and implement the next system your team needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-navy hover:bg-gray-100 shadow-2xl hover:shadow-3xl">

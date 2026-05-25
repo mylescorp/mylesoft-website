@@ -9,7 +9,7 @@ const blogPosts = [
     content: `
 # Transforming Education in Kenya with AI: The EduMyles Revolution
 
-Kenya's educational landscape is undergoing a profound transformation, driven by the integration of artificial intelligence into everyday learning experiences. At the forefront of this revolution stands EduMyles, our comprehensive AI-powered school management system that's changing how educational institutions operate across the country.
+Kenyan schools are adopting digital systems for administration, communication, reporting, and parent engagement. EduMyles supports these daily workflows for institutions across the country.
 
 ## The Current Educational Challenge
 
@@ -55,7 +55,7 @@ African healthcare systems are at a pivotal moment, with artificial intelligence
   {
     title: 'Agricultural Technology: Transforming Kenyan Farming with AI',
     slug: 'agricultural-technology-kenya',
-    excerpt: 'How AI-powered solutions are helping Kenyan farmers increase productivity and sustainability.',
+    excerpt: 'How software products are helping Kenyan farmers increase productivity and sustainability.',
     content: `
 # Agricultural Technology: Transforming Kenyan Farming with AI
 
@@ -82,7 +82,7 @@ export async function GET() {
      xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>MylesCorp Technologies Blog</title>
-  <description>Latest insights on AI technology and digital transformation in East Africa</description>
+  <description>Latest insights on AI technology and systems modernisation in East Africa</description>
   <link>${siteUrl}/blog</link>
   <language>en-us</language>
   <copyright>Copyright 2024 MylesCorp Technologies Limited. All rights reserved.</copyright>

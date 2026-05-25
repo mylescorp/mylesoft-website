@@ -114,7 +114,7 @@ const engagementPaths = [
   {
     title: 'Technology Advisory',
     description:
-      'For leaders planning infrastructure, cloud migration, security, hosting, procurement, or a phased digital transformation roadmap.',
+      'For leaders planning infrastructure, cloud migration, security, hosting, procurement, or a phased systems roadmap.',
     href: '/services/it-consulting',
     cta: 'Plan a Roadmap',
   },

@@ -56,7 +56,7 @@ const CONTACT_DATA = {
     {
       icon: '👥',
       title: 'Expert Team',
-      description: 'Our dedicated professionals are ready to assist with your specific needs and requirements.'
+      description: 'Our team is ready to assist with your requirements, timelines, and next steps.'
     },
     {
       icon: '🎯',
@@ -72,15 +72,15 @@ const CONTACT_DATA = {
   process: [
     { step: 1, title: 'Reach Out', description: 'Contact us through your preferred channel with your requirements' },
     { step: 2, title: 'Consultation', description: 'Our team will schedule a consultation to understand your needs' },
-    { step: 3, title: 'Solution Design', description: 'We design a tailored solution specifically for your organization' },
+    { step: 3, title: 'Solution Design', description: 'We design a scope mapped to your users, workflows, data, and timeline' },
     { step: 4, title: 'Implementation', description: 'Our experts implement the solution with full support and training' },
     { step: 5, title: 'Ongoing Support', description: 'We provide continuous support and optimization for long-term success' }
   ],
   targets: [
-    'New Customers - Organizations looking for digital transformation solutions',
+    'New Customers - Organizations looking for systems modernisation support',
     'Existing Clients - Current customers needing support or additional services',
     'Partners - Companies interested in partnership and collaboration opportunities',
-    'Job Seekers - Talented professionals looking to join our growing team'
+    'Job Seekers - Talented specialists looking to join our growing team'
   ],
   testimonials: [
     {
@@ -90,13 +90,13 @@ const CONTACT_DATA = {
       organization: 'TechStart Kenya'
     },
     {
-      quote: 'Their technical support is outstanding. They helped us resolve issues quickly and professionally.',
+      quote: 'Their technical support is outstanding. They helped us resolve issues quickly and clearly.',
       author: 'Michael Chen',
       role: 'IT Director',
       organization: 'East Africa Manufacturing'
     },
     {
-      quote: 'From first contact to implementation, the MylesCorp team was professional and responsive.',
+      quote: 'From first contact to implementation, the MylesCorp team was organised and responsive.',
       author: 'Grace Wanjiku',
       role: 'Operations Manager',
       organization: 'Kenya Agricultural Cooperative'
@@ -330,7 +330,7 @@ export default function ContactPage() {
         {/* Features */}
         <FeaturesSection
           title="Why Contact MylesCorp?"
-          description="We make it easy to connect with us and get the support you need for your digital transformation journey."
+          description="We make it easy to connect with us and get the support you need for your systems modernisation plan."
           features={CONTACT_DATA.features}
           centerHeader={true}
         />
@@ -338,7 +338,7 @@ export default function ContactPage() {
         {/* Process */}
         <ProcessSection
           title="Our Contact Process"
-          description="From first contact to successful implementation — we ensure a smooth and professional experience."
+          description="From first contact to successful implementation — we keep the experience clear, structured, and responsive."
           steps={CONTACT_DATA.process}
           centerHeader={true}
         />
@@ -447,8 +447,8 @@ export default function ContactPage() {
 
         {/* Final CTA */}
         <CTASection
-          title="Ready to Transform Your Business?"
-          tagline="Transforming Industries, Empowering Generations."
+          title="Ready to Modernise Your Operation?"
+          tagline="Software for African institutions."
           description={`Contact us today and join ${CONTACT_DATA.overview.stats[3].number} satisfied customers across East Africa.`}
           primaryCta={{ text: "Book a Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Call Us Now", href: "tel:+254743993715" }}

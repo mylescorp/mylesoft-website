@@ -156,19 +156,19 @@ export async function POST(request: NextRequest) {
                 <div class="header">
                   <div class="logo">MylesCorp Technologies</div>
                   <h1>Welcome to Our Newsletter</h1>
-                  <p>Thank you for subscribing to stay updated with AI technology and digital transformation in East Africa.</p>
+                  <p>Thank you for subscribing to stay updated with AI technology and systems modernisation in East Africa.</p>
                 </div>
                 <div class="content">
                   <h2>What to Expect</h2>
                   <ul>
                     <li>Latest insights on AI technology trends</li>
-                    <li>Digital transformation success stories from East Africa</li>
+                    <li>Systems modernisation stories from East Africa</li>
                     <li>Product updates and new feature announcements</li>
                     <li>Educational content and best practices</li>
                     <li>Industry news and market analysis</li>
                   </ul>
 
-                  <p>You'll receive our newsletter every week with curated content designed to help you leverage technology for growth.</p>
+                  <p>You'll receive our newsletter every week with curated content designed to help you use technology for growth.</p>
 
                   <div style="text-align: center;">
                     <a href="https://www.mylescorptech.com" class="button">Explore Our Solutions</a>
@@ -176,7 +176,7 @@ export async function POST(request: NextRequest) {
 
                   <p>Have questions? Simply reply to this email or contact our team at <a href="mailto:info@mylescorptech.com">info@mylescorptech.com</a>.</p>
 
-                  <p><span class="gold">Transforming Industries, Empowering Generations.</span></p>
+                  <p><span class="gold">Software for African institutions.</span></p>
                 </div>
                 <div class="footer">
                   <p>You received this email because you subscribed to our newsletter.</p>

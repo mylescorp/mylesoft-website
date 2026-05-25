@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'MylesCorp Technologies Brochure',
-  description: 'Explore the MylesCorp digital brochure covering our AI-powered products, services, impact, and contact information.',
+  description: 'Explore the MylesCorp digital brochure covering our software products, services, impact, and contact information.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/brochure',
   },
@@ -48,7 +48,7 @@ const brochureSections = [
   'Company story, mission, and market focus',
   'Full product overview for EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, and AgriMyles',
   'Published product plan options including MylesProp and current live AgriMyles pricing',
-  'Professional services for implementation, websites, cloud, hosting, and consulting',
+  'Growth services for implementation, websites, cloud, hosting, and consulting',
   'Delivery approach, support model, and contact information',
 ]
 
@@ -111,7 +111,7 @@ export default function BrochurePage() {
                   What&apos;s Inside
                 </h2>
                 <p className="mb-8 max-w-2xl font-body text-lg leading-8 text-medium-grey">
-                  Download the professional MylesCorp brochure with products, services, plan options, implementation approach, and contact information in one PDF.
+                  Download the MylesCorp brochure with products, services, plan options, implementation approach, and contact information in one PDF.
                 </p>
 
                 <div className="space-y-4">
@@ -162,7 +162,7 @@ export default function BrochurePage() {
                     Need a Downloadable PDF Version?
                   </h2>
                   <p className="font-body text-lg leading-8 text-medium-grey">
-                    The downloadable PDF includes our focused product suite, professional services, pricing summary, delivery process, support model, and contact details for decision makers.
+                    The downloadable PDF includes our focused product suite, delivery services, pricing summary, delivery process, support model, and contact details for decision makers.
                   </p>
                 </div>
 

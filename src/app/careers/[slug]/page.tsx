@@ -37,7 +37,7 @@ We are seeking a highly skilled Senior Full Stack Developer to join our growing 
 
 ## About the Role
 
-As a Senior Full Stack Developer, you will work on cutting-edge projects that leverage artificial intelligence and modern web technologies to solve real-world problems in education, healthcare, agriculture, and business sectors across East Africa.
+As a Senior Full Stack Developer, you will work on production software projects that use applied automation and modern web technologies to solve real-world problems in education, healthcare, agriculture, and business sectors across East Africa.
 
 ## Key Responsibilities
 
@@ -55,7 +55,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
 
 ### AI Integration
 - Integrate machine learning models into web applications
-- Develop AI-powered features and user experiences
+- Develop automation-backed features and user experiences
 - Work with data scientists to implement ML algorithms
 - Optimize AI model performance in production environments
 
@@ -75,7 +75,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
 - **DevOps**: Knowledge of Docker, Kubernetes, and CI/CD
 
 ### Experience
-- 5+ years of professional full-stack development experience
+- 5+ years of production full-stack development experience
 - Proven track record of leading technical projects
 - Experience with AI/ML integration in web applications
 - Strong understanding of software architecture and design patterns
@@ -93,7 +93,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
 - Performance bonuses and stock options
 - Comprehensive health insurance package
 - Flexible work arrangements and remote options
-- Professional development budget
+- Growth development budget
 
 ### Growth & Learning
 - Opportunity to work on impactful AI projects
@@ -103,12 +103,12 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
 
 ### Work Environment
 - Modern office in Westlands, Nairobi
-- Collaborative and innovative team culture
+- Collaborative, delivery-focused team culture
 - Cutting-edge technology and tools
 - Work-life balance and flexible hours
     `,
     requirements: [
-      '5+ years of professional full-stack development experience',
+      '5+ years of production full-stack development experience',
       'Expertise in React, Next.js, TypeScript, and modern CSS',
       'Strong experience with Node.js, Python, or similar back-end technologies',
       'Proficiency in PostgreSQL, MongoDB, and Redis',
@@ -124,11 +124,11 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
       'Performance bonuses and stock options',
       'Comprehensive health insurance package',
       'Flexible work arrangements and remote options',
-      'Professional development budget',
+      'Growth development budget',
       'Regular training and skill development programs',
       'Conference attendance and certifications',
       'Modern office in Westlands, Nairobi',
-      'Collaborative and innovative team culture',
+      'Collaborative, delivery-focused team culture',
       'Work-life balance and flexible hours'
     ],
     skills: {
@@ -159,7 +159,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
         'Impact-driven work',
         'Diversity and inclusion'
       ],
-      environment: 'Fast-paced, collaborative, and innovative environment where you\'ll work with talented professionals who are passionate about using technology to solve real-world problems in Africa.'
+      environment: 'Fast-paced, collaborative, and delivery-focused environment where you\'ll work with talented specialists who are passionate about building software for real operating problems in Africa.'
     },
     applicationProcess: [
       'Submit your application with resume and portfolio',
@@ -184,16 +184,16 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
     posted: '2024-03-08',
     deadline: '2024-04-08',
     description: `
-We are looking for a passionate Product Manager to drive the development of our AI-powered software solutions. You will be responsible for product strategy, roadmap planning, and cross-functional team leadership.
+We are looking for a passionate Product Manager to drive the development of our software products. You will be responsible for product strategy, roadmap planning, and cross-functional team leadership.
 
 ## About the Role
 
-As Product Manager at MylesCorp Technologies, you will work at the intersection of technology, business, and user experience to deliver innovative products that transform industries across East Africa.
+As Product Manager at MylesCorp Technologies, you will work at the intersection of technology, business, and user experience to deliver useful products for industries across East Africa.
 
 ## Key Responsibilities
 
 ### Product Strategy
-- Define product vision and strategy for our AI-powered solutions
+- Define product vision and strategy for our software products
 - Conduct market research and competitive analysis
 - Identify user needs and market opportunities
 - Develop and maintain product roadmaps
@@ -239,8 +239,8 @@ As Product Manager at MylesCorp Technologies, you will work at the intersection 
       'Performance bonuses and stock options',
       'Comprehensive health insurance package',
       'Flexible work arrangements',
-      'Professional development budget',
-      'Opportunity to shape innovative AI products'
+      'Growth development budget',
+      'Opportunity to shape applied automation products'
     ],
     skills: {
       required: [
@@ -264,7 +264,7 @@ As Product Manager at MylesCorp Technologies, you will work at the intersection 
         'Innovation and creativity',
         'Collaboration and teamwork'
       ],
-      environment: 'Dynamic and fast-paced environment where you\'ll have the opportunity to make a real impact on products that transform industries.'
+      environment: 'Dynamic and fast-paced environment where you\'ll have the opportunity to make a real impact on products used by African institutions.'
     },
     applicationProcess: [
       'Submit your application with resume and cover letter',
@@ -328,7 +328,7 @@ export default function JobPage({ params }: JobPageProps) {
                 <div className="mb-8">
                   <h1 className="heading-1 mb-4">{job.title}</h1>
                   <p className="text-xl text-navy-100 mb-6">
-                    Join our team and help transform industries across East Africa with AI-powered solutions.
+                    Join our team and help build software products for industries across East Africa.
                   </p>
                 </div>
 

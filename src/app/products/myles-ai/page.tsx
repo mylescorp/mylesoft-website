@@ -51,7 +51,7 @@ export default function MylesAIPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="text-white">
                 <p className="text-xl text-navy-100 leading-relaxed mb-8 slide-up">
-                  Transform your business with cutting-edge machine learning, natural language processing, and computer vision solutions tailored to your specific needs. Myles AI delivers custom artificial intelligence solutions for competitive advantage.
+                  Transform your business with applied machine learning, natural language processing, and computer vision capabilities mapped to defined business workflows. Myles AI delivers applied automation for measurable operational advantage.
                 </p>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/20">
                   <h3 className="text-lg font-semibold text-white mb-4">AI Services</h3>
@@ -185,7 +185,7 @@ export default function MylesAIPage() {
             <div className="text-center text-white">
               <h2 className="heading-2 mb-4">Transform Your Business with AI</h2>
               <p className="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
-                Let us help you leverage artificial intelligence for competitive advantage
+                Let us help you use applied automation for competitive advantage
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/book-demo">

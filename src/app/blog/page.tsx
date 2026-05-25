@@ -17,7 +17,7 @@ import {
 
 export const metadata = {
   title: 'MylesCorp Blog — AI, Software & Digital Transformation Insights',
-  description: 'Read MylesCorp insights on AI, education technology, healthcare systems, agriculture platforms, and digital transformation across East Africa.',
+  description: 'Read MylesCorp insights on AI, education technology, healthcare systems, agriculture platforms, and systems modernisation across East Africa.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/blog',
   },
@@ -26,7 +26,7 @@ export const metadata = {
 const blogPosts = [
   {
     title: 'The Future of AI in African Education',
-    excerpt: 'Exploring how artificial intelligence is transforming educational landscapes across East Africa, from personalized learning to administrative efficiency.',
+    excerpt: 'Exploring how school software is changing educational operations across East Africa, from personalized learning to administrative efficiency.',
     author: 'Jonathan Myles',
     role: 'CEO & Founder',
     date: '2024-03-15',
@@ -98,7 +98,7 @@ const blogPosts = [
   },
   {
     title: 'Mobile Money Integration: The Kenyan Success Story',
-    excerpt: 'How M-Pesa and mobile payment innovations are transforming financial services across East Africa.',
+    excerpt: 'How M-Pesa and mobile payment infrastructure are changing financial services across East Africa.',
     author: 'Finance Team',
     role: 'Financial Analysts',
     date: '2024-02-25',

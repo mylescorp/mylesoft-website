@@ -91,7 +91,7 @@ export default function CloudSolutionsPage() {
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              We help businesses migrate to, manage, and optimise cloud environments — enabling greater flexibility, security, and cost efficiency.
+              We plan, migrate, and manage cloud environments for teams that need reliable hosting, controlled costs, backups, monitoring, and security reviews.
             </p>
 
             {/* CTA buttons */}
@@ -120,7 +120,7 @@ export default function CloudSolutionsPage() {
                   What We Offer
                 </h2>
                 <p className="text-medium-grey leading-relaxed mb-6">
-                  We provide comprehensive cloud solutions that help businesses leverage the power of cloud computing. From migration to optimization, we ensure your cloud journey is smooth and successful.
+                  We plan, migrate, and manage cloud environments for teams that need reliable hosting, controlled costs, backups, monitoring, and security reviews.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -177,7 +177,7 @@ export default function CloudSolutionsPage() {
                 What's Included
               </h2>
               <p className="text-medium-grey max-w-2xl mx-auto">
-                Complete cloud solutions for modern businesses.
+                Cloud services for production websites, apps, and internal systems.
               </p>
             </div>
 
@@ -186,7 +186,7 @@ export default function CloudSolutionsPage() {
                 {
                   icon: <Cloud className="text-gold" size={32} />,
                   title: "Cloud Migration Strategy",
-                  description: "Strategic planning for seamless cloud migration."
+                  description: "Migration planning with clear phases, rollback points, and ownership."
                 },
                 {
                   icon: <Server className="text-gold" size={32} />,
@@ -196,7 +196,7 @@ export default function CloudSolutionsPage() {
                 {
                   icon: <Settings className="text-gold" size={32} />,
                   title: "Infrastructure Management",
-                  description: "Ongoing management and optimization."
+                  description: "Ongoing management, monitoring, and cost review."
                 },
                 {
                   icon: <TrendingUp className="text-gold" size={32} />,
@@ -206,12 +206,12 @@ export default function CloudSolutionsPage() {
                 {
                   icon: <Lock className="text-gold" size={32} />,
                   title: "Security & Compliance",
-                  description: "Enterprise-grade security and compliance."
+                  description: "Security controls, access review, and compliance support."
                 },
                 {
                   icon: <Shield className="text-gold" size={32} />,
                   title: "Disaster Recovery",
-                  description: "Comprehensive backup and recovery solutions."
+                  description: "Backup policies, recovery testing, and continuity planning."
                 },
                 {
                   icon: <Monitor className="text-gold" size={32} />,
@@ -290,7 +290,7 @@ export default function CloudSolutionsPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  quote: "MylesCorp migrated our entire infrastructure to AWS with zero downtime. Their expertise is unmatched.",
+                  quote: "MylesCorp migrated our entire infrastructure to AWS with zero downtime and gave our team a clear operating plan.",
                   author: "Samuel Njoroge",
                   role: "CTO, E-commerce Platform",
                   rating: 5
@@ -333,7 +333,7 @@ export default function CloudSolutionsPage() {
               Ready to Move to the Cloud?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
-              Transforming Industries, Empowering Generations.
+              Reliable infrastructure for systems that cannot afford guesswork.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/book-demo">

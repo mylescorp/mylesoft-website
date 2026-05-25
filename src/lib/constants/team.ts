@@ -3,7 +3,7 @@ export const TEAM_MEMBERS = [
     name: "Jonathan Myles",
     role: "CEO & Founder",
     email: "jonathan@mylescorptech.com",
-    bio: "A visionary software engineer and entrepreneur, Jonathan founded MylesCorp Technologies in 2020 with a mission to build AI-powered solutions addressing East Africa's most critical challenges. He leads the company's overall strategy, product development, and technology architecture across all 20+ MylesCorp products.",
+    bio: "A visionary software engineer and entrepreneur, Jonathan founded MylesCorp Technologies in 2020 with a mission to build software products addressing East Africa's most critical challenges. He leads the company's overall strategy, product development, and technology architecture across all 20+ MylesCorp products.",
     image: "/team/jonathan.jpeg",
     social: { linkedin: "#", twitter: "#" }
   },

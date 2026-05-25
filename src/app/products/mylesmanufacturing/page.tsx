@@ -84,14 +84,14 @@ const MYLESMANUFACTURING_DATA = {
     {
       name: 'Basic',
       price: 'KSh 12,000/month',
-      description: 'Perfect for small manufacturers',
+      description: 'For small manufacturers',
       features: ['Up to 50 employees', 'Basic production planning', 'Inventory management', 'Mobile app', 'Email support'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 35,000/month',
-      description: 'Ideal for medium manufacturing companies',
+      description: 'For medium manufacturing companies',
       features: ['Up to 200 employees', 'Advanced planning', 'Quality control', 'Maintenance management', 'Priority support', 'API access', 'Most Popular'],
       popular: true
     },
@@ -235,8 +235,8 @@ export default function MylesManufacturingPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Manufacturing Operations?"
-          tagline="Transforming Industries, Empowering Generations."
+          title="Ready to Modernise Your Manufacturing Operations?"
+          tagline="Software for African institutions."
           description={`Join ${MYLESMANUFACTURING_DATA.overview.stats[0].number} manufacturing companies across Africa already thriving with MylesManufacturing.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

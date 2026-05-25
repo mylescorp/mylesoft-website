@@ -11,7 +11,7 @@ import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
   title: 'AgriMyles, Smart Agricultural Software for East Africa',
-  description: 'AgriMyles gives Kenyan farmers AI-powered crop monitoring, weather alerts & market insights. Join 1,000+ farmers already growing smarter.',
+  description: 'AgriMyles gives Kenyan farmers crop monitoring, weather alerts, and market insights. Join 1,000+ farmers already growing smarter.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products/agrimyles',
   },
@@ -42,7 +42,7 @@ export default function AgriMylesPage() {
         {/* Features */}
         <FeaturesSection
           title="Smart Farming Tools"
-          description="6 powerful tools connecting farmers to knowledge, markets, and financial services."
+          description="6 tools connecting farmers to knowledge, markets, and financial services."
           features={AGRIMYLES_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'sprout' ? '🌱' :
@@ -65,7 +65,7 @@ export default function AgriMylesPage() {
 
         {/* Pricing */}
         <PricingSection
-          title="Professional AgriMyles Pricing"
+          title="Growth AgriMyles Pricing"
           description="Planning anchors from the live AgriMyles pricing page. Final proposals depend on acreage, users, data migration, integrations, and reporting scope."
           plans={AGRIMYLES_DATA.pricing.map(p => ({
             ...p,
@@ -86,7 +86,7 @@ export default function AgriMylesPage() {
         {/* CTA */}
         <CTASection
           title="Transform Your Farm Today"
-          tagline="Transforming Industries, Empowering Generations."
+          tagline="Software for African institutions."
           description={`Join ${AGRIMYLES_DATA.overview.stats[0].number} farmers across all 47 counties already using AgriMyles to grow smarter.`}
           primaryCta={{ text: "Get Started Free", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

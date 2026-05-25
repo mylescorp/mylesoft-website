@@ -7,7 +7,7 @@ export const organizationSchema = {
   alternateName: 'MylesCorp',
   url: 'https://www.mylescorptech.com',
   logo: 'https://www.mylescorptech.com/icon.png',
-  description: 'East Africa\'s leading AI-powered software company transforming Education, Healthcare, Agriculture, and Business with innovative solutions.',
+  description: 'East African software company building operating systems for education, healthcare, agriculture, transport, property, and business teams.',
   email: 'info@mylescorptech.com',
   telephone: '+254 743 993 715',
   address: {
@@ -47,7 +47,7 @@ export const localBusinessSchema = {
   '@type': 'SoftwareApplication',
   name: 'MylesCorp Technologies',
   url: 'https://www.mylescorptech.com',
-  description: 'AI-powered software solutions for education, healthcare, agriculture and business in East Africa.',
+  description: 'Software products for education, healthcare, agriculture, transport, property, and business teams in East Africa.',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   offers: {

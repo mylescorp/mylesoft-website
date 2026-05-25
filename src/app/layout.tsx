@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     template: '%s | MylesCorp',
   },
   description:
-    'Africa-focused AI software company building solutions for schools, hospitals, transport teams, and businesses.',
+    'Africa-focused software company building operating systems for schools, hospitals, transport teams, farms, property teams, and businesses.',
   keywords: [
     'MylesCorp', 'MylesCorp Technologies',
     'School Management System Kenya',
     'School Transport Tracking Kenya',
     'EduMyles', 'EduRyde', 'MylesCRM',
-    'AI Software Africa',
+    'Business Software Africa',
     'EdTech Kenya', 'HealthTech Kenya',
   ],
   authors: [{ name: 'MylesCorp' }],
@@ -67,8 +67,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'MylesCorp Technologies, AI Software for East Africa',
-    description: 'AI-powered solutions for schools, hospitals, farms & businesses across Kenya, Uganda & Tanzania.',
+    title: 'MylesCorp Technologies, Software for East Africa',
+    description: 'Operating systems for schools, hospitals, transport teams, farms, property teams, and businesses across Kenya, Uganda, and Tanzania.',
     url: 'https://www.mylescorptech.com',
     siteName: 'MylesCorp Technologies',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
@@ -76,8 +76,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MylesCorp Technologies, AI Software for East Africa',
-    description: 'AI-powered solutions for schools, hospitals, farms & businesses across Kenya, Uganda & Tanzania.',
+    title: 'MylesCorp Technologies, Software for East Africa',
+    description: 'Operating systems for schools, hospitals, transport teams, farms, property teams, and businesses across Kenya, Uganda, and Tanzania.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -132,7 +132,7 @@ export default function RootLayout({
               "name": "MylesCorp Technologies",
               "url": "https://www.mylescorptech.com",
               "logo": "https://www.mylescorptech.com/mylescorp-logo.png",
-              "description": "AI-powered software solutions for schools, school transport, and businesses in East Africa.",
+              "description": "Software products for schools, school transport, healthcare, agriculture, property, and businesses in East Africa.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Wester Heights, Westlands",

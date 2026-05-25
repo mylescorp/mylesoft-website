@@ -152,7 +152,7 @@ export async function sendContactEmail(
                       text-align:center;">
             <p style="color:#C79639;font-style:italic;
                       font-size:14px;margin:0 0 8px;">
-              Transforming Industries, Empowering Generations.
+              Software for African institutions.
             </p>
             <p style="color:#C7D7EF;font-size:12px;margin:0;">
               MylesCorp Technologies Ltd · Westlands,

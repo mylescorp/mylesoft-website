@@ -44,7 +44,7 @@ export function Footer() {
             </div>
           </div>
           <p className="text-[14px] text-light-blue leading-7 max-w-[320px] mb-5.5">
-            East Africa&apos;s AI-powered software company behind EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for schools, transport teams, healthcare, businesses, agriculture, and real estate.
+            East Africa&apos;s software company behind EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for schools, transport teams, healthcare, businesses, agriculture, and real estate.
           </p>
           <div className="flex flex-col gap-2.5">
             <a
@@ -184,7 +184,7 @@ export function Footer() {
         <div>
           <h4 className="text-[18px] font-bold text-white mb-1.5">Stay Connected</h4>
           <p className="text-[14px] text-light-blue leading-7 mb-4">
-            Get the latest updates on our innovative solutions and industry insights delivered to your inbox.
+            Get product updates, implementation notes, and East African technology insights delivered to your inbox.
           </p>
         </div>
         <div>
@@ -348,7 +348,7 @@ export function Footer() {
 
       {/* TAGLINE ROW */}
       <div className="border-t border-[rgba(255,255,255,0.04)] text-center px-10 py-4 bg-[rgba(0,0,0,0.15)]">
-        <div className="text-[14px] italic text-light-blue font-['Playfair_Display'] mb-1">Transforming Industries, Empowering Generations.</div>
+        <div className="text-[14px] italic text-light-blue font-['Playfair_Display'] mb-1">Software for African institutions.</div>
       </div>
     </footer>
   )

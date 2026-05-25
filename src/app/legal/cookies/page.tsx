@@ -134,7 +134,7 @@ export default function CookiePolicy() {
                     <ul className="list-disc pl-6 space-y-2">
                       <li><strong>Google Analytics:</strong> For website analytics and performance measurement</li>
                       <li><strong>Vercel Analytics:</strong> For performance monitoring and optimization</li>
-                      <li><strong>LinkedIn:</strong> For professional networking and advertising</li>
+                      <li><strong>LinkedIn:</strong> For business networking and advertising</li>
                       <li><strong>Google Ads:</strong> For advertising and remarketing</li>
                     </ul>
                   </div>

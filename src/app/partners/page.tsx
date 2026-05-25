@@ -11,7 +11,7 @@ import { Handshake, Target, Globe, Award, TrendingUp, Users, Mail, Phone, ArrowR
 
 export const metadata = {
   title: 'Partners — MylesCorp Technologies',
-  description: 'Partner with MylesCorp Technologies to deliver AI-powered solutions across East Africa. Technology, reseller, and integration partnerships.',
+  description: 'Partner with MylesCorp Technologies to deliver software products across East Africa. Technology, reseller, and integration partnerships.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/partners',
   },
@@ -22,7 +22,7 @@ const PARTNERS_DATA = {
     title: 'Partners',
     tagline: 'Partner With Us  for Success',
     description: [
-      'Join our growing ecosystem of partners delivering transformative solutions across East Africa.',
+      'Join our growing ecosystem of partners delivering practical systems across East Africa.',
       'Together, we can reach more customers and create greater impact in the region.'
     ],
     image: '/api/og/product?name=Partners&category=Collaboration',
@@ -52,12 +52,12 @@ const PARTNERS_DATA = {
     {
       icon: '🚀',
       title: 'Innovation Support',
-      description: 'Access cutting-edge technology and innovation resources to enhance your offerings.'
+      description: 'Access production-ready technology and innovation resources to enhance your offerings.'
     },
     {
       icon: '💡',
       title: 'Technical Excellence',
-      description: 'Leverage our technical expertise and comprehensive support for seamless integration.'
+      description: 'Use our technical guidance, integration support, and handover process.'
     },
     {
       icon: '🏆',
@@ -69,7 +69,7 @@ const PARTNERS_DATA = {
     { step: 1, title: 'Application', description: 'Submit your partnership application and tell us about your business' },
     { step: 2, title: 'Evaluation', description: 'We review your application and assess mutual fit and opportunities' },
     { step: 3, title: 'Agreement', description: 'We establish partnership terms and sign agreements' },
-    { step: 4, title: 'Onboarding', description: 'We provide comprehensive training and resources for success' },
+    { step: 4, title: 'Onboarding', description: 'We provide training, resources, and partner handover' },
     { step: 5, title: 'Growth', description: 'We work together to grow our businesses and serve customers' }
   ],
   targets: [
@@ -104,7 +104,7 @@ const partnershipTypes = [
   {
     icon: <Handshake className="w-8 h-8" />,
     title: "Strategic Partners",
-    description: "Collaborate with us to deliver comprehensive solutions to our shared customers",
+    description: "Collaborate with us to deliver complete systems to shared customers",
     benefits: ["Revenue sharing opportunities", "Co-marketing initiatives", "Joint product development"]
   },
   {

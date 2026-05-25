@@ -24,7 +24,7 @@ const MYLESNONPROFIT_DATA = {
     title: 'MylesNonProfit',
     tagline: 'Smart NGO Management for Greater Impact',
     description: [
-      'Empowering NGOs with comprehensive donor and volunteer management tools.',
+      'Empowering NGOs with donor and volunteer management tools.',
       'Track donations, manage volunteers, and report impact with our intuitive platform.'
     ],
     image: '/api/og/product?name=MylesNonProfit&category=NonProfit',
@@ -59,7 +59,7 @@ const MYLESNONPROFIT_DATA = {
     {
       icon: '📊',
       title: 'Impact Reporting',
-      description: 'Generate comprehensive impact reports for stakeholders and compliance requirements.'
+      description: 'Generate structured impact reports for stakeholders and compliance requirements.'
     },
     {
       icon: '✅',
@@ -84,14 +84,14 @@ const MYLESNONPROFIT_DATA = {
     {
       name: 'Starter',
       price: 'KSh 2,000/month',
-      description: 'Perfect for small NGOs',
+      description: 'For small NGOs',
       features: ['Up to 100 donors', 'Basic volunteer management', 'Event planning', 'Email support', 'Mobile app'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 8,000/month',
-      description: 'Ideal for growing NGOs',
+      description: 'For growing NGOs',
       features: ['Up to 1,000 donors', 'Advanced volunteer management', 'Grant tracking', 'Impact reporting', 'Priority support', 'Custom integrations', 'Most Popular'],
       popular: true
     },
@@ -105,7 +105,7 @@ const MYLESNONPROFIT_DATA = {
   ],
   testimonials: [
     {
-      quote: 'MylesNonProfit transformed how we manage our donors. We saw a 40% increase in donations in the first year.',
+      quote: 'MylesNonProfit improved how we manage our donors. We saw a 40% increase in donations in the first year.',
       author: 'Miriam Achieng',
       role: 'Executive Director',
       organization: 'Hope Foundation Kenya'
@@ -231,8 +231,8 @@ export default function MylesNonProfitPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your NGO?"
-          tagline="Transforming Industries, Empowering Generations."
+          title="Ready to Modernise Your NGO Operations?"
+          tagline="Software for African institutions."
           description={`Join ${MYLESNONPROFIT_DATA.overview.stats[0].number} NGOs across Africa already thriving with MylesNonProfit.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

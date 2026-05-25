@@ -26,8 +26,8 @@ import {
 } from 'lucide-react'
 
 export const metadata = {
-  title: 'IT Consulting & Digital Transformation | MylesCorp',
-  description: 'Strategic IT consulting, technology audits, and digital transformation advisory for organisations across East Africa. Expert guidance from Nairobi.',
+  title: 'IT Consulting & Systems Roadmaps | MylesCorp',
+  description: 'IT consulting, technology audits, systems planning, and implementation roadmaps for organisations across East Africa.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/services/it-consulting',
   },
@@ -90,7 +90,7 @@ export default function ITConsultingPage() {
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Expert consultants who assess your technology landscape, identify gaps, and build strategic roadmaps aligned with your business goals.
+              Consultants who assess your systems, identify operational gaps, and build roadmaps aligned with budgets, teams, risks, and business goals.
             </p>
 
             {/* CTA buttons */}
@@ -119,7 +119,7 @@ export default function ITConsultingPage() {
                   What We Offer
                 </h2>
                 <p className="text-medium-grey leading-relaxed mb-6">
-                  Our expert consultants provide strategic guidance to help you leverage technology effectively. We focus on ROI-driven solutions that align with your business objectives.
+                  Our consultants review the systems you already run, identify the gaps that slow work down, and define practical improvements tied to measurable business objectives.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -132,8 +132,8 @@ export default function ITConsultingPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                     <div>
-                      <h4 className="font-semibold text-navy">Digital Transformation</h4>
-                      <p className="text-medium-grey">Modernizing legacy systems</p>
+                      <h4 className="font-semibold text-navy">Systems Modernisation</h4>
+                      <p className="text-medium-grey">Modernising legacy systems</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -157,7 +157,7 @@ export default function ITConsultingPage() {
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                   <div className="text-3xl font-bold text-gold mb-2">Digital</div>
-                  <div className="text-sm text-medium-grey">Transformation</div>
+                  <div className="text-sm text-medium-grey">Modernisation</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                   <div className="text-3xl font-bold text-gold mb-2">ROI</div>
@@ -176,7 +176,7 @@ export default function ITConsultingPage() {
                 What's Included
               </h2>
               <p className="text-medium-grey max-w-2xl mx-auto">
-                Comprehensive consulting services for digital transformation.
+                Consulting services for audits, roadmaps, procurement, rollout planning, and adoption.
               </p>
             </div>
 
@@ -194,8 +194,8 @@ export default function ITConsultingPage() {
                 },
                 {
                   icon: <TrendingUp className="text-gold" size={32} />,
-                  title: "Digital Transformation Planning",
-                  description: "Strategic planning for digital transformation initiatives."
+                  title: "Systems Modernisation Planning",
+                  description: "Practical planning for phased technology improvements."
                 },
                 {
                   icon: <Database className="text-gold" size={32} />,
@@ -301,7 +301,7 @@ export default function ITConsultingPage() {
                   rating: 5
                 },
                 {
-                  quote: "The digital transformation roadmap they created has positioned us for future growth. Excellent work!",
+                  quote: "The systems roadmap they created gave our leadership team clear priorities, budgets, and rollout phases.",
                   author: "Peter Kiptanui",
                   role: "CEO, Financial Services Firm",
                   rating: 5
@@ -329,10 +329,10 @@ export default function ITConsultingPage() {
         <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-              Ready to Transform Your Technology Strategy?
+              Ready to Tighten Your Technology Strategy?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
-              Transforming Industries, Empowering Generations.
+              Clear priorities, practical budgets, and phased delivery.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/book-demo">

@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Book a Free Demo, MylesCorp Technologies Kenya',
-  description: 'Book a free demo with MylesCorp and see how our AI-powered software can transform your school, clinic, farm or business in East Africa.',
+  description: 'Book a free demo with MylesCorp and review the software workflows for your school, clinic, farm, property team, or business in East Africa.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/book-demo',
   },
@@ -68,8 +68,8 @@ export default function BookDemoPage() {
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Experience our AI-powered solutions firsthand with a personalized demo
-              tailored to your organisation&apos;s needs.
+              Experience our software products firsthand with a personalized demo
+              mapped to your organisation&apos;s workflow.
             </p>
 
             {/* CTA button */}
@@ -98,7 +98,7 @@ export default function BookDemoPage() {
                 </div>
                 <h3 className="heading-3 mb-4">Product Demo</h3>
                 <p className="body-text mb-6">
-                  Comprehensive demonstration of our solutions tailored to your industry and specific requirements.
+                  A guided demonstration mapped to your industry, team structure, and operating requirements.
                 </p>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-center">
@@ -123,7 +123,7 @@ export default function BookDemoPage() {
                 </div>
                 <h3 className="heading-3 mb-4">Strategic Consultation</h3>
                 <p className="body-text mb-6">
-                  In-depth discussion about your digital transformation needs and strategic roadmap development.
+                  In-depth discussion about your systems modernisation needs and strategic roadmap development.
                 </p>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-center">
@@ -242,7 +242,7 @@ export default function BookDemoPage() {
             <div className="text-center text-white">
               <h2 className="heading-2 mb-4">Trusted by Leading Organizations</h2>
               <p className="text-xl text-navy-100 mb-8">
-                Join 500+ organizations across East Africa who have transformed their operations with MylesCorp solutions.
+                Join 500+ organizations across East Africa using MylesCorp to run clearer daily operations.
               </p>
             </div>
 
@@ -270,9 +270,9 @@ export default function BookDemoPage() {
         <section className="section">
           <div className="section-padding">
             <div className="text-center">
-              <h2 className="heading-2 mb-4">Ready to Transform Your Organization?</h2>
+              <h2 className="heading-2 mb-4">Ready to Modernise Your Operation?</h2>
               <p className="body-text max-w-2xl mx-auto mb-8">
-                Take the first step towards digital transformation. Schedule your personalized demo today and see how MylesCorp can help you achieve your goals.
+                Take the first step towards systems modernisation. Schedule your personalized demo today and see how MylesCorp can help you achieve your goals.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg">Schedule Your Demo</Button>

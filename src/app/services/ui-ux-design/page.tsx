@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'UI/UX Design Services | MylesCorp Technologies',
-  description: 'Professional UI/UX design services creating beautiful, intuitive, and user-centered digital experiences that drive engagement and conversion.',
+  description: 'UI/UX design services for clear, usable, conversion-focused digital products.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/services/ui-ux-design',
   },
@@ -19,8 +19,8 @@ export const metadata = {
 const UI_UX_DATA = {
   overview: {
     title: 'UI/UX Design Services',
-    tagline: 'Creating Experiences That Delight and Convert',
-    description: 'Our expert design team creates beautiful, intuitive, and user-centered digital experiences that drive engagement and business growth.',
+    tagline: 'Designing Journeys That Users Can Complete',
+    description: 'Our design team creates clear, accessible, and user-centred digital products that support adoption, enquiries, and daily use.',
     image: '/api/og/service?name=UI-UX-Design',
     stats: [
       { number: '200+', label: 'Projects Delivered' },
@@ -76,7 +76,7 @@ const UI_UX_DATA = {
   ],
   testimonials: [
     {
-      quote: 'MylesCorp redesigned our e-commerce platform and increased our conversion rate by 300%. Amazing work!',
+      quote: 'MylesCorp redesigned our e-commerce platform and increased our conversion rate by 300%. Useful work!',
       author: 'Amina Hassan',
       role: 'CEO',
       organization: 'Nairobi Fashion Hub'
@@ -217,10 +217,10 @@ export default function UIUXDesignPage() {
         <section className="py-20 bg-navy text-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">
-              Ready to Transform Your User Experience?
+              Ready to Improve Your User Experience?
             </h2>
             <p className="font-body text-light-blue text-lg mb-8 max-w-2xl mx-auto">
-              Let's create something amazing together. Contact us for a free design consultation.
+              Let us review your product journey and recommend the next design steps.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/book-demo">

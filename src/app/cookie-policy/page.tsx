@@ -397,7 +397,7 @@ export default function CookiePolicy() {
       {/* Page Footer */}
       <div className="border-t border-[rgba(199,150,57,0.1)] px-10 py-5 flex justify-between items-center flex-wrap gap-3 max-w-[1100px] mx-auto">
         <div className="text-[11.5px] text-[#95A9CC]">© 2026 MylesCorp Technologies Ltd. All rights reserved.</div>
-        <div className="font-['Playfair_Display'] text-[12px] italic text-[#C79639]">Transforming Industries, Empowering Generations.</div>
+        <div className="font-['Playfair_Display'] text-[12px] italic text-[#C79639]">Software for African institutions.</div>
       </div>
       </div>
     </>

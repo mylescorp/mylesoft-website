@@ -58,7 +58,7 @@ export function NewsletterSignup() {
         </div>
         <h3 className="heading-3 mb-3">Stay Updated</h3>
         <p className="text-navy-200">
-          Get the latest insights on AI technology and digital transformation in East Africa.
+          Get product updates, implementation notes, and East African technology insights.
         </p>
       </div>
 

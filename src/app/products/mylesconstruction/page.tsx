@@ -84,14 +84,14 @@ const MYLESCONSTRUCTION_DATA = {
     {
       name: 'Basic',
       price: 'KSh 5,000/month',
-      description: 'Perfect for small contractors',
+      description: 'For small contractors',
       features: ['Up to 10 projects', 'Basic project tracking', 'Resource management', 'Mobile app', 'Email support'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 20,000/month',
-      description: 'Ideal for medium construction companies',
+      description: 'For medium construction companies',
       features: ['Up to 50 projects', 'Advanced tracking', 'Budget control', 'Quality management', 'Priority support', 'API access', 'Most Popular'],
       popular: true
     },
@@ -231,8 +231,8 @@ export default function MylesConstructionPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Construction Projects?"
-          tagline="Transforming Industries, Empowering Generations."
+          title="Ready to Modernise Your Construction Operations?"
+          tagline="Software for African institutions."
           description={`Join ${MYLESCONSTRUCTION_DATA.overview.stats[0].number} construction companies across Africa already building with MylesConstruction.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

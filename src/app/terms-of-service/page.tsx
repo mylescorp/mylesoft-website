@@ -162,7 +162,7 @@ export default function TermsOfService() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Use of Our Services</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                MylesCorp provides AI-powered software solutions including EduMyles (school management), EduRyde (school transport tracking), MylesCare (healthcare management), AgriMyles (agricultural platform), MylesCRM (business CRM), and MylesProp (real estate management), as well as custom software development, website development, IT consulting, cloud solutions, and UI/UX design services.
+                MylesCorp provides software products including EduMyles (school management), EduRyde (school transport tracking), MylesCare (healthcare management), AgriMyles (agricultural platform), MylesCRM (business CRM), and MylesProp (real estate management), as well as custom software development, website development, IT consulting, cloud solutions, and UI/UX design services.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 You may use our services only for lawful purposes and in accordance with these Terms. You agree not to use our services:
@@ -382,7 +382,7 @@ export default function TermsOfService() {
       {/* Page Footer */}
       <div className="border-t border-[rgba(199,150,57,0.1)] px-10 py-5 flex justify-between items-center flex-wrap gap-3 max-w-[1100px] mx-auto">
         <div className="text-[11.5px] text-[#95A9CC]">© 2026 MylesCorp Technologies Ltd. All rights reserved.</div>
-        <div className="font-['Playfair_Display'] text-[12px] italic text-[#C79639]">Transforming Industries, Empowering Generations.</div>
+        <div className="font-['Playfair_Display'] text-[12px] italic text-[#C79639]">Software for African institutions.</div>
       </div>
       </div>
     </>

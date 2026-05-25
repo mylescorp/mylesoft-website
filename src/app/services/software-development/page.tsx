@@ -88,7 +88,7 @@ export default function SoftwareDevelopmentPage() {
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              We design and build custom software solutions from the ground up — agile, scalable, and built to grow with your business across East Africa.
+              We design and build custom software around your workflows, users, data, approvals, integrations, and reporting needs across East Africa.
             </p>
 
             {/* CTA buttons */}
@@ -117,14 +117,14 @@ export default function SoftwareDevelopmentPage() {
                   What We Offer
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  We build custom software solutions that solve real business problems. From web applications to mobile apps and enterprise systems, our solutions are designed to scale with your business.
+                  We build custom software that solves defined operating problems. From web applications to mobile apps and internal systems, each build is scoped around the way your team actually works.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                     <div>
-                      <h4 className="font-semibold text-navy">Custom Solutions</h4>
-                      <p className="text-gray-600">Tailored to your specific business needs</p>
+                      <h4 className="font-semibold text-navy">Custom Workflows</h4>
+                      <p className="text-gray-600">Designed around your users, roles, data, and approvals</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -174,7 +174,7 @@ export default function SoftwareDevelopmentPage() {
                 What's Included
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Comprehensive software development services covering every aspect of your project.
+                Software delivery services covering the key parts of a production build.
               </p>
             </div>
 
@@ -287,7 +287,7 @@ export default function SoftwareDevelopmentPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  quote: "MylesCorp delivered our custom ERP system on time and within budget. The solution has transformed our operations.",
+                  quote: "MylesCorp delivered our custom ERP system on time and within budget. Our team now has clearer workflows and reporting.",
                   author: "John Kamau",
                   role: "CEO, TechSolutions Ltd",
                   rating: 5
@@ -327,10 +327,10 @@ export default function SoftwareDevelopmentPage() {
         <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-              Ready to Transform Your Business?
+              Ready to Build the System Your Team Needs?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
-              Transforming Industries, Empowering Generations.
+              Software for African institutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/book-demo">

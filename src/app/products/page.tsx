@@ -33,7 +33,7 @@ export default function ProductsPage() {
               Six focused products for serious growth.
             </h1>
             <p className="mt-6 max-w-2xl text-[1.05rem] leading-8 text-light-blue">
-              EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp bring MylesCorp&apos;s AI-powered thinking into the workflows schools, healthcare facilities, businesses, agricultural teams, and real estate teams use every day.
+              EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp bring MylesCorp&apos;s operating-system approach into the workflows schools, healthcare facilities, businesses, agricultural teams, and real estate teams use every day.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link href="/book-demo">

@@ -30,7 +30,7 @@ const blogPosts = {
     content: `
 # Transforming Education in Kenya with AI: The EduMyles Revolution
 
-Kenya's educational landscape is undergoing a profound transformation, driven by the integration of artificial intelligence into everyday learning experiences. At the forefront of this revolution stands EduMyles, our comprehensive AI-powered school management system that's changing how educational institutions operate across the country.
+Kenyan schools are adopting digital systems for administration, communication, reporting, and parent engagement. EduMyles supports these daily workflows for institutions across the country.
 
 ## The Current Educational Challenge
 
@@ -60,7 +60,7 @@ Our AI algorithms analyze individual student performance to create personalized 
 - **Adaptive Learning**: Content that adjusts to each student's pace and learning style
 - **Early Intervention**: AI identifies students who need additional support before they fall behind
 - **Talent Identification**: Machine learning uncovers hidden talents and strengths
-- **Career Guidance**: AI-powered recommendations based on student aptitudes and interests
+- **Career Guidance**: Data-backed recommendations based on student aptitudes and interests
 
 ### 3. Enhanced Parent Engagement
 
@@ -68,7 +68,7 @@ Real-time communication powered by AI keeps parents informed and involved:
 
 - **Smart Notifications**: AI determines the optimal timing and content for parent communications
 - **Progress Insights**: Automated summaries of student performance with actionable recommendations
-- **Translation Services**: AI-powered translation ensures communication in parents' preferred languages
+- **Translation Services**: Translation support helps communication reach parents in their preferred languages
 - **Predictive Analytics**: Early warning systems for potential academic or behavioral issues
 
 ## Real-World Impact
@@ -93,7 +93,7 @@ Rift Valley Academy reported:
 
 ## The Technology Behind EduMyles
 
-Our AI-powered system incorporates cutting-edge technologies:
+The EduMyles system incorporates production-ready technologies:
 
 ### Machine Learning Models
 - **Natural Language Processing** for automated essay grading
@@ -131,13 +131,13 @@ The integration of AI in Kenyan education is just beginning. We're excited about
 
 ## Join the Education Revolution
 
-Are you ready to transform your educational institution with AI? EduMyles is already helping over 500 schools across Kenya achieve remarkable results.
+Are you ready to modernise your school operations? EduMyles is already helping over 500 schools across Kenya achieve remarkable results.
 
 **Book a demo today** and discover how AI can revolutionize your school's operations and student outcomes.
 
 ---
 
-*This article is part of our ongoing series on AI transformation in East Africa. Subscribe to our newsletter for more insights and updates.*
+*This article is part of our ongoing series on education technology in East Africa. Subscribe to our newsletter for more insights and updates.*
     `,
     author: {
       name: 'Dr. Sarah Kimani',
@@ -353,7 +353,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               <div className="bg-navy rounded-[1.75rem] border border-gold/15 p-8 text-center text-white shadow-card">
                 <h2 className="heading-2 mb-4">Stay Updated with AI Insights</h2>
                 <p className="text-xl leading-8 text-light-blue mb-8">
-                  Get the latest articles on AI technology and digital transformation in East Africa delivered to your inbox.
+                  Get the latest articles on AI technology and systems modernisation in East Africa delivered to your inbox.
                 </p>
                 <Link href="#newsletter">
                   <Button size="lg">

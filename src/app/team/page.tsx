@@ -257,7 +257,7 @@ export default function TeamPage() {
 
         <CTASection
           title="Work With Our Team"
-          tagline="Transforming Industries, Empowering Generations."
+          tagline="Software for African institutions."
           description="Talk to MylesCorp about product implementation, partnerships, or career opportunities."
           primaryCta={{ text: 'Book a Demo', href: '/book-demo' }}
           secondaryCta={{ text: 'Contact Us', href: '/contact' }}

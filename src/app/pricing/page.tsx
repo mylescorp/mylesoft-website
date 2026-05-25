@@ -22,12 +22,12 @@ const PRICING_DATA = {
   overview: {
     title: 'Pricing',
     description: [
-      'Clear KSh plan options for MylesCorp products and professional services.',
+      'Clear KSh plan options for MylesCorp products and delivery services.',
       'Product and service pricing is shared with the matching page, so sales conversations, service pages, and pricing tables stay aligned.'
     ],
     stats: [
       { number: '6', label: 'Core Products' },
-      { number: '7', label: 'Professional Services' },
+      { number: '7', label: 'Delivery Services' },
       { number: '30+', label: 'Published Plans' },
       { number: '20%', label: 'Annual Discount' },
     ]
@@ -41,7 +41,7 @@ const PRICING_DATA = {
     {
       icon: '📈',
       title: 'Room to Scale',
-      description: 'Starter, Professional, and Enterprise options let teams grow without changing systems.'
+      description: 'Starter, Growth, and Enterprise options let teams grow without changing systems.'
     },
     {
       icon: '🛡️',
@@ -219,7 +219,7 @@ export default function PricingPage() {
         <section className="section bg-white">
           <div className="section-padding">
             <div className="text-center mb-12">
-              <h2 className="heading-2 mb-4">Professional Service Pricing</h2>
+              <h2 className="heading-2 mb-4">Growth Service Pricing</h2>
               <p className="body-text max-w-2xl mx-auto">
                 Compare the current KSh plan options for websites, custom software, cloud, hosting, design, and consulting services.
               </p>

@@ -384,7 +384,7 @@ export default function WebsiteDevelopmentPage() {
                   rating: 5
                 },
                 {
-                  quote: "Professional, reliable, and affordable. Our hospital website now serves patients better with online appointment booking.",
+                  quote: "Growth, reliable, and affordable. Our hospital website now serves patients better with online appointment booking.",
                   author: "Dr. Grace Ochieng",
                   role: "Medical Director, Private Hospital",
                   rating: 5
@@ -415,7 +415,7 @@ export default function WebsiteDevelopmentPage() {
               Ready for a Website Your Team Can Stand Behind?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
-              Transforming Industries, Empowering Generations.
+              Software for African institutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/book-demo">

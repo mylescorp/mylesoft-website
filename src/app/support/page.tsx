@@ -70,7 +70,7 @@ const SUPPORT_DATA = {
   ],
   targets: [
     'Product Users - Individuals and teams using our software solutions daily',
-    'System Administrators - IT professionals managing and maintaining our products',
+    'System Administrators - IT teams managing and maintaining our products',
     'Business Owners - Leaders responsible for operational efficiency and success',
     'Technical Teams - Developers and engineers integrating with our platforms'
   ],
@@ -88,7 +88,7 @@ const SUPPORT_DATA = {
       organization: 'East Africa Logistics'
     },
     {
-      quote: 'The expertise and professionalism of the support team exceeded our expectations.',
+      quote: 'The support team was knowledgeable, responsive, and easy to work with.',
       author: 'Grace Wanjiku',
       role: 'CEO',
       organization: 'Nairobi Retail Group'
@@ -160,7 +160,7 @@ export default function SupportPage() {
         {/* Features */}
         <FeaturesSection
           title="Why Choose Our Support"
-          description="We provide comprehensive support services to ensure your success with our products."
+          description="We provide support services to help your team use MylesCorp products with confidence."
           features={SUPPORT_DATA.features}
           centerHeader={true}
         />

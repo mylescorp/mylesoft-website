@@ -45,7 +45,7 @@ export default function EduMylesPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything Your School Needs"
-          description="8 powerful modules covering every aspect of school administration — all in one platform."
+          description="8 school administration modules in one connected platform."
           features={EDUMYLES_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'users' ? '👥' :
@@ -96,8 +96,8 @@ export default function EduMylesPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your School?"
-          tagline="Transforming Industries, Empowering Generations."
+          title="Ready to Modernise Your School?"
+          tagline="Software for African institutions."
           description={`Join ${EDUMYLES_DATA.overview.stats[0].number} schools across East Africa already using EduMyles. Book a free demo today.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}
