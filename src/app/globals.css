@@ -1269,6 +1269,10 @@ body {
     animation: heroImageLoop 15s ease-in-out infinite;
     transform: scale(1.04);
   }
+
+  .hero-copy-shadow {
+    text-shadow: 0 2px 18px rgba(8, 14, 24, 0.72);
+  }
 }
 
 @keyframes float {

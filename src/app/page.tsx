@@ -251,9 +251,9 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="absolute inset-0 bg-navy/45" />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/55 to-navy/90" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/35 to-navy/70" />
+          <div className="absolute inset-0 bg-navy/20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/75 via-navy/25 to-navy/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/55 via-navy/10 to-navy/45" />
 
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
@@ -270,7 +270,7 @@ export default function HomePage() {
             }}
           />
 
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="hero-copy-shadow relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             {/* Company Name */}
             <div className="mb-8">
               <h2 className="font-display font-semibold text-white text-2xl sm:text-3xl md:text-[2.5rem] lg:text-[3rem] leading-[1.08]">
