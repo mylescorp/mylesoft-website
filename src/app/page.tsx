@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 import { MYLESValues } from '@/components/sections/MYLESValues'
 import { Header } from '@/components/layout/Header'
@@ -132,6 +133,21 @@ const HOMEPAGE_DATA = {
   ]
 }
 
+const HERO_IMAGES = [
+  {
+    src: '/hero/dev-collaboration.webp',
+    alt: 'Software developers reviewing code together on a laptop',
+  },
+  {
+    src: '/hero/coding-workspace.webp',
+    alt: 'Developer writing software code in a focused workspace',
+  },
+  {
+    src: '/hero/code-screen.webp',
+    alt: 'Close-up of application code on a laptop screen',
+  },
+]
+
 const PRODUCT_DETAIL_SECTIONS = [
   {
     name: 'EduMyles',
@@ -220,6 +236,25 @@ export default function HomePage() {
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
+          <div className="absolute inset-0">
+            {HERO_IMAGES.map((image, index) => (
+              <Image
+                key={image.src}
+                src={image.src}
+                alt={image.alt}
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="hero-image-loop object-cover"
+                style={{ animationDelay: `${index * 5}s` }}
+              />
+            ))}
+          </div>
+
+          <div className="absolute inset-0 bg-navy/45" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/55 to-navy/90" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/35 to-navy/70" />
+
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -252,10 +287,11 @@ export default function HomePage() {
               <div className="w-8 h-0.5 bg-gold" />
             </div>
 
-            <h1 className="font-display font-bold text-white text-[2.25rem] sm:text-[2.8rem] md:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.25rem] leading-[1.04] mb-6 max-w-6xl mx-auto">
-              <span className="block">AI-Powered Software Solutions</span>
-              <span className="block">for Schools, Healthcare,</span>
-              <span className="block">Transport, Agriculture &amp; Business</span>
+            <h1 className="font-display font-bold text-white text-[1.95rem] sm:text-[2.65rem] md:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.25rem] leading-[1.07] mb-6 max-w-6xl mx-auto">
+              <span className="block">AI-Powered Software</span>
+              <span className="block">Solutions for Schools,</span>
+              <span className="block">Healthcare, Transport,</span>
+              <span className="block">Agriculture &amp; Business</span>
             </h1>
 
             <p className="font-body text-light-blue text-[1rem] sm:text-[1.05rem] md:text-[1.12rem] max-w-2xl mx-auto mb-3 leading-8">
@@ -266,7 +302,7 @@ export default function HomePage() {
               {HOMEPAGE_DATA.overview.description[0]}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4 justify-center">
               <Link href="/book-demo" transitionTypes={['slide']}>
                 <Button
                   size="lg"

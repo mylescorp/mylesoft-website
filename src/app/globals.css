@@ -1263,6 +1263,12 @@ body {
   .backdrop-blur-xs {
     backdrop-filter: blur(2px);
   }
+
+  .hero-image-loop {
+    opacity: 0;
+    animation: heroImageLoop 15s ease-in-out infinite;
+    transform: scale(1.04);
+  }
 }
 
 @keyframes float {
@@ -1375,11 +1381,36 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+@keyframes heroImageLoop {
+  0% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
 /* Accessibility: Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .hero-image-loop:first-child {
+    opacity: 1;
   }
 }
 
@@ -1417,4 +1448,3 @@ body {
     left:   16px !important;
   }
 }
-
