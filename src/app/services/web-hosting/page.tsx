@@ -6,6 +6,8 @@ import { ProcessSection } from '@/components/ui/ProcessSection'
 import { TargetsSection } from '@/components/ui/TargetsSection'
 import { ServicePricingSection } from '@/components/ui/ServicePricingSection'
 import { servicePricingBySlug } from '@/lib/constants/service-pricing'
+import { HeroImageBackdrop } from '@/components/ui/HeroImageBackdrop'
+import { SERVICE_HERO_IMAGES } from '@/lib/constants/hero-images'
 import Link from 'next/link'
 import {
   Server,
@@ -225,8 +227,12 @@ export default function WebHostingPage() {
     <Layout>
       <div className="min-h-screen">
         {/* Comprehensive Web Hosting & Domain Overview */}
-        <section className="py-12 md:py-20 bg-navy">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden py-12 md:py-20 bg-navy">
+          <HeroImageBackdrop images={[SERVICE_HERO_IMAGES.webHosting]} priority />
+          <div className="absolute inset-0 bg-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/15 to-navy/65" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/45 via-transparent to-navy/30" />
+          <div className="hero-copy-shadow relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 font-['Playfair_Display'] leading-tight">
                 Professional Web Hosting & Domain Services

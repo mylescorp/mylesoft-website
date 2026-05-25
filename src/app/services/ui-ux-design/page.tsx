@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import { ServicePricingSection } from '@/components/ui/ServicePricingSection'
 import { servicePricingBySlug } from '@/lib/constants/service-pricing'
+import { HeroImageBackdrop } from '@/components/ui/HeroImageBackdrop'
+import { SERVICE_HERO_IMAGES } from '@/lib/constants/hero-images'
 import { Palette, Smartphone, Users, Zap, Target, Check } from 'lucide-react'
 import Link from 'next/link'
 
@@ -94,6 +96,10 @@ export default function UIUXDesignPage() {
       <div className="min-h-screen">
         {/* Hero Section */}
         <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
+          <HeroImageBackdrop images={[SERVICE_HERO_IMAGES.uiUxDesign]} priority />
+          <div className="absolute inset-0 bg-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/15 to-navy/65" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/45 via-transparent to-navy/30" />
           <div className="absolute inset-0 pointer-events-none"
             style={{
               backgroundImage: `linear-gradient(rgba(199,150,57,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(199,150,57,0.04) 1px, transparent 1px)`,
@@ -101,7 +107,7 @@ export default function UIUXDesignPage() {
             }}
           />
 
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="hero-copy-shadow relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-5">
               <div className="w-8 h-0.5 bg-gold" />
               <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
@@ -110,7 +116,7 @@ export default function UIUXDesignPage() {
               <div className="w-8 h-0.5 bg-gold" />
             </div>
 
-            <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
+            <h1 className="font-display font-bold text-white text-[2.65rem] md:text-[3.35rem] lg:text-7xl leading-[1.05] mb-6">
               {UI_UX_DATA.overview.title}
               <span className="text-white italic block mt-2">
                 {UI_UX_DATA.overview.tagline}
