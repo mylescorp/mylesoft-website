@@ -12,10 +12,12 @@ import { PricingSection } from '@/components/ui/PricingSection'
 import { ProductCard } from '@/components/ui/ProductCard'
 import { Icon } from '@/components/ui/Icon'
 import { CORE_PRODUCTS } from '@/lib/constants/products'
+import { HeroImageBackdrop } from '@/components/ui/HeroImageBackdrop'
+import { HOMEPAGE_SERVICE_HERO_IMAGES } from '@/lib/constants/hero-images'
 
 export const metadata = {
-  title: 'MylesCorp Technologies, AI Software for Schools Healthcare Transport Agriculture & Business',
-  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for African schools, healthcare facilities, transport teams, agricultural teams, real estate teams, and growing businesses.',
+  title: 'MylesCorp Technologies, Operating Systems for African Institutions',
+  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for schools, healthcare facilities, transport teams, agricultural teams, real estate teams, and growing businesses across Africa.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/',
   },
@@ -24,7 +26,7 @@ export const metadata = {
 const HOMEPAGE_DATA = {
   overview: {
     title: 'MylesCorp Technologies',
-    tagline: 'Transforming Industries, Empowering Generations',
+    tagline: 'Software for the institutions that keep Africa moving',
     description: [
       'Focused software for school administration, school transport safety, healthcare delivery, agricultural operations, real estate management, and business growth across Africa.',
       'EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp help teams replace spreadsheets, WhatsApp follow-ups, manual reports, and disconnected workflows with reliable digital operations.'
@@ -40,13 +42,13 @@ const HOMEPAGE_DATA = {
   features: [
     {
       icon: 'brain',
-      title: 'AI-Powered Intelligence',
-      description: 'Advanced machine learning algorithms provide smart insights and automation for your business.'
+      title: 'Operational Intelligence',
+      description: 'Dashboards, alerts, reports, and automation that help teams act from clear data.'
     },
     {
       icon: 'target',
-      title: 'Industry-Specific Solutions',
-      description: 'Purpose-built solutions for education, school transport, healthcare, agriculture, and business teams.'
+      title: 'Sector-Specific Systems',
+      description: 'Purpose-built products for education, school transport, healthcare, agriculture, property, and business teams.'
     },
     {
       icon: 'globe',
@@ -55,26 +57,26 @@ const HOMEPAGE_DATA = {
     },
     {
       icon: 'crown',
-      title: 'Premium Support',
-      description: 'Dedicated team available round the clock for assistance and guidance.'
+      title: 'Implementation Support',
+      description: 'Onboarding, training, data migration, and support through go-live and daily use.'
     },
     {
       icon: 'rocket',
-      title: 'Scalable Technology',
-      description: 'Grow from startup to enterprise with solutions that scale with your business.'
+      title: 'Growth-Ready Architecture',
+      description: 'Start with the workflows you need now and add users, branches, integrations, and reports over time.'
     },
     {
       icon: 'heart',
-      title: 'Community Impact',
-      description: 'Empowering local communities and contributing to sustainable development.'
+      title: 'Local Operating Fit',
+      description: 'Built around regional realities such as M-Pesa payments, SMS communication, mobile access, and low-bandwidth use.'
     }
   ],
   process: [
     { step: 1, title: 'Discovery', description: 'We understand your unique challenges and requirements' },
-    { step: 2, title: 'Strategy', description: 'Develop a tailored solution roadmap for your organization' },
-    { step: 3, title: 'Implementation', description: 'Deploy solutions with expert guidance and support' },
-    { step: 4, title: 'Training', description: 'Empower your team with comprehensive training and resources' },
-    { step: 5, title: 'Growth', description: 'Scale and optimize as your business evolves and grows' }
+    { step: 2, title: 'Scope', description: 'Define modules, users, data, integrations, timeline, and success criteria' },
+    { step: 3, title: 'Implementation', description: 'Configure the product, migrate data, connect integrations, and test workflows' },
+    { step: 4, title: 'Training', description: 'Prepare administrators and users with role-based handover sessions' },
+    { step: 5, title: 'Operations', description: 'Review adoption, reporting, support needs, and the next rollout phase' }
   ],
   targets: [
     'Educational Institutions - Schools seeking digital administration and reporting',
@@ -220,6 +222,12 @@ export default function HomePage() {
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
+          <HeroImageBackdrop images={HOMEPAGE_SERVICE_HERO_IMAGES} priority />
+
+          <div className="absolute inset-0 bg-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-navy/10 to-navy/55" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/35 via-transparent to-navy/25" />
+
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -235,7 +243,7 @@ export default function HomePage() {
             }}
           />
 
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="hero-copy-shadow relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             {/* Company Name */}
             <div className="mb-8">
               <h2 className="font-display font-semibold text-white text-2xl sm:text-3xl md:text-[2.5rem] lg:text-[3rem] leading-[1.08]">
@@ -247,15 +255,16 @@ export default function HomePage() {
             <div className="flex items-center justify-center gap-3 mb-5">
               <div className="w-8 h-0.5 bg-gold" />
               <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
-                AI-POWERED SOLUTIONS
+                OPERATING SYSTEMS FOR EAST AFRICA
               </span>
               <div className="w-8 h-0.5 bg-gold" />
             </div>
 
-            <h1 className="font-display font-bold text-white text-[2.25rem] sm:text-[2.8rem] md:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.25rem] leading-[1.04] mb-6 max-w-6xl mx-auto">
-              <span className="block">AI-Powered Software Solutions</span>
-              <span className="block">for Schools, Healthcare,</span>
-              <span className="block">Transport, Agriculture &amp; Business</span>
+            <h1 className="font-display font-bold text-white text-[1.95rem] sm:text-[2.45rem] md:text-[3rem] lg:text-[3.85rem] xl:text-[4.25rem] leading-[1.07] mb-6 max-w-6xl mx-auto">
+              <span className="block">Software Systems</span>
+              <span className="block">for Schools,</span>
+              <span className="block">Healthcare, Transport,</span>
+              <span className="block">Agriculture &amp; Business</span>
             </h1>
 
             <p className="font-body text-light-blue text-[1rem] sm:text-[1.05rem] md:text-[1.12rem] max-w-2xl mx-auto mb-3 leading-8">
@@ -266,7 +275,7 @@ export default function HomePage() {
               {HOMEPAGE_DATA.overview.description[0]}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4 justify-center">
               <Link href="/book-demo" transitionTypes={['slide']}>
                 <Button
                   size="lg"
@@ -320,7 +329,7 @@ export default function HomePage() {
                 <div className="w-8 h-0.5 bg-gold" />
               </div>
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
-                Industry-Specific Solutions
+                Sector-Specific Products
               </h2>
             <p className="font-body text-medium-grey text-[1.08rem] md:text-lg max-w-2xl mx-auto leading-8">
                 Six focused products with clear workflows, practical onboarding, and support for African operating realities.
@@ -396,7 +405,7 @@ export default function HomePage() {
                 Impact & Reach
               </h2>
               <p className="font-body text-light-blue text-lg md:text-xl max-w-2xl mx-auto leading-8">
-                Empowering schools, healthcare facilities, transport teams, agricultural teams, and businesses in Kenya, Uganda, Tanzania, and beyond with focused AI-powered solutions.
+                Supporting schools, healthcare facilities, transport teams, agricultural teams, property teams, and businesses in Kenya, Uganda, Tanzania, and beyond with focused operating systems.
               </p>
             </div>
 
@@ -424,7 +433,7 @@ export default function HomePage() {
         {/* Features Section */}
         <FeaturesSection
           title="Why Choose MylesCorp?"
-          description="We combine cutting-edge AI technology with deep industry expertise to deliver solutions that work for African businesses."
+          description="We build practical products around African operating realities, with clear onboarding, local integrations, and support after launch."
           features={HOMEPAGE_DATA.features}
           centerHeader={true}
         />
@@ -435,7 +444,7 @@ export default function HomePage() {
         {/* Process Section */}
         <ProcessSection
           title="Our 5-Step Process"
-          description="From discovery to growth — we guide you through every step of your digital transformation journey."
+          description="From discovery to daily operations, each rollout is scoped, configured, tested, trained, and reviewed."
           steps={HOMEPAGE_DATA.process}
           centerHeader={true}
         />
@@ -470,9 +479,9 @@ export default function HomePage() {
 
         {/* Final CTA Section */}
         <CTASection
-          title="Ready to Transform Your Organisation?"
-          tagline="Transforming Industries, Empowering Generations."
-          description={`Let's discuss how our AI-powered solutions can drive your success and growth. Join ${HOMEPAGE_DATA.overview.stats[3].number} businesses already thriving with MylesCorp.`}
+          title="Ready to Modernise Your Operation?"
+          tagline="Software for African institutions."
+          description={`Let's discuss the workflows, users, integrations, data, and support your team needs. Join ${HOMEPAGE_DATA.overview.stats[3].number} businesses already working with MylesCorp.`}
           primaryCta={{ text: "Book a Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}
         />

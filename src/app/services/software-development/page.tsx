@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 import { ServicePricingSection } from '@/components/ui/ServicePricingSection'
 import { servicePricingBySlug } from '@/lib/constants/service-pricing'
+import { HeroImageBackdrop } from '@/components/ui/HeroImageBackdrop'
+import { SERVICE_HERO_IMAGES } from '@/lib/constants/hero-images'
 import Link from 'next/link'
 import {
   Users,
@@ -35,6 +37,10 @@ export default function SoftwareDevelopmentPage() {
       <div className="min-h-screen">
         {/* PAGE HERO */}
         <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
+          <HeroImageBackdrop images={[SERVICE_HERO_IMAGES.softwareDevelopment]} priority />
+          <div className="absolute inset-0 bg-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/15 to-navy/65" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/45 via-transparent to-navy/30" />
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -62,7 +68,7 @@ export default function SoftwareDevelopmentPage() {
             }}
           />
 
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="hero-copy-shadow relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow label */}
             <div className="flex items-center justify-center gap-3 mb-5">
               <div className="w-8 h-0.5 bg-gold" />
@@ -73,7 +79,7 @@ export default function SoftwareDevelopmentPage() {
             </div>
 
             {/* Main heading */}
-            <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
+            <h1 className="font-display font-bold text-white text-[2.65rem] md:text-[3.35rem] lg:text-7xl leading-[1.05] mb-6">
               Software Built for
               <span className="text-white italic">
                 Your Business

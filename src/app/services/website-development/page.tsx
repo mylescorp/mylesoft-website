@@ -2,6 +2,8 @@ import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { ServicePricingSection } from '@/components/ui/ServicePricingSection'
 import { servicePricingBySlug } from '@/lib/constants/service-pricing'
+import { HeroImageBackdrop } from '@/components/ui/HeroImageBackdrop'
+import { SERVICE_HERO_IMAGES } from '@/lib/constants/hero-images'
 import Link from 'next/link'
 import {
   Shield,
@@ -22,7 +24,7 @@ import {
 
 export const metadata = {
   title: 'Website Development & Hosting Kenya | MylesCorp',
-  description: 'Professional websites built on Next.js and hosted on Vercel for businesses, schools, and organisations across Kenya. Mobile-first, SEO-optimised, secure, and supported by clear proposal guidance.',
+  description: 'Business websites built on Next.js and hosted on Vercel for companies, schools, and organisations across Kenya. Mobile-first, SEO-ready, secure, and supported by clear proposal guidance.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/services/website-development',
   },
@@ -34,6 +36,10 @@ export default function WebsiteDevelopmentPage() {
       <div className="min-h-screen">
         {/* PAGE HERO */}
         <section className="relative py-24 md:py-32 overflow-hidden bg-navy">
+          <HeroImageBackdrop images={[SERVICE_HERO_IMAGES.websiteDevelopment]} priority />
+          <div className="absolute inset-0 bg-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/15 to-navy/65" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/45 via-transparent to-navy/30" />
           {/* Grid texture overlay */}
           <div className="absolute inset-0 pointer-events-none"
             style={{
@@ -61,7 +67,7 @@ export default function WebsiteDevelopmentPage() {
             }}
           />
 
-          <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="hero-copy-shadow relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             {/* Eyebrow label */}
             <div className="flex items-center justify-center gap-3 mb-5">
               <div className="w-8 h-0.5 bg-gold" />
@@ -72,7 +78,7 @@ export default function WebsiteDevelopmentPage() {
             </div>
 
             {/* Main heading */}
-            <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
+            <h1 className="font-display font-bold text-white text-[2.65rem] md:text-[3.35rem] lg:text-7xl leading-[1.05] mb-6">
               Websites Built to
               <span className="text-white italic">
                 Perform
@@ -81,7 +87,7 @@ export default function WebsiteDevelopmentPage() {
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Professional websites for businesses, schools, hospitals, NGOs, and government institutions — built on Next.js and hosted on Vercel.
+              Business websites for companies, schools, hospitals, NGOs, and government institutions, built on Next.js and hosted on Vercel.
             </p>
 
             {/* CTA buttons */}
@@ -107,10 +113,10 @@ export default function WebsiteDevelopmentPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-6">
-                  Professional Websites That Drive Results
+                  Websites Built for Trust, Speed, and Enquiries
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  We design, build, and host professional websites for businesses, schools, hospitals, NGOs, and government institutions across East Africa. Built on the same world-class technology stack powering MylesCorp itself.
+                  We design, build, and host websites for businesses, schools, hospitals, NGOs, and government institutions across East Africa. Each site is structured for clear content, fast loading, search visibility, and easy handover.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -130,7 +136,7 @@ export default function WebsiteDevelopmentPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                     <div>
-                      <h4 className="font-semibold text-navy">Enterprise Performance</h4>
+                      <h4 className="font-semibold text-navy">Fast Production Hosting</h4>
                       <p className="text-gray-600">Next.js + Vercel for lightning speed</p>
                     </div>
                   </div>
@@ -176,7 +182,7 @@ export default function WebsiteDevelopmentPage() {
                 {
                   icon: <Palette className="text-gold" size={32} />,
                   title: "Custom Design from Scratch",
-                  description: "Unique, professional design tailored to your brand — no templates or themes."
+                  description: "Unique design aligned with your brand, with no templates or themes."
                 },
                 {
                   icon: <Smartphone className="text-gold" size={32} />,
@@ -185,7 +191,7 @@ export default function WebsiteDevelopmentPage() {
                 },
                 {
                   icon: <Rocket className="text-gold" size={32} />,
-                  title: "Next.js + Vercel — Enterprise Performance",
+                  title: "Next.js + Vercel Hosting",
                   description: "Lightning-fast loading speeds with enterprise-grade infrastructure."
                 },
                 {
@@ -210,7 +216,7 @@ export default function WebsiteDevelopmentPage() {
                 },
                 {
                   icon: <Mail className="text-gold" size={32} />,
-                  title: "Professional Email Setup",
+                  title: "Business Email Setup",
                   description: "Custom email addresses (yourname@yourdomain.com) included."
                 },
                 {
@@ -278,7 +284,7 @@ export default function WebsiteDevelopmentPage() {
                 Technology Stack
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Built with the latest, most reliable technologies.
+                Built with reliable tools used for fast, secure production websites.
               </p>
             </div>
 
@@ -406,7 +412,7 @@ export default function WebsiteDevelopmentPage() {
         <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-              Ready for Your Professional Website?
+              Ready for a Website Your Team Can Stand Behind?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
               Transforming Industries, Empowering Generations.

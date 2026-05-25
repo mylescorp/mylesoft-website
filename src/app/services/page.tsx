@@ -14,11 +14,13 @@ import {
 import { Layout } from '@/components/layout/Layout'
 import { Button } from '@/components/ui/Button'
 import { SERVICE_PRICING } from '@/lib/constants/service-pricing'
+import { HeroImageBackdrop } from '@/components/ui/HeroImageBackdrop'
+import { HOMEPAGE_SERVICE_HERO_IMAGES } from '@/lib/constants/hero-images'
 
 export const metadata = {
-  title: 'Professional Technology Services | MylesCorp',
+  title: 'Technology Delivery Services | MylesCorp',
   description:
-    'Explore MylesCorp professional services: website development, software development, web apps, UI/UX design, cloud solutions, web hosting, and IT consulting for African organisations.',
+    'Explore MylesCorp delivery services: website development, software development, web apps, UI/UX design, cloud infrastructure, web hosting, and IT consulting for African organisations.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/services',
   },
@@ -37,7 +39,7 @@ const services = [
     name: 'Custom Software Development',
     href: '/services/software-development',
     icon: Code2,
-    summary: 'Tailored web platforms, portals, dashboards, workflows, and integrations built around your operating model.',
+    summary: 'Custom web platforms, portals, dashboards, workflows, and integrations built around your operating model.',
     bestFor: 'Teams with unique workflows that off-the-shelf tools cannot solve',
     deliverables: ['Requirements discovery', 'Custom application build', 'API and payment integrations', 'Testing, deployment, and support'],
   },
@@ -45,7 +47,7 @@ const services = [
     name: 'Web Application Design',
     href: '/services/web-app-design',
     icon: Layers3,
-    summary: 'Professional interface design for dashboards, SaaS products, admin tools, and operational web applications.',
+    summary: 'Interface design for dashboards, SaaS products, admin tools, and operational web applications.',
     bestFor: 'Product teams building serious tools for repeat daily use',
     deliverables: ['User flows and wireframes', 'Responsive interface design', 'Design system guidance', 'Developer-ready handoff'],
   },
@@ -61,7 +63,7 @@ const services = [
     name: 'Cloud Solutions',
     href: '/services/cloud-solutions',
     icon: Cloud,
-    summary: 'Cloud architecture, migration, cost optimisation, reliability planning, backups, and monitoring support.',
+    summary: 'Cloud architecture, migration, cost control, reliability planning, backups, and monitoring support.',
     bestFor: 'Growing teams that need reliable, secure, and scalable infrastructure',
     deliverables: ['Cloud readiness review', 'Migration plan', 'Security and backup setup', 'Monitoring and optimisation'],
   },
@@ -77,7 +79,7 @@ const services = [
     name: 'IT Consulting',
     href: '/services/it-consulting',
     icon: Compass,
-    summary: 'Technology strategy, digital transformation planning, procurement guidance, security reviews, and roadmap support.',
+    summary: 'Technology strategy, systems planning, procurement guidance, security reviews, and roadmap support.',
     bestFor: 'Leaders making technology decisions across teams, products, or departments',
     deliverables: ['Technology assessment', 'Digital roadmap', 'Security and process review', 'Implementation advisory'],
   },
@@ -123,6 +125,10 @@ export default function ServicesPage() {
     <Layout>
       <main className="min-h-screen bg-white">
         <section className="relative overflow-hidden bg-navy">
+          <HeroImageBackdrop images={HOMEPAGE_SERVICE_HERO_IMAGES} priority />
+          <div className="absolute inset-0 bg-navy/20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/75 via-navy/30 to-navy/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-navy/30 to-navy/45" />
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -133,17 +139,17 @@ export default function ServicesPage() {
           />
           <div className="absolute left-0 right-0 top-0 h-[3px] bg-gradient-to-r from-transparent via-gold to-transparent" />
 
-          <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-6 py-24 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-28">
+          <div className="hero-copy-shadow relative z-10 mx-auto grid max-w-7xl gap-12 px-6 py-24 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-28">
             <div>
               <div className="mb-6 h-1 w-20 bg-gold" />
               <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.22em] text-gold">
-                Professional Services
+                Delivery Services
               </p>
               <h1 className="font-display text-[clamp(2.7rem,6vw,5.5rem)] font-bold leading-[0.96] text-white">
-                Technology services built for serious African organisations.
+                Technology delivery for African institutions.
               </h1>
               <p className="mt-6 max-w-2xl text-[1.05rem] leading-8 text-light-blue">
-                From websites and custom software to cloud infrastructure and IT strategy, MylesCorp gives you a practical delivery partner from discovery to launch.
+                From websites and custom software to cloud infrastructure and IT strategy, MylesCorp helps teams scope, build, launch, and support systems that carry real operations.
               </p>
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <Link href="/book-demo">
@@ -183,13 +189,13 @@ export default function ServicesPage() {
             <div className="mb-12 max-w-3xl">
               <div className="mb-5 h-1 w-16 bg-gold" />
               <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.22em] text-medium-grey">
-                Complete Service Catalogue
+                Service Catalogue
               </p>
               <h2 className="font-display text-[clamp(2.1rem,4vw,3.5rem)] font-bold leading-tight text-navy">
                 All services, clearly scoped.
               </h2>
               <p className="mt-5 text-[1rem] leading-8 text-dark-grey">
-                Choose a focused service, or combine several into one delivery plan for a product launch, institutional website, internal platform, or digital transformation programme.
+                Choose a focused service, or combine several into one delivery plan for a product launch, institutional website, internal platform, or systems modernisation programme.
               </p>
             </div>
 

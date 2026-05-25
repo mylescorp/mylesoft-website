@@ -200,7 +200,7 @@ export default function BrochurePage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
                   'Product features and ideal users',
-                  'Plan options and published KSh pricing',
+                  'Plan options and published pricing',
                   'MylesCare product details for healthcare operations',
                   'MylesProp product details for real estate operations',
                   'AgriMyles live product details and current agritech pricing',
