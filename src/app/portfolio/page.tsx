@@ -17,6 +17,7 @@ import {
   ShieldCheck,
   Sprout,
   Stethoscope,
+  Wifi,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
@@ -26,7 +27,7 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Portfolio | MylesCorp Technologies',
   description:
-    'Explore MylesCorp Technologies work including EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, and SIFA School Siaya.',
+    'Explore MylesCorp Technologies work including EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, MylesNet, and SIFA School Siaya.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/portfolio',
   },
@@ -188,6 +189,28 @@ const liveProjects: PortfolioProject[] = [
     ],
   },
   {
+    name: 'MylesNet',
+    category: 'Network Operations SaaS',
+    sector: 'Internet Service Provider Operations',
+    href: '/products/mylesnet',
+    icon: Wifi,
+    status: 'Live product',
+    previewSrc: '/portfolio/mylesnet-home.webp',
+    previewAlt: 'MylesNet product page preview',
+    summary:
+      'A network operations platform for internet service providers and connectivity teams, supporting subscriber records, service packages, billing visibility, support workflows, infrastructure tracking, and field operations.',
+    evidence: [
+      'Subscriber, plan, and service account workflows',
+      'Network asset, installation, and support coordination',
+      'Billing, service status, and operator visibility',
+    ],
+    outcomes: [
+      'Adds the network operations vertical to the public portfolio',
+      'Gives ISP and connectivity teams a clear product destination',
+      'Extends MylesCorp coverage into digital infrastructure operations',
+    ],
+  },
+  {
     name: 'SIFA School Siaya',
     category: 'Institution Website',
     sector: 'Early Childhood Education',
@@ -212,7 +235,7 @@ const liveProjects: PortfolioProject[] = [
 ]
 
 const proofPoints = [
-  { value: '7', label: 'Properties showcased' },
+  { value: '8', label: 'Projects showcased' },
   { value: 'SaaS + Institutions', label: 'Core delivery focus' },
   { value: '100%', label: 'Active product portfolio' },
   { value: 'East Africa', label: 'Primary market focus' },
@@ -282,7 +305,7 @@ export default function PortfolioPage() {
                   Live digital products and institution-ready platforms built for trust, clarity, and growth.
                 </h1>
                 <p className="mt-6 max-w-2xl font-body text-[1rem] leading-8 text-light-blue sm:text-[1.08rem]">
-                  This portfolio highlights MylesCorp work across school management, school transport, healthcare, CRM, real estate, agricultural technology, and institution-ready school websites.
+                  This portfolio highlights MylesCorp work across school management, school transport, healthcare, CRM, real estate, agricultural technology, network operations, and institution-ready school websites.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -310,7 +333,7 @@ export default function PortfolioPage() {
                       Research Summary
                     </div>
                     <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-white">
-                      EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, and SIFA School Siaya anchor the portfolio.
+                      EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, MylesNet, and SIFA School Siaya anchor the portfolio.
                     </h2>
                   </div>
                   <BadgeCheck className="h-8 w-8 flex-shrink-0 text-gold" />

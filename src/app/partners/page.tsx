@@ -27,10 +27,10 @@ const PARTNERS_DATA = {
     ],
     image: '/api/og/product?name=Partners&category=Collaboration',
     stats: [
-      { number: '50+', label: 'Active Partners' },
+      { number: 'Partner', label: 'Pipeline' },
       { number: '4', label: 'Partner Types' },
-      { number: '12', label: 'Countries Reached' },
-      { number: '95%', label: 'Partner Satisfaction' }
+      { number: 'East Africa', label: 'Market Focus' },
+      { number: 'Guided', label: 'Onboarding' }
     ]
   },
   features: [
@@ -155,10 +155,10 @@ const currentPartners = [
 ]
 
 const partnershipStats = [
-  { number: 50, label: "Active Partners", suffix: "+" },
-  { number: 10, label: "Countries", suffix: "+" },
-  { number: 100000, label: "End Users", suffix: "+" },
-  { number: 95, label: "Partner Satisfaction", suffix: "%" }
+  { number: 4, label: "Partner Types", suffix: "" },
+  { number: 7, label: "Core Products", suffix: "" },
+  { number: 6, label: "Priority Markets", suffix: "" },
+  { number: 1, label: "Partner Pipeline", suffix: "" }
 ]
 
 export default function PartnersPage() {

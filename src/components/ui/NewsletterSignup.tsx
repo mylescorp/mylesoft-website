@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { Mail, CheckCircle, AlertCircle } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { getCsrfHeader } from '@/lib/client/csrf'
 
 export function NewsletterSignup() {
   const [email, setEmail] = useState('')
@@ -24,27 +25,29 @@ export function NewsletterSignup() {
     setMessage('')
 
     try {
+      const csrfHeader = await getCsrfHeader()
       const response = await fetch('/api/newsletter/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          ...csrfHeader,
         },
         body: JSON.stringify({ email }),
       })
 
-      const data = await response.json()
+      const data = await response.json() as { success?: boolean; message?: string }
 
-      if (response.ok) {
+      if (response.ok && data.success) {
         setStatus('success')
-        setMessage('Thank you for subscribing! Check your email for confirmation.')
+        setMessage(data.message || 'Subscribed. Welcome to the MylesCorp community.')
         setEmail('')
       } else {
         setStatus('error')
-        setMessage(data.error || 'Something went wrong. Please try again.')
+        setMessage(data.message || 'We could not complete the subscription. Please try again.')
       }
-    } catch (error) {
+    } catch {
       setStatus('error')
-      setMessage('Network error. Please try again later.')
+      setMessage('We could not complete the subscription. Please check your connection and try again.')
     } finally {
       setIsSubmitting(false)
     }

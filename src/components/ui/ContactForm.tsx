@@ -1,15 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-import { sendContactEmail } from '@/app/actions/sendEmail'
+import type { FormEvent } from 'react'
+import { getCsrfHeader } from '@/lib/client/csrf'
 
 export function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('loading')
+    setErrorMsg('')
 
     const form = e.currentTarget
     const data = {
@@ -21,14 +23,29 @@ export function ContactForm() {
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
     }
 
-    const result = await sendContactEmail(data)
+    try {
+      const csrfHeader = await getCsrfHeader()
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...csrfHeader,
+        },
+        body: JSON.stringify(data),
+      })
+      const result = await response.json() as { success?: boolean; message?: string }
 
-    if (result.success) {
-      setStatus('success')
-      form.reset()
-    } else {
+      if (response.ok && result.success) {
+        setStatus('success')
+        form.reset()
+        return
+      }
+
       setStatus('error')
-      setErrorMsg(result.error || 'Something went wrong.')
+      setErrorMsg(result.message || 'We could not send your message. Please try again.')
+    } catch {
+      setStatus('error')
+      setErrorMsg('We could not send your message. Please check your connection and try again.')
     }
   }
 
@@ -41,7 +58,7 @@ export function ContactForm() {
           </label>
           <input
             name="name" type="text" required
-            placeholder="John Mwangi"
+            placeholder="Your full name"
             className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
@@ -51,7 +68,7 @@ export function ContactForm() {
           </label>
           <input
             name="email" type="email" required
-            placeholder="john@company.com"
+            placeholder="you@your-organisation.com"
             className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
@@ -61,7 +78,7 @@ export function ContactForm() {
           </label>
           <input
             name="phone" type="tel"
-            placeholder="+254 7XX XXX XXX"
+            placeholder="Your phone number"
             className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
@@ -71,7 +88,7 @@ export function ContactForm() {
           </label>
           <input
             name="organisation" type="text"
-            placeholder="Your school, company, or clinic"
+            placeholder="Your organisation"
             className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200"
           />
         </div>
@@ -111,7 +128,7 @@ export function ContactForm() {
         </label>
         <textarea
           name="message" required rows={5}
-          placeholder="Tell us how we can help you..."
+          placeholder="Tell us how we can help you."
           className="w-full rounded-xl border border-slate-300 bg-ice px-4 py-3.5 font-body text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10 transition-all duration-200 resize-none"
         />
       </div>
@@ -119,7 +136,7 @@ export function ContactForm() {
       {status === 'success' && (
         <div className="rounded-2xl border border-green-200 bg-green-50 p-4">
           <p className="font-body text-sm md:text-[0.95rem] leading-6 text-green-700">
-            Message sent successfully! We will get back to you within 2 business hours. Check your email for a confirmation.
+            Message sent successfully. We will get back to you within 2 business hours. Check your email for a confirmation.
           </p>
         </div>
       )}
@@ -138,8 +155,8 @@ export function ContactForm() {
         className="w-full rounded-xl bg-gold py-4 font-body font-bold text-[15px] tracking-[0.4px] text-navy shadow-gold hover:-translate-y-0.5 hover:bg-gold-light disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200"
       >
         {status === 'loading'
-          ? 'Sending...'
-          : 'Send Message →'}
+          ? 'Sending'
+          : 'Send Message'}
       </button>
     </form>
   )

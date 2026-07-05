@@ -97,7 +97,7 @@ export default function EduMylesPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your School?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${EDUMYLES_DATA.overview.stats[0].number} schools across East Africa already using EduMyles. Book a free demo today.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

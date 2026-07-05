@@ -63,7 +63,7 @@ export const EDUMYLES_DATA = {
       icon: "briefcase"
     },
     {
-      title: "AI-Powered Analytics & Reports",
+      title: "Analytics & Reports",
       description: "Real-time dashboards showing school performance, fee collection trends, attendance patterns, and exam analytics to support data-driven decisions.",
       icon: "bar-chart"
     }
@@ -73,7 +73,7 @@ export const EDUMYLES_DATA = {
     { step: 2, title: "Setup", description: "Configure classes, subjects, and staff" },
     { step: 3, title: "Import Data", description: "Upload existing student and staff data" },
     { step: 4, title: "Go Live", description: "Start managing your school digitally" },
-    { step: 5, title: "Grow", description: "Scale with AI insights and automation" }
+    { step: 5, title: "Grow", description: "Use reporting to improve school operations" }
   ],
   targets: [
     "Primary Schools",
@@ -105,7 +105,7 @@ export const EDUMYLES_DATA = {
   ],
   testimonials: [
     {
-      quote: "EduMyles transformed how we manage our 600 students. Fee collection via M-Pesa alone saved us 3 days of admin work every month.",
+      quote: "EduMyles improved how our team manages student records and fee follow-up. The daily administration workflow is clearer now.",
       author: "James Mwangi",
       role: "Principal",
       organization: "Westlands Academy, Nairobi"
@@ -117,7 +117,7 @@ export const EDUMYLES_DATA = {
       organization: "Starehe Primary School"
     },
     {
-      quote: "The CBC report card generation is incredible. What used to take two weeks now takes two hours. Our teachers love EduMyles.",
+      quote: "The CBC report card workflow is much easier for our teachers to manage, review, and share with families.",
       author: "Dr. Peter Odhiambo",
       role: "Director",
       organization: "Kisumu Green Academy"
@@ -251,7 +251,7 @@ export const MYLESCARE_DATA = {
   },
   overview: {
     stats: [
-      { number: "100+", label: "Health Facilities" },
+      { number: "Healthcare", label: "Facilities" },
       { number: "Electronic Patient", label: "Records" },
       { number: "M-Pesa & SHA", label: "Integrated" },
       { number: "24/7 System", label: "Uptime" }
@@ -331,8 +331,8 @@ export const MYLESCARE_DATA = {
     {
       name: "Enterprise",
       price: "KSh 45,000/month",
-      description: "multi-branch + advanced AI",
-      features: ["Everything in Hospital", "Multi-branch support", "Advanced AI diagnostics", "Dedicated support", "Custom integrations"]
+      description: "multi-branch and custom healthcare workflows",
+      features: ["Everything in Hospital", "Multi-branch support", "Advanced reporting", "Dedicated support", "Custom integrations"]
     }
   ],
   testimonials: [
@@ -360,29 +360,29 @@ export const MYLESCARE_DATA = {
 export const AGRIMYLES_DATA = {
   metadata: {
     title: 'AgriMyles — Agricultural Technology Platform | MylesCorp',
-    description: 'Smart agricultural technology platform for farmers, cooperatives, and agribusinesses across East Africa. Crop tracking, market access, supply chain management and AI farming insights.',
+    description: 'Agricultural technology platform for farmers, cooperatives, and agribusinesses across East Africa. Crop tracking, market access, supply chain management and field reporting.',
   },
   hero: {
     eyebrow: "AGRICULTURAL TECHNOLOGY",
     heading: "Farming Smarter",
     goldWord: "Across Africa.",
-    subtitle: "The smart agritech platform connecting farmers, cooperatives, and agribusinesses — with AI crop insights, supply chain management, and direct market access.",
+    subtitle: "The agritech platform connecting farmers, cooperatives, and agribusinesses with crop records, supply chain management, and direct market access.",
     badge: "LIVE",
     primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
     secondaryCta: { text: "Learn More", href: "#features" }
   },
   overview: {
     stats: [
-      { number: "1,000+", label: "Farmers Onboarded" },
-      { number: "47", label: "Counties Covered" },
+      { number: "Farm", label: "Records" },
+      { number: "Field", label: "Workflows" },
       { number: "M-Pesa", label: "Payments" },
-      { number: "AI Crop", label: "Advisory" }
+      { number: "Crop", label: "Advisory" }
     ],
     description: "AgriMyles is a agricultural technology platform designed to modernise farming across East Africa. By connecting smallholder farmers, cooperatives, and large agribusinesses on a single digital platform, AgriMyles delivers crop advisory automation, market price information, supply chain tools, and direct market linkages — all accessible via smartphone or basic feature phone.\n\nBuilt for the realities of Kenyan agriculture, AgriMyles supports M-Pesa payments, works in low-bandwidth environments, and is available in English and Swahili."
   },
   features: [
     {
-      title: "AI Crop Advisory",
+      title: "Crop Advisory",
       description: "Data-backed recommendations for planting, fertilisation, pest control, and harvesting based on location, weather, and crop type. Delivered via SMS and app.",
       icon: "brain"
     },
@@ -415,7 +415,7 @@ export const AGRIMYLES_DATA = {
   process: [
     { step: 1, title: "Register", description: "Farmers sign up via smartphone or USSD" },
     { step: 2, title: "Profile", description: "Create digital farm profile and history" },
-    { step: 3, title: "Advisory", description: "Receive AI crop recommendations" },
+    { step: 3, title: "Advisory", description: "Receive crop recommendations and field reminders" },
     { step: 4, title: "Sell", description: "Connect with verified buyers" },
     { step: 5, title: "Get Paid", description: "Receive payments via M-Pesa" }
   ],
@@ -454,13 +454,13 @@ export const AGRIMYLES_DATA = {
       organization: "Nakuru County"
     },
     {
-      quote: "We onboarded 400 of our cooperative members on AgriMyles in one week. Managing contributions and dividends is now fully digital.",
+      quote: "AgriMyles gives our cooperative a clearer way to manage member records, contributions, and communication.",
       author: "Catherine Wangari",
       role: "Chairperson",
       organization: "Meru Tea SACCO"
     },
     {
-      quote: "The AI crop advisory is remarkably accurate. Our tomato yield increased 35% in one season by following the recommendations.",
+      quote: "The crop advisory workflow helps us keep farm records, seasonal tasks, and field decisions organised.",
       author: "Samuel Odhiambo",
       role: "Horticulture Farmer",
       organization: "Kiambu"
@@ -487,7 +487,7 @@ export const MYLESCRM_DATA = {
       { number: "Full CRM", label: "Suite" },
       { number: "M-Pesa", label: "Invoicing" },
       { number: "Sales Pipeline", label: "Management" },
-      { number: "AI Business", label: "Insights" }
+      { number: "Business", label: "Insights" }
     ],
     description: "MylesCRM is a customer relationship management and business operations platform built for East African businesses. From managing your first sales lead to tracking invoices, monitoring customer relationships, and analysing business performance — MylesCRM puts every business tool in one integrated platform.\n\nBuilt for African business realities, MylesCRM integrates with M-Pesa for instant payment collection, supports Kenyan tax compliance, and works well on mobile devices — even in low-connectivity environments."
   },
@@ -564,19 +564,19 @@ export const MYLESCRM_DATA = {
     {
       name: "Enterprise",
       price: "KSh 25,000/month",
-      description: "unlimited users + AI",
-      features: ["Everything in Growth", "Unlimited users", "AI sales insights", "Dedicated support", "Custom integrations"]
+      description: "larger teams and custom workflows",
+      features: ["Everything in Growth", "Unlimited users", "Advanced sales insights", "Dedicated support", "Custom integrations"]
     }
   ],
   testimonials: [
     {
-      quote: "MylesCRM gave us complete visibility into our sales pipeline. We increased our close rate by 40% in the first quarter of using it.",
+      quote: "MylesCRM gave us clearer visibility into our sales pipeline and helped the team manage follow-up more consistently.",
       author: "Brian Otieno",
       role: "Sales Director",
       organization: "Nairobi Tech Ltd"
     },
     {
-      quote: "The M-Pesa invoice integration is incredible. Clients pay immediately and the system reconciles automatically. Zero manual work.",
+      quote: "The invoice workflow makes payment follow-up and reconciliation much easier for our finance team.",
       author: "Esther Kamau",
       role: "Finance Manager",
       organization: "Savanna Logistics"
@@ -606,8 +606,8 @@ export const MYLESPROP_DATA = {
   },
   overview: {
     stats: [
-      { number: "500+", label: "Properties Managed" },
-      { number: "95%", label: "Occupancy Rate" },
+      { number: "Property", label: "Portfolio" },
+      { number: "Tenant", label: "Records" },
       { number: "M-Pesa", label: "Rent Collection" },
       { number: "24/7", label: "Tenant Support" }
     ],
@@ -696,6 +696,106 @@ export const MYLESPROP_DATA = {
   ]
 }
 
+export const MYLESNET_DATA = {
+  metadata: {
+    title: 'MylesNet — Network Operations Platform | MylesCorp',
+    description: 'Network operations platform for internet service providers and connectivity teams across East Africa.',
+  },
+  hero: {
+    eyebrow: "NETWORK OPERATIONS",
+    heading: "Run Connectivity",
+    goldWord: "With Clarity.",
+    subtitle: "A network operations platform for ISPs and connectivity teams managing subscribers, service plans, billing visibility, support workflows, installations, and field operations.",
+    badge: "LIVE",
+    primaryCta: { text: "Book a Free Demo", href: "/book-demo" },
+    secondaryCta: { text: "Discuss Rollout", href: "/contact" }
+  },
+  overview: {
+    stats: [
+      { number: "Subscriber", label: "Records" },
+      { number: "Service", label: "Plans" },
+      { number: "Billing", label: "Visibility" },
+      { number: "Field", label: "Operations" }
+    ],
+    description: "MylesNet gives internet service providers and connectivity teams a structured operating layer for subscriber records, service packages, support tickets, installations, billing visibility, and field-team coordination.\n\nBuilt for East African connectivity operators, MylesNet helps teams move from scattered spreadsheets, phone calls, and disconnected field updates into a clearer network operations workflow."
+  },
+  features: [
+    {
+      title: "Subscriber Management",
+      description: "Maintain subscriber profiles, service history, plan assignments, installation records, and account status in one place.",
+      icon: "users"
+    },
+    {
+      title: "Service Plans and Accounts",
+      description: "Track packages, activation status, renewals, plan changes, and service visibility across customer accounts.",
+      icon: "wifi"
+    },
+    {
+      title: "Billing Visibility",
+      description: "Give operators clearer visibility into subscription status, billing follow-up, service interruptions, and payment-related workflows.",
+      icon: "credit-card"
+    },
+    {
+      title: "Support Workflows",
+      description: "Capture support requests, assign ownership, track resolution, and keep customer communication organised.",
+      icon: "headset"
+    },
+    {
+      title: "Field Operations",
+      description: "Coordinate installations, site visits, field technician updates, service checks, and network work orders.",
+      icon: "route"
+    },
+    {
+      title: "Network Asset Tracking",
+      description: "Track key network assets, customer equipment, service locations, and operational dependencies.",
+      icon: "map"
+    }
+  ],
+  process: [
+    { step: 1, title: "Map Operations", description: "Define subscribers, packages, service areas, support flows, and field roles" },
+    { step: 2, title: "Import Records", description: "Bring current subscriber and service data into a structured operating format" },
+    { step: 3, title: "Configure Billing", description: "Set plan rules, renewal visibility, customer status, and follow-up workflows" },
+    { step: 4, title: "Launch Support", description: "Route tickets, installations, and service requests through the platform" },
+    { step: 5, title: "Review Network Health", description: "Use dashboards and operational reports to improve visibility and response" }
+  ],
+  targets: [
+    "Internet Service Providers",
+    "Community Networks",
+    "Connectivity Operators",
+    "Field Service Teams",
+    "Network Support Teams",
+    "Digital Infrastructure Providers"
+  ],
+  pricing: [
+    {
+      name: "Network Starter",
+      price: "Custom",
+      description: "small ISPs and connectivity teams starting structured network operations",
+      features: ["Subscriber records", "Service plans", "Support workflows", "Billing visibility"]
+    },
+    {
+      name: "Network Growth",
+      price: "Custom",
+      description: "growing operators with field teams and recurring service workflows",
+      features: ["Everything in Starter", "Field operations", "Installation tracking", "Operational reporting", "Priority support"]
+    },
+    {
+      name: "Network Enterprise",
+      price: "Custom",
+      description: "multi-area operators needing deeper configuration and reporting",
+      features: ["Everything in Growth", "Custom workflows", "Advanced reporting", "Dedicated implementation", "Integration planning"]
+    }
+  ],
+  testimonials: [
+    {
+      quote: "MylesNet gives network teams a clearer way to manage subscribers, support requests, and field work from one operating view.",
+      author: "Jonathan Myles",
+      role: "Founder and CEO",
+      organization: "MylesCorp Technologies"
+    }
+  ]
+}
+
 export const CORE_PRODUCTS = [
   {
     name: 'EduMyles',
@@ -762,5 +862,16 @@ export const CORE_PRODUCTS = [
     href: '/products/mylesprop',
     status: 'development' as const,
     pricing: MYLESPROP_DATA.pricing
+  },
+  {
+    name: 'MylesNet',
+    category: 'Network Operations',
+    sector: 'Telecommunications',
+    description: 'Network operations platform for ISPs and connectivity teams managing subscribers, service plans, billing visibility, support workflows, and field operations.',
+    icon: 'wifi',
+    features: ['Subscriber Records', 'Service Plans', 'Billing Visibility', 'Field Operations'],
+    href: '/products/mylesnet',
+    status: 'live' as const,
+    pricing: MYLESNET_DATA.pricing
   }
 ]

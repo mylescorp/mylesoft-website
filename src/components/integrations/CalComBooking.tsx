@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/Button'
 import { Calendar, User, Video, Check } from 'lucide-react'
+import { COMPANY_CONTACT, telHref } from '@/lib/constants/contact'
 
 interface TimeSlot {
   id: string
@@ -173,7 +174,7 @@ export function CalComBooking() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="form-input"
-                placeholder="John Doe"
+                placeholder="Full name"
               />
             </div>
             <div>
@@ -187,7 +188,7 @@ export function CalComBooking() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="form-input"
-                placeholder="john@example.com"
+                placeholder="Email address"
               />
             </div>
           </div>
@@ -203,7 +204,7 @@ export function CalComBooking() {
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
                 className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                placeholder="Company Name"
+                placeholder="Organisation name"
               />
             </div>
             <div>
@@ -216,7 +217,7 @@ export function CalComBooking() {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                placeholder="+254 7XX XXX XXX"
+                placeholder="Phone number"
               />
             </div>
           </div>
@@ -288,14 +289,14 @@ export function CalComBooking() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="text-center">
               <div className="text-sm text-medium-grey mb-1">Sales</div>
-              <a href="tel:+254743993716" className="text-lg text-navy hover:text-gold font-semibold">
-                +254 743 993 716
+              <a href={telHref(COMPANY_CONTACT.salesPhone)} className="text-lg text-navy hover:text-gold font-semibold">
+                {COMPANY_CONTACT.salesPhone}
               </a>
             </div>
             <div className="text-center">
               <div className="text-sm text-medium-grey mb-1">Email</div>
-              <a href="mailto:sales@mylescorptech.com" className="text-lg text-navy hover:text-gold font-semibold">
-                sales@mylescorptech.com
+              <a href={`mailto:${COMPANY_CONTACT.salesEmail}`} className="text-lg text-navy hover:text-gold font-semibold">
+                {COMPANY_CONTACT.salesEmail}
               </a>
             </div>
           </div>

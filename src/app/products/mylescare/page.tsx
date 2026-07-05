@@ -11,7 +11,7 @@ import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
   title: 'MylesCare, Healthcare Management Software Kenya | MylesCorp',
-  description: 'MylesCare helps hospitals and clinics in Kenya manage patient records, appointments & billing with AI. Reduce wait times by up to 60%.',
+  description: 'MylesCare helps hospitals and clinics in Kenya manage patient records, appointments, billing, pharmacy, and reporting workflows.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products/mylescare',
   },
@@ -88,7 +88,7 @@ export default function MylesCarePage() {
         {/* CTA */}
         <CTASection
           title="Modernise Your Healthcare Facility"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESCARE_DATA.overview.stats[0].number} healthcare facilities across East Africa using MylesCare to deliver better patient care.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

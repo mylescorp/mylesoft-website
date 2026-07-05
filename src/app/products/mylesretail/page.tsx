@@ -243,7 +243,7 @@ export default function MylesRetailPage() {
         <CTASection
           title="Ready to Modernise Your Retail Operations?"
           tagline="Modernizing Retail Across East Africa."
-          description="Join thousands of retailers already using MylesRetail for efficient operations and increased sales. Start your modernisation plan today."
+          description="Plan a retail workflow for inventory, sales visibility, reporting, and customer follow-up."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

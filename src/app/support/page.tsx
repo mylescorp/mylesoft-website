@@ -23,10 +23,10 @@ const SUPPORT_DATA = {
     ],
     image: '/api/og/product?name=Support&category=Help',
     stats: [
-      { number: '24/7', label: 'Support Available' },
-      { number: '< 1hr', label: 'Response Time' },
-      { number: '98%', label: 'Satisfaction Rate' },
-      { number: '4.9', label: 'Average Rating' }
+      { number: 'Product', label: 'Support' },
+      { number: 'Email', label: 'Support Channel' },
+      { number: 'Phone', label: 'Technical Contact' },
+      { number: 'Guided', label: 'Follow-up' }
     ]
   },
   features: [
@@ -76,7 +76,7 @@ const SUPPORT_DATA = {
   ],
   testimonials: [
     {
-      quote: 'The support team at MylesCorp is exceptional. They resolved our issue within minutes and provided clear guidance.',
+      quote: 'The support team at MylesCorp gave us clear guidance and stayed focused until the issue was resolved.',
       author: 'Sarah Johnson',
       role: 'System Administrator',
       organization: 'Kenya Healthcare Network'

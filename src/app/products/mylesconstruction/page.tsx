@@ -232,7 +232,7 @@ export default function MylesConstructionPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your Construction Operations?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESCONSTRUCTION_DATA.overview.stats[0].number} construction companies across Africa already building with MylesConstruction.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

@@ -29,8 +29,8 @@ const MYLESHOSPITALITY_DATA = {
     ],
     image: '/api/og/product?name=MylesHospitality&category=Hospitality',
     stats: [
-      { number: '100+', label: 'Hospitality Clients' },
-      { number: '50K+', label: 'Guests Served Daily' },
+      { number: 'Guest', label: 'Operations' },
+      { number: 'Booking', label: 'Workflows' },
       { number: '40%', label: 'Operational Efficiency' },
       { number: '24/7', label: 'Guest Support' }
     ]
@@ -236,7 +236,7 @@ export default function MylesHospitalityPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your Hospitality Operations?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESHOSPITALITY_DATA.overview.stats[0].number} hospitality businesses across Africa already thriving with MylesHospitality.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

@@ -20,6 +20,7 @@ import {
   Mail
 } from 'lucide-react'
 import Link from 'next/link'
+import { COMPANY_CONTACT, telHref } from '@/lib/constants/contact'
 
 const STATUS_LABELS: Record<string, string> = {
   live: 'Live Product',
@@ -28,7 +29,6 @@ const STATUS_LABELS: Record<string, string> = {
   'coming-soon': 'Coming Soon',
 }
 
-// Mock product data - in production, this would come from a CMS
 const products = {
   'edumyles': {
     name: 'EduMyles',
@@ -90,7 +90,7 @@ EduMyles is designed for the operating needs of African schools, combining admin
 ### Nairobi Girls Secondary School
 - **40% reduction** in administrative workload
 - **25% improvement** in student performance
-- **60% increase** in parent engagement
+- **Clearer** parent engagement workflows
 - **30% reduction** in operational costs
 
 ### Rift Valley Academy
@@ -171,10 +171,10 @@ EduMyles is designed for the operating needs of African schools, combining admin
     icon: 'GraduationCap',
     color: 'blue',
     stats: {
-      schools: '500+',
-      students: '250,000+',
+      schools: 'School',
+      students: 'Student',
       countries: '4',
-      satisfaction: '98%'
+      satisfaction: 'Support'
     },
     testimonials: [
       {
@@ -198,8 +198,8 @@ EduMyles is designed for the operating needs of African schools, combining admin
     demoUrl: '/book-demo?product=edumyles',
     trialAvailable: true,
     support: {
-      email: 'support@mylescorptech.com',
-      phone: '+254 743 993 715',
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
       documentation: '/docs/edumyles',
       training: '/training/edumyles'
     }
@@ -331,8 +331,8 @@ MylesCare improves healthcare management with digital workflows designed for Afr
     icon: 'Activity',
     color: 'red',
     stats: {
-      hospitals: '100+',
-      patients: '1M+',
+      hospitals: 'Healthcare',
+      patients: 'Patient',
       doctors: '5,000+',
       satisfaction: '96%'
     },
@@ -352,8 +352,8 @@ MylesCare improves healthcare management with digital workflows designed for Afr
     demoUrl: '/book-demo?product=mylescare',
     trialAvailable: true,
     support: {
-      email: 'healthcare@mylescorptech.com',
-      phone: '+254 743 993 715',
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
       documentation: '/docs/mylescare',
       training: '/training/mylescare'
     }
@@ -572,7 +572,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                   </div>
                   <h3 className="heading-3 mb-2">Phone Support</h3>
                   <p className="text-light-blue mb-4">Call us directly</p>
-                  <a href={`tel:${product.support.phone}`} className="text-gold hover:text-gold-light">
+                  <a href={telHref(product.support.phone)} className="text-gold hover:text-gold-light">
                     {product.support.phone}
                   </a>
                 </div>

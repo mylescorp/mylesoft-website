@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { X, Minimize2, Maximize2, Send, User, Bot } from 'lucide-react'
+import { COMPANY_CONTACT } from '@/lib/constants/contact'
 
 interface Message {
   id: string
@@ -74,19 +75,19 @@ export function LiveChat() {
     const input = userInput.toLowerCase()
 
     if (input.includes('product') || input.includes('solution')) {
-      return 'I can help you learn about our software products! We offer EduMyles for school management, EduRyde for school transport, MylesCare for healthcare, MylesCRM for business, AgriMyles for agriculture, and MylesProp for real estate. Which product interests you most?'
+      return 'I can help you learn about our software products. We offer EduMyles for school management, EduRyde for school transport, MylesCare for healthcare, MylesCRM for business, AgriMyles for agriculture, MylesProp for real estate, and MylesNet for network operations. Which product interests you most?'
     } else if (input.includes('pricing') || input.includes('cost') || input.includes('price')) {
       return 'Our pricing varies by product and organization size. I\'d recommend booking a demo with our team to get a customized quote. Would you like me to arrange that for you?'
     } else if (input.includes('demo') || input.includes('trial')) {
       return 'Great! I can help you book a demo. Our team will walk you through our solutions and answer all your questions. Click the "Book a Demo" button or I can connect you with our sales team.'
     } else if (input.includes('support') || input.includes('help')) {
-      return 'I\'m here to help! For technical support, you can reach our team at support@mylescorptech.com or call +254 743 993 715. What specific issue are you experiencing?'
+      return `I am here to help. For technical support, you can reach our team at ${COMPANY_CONTACT.contactEmail} or call ${COMPANY_CONTACT.technicalPhone}. What specific issue are you experiencing?`
     } else if (input.includes('contact') || input.includes('phone') || input.includes('email')) {
-      return 'You can reach us at:\nEmail: info@mylescorptech.com\nPhone: +254 743 993 715\nLocation: Wester Heights, Westlands, Nairobi\nWould you like me to connect you with a specific team member?'
+      return `You can reach us at:\nEmail: ${COMPANY_CONTACT.infoEmail}\nPhone: ${COMPANY_CONTACT.technicalPhone}\nLocation: ${COMPANY_CONTACT.location}\nWould you like me to connect you with a specific team member?`
     } else if (input.includes('career') || input.includes('job') || input.includes('work')) {
       return 'We\'re always looking for talented individuals! Check our careers page at /careers for current openings. What type of role are you interested in?'
     } else {
-      return 'Thank you for your message! Our team typically responds within a few hours during business hours (9 AM - 6 PM EAT). For urgent matters, please call us at +254 743 993 715. Is there anything specific I can help you with?'
+      return `Thank you for your message. Our team typically responds within a few hours during business hours. For urgent matters, please call us at ${COMPANY_CONTACT.technicalPhone}. Is there anything specific I can help you with?`
     }
   }
 

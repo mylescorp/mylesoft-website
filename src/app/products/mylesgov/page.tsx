@@ -30,7 +30,7 @@ const MYLESGOV_DATA = {
   overview: {
     stats: [
       { number: "50+", label: "Government Bodies" },
-      { number: "1M+", label: "Citizens Served" },
+      { number: "Citizen", label: "Services" },
       { number: "24/7", label: "Service Access" },
       { number: "99.9%", label: "System Uptime" }
     ],
@@ -183,7 +183,7 @@ export default function MylesGovPage() {
           description={MYLESGOV_DATA.overview.description.split('\n\n')}
           stats={[
             { number: "99.9%", label: "System uptime" },
-            { number: "1M+", label: "Citizens served" },
+            { number: "Citizen", label: "Services" },
             { number: "24/7", label: "Service access" },
             { number: "50+", label: "Government bodies" },
           ]}

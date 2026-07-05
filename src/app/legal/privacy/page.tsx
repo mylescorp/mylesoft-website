@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>SSL/TLS encryption for data in transit</li>
-                      <li>Secure servers hosted with Vercel</li>
+                      <li>Secure managed hosting infrastructure</li>
                       <li>Regular security assessments and updates</li>
                       <li>Employee access controls and training</li>
                     </ul>

@@ -17,7 +17,7 @@ import { HOMEPAGE_SERVICE_HERO_IMAGES } from '@/lib/constants/hero-images'
 
 export const metadata = {
   title: 'MylesCorp Technologies, Operating Systems for African Institutions',
-  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for schools, healthcare facilities, transport teams, agricultural teams, real estate teams, and growing businesses across Africa.',
+  description: 'MylesCorp Technologies builds EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, MylesProp, and MylesNet for schools, healthcare facilities, transport teams, agricultural teams, real estate teams, network operators, and growing businesses across Africa.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/',
   },
@@ -29,14 +29,14 @@ const HOMEPAGE_DATA = {
     tagline: 'Software for the institutions that keep Africa moving',
     description: [
       'Focused software for school administration, school transport safety, healthcare delivery, agricultural operations, real estate management, and business growth across Africa.',
-      'EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp help teams replace spreadsheets, WhatsApp follow-ups, manual reports, and disconnected workflows with reliable digital operations.'
+      'EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, MylesProp, and MylesNet help teams replace spreadsheets, WhatsApp follow-ups, manual reports, and disconnected workflows with reliable digital operations.'
     ],
     image: '/api/og?title=MylesCorp%20Technologies&description=AI-Powered%20Software%20Solutions%20for%20Africa',
     stats: [
-      { number: '500+', label: 'Schools Managed' },
-      { number: '24/7', label: 'Bus Visibility' },
-      { number: '6', label: 'Core Products' },
-      { number: '200+', label: 'Businesses Transformed' }
+      { number: 'Education', label: 'School Systems' },
+      { number: 'Transport', label: 'Route Visibility' },
+      { number: '7', label: 'Core Products' },
+      { number: 'Network', label: 'ISP Operations' }
     ]
   },
   features: [
@@ -84,6 +84,7 @@ const HOMEPAGE_DATA = {
     'Healthcare Facilities - Clinics, hospitals, pharmacies, and labs needing digital patient and billing workflows',
     'Agricultural Teams - Farmers, cooperatives, and agribusinesses needing advisory, records, markets, and supply chain visibility',
     'Real Estate Teams - Landlords, property managers, and agencies needing tenant, rent, maintenance, and reporting workflows',
+    'Network Operators - ISPs and connectivity teams needing subscriber, billing, support, and field visibility',
     'Business Enterprises - SMEs and sales teams looking for customer and revenue clarity'
   ],
   testimonials: [
@@ -213,6 +214,19 @@ const PRODUCT_DETAIL_SECTIONS = [
       'Document storage, inspection records, and portfolio reports',
     ],
   },
+  {
+    name: 'MylesNet',
+    href: '/products/mylesnet',
+    eyebrow: 'Network Operations',
+    summary:
+      'MylesNet supports internet service providers and connectivity teams with subscriber records, service plans, billing visibility, support workflows, infrastructure tracking, installations, and field operations.',
+    highlights: [
+      'Subscriber, service plan, and account records',
+      'Billing visibility, service status, and support tracking',
+      'Network asset, installation, and field-team coordination',
+      'Operator reporting for connectivity teams and ISP workflows',
+    ],
+  },
 ]
 
 export default function HomePage() {
@@ -332,7 +346,7 @@ export default function HomePage() {
                 Sector-Specific Products
               </h2>
             <p className="font-body text-medium-grey text-[1.08rem] md:text-lg max-w-2xl mx-auto leading-8">
-                Six focused products for serious growth.
+                Seven focused products for serious growth.
               </p>
             </div>
 
@@ -411,10 +425,10 @@ export default function HomePage() {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { number: '500+', label: 'Schools Managed', icon: 'graduation-cap' },
-                { number: '24/7', label: 'Transport Visibility', icon: 'bus' },
-                { number: '6', label: 'Focused Products', icon: 'target' },
-                { number: '200+', label: 'Businesses Transformed', icon: 'briefcase' }
+                { number: 'Education', label: 'School Systems', icon: 'graduation-cap' },
+                { number: 'Transport', label: 'Route Visibility', icon: 'bus' },
+                { number: '7', label: 'Focused Products', icon: 'target' },
+                { number: 'Network', label: 'ISP Operations', icon: 'wifi' }
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-4xl md:text-5xl font-display font-bold text-gold mb-2">
@@ -480,8 +494,8 @@ export default function HomePage() {
         {/* Final CTA Section */}
         <CTASection
           title="Ready to Modernise Your Operation?"
-          tagline="Software for African institutions."
-          description={`Let's discuss the workflows, users, integrations, data, and support your team needs. Join ${HOMEPAGE_DATA.overview.stats[3].number} businesses already working with MylesCorp.`}
+          tagline="Transforming Industries, Empowering Generations."
+          description="Let's discuss the workflows, users, integrations, data, and support your team needs."
           primaryCta={{ text: "Book a Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}
         />

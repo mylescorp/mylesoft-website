@@ -29,8 +29,8 @@ const MYLESLEGAL_DATA = {
     ],
     image: '/api/og/product?name=MylesLegal&category=Legal',
     stats: [
-      { number: '500+', label: 'Law Firms' },
-      { number: '50K+', label: 'Cases Managed' },
+      { number: 'Legal', label: 'Teams' },
+      { number: 'Case', label: 'Records' },
       { number: '99.9%', label: 'Uptime' },
       { number: '24/7', label: 'Support' }
     ]
@@ -236,7 +236,7 @@ export default function MylesLegalPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your Law Practice?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESLEGAL_DATA.overview.stats[0].number} law firms across East Africa already using MylesLegal.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

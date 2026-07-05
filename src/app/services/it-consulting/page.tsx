@@ -148,7 +148,7 @@ export default function ITConsultingPage() {
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-gold mb-2">100+</div>
+                  <div className="text-3xl font-bold text-gold mb-2">Custom</div>
                   <div className="text-sm text-medium-grey">Organisations Advised</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">

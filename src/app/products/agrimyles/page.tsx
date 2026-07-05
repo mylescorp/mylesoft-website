@@ -86,7 +86,7 @@ export default function AgriMylesPage() {
         {/* CTA */}
         <CTASection
           title="Transform Your Farm Today"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${AGRIMYLES_DATA.overview.stats[0].number} farmers across all 47 counties already using AgriMyles to grow smarter.`}
           primaryCta={{ text: "Get Started Free", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

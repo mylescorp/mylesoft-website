@@ -174,7 +174,7 @@ const WEB_HOSTING_DATA = {
         '50 Email Accounts',
         'Free SSL Certificate (Unlimited)',
         'Real-time Backups',
-        '99.95% Uptime SLA',
+        'Managed uptime planning',
         '24/7 Priority Support',
         'cPanel Control Panel',
         '1-Click App Installer',
@@ -274,7 +274,7 @@ export default function WebHostingPage() {
                 Domain Registration Services
               </h2>
               <p className="text-gray-600 text-center mb-6 md:mb-8 max-w-3xl mx-auto px-4 text-sm md:text-base leading-relaxed">
-                Secure your online identity with domain registration. Choose from 500+ domain extensions
+                Secure your online identity with domain registration options matched to your organisation
                 including .com, .co.ke, .ke, .africa, and many more. Get free privacy protection and easy management tools.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">

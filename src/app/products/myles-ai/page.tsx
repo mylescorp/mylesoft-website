@@ -36,15 +36,15 @@ export default function MylesAIPage() {
               <div className="flex items-center justify-center gap-8 text-sm text-navy-200 mb-8">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-gold" />
-                  <span>500+ Projects</span>
+                  <span>Workflow Discovery</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-gold" />
-                  <span>50+ AI Experts</span>
+                  <span>Applied Automation</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-gold" />
-                  <span>95% Success Rate</span>
+                  <span>Governed Delivery</span>
                 </div>
               </div>
             </div>

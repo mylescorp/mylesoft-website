@@ -236,7 +236,7 @@ export default function MylesEnergyPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Optimize Your Energy Usage?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESENERGY_DATA.overview.stats[0].number} facilities across Africa already saving with MylesEnergy.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

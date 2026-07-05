@@ -158,7 +158,7 @@ const MYLESPAY_DATA = {
       avatar: "SK"
     },
     {
-      quote: "The analytics dashboard gives us incredible insights into our payment patterns. Best payment solution we've used.",
+      quote: "The analytics dashboard gives us clearer visibility into payment patterns and follow-up priorities.",
       author: "David Ochieng",
       role: "Founder, Nairobi Eats",
       organization: "Nairobi Eats",
@@ -243,7 +243,7 @@ export default function MylesPayPage() {
         <CTASection
           title="Ready to Modernise Your Payments?"
           tagline="Powering Digital Transactions Across East Africa."
-          description="Join thousands of businesses already using MylesPay for secure, fast, and reliable payment processing. Start accepting payments today."
+          description="Plan a payment workflow for collections, reconciliation, reporting, and customer follow-up."
           primaryCta={{ text: "Book a Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

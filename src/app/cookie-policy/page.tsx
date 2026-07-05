@@ -230,7 +230,7 @@ export default function CookiePolicy() {
                     </tr>
                     <tr className="hover:bg-white/2 transition-colors">
                       <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">_vercel_no_cache</td>
-                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Vercel</td>
+                      <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Managed hosting provider</td>
                       <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Controls caching behaviour for hosting platform</td>
                       <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">Session</td>
                       <td className="px-3.5 py-2.5 border-b border-[rgba(199,150,57,0.08)] text-[#C7D7EF] align-top leading-[1.6]">
@@ -306,7 +306,7 @@ export default function CookiePolicy() {
               </p>
               <ul className="pl-[18px] mb-0 space-y-1.5">
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]"><strong className="text-white font-semibold">Google Analytics</strong> — website usage analytics. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#C79639] no-underline hover:underline">Google's Privacy Policy</a></li>
-                <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]"><strong className="text-white font-semibold">Vercel</strong> — hosting and performance infrastructure</li>
+                <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]"><strong className="text-white font-semibold">Hosting provider</strong> — hosting and performance infrastructure</li>
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]"><strong className="text-white font-semibold">Tawk.to</strong> — live chat support widget</li>
               </ul>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
@@ -397,7 +397,7 @@ export default function CookiePolicy() {
       {/* Page Footer */}
       <div className="border-t border-[rgba(199,150,57,0.1)] px-10 py-5 flex justify-between items-center flex-wrap gap-3 max-w-[1100px] mx-auto">
         <div className="text-[11.5px] text-[#95A9CC]">© 2026 MylesCorp Technologies Ltd. All rights reserved.</div>
-        <div className="font-['Playfair_Display'] text-[12px] italic text-[#C79639]">Software for African institutions.</div>
+        <div className="font-['Playfair_Display'] text-[12px] italic text-[#C79639]">Transforming Industries, Empowering Generations.</div>
       </div>
       </div>
     </>

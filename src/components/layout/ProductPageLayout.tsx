@@ -380,7 +380,7 @@ export function ProductPageLayout({
                 Ready to Get Started?
               </h2>
               <p className="font-body text-xl leading-8 text-medium-grey mb-8">
-                Join hundreds of organizations already using our solutions
+                Plan your rollout with the MylesCorp team
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/book-demo">

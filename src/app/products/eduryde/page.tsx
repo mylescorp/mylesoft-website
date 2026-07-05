@@ -86,7 +86,7 @@ export default function EduRydePage() {
         {/* CTA */}
         <CTASection
           title="Keep Every Student Safe"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description="Join schools across East Africa using EduRyde to protect their students every day."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

@@ -15,27 +15,27 @@ export const metadata = {
 const quickStats = [
   {
     icon: <MapPin className="w-8 h-8" />,
-    number: "5+",
-    label: "Office Locations",
-    description: "Strategic offices across East Africa"
+    number: "Nairobi",
+    label: "Contact Hub",
+    description: "Primary MylesCorp contact location"
   },
   {
     icon: <Globe className="w-8 h-8" />,
-    number: "6+",
-    label: "Countries Served",
-    description: "Growing presence across the region"
+    number: "East Africa",
+    label: "Market Focus",
+    description: "Regional product conversations"
   },
   {
     icon: <Users className="w-8 h-8" />,
-    number: "800+",
-    label: "Active Clients",
-    description: "Organizations running clearer systems with MylesCorp"
+    number: "Multiple",
+    label: "Sectors",
+    description: "Education, health, business, property, agriculture, and network operations"
   },
   {
     icon: <Users className="w-8 h-8" />,
-    number: "75+",
-    label: "Team Members",
-    description: "Dedicated team members across the region"
+    number: "Product",
+    label: "Portfolio",
+    description: "MylesCorp systems for operational teams"
   }
 ]
 
@@ -78,8 +78,8 @@ export default function CoveragePage() {
 
           <ScrollReveal direction="up" delay={0.6}>
             <p className="text-xl text-light-blue leading-relaxed max-w-3xl mx-auto font-body">
-              From our headquarters in Nairobi to branch offices across the region,
-              we're bringing software products to organizations throughout East Africa.
+              From our Nairobi contact hub, we support product conversations
+              and implementation planning for organizations across East Africa.
             </p>
           </ScrollReveal>
         </div>
@@ -94,7 +94,7 @@ export default function CoveragePage() {
                 Our Regional Impact
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto font-body">
-                Numbers that reflect our work across East African operations
+                A practical view of the markets and sectors we are building for.
               </p>
             </div>
           </ScrollReveal>
@@ -127,8 +127,7 @@ export default function CoveragePage() {
                 Interactive Coverage Map
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto font-body">
-                Explore our office locations and client coverage across East Africa.
-                Click on markers to learn more about each location.
+                Explore the markets and sectors where MylesCorp products are positioned.
               </p>
             </div>
           </ScrollReveal>
@@ -157,39 +156,39 @@ export default function CoveragePage() {
             {[
               {
                 country: "Kenya",
-                clients: "500+",
+                clients: "Primary",
                 sectors: ["Education", "Healthcare", "Agriculture", "Business", "Government"],
-                description: "Our largest market with broad sector coverage"
+                description: "Primary operating market and contact hub"
               },
               {
                 country: "Uganda",
-                clients: "120+",
+                clients: "Focus",
                 sectors: ["Education", "Healthcare", "Agriculture"],
-                description: "Rapidly growing presence with strong education focus"
+                description: "Regional product conversations with education and service teams"
               },
               {
                 country: "Tanzania",
-                clients: "85+",
+                clients: "Focus",
                 sectors: ["Education", "Agriculture", "Business"],
-                description: "Strategic focus on agricultural and business solutions"
+                description: "Agricultural, transport, and business workflow discovery"
               },
               {
                 country: "Rwanda",
-                clients: "65+",
+                clients: "Focus",
                 sectors: ["Education", "Healthcare"],
-                description: "Emerging market with technology adoption leadership"
+                description: "Education, healthcare, and business workflow discovery"
               },
               {
                 country: "Burundi",
-                clients: "25+",
+                clients: "Selective",
                 sectors: ["Education"],
-                description: "Specialised education sector systems"
+                description: "Selective institutional rollout planning"
               },
               {
                 country: "South Sudan",
-                clients: "15+",
+                clients: "Selective",
                 sectors: ["Healthcare"],
-                description: "Healthcare solutions in challenging environments"
+                description: "Early-stage healthcare and education discovery"
               }
             ].map((region, index) => (
               <ScrollReveal key={index} direction="up" delay={0.4 + index * 0.1}>
@@ -197,7 +196,7 @@ export default function CoveragePage() {
                   <div className="mb-4">
                     <h3 className="text-2xl font-bold text-navy mb-2">{region.country}</h3>
                     <div className="text-3xl font-bold text-gold mb-1">{region.clients}</div>
-                    <div className="text-sm text-gray-600">Active Clients</div>
+                    <div className="text-sm text-gray-600">Market Status</div>
                   </div>
 
                   <div className="flex-grow">
@@ -229,7 +228,6 @@ export default function CoveragePage() {
                 Ready to Modernise Your Operation?
               </h2>
             <p className="text-xl text-white/90 mb-8 font-body">
-              Join hundreds of organizations across East Africa already using our solutions.
               Find out how we can help you plan and implement the next system your team needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

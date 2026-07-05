@@ -74,7 +74,7 @@ export default function CookiePolicy() {
                       </p>
                       <ul className="list-disc pl-6 space-y-1 text-sm">
                         <li>Google Analytics</li>
-                        <li>Vercel Analytics</li>
+                        <li>Performance analytics</li>
                         <li>Page load times</li>
                       </ul>
                     </div>
@@ -133,7 +133,7 @@ export default function CookiePolicy() {
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li><strong>Google Analytics:</strong> For website analytics and performance measurement</li>
-                      <li><strong>Vercel Analytics:</strong> For performance monitoring and optimization</li>
+                      <li><strong>Performance analytics:</strong> For performance monitoring and optimization</li>
                       <li><strong>LinkedIn:</strong> For business networking and advertising</li>
                       <li><strong>Google Ads:</strong> For advertising and remarketing</li>
                     </ul>

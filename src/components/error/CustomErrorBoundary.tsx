@@ -4,6 +4,7 @@ import React from 'react'
 import { unstable_catchError, type ErrorInfo } from 'next/error'
 import { Button } from '@/components/ui/Button'
 import { AlertTriangle, RefreshCw, Home } from 'lucide-react'
+import { COMPANY_CONTACT } from '@/lib/constants/contact'
 
 interface CustomErrorBoundaryProps {
   title?: string
@@ -14,7 +15,7 @@ interface CustomErrorBoundaryProps {
 
 function CustomErrorBoundary(
   props: CustomErrorBoundaryProps,
-  { error, unstable_retry }: ErrorInfo
+  { unstable_retry }: ErrorInfo
 ) {
   const handleRetry = () => {
     unstable_retry()
@@ -38,14 +39,6 @@ function CustomErrorBoundary(
         <p className="text-medium-grey mb-6">
           {props.description || 'An unexpected error occurred. Please try again or contact support if the problem persists.'}
         </p>
-
-        {error && (
-          <div className="bg-off-white rounded-lg p-4 mb-6 text-left">
-            <p className="text-sm font-mono text-red-600 break-all">
-              {error.message}
-            </p>
-          </div>
-        )}
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Button
@@ -71,8 +64,8 @@ function CustomErrorBoundary(
         <div className="mt-6 pt-6 border-t border-light-grey">
           <p className="text-sm text-medium-grey">
             If this problem continues, please contact{' '}
-            <a href="mailto:support@mylescorptech.com" className="text-gold hover:text-navy">
-              support@mylescorptech.com
+            <a href={`mailto:${COMPANY_CONTACT.contactEmail}`} className="text-gold hover:text-navy">
+              {COMPANY_CONTACT.contactEmail}
             </a>
           </p>
         </div>

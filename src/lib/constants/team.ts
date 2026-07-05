@@ -32,7 +32,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Grace Achieng",
     role: "Head of Customer Success",
-    bio: "Customer experience champion serving 500+ organisations across East Africa. Grace leads MylesCorp's customer success strategy, onboarding, support, and long-term client relationship management.",
+    bio: "Customer experience champion supporting organisations across East Africa. Grace leads MylesCorp's customer success strategy, onboarding, support, and long-term client relationship management.",
     image: null,
     social: { linkedin: "#", twitter: "#" }
   },

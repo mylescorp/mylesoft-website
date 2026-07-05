@@ -232,7 +232,7 @@ export default function MylesNonProfitPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your NGO Operations?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESNONPROFIT_DATA.overview.stats[0].number} NGOs across Africa already thriving with MylesNonProfit.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

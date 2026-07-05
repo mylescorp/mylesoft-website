@@ -236,7 +236,7 @@ export default function MylesTransitPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your Transportation Operations?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESTRANSIT_DATA.overview.stats[0].number} transportation companies across Africa already thriving with MylesTransit.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

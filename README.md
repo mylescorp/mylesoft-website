@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/MylesCorp-Technologies/.github/main/assets/mylesoft-logo.png" width="200"/>
+<img src="https://raw.githubusercontent.com/mylescorp/mylescorp-website/main/public/mylescorp-logo.png" width="200"/>
 
-# Mylesoft Website
+# MylesCorp Website
 ### Official Company Website — www.mylescorptech.com
 
 [![Status](https://img.shields.io/badge/Status-In%20Development-C4972A?style=for-the-badge)](https://www.mylescorptech.com)
 [![License](https://img.shields.io/badge/License-Proprietary-C4972A?style=for-the-badge)](LICENSE)
 
-**The official marketing and company website for MylesCorp Technologies Limited.**
+**The official marketing and company website for MylesCorp Technologies Ltd.**
 
-[Live Site](https://www.mylescorptech.com) · [Report Bug](https://github.com/MylesCorp-Technologies/mylesoft-website/issues/new?template=bug_report.md) · [Request Feature](https://github.com/MylesCorp-Technologies/mylesoft-website/issues/new?template=feature_request.md)
+[Live Site](https://www.mylescorptech.com) · [Repository](https://github.com/mylescorp/mylescorp-website) · [Vercel Deployment](https://www.mylescorptech.com)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ## 🌍 About
 
-This repository contains the source code for the official MylesCorp Technologies Limited website at [www.mylescorptech.com](https://www.mylescorptech.com).
+This repository contains the source code for the official MylesCorp Technologies Ltd website at [www.mylescorptech.com](https://www.mylescorptech.com).
 
 The website serves as the primary marketing and information hub for MylesCorp, showcasing our products, services, team, company story, and contact information to prospective clients, partners, and investors across East Africa and beyond.
 
@@ -37,7 +37,7 @@ Brand colour guidance lives in [docs/brand-colour-guidelines.md](docs/brand-colo
 | `/pricing` | Product pricing in KES with comparison tables |
 | `/blog` | Thought leadership, product updates, and industry insights |
 | `/careers` | Open positions at MylesCorp Technologies |
-| `/contact` | Contact form, office location, and department emails |
+| `/contact` | Contact form, approved company contact, and department routing |
 | `/book-demo` | Cal.com integrated demo booking |
 
 ---
@@ -46,14 +46,14 @@ Brand colour guidance lives in [docs/brand-colour-guidelines.md](docs/brand-colo
 
 | Layer | Technologies |
 |-------|-------------|
-| Framework | Next.js 15 |
+| Framework | Next.js 16.2 |
 | Styling | Tailwind CSS |
 | Language | TypeScript |
 | Animation | Framer Motion |
-| CMS | Notion API / Contentful |
+| CMS | Notion API |
 | Email | Resend |
 | Scheduling | Cal.com |
-| Analytics | Vercel Analytics |
+| Analytics | Google Analytics / PostHog |
 | Hosting | Vercel |
 
 ---
@@ -72,8 +72,8 @@ Brand colour guidance lives in [docs/brand-colour-guidelines.md](docs/brand-colo
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/MylesCorp-Technologies/mylesoft-website.git
-cd mylesoft-website
+git clone https://github.com/mylescorp/mylescorp-website.git
+cd mylescorp-website
 npm install
 cp .env.example .env.local
 npm run dev
@@ -85,6 +85,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ```env
 NEXT_PUBLIC_SITE_URL=https://www.mylescorptech.com
+NEXT_PUBLIC_COMPANY_INFO_EMAIL=info@mylescorptech.com
+NEXT_PUBLIC_COMPANY_CONTACT_EMAIL=contact@mylescorptech.com
+NEXT_PUBLIC_COMPANY_SALES_EMAIL=sales@mylescorptech.com
+NEXT_PUBLIC_COMPANY_TECHNICAL_PHONE="+254 743 993 715"
+NEXT_PUBLIC_COMPANY_SALES_PHONE="+254 714 660 729"
 RESEND_API_KEY=
 CAL_API_KEY=
 NEXT_PUBLIC_GA_ID=
@@ -105,7 +110,7 @@ fix/*      ← Bug fixes
 
 ## 🤝 Contributing
 
-Please read our [Contributing Guide](https://github.com/Mylesoft-Technologies/.github/blob/main/CONTRIBUTING.md) before submitting a PR.
+Please read our contributing standards in the vault before submitting a PR.
 
 ---
 
@@ -116,14 +121,15 @@ Please read our [Contributing Guide](https://github.com/Mylesoft-Technologies/.g
 | 🌐 Website | [www.mylescorptech.com](https://www.mylescorptech.com) |
 | 📧 General | [info@mylescorptech.com](mailto:info@mylescorptech.com) |
 | 📍 Location | Westlands, Nairobi, Kenya |
-| 📞 Phone | +254 743 993 715 |
+| 📞 Technical | +254 743 993 715 |
+| 📞 Sales | +254 714 660 729 |
 
 ---
 
 <div align="center">
 
-*© 2025 MylesCorp Technologies Limited. All Rights Reserved.*
+*© 2026 Powered by [MylesCorp Technologies](https://mylescorptech.com/) · All rights reserved.*
 
-**Transforming Industries, Empowering Generations.** 🌍
+**Transforming Industries, Empowering Generations.**
 
 </div>

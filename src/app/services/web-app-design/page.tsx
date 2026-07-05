@@ -149,7 +149,7 @@ export default function WebAppDesignPage() {
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-gold mb-2">100+</div>
+                  <div className="text-3xl font-bold text-gold mb-2">Custom</div>
                   <div className="text-sm text-gray-600">Designs Delivered</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
@@ -333,7 +333,7 @@ export default function WebAppDesignPage() {
               Ready to Improve Your Product Experience?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
-              Software for African institutions.
+              Transforming Industries, Empowering Generations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/book-demo">

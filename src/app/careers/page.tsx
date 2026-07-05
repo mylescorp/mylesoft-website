@@ -29,7 +29,7 @@ import {
 
 export const metadata = {
   title: 'Careers — Join MylesCorp Technologies',
-  description: 'Join East Africa\'s leading software company. Explore open positions in engineering, design, sales, and customer success at MylesCorp Technologies in Nairobi, Kenya.',
+  description: 'Join MylesCorp Technologies. Explore open positions in engineering, design, sales, and customer success in Nairobi, Kenya.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/careers',
   },
@@ -45,8 +45,8 @@ const openPositions = [
     description: 'We are looking for an experienced full-stack developer to join our engineering team and help build scalable software products for African markets.',
     requirements: [
       '5+ years of experience in full-stack development',
-      'Proficiency in React, Node.js, and TypeScript',
-      'Experience with cloud platforms (AWS, Azure, or GCP)',
+      'Proficiency in accessible interfaces, services, and data workflows',
+      'Experience deploying and monitoring production systems',
       'Strong understanding of databases and API design',
       'Experience with AI/ML concepts is a plus',
       'Excellent problem-solving and communication skills'
@@ -91,7 +91,7 @@ const departments = [
     name: 'Engineering',
     description: 'Build practical software products for African institutions.',
     teamSize: '15+',
-    focusAreas: ['Frontend', 'Backend', 'AI/ML', 'DevOps']
+    focusAreas: ['Frontend', 'Backend', 'Automation', 'Delivery Operations']
   },
   {
     name: 'Product',
@@ -138,7 +138,7 @@ const benefits = [
   },
   {
     icon: <Briefcase size={24} className="text-gold" />,
-    title: 'Growth Growth',
+    title: 'Career Growth',
     description: 'Continuous learning opportunities, training budgets, conference attendance, and clear career progression paths.'
   },
   {
@@ -191,10 +191,10 @@ const CAREERS_DATA = {
     ],
     image: '/api/og/product?name=Careers&category=Join',
     stats: [
-      { number: '50+', label: 'Team Members' },
+      { number: 'Nairobi', label: 'Head Office' },
       { number: '6', label: 'Departments' },
-      { number: '4', label: 'East Africa Offices' },
-      { number: '98%', label: 'Employee Satisfaction' }
+      { number: 'East Africa', label: 'Market Focus' },
+      { number: '7', label: 'Core Products' }
     ]
   },
   features: [
@@ -244,13 +244,13 @@ const CAREERS_DATA = {
   ],
   testimonials: [
     {
-      quote: 'Joining MylesCorp was the best career decision I made. The impact we\'re making across Africa is incredible.',
+      quote: 'Joining MylesCorp gave me the chance to work on practical products for real operating needs across Africa.',
       author: 'Sarah Johnson',
       role: 'Senior Developer',
       organization: 'Engineering Team'
     },
     {
-      quote: 'The culture here is useful. We collaborate, innovate, and truly care about making a difference.',
+      quote: 'The culture here is collaborative, focused, and serious about making useful products.',
       author: 'Michael Chen',
       role: 'Product Manager',
       organization: 'Product Team'
@@ -448,7 +448,7 @@ export default function CareersPage() {
                 Meet Our Departments
               </h2>
               <p className="font-body text-medium-grey text-lg md:text-xl max-w-2xl mx-auto leading-8">
-                Meet the departments driving our mission forward. Each team plays a crucial role in building software for African institutions.
+                Meet the departments driving our mission forward. Each team plays a crucial role in building Transforming Industries, Empowering Generations.
               </p>
             </div>
 
@@ -499,8 +499,8 @@ export default function CareersPage() {
         {/* Final CTA */}
         <CTASection
           title="Ready to Join Our Team?"
-          tagline="Software for African institutions."
-          description={`Take the next step in your career journey. Join ${CAREERS_DATA.overview.stats[0].number} talented specialists making a difference across Africa.`}
+          tagline="Transforming Industries, Empowering Generations."
+          description="Take the next step in your career journey with a team building practical Transforming Industries, Empowering Generations."
           primaryCta={{ text: "View All Positions", href: "#open-positions" }}
           secondaryCta={{ text: "Join Talent Network", href: "/contact" }}
         />

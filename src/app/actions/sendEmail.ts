@@ -1,8 +1,8 @@
 'use server'
 
 import { Resend } from 'resend'
-
-const resend = new Resend(process.env.RESEND_API_KEY)
+import { COMPANY_CONTACT } from '@/lib/constants/contact'
+import { contactFormSchema } from '@/lib/validation/contact'
 
 export interface ContactFormData {
   name: string
@@ -13,15 +13,49 @@ export interface ContactFormData {
   message: string
 }
 
+const messageFailure = 'We could not send your message. Please try again or contact us directly.'
+
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
 export async function sendContactEmail(
   data: ContactFormData
 ) {
   try {
+    const parsed = contactFormSchema.safeParse(data)
+
+    if (!parsed.success) {
+      return {
+        success: false,
+        error: 'Some of the information provided is invalid. Please review the form and try again.',
+      }
+    }
+
+    if (!process.env.RESEND_API_KEY) {
+      return { success: false, error: messageFailure }
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY)
+    const safeData = {
+      name: escapeHtml(parsed.data.name),
+      email: escapeHtml(parsed.data.email),
+      phone: parsed.data.phone ? escapeHtml(parsed.data.phone) : '',
+      organisation: parsed.data.organisation ? escapeHtml(parsed.data.organisation) : '',
+      subject: escapeHtml(parsed.data.subject),
+      message: escapeHtml(parsed.data.message),
+    }
+
     const { error } = await resend.emails.send({
-      from: 'MylesCorp Website <noreply@mylescorptech.com>',
-      to: ['info@mylescorptech.com'],
-      replyTo: data.email,
-      subject: `New Enquiry: ${data.subject}`,
+      from: process.env.RESEND_FROM_EMAIL ?? `MylesCorp Website <${COMPANY_CONTACT.infoEmail}>`,
+      to: [process.env.RESEND_CONTACT_TO_EMAIL ?? COMPANY_CONTACT.infoEmail],
+      replyTo: parsed.data.email,
+      subject: `New Enquiry: ${safeData.subject}`,
       html: `
         <div style="font-family:Arial,sans-serif;
                     max-width:600px;margin:0 auto;">
@@ -42,7 +76,7 @@ export async function sendContactEmail(
                            width:140px;">Name:</td>
                 <td style="padding:8px 0;
                            color:#212121;">
-                  ${data.name}
+                  ${safeData.name}
                 </td>
               </tr>
               <tr>
@@ -51,20 +85,20 @@ export async function sendContactEmail(
                            font-weight:bold;">Email:</td>
                 <td style="padding:8px 0;
                            color:#212121;">
-                  ${data.email}
+                  ${safeData.email}
                 </td>
               </tr>
-              ${data.phone ? `
+              ${safeData.phone ? `
               <tr>
                 <td style="padding:8px 0;
                            color:#545454;
                            font-weight:bold;">Phone:</td>
                 <td style="padding:8px 0;
                            color:#212121;">
-                  ${data.phone}
+                  ${safeData.phone}
                 </td>
               </tr>` : ''}
-              ${data.organisation ? `
+              ${safeData.organisation ? `
               <tr>
                 <td style="padding:8px 0;
                            color:#545454;
@@ -73,7 +107,7 @@ export async function sendContactEmail(
                 </td>
                 <td style="padding:8px 0;
                            color:#212121;">
-                  ${data.organisation}
+                  ${safeData.organisation}
                 </td>
               </tr>` : ''}
               <tr>
@@ -82,7 +116,7 @@ export async function sendContactEmail(
                            font-weight:bold;">Subject:</td>
                 <td style="padding:8px 0;
                            color:#212121;">
-                  ${data.subject}
+                  ${safeData.subject}
                 </td>
               </tr>
             </table>
@@ -94,7 +128,7 @@ export async function sendContactEmail(
               <p style="color:#212121;
                         line-height:1.7;
                         white-space:pre-wrap;">
-                ${data.message}
+                ${safeData.message}
               </p>
             </div>
           </div>
@@ -103,8 +137,8 @@ export async function sendContactEmail(
             <p style="color:#C7D7EF;font-size:12px;
                       margin:0;">
               MylesCorp Technologies Ltd ·
-              info@mylescorptech.com ·
-              +254 743 993 715
+              ${COMPANY_CONTACT.infoEmail} ·
+              ${COMPANY_CONTACT.technicalPhone}
             </p>
           </div>
         </div>
@@ -112,13 +146,13 @@ export async function sendContactEmail(
     })
 
     if (error) {
-      return { success: false, error: error.message }
+      return { success: false, error: messageFailure }
     }
 
     // Send auto-reply to the person who contacted
     await resend.emails.send({
-      from: 'MylesCorp Technologies <info@mylescorptech.com>',
-      to: [data.email],
+      from: process.env.RESEND_FROM_EMAIL ?? `MylesCorp Technologies <${COMPANY_CONTACT.infoEmail}>`,
+      to: [parsed.data.email],
       subject: 'Thank you for contacting MylesCorp Technologies',
       html: `
         <div style="font-family:Arial,sans-serif;
@@ -127,7 +161,7 @@ export async function sendContactEmail(
                       border-bottom:3px solid #C79639;">
             <h1 style="color:#C79639;font-size:22px;
                        margin:0;">
-              Thank you, ${data.name.split(' ')[0]}!
+              Thank you, ${safeData.name.split(' ')[0]}!
             </h1>
           </div>
           <div style="padding:32px;background:#EEF2F8;">
@@ -140,7 +174,7 @@ export async function sendContactEmail(
             <p style="color:#212121;line-height:1.7;
                       font-size:15px;">
               In the meantime, you can WhatsApp us directly
-              at <strong>+254 743 993 715</strong> or
+              at <strong>${COMPANY_CONTACT.technicalPhone}</strong> or
               explore our products at
               <a href="https://www.mylescorptech.com/products"
                  style="color:#C79639;">
@@ -152,11 +186,10 @@ export async function sendContactEmail(
                       text-align:center;">
             <p style="color:#C79639;font-style:italic;
                       font-size:14px;margin:0 0 8px;">
-              Software for African institutions.
+              Transforming Industries, Empowering Generations.
             </p>
             <p style="color:#C7D7EF;font-size:12px;margin:0;">
-              MylesCorp Technologies Ltd · Westlands,
-              Nairobi, Kenya
+              MylesCorp Technologies Ltd · ${COMPANY_CONTACT.location}
             </p>
           </div>
         </div>
@@ -164,10 +197,10 @@ export async function sendContactEmail(
     })
 
     return { success: true }
-  } catch (error) {
+  } catch {
     return {
       success: false,
-      error: 'Failed to send email. Please try again.',
+      error: messageFailure,
     }
   }
 }

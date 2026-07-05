@@ -24,7 +24,7 @@ const UI_UX_DATA = {
     image: '/api/og/service?name=UI-UX-Design',
     stats: [
       { number: '200+', label: 'Projects Delivered' },
-      { number: '95%', label: 'Client Satisfaction' },
+      { number: 'User', label: 'Research' },
       { number: '3x', label: 'Avg. Conversion Increase' },
       { number: '24/7', label: 'Design Support' }
     ]

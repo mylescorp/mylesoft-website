@@ -30,7 +30,7 @@ const MYLESMANUFACTURING_DATA = {
     image: '/api/og/product?name=MylesManufacturing&category=Manufacturing',
     stats: [
       { number: '150+', label: 'Manufacturing Clients' },
-      { number: '1M+', label: 'Units Produced Monthly' },
+      { number: 'Production', label: 'Workflows' },
       { number: '35%', label: 'Efficiency Improvement' },
       { number: '24/7', label: 'Production Monitoring' }
     ]
@@ -111,7 +111,7 @@ const MYLESMANUFACTURING_DATA = {
       organization: 'Nairobi Food Processing Ltd'
     },
     {
-      quote: 'The quality control module reduced our defect rate by 60% and improved customer satisfaction significantly.',
+      quote: 'The quality control workflow helped us review production issues more consistently and improve follow-up.',
       author: 'Grace Mwangi',
       role: 'Quality Director',
       organization: 'East Africa Textiles'
@@ -236,7 +236,7 @@ export default function MylesManufacturingPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your Manufacturing Operations?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESMANUFACTURING_DATA.overview.stats[0].number} manufacturing companies across Africa already thriving with MylesManufacturing.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

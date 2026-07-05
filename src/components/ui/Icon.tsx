@@ -71,7 +71,8 @@ import {
   ShoppingCart,
   Home,
   BadgeDollarSign,
-  Activity
+  Activity,
+  Wifi
 } from 'lucide-react'
 
 interface IconProps {
@@ -123,6 +124,7 @@ const iconMap = {
   'home': Home,
   'badge-dollar-sign': BadgeDollarSign,
   'activity': Activity,
+  'wifi': Wifi,
   'linkedin': Linkedin,
   'facebook': Facebook,
   'twitter': Twitter,

@@ -330,7 +330,7 @@ export default function SoftwareDevelopmentPage() {
               Ready to Build the System Your Team Needs?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
-              Software for African institutions.
+              Transforming Industries, Empowering Generations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/book-demo">

@@ -240,22 +240,22 @@ export default function BookDemoPage() {
         <section className="section bg-navy-500">
           <div className="section-padding">
             <div className="text-center text-white">
-              <h2 className="heading-2 mb-4">Trusted by Leading Organizations</h2>
+              <h2 className="heading-2 mb-4">Plan Your Product Rollout</h2>
               <p className="text-xl text-navy-100 mb-8">
-                Join 500+ organizations across East Africa using MylesCorp to run clearer daily operations.
+                Review the product fit, implementation scope, support needs, and rollout plan with the MylesCorp team.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { number: '500+', label: 'Educational Institutions' },
-                { number: '100+', label: 'Healthcare Providers' },
-                { number: '1,000+', label: 'Businesses' },
-                { number: '95%', label: 'Satisfaction Rate' },
-                { number: '18', label: 'Countries Served' },
-                { number: '47', label: 'Kenyan Counties' },
-                { number: '24/7', label: 'Support Available' },
-                { number: '15+', label: 'Years Experience' }
+                { number: '7', label: 'Core Products' },
+                { number: '6', label: 'Priority Markets' },
+                { number: 'Nairobi', label: 'Contact Hub' },
+                { number: 'Guided', label: 'Product Demo' },
+                { number: 'Sales', label: 'Discovery' },
+                { number: 'Technical', label: 'Review' },
+                { number: 'Rollout', label: 'Planning' },
+                { number: 'Support', label: 'Follow-up' }
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl font-bold text-gold mb-2">{stat.number}</div>

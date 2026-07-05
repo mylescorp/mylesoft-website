@@ -111,7 +111,7 @@ const MYLESMEDIA_DATA = {
       organization: 'Nairobi Media Group'
     },
     {
-      quote: 'The collaboration features alone improved our team productivity by 60% and streamlined our approval processes.',
+      quote: 'The collaboration features improved how our team reviews work, coordinates approvals, and keeps production moving.',
       author: 'Grace Wanjiru',
       role: 'Production Manager',
       organization: 'East Africa Broadcasting'
@@ -236,7 +236,7 @@ export default function MylesMediaPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Modernise Your Media Operations?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESMEDIA_DATA.overview.stats[0].number} media organizations across Africa already thriving with MylesMedia.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Talk to Our Team", href: "/contact" }}

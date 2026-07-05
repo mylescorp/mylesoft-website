@@ -29,10 +29,10 @@ const MYLESPROP_DATA = {
   },
   overview: {
     stats: [
-      { number: "500+", label: "Properties Managed" },
-      { number: "95%", label: "Occupancy Rate" },
-      { number: "24/7", label: "Tenant Support" },
-      { number: "KSh 50M", label: "Monthly Rent Processed" }
+      { number: "Property", label: "Portfolio" },
+      { number: "Tenant", label: "Records" },
+      { number: "Rent", label: "Visibility" },
+      { number: "Maintenance", label: "Tracking" }
     ],
     description: "MylesProp streamlines every aspect of property management from tenant acquisition to maintenance coordination. Our platform provides real-time insights, automated rent collection, and structured reporting to maximize your property investment returns."
   },
@@ -182,10 +182,10 @@ export default function MylesPropPage() {
           title="MylesProp"
           description={MYLESPROP_DATA.overview.description.split('\n\n')}
           stats={[
-            { number: "99.9%", label: "System uptime" },
-            { number: "95%", label: "Avg occupancy rate" },
-            { number: "24/7", label: "Tenant support" },
-            { number: "500+", label: "Properties managed" },
+            { number: "Portfolio", label: "Management" },
+            { number: "Tenant", label: "Records" },
+            { number: "Rent", label: "Visibility" },
+            { number: "Maintenance", label: "Tracking" },
           ]}
         />
 
@@ -243,7 +243,7 @@ export default function MylesPropPage() {
         <CTASection
           title="Ready to Modernise Your Property Management?"
           tagline="Modernizing Real Estate Across East Africa."
-          description="Join hundreds of property teams already using MylesProp for efficient management and maximized returns. Start your modernisation plan today."
+          description="Plan a property management workflow for tenants, rent collection, maintenance, documents, and reporting."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

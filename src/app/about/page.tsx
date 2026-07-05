@@ -24,15 +24,15 @@ const ABOUT_DATA = {
     title: 'About Us',
     tagline: 'Transforming Africa Through Innovation',
     description: [
-      'MylesCorp Technologies is East Africa\'s leading software company.',
-      'We\'re transforming education, healthcare, agriculture, and business with innovative technology solutions.'
+      'MylesCorp Technologies builds practical software products for East African institutions and businesses.',
+      'We support education, healthcare, agriculture, connectivity, real estate, transport, and business operations with focused digital systems.'
     ],
     image: '/api/og/product?name=About&category=Company',
     stats: [
-      { number: '500+', label: 'Schools Transformed' },
-      { number: '50K+', label: 'Lives Impacted' },
-      { number: '12', label: 'Products Launched' },
-      { number: '4', label: 'East Africa Countries' }
+      { number: 'Product', label: 'Portfolio' },
+      { number: 'Nairobi', label: 'Contact Hub' },
+      { number: 'East Africa', label: 'Market Focus' },
+      { number: '2026', label: 'Active Build Year' }
     ]
   },
   features: [
@@ -88,7 +88,7 @@ const ABOUT_DATA = {
       organization: 'Nairobi Academy'
     },
     {
-      quote: 'The impact they\'ve made in healthcare is remarkable. Their AI solutions are saving lives.',
+      quote: 'Their healthcare workflow thinking is practical, responsive, and grounded in how facilities actually operate.',
       author: 'Dr. Michael Chen',
       role: 'Medical Director',
       organization: 'East Africa Medical Center'
@@ -369,8 +369,9 @@ export default function AboutPage() {
                     from a clear operating vision: to use
                     practical software to solve Africa's
                     most pressing challenges. What started as a small
-                    team of passionate developers has grown into East
-                    Africa's leading software company.
+                    team of passionate developers has grown into a
+                    focused software company serving East African
+                    operating needs.
                   </p>
                   <p className="font-body text-base leading-relaxed
                         font-light"
@@ -378,8 +379,10 @@ export default function AboutPage() {
                     Our journey began with EduMyles, our flagship
                     school management system that improved how
                     educational institutions across Kenya operate.
-                    Today we power 500+ schools serving more than
-                    50,000 students with production-ready technology.
+                    Today the product portfolio continues to expand
+                    around schools, transport teams, clinics, network
+                    operators, farms, property teams, and growing
+                    businesses.
                   </p>
                   <p className="font-body text-base leading-relaxed
                         font-light"
@@ -398,11 +401,11 @@ export default function AboutPage() {
                 <div className="grid grid-cols-2 gap-5">
                   {[
                     { num: '2020',  label: 'Year Founded'      },
-                    { num: '500+',  label: 'Schools Powered'   },
-                    { num: '50K+',  label: 'Students Managed'  },
-                    { num: '4',     label: 'Products Live'     },
-                    { num: '47',    label: 'Counties Reached'  },
-                    { num: '100+',  label: 'Health Facilities' },
+                    { num: '7',     label: 'Core Products'     },
+                    { num: 'East Africa',  label: 'Market Focus'  },
+                    { num: 'Nairobi',     label: 'Contact Hub'     },
+                    { num: 'Multiple',    label: 'Sectors Served'  },
+                    { num: 'Active',  label: 'Build Programme' },
                   ].map(s => (
                     <div key={s.label}
                          className="rounded-xl p-5 border"
@@ -572,14 +575,14 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { num: '500+', label: 'Schools', desc: 'Across Kenya' },
-                { num: '50K+', label: 'Students', desc: 'Empowered' },
-                { num: '47', label: 'Counties', desc: 'Reached' },
-                { num: '100+', label: 'Health', desc: 'Facilities' },
-                { num: '18', label: 'Products', desc: 'Available' },
-                { num: '4', label: 'Years', desc: 'of Innovation' },
-                { num: '24/7', label: 'Support', desc: 'Available' },
-                { num: '99%', label: 'Uptime', desc: 'Guaranteed' },
+                { num: '7', label: 'Core', desc: 'Products' },
+                { num: '6', label: 'Priority', desc: 'Markets' },
+                { num: 'Nairobi', label: 'Contact', desc: 'Hub' },
+                { num: 'East Africa', label: 'Market', desc: 'Focus' },
+                { num: 'Product', label: 'Portfolio', desc: 'Active' },
+                { num: 'Support', label: 'Team', desc: 'Available' },
+                { num: 'Delivery', label: 'Planning', desc: 'Structured' },
+                { num: 'Vault', label: 'Standards', desc: 'Applied' },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="font-display font-bold text-4xl md:text-5xl mb-2"
@@ -638,7 +641,7 @@ export default function AboutPage() {
         {/* Final CTA */}
         <CTASection
           title="Join Our Journey"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description="Whether you need a product demo, a systems roadmap, or a role on our team, we'd love to hear from you."
           primaryCta={{ text: "Book a Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Us", href: "/contact" }}

@@ -88,7 +88,7 @@ export default function MylesCRMPage() {
         {/* CTA */}
         <CTASection
           title="Ready to Grow Your Business?"
-          tagline="Software for African institutions."
+          tagline="Transforming Industries, Empowering Generations."
           description="Join businesses across East Africa using MylesCRM to sell smarter and grow faster."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "WhatsApp Us", href: "/contact" }}

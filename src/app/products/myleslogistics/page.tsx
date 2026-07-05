@@ -243,7 +243,7 @@ export default function MylesLogisticsPage() {
         <CTASection
           title="Ready to Optimize Your Logistics?"
           tagline="Transforming Supply Chains Across East Africa."
-          description="Join hundreds of companies already using MylesLogistics for efficient fleet management and route optimization. Start your modernisation plan today."
+          description="Plan a logistics workflow for fleet management, route coordination, dispatch visibility, and operational reporting."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

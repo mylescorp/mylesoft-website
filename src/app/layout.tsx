@@ -90,7 +90,6 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'google-site-verification: example-code-here',
   },
 }
 
@@ -109,7 +108,6 @@ export default function RootLayout({
         {/* Resource Hints */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="dns-prefetch" href="https://vercel.live" />
 
         {/* Favicon */}
         <link rel="icon" type="image/png" href="/favicon-16x16.png?v=5" sizes="16x16" />
@@ -150,7 +148,6 @@ export default function RootLayout({
               "sameAs": [
                 SOCIAL_LINKS.linkedin,
                 SOCIAL_LINKS.twitter,
-                SOCIAL_LINKS.github,
                 SOCIAL_LINKS.facebook,
                 SOCIAL_LINKS.youtube,
                 SOCIAL_LINKS.instagram,
