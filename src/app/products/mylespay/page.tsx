@@ -34,7 +34,7 @@ const MYLESPAY_DATA = {
       { number: "15+", label: "Currencies" },
       { number: "99.9%", label: "Uptime" }
     ],
-    description: "MylesPay revolutionizes how businesses handle digital transactions across East Africa. Our platform integrates seamlessly with popular mobile money services while supporting traditional banking methods, providing a unified payment solution for all your business needs."
+    description: "MylesPay helps businesses manage digital transactions across East Africa. The platform connects mobile money services and bank payment methods in one payment workflow for business collections and reconciliation."
   },
   features: [
     {
@@ -108,7 +108,7 @@ const MYLESPAY_DATA = {
       name: 'Starter',
       price: 'KSh 2,999',
       period: 'per month',
-      description: 'Perfect for small businesses getting started with digital payments.',
+      description: 'For small businesses getting started with digital payments.',
       features: [
         'Up to KSh 500,000 monthly volume',
         '2.5% transaction fee',
@@ -122,7 +122,7 @@ const MYLESPAY_DATA = {
       name: 'Business',
       price: 'KSh 7,999',
       period: 'per month',
-      description: 'Ideal for growing businesses with higher transaction volumes.',
+      description: 'For growing businesses with higher transaction volumes.',
       features: [
         'Up to KSh 2,000,000 monthly volume',
         '2.0% transaction fee',
@@ -137,7 +137,7 @@ const MYLESPAY_DATA = {
       name: 'Enterprise',
       price: 'Custom',
       period: 'pricing',
-      description: 'Tailored solutions for large enterprises with specific needs.',
+      description: 'Custom plans for large enterprises with specific needs.',
       features: [
         'Unlimited monthly volume',
         'Custom transaction fees',
@@ -151,14 +151,14 @@ const MYLESPAY_DATA = {
   ],
   testimonials: [
     {
-      quote: "MylesPay has transformed how we handle payments. The mobile money integration is seamless and settlements are instant.",
+      quote: "MylesPay has improved how we handle payments. The mobile money integration is reliable and settlements are instant.",
       author: "Sarah Kimani",
       role: "CEO, TechStore Kenya",
       organization: "TechStore Kenya",
       avatar: "SK"
     },
     {
-      quote: "The analytics dashboard gives us incredible insights into our payment patterns. Best payment solution we've used.",
+      quote: "The analytics dashboard gives us clearer visibility into payment patterns and follow-up priorities.",
       author: "David Ochieng",
       role: "Founder, Nairobi Eats",
       organization: "Nairobi Eats",
@@ -192,7 +192,7 @@ export default function MylesPayPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything Your Business Needs"
-          description="6 powerful payment features covering every aspect of digital transactions — all in one platform."
+          description="6 payment workflows for digital transactions in one platform."
           features={MYLESPAY_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'smartphone' ? '📱' :
@@ -241,9 +241,9 @@ export default function MylesPayPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Payments?"
+          title="Ready to Modernise Your Payments?"
           tagline="Powering Digital Transactions Across East Africa."
-          description="Join thousands of businesses already using MylesPay for secure, fast, and reliable payment processing. Start accepting payments today."
+          description="Plan a payment workflow for collections, reconciliation, reporting, and customer follow-up."
           primaryCta={{ text: "Book a Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

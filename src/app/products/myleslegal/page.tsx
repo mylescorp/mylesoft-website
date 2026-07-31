@@ -24,13 +24,13 @@ const MYLESLEGAL_DATA = {
     title: 'MylesLegal',
     tagline: 'Smart Practice Management for Modern Law Firms',
     description: [
-      'Transform your law firm with our comprehensive practice management solution designed specifically for the African legal landscape.',
+      'Transform your law firm with our practice management system designed specifically for the African legal landscape.',
       'Case management, document management, time tracking, and billing system in one platform.'
     ],
     image: '/api/og/product?name=MylesLegal&category=Legal',
     stats: [
-      { number: '500+', label: 'Law Firms' },
-      { number: '50K+', label: 'Cases Managed' },
+      { number: 'Legal', label: 'Teams' },
+      { number: 'Case', label: 'Records' },
       { number: '99.9%', label: 'Uptime' },
       { number: '24/7', label: 'Support' }
     ]
@@ -75,7 +75,7 @@ const MYLESLEGAL_DATA = {
     { step: 5, title: 'Scale', description: 'Add more features and users as your firm grows' }
   ],
   targets: [
-    'Solo Practitioners - Perfect for independent lawyers and small firms',
+    'Solo Practitioners - For independent lawyers and small firms',
     'Mid-size Firms - Scalable solution for growing legal practices',
     'Large Firms - Enterprise features for established law firms',
     'Corporate Legal - In-house legal teams and corporate counsel'
@@ -84,14 +84,14 @@ const MYLESLEGAL_DATA = {
     {
       name: 'Starter',
       price: 'KSh 5,000/month',
-      description: 'Perfect for solo practitioners',
+      description: 'For solo practitioners',
       features: ['Up to 3 users', 'Basic case management', 'Document storage (5GB)', 'Email support', 'Mobile app access'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 15,000/month',
-      description: 'Ideal for growing firms',
+      description: 'For growing firms',
       features: ['Up to 15 users', 'Advanced case management', 'Document storage (50GB)', 'Priority support', 'Client portal', 'Time tracking', 'Basic reporting', 'Most Popular'],
       popular: true
     },
@@ -105,7 +105,7 @@ const MYLESLEGAL_DATA = {
   ],
   testimonials: [
     {
-      quote: 'MylesLegal transformed how we manage our cases. Everything is now organized and accessible.',
+      quote: 'MylesLegal improved how we manage our cases. Everything is now organized and accessible.',
       author: 'Sarah Johnson',
       role: 'Managing Partner',
       organization: 'Johnson & Associates'
@@ -235,7 +235,7 @@ export default function MylesLegalPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Law Practice?"
+          title="Ready to Modernise Your Law Practice?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESLEGAL_DATA.overview.stats[0].number} law firms across East Africa already using MylesLegal.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}

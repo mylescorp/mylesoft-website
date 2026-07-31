@@ -84,14 +84,14 @@ const MYLESMEDIA_DATA = {
     {
       name: 'Basic',
       price: 'KSh 6,000/month',
-      description: 'Perfect for small content teams',
+      description: 'For small content teams',
       features: ['Up to 10 users', 'Basic content management', 'Asset library (100GB)', 'Mobile app', 'Email support'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 20,000/month',
-      description: 'Ideal for media companies',
+      description: 'For media companies',
       features: ['Up to 50 users', 'Advanced content management', 'Video production tools', 'Analytics dashboard', 'Priority support', 'API access', 'Most Popular'],
       popular: true
     },
@@ -105,13 +105,13 @@ const MYLESMEDIA_DATA = {
   ],
   testimonials: [
     {
-      quote: 'MylesMedia transformed our content production workflow. We reduced production time by 45% while improving content quality significantly.',
+      quote: 'MylesMedia clarified our content production workflow. We reduced production time by 45% while improving content quality significantly.',
       author: 'James Muriuki',
       role: 'Content Director',
       organization: 'Nairobi Media Group'
     },
     {
-      quote: 'The collaboration features alone improved our team productivity by 60% and streamlined our approval processes.',
+      quote: 'The collaboration features improved how our team reviews work, coordinates approvals, and keeps production moving.',
       author: 'Grace Wanjiru',
       role: 'Production Manager',
       organization: 'East Africa Broadcasting'
@@ -235,7 +235,7 @@ export default function MylesMediaPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Media Operations?"
+          title="Ready to Modernise Your Media Operations?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESMEDIA_DATA.overview.stats[0].number} media organizations across Africa already thriving with MylesMedia.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}

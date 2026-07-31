@@ -20,8 +20,8 @@ import {
   Phone
 } from 'lucide-react'
 import Link from 'next/link'
+import { COMPANY_CONTACT, telHref } from '@/lib/constants/contact'
 
-// Mock job data - in production, this would come from a CMS
 const jobs = {
   'senior-fullstack-developer': {
     title: 'Senior Full Stack Developer',
@@ -33,11 +33,11 @@ const jobs = {
     posted: '2024-03-10',
     deadline: '2024-04-10',
     description: `
-We are seeking a highly skilled Senior Full Stack Developer to join our growing engineering team at MylesCorp Technologies. You will be responsible for designing, developing, and maintaining scalable web applications that power our AI-driven solutions for the African market.
+We are seeking a highly skilled Senior Full Stack Developer to join our growing engineering team at MylesCorp Technologies. You will be responsible for designing, developing, and maintaining scalable web applications that power practical software products for the African market.
 
 ## About the Role
 
-As a Senior Full Stack Developer, you will work on cutting-edge projects that leverage artificial intelligence and modern web technologies to solve real-world problems in education, healthcare, agriculture, and business sectors across East Africa.
+As a Senior Full Stack Developer, you will work on production software projects that use applied automation and modern web delivery practices to solve real-world problems in education, healthcare, agriculture, and business sectors across East Africa.
 
 ## Key Responsibilities
 
@@ -48,16 +48,16 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
 - Drive technical decisions and architectural improvements
 
 ### Full Stack Development
-- Develop responsive front-end applications using React/Next.js
+- Develop responsive front-end applications using modern web standards
 - Build robust back-end services and APIs
 - Design and optimize database schemas
 - Implement CI/CD pipelines and deployment strategies
 
 ### AI Integration
-- Integrate machine learning models into web applications
-- Develop AI-powered features and user experiences
-- Work with data scientists to implement ML algorithms
-- Optimize AI model performance in production environments
+- Integrate automation-backed models into web applications
+- Develop automation-backed features and user experiences
+- Work with data specialists to implement decision-support workflows
+- Optimize automation features in production environments
 
 ### Product Innovation
 - Contribute to product roadmap and feature planning
@@ -68,16 +68,16 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
 ## Requirements
 
 ### Technical Skills
-- **Front-end**: Expertise in React, Next.js, TypeScript, and modern CSS
-- **Back-end**: Strong experience with Node.js, Python, or similar
-- **Databases**: Proficiency in PostgreSQL, MongoDB, and Redis
-- **Cloud**: Experience with AWS, Google Cloud, or Azure
-- **DevOps**: Knowledge of Docker, Kubernetes, and CI/CD
+- **Front-end**: Expertise in accessible, responsive, production web interfaces
+- **Back-end**: Strong experience building reliable services and APIs
+- **Databases**: Proficiency in data modelling, indexing, and operational reporting
+- **Cloud delivery**: Experience deploying and monitoring production systems
+- **Delivery operations**: Knowledge of release pipelines, testing, and observability
 
 ### Experience
-- 5+ years of professional full-stack development experience
+- 5+ years of production full-stack development experience
 - Proven track record of leading technical projects
-- Experience with AI/ML integration in web applications
+- Experience with automation-backed features in web applications
 - Strong understanding of software architecture and design patterns
 
 ### Soft Skills
@@ -93,28 +93,28 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
 - Performance bonuses and stock options
 - Comprehensive health insurance package
 - Flexible work arrangements and remote options
-- Professional development budget
+- Growth development budget
 
 ### Growth & Learning
-- Opportunity to work on impactful AI projects
+- Opportunity to work on impactful product projects
 - Regular training and skill development programs
 - Conference attendance and certifications
 - Career advancement opportunities
 
 ### Work Environment
 - Modern office in Westlands, Nairobi
-- Collaborative and innovative team culture
+- Collaborative, delivery-focused team culture
 - Cutting-edge technology and tools
 - Work-life balance and flexible hours
     `,
     requirements: [
-      '5+ years of professional full-stack development experience',
-      'Expertise in React, Next.js, TypeScript, and modern CSS',
-      'Strong experience with Node.js, Python, or similar back-end technologies',
-      'Proficiency in PostgreSQL, MongoDB, and Redis',
-      'Experience with cloud platforms (AWS, Google Cloud, or Azure)',
-      'Knowledge of Docker, Kubernetes, and CI/CD pipelines',
-      'Experience with AI/ML integration in web applications',
+      '5+ years of production full-stack development experience',
+      'Expertise in accessible, responsive, production web interfaces',
+      'Strong experience building reliable services and APIs',
+      'Proficiency in data modelling, indexing, and reporting workflows',
+      'Experience deploying and monitoring production systems',
+      'Knowledge of release pipelines, testing, and observability',
+      'Experience with automation-backed features in web applications',
       'Strong understanding of software architecture and design patterns',
       'Excellent communication and leadership abilities',
       'Passion for technology and innovation in Africa'
@@ -124,30 +124,30 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
       'Performance bonuses and stock options',
       'Comprehensive health insurance package',
       'Flexible work arrangements and remote options',
-      'Professional development budget',
+      'Growth development budget',
       'Regular training and skill development programs',
       'Conference attendance and certifications',
       'Modern office in Westlands, Nairobi',
-      'Collaborative and innovative team culture',
+      'Collaborative, delivery-focused team culture',
       'Work-life balance and flexible hours'
     ],
     skills: {
       required: [
-        'React/Next.js',
-        'TypeScript',
-        'Node.js',
-        'Python',
-        'PostgreSQL',
-        'MongoDB',
-        'AWS/Cloud Services',
-        'Docker/Kubernetes'
+        'Responsive Interfaces',
+        'Service Architecture',
+        'Data Modelling',
+        'API Design',
+        'Security Reviews',
+        'Release Pipelines',
+        'Observability',
+        'System Design'
       ],
       preferred: [
-        'Machine Learning',
-        'AI/ML Integration',
-        'GraphQL',
-        'Microservices',
-        'DevOps',
+        'Applied Automation',
+        'Workflow Design',
+        'Service Boundaries',
+        'Scalable Operations',
+        'Delivery Operations',
         'System Design'
       ]
     },
@@ -159,7 +159,7 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
         'Impact-driven work',
         'Diversity and inclusion'
       ],
-      environment: 'Fast-paced, collaborative, and innovative environment where you\'ll work with talented professionals who are passionate about using technology to solve real-world problems in Africa.'
+      environment: 'Fast-paced, collaborative, and delivery-focused environment where you\'ll work with talented specialists who are passionate about building software for real operating problems in Africa.'
     },
     applicationProcess: [
       'Submit your application with resume and portfolio',
@@ -169,9 +169,9 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
       'Offer and onboarding process'
     ],
     contact: {
-      email: 'careers@mylescorptech.com',
-      phone: '+254 743 993 715',
-      location: 'Wester Heights, Westlands, Nairobi, Kenya'
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
+      location: COMPANY_CONTACT.location
     }
   },
   'product-manager': {
@@ -184,16 +184,16 @@ As a Senior Full Stack Developer, you will work on cutting-edge projects that le
     posted: '2024-03-08',
     deadline: '2024-04-08',
     description: `
-We are looking for a passionate Product Manager to drive the development of our AI-powered software solutions. You will be responsible for product strategy, roadmap planning, and cross-functional team leadership.
+We are looking for a passionate Product Manager to drive the development of our software products. You will be responsible for product strategy, roadmap planning, and cross-functional team leadership.
 
 ## About the Role
 
-As Product Manager at MylesCorp Technologies, you will work at the intersection of technology, business, and user experience to deliver innovative products that transform industries across East Africa.
+As Product Manager at MylesCorp Technologies, you will work at the intersection of technology, business, and user experience to deliver useful products for industries across East Africa.
 
 ## Key Responsibilities
 
 ### Product Strategy
-- Define product vision and strategy for our AI-powered solutions
+- Define product vision and strategy for our software products
 - Conduct market research and competitive analysis
 - Identify user needs and market opportunities
 - Develop and maintain product roadmaps
@@ -239,8 +239,8 @@ As Product Manager at MylesCorp Technologies, you will work at the intersection 
       'Performance bonuses and stock options',
       'Comprehensive health insurance package',
       'Flexible work arrangements',
-      'Professional development budget',
-      'Opportunity to shape innovative AI products'
+      'Growth development budget',
+      'Opportunity to shape applied automation products'
     ],
     skills: {
       required: [
@@ -264,7 +264,7 @@ As Product Manager at MylesCorp Technologies, you will work at the intersection 
         'Innovation and creativity',
         'Collaboration and teamwork'
       ],
-      environment: 'Dynamic and fast-paced environment where you\'ll have the opportunity to make a real impact on products that transform industries.'
+      environment: 'Dynamic and fast-paced environment where you\'ll have the opportunity to make a real impact on products used by African institutions.'
     },
     applicationProcess: [
       'Submit your application with resume and cover letter',
@@ -274,9 +274,9 @@ As Product Manager at MylesCorp Technologies, you will work at the intersection 
       'Offer and onboarding'
     ],
     contact: {
-      email: 'careers@mylescorptech.com',
-      phone: '+254 743 993 715',
-      location: 'Wester Heights, Westlands, Nairobi, Kenya'
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
+      location: COMPANY_CONTACT.location
     }
   }
 }
@@ -328,7 +328,7 @@ export default function JobPage({ params }: JobPageProps) {
                 <div className="mb-8">
                   <h1 className="heading-1 mb-4">{job.title}</h1>
                   <p className="text-xl text-navy-100 mb-6">
-                    Join our team and help transform industries across East Africa with AI-powered solutions.
+                    Join our team and help build software products for industries across East Africa.
                   </p>
                 </div>
 
@@ -527,7 +527,7 @@ export default function JobPage({ params }: JobPageProps) {
                         type="text"
                         required
                         className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                        placeholder="John"
+                        placeholder="First name"
                       />
                     </div>
                     <div>
@@ -538,7 +538,7 @@ export default function JobPage({ params }: JobPageProps) {
                         type="text"
                         required
                         className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                        placeholder="Doe"
+                        placeholder="Last name"
                       />
                     </div>
                   </div>
@@ -551,7 +551,7 @@ export default function JobPage({ params }: JobPageProps) {
                       type="email"
                       required
                       className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                      placeholder="john.doe@example.com"
+                      placeholder="Your email address"
                     />
                   </div>
 
@@ -563,7 +563,7 @@ export default function JobPage({ params }: JobPageProps) {
                       type="tel"
                       required
                       className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                      placeholder="+254 7XX XXX XXX"
+                      placeholder="Your phone number"
                     />
                   </div>
 
@@ -574,7 +574,7 @@ export default function JobPage({ params }: JobPageProps) {
                     <input
                       type="url"
                       className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                      placeholder="https://linkedin.com/in/johndoe"
+                      placeholder="Your professional profile URL"
                     />
                   </div>
 
@@ -609,12 +609,12 @@ export default function JobPage({ params }: JobPageProps) {
 
                   <div>
                     <label className="block text-sm font-medium text-navy-500 mb-2">
-                      Portfolio/GitHub (Optional)
+                      Portfolio Link (Optional)
                     </label>
                     <input
                       type="url"
                       className="w-full px-4 py-3 border border-light-grey rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none"
-                      placeholder="https://github.com/johndoe"
+                      placeholder="Your portfolio URL"
                     />
                   </div>
 
@@ -664,7 +664,7 @@ export default function JobPage({ params }: JobPageProps) {
                   </div>
                   <h3 className="heading-3 mb-2">Call Us</h3>
                   <p className="text-navy-200 mb-4">Speak with our team</p>
-                  <a href={`tel:${job.contact.phone}`} className="text-gold hover:text-gold-light">
+                  <a href={telHref(job.contact.phone)} className="text-gold hover:text-gold-light">
                     {job.contact.phone}
                   </a>
                 </div>

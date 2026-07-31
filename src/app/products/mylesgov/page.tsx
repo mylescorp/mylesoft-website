@@ -22,7 +22,7 @@ const MYLESGOV_DATA = {
     eyebrow: 'GOVERNMENT',
     heading: 'Digital',
     goldWord: 'Governance',
-    subtitle: 'Comprehensive digital governance solution transforming public sector service delivery and citizen engagement.',
+    subtitle: 'Digital governance system for public sector service delivery and citizen engagement.',
     badge: 'DEVELOPMENT',
     primaryCta: { text: 'Get Started', href: '/book-demo' },
     secondaryCta: { text: 'Learn More', href: '/contact' }
@@ -30,11 +30,11 @@ const MYLESGOV_DATA = {
   overview: {
     stats: [
       { number: "50+", label: "Government Bodies" },
-      { number: "1M+", label: "Citizens Served" },
+      { number: "Citizen", label: "Services" },
       { number: "24/7", label: "Service Access" },
       { number: "99.9%", label: "System Uptime" }
     ],
-    description: "MylesGov revolutionizes how government institutions serve citizens through digital transformation. Our platform provides comprehensive solutions for citizen services, document management, workflow automation, and public records management to enhance transparency, efficiency, and citizen satisfaction."
+    description: "MylesGov helps government institutions improve citizen services through systems modernisation. The platform supports citizen services, document management, workflow automation, and public records management to improve transparency, efficiency, and citizen satisfaction."
   },
   features: [
     {
@@ -72,7 +72,7 @@ const MYLESGOV_DATA = {
     {
       step: 1,
       title: 'Needs Assessment',
-      description: 'Analyze current government processes and identify digital transformation opportunities.'
+      description: 'Analyze current government processes and identify systems modernisation opportunities.'
     },
     {
       step: 2,
@@ -108,7 +108,7 @@ const MYLESGOV_DATA = {
       name: 'Basic',
       price: 'KSh 99,999',
       period: 'per month',
-      description: 'Perfect for small government bodies and departments.',
+      description: 'For small government bodies and departments.',
       features: [
         'Up to 100 users',
         'Basic citizen services',
@@ -119,10 +119,10 @@ const MYLESGOV_DATA = {
       featured: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 299,999',
       period: 'per month',
-      description: 'Ideal for medium-sized government institutions.',
+      description: 'For medium-sized government institutions.',
       features: [
         'Up to 500 users',
         'Advanced citizen services',
@@ -137,7 +137,7 @@ const MYLESGOV_DATA = {
       name: 'Enterprise',
       price: 'Custom',
       period: 'pricing',
-      description: 'Tailored solutions for large government bodies and national ministries.',
+      description: 'Custom plans for large government bodies and national ministries.',
       features: [
         'Unlimited users',
         'White-label solution',
@@ -151,7 +151,7 @@ const MYLESGOV_DATA = {
   ],
   testimonials: [
     {
-      quote: "MylesGov has transformed how we serve our citizens. Service delivery is now faster and more transparent.",
+      quote: "MylesGov has improved how we serve our citizens. Service delivery is now faster and more transparent.",
       author: "John Kamau",
       role: "ICT Director, Nairobi County",
       organization: "Nairobi County Government",
@@ -183,7 +183,7 @@ export default function MylesGovPage() {
           description={MYLESGOV_DATA.overview.description.split('\n\n')}
           stats={[
             { number: "99.9%", label: "System uptime" },
-            { number: "1M+", label: "Citizens served" },
+            { number: "Citizen", label: "Services" },
             { number: "24/7", label: "Service access" },
             { number: "50+", label: "Government bodies" },
           ]}
@@ -192,7 +192,7 @@ export default function MylesGovPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything Your Government Needs"
-          description="6 powerful features covering every aspect of digital governance — all in one platform."
+          description="6 digital governance workflows in one platform."
           features={MYLESGOV_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'users' ? '👥' :
@@ -241,9 +241,9 @@ export default function MylesGovPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Public Services?"
+          title="Ready to Modernise Your Public Services?"
           tagline="Digitalizing Governance Across East Africa."
-          description="Join government institutions already using MylesGov for efficient service delivery and citizen engagement. Start your digital transformation journey."
+          description="Join government institutions already using MylesGov for efficient service delivery and citizen engagement. Start your systems modernisation plan."
           primaryCta={{ text: "Schedule Consultation", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Government Team", href: "/contact" }}
         />

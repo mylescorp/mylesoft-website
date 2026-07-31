@@ -39,7 +39,7 @@ const MYLESTRANSIT_DATA = {
     {
       icon: '📍',
       title: 'Route Optimization',
-      description: 'AI-powered route planning with real-time traffic updates and fuel optimization.'
+      description: 'route planning automation with real-time traffic updates and fuel optimization.'
     },
     {
       icon: '👥',
@@ -84,14 +84,14 @@ const MYLESTRANSIT_DATA = {
     {
       name: 'Basic',
       price: 'KSh 8,000/month',
-      description: 'Perfect for small transport operations',
+      description: 'For small transport operations',
       features: ['Up to 20 vehicles', 'Basic route planning', 'Fleet tracking', 'Mobile app', 'Email support'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 25,000/month',
-      description: 'Ideal for medium transport companies',
+      description: 'For medium transport companies',
       features: ['Up to 100 vehicles', 'Advanced route optimization', 'Driver management', 'Cost tracking', 'Priority support', 'API access', 'Most Popular'],
       popular: true
     },
@@ -111,7 +111,7 @@ const MYLESTRANSIT_DATA = {
       organization: 'Nairobi Logistics Ltd'
     },
     {
-      quote: 'The route optimization feature transformed our school transport system. Parents are happier and our costs are down.',
+      quote: 'The route optimisation feature improved our school transport system. Parents are happier and our costs are down.',
       author: 'Mary Wanjiku',
       role: 'Transport Director',
       organization: 'Elite Schools Kenya'
@@ -235,7 +235,7 @@ export default function MylesTransitPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Transportation Operations?"
+          title="Ready to Modernise Your Transportation Operations?"
           tagline="Transforming Industries, Empowering Generations."
           description={`Join ${MYLESTRANSIT_DATA.overview.stats[0].number} transportation companies across Africa already thriving with MylesTransit.`}
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}

@@ -23,10 +23,10 @@ const SUPPORT_DATA = {
     ],
     image: '/api/og/product?name=Support&category=Help',
     stats: [
-      { number: '24/7', label: 'Support Available' },
-      { number: '< 1hr', label: 'Response Time' },
-      { number: '98%', label: 'Satisfaction Rate' },
-      { number: '4.9', label: 'Average Rating' }
+      { number: 'Product', label: 'Support' },
+      { number: 'Email', label: 'Support Channel' },
+      { number: 'Phone', label: 'Technical Contact' },
+      { number: 'Guided', label: 'Follow-up' }
     ]
   },
   features: [
@@ -70,13 +70,13 @@ const SUPPORT_DATA = {
   ],
   targets: [
     'Product Users - Individuals and teams using our software solutions daily',
-    'System Administrators - IT professionals managing and maintaining our products',
+    'System Administrators - IT teams managing and maintaining our products',
     'Business Owners - Leaders responsible for operational efficiency and success',
     'Technical Teams - Developers and engineers integrating with our platforms'
   ],
   testimonials: [
     {
-      quote: 'The support team at MylesCorp is exceptional. They resolved our issue within minutes and provided clear guidance.',
+      quote: 'The support team at MylesCorp gave us clear guidance and stayed focused until the issue was resolved.',
       author: 'Sarah Johnson',
       role: 'System Administrator',
       organization: 'Kenya Healthcare Network'
@@ -88,7 +88,7 @@ const SUPPORT_DATA = {
       organization: 'East Africa Logistics'
     },
     {
-      quote: 'The expertise and professionalism of the support team exceeded our expectations.',
+      quote: 'The support team was knowledgeable, responsive, and easy to work with.',
       author: 'Grace Wanjiku',
       role: 'CEO',
       organization: 'Nairobi Retail Group'
@@ -160,7 +160,7 @@ export default function SupportPage() {
         {/* Features */}
         <FeaturesSection
           title="Why Choose Our Support"
-          description="We provide comprehensive support services to ensure your success with our products."
+          description="We provide support services to help your team use MylesCorp products with confidence."
           features={SUPPORT_DATA.features}
           centerHeader={true}
         />

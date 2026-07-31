@@ -22,15 +22,15 @@ const formatPublishedDate = (date: string) =>
     timeZone: 'UTC',
   }).format(new Date(date))
 
-// Mock blog post data - in production, this would come from a CMS
+// Editorial article data used for the public blog route.
 const blogPosts = {
   'transforming-education-ai-kenya': {
-    title: 'Transforming Education in Kenya with AI: The EduMyles Revolution',
-    excerpt: 'How artificial intelligence is reshaping the educational landscape across Kenyan schools and universities.',
+    title: 'Modernising School Operations in Kenya with EduMyles',
+    excerpt: 'How digital administration, reporting, and parent communication can make school operations clearer.',
     content: `
-# Transforming Education in Kenya with AI: The EduMyles Revolution
+# Modernising School Operations in Kenya with EduMyles
 
-Kenya's educational landscape is undergoing a profound transformation, driven by the integration of artificial intelligence into everyday learning experiences. At the forefront of this revolution stands EduMyles, our comprehensive AI-powered school management system that's changing how educational institutions operate across the country.
+Kenyan schools are adopting digital systems for administration, communication, reporting, and parent engagement. EduMyles supports these daily workflows for institutions across the country.
 
 ## The Current Educational Challenge
 
@@ -42,102 +42,71 @@ Kenyan schools face numerous challenges that have long hindered optimal learning
 - **Parent Communication**: Gaps in real-time communication between schools and parents
 - **Data-Driven Decisions**: Lack of actionable insights for educational leadership
 
-## How AI is Making a Difference
+## How Digital Systems Help
 
-### 1. Intelligent Administrative Automation
+### 1. Administrative Automation
 
-EduMyles leverages AI to automate routine administrative tasks, freeing up valuable time for educators:
+EduMyles supports routine administrative tasks so educators can spend more time on school work that needs human judgement:
 
-- **Automated Attendance**: Facial recognition and smart attendance tracking
-- **Intelligent Grading**: AI-assisted assessment and feedback generation
-- **Schedule Optimization**: Smart timetabling that maximizes resource utilization
-- **Report Generation**: Automated progress reports with AI-driven insights
+- **Attendance Records**: Digital attendance workflows for class and school operations
+- **Assessment Support**: Structured assessment capture and review
+- **Schedule Planning**: Timetabling support for classes, staff, and school resources
+- **Report Generation**: Progress reports prepared from recorded academic data
 
-### 2. Personalized Learning Experiences
+### 2. Student Support
 
-Our AI algorithms analyze individual student performance to create personalized learning paths:
+Digital records make it easier for school teams to spot patterns and support learners early:
 
-- **Adaptive Learning**: Content that adjusts to each student's pace and learning style
-- **Early Intervention**: AI identifies students who need additional support before they fall behind
-- **Talent Identification**: Machine learning uncovers hidden talents and strengths
-- **Career Guidance**: AI-powered recommendations based on student aptitudes and interests
+- **Performance Tracking**: Academic records organised by learner, class, and term
+- **Early Follow-up**: Easier visibility into learners who need extra attention
+- **Parent Communication**: Clearer updates for families and guardians
+- **Leadership Review**: Dashboards that help school leaders review operations
 
-### 3. Enhanced Parent Engagement
+### 3. Parent Engagement
 
-Real-time communication powered by AI keeps parents informed and involved:
+Timely communication keeps parents informed and reduces unnecessary office follow-up:
 
-- **Smart Notifications**: AI determines the optimal timing and content for parent communications
-- **Progress Insights**: Automated summaries of student performance with actionable recommendations
-- **Translation Services**: AI-powered translation ensures communication in parents' preferred languages
-- **Predictive Analytics**: Early warning systems for potential academic or behavioral issues
+- **Fee Updates**: Clear payment follow-up and receipt visibility
+- **Academic Updates**: Structured sharing of report cards and progress records
+- **Announcements**: School notices sent through reliable communication channels
+- **Contact Records**: Easier management of parent and guardian information
 
-## Real-World Impact
+## Operational Impact
 
-Since launching EduMyles, we've witnessed remarkable transformations across Kenyan schools:
+EduMyles is built around the practical work schools repeat every week:
 
-### Case Study: Nairobi Girls Secondary School
+- admissions and student records
+- CBC reporting
+- fee management
+- attendance workflows
+- parent communication
+- staff and administrative records
 
-After implementing EduMyles, Nairobi Girls Secondary School saw:
-- **40% reduction** in administrative workload
-- **25% improvement** in student performance metrics
-- **60% increase** in parent engagement rates
-- **30% reduction** in operational costs
+## Implementation Focus
 
-### Case Study: Rift Valley Academy
+Successful school software depends on careful setup. The EduMyles rollout process focuses on:
 
-Rift Valley Academy reported:
-- **50% faster** report card generation
-- **35% improvement** in resource allocation
-- **45% increase** in teacher satisfaction scores
-- **20% improvement** in overall student outcomes
+- mapping the school's classes, streams, staff, and academic structure
+- cleaning and importing student records
+- configuring fee items and communication templates
+- training the school team before launch
+- reviewing the first live operating cycle with administrators
 
-## The Technology Behind EduMyles
+## Data Protection
 
-Our AI-powered system incorporates cutting-edge technologies:
+School data must be handled with care. EduMyles is designed around role-based access, clear operating permissions, and responsible handling of learner and family records.
 
-### Machine Learning Models
-- **Natural Language Processing** for automated essay grading
-- **Computer Vision** for attendance and behavior analysis
-- **Predictive Analytics** for performance forecasting
-- **Recommendation Engines** for personalized learning paths
+## Looking Ahead
 
-### Data Security and Privacy
-- **End-to-end encryption** for all student data
-- **GDPR and Kenya DPA compliance**
-- **Regular security audits** and penetration testing
-- **Data anonymization** for research and analytics
+Kenyan schools need software that respects local workflows, academic structures, payment realities, and parent communication habits. EduMyles is built for that context.
 
-### Integration Capabilities
-- **Seamless LMS integration** with existing educational platforms
-- **Mobile-first design** for accessibility across all devices
-- **Offline capabilities** for areas with limited connectivity
-- **API access** for third-party educational tools
+## Plan Your School Rollout
 
-## Looking to the Future
-
-The integration of AI in Kenyan education is just beginning. We're excited about upcoming developments:
-
-### Advanced AI Features
-- **Virtual Teaching Assistants** for 24/7 student support
-- **Emotion Recognition** for mental health monitoring
-- **Language Learning AI** for multilingual education
-- **Career Prediction Models** using academic and behavioral data
-
-### Expanded Reach
-- **Rural School Initiatives** bringing AI education to remote areas
-- **Government Partnerships** for nationwide implementation
-- **Teacher Training Programs** for AI literacy
-- **Research Collaborations** with Kenyan universities
-
-## Join the Education Revolution
-
-Are you ready to transform your educational institution with AI? EduMyles is already helping over 500 schools across Kenya achieve remarkable results.
-
-**Book a demo today** and discover how AI can revolutionize your school's operations and student outcomes.
+Book a demo to review how EduMyles can support your school's daily operations.
 
 ---
 
-*This article is part of our ongoing series on AI transformation in East Africa. Subscribe to our newsletter for more insights and updates.*
+*This article is part of our ongoing series on education technology in East Africa. Subscribe to our newsletter for more insights and updates.*
     `,
     author: {
       name: 'Dr. Sarah Kimani',
@@ -147,20 +116,22 @@ Are you ready to transform your educational institution with AI? EduMyles is alr
     publishedAt: '2024-03-15',
     readTime: '8 min read',
     category: 'Education',
-    tags: ['AI in Education', 'EduMyles', 'Digital Transformation', 'Kenya Schools'],
+    tags: ['EduMyles', 'School Operations', 'Digital Transformation', 'Kenya Schools'],
     featured: true,
     image: '/images/blog/education-ai-kenya.jpg',
     relatedPosts: ['future-healthcare-ai-africa', 'agricultural-technology-kenya', 'digital-transformation-strategies']
   },
   'future-healthcare-ai-africa': {
-    title: 'The Future of Healthcare in Africa: AI-Powered Medical Solutions',
-    excerpt: 'Exploring how artificial intelligence is revolutionizing healthcare delivery across African hospitals and clinics.',
+    title: 'The Future of Healthcare Operations in Africa',
+    excerpt: 'Exploring how structured digital systems can improve healthcare administration across hospitals and clinics.',
     content: `
-# The Future of Healthcare in Africa: AI-Powered Medical Solutions
+# The Future of Healthcare Operations in Africa
 
-African healthcare systems are at a pivotal moment, with artificial intelligence offering unprecedented opportunities to overcome longstanding challenges and improve patient outcomes...
+African healthcare systems need clearer records, smoother billing, pharmacy visibility, and patient-flow coordination.
 
-[Full article content would go here]
+MylesCare is built around these operational needs: patient registration, appointment scheduling, billing, pharmacy records, laboratory workflows, and reporting. The goal is practical improvement in daily facility management, not hype.
+
+Healthcare digitisation works best when facilities start with clear workflows, trained teams, and careful data handling. A strong rollout maps departments, roles, patient journeys, and billing processes before launch.
     `,
     author: {
       name: 'Dr. Michael Ochieng',
@@ -170,7 +141,7 @@ African healthcare systems are at a pivotal moment, with artificial intelligence
     publishedAt: '2024-03-10',
     readTime: '6 min read',
     category: 'Healthcare',
-    tags: ['Healthcare AI', 'MylesCare', 'Medical Technology', 'Africa Health'],
+    tags: ['MylesCare', 'Healthcare Operations', 'Medical Technology', 'Africa Health'],
     featured: false,
     image: '/images/blog/healthcare-ai-africa.jpg',
     relatedPosts: ['transforming-education-ai-kenya', 'agricultural-technology-kenya']
@@ -351,9 +322,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="section-padding">
             <div className="max-w-4xl mx-auto">
               <div className="bg-navy rounded-[1.75rem] border border-gold/15 p-8 text-center text-white shadow-card">
-                <h2 className="heading-2 mb-4">Stay Updated with AI Insights</h2>
+                <h2 className="heading-2 mb-4">Stay Updated with Product Insights</h2>
                 <p className="text-xl leading-8 text-light-blue mb-8">
-                  Get the latest articles on AI technology and digital transformation in East Africa delivered to your inbox.
+                  Get the latest articles on product delivery and systems modernisation in East Africa delivered to your inbox.
                 </p>
                 <Link href="#newsletter">
                   <Button size="lg">

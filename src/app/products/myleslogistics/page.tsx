@@ -34,7 +34,7 @@ const MYLESLOGISTICS_DATA = {
       { number: "24/7", label: "Monitoring" },
       { number: "99.9%", label: "Accuracy" }
     ],
-    description: "MylesLogistics transforms how businesses manage their supply chains and fleet operations. Our intelligent platform provides real-time visibility, route optimization, and comprehensive analytics to streamline your logistics operations from warehouse to final delivery."
+    description: "MylesLogistics helps businesses manage supply chains and fleet operations. The platform provides real-time visibility, route optimisation, and operational analytics from warehouse to final delivery."
   },
   features: [
     {
@@ -45,7 +45,7 @@ const MYLESLOGISTICS_DATA = {
     {
       icon: 'route',
       title: 'Route Optimization',
-      description: 'AI-powered route planning to minimize fuel consumption and delivery times.'
+      description: 'route planning automation to minimize fuel consumption and delivery times.'
     },
     {
       icon: 'package',
@@ -72,12 +72,12 @@ const MYLESLOGISTICS_DATA = {
     {
       step: 1,
       title: 'Fleet Registration',
-      description: 'Register your vehicles and drivers in our system with comprehensive documentation.'
+      description: 'Register vehicles and drivers with the records your operation needs.'
     },
     {
       step: 2,
       title: 'Route Planning',
-      description: 'Set up delivery zones and optimize routes using our AI-powered algorithm.'
+      description: 'Set up delivery zones and optimize routes using our routing engine.'
     },
     {
       step: 3,
@@ -108,7 +108,7 @@ const MYLESLOGISTICS_DATA = {
       name: 'Basic',
       price: 'KSh 9,999',
       period: 'per month',
-      description: 'Perfect for small fleets with basic tracking needs.',
+      description: 'For small fleets with basic tracking needs.',
       features: [
         'Up to 10 vehicles',
         'Basic GPS tracking',
@@ -119,10 +119,10 @@ const MYLESLOGISTICS_DATA = {
       featured: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 24,999',
       period: 'per month',
-      description: 'Ideal for growing businesses with advanced logistics needs.',
+      description: 'For growing businesses with advanced logistics needs.',
       features: [
         'Up to 50 vehicles',
         'Advanced GPS tracking',
@@ -137,7 +137,7 @@ const MYLESLOGISTICS_DATA = {
       name: 'Enterprise',
       price: 'Custom',
       period: 'pricing',
-      description: 'Tailored solutions for large enterprises with complex logistics.',
+      description: 'Custom plans for large enterprises with complex logistics.',
       features: [
         'Unlimited vehicles',
         'White-label solution',
@@ -192,7 +192,7 @@ export default function MylesLogisticsPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything Your Logistics Needs"
-          description="6 powerful features covering every aspect of supply chain management — all in one platform."
+          description="6 supply chain workflows in one platform."
           features={MYLESLOGISTICS_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'truck' ? '🚚' :
@@ -243,7 +243,7 @@ export default function MylesLogisticsPage() {
         <CTASection
           title="Ready to Optimize Your Logistics?"
           tagline="Transforming Supply Chains Across East Africa."
-          description="Join hundreds of companies already using MylesLogistics for efficient fleet management and route optimization. Start your transformation today."
+          description="Plan a logistics workflow for fleet management, route coordination, dispatch visibility, and operational reporting."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

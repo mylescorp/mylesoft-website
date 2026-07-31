@@ -23,7 +23,7 @@ import {
 
 export const metadata = {
   title: 'Web Hosting Services — MylesCorp Technologies',
-  description: 'Reliable, secure, and high-performance web hosting from MylesCorp Technologies with SSL, backups, email hosting, domain support, and technical support.',
+  description: 'Reliable web hosting from MylesCorp Technologies with SSL, backups, email hosting, domain support, uptime monitoring, and technical support.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/services/web-hosting',
   },
@@ -33,23 +33,23 @@ const WEB_HOSTING_DATA = {
   features: [
     {
       icon: '🚀',
-      title: 'Lightning Fast Performance',
-      description: 'SSD storage, NVMe drives, and CDN integration for blazing-fast website loading speeds.'
+      title: 'Fast Website Performance',
+      description: 'SSD storage, NVMe drives, and CDN integration for fast website loading speeds.'
     },
     {
       icon: '🔒',
-      title: 'Enterprise Security',
-      description: 'Advanced security features including SSL certificates, DDoS protection, and daily malware scans.'
+      title: 'Hosting Security',
+      description: 'SSL certificates, DDoS protection, access controls, and scheduled malware scans.'
     },
     {
       icon: '📊',
-      title: 'Scalable Infrastructure',
-      description: 'Easily upgrade your hosting plan as your business grows with seamless resource scaling.'
+      title: 'Flexible Infrastructure',
+      description: 'Upgrade hosting resources as traffic, storage, email, and application needs grow.'
     },
     {
       icon: '💬',
-      title: 'Expert Support',
-      description: 'Round-the-clock technical support from certified hosting experts via chat, phone, and email.'
+      title: 'Technical Support',
+      description: 'Support for hosting setup, DNS, email, SSL, migrations, and uptime issues.'
     },
     {
       icon: '🌍',
@@ -66,7 +66,7 @@ const WEB_HOSTING_DATA = {
     {
       step: 1,
       title: 'Choose Your Plan',
-      description: 'Select the perfect hosting plan based on your website requirements, traffic expectations, and budget.'
+      description: 'Select a hosting plan based on website requirements, traffic expectations, email needs, and budget.'
     },
     {
       step: 2,
@@ -105,13 +105,13 @@ const WEB_HOSTING_DATA = {
       organization: 'Nairobi Digital Agency'
     },
     {
-      quote: 'The dedicated server solution has transformed our online learning platform. Performance is excellent, security is top-notch.',
+      quote: 'The dedicated server setup improved our online learning platform. Performance is excellent, security is top-notch.',
       author: 'David Njoroge',
       role: 'IT Manager',
       organization: 'EduTech Africa'
     },
     {
-      quote: 'As a web developer, I appreciate the technical expertise and flexibility MylesCorp offers. Their staging environments make development workflows smooth.',
+      quote: 'As a web developer, I appreciate the technical flexibility MylesCorp offers. Their staging environments make development workflows smooth.',
       author: 'Grace Mwangi',
       role: 'Senior Developer',
       organization: 'Creative Studio KE'
@@ -122,7 +122,7 @@ const WEB_HOSTING_DATA = {
       name: 'Starter',
       price: 'KSh 2,999',
       period: '/month',
-      description: 'Perfect for personal websites, blogs, and small businesses',
+      description: 'For personal websites, blogs, and small businesses',
       features: [
         '10 GB NVMe SSD Storage',
         '100 GB Bandwidth/month',
@@ -139,10 +139,10 @@ const WEB_HOSTING_DATA = {
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 5,999',
       period: '/month',
-      description: 'Ideal for growing businesses and multiple websites',
+      description: 'For growing businesses and multiple websites',
       features: [
         '50 GB NVMe SSD Storage',
         '500 GB Bandwidth/month',
@@ -174,7 +174,7 @@ const WEB_HOSTING_DATA = {
         '50 Email Accounts',
         'Free SSL Certificate (Unlimited)',
         'Real-time Backups',
-        '99.95% Uptime SLA',
+        'Managed uptime planning',
         '24/7 Priority Support',
         'cPanel Control Panel',
         '1-Click App Installer',
@@ -193,7 +193,7 @@ const WEB_HOSTING_DATA = {
       name: 'Enterprise',
       price: 'Custom',
       period: '',
-      description: 'Tailored solutions for large-scale operations and mission-critical applications',
+      description: 'Custom plans for large-scale operations and mission-critical applications',
       features: [
         'Dedicated Servers or Cloud Infrastructure',
         'Unlimited Storage & Bandwidth',
@@ -235,16 +235,16 @@ export default function WebHostingPage() {
           <div className="hero-copy-shadow relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 font-['Playfair_Display'] leading-tight">
-                Professional Web Hosting & Domain Services
+                Web Hosting & Domain Services
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-gold mb-6 md:mb-8 font-['Playfair_Display']">
-                Complete Online Presence Solution for African Businesses
+                Hosting, Domains, Email, Backups, and Support
               </p>
               <div className="max-w-4xl mx-auto px-4">
                 <p className="text-base sm:text-lg text-light-blue leading-relaxed">
-                  MylesCorp provides comprehensive web hosting and domain registration services designed specifically for the African market.
-                  Our enterprise-grade infrastructure ensures your website performs optimally for visitors across Kenya and beyond.
-                  From personal blogs to enterprise applications, we have the perfect hosting solution for your needs.
+                  MylesCorp provides web hosting and domain registration services for the African market.
+                  Our infrastructure keeps business websites, institution sites, and web applications fast, monitored, and supported for visitors across Kenya and beyond.
+                  From personal blogs to production applications, we help match the hosting plan to the actual workload.
                 </p>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function WebHostingPage() {
                 Domain Registration Services
               </h2>
               <p className="text-gray-600 text-center mb-6 md:mb-8 max-w-3xl mx-auto px-4 text-sm md:text-base leading-relaxed">
-                Secure your online identity with professional domain registration. Choose from 500+ domain extensions
+                Secure your online identity with domain registration options matched to your organisation
                 including .com, .co.ke, .ke, .africa, and many more. Get free privacy protection and easy management tools.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
@@ -316,20 +316,20 @@ export default function WebHostingPage() {
         <FeaturesSection
           features={WEB_HOSTING_DATA.features}
           title="Why Choose Our Web Hosting?"
-          description="We provide enterprise-grade hosting infrastructure with features designed for performance, security, and reliability."
+          description="We provide hosting infrastructure with features designed for speed, security, backups, and reliability."
         />
 
         {/* Process Section */}
         <ProcessSection
           steps={WEB_HOSTING_DATA.process}
           title="Simple Setup Process"
-          description="Get your website online in minutes with our streamlined hosting setup process."
+          description="Get your website online with a clear hosting setup process."
         />
 
         {/* Targets Section */}
         <TargetsSection
           targets={WEB_HOSTING_DATA.targets}
-          title="Perfect for Every Business Size"
+          title="For Every Business Size"
         />
 
         <ServicePricingSection service={servicePricingBySlug['web-hosting']} compact />
@@ -342,7 +342,7 @@ export default function WebHostingPage() {
                 Technical Specifications
               </h2>
               <p className="text-base md:text-xl text-light-blue max-w-3xl mx-auto px-4">
-                Enterprise-grade infrastructure built for performance, security, and reliability
+                Infrastructure built for speed, security, backups, and reliability
               </p>
             </div>
 
@@ -429,7 +429,7 @@ export default function WebHostingPage() {
               Ready to Get Started?
             </h2>
             <p className="text-base md:text-xl text-light-blue mb-6 md:mb-8 px-4">
-              Join thousands of businesses who trust MylesCorp for reliable web hosting
+              Join businesses that trust MylesCorp for reliable web hosting
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-8 md:mb-12">
               <Link href="tel:+254743993715">

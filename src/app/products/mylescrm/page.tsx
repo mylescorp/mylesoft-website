@@ -42,7 +42,7 @@ export default function MylesCRMPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything to Grow Your Business"
-          description="8 powerful business tools in one integrated platform designed for East African businesses."
+          description="8 business tools in one integrated platform for East African businesses."
           features={MYLESCRM_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'users' ? '👥' :

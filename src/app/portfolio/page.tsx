@@ -17,6 +17,7 @@ import {
   ShieldCheck,
   Sprout,
   Stethoscope,
+  Wifi,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
@@ -26,7 +27,7 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Portfolio | MylesCorp Technologies',
   description:
-    'Explore MylesCorp Technologies work including EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, and SIFA School Siaya.',
+    'Explore MylesCorp Technologies work including EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, MylesNet, and SIFA School Siaya.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/portfolio',
   },
@@ -175,7 +176,7 @@ const liveProjects: PortfolioProject[] = [
     previewSrc: '/portfolio/agrimyles-home.webp',
     previewAlt: 'AgriMyles homepage preview',
     summary:
-      'A professional farm management platform for farms, cooperatives, agribusinesses, NGOs, counties, exporters, and outgrower programs, combining crop calendars, mapped fields, task logs, input tracking, dashboards, and field-team accountability.',
+      'A farm management platform for farms, cooperatives, agribusinesses, NGOs, counties, exporters, and outgrower programs, combining crop calendars, mapped fields, task logs, input tracking, dashboards, and field-team accountability.',
     evidence: [
       'Farm Starter begins from KSh 12,500/month with implementation from KSh 35,000',
       'Farm Growth begins from KSh 38,000/month with implementation from KSh 95,000',
@@ -185,6 +186,28 @@ const liveProjects: PortfolioProject[] = [
       'Positions AgriMyles as a focused agricultural SaaS product',
       'Supports farmers, cooperatives, agribusinesses, counties, and development partners',
       'Extends the MylesCorp product portfolio into food systems and rural operations',
+    ],
+  },
+  {
+    name: 'MylesNet',
+    category: 'Network Operations SaaS',
+    sector: 'Internet Service Provider Operations',
+    href: '/products/mylesnet',
+    icon: Wifi,
+    status: 'Live product',
+    previewSrc: '/portfolio/mylesnet-home.webp',
+    previewAlt: 'MylesNet product page preview',
+    summary:
+      'A network operations platform for internet service providers and connectivity teams, supporting subscriber records, service packages, billing visibility, support workflows, infrastructure tracking, and field operations.',
+    evidence: [
+      'Subscriber, plan, and service account workflows',
+      'Network asset, installation, and support coordination',
+      'Billing, service status, and operator visibility',
+    ],
+    outcomes: [
+      'Adds the network operations vertical to the public portfolio',
+      'Gives ISP and connectivity teams a clear product destination',
+      'Extends MylesCorp coverage into digital infrastructure operations',
     ],
   },
   {
@@ -212,7 +235,7 @@ const liveProjects: PortfolioProject[] = [
 ]
 
 const proofPoints = [
-  { value: '7', label: 'Properties showcased' },
+  { value: '8', label: 'Projects showcased' },
   { value: 'SaaS + Institutions', label: 'Core delivery focus' },
   { value: '100%', label: 'Active product portfolio' },
   { value: 'East Africa', label: 'Primary market focus' },
@@ -282,7 +305,7 @@ export default function PortfolioPage() {
                   Live digital products and institution-ready platforms built for trust, clarity, and growth.
                 </h1>
                 <p className="mt-6 max-w-2xl font-body text-[1rem] leading-8 text-light-blue sm:text-[1.08rem]">
-                  This portfolio highlights MylesCorp work across school management, school transport, healthcare, CRM, real estate, agricultural technology, and institution-ready school websites.
+                  This portfolio highlights MylesCorp work across school management, school transport, healthcare, CRM, real estate, agricultural technology, network operations, and institution-ready school websites.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -310,7 +333,7 @@ export default function PortfolioPage() {
                       Research Summary
                     </div>
                     <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-white">
-                      EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, and SIFA School Siaya anchor the portfolio.
+                      EduMyles, EduRyde, MylesCare, MylesCRM, MylesProp, AgriMyles, MylesNet, and SIFA School Siaya anchor the portfolio.
                     </h2>
                   </div>
                   <BadgeCheck className="h-8 w-8 flex-shrink-0 text-gold" />
@@ -482,7 +505,7 @@ export default function PortfolioPage() {
               <div>
                 <SectionLabel>How We Deliver</SectionLabel>
                 <h2 className="font-display text-4xl font-bold leading-tight text-navy md:text-5xl">
-                  Professional execution from positioning to launch.
+                  Growth execution from positioning to launch.
                 </h2>
                 <p className="mt-5 font-body text-lg leading-8 text-medium-grey">
                   The strongest portfolio work is not just attractive. It explains the offer, handles objections, supports real operations, and gives prospects a clear next step.

@@ -13,7 +13,7 @@ import { Zap, BarChart, Settings, TrendingUp, AlertCircle, Check } from 'lucide-
 
 export const metadata = {
   title: 'MylesEnergy - Energy Management Software | MylesCorp Technologies',
-  description: 'Smart energy monitoring and management solution. Track consumption, optimize usage, and reduce costs with AI-powered analytics.',
+  description: 'Smart energy monitoring and management solution. Track consumption, optimize usage, and reduce costs with operational analytics.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products/mylesenergy',
   },
@@ -25,7 +25,7 @@ const MYLESENERGY_DATA = {
     tagline: 'Smart Energy Management for Sustainable Operations',
     description: [
       'Optimize energy consumption and reduce costs with our intelligent monitoring and management platform.',
-      'Designed for African businesses with AI-powered analytics and real-time insights.'
+      'Designed for African businesses with operational analytics and real-time insights.'
     ],
     image: '/api/og/product?name=MylesEnergy&category=Energy',
     stats: [
@@ -49,7 +49,7 @@ const MYLESENERGY_DATA = {
     {
       icon: '🔧',
       title: 'Predictive Maintenance',
-      description: 'AI-powered predictions for equipment maintenance to prevent failures and downtime.'
+      description: 'Predictive alerts for equipment maintenance to prevent failures and downtime.'
     },
     {
       icon: '💰',
@@ -84,14 +84,14 @@ const MYLESENERGY_DATA = {
     {
       name: 'Basic',
       price: 'KSh 3,000/month',
-      description: 'Perfect for small facilities',
+      description: 'For small facilities',
       features: ['Up to 5 meters', 'Basic monitoring', 'Monthly reports', 'Email alerts', 'Mobile app'],
       popular: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 10,000/month',
-      description: 'Ideal for medium facilities',
+      description: 'For medium facilities',
       features: ['Up to 25 meters', 'Advanced analytics', 'Real-time alerts', 'Predictive maintenance', 'Custom reports', 'API access', 'Most Popular'],
       popular: true
     },

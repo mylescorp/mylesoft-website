@@ -4,16 +4,39 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { SOCIAL_LINKS } from '@/lib/constants/social'
+import { COMPANY_CONTACT, telHref } from '@/lib/constants/contact'
+import { getCsrfHeader } from '@/lib/client/csrf'
 
 export function Footer() {
   const [email, setEmail] = useState('')
-  const [subscribed, setSubscribed] = useState(false)
+  const [subscribeStatus, setSubscribeStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
-  const handleSubscribe = () => {
+  const handleSubscribe = async () => {
     if (email && email.includes('@')) {
-      setSubscribed(true)
-      setEmail('')
-      setTimeout(() => setSubscribed(false), 4000)
+      setSubscribeStatus('loading')
+
+      try {
+        const csrfHeader = await getCsrfHeader()
+        const response = await fetch('/api/newsletter/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...csrfHeader,
+          },
+          body: JSON.stringify({ email }),
+        })
+
+        if (!response.ok) {
+          setSubscribeStatus('error')
+          return
+        }
+
+        setSubscribeStatus('success')
+        setEmail('')
+        setTimeout(() => setSubscribeStatus('idle'), 4000)
+      } catch {
+        setSubscribeStatus('error')
+      }
     }
   }
 
@@ -44,27 +67,27 @@ export function Footer() {
             </div>
           </div>
           <p className="text-[14px] text-light-blue leading-7 max-w-[320px] mb-5.5">
-            East Africa&apos;s AI-powered software company behind EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp for schools, transport teams, healthcare, businesses, agriculture, and real estate.
+            MylesCorp builds EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, MylesProp, and MylesNet for schools, transport teams, healthcare, businesses, agriculture, real estate, and network operators.
           </p>
           <div className="flex flex-col gap-2.5">
             <a
-              href="mailto:info@mylescorptech.com"
+              href={`mailto:${COMPANY_CONTACT.infoEmail}`}
               className="flex items-center gap-2.5 text-[13.5px] text-muted-blue no-underline transition-colors duration-200 hover:text-white"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-[15px] h-[15px] stroke-[#C79639] fill-none flex-shrink-0">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
-              info@mylescorptech.com
+              {COMPANY_CONTACT.infoEmail}
             </a>
             <a
-              href="tel:+254743993715"
+              href={telHref(COMPANY_CONTACT.technicalPhone)}
               className="flex items-center gap-2.5 text-[13.5px] text-muted-blue no-underline transition-colors duration-200 hover:text-white"
             >
               <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-[15px] h-[15px] stroke-[#C79639] fill-none flex-shrink-0">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 2 3.18 2 2 0 0 1 4 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
-              +254 743 993 715
+              {COMPANY_CONTACT.technicalPhone}
             </a>
             <a
               href="https://maps.google.com/?q=Westlands,Nairobi"
@@ -76,10 +99,10 @@ export function Footer() {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
-              Westlands, Nairobi, Kenya
+              {COMPANY_CONTACT.location}
             </a>
             <a
-              href="https://www.mylescorptech.com"
+              href={COMPANY_CONTACT.websiteUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 text-[13.5px] text-muted-blue no-underline transition-colors duration-200 hover:text-white"
@@ -122,6 +145,10 @@ export function Footer() {
               MylesProp
               <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Real Estate Management</span>
             </Link>
+            <Link href="/products/mylesnet" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
+              MylesNet
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">Network Operations</span>
+            </Link>
           </div>
         </div>
 
@@ -131,7 +158,7 @@ export function Footer() {
           <div className="space-y-2.5">
             <Link href="/services" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Implementation & Onboarding
-              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">For EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, and MylesProp</span>
+              <span className="text-[11px] text-[rgba(199,215,239,0.62)] block mt-1">For EduMyles, EduRyde, MylesCare, MylesCRM, AgriMyles, MylesProp, and MylesNet</span>
             </Link>
             <Link href="/book-demo" className="block text-[14px] text-muted-blue no-underline transition-colors duration-200 hover:text-white mb-2.5 leading-tight">
               Product Demos
@@ -184,7 +211,7 @@ export function Footer() {
         <div>
           <h4 className="text-[18px] font-bold text-white mb-1.5">Stay Connected</h4>
           <p className="text-[14px] text-light-blue leading-7 mb-4">
-            Get the latest updates on our innovative solutions and industry insights delivered to your inbox.
+            Get product updates, implementation notes, and East African technology insights delivered to your inbox.
           </p>
         </div>
         <div>
@@ -194,7 +221,7 @@ export function Footer() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
+              placeholder="Email address"
               autoComplete="off"
               data-lpignore="true"
               data-form-type="other"
@@ -202,15 +229,22 @@ export function Footer() {
             />
             <button
               onClick={handleSubscribe}
+              disabled={subscribeStatus === 'loading'}
               className="h-[46px] px-5 bg-gold text-navy font-bold text-[14px] rounded-lg whitespace-nowrap hover:bg-gold-light hover:-translate-y-0.5 transition-all duration-200 flex-shrink-0"
             >
-              Subscribe
+              {subscribeStatus === 'loading' ? 'Sending' : 'Subscribe'}
             </button>
           </div>
 
-          {subscribed && (
+          {subscribeStatus === 'success' && (
             <div className="text-[#22c55e] text-[13px] mt-2">
-              ✓ Subscribed! Welcome to MylesCorp community.
+              Subscribed. Welcome to the MylesCorp community.
+            </div>
+          )}
+
+          {subscribeStatus === 'error' && (
+            <div className="text-red-300 text-[13px] mt-2">
+              We could not complete the subscription. Please try again in a moment.
             </div>
           )}
 
@@ -306,19 +340,6 @@ export function Footer() {
               </svg>
             </a>
 
-            {/* GitHub */}
-            <a
-              href={SOCIAL_LINKS.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="MylesCorp on GitHub"
-              title="GitHub — mylesco"
-              className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#95A9CC] hover:text-[#C79639] hover:border-[#C79639]/40 hover:bg-[#C79639]/10 transition-all duration-200"
-            >
-              <svg viewBox="0 0 24 24" strokeWidth="1.8" className="w-4 h-4 fill-none stroke-current">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-              </svg>
-            </a>
           </div>
         </div>
       </div>
@@ -326,7 +347,7 @@ export function Footer() {
       {/* BOTTOM BAR */}
       <div className="border-t border-[rgba(255,255,255,0.06)] max-w-[1200px] mx-auto px-5 py-4.5 flex flex-wrap items-center justify-between gap-4">
         <div className="text-[13px] text-muted-blue">
-          © 2026 <Link href="/" className="text-light-blue hover:text-white hover:underline">MylesCorp Technologies.</Link> All rights reserved.
+          © 2026 Powered by <a href="https://mylescorptech.com/" className="text-light-blue hover:text-white hover:underline">MylesCorp Technologies</a> · All rights reserved.
         </div>
         <div className="flex gap-5 text-[13px] text-muted-blue">
           <Link href="/privacy-policy" className="hover:text-white transition-colors duration-200">Privacy Policy</Link>

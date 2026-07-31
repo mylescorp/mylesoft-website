@@ -162,7 +162,7 @@ export default function TermsOfService() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Use of Our Services</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                MylesCorp provides AI-powered software solutions including EduMyles (school management), EduRyde (school transport tracking), MylesCare (healthcare management), AgriMyles (agricultural platform), MylesCRM (business CRM), and MylesProp (real estate management), as well as custom software development, website development, IT consulting, cloud solutions, and UI/UX design services.
+                MylesCorp provides software products including EduMyles (school management), EduRyde (school transport tracking), MylesCare (healthcare management), AgriMyles (agricultural platform), MylesCRM (business CRM), and MylesProp (real estate management), as well as custom software development, website development, IT consulting, cloud solutions, and UI/UX design services.
               </p>
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
                 You may use our services only for lawful purposes and in accordance with these Terms. You agree not to use our services:

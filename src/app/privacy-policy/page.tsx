@@ -253,7 +253,7 @@ export default function PrivacyPolicy() {
             <div className="font-['Playfair_Display'] text-[21px] font-bold text-white mb-3.5 pb-2.5 border-b border-[rgba(199,150,57,0.14)]">Data Storage & Security</div>
             <div className="space-y-3">
               <p className="text-[13.5px] text-[#C7D7EF] leading-[1.9] font-light">
-                Your data is stored on secure cloud infrastructure hosted on Vercel and AWS. We implement following security measures:
+                Your data is stored on secure managed cloud infrastructure. We implement following security measures:
               </p>
               <ul className="pl-[18px] mb-0 space-y-1.5">
                 <li className="text-[13.5px] text-[#C7D7EF] leading-[1.85] font-light marker:text-[#C79639]">SSL/TLS encryption for all data in transit</li>

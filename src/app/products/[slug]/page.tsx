@@ -20,6 +20,7 @@ import {
   Mail
 } from 'lucide-react'
 import Link from 'next/link'
+import { COMPANY_CONTACT, telHref } from '@/lib/constants/contact'
 
 const STATUS_LABELS: Record<string, string> = {
   live: 'Live Product',
@@ -28,27 +29,26 @@ const STATUS_LABELS: Record<string, string> = {
   'coming-soon': 'Coming Soon',
 }
 
-// Mock product data - in production, this would come from a CMS
 const products = {
   'edumyles': {
     name: 'EduMyles',
     tagline: 'Complete School Management System',
     category: 'Education',
     sector: 'Education',
-    description: 'EduMyles is a comprehensive AI-powered school management system designed to transform educational institutions across Kenya and East Africa. From automated attendance to intelligent performance tracking, EduMyles streamlines every aspect of school operations.',
+    description: 'EduMyles is a school management system for institutions across Kenya and East Africa. It supports attendance, performance tracking, fees, communication, and daily administration in one place.',
     longDescription: `
-EduMyles represents the pinnacle of educational technology innovation, specifically designed for the unique challenges and opportunities within African educational systems. Our AI-powered platform goes beyond traditional school management to provide intelligent insights that drive educational excellence.
+EduMyles is designed for the operating needs of African schools, combining administration, reporting, communication, and analytics in one system.
 
 ## Comprehensive School Management
 
 ### Academic Excellence
-- **Intelligent Attendance System**: AI-powered facial recognition and automated attendance tracking
+- **Intelligent Attendance System**: attendance automation and optional facial recognition
 - **Smart Grading Assistant**: Machine learning algorithms assist teachers in grading and provide instant feedback
 - **Performance Analytics**: Real-time student performance tracking with predictive analytics for early intervention
 - **Curriculum Management**: Digital curriculum delivery with adaptive learning paths
 
 ### Administrative Efficiency
-- **Automated Report Generation**: Instant generation of comprehensive progress reports and transcripts
+- **Automated Report Generation**: Progress reports and transcripts generated from structured school records
 - **Resource Management**: Smart allocation and tracking of school resources including classrooms, labs, and equipment
 - **Staff Management**: Complete HR system for teachers and administrative staff
 - **Financial Management**: Fee collection, budget tracking, and financial reporting
@@ -64,7 +64,7 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
 ### Personalized Learning
 - **Adaptive Learning Paths**: AI creates personalized learning journeys based on individual student performance
 - **Talent Identification**: Machine learning algorithms identify hidden talents and strengths
-- **Career Guidance**: AI-powered career recommendations based on student aptitudes and interests
+- **Career Guidance**: Career guidance based on student aptitudes and interests
 - **Learning Style Analysis**: System adapts to individual learning preferences
 
 ### Predictive Analytics
@@ -90,7 +90,7 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
 ### Nairobi Girls Secondary School
 - **40% reduction** in administrative workload
 - **25% improvement** in student performance
-- **60% increase** in parent engagement
+- **Clearer** parent engagement workflows
 - **30% reduction** in operational costs
 
 ### Rift Valley Academy
@@ -100,7 +100,7 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
 - **20% improvement** in student outcomes
     `,
     features: [
-      'AI-powered attendance and performance tracking',
+      'Attendance and performance tracking',
       'Automated grading and report generation',
       'Real-time parent-teacher communication',
       'Comprehensive curriculum management',
@@ -124,7 +124,7 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
         name: 'Starter',
         price: '12,900',
         period: 'month',
-        description: 'Perfect for small schools up to 500 students',
+        description: 'For small schools up to 500 students',
         features: [
           'Up to 500 students',
           'Basic attendance tracking',
@@ -135,13 +135,13 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
         ]
       },
       professional: {
-        name: 'Professional',
+        name: 'Growth',
         price: '38,900',
         period: 'month',
-        description: 'Ideal for medium schools 501-2,000 students',
+        description: 'For medium schools 501-2,000 students',
         features: [
           'Up to 2,000 students',
-          'AI-powered attendance',
+          'Attendance automation',
           'Advanced analytics',
           'Automated grading assistant',
           'Financial management',
@@ -171,16 +171,16 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
     icon: 'GraduationCap',
     color: 'blue',
     stats: {
-      schools: '500+',
-      students: '250,000+',
+      schools: 'School',
+      students: 'Student',
       countries: '4',
-      satisfaction: '98%'
+      satisfaction: 'Support'
     },
     testimonials: [
       {
         name: 'Dr. Sarah Kimani',
         role: 'Principal, Nairobi Girls Secondary School',
-        content: 'EduMyles has transformed how we manage our school. The AI insights have helped us improve student performance significantly.',
+        content: 'EduMyles improved how we manage our school. The reporting tools helped us understand student performance more clearly.',
         rating: 5
       },
       {
@@ -198,8 +198,8 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
     demoUrl: '/book-demo?product=edumyles',
     trialAvailable: true,
     support: {
-      email: 'support@mylescorptech.com',
-      phone: '+254 743 993 715',
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
       documentation: '/docs/edumyles',
       training: '/training/edumyles'
     }
@@ -209,9 +209,9 @@ EduMyles represents the pinnacle of educational technology innovation, specifica
     tagline: 'Intelligent Hospital Management System',
     category: 'Healthcare',
     sector: 'Healthcare',
-    description: 'MylesCare is an AI-powered hospital management system that streamlines healthcare delivery, improves patient outcomes, and optimizes resource utilization across medical facilities in East Africa.',
+    description: 'MylesCare is a hospital management system for patient records, appointments, billing, pharmacy, laboratory workflows, and resource visibility across medical facilities in East Africa.',
     longDescription: `
-MylesCare revolutionizes healthcare management with cutting-edge AI technology designed specifically for African healthcare environments. Our comprehensive platform addresses the unique challenges faced by hospitals and clinics across the region while improving patient care and operational efficiency.
+MylesCare improves healthcare management with digital workflows designed for African healthcare environments. The platform addresses patient records, appointments, billing, pharmacy, laboratory, claims, and reporting workflows for hospitals and clinics across the region.
 
 ## Intelligent Healthcare Management
 
@@ -250,7 +250,7 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
 ## Security and Compliance
 - **HIPAA Compliance**: Full compliance with healthcare data protection standards
 - **Data Encryption**: End-to-end encryption for all patient data
-- **Access Control**: Role-based access for different healthcare professionals
+- **Access Control**: Role-based access for different healthcare staff
 - **Audit Trails**: Complete logging of all system activities for compliance
 
 ## Integration Capabilities
@@ -260,7 +260,7 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
 - **Insurance Providers**: Integration with insurance company systems for claims processing
     `,
     features: [
-      'AI-powered diagnostic assistance',
+      'Diagnostic workflow support',
       'Electronic health records management',
       'Smart appointment scheduling',
       'Telemedicine capabilities',
@@ -284,7 +284,7 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
         name: 'Starter',
         price: '25,000',
         period: 'month',
-        description: 'Perfect for small clinics and health centers',
+        description: 'For small clinics and health centers',
         features: [
           'Up to 50 beds',
           'Basic patient management',
@@ -295,10 +295,10 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
         ]
       },
       professional: {
-        name: 'Professional',
+        name: 'Growth',
         price: '75,000',
         period: 'month',
-        description: 'Ideal for medium hospitals up to 200 beds',
+        description: 'For medium hospitals up to 200 beds',
         features: [
           'Up to 200 beds',
           'AI diagnostic assistance',
@@ -331,8 +331,8 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
     icon: 'Activity',
     color: 'red',
     stats: {
-      hospitals: '100+',
-      patients: '1M+',
+      hospitals: 'Healthcare',
+      patients: 'Patient',
       doctors: '5,000+',
       satisfaction: '96%'
     },
@@ -340,7 +340,7 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
       {
         name: 'Dr. Michael Ochieng',
         role: 'Medical Director, Nairobi General Hospital',
-        content: 'MylesCare has transformed our hospital operations. The AI diagnostics have improved our accuracy and efficiency significantly.',
+        content: 'MylesCare improved our hospital operations. The clinical workflows and reports made daily work faster and clearer.',
         rating: 5
       }
     ],
@@ -352,8 +352,8 @@ MylesCare revolutionizes healthcare management with cutting-edge AI technology d
     demoUrl: '/book-demo?product=mylescare',
     trialAvailable: true,
     support: {
-      email: 'healthcare@mylescorptech.com',
-      phone: '+254 743 993 715',
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
       documentation: '/docs/mylescare',
       training: '/training/mylescare'
     }
@@ -519,7 +519,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               <div className="text-center mb-12">
                 <h2 className="heading-2 mb-4">What Our Customers Say</h2>
                 <p className="body-text max-w-2xl mx-auto">
-                  Real stories from organizations using our products to transform their operations.
+                  Real stories from organizations using our products to run clearer operations.
                 </p>
               </div>
 
@@ -572,7 +572,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                   </div>
                   <h3 className="heading-3 mb-2">Phone Support</h3>
                   <p className="text-light-blue mb-4">Call us directly</p>
-                  <a href={`tel:${product.support.phone}`} className="text-gold hover:text-gold-light">
+                  <a href={telHref(product.support.phone)} className="text-gold hover:text-gold-light">
                     {product.support.phone}
                   </a>
                 </div>

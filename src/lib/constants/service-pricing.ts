@@ -22,7 +22,7 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
     name: 'Website Development',
     category: 'Websites',
     href: '/services/website-development',
-    summary: 'Professional websites for businesses, schools, institutions, and organisations that need a credible web presence.',
+    summary: 'Business websites for schools, institutions, and organisations that need a credible web presence.',
     plans: [
       {
         name: 'Starter',
@@ -38,7 +38,7 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
         ]
       },
       {
-        name: 'Professional',
+        name: 'Growth',
         price: 'KSh 65,000',
         description: 'A fuller website for growing organisations that need richer content and stronger conversion paths.',
         features: [
@@ -174,7 +174,7 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
       {
         name: 'Startup Package',
         price: 'KSh 50,000',
-        description: 'Perfect for startups and small businesses that need a professional design foundation.',
+        description: 'For startups and small businesses that need a clear product design foundation.',
         features: [
           'User research',
           'Wireframing',
@@ -185,9 +185,9 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
         ]
       },
       {
-        name: 'Professional Package',
+        name: 'Product Package',
         price: 'KSh 150,000',
-        description: 'Ideal for growing businesses that need complete product UX and interface design.',
+        description: 'For growing businesses that need complete product UX and interface design.',
         features: [
           'Comprehensive research',
           'Full UI/UX design',
@@ -234,7 +234,7 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
         ]
       },
       {
-        name: 'Cloud Professional',
+        name: 'Cloud Operations',
         price: 'KSh 180,000',
         description: 'A managed cloud foundation for production applications, security, and operational resilience.',
         features: [
@@ -250,7 +250,7 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
       {
         name: 'Cloud Enterprise',
         price: 'KSh 450,000+',
-        description: 'A tailored infrastructure engagement for larger platforms and mission-critical systems.',
+        description: 'A custom infrastructure engagement for larger platforms and mission-critical systems.',
         features: [
           'High-availability architecture',
           'Multi-environment deployment',
@@ -273,7 +273,7 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
         name: 'Starter',
         price: 'KSh 2,999',
         period: '/month',
-        description: 'Perfect for personal websites, blogs, and small businesses.',
+        description: 'For personal websites, blogs, and small businesses.',
         features: [
           '10 GB NVMe SSD storage',
           '100 GB bandwidth/month',
@@ -284,10 +284,10 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
         ]
       },
       {
-        name: 'Professional',
+        name: 'Growth',
         price: 'KSh 5,999',
         period: '/month',
-        description: 'Ideal for growing businesses and multiple websites.',
+        description: 'For growing businesses and multiple websites.',
         features: [
           '50 GB NVMe SSD storage',
           '500 GB bandwidth/month',
@@ -332,7 +332,7 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
     name: 'IT Consulting',
     category: 'Consulting',
     href: '/services/it-consulting',
-    summary: 'Technology advisory, audits, digital transformation planning, vendor guidance, and implementation roadmaps.',
+    summary: 'Technology advisory, audits, systems planning, vendor guidance, and implementation roadmaps.',
     plans: [
       {
         name: 'Assessment',
@@ -350,11 +350,11 @@ export const SERVICE_PRICING: ServicePricingGroup[] = [
       {
         name: 'Transformation Roadmap',
         price: 'KSh 150,000',
-        description: 'A deeper consulting engagement for organisations preparing structured digital transformation.',
+        description: 'A deeper consulting engagement for organisations preparing structured systems modernisation.',
         features: [
           'Stakeholder interviews',
           'Process and systems audit',
-          'Digital transformation roadmap',
+          'Systems modernisation roadmap',
           'Budget and implementation planning',
           'Vendor and platform guidance',
           'Board-ready presentation'

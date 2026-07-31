@@ -34,7 +34,7 @@ const MYLESRETAIL_DATA = {
       { number: "24/7", label: "Sales Analytics" },
       { number: "99.9%", label: "Uptime" }
     ],
-    description: "MylesRetail empowers retail businesses with an all-in-one solution that combines point-of-sale, inventory management, customer relationship management, and powerful analytics. Grow your retail business with data-driven insights and streamlined operations."
+    description: "MylesRetail gives retail businesses one system for point-of-sale, inventory management, customer relationship management, and operational analytics. Grow your retail business with data-driven insights and streamlined operations."
   },
   features: [
     {
@@ -108,7 +108,7 @@ const MYLESRETAIL_DATA = {
       name: 'Basic',
       price: 'KSh 5,999',
       period: 'per month',
-      description: 'Perfect for small retail shops with single locations.',
+      description: 'For small retail shops with single locations.',
       features: [
         '1 store location',
         'POS system',
@@ -119,10 +119,10 @@ const MYLESRETAIL_DATA = {
       featured: false
     },
     {
-      name: 'Professional',
+      name: 'Growth',
       price: 'KSh 15,999',
       period: 'per month',
-      description: 'Ideal for growing retail businesses with multiple locations.',
+      description: 'For growing retail businesses with multiple locations.',
       features: [
         'Up to 5 stores',
         'Advanced POS',
@@ -137,7 +137,7 @@ const MYLESRETAIL_DATA = {
       name: 'Enterprise',
       price: 'Custom',
       period: 'pricing',
-      description: 'Tailored solutions for large retail chains and enterprises.',
+      description: 'Custom plans for large retail chains and enterprises.',
       features: [
         'Unlimited stores',
         'White-label solution',
@@ -151,7 +151,7 @@ const MYLESRETAIL_DATA = {
   ],
   testimonials: [
     {
-      quote: "MylesRetail has transformed how we manage our three stores. Inventory is now synchronized across all locations in real-time.",
+      quote: "MylesRetail improved how we manage our three stores. Inventory is now synchronized across all locations in real-time.",
       author: "Peter Njoroge",
       role: "Owner, Fashion Hub Kenya",
       organization: "Fashion Hub Kenya",
@@ -192,7 +192,7 @@ export default function MylesRetailPage() {
         {/* Features */}
         <FeaturesSection
           title="Everything Your Retail Needs"
-          description="6 powerful features covering every aspect of retail management — all in one platform."
+          description="6 retail management workflows in one platform."
           features={MYLESRETAIL_DATA.features.map(f => ({
             ...f,
             icon: f.icon === 'credit-card' ? '💳' :
@@ -241,9 +241,9 @@ export default function MylesRetailPage() {
 
         {/* CTA */}
         <CTASection
-          title="Ready to Transform Your Retail Business?"
+          title="Ready to Modernise Your Retail Operations?"
           tagline="Modernizing Retail Across East Africa."
-          description="Join thousands of retailers already using MylesRetail for efficient operations and increased sales. Start your transformation today."
+          description="Plan a retail workflow for inventory, sales visibility, reporting, and customer follow-up."
           primaryCta={{ text: "Book Free Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Sales", href: "/contact" }}
         />

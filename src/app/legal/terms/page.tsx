@@ -41,12 +41,12 @@ export default function TermsOfService() {
                   <h2 className="heading-2 mb-4">2. Description of Service</h2>
                   <div className="space-y-4 body-text">
                     <p>
-                      MylesCorp Technologies provides AI-powered software solutions for Education, Healthcare,
+                      MylesCorp Technologies provides software products for Education, Healthcare,
                       Agriculture, and Business sectors across East Africa. Our services include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>Software as a Service (SaaS) products</li>
-                      <li>Professional consulting and implementation services</li>
+                      <li>Growth consulting and implementation services</li>
                       <li>Technical support and maintenance</li>
                       <li>Training and onboarding services</li>
                       <li>Custom development solutions</li>

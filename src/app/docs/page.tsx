@@ -1,11 +1,10 @@
 import { Layout } from '@/components/layout/Layout'
-import { Button } from '@/components/ui/Button'
-import { FileText, ArrowRight, BookOpen } from 'lucide-react'
+import { ArrowRight, BookOpen } from 'lucide-react'
 import { SimpleReveal } from '@/components/ui/SimpleReveal'
 
 export const metadata = {
   title: 'Documentation | MylesCorp Technologies',
-  description: 'Comprehensive documentation for MylesCorp products and services. Get started with our guides, API references, and tutorials.',
+  description: 'Comprehensive guidance for MylesCorp products and services. Get started with product guides, onboarding notes, and support material.',
 }
 
 export default function DocsPage() {
@@ -54,15 +53,15 @@ export default function DocsPage() {
 
             {/* Main heading */}
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-              Developer{' '}
+              Product{' '}
               <span className="text-white italic">
-                Docs
+                Guides
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Comprehensive guides, API references, and tutorials to help you get the most
+              Comprehensive guides, onboarding notes, and support material to help you get the most
               out of MylesCorp products.
             </p>
 
@@ -74,7 +73,7 @@ export default function DocsPage() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
               <button className="bg-transparent text-white font-body font-semibold text-[15px] px-9 py-4 rounded-md border border-white/80 hover:border-white hover:bg-white/10 transition-all duration-200">
-                API Reference
+                Request Support
               </button>
             </div>
           </SimpleReveal>

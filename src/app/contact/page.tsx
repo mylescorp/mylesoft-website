@@ -12,10 +12,11 @@ import {
   Clock,
 } from 'lucide-react'
 import { ContactForm } from '@/components/ui/ContactForm'
+import { COMPANY_CONTACT, telHref } from '@/lib/constants/contact'
 
 export const metadata = {
-  title: 'Contact MylesCorp, AI Software Company in Nairobi, Kenya',
-  description: 'Contact MylesCorp, Nairobi-based AI software company. Call, email, or book a consultation for your school, clinic, farm, or business.',
+  title: 'Contact MylesCorp Technologies in Nairobi, Kenya',
+  description: 'Contact MylesCorp Technologies in Nairobi. Call, email, or book a consultation for your school, clinic, farm, property team, or business.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/contact',
   },
@@ -24,79 +25,79 @@ export const metadata = {
 const CONTACT_DATA = {
   overview: {
     title: 'Contact Us',
-    tagline: 'Let\'s Connect and Transform Together',
+    tagline: 'Transforming Industries, Empowering Generations.',
     description: [
       'Have a project in mind? Need a demo? Want to partner with us?',
-      'We\'d love to hear from you and discuss how we can help transform your business.'
+      'We would be glad to understand your goals and recommend the right next step.'
     ],
     image: '/api/og/product?name=Contact&category=Support',
     stats: [
-      { number: '2hrs', label: 'Response Time' },
-      { number: '24/7', label: 'Support Available' },
-      { number: '4', label: 'East Africa Offices' },
-      { number: '98%', label: 'Customer Satisfaction' }
+      { number: '2hrs', label: 'Target Response' },
+      { number: 'Nairobi', label: 'Head Office' },
+      { number: '7', label: 'Core Products' },
+      { number: 'East Africa', label: 'Market Focus' }
     ]
   },
   features: [
     {
-      icon: '📧',
+      icon: 'mail',
       title: 'Multiple Contact Channels',
-      description: 'Reach us via email, phone, WhatsApp, or visit our offices. We\'re always here to help.'
+      description: 'Reach us by email, phone, or a scheduled consultation with the right team member.'
     },
     {
-      icon: '⚡',
-      title: 'Quick Response',
-      description: 'We respond to all inquiries within 2 business hours. For urgent issues, we\'re available 24/7.'
+      icon: 'clock',
+      title: 'Structured Response',
+      description: 'New enquiries are routed to the right contact so requirements, timelines, and next steps are clear.'
     },
     {
-      icon: '🌍',
-      title: 'East African Presence',
-      description: 'Offices in Nairobi, Mombasa, Kampala, and Dar es Salaam to serve you better.'
+      icon: 'map-pin',
+      title: 'Nairobi-Based Team',
+      description: 'MylesCorp Technologies is based in Nairobi and serves organisations across East African markets.'
     },
     {
-      icon: '👥',
+      icon: 'users',
       title: 'Expert Team',
-      description: 'Our dedicated professionals are ready to assist with your specific needs and requirements.'
+      description: 'Our team is ready to assist with your requirements, timelines, and next steps.'
     },
     {
-      icon: '🎯',
-      title: 'Specialized Support',
-      description: 'Different departments for sales, technical support, partnerships, and career inquiries.'
+      icon: 'target',
+      title: 'Specialised Routing',
+      description: 'Sales, partnership, technical, and general enquiries are handled through approved MylesCorp channels.'
     },
     {
-      icon: '🏆',
-      title: 'Customer Focused',
-      description: '98% customer satisfaction rate. Your success is our top priority.'
+      icon: 'shield',
+      title: 'Professional Follow-Through',
+      description: 'Every serious enquiry is handled with clear ownership, written context, and a practical next step.'
     }
   ],
   process: [
     { step: 1, title: 'Reach Out', description: 'Contact us through your preferred channel with your requirements' },
     { step: 2, title: 'Consultation', description: 'Our team will schedule a consultation to understand your needs' },
-    { step: 3, title: 'Solution Design', description: 'We design a tailored solution specifically for your organization' },
+    { step: 3, title: 'Solution Design', description: 'We design a scope mapped to your users, workflows, data, and timeline' },
     { step: 4, title: 'Implementation', description: 'Our experts implement the solution with full support and training' },
     { step: 5, title: 'Ongoing Support', description: 'We provide continuous support and optimization for long-term success' }
   ],
   targets: [
-    'New Customers - Organizations looking for digital transformation solutions',
+    'New Customers - Organizations looking for systems modernisation support',
     'Existing Clients - Current customers needing support or additional services',
     'Partners - Companies interested in partnership and collaboration opportunities',
-    'Job Seekers - Talented professionals looking to join our growing team'
+    'Job Seekers - Talented specialists looking to join our growing team'
   ],
   testimonials: [
     {
-      quote: 'The MylesCorp team responded within hours and provided exactly what we needed. Excellent service!',
+      quote: 'The MylesCorp team responded promptly, understood our requirements, and guided us with a clear plan.',
       author: 'Sarah Johnson',
       role: 'CEO',
       organization: 'TechStart Kenya'
     },
     {
-      quote: 'Their technical support is outstanding. They helped us resolve issues quickly and professionally.',
+      quote: 'Their technical support was clear, organised, and responsive when we needed help.',
       author: 'Michael Chen',
       role: 'IT Director',
       organization: 'East Africa Manufacturing'
     },
     {
-      quote: 'From first contact to implementation, the MylesCorp team was professional and responsive.',
+      quote: 'From first contact to implementation, the MylesCorp team was organised and responsive.',
       author: 'Grace Wanjiku',
       role: 'Operations Manager',
       organization: 'Kenya Agricultural Cooperative'
@@ -109,29 +110,29 @@ export default function ContactPage() {
     {
       name: 'general',
       title: 'General Inquiries',
-      email: 'info@mylescorptech.com',
-      phone: '+254 743 993 715',
+      email: COMPANY_CONTACT.infoEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
       description: 'For general questions and information about our services.'
     },
     {
       name: 'sales',
       title: 'Sales & Partnerships',
-      email: 'sales@mylescorptech.com',
-      phone: '+254 714 660 729',
+      email: COMPANY_CONTACT.salesEmail,
+      phone: COMPANY_CONTACT.salesPhone,
       description: 'Interested in our products or partnership opportunities?'
     },
     {
       name: 'support',
       title: 'Technical Support',
-      email: 'support@mylescorptech.com',
-      phone: '+254 743 993 715',
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.technicalPhone,
       description: 'Need help with existing products or technical assistance.'
     },
     {
       name: 'careers',
       title: 'Human Resources',
-      email: 'careers@mylescorptech.com',
-      phone: '+254 714 660 729',
+      email: COMPANY_CONTACT.contactEmail,
+      phone: COMPANY_CONTACT.salesPhone,
       description: 'Questions about job opportunities and working at MylesCorp.'
     },
   ]
@@ -139,35 +140,11 @@ export default function ContactPage() {
   const offices = [
     {
       city: 'Nairobi',
-      address: 'Westlands, Nairobi, Kenya',
-      phone: '+254 743 993 715',
-      email: 'info@mylescorptech.com',
-      hours: 'Mon-Fri: 8:00 AM - 6:00 PM',
+      address: COMPANY_CONTACT.location,
+      phone: COMPANY_CONTACT.technicalPhone,
+      email: COMPANY_CONTACT.infoEmail,
+      hours: COMPANY_CONTACT.businessHours,
       isHeadquarters: true
-    },
-    {
-      city: 'Mombasa',
-      address: 'Mombasa CBD, Mombasa, Kenya',
-      phone: '+254 743 993 715',
-      email: 'info@mylescorptech.com',
-      hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
-      isHeadquarters:  false
-    },
-    {
-      city: 'Kampala',
-      address: 'Kampala Central, Uganda',
-      phone: '+254 743 993 715',
-      email: 'info@mylescorptech.com',
-      hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
-      isHeadquarters: false
-    },
-    {
-      city: 'Dar es Salaam',
-      address: 'Dar es Salaam CBD, Tanzania',
-      phone: '+254 743 993 715',
-      email: 'info@mylescorptech.com',
-      hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
-      isHeadquarters: false
     },
   ]
 
@@ -204,7 +181,7 @@ export default function ContactPage() {
             </div>
 
             <h1 className="font-display font-bold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-              Let&apos;s
+              Let&apos;s{' '}
               <span className="text-white italic">
                 Talk
               </span>
@@ -280,7 +257,7 @@ export default function ContactPage() {
                           </div>
                           <div className="flex items-center text-sm">
                             <Phone size={16} className="text-gold mr-2" />
-                            <a href={`tel:${dept.phone}`} className="font-body text-navy hover:text-gold transition-colors">
+                            <a href={telHref(dept.phone)} className="font-body text-navy hover:text-gold transition-colors">
                               {dept.phone}
                             </a>
                           </div>
@@ -298,8 +275,8 @@ export default function ContactPage() {
                       <Phone size={20} className="text-gold mr-3" />
                       <div>
                         <div className="font-body font-semibold text-white">Main Line</div>
-                        <a href="tel:+254743993715" className="text-gold hover:text-gold-light">
-                          +254 743 993 715
+                        <a href={telHref(COMPANY_CONTACT.technicalPhone)} className="text-gold hover:text-gold-light">
+                          {COMPANY_CONTACT.technicalPhone}
                         </a>
                       </div>
                     </div>
@@ -307,8 +284,8 @@ export default function ContactPage() {
                       <Mail size={20} className="text-gold mr-3" />
                       <div>
                         <div className="font-body font-semibold text-white">Email</div>
-                        <a href="mailto:info@mylescorptech.com" className="text-gold hover:text-gold-light">
-                          info@mylescorptech.com
+                        <a href={`mailto:${COMPANY_CONTACT.infoEmail}`} className="text-gold hover:text-gold-light">
+                          {COMPANY_CONTACT.infoEmail}
                         </a>
                       </div>
                     </div>
@@ -316,8 +293,7 @@ export default function ContactPage() {
                       <Clock size={20} className="text-gold mr-3" />
                       <div>
                         <div className="font-body font-semibold text-white">Business Hours</div>
-                        <div className="font-body text-light-blue">Monday - Friday: 8:00 AM - 6:00 PM</div>
-                        <div className="font-body text-light-blue">Saturday: 9:00 AM - 1:00 PM</div>
+                        <div className="font-body text-light-blue">{COMPANY_CONTACT.businessHours}</div>
                       </div>
                     </div>
                   </div>
@@ -330,7 +306,7 @@ export default function ContactPage() {
         {/* Features */}
         <FeaturesSection
           title="Why Contact MylesCorp?"
-          description="We make it easy to connect with us and get the support you need for your digital transformation journey."
+          description="We make it easy to connect with us and get the support you need for your systems modernisation plan."
           features={CONTACT_DATA.features}
           centerHeader={true}
         />
@@ -338,7 +314,7 @@ export default function ContactPage() {
         {/* Process */}
         <ProcessSection
           title="Our Contact Process"
-          description="From first contact to successful implementation — we ensure a smooth and professional experience."
+          description="From first contact to successful implementation — we keep the experience clear, structured, and responsive."
           steps={CONTACT_DATA.process}
           centerHeader={true}
         />
@@ -356,26 +332,26 @@ export default function ContactPage() {
           centerHeader={true}
         />
 
-        {/* Office Locations */}
+        {/* Contact Hub */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <div className="flex items-center justify-center gap-3 mb-5">
                 <div className="w-8 h-0.5 bg-gold" />
                 <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
-                  OUR OFFICES
+                  CONTACT HUB
                 </span>
                 <div className="w-8 h-0.5 bg-gold" />
               </div>
               <h2 className="font-display font-bold text-navy text-4xl md:text-5xl mb-4">
-                Visit Us Across East Africa
+                Nairobi Contact Hub
               </h2>
               <p className="font-body text-medium-grey text-lg md:text-xl max-w-2xl mx-auto leading-8">
-                Find us in major cities across East Africa. Visit our headquarters or connect with our regional offices.
+                MylesCorp Technologies is based in Nairobi and supports product, project, and partnership conversations through approved contact channels.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
               {offices.map((office, index) => (
                 <div key={index} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-gold/35">
                   {office.isHeadquarters && (
@@ -391,7 +367,7 @@ export default function ContactPage() {
                     </div>
                     <div className="flex items-center">
                       <Phone size={16} className="text-gold mr-2" />
-                      <a href={`tel:${office.phone}`} className="text-navy hover:text-gold font-body transition-colors">
+                      <a href={telHref(office.phone)} className="text-navy hover:text-gold font-body transition-colors">
                         {office.phone}
                       </a>
                     </div>
@@ -412,32 +388,32 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Emergency Contact */}
+        {/* Priority Contact */}
         <section className="py-20 bg-navy">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center text-white">
               <div className="flex items-center justify-center gap-3 mb-5">
                 <div className="w-8 h-0.5 bg-gold" />
                 <span className="text-gold text-[11px] font-bold tracking-[2.5px] uppercase font-body">
-                  EMERGENCY SUPPORT
+                  PRIORITY SUPPORT
                 </span>
                 <div className="w-8 h-0.5 bg-gold" />
               </div>
-              <h2 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">24/7 Emergency Support</h2>
+              <h2 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">Priority Product Support</h2>
               <p className="font-body text-light-blue text-xl md:text-2xl max-w-2xl mx-auto leading-9 mb-8">
-                For urgent technical support or critical issues, we&apos;re available round the clock to help you.
+                For active product support or urgent operational questions, use the approved technical contact channel.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                  <div className="text-2xl font-bold text-gold mb-2">24/7 Support</div>
-                  <a href="tel:+254743993715" className="text-xl text-white hover:text-gold transition-colors">
-                    +254 743 993 715
+                  <div className="text-2xl font-bold text-gold mb-2">Technical Phone</div>
+                  <a href={telHref(COMPANY_CONTACT.technicalPhone)} className="text-xl text-white hover:text-gold transition-colors">
+                    {COMPANY_CONTACT.technicalPhone}
                   </a>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                   <div className="text-2xl font-bold text-gold mb-2">Email Support</div>
-                  <a href="mailto:emergency@mylescorptech.com" className="text-xl text-white hover:text-gold transition-colors">
-                    emergency@mylescorptech.com
+                  <a href={`mailto:${COMPANY_CONTACT.contactEmail}`} className="text-xl text-white hover:text-gold transition-colors">
+                    {COMPANY_CONTACT.contactEmail}
                   </a>
                 </div>
               </div>
@@ -447,11 +423,11 @@ export default function ContactPage() {
 
         {/* Final CTA */}
         <CTASection
-          title="Ready to Transform Your Business?"
-          tagline="Transforming Industries, Empowering Generations."
-          description={`Contact us today and join ${CONTACT_DATA.overview.stats[3].number} satisfied customers across East Africa.`}
+          title="Ready to Modernise Your Operation?"
+          tagline={CONTACT_DATA.overview.tagline}
+          description="Contact us today to discuss your product, project, implementation, or partnership requirements."
           primaryCta={{ text: "Book a Free Demo", href: "/book-demo" }}
-          secondaryCta={{ text: "Call Us Now", href: "tel:+254743993715" }}
+          secondaryCta={{ text: "Call Us Now", href: telHref(COMPANY_CONTACT.technicalPhone) }}
         />
       </div>
     </Layout>

@@ -80,7 +80,7 @@ export async function GET(request: Request) {
             opacity: 0.92,
           }}
         >
-          AI-powered solutions built for East Africa
+          software products built for East Africa
         </p>
       </div>
     ),

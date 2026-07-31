@@ -28,7 +28,7 @@ import {
 
 export const metadata = {
   title: 'Web & App Design Kenya | MylesCorp Technologies',
-  description: 'Premium UI/UX design and responsive website design for businesses across East Africa. Accessible, conversion-focused, mobile-first.',
+  description: 'UI/UX design and responsive web application design for businesses across East Africa. Accessible, conversion-focused, mobile-first.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/services/web-app-design',
   },
@@ -91,7 +91,7 @@ export default function WebAppDesignPage() {
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Stunning, user-friendly websites and applications centred on UX, accessibility, and conversion-focused design.
+              Clear, usable websites and applications centred on UX, accessibility, and conversion-focused design.
             </p>
 
             {/* CTA buttons */}
@@ -120,7 +120,7 @@ export default function WebAppDesignPage() {
                   What We Offer
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  We create beautiful, functional designs that engage users and drive conversions. Our design process is user-centered and data-driven.
+                  We design interfaces that help users understand the next action, complete tasks faster, and trust the product. The process is based on user journeys, content structure, and measurable business goals.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -149,7 +149,7 @@ export default function WebAppDesignPage() {
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-gold mb-2">100+</div>
+                  <div className="text-3xl font-bold text-gold mb-2">Custom</div>
                   <div className="text-sm text-gray-600">Designs Delivered</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-sm">
@@ -177,7 +177,7 @@ export default function WebAppDesignPage() {
                 What's Included
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Comprehensive design services covering every aspect of user experience.
+                Design services covering the key parts of a usable digital product.
               </p>
             </div>
 
@@ -290,7 +290,7 @@ export default function WebAppDesignPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  quote: "The design MylesCorp created for our app increased user engagement by 250%. Absolutely brilliant work!",
+                  quote: "The design MylesCorp created for our app increased user engagement by 250%. The product is much easier for customers to use.",
                   author: "Grace Wanjiru",
                   role: "Product Manager, FinTech Startup",
                   rating: 5
@@ -330,7 +330,7 @@ export default function WebAppDesignPage() {
         <section className="py-20 bg-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-              Ready to Transform Your Digital Presence?
+              Ready to Improve Your Product Experience?
             </h2>
             <p className="text-light-blue text-xl mb-8 max-w-2xl mx-auto">
               Transforming Industries, Empowering Generations.

@@ -11,7 +11,7 @@ import { CTASection } from '@/components/ui/CTASection'
 
 export const metadata = {
   title: 'MylesCare, Healthcare Management Software Kenya | MylesCorp',
-  description: 'MylesCare helps hospitals and clinics in Kenya manage patient records, appointments & billing with AI. Reduce wait times by up to 60%.',
+  description: 'MylesCare helps hospitals and clinics in Kenya manage patient records, appointments, billing, pharmacy, and reporting workflows.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/products/mylescare',
   },

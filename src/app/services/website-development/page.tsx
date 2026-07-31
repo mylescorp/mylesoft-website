@@ -24,7 +24,7 @@ import {
 
 export const metadata = {
   title: 'Website Development & Hosting Kenya | MylesCorp',
-  description: 'Business websites built on Next.js and hosted on Vercel for companies, schools, and organisations across Kenya. Mobile-first, SEO-ready, secure, and supported by clear proposal guidance.',
+  description: 'Business websites built for companies, schools, and organisations across Kenya. Mobile-first, SEO-ready, secure, and supported by clear proposal guidance.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/services/website-development',
   },
@@ -87,7 +87,7 @@ export default function WebsiteDevelopmentPage() {
 
             {/* Subtitle */}
             <p className="font-body text-ice text-xl md:text-2xl leading-9 max-w-2xl mx-auto mb-10">
-              Business websites for companies, schools, hospitals, NGOs, and government institutions, built on Next.js and hosted on Vercel.
+              Business websites for companies, schools, hospitals, NGOs, and government institutions, built for speed, search visibility, and clear enquiries.
             </p>
 
             {/* CTA buttons */}
@@ -137,7 +137,7 @@ export default function WebsiteDevelopmentPage() {
                     <CheckCircle className="text-gold flex-shrink-0 mt-1" size={20} />
                     <div>
                       <h4 className="font-semibold text-navy">Fast Production Hosting</h4>
-                      <p className="text-gray-600">Next.js + Vercel for lightning speed</p>
+                      <p className="text-gray-600">Managed hosting for fast, reliable delivery</p>
                     </div>
                   </div>
                 </div>
@@ -191,8 +191,8 @@ export default function WebsiteDevelopmentPage() {
                 },
                 {
                   icon: <Rocket className="text-gold" size={32} />,
-                  title: "Next.js + Vercel Hosting",
-                  description: "Lightning-fast loading speeds with enterprise-grade infrastructure."
+                  title: "Fast Managed Hosting",
+                  description: "Fast loading speeds with reliable managed infrastructure."
                 },
                 {
                   icon: <Lock className="text-gold" size={32} />,
@@ -276,31 +276,31 @@ export default function WebsiteDevelopmentPage() {
           </div>
         </section>
 
-        {/* TECH STACK */}
+        {/* DELIVERY FOUNDATION */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-navy mb-4">
-                Technology Stack
+                Delivery Foundation
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Built with reliable tools used for fast, secure production websites.
+                Built around the practical foundations a serious public website needs before launch.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                "Next.js 16",
-                "React 18",
-                "TypeScript",
-                "Tailwind CSS",
-                "Vercel Hosting",
-                "Vercel Analytics",
-                "Google Analytics",
-                "Cloudflare CDN"
-              ].map((tech, index) => (
+                "Responsive Layout",
+                "Search Metadata",
+                "Performance Review",
+                "Secure Delivery",
+                "Content Handover",
+                "Analytics Setup",
+                "Form Routing",
+                "Launch Support"
+              ].map((item, index) => (
                 <div key={index} className="bg-ice rounded-lg p-4 text-center">
-                  <div className="font-semibold text-navy">{tech}</div>
+                  <div className="font-semibold text-navy">{item}</div>
                 </div>
               ))}
             </div>
@@ -341,7 +341,7 @@ export default function WebsiteDevelopmentPage() {
                     { feature: "Local Support & Training", mylescorp: "✓", builders: "✗", freelancers: "?", agencies: "✓" },
                     { feature: "Fixed Pricing", mylescorp: "✓", builders: "✓", freelancers: "✓", agencies: "✗" },
                     { feature: "99.9% Uptime Guarantee", mylescorp: "✓", builders: "?", freelancers: "✗", agencies: "?" },
-                    { feature: "Enterprise Technology", mylescorp: "✓", builders: "✗", freelancers: "✗", agencies: "?" }
+                    { feature: "Professional Delivery Standards", mylescorp: "✓", builders: "✗", freelancers: "✗", agencies: "?" }
                   ].map((row, index) => (
                     <tr key={index} className={index % 2 === 0 ? 'bg-ice' : 'bg-white'}>
                       <td className="p-4 font-medium">{row.feature}</td>
@@ -372,19 +372,19 @@ export default function WebsiteDevelopmentPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  quote: "Our new website has doubled our online inquiries. The design is beautiful and it loads incredibly fast. Highly recommend MylesCorp!",
+                  quote: "Our new website improved how prospects understand our services and made enquiries easier to manage.",
                   author: "Sarah Wanjiru",
                   role: "CEO, Retail Business",
                   rating: 5
                 },
                 {
-                  quote: "The team understood our school's needs perfectly. Parents love the new website, and enrollment inquiries have increased by 60%.",
+                  quote: "The team understood our school's needs and gave parents a clearer way to review programmes and ask about admissions.",
                   author: "James Muriuki",
                   role: "Principal, Private School",
                   rating: 5
                 },
                 {
-                  quote: "Professional, reliable, and affordable. Our hospital website now serves patients better with online appointment booking.",
+                  quote: "Reliable, practical, and well structured. Our hospital website now gives patients a clearer path to request appointments.",
                   author: "Dr. Grace Ochieng",
                   role: "Medical Director, Private Hospital",
                   rating: 5

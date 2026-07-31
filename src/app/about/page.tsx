@@ -13,7 +13,7 @@ import {
 
 export const metadata = {
   title: 'About MylesCorp Technologies — Our Story, Mission & Values',
-  description: 'Learn about MylesCorp Technologies, our story, mission, vision, M.Y.L.E.S. values, and the work behind our AI-powered software for East Africa.',
+  description: 'Learn about MylesCorp Technologies, our story, mission, vision, M.Y.L.E.S. values, and the work behind our software products for East Africa.',
   alternates: {
     canonical: 'https://www.mylescorptech.com/about',
   },
@@ -24,15 +24,15 @@ const ABOUT_DATA = {
     title: 'About Us',
     tagline: 'Transforming Africa Through Innovation',
     description: [
-      'MylesCorp Technologies is East Africa\'s leading AI-powered software company.',
-      'We\'re transforming education, healthcare, agriculture, and business with innovative technology solutions.'
+      'MylesCorp Technologies builds practical software products for East African institutions and businesses.',
+      'We support education, healthcare, agriculture, connectivity, real estate, transport, and business operations with focused digital systems.'
     ],
     image: '/api/og/product?name=About&category=Company',
     stats: [
-      { number: '500+', label: 'Schools Transformed' },
-      { number: '50K+', label: 'Lives Impacted' },
-      { number: '12', label: 'Products Launched' },
-      { number: '4', label: 'East Africa Countries' }
+      { number: 'Product', label: 'Portfolio' },
+      { number: 'Nairobi', label: 'Contact Hub' },
+      { number: 'East Africa', label: 'Market Focus' },
+      { number: '2026', label: 'Active Build Year' }
     ]
   },
   features: [
@@ -49,7 +49,7 @@ const ABOUT_DATA = {
     {
       icon: '🚀',
       title: 'Innovation First',
-      description: 'We leverage cutting-edge AI and machine learning to create solutions that push boundaries.'
+      description: 'We use applied AI and automation where they improve decisions, reporting, and operational speed.'
     },
     {
       icon: '👥',
@@ -69,13 +69,13 @@ const ABOUT_DATA = {
   ],
   process: [
     { step: 1, title: 'Discovery', description: 'We deeply understand African challenges through research and engagement' },
-    { step: 2, title: 'Design', description: 'We create user-centered solutions tailored for local contexts' },
-    { step: 3, title: 'Development', description: 'We build robust, scalable systems using cutting-edge technology' },
-    { step: 4, title: 'Deployment', description: 'We implement solutions with comprehensive training and support' },
+    { step: 2, title: 'Design', description: 'We create user-centred workflows for local operating contexts' },
+    { step: 3, title: 'Development', description: 'We build robust, scalable systems using production-ready technology' },
+    { step: 4, title: 'Deployment', description: 'We implement systems with training, handover, and support' },
     { step: 5, title: 'Impact', description: 'We measure and optimize for maximum positive impact' }
   ],
   targets: [
-    'Educational Institutions - Schools, colleges, and universities seeking digital transformation',
+    'Educational Institutions - Schools, colleges, and universities seeking systems modernisation',
     'Healthcare Providers - Hospitals, clinics, and medical centers needing management solutions',
     'Agricultural Organizations - Farms, cooperatives, and agribusinesses',
     'Business Enterprises - SMEs and corporations looking for operational efficiency'
@@ -88,7 +88,7 @@ const ABOUT_DATA = {
       organization: 'Nairobi Academy'
     },
     {
-      quote: 'The impact they\'ve made in healthcare is remarkable. Their AI solutions are saving lives.',
+      quote: 'Their healthcare workflow thinking is practical, responsive, and grounded in how facilities actually operate.',
       author: 'Dr. Michael Chen',
       role: 'Medical Director',
       organization: 'East Africa Medical Center'
@@ -366,20 +366,23 @@ export default function AboutPage() {
                         font-light"
                      style={{ color: '#545454' }}>
                     Founded in 2020, MylesCorp Technologies emerged
-                    from a simple yet powerful vision: to harness the
-                    power of artificial intelligence to solve Africa's
+                    from a clear operating vision: to use
+                    practical software to solve Africa's
                     most pressing challenges. What started as a small
-                    team of passionate developers has grown into East
-                    Africa's leading AI-powered software company.
+                    team of passionate developers has grown into a
+                    focused software company serving East African
+                    operating needs.
                   </p>
                   <p className="font-body text-base leading-relaxed
                         font-light"
                      style={{ color: '#545454' }}>
                     Our journey began with EduMyles, our flagship
-                    school management system that transformed how
+                    school management system that improved how
                     educational institutions across Kenya operate.
-                    Today we power 500+ schools serving more than
-                    50,000 students with cutting-edge technology.
+                    Today the product portfolio continues to expand
+                    around schools, transport teams, clinics, network
+                    operators, farms, property teams, and growing
+                    businesses.
                   </p>
                   <p className="font-body text-base leading-relaxed
                         font-light"
@@ -398,11 +401,11 @@ export default function AboutPage() {
                 <div className="grid grid-cols-2 gap-5">
                   {[
                     { num: '2020',  label: 'Year Founded'      },
-                    { num: '500+',  label: 'Schools Powered'   },
-                    { num: '50K+',  label: 'Students Managed'  },
-                    { num: '4',     label: 'Products Live'     },
-                    { num: '47',    label: 'Counties Reached'  },
-                    { num: '100+',  label: 'Health Facilities' },
+                    { num: '7',     label: 'Core Products'     },
+                    { num: 'East Africa',  label: 'Market Focus'  },
+                    { num: 'Nairobi',     label: 'Contact Hub'     },
+                    { num: 'Multiple',    label: 'Sectors Served'  },
+                    { num: 'Active',  label: 'Build Programme' },
                   ].map(s => (
                     <div key={s.label}
                          className="rounded-xl p-5 border"
@@ -474,8 +477,8 @@ export default function AboutPage() {
                 <p className="font-body font-light text-base
                       leading-relaxed flex-grow"
                    style={{ color: '#545454' }}>
-                  To transform African industries through innovative
-                  AI-powered software solutions that drive efficiency,
+                  To improve African industries through practical
+                  software products that drive efficiency,
                   accessibility, and sustainable growth across East
                   Africa and beyond.
                 </p>
@@ -502,7 +505,7 @@ export default function AboutPage() {
                       leading-relaxed flex-grow"
                    style={{ color: '#545454' }}>
                   To become Africa's most trusted technology partner,
-                  empowering organizations with intelligent solutions
+                  supporting organizations with reliable systems
                   that bridge the digital divide and unlock human
                   potential across the continent.
                 </p>
@@ -566,20 +569,20 @@ export default function AboutPage() {
               </h2>
               <p className="font-body max-w-2xl mx-auto text-lg md:text-xl leading-8 text-light-blue">
                 Measuring our impact across East Africa through
-                transformative technology solutions.
+                practical technology systems.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { num: '500+', label: 'Schools', desc: 'Across Kenya' },
-                { num: '50K+', label: 'Students', desc: 'Empowered' },
-                { num: '47', label: 'Counties', desc: 'Reached' },
-                { num: '100+', label: 'Health', desc: 'Facilities' },
-                { num: '18', label: 'Products', desc: 'Available' },
-                { num: '4', label: 'Years', desc: 'of Innovation' },
-                { num: '24/7', label: 'Support', desc: 'Available' },
-                { num: '99%', label: 'Uptime', desc: 'Guaranteed' },
+                { num: '7', label: 'Core', desc: 'Products' },
+                { num: '6', label: 'Priority', desc: 'Markets' },
+                { num: 'Nairobi', label: 'Contact', desc: 'Hub' },
+                { num: 'East Africa', label: 'Market', desc: 'Focus' },
+                { num: 'Product', label: 'Portfolio', desc: 'Active' },
+                { num: 'Support', label: 'Team', desc: 'Available' },
+                { num: 'Delivery', label: 'Planning', desc: 'Structured' },
+                { num: 'Vault', label: 'Standards', desc: 'Applied' },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="font-display font-bold text-4xl md:text-5xl mb-2"
@@ -609,7 +612,7 @@ export default function AboutPage() {
         {/* Features */}
         <FeaturesSection
           title="Why Choose MylesCorp?"
-          description="We combine cutting-edge technology with deep African market understanding to deliver solutions that make a real difference."
+          description="We combine production-ready technology with deep African market understanding to deliver solutions that make a real difference."
           features={ABOUT_DATA.features}
           centerHeader={true}
         />
@@ -639,7 +642,7 @@ export default function AboutPage() {
         <CTASection
           title="Join Our Journey"
           tagline="Transforming Industries, Empowering Generations."
-          description="Whether you're looking to transform your organization with our solutions or join our growing team, we'd love to hear from you."
+          description="Whether you need a product demo, a systems roadmap, or a role on our team, we'd love to hear from you."
           primaryCta={{ text: "Book a Demo", href: "/book-demo" }}
           secondaryCta={{ text: "Contact Us", href: "/contact" }}
         />
