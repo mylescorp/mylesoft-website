@@ -43,3 +43,9 @@
 - `npm audit --audit-level=high` still reports one high-severity PostCSS advisory through stable Next.js 16.2.12. The only automated proposal downgrades Next.js to 9.3.3 and was not applied.
 - Do not deploy this Vercel project or assign `mylesnet.mylescorptech.com` until Myles confirms whether that domain should point to this company site or the separate `C:\Users\Admin\Projects\mylesnet-website` repository.
 - `.env.local` is tracked despite containing non-empty assignments. Do not commit its contents; remove it from Git tracking without deleting the local file before the next commit.
+
+## Deployment Outcome - 2026-08-01
+
+- Commit `7723a75` was pushed to `main`. The tracked `.env.local` file was removed from the repository without deleting the local file.
+- Production deployment completed at `https://mylesoft-website-r8te7bkou-mylescorp.vercel.app` and is aliased to `https://mylescorptech.com`. Both endpoints returned HTTP 200.
+- `mylesnet.mylescorptech.com` already belongs to another Vercel project and currently returns a sign-in page. Vercel rejected assigning it to this project; no forced reassignment was attempted.
